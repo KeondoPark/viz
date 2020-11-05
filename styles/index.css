@@ -23,3 +23,13 @@ div.tooltip {
     border-radius: 8px;			
     pointer-events: none;			
 }
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+.counties {
+  fill: none;
+}
