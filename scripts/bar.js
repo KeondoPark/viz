@@ -25,7 +25,7 @@
     //console.log(dataset);
   
     const padding = 50;
-    const w = 2750;
+    const w = 1000;
     const h = 500;  
     const topMargin = 50;
     

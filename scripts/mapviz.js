@@ -1,133 +1,185 @@
-/**
- * index.js
- * - All our useful JS goes here, awesome!
- */
+//United states education visualization
+var body = d3.select('body')
 
-// Define the div for the tooltip
-var div = d3.select("body").append("div")	
-    .attr("class", "tooltip")				
-    .style("opacity", 0);
 
-/*
-var width = 720,
-    height = 500;
+//Minimum and maximum of data points
+var minData = 2.6, maxData = 75.1
+var noDiv = 8 //Number of divisions
 
-var projection = d3.geoAlbers()
-    .scale(1000)
-    .translate([width / 2, height / 2]);
+//Create a svg
+var w = 960, h = 600
+
+var svg = body.append('svg')
+  .attr('width', w)
+  .attr('height', h)
 
 var path = d3.geoPath()
-    .projection(projection);
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+//Legend range setting
+var x = d3.scaleLinear().domain([minData, maxData]).rangeRound([600,860])
 
+//Define color scheme: Need d3-sclae-chromatic
+var color = d3.scaleThreshold()
+  .domain(d3.range(minData, maxData, (maxData - minData) / noDiv))
+  .range(d3.schemeGreens[noDiv + 1]);
 
-$.getJSON("https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json", function(data) {            
-//$.getJSON("data/data.json", function(data) {              
-  dataset = data   
-    svg.append("g")
-    //.attr("class","states")
-    .selectAll("path")
-    .data(topojson.feature(dataset, dataset.objects.states).features)    
-    .enter().append("path")
-    .attr("d", path)
-    .style("fill","white")
-    .style("stroke", "black");   
-})
-*/
+//Define tooltip
+var tooltip = body.append('div')
+  .attr('class','tooltip')
+  .attr('id','tooltip')
+  .style('opacity',0)
 
-var data = JSON.parse(us)
-console.log(data)
+//Define legend
+var g = svg.append('g')
+  .attr('class','key')
+  .attr('id','legend')
+  .attr('transfrom','translate(0,40)')
 
-d3.queue()
-    .defer(d3.json, "data/us.json")        
-    .awaitAll(createMap);
+//Create a legend
+g.selectAll('rect')
+  //Get the data range of legend
+  .data(
+    color.range().map(function (d){      
+      d = color.invertExtent(d) //Get data range from color mapping      
 
-
-var width = 720
-var height = 500;
-
-var projection = d3.geoAlbers()
-    .scale(1000)
-    .translate([width / 2, height / 2]);
-
-var path = d3.geoPath()
-    .projection(projection);
-
-function createMap(error, data){
-  if (error) throw error;
-
-  console.log(data)
-
-  var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-  svg.append("g")
-  .attr("class","counties")
-  .selectAll("path")
-  .data(topojson.feature(data, data.objects.counties).features)    
-  .enter().append("path")
-  .attr("d", path)    
-  .style("fill","white")
-  /*.style("fill", function(d){
-        return color(rateById[d.id]);
+      //Handling left and right end
+      if (d[0] === undefined){
+        d[0] = x.domain()[0]
+      }
+      if (d[1] === undefined){
+        d[1] = x.domain()[1]
+      }
+      return d
     })
-    */
-  .style("stroke", "black");
+  )
+  .enter()
+  .append('rect')
+  .attr('height', 8)
+  //Starting point of each box in legend
+  .attr('x',function (d){
+    return x(d[0])
+  })
+  //Width of each box in legend
+  .attr('width', function(d){
+    return x(d[1]) - x(d[0])
+  })
+  //Color of each box in legend
+  .attr('fill', function(d){
+    return color(d[0])
+  })
+
+  /*
+  g.append('text')
+    .attr('class','caption')
+    .attr('x', x.range()[0])
+    .attr('y', -6)
+    .attr('fill', '#000')
+    .attr('text-anchor', 'start')
+    .attr('font-weight', 'bold')
+  */  
+
+  //Draw axis for legend
+  g.call(
+    d3.axisBottom(x)
+      .tickSize(13)
+      .tickFormat(function(x){
+        return Math.round(x) + '%';
+      })
+      .tickValues(color.domain().concat(maxData)) //Ticker values: Added the maximum values
+  )
+  .select('.domain').remove() //Remove axis line
+
+  
+const COUNTY_FILE = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json';
+const EDUCATION_FILE = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json'
+
+//Load county geographic data and education data 
+//Then start visualize
+//queue is used to define the order of loading and visualizing
+d3.queue()
+  .defer(d3.json, COUNTY_FILE)        
+  .defer(d3.json, EDUCATION_FILE)
+  .await(createMap);
+
+//Visualizing function
+function createMap(error, us, education){
+  if (error) throw error;    
+
+  //Get county geographic data and visualize
+  svg.append('g')
+    .attr('class','counties')
+    .selectAll('path')
+    .data(topojson.feature(us, us.objects.counties).features)
+    .enter()
+    .append('path')
+    .attr('class', 'county')
+    //get the county fips id
+    .attr('data-fips', function(d){
+      return d.id
+    })    
+    //Append Education data, not displayed on the page
+    .attr('data-education', function(d){
+      var result = education.filter(function(obj){
+        return obj.fips === d.id
+      })
+      if (result[0]){
+        return result[0].bachelorsOrHigher
+      }
+      return 0
+    })
+    //Fill color according to education data
+    .attr('fill', function(d){
+      var result = education.filter(function(obj){
+        return obj.fips === d.id
+      })
+      if (result[0]){
+        return color(result[0].bachelorsOrHigher)
+      }
+      return 0
+    })
+    .attr('d',path)
+    //Tooltip
+    .on('mouseover', function(d){
+      tooltip.style('opacity',0.9)
+      //Information to display on tooltip
+      tooltip.html(function(){
+        var result = education.filter(function(obj){
+          return obj.fips === d.id
+        })
+        if (result[0]){
+          return (result[0]['area_name'] + ', ' + result[0]['state'] +', ' + result[0].bachelorsOrHigher + '%')
+        }
+        return 0
+      })
+      .attr('data-education', function(){
+        var result = education.filter(function(obj){
+          return obj.fips === d.id
+        })
+        if (result[0]){
+          return result[0].bachelorsOrHigher
+        }
+        return 0
+      })
+      //Tooltip display location
+      .style('left', d3.event.pageX + 10 + 'px')
+      .style('top', d3.event.pageY - 28 + 'px')
+    })
+    .on('mouseout', function(){
+      tooltip.style('opacity',0)
+    })
+    
+    //States border
+    svg.append('path')
+    .datum(
+      topojson.mesh(us, us.objects.states, function (a, b) {
+      return a !== b;
+    }))
+    .attr('class', 'states')
+    .attr('d', path);
 
 };
 
 
 
-/*
-$.getJSON("data/us_counties.json", function(data) {              
-  
-    dataset = data;
 
-    svg.append("g")
-    .attr("class","counties")
-    .selectAll("path")
-    .data(topojson.feature(dataset, dataset.objects.counties).features)    
-    .enter().append("path")
-    .attr("d", path)        
-    .style("fill", function(d){
-          return color(rateById[d.id]);
-      })
-      
-    .style("stroke", "black");
-  
-})
-*/
-
-
-var color = d3.scaleThreshold()
-.domain([0.02, 0.04, 0.06, 0.08, 0.10])
-.range(["#f2f0f7", "#dadaeb", "#bcbddc", "#9e9ac8", "#756bb1", "#54278f"]);
-
-
-
-/*
-d3.queue()
-    .defer(d3.json, "data/us.json")        
-    .await(ready);
-
-
-
-function ready(error, us) {
-  if (error) throw error;
-  
-  svg.append("g")
-      .attr("class", "counties")
-    .selectAll("path")
-      .data(topojson.feature(us, us.objects.counties).features)
-    .enter().append("path")
-      .attr("d", path)
-      .style("fill", "white")
-      .style("stroke", "black");
-}
-
-*/
-console.log("JavaScript is amazing!");
+console.log("End of javascript");
