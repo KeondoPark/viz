@@ -9,7 +9,6 @@ var div = d3.select("body").append("div")
     .style("opacity", 0);
 
 /*
-
 var width = 720,
     height = 500;
 
@@ -35,21 +34,20 @@ $.getJSON("https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_ma
     .enter().append("path")
     .attr("d", path)
     .style("fill","white")
-    .style("stroke", "black");
-    
+    .style("stroke", "black");   
 })
 */
 
-
-
-
-
+var data = JSON.parse(us)
+console.log(data)
 
 d3.queue()
     .defer(d3.json, "data/us.json")        
     .awaitAll(createMap);
 
-var width = 720,    height = 500;
+
+var width = 720
+var height = 500;
 
 var projection = d3.geoAlbers()
     .scale(1000)
@@ -57,8 +55,6 @@ var projection = d3.geoAlbers()
 
 var path = d3.geoPath()
     .projection(projection);
-
-
 
 function createMap(error, data){
   if (error) throw error;
@@ -83,6 +79,8 @@ function createMap(error, data){
   .style("stroke", "black");
 
 };
+
+
 
 /*
 $.getJSON("data/us_counties.json", function(data) {              
