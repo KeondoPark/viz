@@ -9,10 +9,7 @@
   var dateParser = d3.timeParse("%Y-%m-%d");
   var formatDate = d3.timeFormat("%Y-%m-%d")
   
-  // Define the div for the tooltip
-  var div = d3.select("body").append("div")	
-      .attr("class", "tooltip")				
-      .style("opacity", 0);
+  
   
   
   $.getJSON("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json", function(data) {            
@@ -58,11 +55,12 @@
     svg.append("g")
       .attr("transform", "translate(" + padding + ", 0)")
       .call(yAxis);
-    
+        
     // Define the div for the tooltip
-    var div = d3.select("body").append("div")	
-      .attr("class", "tooltip")				
-      .style("opacity", 0);
+    var tooltip = d3.select('.visHolder')
+      .append('div')
+      .attr('id', 'tooltip')
+      .style('opacity', 0);
   
     //Draw rectangles and append title showing GDP
     svg.selectAll("rect")
@@ -70,26 +68,30 @@
       .enter()
       .append("rect")
       .attr("x", (d, i) => xScale(d[0]))
-      .attr("y", (d, i) => yScale(d[1]))//h - 3 * d)
+      .attr("y", (d, i) => yScale(d[1]))
       .attr("width", (d, i) => (w - padding * 2) / l)
       .attr("height", (d, i) => h - padding - yScale(d[1]))
       .attr("fill", "navy")
       .attr("class", "bar")  
       //.append("title")
       //.text(d => d[1])
-      .on("mouseover", function(d) {		
-              div.transition()		
-                  .duration(200)		
-                  .style("opacity", .9);		
-              div	.html(formatDate(d[0]) + "<br/>"  + d[1])	
-                  .style("left", (d3.event.pageX) + "px")		
-                  .style("top", (d3.event.pageY - 28) + "px");	
-              })					
-          .on("mouseout", function(d) {		
-              div.transition()		
-                  .duration(500)		
-                  .style("opacity", 0)
-    });	
+      .on("mouseover", function(d) {
+
+        tooltip.transition()		
+            .duration(200)		
+            .style("opacity", .9);		
+        tooltip.html(formatDate(d[0]) + "<br/>"  + d[1])	
+            .style("left", (d3.event.pageX) + "px")		
+            .style("top", (d3.event.pageY - 28) + "px");	
+
+      })					
+      .on("mouseout", function(d) {		
+        tooltip.transition()		
+            .duration(500)		
+            .style("opacity", 0)        
+      });	
+    
+    //Graph title
     svg.append('text')
       .attr("x", w / 2)
       .attr("y", padding/2)
@@ -97,7 +99,9 @@
       .style('font-size','16px')
       .style('text-decoration','underline')
       .text('United States GDP')
-    //Add data labels
+    
+    
+      //Add data labels
     /*
     svg.selectAll("text")
       .data(dataset)
