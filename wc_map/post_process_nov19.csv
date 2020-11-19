@@ -1,0 +1,1001 @@
+,name,city,industry,yyyymmdd,lat,long
+0,SoftBank,"Tokyo, Tokyo, Japan",2,1981/09/03,35.6777691,139.7646365
+1,Citigroup,"New York, New York, United States",2,1998/10/08,40.7127281,-74.0060152
+2,Compass,"New York, New York, United States",1,2012/10/04,40.7127281,-74.0060152
+3,Facebook,"Menlo Park, California, United States",3,2004/02/04,37.4519671,-122.1779927
+4,Reliance Retail,"Mumbai, Maharashtra, India",3,2006/01/01,18.9387711,72.8353355
+5,Delivery Hero,"Berlin, Berlin, Germany",3,2010/10/01,52.5170365,13.3888599
+6,Twitch,"San Francisco, California, United States",1,2007/01/01,37.7790262,-122.4199061
+7,Comcast,"Philadelphia, Pennsylvania, United States",1,1963/06/28,39.9527237,-75.1635262
+8,Seedrs,"London, England, United Kingdom",2,2009/01/01,51.5073219,-0.1276474
+9,Medtronic,"Minneapolis, Minnesota, United States",7,1949/01/01,44.9772995,-93.2654692
+10,Alibaba Group,"Hangzhou, Zhejiang, China",3,1999/04/04,30.2489634,120.2052342
+11,MessageBird,"Amsterdam, Noord-Holland, The Netherlands",1,2011/01/01,52.3727598,4.8936041
+12,Razorpay,"Bangalore, Karnataka, India",2,2014/12/01,12.9791198,77.5912997
+13,Ripple,"San Francisco, California, United States",2,2012/01/01,37.7790262,-122.4199061
+14,Xiaomi,"Beijing, Beijing, China",7,2010/04/04,39.9020668,116.718583
+15,Square,"San Francisco, California, United States",7,2009/02/01,37.7790262,-122.4199061
+16,Apple,"Cupertino, California, United States",7,1976/04/01,37.3228934,-122.0322895
+17,Goldman Sachs,"New York, New York, United States",6,1869/01/01,40.7127281,-74.0060152
+18,Nokia,"Espoo, Southern Finland, Finland",1,1865/05/12,60.2241869,24.6603626
+19,Kahoot!,"Oslo, Oslo, Norway",8,2012/12/14,59.9133301,10.7389701
+20,Crowdcube,"Exeter, Devon, United Kingdom",2,2010/08/01,50.725562,-3.5269108
+21,Shopify,"Ottawa, Ontario, Canada",3,2004/06/02,45.421106,-75.690308
+22,Tipalti,"San Mateo, California, United States",2,2010/01/01,37.496904,-122.3330573
+23,DocuSign,"San Francisco, California, United States",1,2003/01/01,37.7790262,-122.4199061
+24,DraftKings,"Boston, Massachusetts, United States",1,2012/01/01,42.3602534,-71.0582912
+25,Ynsect,"Paris, Ile-de-France, France",4,2011/01/01,48.8566969,2.3514616
+26,Silver Lake,"Menlo Park, California, United States",2,1999/01/01,37.4519671,-122.1779927
+27,Tencent Holdings,"Shenzhen, Guangdong, China",1,1998/11/01,22.555454,114.0543297
+28,CrowdStrike,"Sunnyvale, California, United States",6,2011/01/01,37.3688301,-122.0363496
+29,Microsoft,"Redmond, Washington, United States",7,1975/04/04,47.6694141,-122.1238767
+30,Dialpad,"San Francisco, California, United States",1,2011/04/01,37.7790262,-122.4199061
+31,Patreon,"San Francisco, California, United States",11,2013/05/07,37.7790262,-122.4199061
+32,The Honest Company,"Santa Monica, California, United States",3,2011/01/01,34.0250724,-118.4965129
+33,goPuff,"Philadelphia, Pennsylvania, United States",9,2013/11/01,39.9527237,-75.1635262
+34,Allbirds,"San Francisco, California, United States",7,2016/03/01,37.7790262,-122.4199061
+35,Ring,"Santa Monica, California, United States",7,2012/01/01,34.0250724,-118.4965129
+36,Reddit,"San Francisco, California, United States",1,2005/01/01,37.7790262,-122.4199061
+37,OurCrowd,"Jerusalem, Yerushalayim, Israel",11,2013/02/01,31.7760743,35.22829606
+38,Ericsson,"Stockholm, Stockholms Lan, Sweden",1,1876/01/01,59.3251172,18.0710935
+39,Chargebee,"San Francisco, California, United States",3,2011/06/15,37.7790262,-122.4199061
+40,Peloton,"New York, New York, United States",7,2012/01/01,40.7127281,-74.0060152
+41,Myntra,"Bangalore, Karnataka, India",3,2007/01/01,12.9791198,77.5912997
+42,Oculus,"Menlo Park, California, United States",7,2012/07/06,37.4519671,-122.1779927
+43,Plaid,"San Francisco, California, United States",2,2012/01/01,37.7790262,-122.4199061
+44,Yandex,"Moscow, Moscow City, Russian Federation",5,1997/09/23,55.7504461,37.6174943
+45,Twitter,"San Francisco, California, United States",1,2006/03/21,37.7790262,-122.4199061
+46,Petal,"New York, New York, United States",5,2016/01/01,40.7127281,-74.0060152
+47,Cerebral,"San Francisco, California, United States",4,2020/01/08,37.7790262,-122.4199061
+48,Swiggy,"Bangalore, Karnataka, India",1,2014/08/01,12.9791198,77.5912997
+49,Cloudflare,"San Francisco, California, United States",6,2009/06/01,37.7790262,-122.4199061
+50,Roku,"Los Gatos, California, United States",7,2002/10/01,37.226611,-121.9746797
+51,Lark,"Mountain View, California, United States",5,2011/01/01,37.3893889,-122.0832101
+52,Airtel,"New Delhi, Delhi, India",1,1995/01/01,28.6138954,77.2090057
+53,Pipefy,"San Francisco, California, United States",1,2013/01/01,37.7790262,-122.4199061
+54,Outreach,"Seattle, Washington, United States",1,2014/01/01,47.6038321,-122.3300624
+55,Uniswap,"Brooklyn, New York, United States",2,2018/01/01,40.6501038,-73.9495823
+56,Waymo,"Mountain View, California, United States",9,2009/01/01,37.3893889,-122.0832101
+57,Nubank,"São Paulo, Sao Paulo, Brazil",2,2013/05/06,-23.5506507,-46.6333824
+58,Lenovo,"Beijing, Beijing, China",7,1984/01/01,39.9020668,116.718583
+59,Kavak,"Mexico City, Distrito Federal, Mexico",9,2016/01/01,19.4326296,-99.1331785
+60,Observe,"San Mateo, California, United States",5,2017/11/01,37.496904,-122.3330573
+61,Bayer,"Leverkusen, Nordrhein-Westfalen, Germany",4,1863/08/01,51.0324743,6.9881194
+62,Deliveroo,"London, England, United Kingdom",10,2012/01/01,51.5073219,-0.1276474
+63,GitLab,"San Francisco, California, United States",1,2014/01/01,37.7790262,-122.4199061
+64,Livspace,"Bengaluru, Karnataka, India",3,2014/01/01,12.9791198,77.5912997
+65,Shine,"New York, New York, United States",4,2015/08/01,40.7127281,-74.0060152
+66,Business Insider,"New York, New York, United States",11,2007/05/01,40.7127281,-74.0060152
+67,Papa,"Miami, Florida, United States",11,2018/01/01,25.7742658,-80.1936589
+68,NVIDIA,"Santa Clara, California, United States",7,1993/01/01,37.2333253,-121.6846349
+69,VTEX,"New York, New York, United States",3,2000/01/01,40.7127281,-74.0060152
+70,PagerDuty,"San Francisco, California, United States",1,2009/02/01,37.7790262,-122.4199061
+71,Tanium,"Emeryville, California, United States",6,2007/01/01,37.8314089,-122.2865266
+72,BlackRock,"New York, New York, United States",2,1988/01/01,40.7127281,-74.0060152
+73,TransferWise,"London, England, United Kingdom",2,2011/01/01,51.5073219,-0.1276474
+74,Cadre,"New York, New York, United States",3,2014/09/11,40.7127281,-74.0060152
+75,maude,"Brooklyn, New York, United States",4,2017/01/01,40.6501038,-73.9495823
+76,Groupon,"Chicago, Illinois, United States",3,2007/01/01,41.8755616,-87.6244212
+77,Tesla,"Palo Alto, California, United States",9,2003/01/01,37.4443293,-122.1598465
+78,PlayVS,"Santa Monica, California, United States",1,2018/01/01,34.0250724,-118.4965129
+79,MineralTree,"Cambridge, Massachusetts, United States",2,2010/01/01,42.3750997,-71.1056157
+80,SkillSoft,"Nashua, New Hampshire, United States",1,1997/08/08,42.7653662,-71.467566
+81,Uber Freight,"San Francisco, California, United States",9,2017/01/01,37.7790262,-122.4199061
+82,Google,"Mountain View, California, United States",1,1998/01/01,37.3893889,-122.0832101
+83,Accenture,"Dublin, Dublin, Ireland",1,1989/01/01,53.3497645,-6.2602732
+84,Clover Health,"San Francisco, California, United States",4,2013/01/01,37.7790262,-122.4199061
+85,Rocket Internet,"Berlin, Berlin, Germany",2,2007/01/01,52.5170365,13.3888599
+86,Techstars,"Boulder, Colorado, United States",2,2006/08/01,40.0149856,-105.2705456
+87,Siemens,"Munich, Bayern, Germany",7,1847/01/01,48.1371079,11.5753822
+88,NIO,"Shanghai, Shanghai, China",9,2014/11/01,31.2322758,121.4692071
+89,Apollo,"New York, New York, United States",2,1990/01/01,40.7127281,-74.0060152
+90,Novartis,"Basel, Basel-Stadt, Switzerland",4,1996/01/01,47.5581077,7.5878261
+91,Sprinklr,"New York, New York, United States",5,2009/09/24,40.7127281,-74.0060152
+92,Headspace,"Santa Monica, California, United States",4,2010/01/01,34.0250724,-118.4965129
+93,Datavant,"San Francisco, California, United States",5,2017/01/01,37.7790262,-122.4199061
+94,ShipBob,"Chicago, Illinois, United States",9,2014/01/01,41.8755616,-87.6244212
+95,Flatiron Health,"New York, New York, United States",4,2012/06/01,40.7127281,-74.0060152
+96,TrueLayer,"London, England, United Kingdom",2,2016/07/14,51.5073219,-0.1276474
+97,Ola,"Kormangala, Karnataka, India",9,2010/12/03,12.9492994,77.62115258
+98,Merck,"Kenilworth, New Jersey, United States",4,1891/01/01,40.6760225,-74.289262
+99,Clearbanc,"Toronto, Ontario, Canada",3,2015/10/01,43.6534817,-79.3839347
+100,Getaround,"San Francisco, California, United States",9,2011/01/01,37.7790262,-122.4199061
+101,Foxconn Technology Group,"Taipei, T'ai-pei, Taiwan",7,1974/01/01,25.105497,121.597366
+102,Docker,"San Francisco, California, United States",1,2010/01/01,37.7790262,-122.4199061
+103,Lime,"San Francisco, California, United States",9,2017/01/01,37.7790262,-122.4199061
+104,Birchbox,"New York, New York, United States",3,2010/01/01,40.7127281,-74.0060152
+105,Citi,"Cape Town, NA - South Africa, South Africa",1,1998/01/01,-33.918861,18.4233
+106,Draper Esprit,"London, England, United Kingdom",2,2006/01/01,51.5073219,-0.1276474
+107,Seismic,"San Diego, California, United States",5,2010/01/01,32.7174209,-117.1627714
+108,Creative Destruction Lab,"Toronto, Ontario, Canada",2,2012/08/01,43.6534817,-79.3839347
+109,Hims,"San Francisco, California, United States",4,2017/01/01,37.7790262,-122.4199061
+110,Fastly,"San Francisco, California, United States",6,2011/01/01,37.7790262,-122.4199061
+111,Incredible Health,"San Francisco, California, United States",4,2017/01/01,37.7790262,-122.4199061
+112,Playco,"Tokyo, Tokyo, Japan",1,2020/01/01,35.6777691,139.7646365
+113,Zero Grocery,"Berkeley, California, United States",11,2019/01/01,37.8708393,-122.2728639
+114,Twilio,"San Francisco, California, United States",1,2008/06/30,37.7790262,-122.4199061
+115,Urban Company,"Delhi, Delhi, India",1,2014/11/10,28.6517178,77.2219388
+116,Starbucks,"Seattle, Washington, United States",10,1971/03/31,47.6038321,-122.3300624
+117,Melio,"New York, New York, United States",2,2018/07/01,40.7127281,-74.0060152
+118,Salsify,"Boston, Massachusetts, United States",5,2012/09/04,42.3602534,-71.0582912
+119,Bilibili,"Shanghai, Shanghai, China",1,2009/01/01,31.2322758,121.4692071
+120,Carousell,"Singapore, Central Region, Singapore",3,2012/08/01,16.7796467,96.175243
+121,Uber,"San Francisco, California, United States",9,2009/03/01,37.7790262,-122.4199061
+122,Avaloq,"Zürich, Zurich, Switzerland",2,1991/01/01,47.3723941,8.5423328
+123,MasterClass,"San Francisco, California, United States",8,2012/01/01,37.7790262,-122.4199061
+124,Aura,"San Francisco, California, United States",2,2012/01/01,37.7790262,-122.4199061
+125,Paytm,"Noida, Uttar Pradesh, India",3,2010/01/01,28.5356329,77.3910727
+126,Flipkart,"Bengaluru, Karnataka, India",3,2007/01/01,12.9791198,77.5912997
+127,Wayfair,"Boston, Massachusetts, United States",3,2002/08/01,42.3602534,-71.0582912
+128,Kraken,"San Francisco, California, United States",2,2011/07/28,37.7790262,-122.4199061
+129,Marco,"Miami, Florida, United States",2,2019/01/01,25.7742658,-80.1936589
+130,Quantum Metric,"Monument, Colorado, United States",5,2015/01/01,39.0500585,-104.8523657
+131,Papaya Global,"New York, New York, United States",5,2016/01/01,40.7127281,-74.0060152
+132,ServiceNow,"Santa Clara, California, United States",1,2004/01/01,37.2333253,-121.6846349
+133,Blackberry,"Waterloo, Ontario, Canada",7,1984/01/01,43.466874,-80.524635
+134,Hyperice,"Irvine, California, United States",4,2010/01/01,33.6856969,-117.8259819
+135,ByteDance,"Shanghai, Shanghai, China",5,2012/03/01,31.2322758,121.4692071
+136,Coursera,"Mountain View, California, United States",8,2012/01/01,37.3893889,-122.0832101
+137,COMPASS Pathways,"Altrincham, Cheshire, United Kingdom",4,2016/06/13,53.3428558,-2.2786316
+138,MarketFinance,"London, England, United Kingdom",2,2011/01/01,51.5073219,-0.1276474
+139,Teladoc,"Purchase, New York, United States",4,2002/01/01,41.0409305,-73.7145746
+140,BioCatch,"Tel Aviv, Tel Aviv, Israel",6,2011/01/01,32.0804808,34.7805274
+141,Coralogix,"San Francisco, California, United States",5,2014/09/15,37.7790262,-122.4199061
+142,Blue Origin,"Kent, Washington, United States",7,2000/09/08,47.3826903,-122.2270272
+143,Spendesk,"Paris, Ile-de-France, France",2,2016/01/01,48.8566969,2.3514616
+144,Allegro,"Poznan, Wielkopolskie, Poland",11,1999/01/01,52.4082663,16.9335199
+145,Supercell,"Helsinki, Southern Finland, Finland",1,2010/05/01,60.1674098,24.9425769
+146,Nextdoor,"San Francisco, California, United States",1,2010/01/01,37.7790262,-122.4199061
+147,Olive,"Columbus, Ohio, United States",7,2012/06/05,39.9622601,-83.0007065
+148,Augury,"New York, New York, United States",5,2011/08/01,40.7127281,-74.0060152
+149,Nutanix,"San Jose, California, United States",1,2009/09/01,37.3361905,-121.8905833
+150,Goat Group,"Culver City, California, United States",3,2009/01/01,34.0211224,-118.3964665
+151,Checkout.com,"London, England, United Kingdom",3,2012/01/01,51.5073219,-0.1276474
+152,Encantos,"Culver City, California, United States",8,2016/01/01,34.0211224,-118.3964665
+153,Etsy,"Brooklyn, New York, United States",3,2005/06/18,40.6501038,-73.9495823
+154,Lucid,"New Orleans, Louisiana, United States",5,2010/03/10,29.9499323,-90.0701156
+155,Einride,"Stockholm, Stockholms Lan, Sweden",9,2016/01/01,59.3251172,18.0710935
+156,Airwallex,"Quarry Bay, Hong Kong Island, Hong Kong",2,2015/12/01,22.302711,114.177216
+157,Datadog,"New York, New York, United States",5,2010/01/01,40.7127281,-74.0060152
+158,BigBasket,"Bangalore, Karnataka, India",3,2011/10/01,12.9791198,77.5912997
+159,Neocis,"Miami, Florida, United States",7,2009/01/01,25.7742658,-80.1936589
+160,Figma,"San Francisco, California, United States",1,2012/10/01,37.7790262,-122.4199061
+161,Red Ventures,"Fort Mill, South Carolina, United States",11,2000/01/01,35.0073697,-80.9450759
+162,Seegrid,"Pittsburgh, Pennsylvania, United States",9,2003/01/01,40.4416941,-79.9900861
+163,SOPHiA GENETICS,"Boston, Massachusetts, United States",5,2011/01/01,42.3602534,-71.0582912
+164,Chainlink,"Grand Cayman, Midland, Cayman Islands",1,2019/01/01,19.313299,-81.254601
+165,Ubisoft,"Montreuil-sous-bois, Ile-de-France, France",11,1986/01/01,48.8623357,2.4412184
+166,Armory,"San Mateo, California, United States",1,2016/09/01,37.496904,-122.3330573
+167,Nuvei,"Montréal, Quebec, Canada",3,2003/01/01,45.4972159,-73.6103642
+168,Ava Labs,"Brooklyn, New York, United States",2,2018/01/01,40.6501038,-73.9495823
+169,Omni,"San Francisco, California, United States",3,2014/08/01,37.7790262,-122.4199061
+170,Discord,"San Francisco, California, United States",1,2012/05/01,37.7790262,-122.4199061
+171,Onapsis,"Boston, Massachusetts, United States",6,2009/01/01,42.3602534,-71.0582912
+172,AngelList,"San Francisco, California, United States",11,2010/01/01,37.7790262,-122.4199061
+173,NEC Corporation,"Tokyo, Tokyo, Japan",6,1899/07/17,35.6777691,139.7646365
+174,Roche,"Basel, Basel-Stadt, Switzerland",4,1896/01/15,47.5581077,7.5878261
+175,ICEYE,"Espoo, Southern Finland, Finland",1,2014/01/01,60.2241869,24.6603626
+176,Okta,"San Francisco, California, United States",6,2009/01/01,37.7790262,-122.4199061
+177,Kroger,"Cincinnati, Ohio, United States",9,1883-01-01,39.1014537,-84.5124602
+178,Bitpanda,"Vienna, Wien, Austria",2,2014/11/28,48.2083537,16.3725042
+179,Fitbit,"San Francisco, California, United States",4,2007/05/01,37.7790262,-122.4199061
+180,Hootsuite,"Vancouver, British Columbia, Canada",1,2008/11/28,49.2608724,-123.1139529
+181,QueQ,"Bangkok, Krung Thep, Thailand",1,2015/09/18,13.7542529,100.493087
+182,mmhmm,"San Francisco, California, United States",1,2020/04/01,37.7790262,-122.4199061
+183,Skilljar,"Seattle, Washington, United States",8,2013/01/01,47.6038321,-122.3300624
+184,Snowflake,"San Mateo, California, United States",5,2012/01/01,37.496904,-122.3330573
+185,eToro,"London, England, United Kingdom",3,2007/01/01,51.5073219,-0.1276474
+186,Avail Medsystems,"Palo Alto, California, United States",7,2018/01/01,37.4443293,-122.1598465
+187,Carvana,"Tempe, Arizona, United States",9,2013/01/01,33.4255056,-111.9400125
+188,MyoKardia,"Brisbane, California, United States",4,2012/09/01,37.687165,-122.4027942
+189,Klarna,"Stockholm, Stockholms Lan, Sweden",3,2005/02/01,59.3251172,18.0710935
+190,Zalando,"Berlin, Berlin, Germany",3,2008/06/01,52.5170365,13.3888599
+191,HashiCorp,"San Francisco, California, United States",6,2012/01/01,37.7790262,-122.4199061
+192,Ada,"Toronto, Ontario, Canada",5,2014/01/01,43.6534817,-79.3839347
+193,Axis Security,"San Mateo, California, United States",6,2018/01/01,37.496904,-122.3330573
+194,BP,"London, England, United Kingdom",11,1909/04/14,51.5073219,-0.1276474
+195,Braintrust,"San Jose, California, United States",3,2018/05/22,37.3361905,-121.8905833
+196,HubSpot,"Cambridge, Massachusetts, United States",5,2006/06/09,42.3750997,-71.1056157
+197,Workday,"Pleasanton, California, United States",2,2005/03/01,37.6624312,-121.8746789
+198,Classplus,"Noida, Uttar Pradesh, India",8,2018/01/28,28.5356329,77.3910727
+199,CICC,"Beijing, Beijing, China",2,1995/07/31,39.9020668,116.718583
+200,Kronos Bio,"San Mateo, California, United States",4,2017/01/01,37.496904,-122.3330573
+201,JD Health,"Beijing, Beijing, China",4,2019/05/01,39.9020668,116.718583
+202,Awake Security,"Santa Clara, California, United States",6,2014/10/01,37.2333253,-121.6846349
+203,SpaceX,"Hawthorne, California, United States",9,2002/06/01,33.9188589,-118.3483256
+204,Mayo Clinic,"Rochester, Minnesota, United States",4,1919/01/01,44.0234387,-92.4630182
+205,Emarsys,"Vienna, Wien, Austria",1,2000/09/01,48.2083537,16.3725042
+206,Payrix,"Frisco, Texas, United States",3,2015/08/01,33.1506744,-96.8236116
+207,Starling Bank,"London, England, United Kingdom",2,2014/01/01,51.5073219,-0.1276474
+208,Glassdoor,"Mill Valley, California, United States",1,2007/06/01,37.9060368,-122.5449763
+209,Jumio,"Palo Alto, California, United States",5,2010/01/05,37.4443293,-122.1598465
+210,EasySend,"Tel Aviv, Tel Aviv, Israel",1,2016/01/01,32.0804808,34.7805274
+211,BetterUp,"San Francisco, California, United States",8,2013/01/01,37.7790262,-122.4199061
+212,Canva,"Sydney, New South Wales, Australia",1,2012/01/01,-33.8548157,151.2164539
+213,10X Genomics,"Pleasanton, California, United States",4,2012/01/01,37.6624312,-121.8746789
+214,Dunzo,"Bengaluru, Karnataka, India",10,2015/01/01,12.9791198,77.5912997
+215,dLocal,"Montevideo, NA - Uruguay, Uruguay",3,2016/01/01,-33.0138587,-58.514243
+216,Grubhub,"Chicago, Illinois, United States",10,2004/01/01,41.8755616,-87.6244212
+217,Monzo,"London, England, United Kingdom",2,2015/02/01,51.5073219,-0.1276474
+218,Plenty,"South San Francisco, California, United States",10,2014/08/21,37.6535403,-122.4168664
+219,Livongo,"Mountain View, California, United States",4,2008/01/01,37.3893889,-122.0832101
+220,Telefonica,"Madrid, Madrid, Spain",1,1924/01/01,40.4167047,-3.7035825
+221,Medallia,"San Francisco, California, United States",5,2001/09/01,37.7790262,-122.4199061
+222,DJI,"Shenzhen, Guangdong, China",7,2006/11/06,22.555454,114.0543297
+223,Big Hit Entertainment,"Seoul, Seoul-t'ukpyolsi, South Korea",11,2005/02/01,37.5326,127.024612
+224,Servify,"Mumbai, Maharashtra, India",7,2015/11/01,18.9387711,72.8353355
+225,JSonar,"Waltham, Massachusetts, United States",6,2013/01/01,42.3756401,-71.2358004
+226,Boom Supersonic,"Englewood, Colorado, United States",11,2014/01/01,39.6482059,-104.9879641
+227,Wirecard,"Munich, Bayern, Germany",2,1999/05/06,48.1371079,11.5753822
+228,Adyen,"Amsterdam, Noord-Holland, The Netherlands",2,2006/01/01,52.3727598,4.8936041
+229,Cohesity,"San Jose, California, United States",5,2013/06/01,37.3361905,-121.8905833
+230,Illusive Networks,"Tel Aviv-yafo, Tel Aviv, Israel",6,2014/01/01,32.0804808,34.7805274
+231,Sonos,"Santa Barbara, California, United States",7,2002/06/30,34.4221319,-119.7026673
+232,BT,"London, England, United Kingdom",6,1969/10/01,51.5073219,-0.1276474
+233,monday.com,"Tel Aviv, Tel Aviv, Israel",1,2012/02/01,32.0804808,34.7805274
+234,Andela,"New York, New York, United States",1,2014/05/21,40.7127281,-74.0060152
+235,Glovo,"Barcelona, Catalonia, Spain",9,2015/03/01,41.3828939,2.1774322
+236,Squire,"New York, New York, United States",1,2015/01/01,40.7127281,-74.0060152
+237,Justworks,"New York, New York, United States",1,2012/10/01,40.7127281,-74.0060152
+238,Wirex,"London, England, United Kingdom",2,2014/12/01,51.5073219,-0.1276474
+239,Rover,"Seattle, Washington, United States",1,2011/01/01,47.6038321,-122.3300624
+240,Veeam Software,"Baar, Zug, Switzerland",1,2006/01/01,47.1951976,8.5253985
+241,Satellogic,"Palo Alto, California, United States",11,2010/01/01,37.4443293,-122.1598465
+242,Stitch Fix,"San Francisco, California, United States",3,2011/01/01,37.7790262,-122.4199061
+243,ICICI Bank,"Mumbai, Maharashtra, India",2,1994/01/01,18.9387711,72.8353355
+244,XtalPi,"Cambridge, Massachusetts, United States",5,2014/05/01,42.3750997,-71.1056157
+245,Aclima,"San Francisco, California, United States",1,2010/01/01,37.7790262,-122.4199061
+246,SendGrid,"Denver, Colorado, United States",1,2009/07/20,39.7392364,-104.9848623
+247,TIRPORT,"Istanbul, Istanbul, Turkey",9,2016/06/01,41.0096334,28.9651646
+248,The Hut Group,"Manchester, Manchester, United Kingdom",3,2004/01/01,53.4794892,-2.2451148
+249,Cityblock Health,"Brooklyn, New York, United States",4,2017/01/01,40.6501038,-73.9495823
+250,PayMongo,"Taguig, Rizal, Philippines",2,2019/03/01,14.5266254,121.074403
+251,Arcus,"New York, New York, United States",2,2013/05/01,40.7127281,-74.0060152
+252,Bosch,"Stuttgart, Baden-Wurttemberg, Germany",9,1886-11-15,48.7784485,9.1800132
+253,TransUnion,"Chicago, Illinois, United States",2,1968/01/01,41.8755616,-87.6244212
+254,Inshorts,"Noida, Uttar Pradesh, India",1,2013/04/01,28.5356329,77.3910727
+255,SeedInvest,"New York, New York, United States",11,2011/05/01,40.7127281,-74.0060152
+256,Alkira,"San Jose, California, United States",6,2018/01/01,37.3361905,-121.8905833
+257,HireVue,"South Jordan, Utah, United States",5,2004/04/01,40.5621704,-111.929658
+258,Dun & Bradstreet,"Short Hills, New Jersey, United States",1,1841-07-20,40.7478786,-74.3254271
+259,Upwork,"Santa Clara, California, United States",11,1999/01/01,37.2333253,-121.6846349
+260,Cover Genius,"Sydney, New South Wales, Australia",6,2014/05/01,-33.8548157,151.2164539
+261,Wonderschool,"San Francisco, California, United States",8,2012/01/01,37.7790262,-122.4199061
+262,K2,"Bellevue, Washington, United States",1,2000/01/01,47.6144219,-122.1923372
+263,OZY Media,"Mountain View, California, United States",1,2012/01/01,37.3893889,-122.0832101
+264,CareAcademy,"Cambridge, Massachusetts, United States",8,2013/10/01,42.3750997,-71.1056157
+265,IP Group Plc,"London, England, United Kingdom",2,2001/01/01,51.5073219,-0.1276474
+266,Movandi,"Newport Beach, California, United States",1,2016/01/01,33.6170092,-117.9294401
+267,InnoEnergy,"Eindhoven, Noord-Brabant, The Netherlands",8,2010/12/06,51.4392648,5.478633
+268,Intercom,"San Francisco, California, United States",1,2011/08/01,37.7790262,-122.4199061
+269,UpGrad,"Mumbai, Maharashtra, India",8,2015/03/01,18.9387711,72.8353355
+270,Cloud Paper,"Seattle, Washington, United States",7,2019/01/01,47.6038321,-122.3300624
+271,Casai,"Mexico City, Distrito Federal, Mexico",1,2019/01/01,19.4326296,-99.1331785
+272,N26,"Berlin, Berlin, Germany",2,2013/02/01,52.5170365,13.3888599
+273,Siren,"San Francisco, California, United States",7,2015/01/01,37.7790262,-122.4199061
+274,Macquarie Group,"Sydney, New South Wales, Australia",2,1969/01/01,-33.8548157,151.2164539
+275,MongoDB,"New York, New York, United States",1,2007/11/01,40.7127281,-74.0060152
+276,Goodr,"Atlanta, Georgia, United States",1,2017/01/12,33.7490987,-84.3901849
+277,Redaptive,"San Francisco, California, United States",11,2013/01/01,37.7790262,-122.4199061
+278,Riot Games,"Los Angeles, California, United States",11,2006/01/01,34.0536909,-118.2427666
+279,Pipedrive,"New York, New York, United States",1,2010/06/21,40.7127281,-74.0060152
+280,SentinelOne,"Mountain View, California, United States",6,2013/01/01,37.3893889,-122.0832101
+281,Ant Group,"Hangzhou, Zhejiang, China",3,2014/10/01,30.2489634,120.2052342
+282,JD.com,"Beijing, Beijing, China",9,1998/06/06,39.9020668,116.718583
+283,Hulu,"Los Angeles, California, United States",11,2007/03/01,34.0536909,-118.2427666
+284,PhonePe,"New Delhi, Delhi, India",2,2015/12/01,28.6138954,77.2090057
+285,Imperva,"Redwood Shores, California, United States",6,2002/01/01,37.5318804,-122.2480219
+286,SEMrush,"Boston, Massachusetts, United States",5,2008/08/01,42.3602534,-71.0582912
+287,VanMoof,"Amsterdam, Noord-Holland, The Netherlands",11,2008/01/01,52.3727598,4.8936041
+288,Wealthsimple,"Toronto, Ontario, Canada",2,2014/01/01,43.6534817,-79.3839347
+289,Nintex,"Bellevue, Washington, United States",1,2006/01/01,47.6144219,-122.1923372
+290,CircleUp,"San Francisco, California, United States",2,2012/01/01,37.7790262,-122.4199061
+291,MobileIron,"Mountain View, California, United States",6,2007/05/01,37.3893889,-122.0832101
+292,Skillz,"San Francisco, California, United States",3,2012/04/01,37.7790262,-122.4199061
+293,Meituan-Dianping,"Beijing, Beijing, China",3,2006/01/01,39.9020668,116.718583
+294,Amazon,"Seattle, Washington, United States",3,1994/07/05,47.6038321,-122.3300624
+295,Niantic,"San Francisco, California, United States",1,2010/01/01,37.7790262,-122.4199061
+296,"US Department of Commerce, Economic Development Administation","Washington, District of Columbia, United States",11,1965/01/01,38.8949924,-77.0365581
+297,Warby Parker,"New York, New York, United States",3,2010/01/01,40.7127281,-74.0060152
+298,Gusto,"San Francisco, California, United States",2,2011/11/01,37.7790262,-122.4199061
+299,Anheuser-Busch InBev,"New York, New York, United States",10,2008/07/14,40.7127281,-74.0060152
+300,GoPro,"San Mateo, California, United States",7,2002/01/01,37.496904,-122.3330573
+301,Xpeng Motors,"Guangzhou, Guangdong, China",9,2014/01/01,23.1301964,113.2592945
+302,Instacart,"San Francisco, California, United States",3,2012/01/01,37.7790262,-122.4199061
+303,Epic Games,"Cary, North Carolina, United States",1,1991/01/01,35.7883046,-78.7811964
+304,Marqeta,"Oakland, California, United States",2,2010/01/01,37.8044557,-122.2713563
+305,Workhorse Group,"Loveland, Ohio, United States",9,2007/11/13,39.2689562,-84.2638406
+306,NerdWallet,"San Francisco, California, United States",1,2009/01/01,37.7790262,-122.4199061
+307,Oxford Nanopore Technologies,"Oxford, Oxfordshire, United Kingdom",4,2005/01/01,51.7520131,-1.2578499
+308,Tink,"Stockholm, Stockholms Lan, Sweden",2,2012/06/12,59.3251172,18.0710935
+309,Eurazeo,"Paris, Ile-de-France, France",2,1969/07/18,48.8566969,2.3514616
+310,GrubMarket,"San Francisco, California, United States",3,2014/05/01,37.7790262,-122.4199061
+311,Zoom,"San Jose, California, United States",1,2011/01/01,37.3361905,-121.8905833
+312,GoCardless,"London, England, United Kingdom",2,2011/01/01,51.5073219,-0.1276474
+313,Amazon Pay,"Seattle, Washington, United States",3,2005/01/01,47.6038321,-122.3300624
+314,Anaplan,"San Francisco, California, United States",1,2006/01/01,37.7790262,-122.4199061
+315,Frontier Digital Ventures,"Kuala Lumpur, Kuala Lumpur, Malaysia",3,2014/01/01,3.1396189,101.6937436
+316,Bird,"Santa Monica, California, United States",9,2017/01/01,34.0250724,-118.4965129
+317,Brex,"San Francisco, California, United States",3,2017/03/01,37.7790262,-122.4199061
+318,Walmart,"Bentonville, Arkansas, United States",3,1962/01/02,36.3728538,-94.2088172
+319,Rubrik,"Palo Alto, California, United States",6,2014/01/01,37.4443293,-122.1598465
+320,SuperAwesome,"London, England, United Kingdom",11,2013/05/01,51.5073219,-0.1276474
+321,Railsbank,"London, England, United Kingdom",2,2016/01/01,51.5073219,-0.1276474
+322,The RealReal,"San Francisco, California, United States",3,2011/03/01,37.7790262,-122.4199061
+323,Khatabook,"Bangalore, Karnataka, India",2,2018/01/01,12.9791198,77.5912997
+324,Grand Rounds,"San Francisco, California, United States",4,2011/01/01,37.7790262,-122.4199061
+325,HelloFresh,"Berlin, Berlin, Germany",10,2011/01/01,52.5170365,13.3888599
+326,Veem,"San Francisco, California, United States",2,2014/02/01,37.7790262,-122.4199061
+327,Miko,"Mumbai, Maharashtra, India",8,2015/01/01,18.9387711,72.8353355
+328,Indiegogo,"San Francisco, California, United States",2,2008/01/14,37.7790262,-122.4199061
+329,Front,"San Francisco, California, United States",1,2013/10/01,37.7790262,-122.4199061
+330,Clair,"New York, New York, United States",2,2019/10/01,40.7127281,-74.0060152
+331,Pure Storage,"Mountain View, California, United States",1,2009/09/01,37.3893889,-122.0832101
+332,J2 Global,"Los Angeles, California, United States",1,1995/01/01,34.0536909,-118.2427666
+333,Polkadot,"Manchester, Manchester, United Kingdom",2,2016/01/01,53.4794892,-2.2451148
+334,Zillow,"Seattle, Washington, United States",3,2005/01/01,47.6038321,-122.3300624
+335,Tend,"New York, New York, United States",4,2019/10/01,40.7127281,-74.0060152
+336,Shattuck Labs,"Austin, Texas, United States",4,2016/01/01,30.2711286,-97.7436995
+337,BlackLine,"Woodland Hills, California, United States",1,2001/01/01,34.1684364,-118.6058382
+338,Squarespace,"New York, New York, United States",1,2003/04/01,40.7127281,-74.0060152
+339,Segment,"San Francisco, California, United States",5,2011/09/01,37.7790262,-122.4199061
+340,Stripe,"San Francisco, California, United States",2,2010/01/01,37.7790262,-122.4199061
+341,Netdata,"San Francisco, California, United States",1,2018/06/20,37.7790262,-122.4199061
+342,TradeLanes,"Oakland, California, United States",9,2015/01/01,37.8044557,-122.2713563
+343,Snapdeal,"Gurgaon, Haryana, India",7,2010/02/04,28.4646148,77.0299194
+344,Redfin,"Seattle, Washington, United States",1,2004/10/01,47.6038321,-122.3300624
+345,BridgeBio,"Palo Alto, California, United States",4,2014/01/01,37.4443293,-122.1598465
+346,Shift,"San Francisco, California, United States",9,2013/01/01,37.7790262,-122.4199061
+347,Betterment,"New York, New York, United States",2,2008/08/25,40.7127281,-74.0060152
+348,Pulmonx,"Redwood City, California, United States",4,1998/01/01,37.4863239,-122.232523
+349,CRISPR Therapeutics,"Cambridge, Massachusetts, United States",4,2013/01/01,42.3750997,-71.1056157
+350,AppsFlyer,"San Francisco, California, United States",5,2011/04/01,37.7790262,-122.4199061
+351,PharmEasy,"Mumbai, Maharashtra, India",4,2015/02/01,18.9387711,72.8353355
+352,DigitalOcean,"New York, New York, United States",1,2012/01/01,40.7127281,-74.0060152
+353,Palantir Technologies,"Denver, Colorado, United States",6,2003/01/01,39.7392364,-104.9848623
+354,Optimizely,"San Francisco, California, United States",1,2009/12/01,37.7790262,-122.4199061
+355,OutSystems,"Boston, Massachusetts, United States",1,2001/03/01,42.3602534,-71.0582912
+356,Tinder,"West Hollywood, California, United States",1,2012/09/01,34.0923014,-118.3692894
+357,MindMed,"Toronto, Ontario, Canada",4,2019/05/01,43.6534817,-79.3839347
+358,Airship,"Portland, Oregon, United States",5,2009/06/01,45.5202471,-122.6741949
+359,Desktop Metal,"Burlington, Massachusetts, United States",7,2015/01/01,42.5048167,-71.1956111
+360,Sanofi,"Paris, Ile-de-France, France",7,2004/08/20,48.8566969,2.3514616
+361,Root Insurance,"Columbus, Ohio, United States",9,2015/03/01,39.9622601,-83.0007065
+362,MDLIVE,"Miramar Beach, Florida, United States",4,2009/01/01,30.377985,-86.3616979
+363,SoundCloud,"Berlin, Berlin, Germany",1,2007/01/01,52.5170365,13.3888599
+364,KKday,"Taipei, T'ai-pei, Taiwan",3,2014/01/01,25.105497,121.597366
+365,Unioncrate,"New York, New York, United States",5,2016/07/01,40.7127281,-74.0060152
+366,EVRYTHNG,"London, England, United Kingdom",5,2011/01/01,51.5073219,-0.1276474
+367,Foodpanda,"Berlin, Berlin, Germany",3,2012/04/01,52.5170365,13.3888599
+368,iQiyi,"Beijing, Beijing, China",11,2010/01/01,39.9020668,116.718583
+369,Corning,"Corning, New York, United States",7,1851-01-01,42.1435257,-77.0543408
+370,App Annie,"San Francisco, California, United States",5,2010/03/01,37.7790262,-122.4199061
+371,Poshmark,"Redwood City, California, United States",3,2011/02/01,37.4863239,-122.232523
+372,The Walt Disney Company,"Lake Buena Vista, Florida, United States",11,1923/10/16,28.38034955,-81.52975784
+373,Thunes,"Singapore, Central Region, Singapore",2,2016/01/01,16.7796467,96.175243
+374,Bolt,"Tallinn, Harjumaa, Estonia",9,2013/08/01,59.4372155,24.7453688
+375,Confluent,"Mountain View, California, United States",5,2014/09/23,37.3893889,-122.0832101
+376,Tru Optik,"Stamford, Connecticut, United States",5,2013/02/01,41.0534302,-73.5387341
+377,deepwatch,"Denver, Colorado, United States",6,2018/06/01,39.7392364,-104.9848623
+378,Didi Chuxing,"Beijing, Beijing, China",9,2012/09/01,39.9020668,116.718583
+379,Laird Superfood,"Sisters, Oregon, United States",10,2015/01/01,44.290948,-121.5492516
+380,Porter,"Bangalore, Karnataka, India",9,2014/08/01,12.9791198,77.5912997
+381,Postmates,"San Francisco, California, United States",9,2011/03/01,37.7790262,-122.4199061
+382,Urban,"London, England, United Kingdom",4,2014/02/10,51.5073219,-0.1276474
+383,Orange,"Paris, Ile-de-France, France",11,1991/01/01,48.8566969,2.3514616
+384,Doppler,"San Francisco, California, United States",1,2018/01/01,37.7790262,-122.4199061
+385,Accurics,"Pleasanton, California, United States",1,2019/01/01,37.6624312,-121.8746789
+386,Matterport,"Sunnyvale, California, United States",7,2011/01/01,37.3688301,-122.0363496
+387,Cuyana,"San Francisco, California, United States",3,2013/01/01,37.7790262,-122.4199061
+388,Willow,"Mountain View, California, United States",4,2014/01/01,37.3893889,-122.0832101
+389,Wolt,"Helsinki, Southern Finland, Finland",1,2014/01/01,60.1674098,24.9425769
+390,BrewDog,"Ellon, Aberdeenshire, United Kingdom",10,2007/04/01,57.365049,-2.0710305
+391,Humatics,"Waltham, Massachusetts, United States",7,2015/01/01,42.3756401,-71.2358004
+392,Maple,"Toronto, Ontario, Canada",4,2015/07/13,43.6534817,-79.3839347
+393,BuzzFeed,"New York, New York, United States",1,2006/11/01,40.7127281,-74.0060152
+394,Medium,"San Francisco, California, United States",1,2011/07/18,37.7790262,-122.4199061
+395,Blueboard,"San Francisco, California, United States",1,2014/01/01,37.7790262,-122.4199061
+396,Asana,"San Francisco, California, United States",1,2009/01/01,37.7790262,-122.4199061
+397,Equinix,"Redwood City, California, United States",1,1998/01/01,37.4863239,-122.232523
+398,Landit,"New York, New York, United States",1,2014/01/01,40.7127281,-74.0060152
+399,Pepper Content,"Mumbai, Maharashtra, India",11,2017/10/01,18.9387711,72.8353355
+400,Cisco,"San Jose, California, United States",7,1984/12/01,37.3361905,-121.8905833
+401,Facet Wealth,"Baltimore, Maryland, United States",2,2016/01/01,39.2908816,-76.610759
+402,Amplitude,"San Francisco, California, United States",5,2012/01/01,37.7790262,-122.4199061
+403,Broadridge,"New York, New York, United States",2,1962/01/01,40.7127281,-74.0060152
+404,Hyliion Holdings Corp.,"Cedar Park, Texas, United States",9,2015/03/15,30.5217116,-97.827833
+405,Spectrum Labs,"San Francisco, California, United States",1,2016/12/01,37.7790262,-122.4199061
+406,Clever,"San Francisco, California, United States",8,2012/01/01,37.7790262,-122.4199061
+407,Cruise,"San Francisco, California, United States",9,2013/01/01,37.7790262,-122.4199061
+408,ABB,"Zürich, Zurich, Switzerland",9,1988/01/05,47.3723941,8.5423328
+409,AppHarvest,"Morehead, Kentucky, United States",11,2017/01/01,38.1839705,-83.4326841
+410,Amino Apps,"New City, New York, United States",1,2014/01/01,41.1499825,-73.98989776
+411,Ouster,"San Francisco, California, United States",7,2015/01/01,37.7790262,-122.4199061
+412,Talkdesk,"San Francisco, California, United States",1,2011/01/01,37.7790262,-122.4199061
+413,NotCo,"Santiago, Region Metropolitana, Chile",10,2015/01/01,-33.447487,-70.673676
+414,Morgan Stanley,"New York, New York, United States",2,1935/01/01,40.7127281,-74.0060152
+415,Crypto.com,"Sai Wan, Hong Kong Island, Hong Kong",2,2016/06/01,22.2858376,114.134023
+416,TradingView,"London, England, United Kingdom",8,2011/09/01,51.5073219,-0.1276474
+417,BloomCredit,"New York, New York, United States",2,2016/08/01,40.7127281,-74.0060152
+418,Onfido,"London, England, United Kingdom",6,2012/01/01,51.5073219,-0.1276474
+419,Strava,"San Francisco, California, United States",7,2009/01/01,37.7790262,-122.4199061
+420,BioNTech,"Mainz, Rheinland-Pfalz, Germany",4,2008/01/01,50.0012314,8.2762513
+421,CoreView,"Milan, Lombardia, Italy",6,2014/01/01,45.4668,9.1905
+422,Chorus.ai,"San Francisco, California, United States",5,2015/01/01,37.7790262,-122.4199061
+423,REE,"Tel Aviv, Tel Aviv, Israel",9,2011/01/01,32.0804808,34.7805274
+424,Better.com,"New York, New York, United States",3,2016/01/01,40.7127281,-74.0060152
+425,Calm,"San Francisco, California, United States",4,2012/05/04,37.7790262,-122.4199061
+426,Acko General Insurance,"Mumbai, Maharashtra, India",11,2016/01/01,18.9387711,72.8353355
+427,Skydio,"Redwood City, California, United States",7,2014/01/01,37.4863239,-122.232523
+428,Lending Club,"San Francisco, California, United States",2,2007/01/01,37.7790262,-122.4199061
+429,Avalara,"Seattle, Washington, United States",3,2004/01/01,47.6038321,-122.3300624
+430,Cockroach Labs,"New York, New York, United States",1,2015/02/01,40.7127281,-74.0060152
+431,Womply,"San Francisco, California, United States",5,2011/01/01,37.7790262,-122.4199061
+432,uberall,"Berlin, Berlin, Germany",1,2012/01/01,52.5170365,13.3888599
+433,Mosa Meat,"Maastricht, Limburg, The Netherlands",10,2013/01/01,50.8512438,5.6909768
+434,Braze,"New York, New York, United States",5,2011/01/01,40.7127281,-74.0060152
+435,NS8,"Las Vegas, Nevada, United States",6,2016/08/18,36.1672559,-115.1485163
+436,Xometry,"Gaithersburg, Maryland, United States",7,2013/01/01,39.1434406,-77.2013705
+437,Tokopedia,"Jakarta, Jakarta Raya, Indonesia",3,2009/02/06,-6.1753942,106.827183
+438,Funding Societies,"Singapore, Central Region, Singapore",3,2015/06/01,16.7796467,96.175243
+439,GGV Capital,"Menlo Park, California, United States",2,2000/01/01,37.4519671,-122.1779927
+440,Forethought,"San Francisco, California, United States",5,2017/01/01,37.7790262,-122.4199061
+441,Boohoo,"London, England, United Kingdom",3,2006/04/08,51.5073219,-0.1276474
+442,Mayvenn,"Oakland, California, United States",3,2012/09/01,37.8044557,-122.2713563
+443,Spotify,"Stockholm, Stockholms Lan, Sweden",1,2006/07/14,59.3251172,18.0710935
+444,ScriptDrop,"Columbus, Ohio, United States",4,2017/01/01,39.9622601,-83.0007065
+445,Dialogue,"Montréal, Quebec, Canada",4,2016/07/05,45.4972159,-73.6103642
+446,Somatus,"Mclean, Virginia, United States",4,2016/01/01,38.9342888,-77.1776327
+447,Convoy,"Seattle, Washington, United States",9,2015/01/01,47.6038321,-122.3300624
+448,Bykea,"Karachi, Sindh, Pakistan",11,2016/09/15,24.8667795,67.0311286
+449,Instagram,"Menlo Park, California, United States",1,2010/10/06,37.4519671,-122.1779927
+450,Freeletics,"München, Bayern, Germany",1,2013/01/01,48.1371079,11.5753822
+451,Qubole,"Santa Clara, California, United States",5,2011/01/01,37.2333253,-121.6846349
+452,Qualtrics,"Provo, Utah, United States",1,2002/01/01,40.2338438,-111.6585337
+453,"Blavity, Inc.","Los Angeles, California, United States",1,2014/01/01,34.0536909,-118.2427666
+454,Box,"Redwood City, California, United States",1,2005/01/01,37.4863239,-122.232523
+455,Funding Circle,"London, England, United Kingdom",2,2010/01/01,51.5073219,-0.1276474
+456,Ping Identity,"Denver, Colorado, United States",6,2002/01/01,39.7392364,-104.9848623
+457,Generate Capital,"San Francisco, California, United States",2,2014/01/01,37.7790262,-122.4199061
+458,Lenskart,"Faridabad, Haryana, India",4,2010/01/01,28.4029786,77.3103837
+459,Macrometa,"Palo Alto, California, United States",1,2017/01/01,37.4443293,-122.1598465
+460,KeepTruckin,"San Francisco, California, United States",9,2013/01/01,37.7790262,-122.4199061
+461,Gro Intelligence,"New York, New York, United States",5,2014/01/01,40.7127281,-74.0060152
+462,Sift,"San Francisco, California, United States",6,2011/06/01,37.7790262,-122.4199061
+463,Veritas Capital,"New York, New York, United States",2,1992/01/01,40.7127281,-74.0060152
+464,G2,"Chicago, Illinois, United States",1,2012/05/01,41.8755616,-87.6244212
+465,General Assembly,"New York, New York, United States",8,2011/01/03,40.7127281,-74.0060152
+466,SquadStack,"San Francisco, California, United States",5,2014/01/01,37.7790262,-122.4199061
+467,Curve,"London, England, United Kingdom",2,2015/04/02,51.5073219,-0.1276474
+468,Robinhood,"Menlo Park, California, United States",2,2013/01/01,37.4519671,-122.1779927
+469,Netflix,"Los Gatos, California, United States",11,1997/01/01,37.226611,-121.9746797
+470,Clara Foods,"South San Francisco, California, United States",11,2015/01/01,37.6535403,-122.4168664
+471,Taboola,"New York, New York, United States",11,2007/01/01,40.7127281,-74.0060152
+472,WorldRemit,"London, England, United Kingdom",2,2010/01/01,51.5073219,-0.1276474
+473,nCino,"Wilmington, North Carolina, United States",2,2012/01/01,34.2257282,-77.9447107
+474,Weibo,"Beijing, Beijing, China",1,2009/08/14,39.9020668,116.718583
+475,Lyra Health,"Burlingame, California, United States",4,2015/01/01,37.5841026,-122.3660825
+476,Circle,"Boston, Massachusetts, United States",2,2013/01/01,42.3602534,-71.0582912
+477,Drift,"Boston, Massachusetts, United States",1,2015/01/01,42.3602534,-71.0582912
+478,Infor,"New York, New York, United States",1,2002/05/30,40.7127281,-74.0060152
+479,Zoox,"Foster City, California, United States",9,2014/07/29,37.5600336,-122.2688522
+480,Nium,"Singapore, Central Region, Singapore",2,2014/01/01,16.7796467,96.175243
+481,Noom,"New York, New York, United States",4,2008/07/25,40.7127281,-74.0060152
+482,mHUB,"Chicago, Illinois, United States",7,2017/03/02,41.8755616,-87.6244212
+483,YourStory,"Bangalore, Karnataka, India",1,2008/10/01,12.9791198,77.5912997
+484,Tile,"San Mateo, California, United States",7,2012/12/01,37.496904,-122.3330573
+485,Oscar Health,"New York, New York, United States",4,2012/11/01,40.7127281,-74.0060152
+486,Aurora Labs,"Tel Aviv-yafo, Tel Aviv, Israel",9,2016/01/01,32.0804808,34.7805274
+487,Payoneer,"New York, New York, United States",3,2005/01/01,40.7127281,-74.0060152
+488,Metadata,"San Francisco, California, United States",5,2015/04/20,37.7790262,-122.4199061
+489,Pandora,"Oakland, California, United States",1,2000/01/03,37.8044557,-122.2713563
+490,Symantec,"Mountain View, California, United States",6,1982/01/01,37.3893889,-122.0832101
+491,Innovaccer,"San Francisco, California, United States",5,2014/08/01,37.7790262,-122.4199061
+492,BlueVoyant,"New York, New York, United States",6,2017/07/01,40.7127281,-74.0060152
+493,AvidXchange,"Charlotte, North Carolina, United States",2,2000/04/01,35.2272,-80.843083
+494,Verkada,"San Mateo, California, United States",6,2016/01/01,37.496904,-122.3330573
+495,Shipper,"Jakarta, Jakarta Raya, Indonesia",9,2016/01/01,-6.1753942,106.827183
+496,IBM,"Armonk, New York, United States",7,1911/06/06,41.1330485,-73.71262372
+497,Velodyne LiDAR,"San Jose, California, United States",7,1983/01/01,37.3361905,-121.8905833
+498,Roivant Sciences,"New York, New York, United States",4,2014/05/01,40.7127281,-74.0060152
+499,Trustpilot,"Copenhagen, Hovedstaden, Denmark",3,2007/02/12,55.6867243,12.5700724
+500,Sennder,"Berlin, Berlin, Germany",9,2015/01/01,52.5170365,13.3888599
+501,Lingokids,"Wilmington, Delaware, United States",8,2016/01/01,39.7459468,-75.546589
+502,Sberbank,"Moscow, Moscow City, Russian Federation",2,1841-01-01,55.7504461,37.6174943
+503,Unocoin,"Tumkur, Karnataka, India",2,2013/12/01,13.3400771,77.1006208
+504,Fungible,"Santa Clara, California, United States",7,2015/01/01,37.2333253,-121.6846349
+505,RiskGenius,"Overland Park, Kansas, United States",5,2015/01/01,38.9742502,-94.6851702
+506,Career Karma,"San Francisco, California, United States",8,2018/01/01,37.7790262,-122.4199061
+507,Lattice,"San Francisco, California, United States",1,2015/10/01,37.7790262,-122.4199061
+508,Catchpoint,"New York, New York, United States",5,2008/09/15,40.7127281,-74.0060152
+509,Resilia,"New Orleans, Louisiana, United States",1,2016/01/05,29.9499323,-90.0701156
+510,Dataloop AI,"Herzliya, Tel Aviv, Israel",5,2017/01/01,32.1676842,34.83082794
+511,ICON Health and Fitness,"Logan, Utah, United States",7,1977/01/01,41.7313447,-111.8348631
+512,Sezzle,"Minneapolis, Minnesota, United States",3,2016/01/04,44.9772995,-93.2654692
+513,BlueVine,"Redwood City, California, United States",2,2013/07/01,37.4863239,-122.232523
+514,FreshBooks,"Toronto, Ontario, Canada",2,2003/01/01,43.6534817,-79.3839347
+515,Smartsheet,"Bellevue, Washington, United States",1,2005/06/01,47.6144219,-122.1923372
+516,Kasa Living,"San Francisco, California, United States",11,2016/08/01,37.7790262,-122.4199061
+517,OpenLattice,"Redwood City, California, United States",11,2017/01/01,37.4863239,-122.232523
+518,CloudBees,"San Jose, California, United States",1,2010/03/09,37.3361905,-121.8905833
+519,Atlassian,"Sydney, New South Wales, Australia",1,2002/01/01,-33.8548157,151.2164539
+520,1mg,"Gurgaon, Haryana, India",4,2015/02/03,28.4646148,77.0299194
+521,Collibra,"Brussels, Brussels Hoofdstedelijk Gewest, Belgium",5,2008/06/19,50.8465573,4.351697
+522,Via,"New York, New York, United States",9,2012/06/26,40.7127281,-74.0060152
+523,Picnic,"Amsterdam, Noord-Holland, The Netherlands",3,2015/10/01,52.3727598,4.8936041
+524,Eight Sleep,"New York, New York, United States",7,2014/07/01,40.7127281,-74.0060152
+525,ConsenSys,"Zug, Zug, Switzerland",1,2014/10/01,47.1679898,8.5173652
+526,ExecOnline,"New York, New York, United States",8,2012/04/01,40.7127281,-74.0060152
+527,Winuall,"Bangalore, Karnataka, India",8,2019/06/03,12.9791198,77.5912997
+528,Aurora Cannabis,"Cremona, Alberta, Canada",4,2013/01/01,51.5466917,-114.4908728
+529,Lordstown Motors,"Ohio, Illinois, United States",9,2019/01/01,41.5575349,-89.4609276
+530,Talkspace,"New York, New York, United States",4,2012/06/01,40.7127281,-74.0060152
+531,Vectra,"San Jose, California, United States",6,2010/01/01,37.3361905,-121.8905833
+532,PopCom,"Columbus, Ohio, United States",3,2017/04/01,39.9622601,-83.0007065
+533,goTenna,"Brooklyn, New York, United States",7,2012/11/01,40.6501038,-73.9495823
+534,Athira Pharma,"Seattle, Washington, United States",4,2011/01/01,47.6038321,-122.3300624
+535,JupiterOne,"Morrisville, North Carolina, United States",6,2018/03/01,33.6071108,-79.5386726
+536,Dryad Networks,"Berlin, Berlin, Germany",5,2019/11/29,52.5170365,13.3888599
+537,Spruce Biosciences,"San Francisco, California, United States",4,2014/01/01,37.7790262,-122.4199061
+538,Datto,"Norwalk, Connecticut, United States",1,2007/01/01,41.1175966,-73.4078968
+539,Vivun Inc,"Oakland, California, United States",5,2018/05/01,37.8044557,-122.2713563
+540,Huohua Siwei,"Beijing, Beijing, China",8,2017/01/01,39.9020668,116.718583
+541,EnsoData,"Madison, Wisconsin, United States",5,2015/01/01,43.074761,-89.3837613
+542,Xero,"Wellington, Wellington, New Zealand",2,2006/07/01,-41.2887953,174.7772114
+543,LARQ,"Foster City, California, United States",7,2017/11/01,37.5600336,-122.2688522
+544,Tradeshift,"San Francisco, California, United States",2,2009/07/01,37.7790262,-122.4199061
+545,Netskope,"Santa Clara, California, United States",6,2012/10/08,37.2333253,-121.6846349
+546,ForgeRock,"San Francisco, California, United States",6,2010/02/01,37.7790262,-122.4199061
+547,Farmers Business Network,"San Carlos, California, United States",5,2014/01/01,37.504936,-122.2618236
+548,MYOB,"Glen Waverley, Victoria, Australia",1,1991/01/01,-37.8797175,145.1629331
+549,Farfetch,"London, England, United Kingdom",3,2007/06/01,51.5073219,-0.1276474
+550,SurveyMonkey,"San Mateo, California, United States",5,1999/01/01,37.496904,-122.3330573
+551,FCC,"Washington, District of Columbia, United States",11,1934/06/19,38.8949924,-77.0365581
+552,Acronis,"Schaffhausen, Schaffhausen, Switzerland",6,2003/01/01,47.6960491,8.634513
+553,Vineti,"San Francisco, California, United States",5,2016/01/01,37.7790262,-122.4199061
+554,SenseTime,"Beijing, Beijing, China",5,2014/10/01,39.9020668,116.718583
+555,ComplyAdvantage,"London, England, United Kingdom",5,2014/01/01,51.5073219,-0.1276474
+556,Dashlane,"New York, New York, United States",6,2009/07/06,40.7127281,-74.0060152
+557,Aqua Security,"Ramat Gan, Tel Aviv, Israel",6,2015/01/01,32.0686867,34.8246812
+558,AnyVision,"Tel Aviv, Tel Aviv, Israel",5,2015/01/01,32.0804808,34.7805274
+559,Rimilia,"Bromsgrove, Worcestershire, United Kingdom",2,2008/01/01,52.3353816,-2.0597449
+560,Barstool Sports,"New York, New York, United States",11,2003/01/01,40.7127281,-74.0060152
+561,ShareChat,"Bangalore, Karnataka, India",1,2015/01/01,12.9791198,77.5912997
+562,TripActions,"Palo Alto, California, United States",1,2015/01/01,37.4443293,-122.1598465
+563,Filecoin,"Palo Alto, California, United States",11,2014/01/01,37.4443293,-122.1598465
+564,NFP,"New York, New York, United States",2,1998/01/01,40.7127281,-74.0060152
+565,Snap,"Venice, California, United States",1,2011/05/01,33.995044,-118.4668875
+566,Pindrop,"Atlanta, Georgia, United States",6,2011/01/01,33.7490987,-84.3901849
+567,Wealthfront,"Palo Alto, California, United States",2,2008/01/01,37.4443293,-122.1598465
+568,CreatorIQ,"Culver City, California, United States",1,2014/01/01,34.0211224,-118.3964665
+569,RobinFood,"Bogotá, Distrito Especial, Colombia",10,2018/03/01,4.624335,-74.063644
+570,JD Logistics,"Beijing, Beijing, China",9,2007/01/01,39.9020668,116.718583
+571,Aave,"London, England, United Kingdom",2,2017/05/01,51.5073219,-0.1276474
+572,Skillshare,"New York, New York, United States",8,2010/01/01,40.7127281,-74.0060152
+573,PassiveLogic,"Salt Lake City, Utah, United States",5,2016/01/01,40.7596198,-111.8867975
+574,Exabeam,"Foster City, California, United States",6,2013/01/01,37.5600336,-122.2688522
+575,Virgin Galactic,"Mojave, California, United States",11,2004/01/01,35.0524699,-118.1739645
+576,Lend Street Financial,"Oakland, California, United States",2,2010/06/01,37.8044557,-122.2713563
+577,Invesco,"Atlanta, Georgia, United States",2,1935/12/01,33.7490987,-84.3901849
+578,MemSQL,"San Francisco, California, United States",5,2011/01/01,37.7790262,-122.4199061
+579,Nova Credit,"San Francisco, California, United States",2,2016/05/17,37.7790262,-122.4199061
+580,GeoSpock,"Cambridge, Cambridgeshire, United Kingdom",9,2013/01/01,52.2034823,0.1235817
+581,Health IQ,"Mountain View, California, United States",4,2014/01/01,37.3893889,-122.0832101
+582,Selina,"London, England, United Kingdom",11,2012/01/01,51.5073219,-0.1276474
+583,99designs,"Oakland, California, United States",3,2008/02/01,37.8044557,-122.2713563
+584,SafetyCulture,"Townsville, Queensland, Australia",1,2004/03/12,-19.2569391,146.8239537
+585,MuleSoft,"San Francisco, California, United States",1,2006/07/01,37.7790262,-122.4199061
+586,Flash Express,"Bangkok, Krung Thep, Thailand",9,2017/01/01,13.7542529,100.493087
+587,Signal Sciences,"Culver City, California, United States",6,2014/03/10,34.0211224,-118.3964665
+588,Grindr,"West Hollywood, California, United States",1,2008/02/03,34.0923014,-118.3692894
+589,Delhivery,"Gurgaon, Haryana, India",9,2011/01/01,28.4646148,77.0299194
+590,Sweetgreen,"Washington, District of Columbia, United States",10,2007/01/01,38.8949924,-77.0365581
+591,Ollie,"New York, New York, United States",10,2016/10/05,40.7127281,-74.0060152
+592,Afterpay,"Melbourne, Victoria, Australia",3,2014/01/01,-37.8142176,144.9631608
+593,Biofourmis,"Boston, Massachusetts, United States",4,2015/11/27,42.3602534,-71.0582912
+594,Nikola Labs Inc.,"Westerville, Ohio, United States",7,2014/10/01,40.126139,-82.9295287
+595,Procore,"Carpinteria, California, United States",1,2003/01/01,34.3988838,-119.5184564
+596,Invitae,"San Francisco, California, United States",4,2010/01/01,37.7790262,-122.4199061
+597,eero,"San Francisco, California, United States",7,2015/02/01,37.7790262,-122.4199061
+598,HSBC,"London, England, United Kingdom",2,1865-01-01,51.5073219,-0.1276474
+599,Portshift,"Tel Aviv, Tel Aviv, Israel",1,2018/04/01,32.0804808,34.7805274
+600,BigID,"New York, New York, United States",6,2016/02/01,40.7127281,-74.0060152
+601,Motorola Solutions,"Schaumburg, Illinois, United States",6,2011/01/04,42.0333608,-88.083406
+602,BlackSwan Technologies,"Tel Aviv, Tel Aviv, Israel",5,2014/01/01,32.0804808,34.7805274
+603,Aidoc,"Tel Aviv, Tel Aviv, Israel",5,2016/02/01,32.0804808,34.7805274
+604,Wave,"Toronto, Ontario, Canada",2,2009/07/01,43.6534817,-79.3839347
+605,PayCargo,"Coral Gables, Florida, United States",9,2008/11/21,25.72149,-80.2683838
+606,NCR,"Atlanta, Georgia, United States",2,1884-01-01,33.7490987,-84.3901849
+607,Bambee,"Los Angeles, California, United States",1,2016/06/01,34.0536909,-118.2427666
+608,Bold Penguin,"Columbus, Ohio, United States",1,2016/01/01,39.9622601,-83.0007065
+609,HighRadius,"Houston, Texas, United States",5,2006/01/01,29.7589382,-95.3676974
+610,Evernote,"Redwood City, California, United States",1,2000/02/29,37.4863239,-122.232523
+611,HYP3R,"San Francisco, California, United States",1,2015/03/01,37.7790262,-122.4199061
+612,Celonis,"Munich, Bayern, Germany",5,2011/01/01,48.1371079,11.5753822
+613,Cleveland Clinic,"Cleveland, Ohio, United States",4,1921/01/01,41.5051613,-81.6934446
+614,Boston Dynamics,"Waltham, Massachusetts, United States",7,1992/01/01,42.3756401,-71.2358004
+615,Upstart,"San Carlos, California, United States",5,2012/04/01,37.504936,-122.2618236
+616,Octane Lending,"New York, New York, United States",2,2014/01/01,40.7127281,-74.0060152
+617,Vroom,"New York, New York, United States",9,2013/01/01,40.7127281,-74.0060152
+618,Anduril Industries,"Irvine, California, United States",11,2017/01/01,33.6856969,-117.8259819
+619,Care.com,"Waltham, Massachusetts, United States",11,2006/10/01,42.3756401,-71.2358004
+620,Taysha Gene Therapies,"Dallas, Texas, United States",4,2020/01/01,32.7762719,-96.7968559
+621,Bandwidth,"Raleigh, North Carolina, United States",1,1999/08/08,35.7803977,-78.6390989
+622,Your.MD,"London, England, United Kingdom",5,2012/12/01,51.5073219,-0.1276474
+623,Away,"New York, New York, United States",3,2015/02/01,40.7127281,-74.0060152
+624,TELUS,"Vancouver, British Columbia, Canada",1,1990/01/01,49.2608724,-123.1139529
+625,Mulberry Platform,"New York, New York, United States",1,2012/01/01,40.7127281,-74.0060152
+626,Thumbtack,"San Francisco, California, United States",3,2008/01/01,37.7790262,-122.4199061
+627,Berkshire Hathaway,"Omaha, Nebraska, United States",9,1839-01-01,41.2587459,-95.9383758
+628,Algolia,"San Francisco, California, United States",5,2012/10/10,37.7790262,-122.4199061
+629,Replicant,"San Francisco, California, United States",5,2017/01/01,37.7790262,-122.4199061
+630,Take-Two Interactive,"New York, New York, United States",1,1993/01/01,40.7127281,-74.0060152
+631,Finix,"San Francisco, California, United States",3,2016/01/01,37.7790262,-122.4199061
+632,Aledia,"Grenoble, Rhone-Alpes, France",7,2011/01/01,45.1875602,5.7357819
+633,Medigate,"Tel Aviv, Tel Aviv, Israel",6,2017/09/01,32.0804808,34.7805274
+634,Wire,"Zug, Zug, Switzerland",6,2012/01/01,47.1679898,8.5173652
+635,Cedar,"New York, New York, United States",4,2016/01/01,40.7127281,-74.0060152
+636,Amesite,"Ann Arbor, Michigan, United States",5,2017/01/01,42.2681569,-83.7312291
+637,Kaseya,"Dublin, Dublin, Ireland",6,2000/01/01,53.3497645,-6.2602732
+638,Busbud,"Montréal, Quebec, Canada",9,2011/10/01,45.4972159,-73.6103642
+639,Credit Suisse,"Zürich, Zurich, Switzerland",2,1856-07-05,47.3723941,8.5423328
+640,Rowing Blazers,"New York, New York, United States",3,2016/01/01,40.7127281,-74.0060152
+641,Vi,"New York, New York, United States",4,2011/07/01,40.7127281,-74.0060152
+642,KeepIt,"Copenhagen, Hovedstaden, Denmark",6,2007/08/01,55.6867243,12.5700724
+643,Stem,"Millbrae, California, United States",1,2009/01/01,37.598958,-122.4009419
+644,Liquid Death,"Santa Monica, California, United States",7,2017/01/01,34.0250724,-118.4965129
+645,Arrival,"London, England, United Kingdom",9,2015/01/01,51.5073219,-0.1276474
+646,Retirable,"New York, New York, United States",2,2019/10/01,40.7127281,-74.0060152
+647,Preempt Security,"San Francisco, California, United States",6,2014/01/01,37.7790262,-122.4199061
+648,23andMe,"Mountain View, California, United States",4,2006/04/01,37.3893889,-122.0832101
+649,Couchbase,"Santa Clara, California, United States",5,2009/01/01,37.2333253,-121.6846349
+650,IRI,"Chicago, Illinois, United States",5,1979/01/01,41.8755616,-87.6244212
+651,Adjust,"Berlin, Berlin, Germany",1,2012/01/01,52.5170365,13.3888599
+652,Unqork,"New York, New York, United States",2,2017/01/01,40.7127281,-74.0060152
+653,BacklotCars,"Kansas City, Missouri, United States",9,2014/05/01,39.100105,-94.5781416
+654,Webflow,"San Francisco, California, United States",1,2012/01/01,37.7790262,-122.4199061
+655,Superhuman,"San Francisco, California, United States",1,2014/01/01,37.7790262,-122.4199061
+656,ZeBrand Inc.,"New York, New York, United States",1,2019/10/06,40.7127281,-74.0060152
+657,ClassPass,"New York, New York, United States",4,2011/01/01,40.7127281,-74.0060152
+658,Stanza Living,"New Delhi, Delhi, India",1,2017/01/01,28.6138954,77.2090057
+659,Deutsche Bank,"Frankfurt, Hessen, Germany",2,1870-03-10,50.1106444,8.6820917
+660,DeadHappy,"Leicester, Leicester, United Kingdom",2,2013/01/01,52.6361398,-1.1330789
+661,Omada Health,"San Francisco, California, United States",4,2011/01/01,37.7790262,-122.4199061
+662,Udacity,"Mountain View, California, United States",8,2011/01/01,37.3893889,-122.0832101
+663,Genesys,"Daly City, California, United States",1,1990/01/01,37.6904826,-122.4726708
+664,Fabric,"Tel Aviv, Tel Aviv, Israel",7,2015/01/01,32.0804808,34.7805274
+665,Zynga,"San Francisco, California, United States",1,2007/01/01,37.7790262,-122.4199061
+666,Cradlepoint,"Boise, Idaho, United States",6,2006/01/01,43.6166163,-116.200886
+667,NOCD,"Chicago, Illinois, United States",4,2014/01/01,41.8755616,-87.6244212
+668,Uncapped,"London, England, United Kingdom",2,2019/09/01,51.5073219,-0.1276474
+669,Grammarly,"San Francisco, California, United States",1,2009/04/01,37.7790262,-122.4199061
+670,Propy,"Palo Alto, California, United States",1,2016/01/07,37.4443293,-122.1598465
+671,Knoma,"London, England, United Kingdom",8,2018/10/01,51.5073219,-0.1276474
+672,EverC,"New York, New York, United States",6,2008/01/01,40.7127281,-74.0060152
+673,Oracle,"Redwood Shores, California, United States",1,1977/06/16,37.5318804,-122.2480219
+674,Movile,"Campina, Sao Paulo, Brazil",3,1998/01/01,-22.90556,-47.06083
+675,Pendo,"Raleigh, North Carolina, United States",5,2013/10/01,35.7803977,-78.6390989
+676,BNY Mellon,"New York, New York, United States",2,1784-06-09,40.7127281,-74.0060152
+677,Airfox,"Boston, Massachusetts, United States",2,2016/01/28,42.3602534,-71.0582912
+678,Outbrain,"New York, New York, United States",1,2006/01/01,40.7127281,-74.0060152
+679,Fiveable,"Milwaukee, Wisconsin, United States",8,2018/04/06,43.0349931,-87.922497
+680,SoLo Funds,"Los Angeles, California, United States",2,2016/03/17,34.0536909,-118.2427666
+681,Treebo Hotels,"Bengaluru, Karnataka, India",1,2015/06/01,12.9791198,77.5912997
+682,Holidu,"Munich, Bayern, Germany",11,2014/01/01,48.1371079,11.5753822
+683,Evotec,"Hamburg, Hamburg, Germany",4,1993/01/01,49.023014,11.808202
+684,RetailMeNot,"Austin, Texas, United States",3,2007/05/01,30.2711286,-97.7436995
+685,HackerOne,"San Francisco, California, United States",6,2012/01/01,37.7790262,-122.4199061
+686,Factris,"Amsterdam, Noord-Holland, The Netherlands",2,2017/01/01,52.3727598,4.8936041
+687,European Commission,"Brussels, Brussels Hoofdstedelijk Gewest, Belgium",11,1958/01/16,50.8465573,4.351697
+688,Kit,"New York, New York, United States",11,2015/01/01,40.7127281,-74.0060152
+689,Eventbrite,"San Francisco, California, United States",1,2006/01/01,37.7790262,-122.4199061
+690,Jopwell,"New York, New York, United States",11,2014/09/01,40.7127281,-74.0060152
+691,Li Auto,"Beijing, Beijing, China",9,2015/01/01,39.9020668,116.718583
+692,Alfresco,"San Mateo, California, United States",1,2005/01/01,37.496904,-122.3330573
+693,Carbon Health,"San Francisco, California, United States",4,2015/07/01,37.7790262,-122.4199061
+694,Cobalt,"San Francisco, California, United States",6,2013/07/01,37.7790262,-122.4199061
+695,Esusu Financial,"New York, New York, United States",2,2016/05/01,40.7127281,-74.0060152
+696,Seattle Genetics,"Bothell, Washington, United States",4,1998/01/01,47.7598697,-122.2068288
+697,IFTTT,"San Francisco, California, United States",1,2010/12/14,37.7790262,-122.4199061
+698,Pcysys,"Petah Tiqva, HaMerkaz, Israel",6,2015/11/01,32.0866,34.8851
+699,ZeroFOX,"Baltimore, Maryland, United States",6,2013/01/01,39.2908816,-76.610759
+700,Stash,"New York, New York, United States",2,2015/02/19,40.7127281,-74.0060152
+701,N3,"Atlanta, Georgia, United States",1,2004/01/01,33.7490987,-84.3901849
+702,Vault,"Austin, Texas, United States",2,2013/01/01,30.2711286,-97.7436995
+703,Kucoin,"Singapore, Central Region, Singapore",2,2013/01/01,16.7796467,96.175243
+704,LabCorp,"Burlington, North Carolina, United States",4,1978/09/05,36.0956918,-79.4377991
+705,DroneDeploy,"San Francisco, California, United States",7,2013/01/01,37.7790262,-122.4199061
+706,Huboo,"Bath, Bath and North East Somerset, United Kingdom",3,2017/01/01,51.3813864,-2.3596963
+707,Zopa,"London, England, United Kingdom",2,2004/01/01,51.5073219,-0.1276474
+708,MK Decision,"San Diego, California, United States",2,2015/07/22,32.7174209,-117.1627714
+709,Eclypsium,"Portland, Oregon, United States",6,2017/06/01,45.5202471,-122.6741949
+710,Konfio,"Mexico City, Distrito Federal, Mexico",2,2013/04/01,19.4326296,-99.1331785
+711,Regeneron Pharmaceuticals,"Tarrytown, New York, United States",4,1988/01/01,41.0762077,-73.8587461
+712,Investcorp,"Manama, Al Manamah, Bahrain",2,1982/01/01,26.2332249,50.5779259
+713,Domo,"American Fork, Utah, United States",5,2010/01/01,40.3768954,-111.7957645
+714,Casper,"New York, New York, United States",3,2014/01/01,40.7127281,-74.0060152
+715,Coil,"San Francisco, California, United States",1,2018/04/26,37.7790262,-122.4199061
+716,Loom,"San Francisco, California, United States",1,2016/09/01,37.7790262,-122.4199061
+717,Node,"San Francisco, California, United States",5,2014/01/01,37.7790262,-122.4199061
+718,LEAD School,"Mumbai, Maharashtra, India",8,2012/01/01,18.9387711,72.8353355
+719,Babylon Health,"London, England, United Kingdom",5,2013/01/01,51.5073219,-0.1276474
+720,Immunomedics,"Morris Plains, New Jersey, United States",4,1982/07/01,40.8364845,-74.47818854
+721,Fanatics,"Jacksonville, Florida, United States",7,1995/01/01,30.3321838,-81.655651
+722,Novavax,"Gaithersburg, Maryland, United States",4,1987/01/01,39.1434406,-77.2013705
+723,HMD,"Helsinki, Southern Finland, Finland",7,2016/12/01,60.1674098,24.9425769
+724,Sanity,"San Francisco, California, United States",1,2016/01/01,37.7790262,-122.4199061
+725,Droom,"Haryana, Haryana, India",9,2014/01/01,28.4808629,77.0848883
+726,Practo,"Bangalore, Karnataka, India",4,2008/01/01,12.9791198,77.5912997
+727,BYJU’S,"Bangalore, Karnataka, India",8,2011/11/30,12.9791198,77.5912997
+728,Camino Financial,"Los Angeles, California, United States",5,2014/01/01,34.0536909,-118.2427666
+729,Astroscale,"Sumida, Tokyo, Japan",1,2013/05/04,35.700429,139.805017
+730,Nav,"Draper, Utah, United States",2,2012/05/01,40.5246711,-111.8638226
+731,MercadoLibre,"Buenos Aires, Distrito Federal, Argentina",3,1999/08/02,-34.603722,-58.381592
+732,Clio,"Vancouver, British Columbia, Canada",1,2008/10/01,49.2608724,-123.1139529
+733,Withings,"Issy-les-moulineaux, Ile-de-France, France",7,2008/06/01,48.8250508,2.273457
+734,Magic Leap,"Plantation, Florida, United States",7,2011/01/01,26.1265258,-80.25786124
+735,Ginkgo Bioworks,"Boston, Massachusetts, United States",4,2008/01/01,42.3602534,-71.0582912
+736,Aziyo Biologics,"Silver Spring, Maryland, United States",4,2015/01/01,38.9959461,-77.0276231
+737,BetterCloud,"New York, New York, United States",1,2011/11/01,40.7127281,-74.0060152
+738,Deezer,"Paris, Ile-de-France, France",1,2006/08/01,48.8566969,2.3514616
+739,BBC,"London, England, United Kingdom",11,1922/10/18,51.5073219,-0.1276474
+740,BANDWAGON,"Greenville, South Carolina, United States",5,2014/05/01,35.612661,-77.3663538
+741,LogPoint,"Copenhagen, Hovedstaden, Denmark",6,2001/01/01,55.6867243,12.5700724
+742,Redis Labs,"Mountain View, California, United States",5,2011/01/01,37.3893889,-122.0832101
+743,Jupiter,"San Francisco, California, United States",9,2019/01/01,37.7790262,-122.4199061
+744,Zume Pizza,"Mountain View, California, United States",10,2015/09/08,37.3893889,-122.0832101
+745,JobGet,"Boston, Massachusetts, United States",1,2018/01/01,42.3602534,-71.0582912
+746,OfferUp,"Bellevue, Washington, United States",3,2011/01/01,47.6144219,-122.1923372
+747,Intuit,"Mountain View, California, United States",2,1983/01/01,37.3893889,-122.0832101
+748,comScore,"Reston, Virginia, United States",5,1999/08/01,38.9583737,-77.3579805
+749,Privitar,"London, England, United Kingdom",6,2014/11/15,51.5073219,-0.1276474
+750,Vericool,"Livermore, California, United States",10,2015/01/01,37.6820583,-121.7680531
+751,Rapid7,"Boston, Massachusetts, United States",6,2000/01/01,42.3602534,-71.0582912
+752,Trax,"Singapore, Central Region, Singapore",5,2010/01/01,16.7796467,96.175243
+753,Zuora,"San Mateo, California, United States",2,2007/01/01,37.496904,-122.3330573
+754,Kik,"Waterloo, Ontario, Canada",1,2009/01/01,43.466874,-80.524635
+755,DataRobot,"Boston, Massachusetts, United States",7,2012/06/01,42.3602534,-71.0582912
+756,Weee!,"Fremont, California, United States",3,2015/06/01,37.5482697,-121.9885719
+757,Acorns,"Irvine, California, United States",2,2012/02/29,33.6856969,-117.8259819
+758,StackShare,"San Francisco, California, United States",1,2014/01/01,37.7790262,-122.4199061
+759,Care/of,"New York, New York, United States",4,2016/01/01,40.7127281,-74.0060152
+760,Lineage Logistics,"Novi, Michigan, United States",9,2012/01/01,42.48059,-83.4754913
+761,CORE-POWER (UK) Ltd,"London, England, United Kingdom",11,2018/12/18,51.5073219,-0.1276474
+762,Luno,"London, England, United Kingdom",2,2013/01/01,51.5073219,-0.1276474
+763,PropertyGuru Group,"Singapore, Central Region, Singapore",3,2006/01/01,16.7796467,96.175243
+764,Arista Networks,"Santa Clara, California, United States",7,2004/01/01,37.2333253,-121.6846349
+765,Securitize,"San Francisco, California, United States",2,2017/11/01,37.7790262,-122.4199061
+766,Ripjar,"Cheltenham, Gloucestershire, United Kingdom",6,2012/01/01,51.8995685,-2.0711559
+767,Remotion,"San Francisco, California, United States",1,2019/01/01,37.7790262,-122.4199061
+768,SimpleCitizen,"Salt Lake City, Utah, United States",1,2014/01/01,40.7596198,-111.8867975
+769,OneLogin,"San Francisco, California, United States",5,2009/01/01,37.7790262,-122.4199061
+770,Ocado Group,"Hatfield, Hertford, United Kingdom",3,2000/01/01,51.7779401,-0.1037618
+771,Grid AI,"New York, New York, United States",5,2019/01/01,40.7127281,-74.0060152
+772,MCaffeine,"Mumbai, Maharashtra, India",3,2015/01/01,18.9387711,72.8353355
+773,SiFive,"San Mateo, California, United States",7,2015/09/01,37.496904,-122.3330573
+774,Kinside,"San Francisco, California, United States",1,2018/06/01,37.7790262,-122.4199061
+775,Greenlight Planet,"Chicago, Illinois, United States",7,2009/01/01,41.8755616,-87.6244212
+776,NoBroker,"Bangalore, Karnataka, India",1,2014/01/01,12.9791198,77.5912997
+777,Within3,"Lakewood, Ohio, United States",4,2008/01/01,41.4819932,-81.7981908
+778,Bread,"New York, New York, United States",2,2014/01/01,40.7127281,-74.0060152
+779,People.ai,"San Francisco, California, United States",5,2016/02/03,37.7790262,-122.4199061
+780,Scopely,"Culver City, California, United States",1,2011/01/01,34.0211224,-118.3964665
+781,Naver Corporation,"Seongnam, Kyonggi-do, South Korea",11,1999/06/01,37.4201556,127.1262092
+782,UJET,"San Francisco, California, United States",1,2015/01/01,37.7790262,-122.4199061
+783,Course Hero,"Redwood City, California, United States",8,2006/10/01,37.4863239,-122.232523
+784,Paytm First Games,"Noida, Uttar Pradesh, India",1,2018/01/01,28.5356329,77.3910727
+785,SimilarWeb,"New York, New York, United States",5,2007/08/01,40.7127281,-74.0060152
+786,Ava,"Zürich, Zurich, Switzerland",4,2014/09/11,47.3723941,8.5423328
+787,Melorra,"Bengaluru, Karnataka, India",3,2015/01/01,12.9791198,77.5912997
+788,Sweetheart Kitchen,"Dubai, Dubai, United Arab Emirates",10,2019/04/16,25.0750095,55.18876088
+789,Bowery Farming,"New York, New York, United States",10,2015/01/01,40.7127281,-74.0060152
+790,Viberate,"Ljubljana, Ljubljana Urban Commune, Slovenia",5,2015/12/09,46.056946,14.505751
+791,Ruby Love,"New York, New York, United States",4,2015/12/05,40.7127281,-74.0060152
+792,Lightspeed POS,"Montréal, Quebec, Canada",3,2005/03/20,45.4972159,-73.6103642
+793,Company,"Sag Harbor, New York, United States",1,2011/01/01,40.9978727,-72.2922292
+794,Vir Biotechnology,"San Francisco, California, United States",4,2016/04/07,37.7790262,-122.4199061
+795,Freshtohome,"Bangalore, Karnataka, India",10,2015/08/01,12.9791198,77.5912997
+796,Looker,"Santa Cruz, California, United States",5,2011/01/01,37.050096,-121.9905908
+797,Revl,"San Francisco, California, United States",7,2015/01/01,37.7790262,-122.4199061
+798,JFrog,"Sunnyvale, California, United States",1,2008/04/28,37.3688301,-122.0363496
+799,Clearcover,"Chicago, Illinois, United States",2,2016/01/01,41.8755616,-87.6244212
+800,Noyo,"San Francisco, California, United States",4,2017/10/01,37.7790262,-122.4199061
+801,GoodRx,"Santa Monica, California, United States",4,2011/01/01,34.0250724,-118.4965129
+802,Sonder,"San Francisco, California, United States",11,2012/07/01,37.7790262,-122.4199061
+803,Nuvia,"Santa Clara, California, United States",1,2019/01/01,37.2333253,-121.6846349
+804,Accolade,"Plymouth Meeting, Pennsylvania, United States",4,2007/01/01,40.102332,-75.2743467
+805,PolicyBazaar,"Gurgaon, Haryana, India",2,2008/06/01,28.4646148,77.0299194
+806,K Health,"New York, New York, United States",5,2016/01/01,40.7127281,-74.0060152
+807,Guild Education,"Denver, Colorado, United States",8,2015/06/01,39.7392364,-104.9848623
+808,Sigma Computing,"San Francisco, California, United States",5,2014/01/01,37.7790262,-122.4199061
+809,SaltStack,"Lehi, Utah, United States",1,2012/08/01,40.3880902,-111.8491619
+810,Oncorus,"Cambridge, Massachusetts, United States",4,2015/04/01,42.3750997,-71.1056157
+811,Amazon Web Services,"Seattle, Washington, United States",1,2012/01/01,47.6038321,-122.3300624
+812,Dwolla,"Des Moines, Iowa, United States",2,2008/06/16,41.5910641,-93.6037149
+813,G-Loot,"Stockholm, Stockholms Lan, Sweden",1,2015/01/01,59.3251172,18.0710935
+814,SmartAsset,"New York, New York, United States",5,2012/01/01,40.7127281,-74.0060152
+815,Fast,"San Francisco, California, United States",6,2019/03/01,37.7790262,-122.4199061
+816,Metromile,"San Francisco, California, United States",9,2011/01/19,37.7790262,-122.4199061
+817,Wipro Technologies,"Bengaluru, Karnataka, India",1,1945/01/01,12.9791198,77.5912997
+818,New Relic,"San Francisco, California, United States",5,2008/02/01,37.7790262,-122.4199061
+819,boAt,"Mumbai, Maharashtra, India",11,2016/01/01,18.9387711,72.8353355
+820,Oak Street Health,"Chicago, Illinois, United States",4,2012/01/01,41.8755616,-87.6244212
+821,DataScience.com,"Culver City, California, United States",5,2014/01/01,34.0211224,-118.3964665
+822,Gigster,"San Francisco, California, United States",1,2013/01/01,37.7790262,-122.4199061
+823,Onsitego,"Mumbai, Maharashtra, India",7,2010/01/01,18.9387711,72.8353355
+824,Olo,"New York, New York, United States",3,2005/01/01,40.7127281,-74.0060152
+825,Finch,"Boston, Massachusetts, United States",2,2019/05/01,42.3602534,-71.0582912
+826,Notion,"San Francisco, California, United States",1,2013/01/01,37.7790262,-122.4199061
+827,Bitwise Industries,"Fresno, California, United States",8,2013/07/01,36.7394421,-119.7848307
+828,Coupang,"Seoul, Seoul-t'ukpyolsi, South Korea",3,2010/01/01,37.5326,127.024612
+829,Mastercard,"Purchase, New York, United States",2,1966/12/16,41.0409305,-73.7145746
+830,Moovit,"Ness Ziona, HaMerkaz, Israel",9,2012/02/01,31.92933,34.79868
+831,Plug Power,"Latham, New York, United States",7,1997/01/01,42.7444055,-73.761563
+832,Toast,"Boston, Massachusetts, United States",1,2011/12/22,42.3602534,-71.0582912
+833,PasarPolis,"Jakarta, Jakarta Raya, Indonesia",2,2015/03/01,-6.1753942,106.827183
+834,NormShield,"Vienna, Virginia, United States",6,2016/02/16,38.9013729,-77.2651762
+835,Edgify,"London, England, United Kingdom",5,2015/01/01,51.5073219,-0.1276474
+836,NextCapital,"Chicago, Illinois, United States",2,1996/01/01,41.8755616,-87.6244212
+837,Fluree,"Winston Salem, North Carolina, United States",1,2017/01/01,36.0998131,-80.2440518
+838,Fanatiz,"Miami, Florida, United States",11,2017/01/01,25.7742658,-80.1936589
+839,H2O.ai,"Mountain View, California, United States",5,2012/01/01,37.3893889,-122.0832101
+840,Golden,"San Francisco, California, United States",8,2017/01/01,37.7790262,-122.4199061
+841,Houzz,"Palo Alto, California, United States",11,2009/01/01,37.4443293,-122.1598465
+842,Rever,"San Mateo, California, United States",1,2015/05/07,37.496904,-122.3330573
+843,Telstra,"Melbourne, Victoria, Australia",1,1975/07/01,-37.8142176,144.9631608
+844,Storj Labs,"Atlanta, Georgia, United States",1,2014/01/01,33.7490987,-84.3901849
+845,BigPanda,"Mountain View, California, United States",1,2012/01/01,37.3893889,-122.0832101
+846,Menlo Micro,"Irvine, California, United States",7,2016/12/02,33.6856969,-117.8259819
+847,Manticore Games,"San Mateo, California, United States",11,2016/01/01,37.496904,-122.3330573
+848,WhatsApp,"Santa Clara, California, United States",1,2009/01/01,37.2333253,-121.6846349
+849,Split Software,"Redwood City, California, United States",5,2015/10/15,37.4863239,-122.232523
+850,Miso Robotics,"Pasadena, California, United States",10,2016/07/01,34.1476452,-118.1444779
+851,Copper,"San Francisco, California, United States",1,2011/01/01,37.7790262,-122.4199061
+852,OnDeck,"New York, New York, United States",2,2007/01/01,40.7127281,-74.0060152
+853,BitPay,"Atlanta, Georgia, United States",2,2011/05/01,33.7490987,-84.3901849
+854,Vox Media,"Washington, District of Columbia, United States",1,2003/07/14,38.8949924,-77.0365581
+855,Forage,"San Francisco, California, United States",8,2017/01/01,37.7790262,-122.4199061
+856,Agora.io,"Santa Clara, California, United States",1,2012/01/01,37.2333253,-121.6846349
+857,OneWeb,"London, England, United Kingdom",1,2012/01/01,51.5073219,-0.1276474
+858,DrChrono,"Sunnyvale, California, United States",4,2009/01/01,37.3688301,-122.0363496
+859,Ping An,"Shenzhen, Guangdong, China",4,1988/01/01,22.555454,114.0543297
+860,H1,"New York, New York, United States",5,2017/11/30,40.7127281,-74.0060152
+861,Daring Foods,"Los Angeles, California, United States",10,2018/01/01,34.0536909,-118.2427666
+862,Bulletproof,"Seattle, Washington, United States",10,2014/01/01,47.6038321,-122.3300624
+863,Goldbelly,"New York, New York, United States",10,2012/01/01,40.7127281,-74.0060152
+864,Gymshark,"Solihull, Solihull, United Kingdom",11,2012/01/01,52.4146286,-1.7888672
+865,FanDuel,"New York, New York, United States",1,2007/01/01,40.7127281,-74.0060152
+866,Monte Rosa Therapeutics,"Basel, Basel-Stadt, Switzerland",4,2018/01/01,47.5581077,7.5878261
+867,Yummy Corp,"Tangerang, Jawa Barat, Indonesia",10,2019/06/01,-6.8211746,107.1434435
+868,Toss,"Seoul, Seoul-t'ukpyolsi, South Korea",2,2011/01/01,37.5326,127.024612
+869,Allianz,"München, Bayern, Germany",2,1890-01-01,48.1371079,11.5753822
+870,Switch,"New York, New York, United States",1,2014/01/01,40.7127281,-74.0060152
+871,Blue Apron,"New York, New York, United States",10,2012/01/01,40.7127281,-74.0060152
+872,Kaltura,"New York, New York, United States",8,2006/06/01,40.7127281,-74.0060152
+873,Momentus Inc.,"Santa Clara, California, United States",9,2017/11/01,37.2333253,-121.6846349
+874,Financepeer,"Mumbai, Maharashtra, India",2,2017/01/01,18.9387711,72.8353355
+875,Sensor Tower,"San Francisco, California, United States",5,2013/01/01,37.7790262,-122.4199061
+876,Chime,"San Francisco, California, United States",2,2013/01/01,37.7790262,-122.4199061
+877,Virtusa,"Westborough, Massachusetts, United States",1,1996/01/01,42.2694308,-71.6129907
+878,Mosaic,"Oakland, California, United States",2,2011/01/01,37.8044557,-122.2713563
+879,Signal,"Chicago, Illinois, United States",5,2009/09/26,41.8755616,-87.6244212
+880,Acer,"Taipei, T'ai-pei, Taiwan",7,1976/08/01,25.105497,121.597366
+881,Glossier,"New York, New York, United States",11,2010/01/01,40.7127281,-74.0060152
+882,Chewy,"Dania, Florida, United States",3,2011/06/01,47.6032433,-122.3366562
+883,Bakkt,"Atlanta, Georgia, United States",2,2018/01/01,33.7490987,-84.3901849
+884,Newlight Technologies,"Irvine, California, United States",7,2003/01/01,33.6856969,-117.8259819
+885,Dataminr,"New York, New York, United States",5,2009/01/01,40.7127281,-74.0060152
+886,Qihoo 360 Technology,"Beijing, Beijing, China",6,2005/06/01,39.9020668,116.718583
+887,LOOM,"Los Angeles, California, United States",4,2016/01/01,34.0536909,-118.2427666
+888,General Motors,"Detroit, Michigan, United States",9,1908/09/16,42.3315509,-83.0466403
+889,Honey,"Los Angeles, California, United States",3,2012/10/01,34.0536909,-118.2427666
+890,GetYourGuide,"Berlin, Berlin, Germany",1,2009/01/01,52.5170365,13.3888599
+891,Exotec Solutions,"Lille, Nord-Pas-de-Calais, France",9,2015/01/01,50.7215699,1.6033016
+892,Feedzai,"San Mateo, California, United States",5,2011/01/01,37.496904,-122.3330573
+893,Capitolis,"New York, New York, United States",2,2017/01/01,40.7127281,-74.0060152
+894,Mavenir,"Richardson, Texas, United States",6,2005/01/01,32.9481789,-96.7297206
+895,ReadCoor,"Cambridge, Massachusetts, United States",4,2016/09/01,42.3750997,-71.1056157
+896,Scentbird,"New York, New York, United States",3,2014/01/15,40.7127281,-74.0060152
+897,Finicity,"Salt Lake City, Utah, United States",6,1999/01/01,40.7596198,-111.8867975
+898,Liberty Global,"London, England, United Kingdom",1,2004/01/01,51.5073219,-0.1276474
+899,Covestro,"Leverkusen, Nordrhein-Westfalen, Germany",7,2015/09/01,51.0324743,6.9881194
+900,Revolut,"London, England, United Kingdom",2,2015/07/01,51.5073219,-0.1276474
+901,AppLovin,"Palo Alto, California, United States",1,2012/03/01,37.4443293,-122.1598465
+902,Numan,"London, England, United Kingdom",11,2018/01/01,51.5073219,-0.1276474
+903,Verily,"San Francisco, California, United States",7,2015/12/07,37.7790262,-122.4199061
+904,LeddarTech,"Quebec, Quebec, Canada",9,2007/01/01,46.8259601,-71.2352226
+905,Snyk,"London, England, United Kingdom",6,2015/07/07,51.5073219,-0.1276474
+906,Pivotal,"San Francisco, California, United States",5,2013/04/01,37.7790262,-122.4199061
+907,Happiest Minds Technolgoies,"Bangalore, Karnataka, India",5,2011/08/29,12.9791198,77.5912997
+908,Imperfect Foods,"San Francisco, California, United States",10,2015/07/01,37.7790262,-122.4199061
+909,AppDynamics,"San Francisco, California, United States",5,2008/04/01,37.7790262,-122.4199061
+910,Iron Ox,"San Carlos, California, United States",7,2015/01/01,37.504936,-122.2618236
+911,Druva,"Sunnyvale, California, United States",1,2008/08/02,37.3688301,-122.0363496
+912,Zscaler,"San Jose, California, United States",6,2008/01/01,37.3361905,-121.8905833
+913,Schneider Electric,"Rueil-malmaison, Ile-de-France, France",1,1836-01-01,48.87778,2.1802832
+914,Eargo,"San Jose, California, United States",4,2010/01/01,37.3361905,-121.8905833
+915,Bank of America,"Charlotte, North Carolina, United States",2,1998/07/31,35.2272,-80.843083
+916,SwineTech,"Cedar Rapids, Iowa, United States",5,2015/01/01,41.9758872,-91.6704053
+917,DataStax,"Santa Clara, California, United States",5,2010/03/31,37.2333253,-121.6846349
+918,WISeKey,"Geneva, Geneve, Switzerland",6,1999/01/01,46.2017559,6.1466014
+919,iZettle,"Stockholm, Stockholms Lan, Sweden",2,2010/04/01,59.3251172,18.0710935
+920,ShoppingGives,"Chicago, Illinois, United States",3,2015/01/01,41.8755616,-87.6244212
+921,Biobot Analytics,"Cambridge, Massachusetts, United States",5,2017/09/01,42.3750997,-71.1056157
+922,Ledger,"Paris, Ile-de-France, France",6,2013/01/01,48.8566969,2.3514616
+923,Neo4j,"San Mateo, California, United States",5,2007/01/01,37.496904,-122.3330573
+924,Amwell,"Boston, Massachusetts, United States",4,2006/01/01,42.3602534,-71.0582912
+925,Halodoc,"Jakarta, Jakarta Raya, Indonesia",4,2016/01/01,-6.1753942,106.827183
+926,Inflazome,"Dublin, Dublin, Ireland",4,2016/01/01,53.3497645,-6.2602732
+927,Prenetics,"Quarry Bay, Hong Kong Island, Hong Kong",4,2009/01/01,22.302711,114.177216
+928,Fundbox,"San Francisco, California, United States",2,2013/01/01,37.7790262,-122.4199061
+929,ActiveCampaign,"Chicago, Illinois, United States",1,2003/01/01,41.8755616,-87.6244212
+930,Sociolla,"Jakarta, Jakarta Raya, Indonesia",3,2014/01/01,-6.1753942,106.827183
+931,ACV,"Buffalo, New York, United States",9,2014/01/01,42.8867166,-78.8783922
+932,Fireflies.ai,"San Francisco, California, United States",1,2016/07/01,37.7790262,-122.4199061
+933,Claravine,"Provo, Utah, United States",5,2012/01/01,40.2338438,-111.6585337
+934,Zebra Technologies,"Lincolnshire, Illinois, United States",9,1991/01/01,42.1900249,-87.9084039
+935,Sunrun,"San Francisco, California, United States",11,2007/01/01,37.7790262,-122.4199061
+936,tray.io,"San Francisco, California, United States",1,2012/04/14,37.7790262,-122.4199061
+937,Joint Academy,"Malmö, Skane Lan, Sweden",4,2014/08/01,55.6052931,13.0001566
+938,Safaricom,"Nairobi, Nairobi Area, Kenya",1,1997/04/01,-1.2832533,36.8172449
+939,TransparentBusiness,"New York, New York, United States",1,2015/06/22,40.7127281,-74.0060152
+940,Beauty Bakerie Cosmetics Brand,"San Diego, California, United States",3,2011/01/01,32.7174209,-117.1627714
+941,Barclays,"London, England, United Kingdom",2,1690-11-17,51.5073219,-0.1276474
+942,Data Gumbo,"Houston, Texas, United States",1,2016/08/16,29.7589382,-95.3676974
+943,Deposit Solutions,"Hamburg, Hamburg, Germany",2,2011/01/01,49.023014,11.808202
+944,Lendtable,"San Francisco, California, United States",2,2020/03/01,37.7790262,-122.4199061
+945,Walker & Company Brands,"Palo Alto, California, United States",4,2013/04/18,37.4443293,-122.1598465
+946,Roam Research,"San Francisco, California, United States",1,2017/10/26,37.7790262,-122.4199061
+947,BharatPe,"New Delhi, Delhi, India",2,2018/04/01,28.6138954,77.2090057
+948,Foursquare,"New York, New York, United States",5,2009/03/01,40.7127281,-74.0060152
+949,Roofstock,"Oakland, California, United States",3,2015/01/01,37.8044557,-122.2713563
+950,Synthego,"Redwood City, California, United States",5,2012/07/01,37.4863239,-122.232523
+951,Element AI,"Montréal, Quebec, Canada",5,2016/10/25,45.4972159,-73.6103642
+952,Ryanair,"Swords, Dublin, Ireland",11,1985/01/01,53.4720536,-6.223144167
+953,SAP,"Walldorf, Baden-Wurttemberg, Germany",1,1972/04/01,49.3038134,8.6433518
+954,Uptake Technologies,"Chicago, Illinois, United States",5,2014/07/01,41.8755616,-87.6244212
+955,TIER Mobility,"Berlin, Berlin, Germany",11,2018/07/01,52.5170365,13.3888599
+956,C3,"Redwood City, California, United States",5,2009/01/01,37.4863239,-122.232523
+957,Canada Pension Plan Investment Board,"Toronto, Ontario, Canada",2,1997/01/01,43.6534817,-79.3839347
+958,Stillfront Group,"Linköping, Ostergotlands Lan, Sweden",11,2007/01/01,58.4098135,15.6245252
+959,Quantum,"San Jose, California, United States",1,1980/01/01,37.3361905,-121.8905833
+960,MoneyLion,"New York, New York, United States",2,2013/01/01,40.7127281,-74.0060152
+961,WinZO,"New Delhi, Delhi, India",1,2018/04/01,28.6138954,77.2090057
+962,Northspyre,"Brooklyn, New York, United States",1,2017/01/01,40.6501038,-73.9495823
+963,BOND,"New York, New York, United States",3,2013/01/01,40.7127281,-74.0060152
+964,Good Buy Gear,"Arvada, Colorado, United States",3,2016/09/01,39.8211225,-105.220743
+965,Agilent Technologies,"Santa Clara, California, United States",7,1999/01/01,37.2333253,-121.6846349
+966,QUIN,"Berlin, Berlin, Germany",2,2020/03/01,52.5170365,13.3888599
+967,Boxed,"New York, New York, United States",3,2013/06/01,40.7127281,-74.0060152
+968,Romeo Power,"Los Angeles, California, United States",7,2015/01/01,34.0536909,-118.2427666
+969,Dedrone,"San Francisco, California, United States",7,2014/01/01,37.7790262,-122.4199061
+970,Bitmain,"Beijing, Beijing, China",7,2013/01/01,39.9020668,116.718583
+971,Branch,"Redwood City, California, United States",1,2014/04/15,37.4863239,-122.232523
+972,Faraday Future,"Gardena, California, United States",9,2014/04/01,33.8963593,-118.3053037
+973,HackerRank,"Mountain View, California, United States",1,2009/01/01,37.3893889,-122.0832101
+974,Shippeo,"Paris, Ile-de-France, France",9,2014/01/01,48.8566969,2.3514616
+975,Episerver,"Nashua, New Hampshire, United States",3,1994/01/08,42.7653662,-71.467566
+976,Cyberpion,"Tel Aviv, Tel Aviv, Israel",6,2016/01/01,32.0804808,34.7805274
+977,Actifio,"Waltham, Massachusetts, United States",1,2009/07/01,42.3756401,-71.2358004
+978,SunPower,"San Jose, California, United States",11,1985/01/01,37.3361905,-121.8905833
+979,Grofers,"Gurgaon, Haryana, India",3,2013/12/27,28.4646148,77.0299194
+980,U.S. Department of Education,"Washington, District of Columbia, United States",8,1980/01/01,38.8949924,-77.0365581
+981,ButterflyMX,"New York, New York, United States",6,2012/03/23,40.7127281,-74.0060152
+982,Unacademy,"Bangalore, Karnataka, India",8,2015/01/01,12.9791198,77.5912997
+983,Campuswire,"New York, New York, United States",8,2016/08/01,40.7127281,-74.0060152
+984,Boxlight Corp.,"Belfair, Washington, United States",7,1985/01/01,47.5023158,-122.7773648
+985,Color,"Burlingame, California, United States",4,2013/01/01,37.5841026,-122.3660825
+986,Claroty,"New York, New York, United States",6,2015/05/15,40.7127281,-74.0060152
+987,October,"Paris, Ile-de-France, France",3,2014/09/01,48.8566969,2.3514616
+988,Starburst,"Boston, Massachusetts, United States",5,2017/10/01,42.3602534,-71.0582912
+989,GetSetUp,"San Francisco, California, United States",1,2019/08/06,37.7790262,-122.4199061
+990,Flytrex,"Tel Aviv, Tel Aviv, Israel",7,2013/11/01,32.0804808,34.7805274
+991,Mollie,"Amsterdam, Noord-Holland, The Netherlands",2,2004/01/01,52.3727598,4.8936041
+992,Lydia,"Paris, Ile-de-France, France",2,2013/01/01,48.8566969,2.3514616
+993,Mahmee,"Los Angeles, California, United States",4,2014/01/01,34.0536909,-118.2427666
+994,SnapLogic,"San Mateo, California, United States",5,2006/01/01,37.496904,-122.3330573
+995,Kraft Heinz,"Mendota, Minnesota, United States",10,2015/07/02,44.8871878,-93.1643869
+996,Zocdoc,"New York, New York, United States",4,2007/09/18,40.7127281,-74.0060152
+997,Infobip,"London, England, United Kingdom",1,2006/01/01,51.5073219,-0.1276474
+998,Pluralsight,"Farmington, Utah, United States",8,2004/01/01,40.9804423,-111.8874688
+999,Rebel,"São Paulo, Sao Paulo, Brazil",2,2016/01/01,-23.5506507,-46.6333824
