@@ -1,0 +1,103 @@
+<html lang="ko">
+
+<head>
+    <style>
+        text {
+            font-family: sans-serif;
+            font-size: 12px;
+            fill: white;
+        }
+        #tooltip {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            padding: 10px;
+            background-color: white;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            -mox-box-shadow: 4px 4px 4px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 4px 4px 10px rbga(0, 0, 0, 0.4);
+        }
+        #tooltip.hidden {
+            opacity: 0;
+        }
+        #tooltip p {
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+}
+
+    </style>
+</head>
+
+<body>
+  <div><p>
+    <!-- -현재 : 모든 인원에 대한 분포
+    <br>
+    - 기업 분류에 따른 전공 분포를 파악해도 좋을 듯
+    <br>
+    - tooltip이 필요해보임 -->
+  </p></div>
+    <svg id="container" height="300" width="500">
+        <g id="body" transform="translate(150,150)"></g>
+        
+        
+    </svg>
+    <div id="tooltip" class="hidden">
+        <p><strong>Label</strong>
+        </p>
+        <p><span id="value">100</span></p>
+    </div>
+</body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="pie_final.js"></script>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>D3.js Step by Step: Step 5 - Adding Tooltips</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet" data-semver="3.0.1" data-require="normalize@*" />
+    <style>
+      #chart {                                                          /* NEW */
+        height: 360px;                                                  /* NEW */
+        position: relative;                                             /* NEW */
+        width: 360px;                                                   /* NEW */
+      }                                                                 /* NEW */
+      .tooltip {                                                        /* NEW */
+        background: #eee;                                               /* NEW */
+        box-shadow: 0 0 5px #999999;                                    /* NEW */
+        color: #333;                                                    /* NEW */
+        display: none;                                                  /* NEW */
+        font-size: 12px;                                                /* NEW */
+        left: 130px;                                                    /* NEW */
+        padding: 10px;                                                  /* NEW */
+        position: absolute;                                             /* NEW */
+        text-align: center;                                             /* NEW */
+        top: 95px;                                                      /* NEW */
+        width: 80px;                                                    /* NEW */
+        z-index: 10;                                                    /* NEW */
+      }                                                                 /* NEW */
+      .legend {
+        font-size: 12px;
+      }
+      rect {
+        stroke-width: 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="chart"></div>
+    <script data-require="d3@*" data-semver="3.4.6" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.min.js"></script>
+    <script src="d3.js"></script>
+    <script src="pie_final.js"></script>
+  </body>
+
+</html> -->
