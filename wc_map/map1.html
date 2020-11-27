@@ -107,7 +107,7 @@
      function handleMouseOver(d) {  // Add interactivity
             console.log(d)
             // Use D3 to select element, change color and size
-            d3.select("circle")
+            d3.selectAll("circle")
                 .data(d)
                 .enter().append("text")
                 console.log(d.long)
