@@ -1,116 +1,244 @@
-<html>
+let svg = d3.select(".my_bar")
 
-<head>
+let margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = +svg.attr("width") - margin.left - margin.right,
+    height = +svg.attr("height") - margin.top - margin.bottom;
 
-</head>
-
-<style>
-
-.legend {
-    font-size: 12px;
-}
-rect {
-    stroke-width: 2;
-}
-
-.bar0 {
-    fill: #8CA2AB;
-    opacity: 0.5;
-}
-
-.bar1 {
-    fill: #F06A93;
-    opacity: 0.5;
-}
-
-.bar2 {
-    fill: #CD59B1;
-    opacity: 0.5;
-}
-
-.bar3 {
-    fill: #A97DD8;
-    opacity: 0.5;
-}
-
-.bar4 {
-    fill: #F38787;
-    opacity: 0.5;
-}
-
-.bar5 {
-    fill: #EF8D5D;
-    opacity: 0.5;
-}
-
-.bar6 {
-    fill:#3FB68E;
-    opacity: 0.5;
-}
-
-.bar7 {
-    fill:#4D78A2;
-    opacity: 0.5;
-}
-
-.bar8 {
-    fill:#3AB5C2;
-    opacity: 0.5;
-}
-
-.bar9 {
-    fill:  #6973F6;
-    opacity: 0.5;
-}
-
-.bar10 {
-    fill: #74ABE2;
-    opacity: 0.5;
-}
+let x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
+let y = d3.scaleLinear().rangeRound([height,0]);
 
 
-</style>
+let g = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-<body>
-    <h2>Total Equity Funding Amount Currency (in USD)</h2>
-    <div id="chart">
-    <svg width="1000" height="700" viewBox="0 0 800 800" class="my_bar"></svg>
-    </div>
-    <form>
-        <label><input class="filter" type="checkbox" id="filter" value="filter">Wish to Filter</label>
-        <p>Select Industries You Are Interested In</p>
-        <label><input class="industry1" type="checkbox" id="industry1_1" value="AllIndustries">All Industries</label>
-        <label><input class="industry1" type="checkbox" id="industry1_2" value="AI">AI</label>
-        <label><input class="industry1" type="checkbox" id="industry1_3" value="Ecommerce">Ecommerce</label>
-        <label><input class="industry1" type="checkbox" id="industry1_4" value="Education">Education</label>
-        <label><input class="industry1" type="checkbox" id="industry1_5" value="F&B">F&B</label>
-        <label><input class="industry1" type="checkbox" id="industry1_6" value="Financial">Financial</label>
-        <label><input class="industry1" type="checkbox" id="industry1_7" value="Healthcare">Healthcare</label>
-        <label><input class="industry1" type="checkbox" id="industry1_8" value='Manufacturing'>Manufacturing</label>
-        <label><input class="industry1" type="checkbox" id="industry1_9" value="Security">Security</label>
-        <label><input class="industry1" type="checkbox" id="industry1_10" value="Software">Software</label>
-        <label><input class="industry1" type="checkbox" id="industry1_11"value="Transportation">Transporation</label>
-        <br>
+
+
+
+d3.csv("final.csv").then(showData)
+//d3.csv("f_data.csv",showData)
+
+/*
+d3.queue()
+.defer(d3.csv, "f_data.csv")
+.await(showData)
+*/
+
+function showData(data) {    
+    x.domain(data.map(function(d) { return d.type; }));
+    
+    maxY = d3.max(data, d => +d.value)
+    //console.log(maxY)
+    //y.domain([0, d3.max(data, function(d) { return +d.value; })]);
+
+    
+
+
+    ind_list = ["AllIndustries", "AI",	"Ecommerce", "Education", "F&B", "Financial","Healthcare","Manufacturing","Security","Software","Transportation"]
+    selected = ind_list //["Artificial Intelligence","Ecommerce","education", "healthcare"]
+    filtered = data.filter(function(d){     
+            return selected.includes(d.ind_list)})
+    
+    console.log(filtered)
+    
+    y.domain([0, d3.max(filtered, function(d) { return +d.value; })*1.2]);
+
+    g.append("g")
+        .attr("class", "axis x_axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x));
+
+
+    g.append("g")
+        .attr("class", "axis y_axis")
+        .call(d3.axisLeft(y));
+
+    
+    
+    
+    
+    g.selectAll(".rect")
+    .data(filtered)
+    .enter().append("rect")
+        .attr("class", function(d) {
+            //console.log(d.ind_list)
+            //console.log(ind_list.indexOf(d.ind_list))
+            return "bar" + ind_list.indexOf(d.ind_list)} )
+        .attr("y", function(d) { 
+            console.log(+d.value)
+            return y(+d.value)})
+        .attr("x", function(d) { return x(d.type)+8 * ind_list.indexOf(d.ind_list); })
+        .attr("height", function(d) { return height - y(+d.value); })
+        .attr("width", x.bandwidth()/4)
         
-        <p>Select Industries You Wish To Highlight</p>
-        <label><input class="industry2" type="checkbox" id="all" value="AllIndustries">All Industries</label>
-        <label><input class="industry2" type="checkbox" value="AI">AI</label>
-        <label><input class="industry2" type="checkbox" value="Ecommerce">Ecommerce</label>
-        <label><input class="industry2" type="checkbox" value="Education">Education</label>
-        <label><input class="industry2" type="checkbox" value="F&B">F&B</label>
-        <label><input class="industry2" type="checkbox" value="Financial">Financial</label>
-        <label><input class="industry2" type="checkbox" value="Healthcare">Healthcare</label>
-        <label><input class="industry2" type="checkbox" value='Manufacturing'>Manufacturing</label>
-        <label><input class="industry2" type="checkbox" value="Security">Security</label>
-        <label><input class="industry2" type="checkbox" value="Software">Software</label>
-        <label><input class="industry2" type="checkbox" value="Transportation">Transporation</label>
-        <br>
+    
+
+    var legend = g.selectAll(".legend")
+                .data(filtered)
+                .enter()
+                .append("g")
+                .attr("class", "legend")
 
 
-    </form>
 
-</body>
-<script src="d3.js"></script>">
-<script src="bar_plot1.js"></script>
+    var legend_keys = ["AllIndustries", "AI",	"Ecommerce", "Education", "F&B", "Financial","Healthcare","Manufacturing","Security","Software","Transportation"]
 
-</html>
+    var lineLegend = svg.selectAll(".legend").data(legend_keys)
+            .enter()
+            .append("g")
+            .attr("class", "legend")
+            
+
+    lineLegend.append("text").text(function(d) {return d;})
+                .attr("transform", "translate(15,9")
+    lineLegend.append("rect").attr("fill", function (d,i) {
+        return "bar"+ind_list.indexOf(d).style("fill")
+    })
+    .attr("width", 10)
+    .attr("height", 10)
+
+    function update() {
+        d3.selectAll(".industry1").each(function(d) {
+            cb = d3.select(this)
+            
+            grp = cb.property("value")
+            
+    
+            if(cb.property("checked")) {
+                //g.selectAll("."+grp).transition().style("opacity", 1)
+                //console.log(cb.property("value"))
+                //console.log(ind_list.indexOf(cb.property("value")))
+                num = ind_list.indexOf(cb.property("value")) + 1
+                //console.log(num)
+                //var b = document.getElementsByClassName("bar"+num)
+                //bar.style["opacity"] = 1;
+                //b.opacity = 1
+                g.selectAll(".bar"+num).transition().style("opacity",0.2)
+
+
+                
+                //elem.style.setProperty('opacity', 1)
+                
+    
+            }
+            else {
+                num = ind_list.indexOf(cb.property("value")) + 1
+                g.selectAll(".bar"+num).transition().style("opacity",0)
+                
+            }
+            
+            
+        })
+        d3.selectAll(".industry2").each(function(d) {
+            cb = d3.select(this)
+            
+            grp = cb.property("value")
+            
+    
+            if(cb.property("checked")) {
+                //g.selectAll("."+grp).transition().style("opacity", 1)
+                console.log(cb.property("value"))
+                //console.log(ind_list.indexOf(cb.property("value")))
+                num = ind_list.indexOf(cb.property("value")) + 1
+                //console.log(num)
+                //var b = document.getElementsByClassName("bar"+num)
+                //bar.style["opacity"] = 1;
+                //b.opacity = 1
+                g.selectAll(".bar"+num).transition().style("opacity",1)
+
+
+                
+                //elem.style.setProperty('opacity', 1)
+                
+    
+            }
+            
+        })
+        
+
+    }
+    /*
+    d3.selectAll(".industry1").on("change",update)
+    update()
+    d3.selectAll(".industry2").on("change",update)
+    update()
+    */
+
+}
+
+
+
+function update() {
+    d3.selectAll(".filter").each(function(d) {
+        bt = d3.select(this)
+        if(bt.property("checked")) {
+            g.select(".bar0").transition().style("opacity",0)
+            g.select(".bar1").transition().style("opacity",0)
+            g.select(".bar2").transition().style("opacity",0)
+            g.selectAll(".bar3").transition().style("opacity",0)
+            g.selectAll(".bar4").transition().style("opacity",0)
+            g.selectAll(".bar5").transition().style("opacity",0)
+            g.selectAll(".bar6").transition().style("opacity",0)
+            g.selectAll(".bar7").transition().style("opacity",0)
+            
+            
+            
+            d3.selectAll(".industry1").each(function(d) {
+                cb = d3.select(this)
+                
+                grp = cb.property("value")
+                
+        
+                if(cb.property("checked")) {
+                    
+                    num = ind_list.indexOf(cb.property("value")) 
+                   
+                    g.selectAll(".bar"+num).transition().style("opacity",0.25)
+        
+                }
+                else {
+                    num = ind_list.indexOf(cb.property("value")) 
+                    g.selectAll(".bar"+num).transition().style("opacity",0)
+                    
+                }
+                
+                
+            })
+
+            d3.selectAll(".industry2").each(function(d) {
+                cb = d3.select(this)
+                
+                grp = cb.property("value")
+                
+        
+                if(cb.property("checked")) {
+                    //g.selectAll("."+grp).transition().style("opacity", 1)
+                    console.log(cb.property("value"))
+                    //console.log(ind_list.indexOf(cb.property("value")))
+                    num = ind_list.indexOf(cb.property("value")) 
+                    //console.log(num)
+                    //var b = document.getElementsByClassName("bar"+num)
+                    //bar.style["opacity"] = 1;
+                    //b.opacity = 1
+                    g.selectAll(".bar"+num).transition().style("opacity",1)
+        
+        
+                    
+                    //elem.style.setProperty('opacity', 1)
+                    
+        
+                }
+                
+            })
+            
+        
+        
+        }
+    }
+    )}
+
+d3.selectAll("filter").on("change",update)
+update()
+d3.selectAll(".industry1").on("change",update)
+update()
+d3.selectAll(".industry2").on("change",update)
+update()
