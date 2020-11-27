@@ -14,16 +14,16 @@ let g = svg.append("g")
 
 
 
-d3.csv("final.csv").then(showData)
+//d3.csv("final.csv").then(showData)
 //d3.csv("f_data.csv",showData)
 
-/*
+
 d3.queue()
 .defer(d3.csv, "f_data.csv")
 .await(showData)
-*/
 
-function showData(data) {    
+
+function showData(error, data) {    
     x.domain(data.map(function(d) { return d.type; }));
     
     maxY = d3.max(data, d => +d.value)
