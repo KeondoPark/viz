@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
+</head>
+
+<style>
+  svg circle {
+  fill: black;
+  opacity: .8;
+  /* stroke: white; */
+  }
+  svg circle:hover {
+  fill: green;
+  /* stroke: #333; */
+  }
+  
+  svg text {
+  pointer-events: none;
+  }
+
+  svg .municipality {
+  fill: #efefef;
+  stroke: #fff;
+  }
+  svg .municipality-label {
+  fill: #bbb;
+  font-size: 12px;
+  font-weight: 300;
+  text-anchor: middle;
+  }
+  svg #map text {
+  color: #333;
+  font-size: 10px;
+  text-anchor: middle;
+  }
+  svg places text {
+  color: #777;
+  font: 10px fantasy;
+  text-anchor: start;
+  }
+  </style>
+
+<body>
+    <script>
+
+        var width = window.innerWidth,
+            height = window.innerHeight,
+            centered,
+            clicked_point;
+        
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("class", "map");
+        var map = svg.append("g").attr("id", "map"),
+        places = svg.append("g").attr("id", "places");
+        
+        var projection = d3.geoMercator()
+            .translate([width / 2.2, height / 1.5]);
+        
+        var path = d3.geoPath()
+            .projection(projection);
+        
+        var g = svg.append("g");
+        
+        queue()
+            .defer(d3.json, "https://unpkg.com/world-atlas@1/world/110m.json" )
+            .await(ready);
+        
+        function ready(error, data){
+        
+            var features = topojson.feature(data, data.objects.countries).features;
+        
+            svg.selectAll("path")
+                .data(features)
+                .enter()
+                .append("path")
+                .attr("d", path)
+                .attr("fill", "#b8b8b8")
+                .lower();
+        }
+    </script>
+
+    <script>
+        d3.csv("map_1_nov27.csv", function(data) {
+        places.selectAll("circle")
+          .data(data)
+          .enter().append("circle")
+          .attr("cx", function(d) { return projection([d.long, d.lat])[0]; })
+          .attr("cy", function(d) { return projection([d.long, d.lat])[1]; })
+          .attr("r", function(d) { return d.city_count })
+          .on("mouseover", handleMouseOver)
+          .on("mouseout", handleMouseOut);
+
+
+        places.selectAll("text")
+          .data(data)
+          .enter().append("text")
+          .attr("x", function(d) { return projection([d.long, d.lat])[0]; })
+          .attr("y", function(d) { return projection([d.long, d.lat])[1] + 8; })
+        //   .text(function(d) { return d.city});
+
+     function handleMouseOver(d) {  // Add interactivity
+            console.log(d)
+            // Use D3 to select element, change color and size
+            d3.select("circle")
+                .data(d)
+                .enter().append("text")
+                console.log(d.long)
+                console.log(d.city)
+                
+                .text(function(d) { return d.city});
+                // .attr("cx", function(d) {return projection([d.long, d.lat])[0]})
+                // .attr("cy", function(d) { return projection([d.long, d.lat])[1]; })
+                // .attr("r", function(d) { return 2 * d.city_count });
+
+
+            // Specify where to put label of text
+            console.log(this)
+            svg.append("text")
+                .data(d)
+                .attr("x", function(d) { return projection([d.long, d.lat])[0]; })
+                .attr("x", function(d) { return projection([d.long, d.lat])[0]; })
+                .attr("y", function(d) { return projection([d.long, d.lat])[1] + 8; })
+                .text(function(d){return d.city})
+          }
+
+      function handleMouseOut(d, i) {
+            // Use D3 to select element, change color back to normal
+            d3.select(this).attr({
+              fill: "black",
+              r: radius
+            });
+
+            // Select text by id and then remove
+            d3.select("#t" + d.x + "-" + d.y + "-" + i).remove();  // Remove text location
+          }
+
+        });
+    </script>
+</body>
+</html>

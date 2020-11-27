@@ -1,0 +1,266 @@
+,city,lat,long,city_count
+0,"Tokyo, Tokyo, Japan",35.6777691,139.7646365,3
+1,"New York, New York, United States",40.7127281,-74.0060152,112
+2,"Menlo Park, California, United States",37.4519671,-122.1779927,6
+3,"Mumbai, Maharashtra, India",18.9387711,72.8353355,13
+4,"Berlin, Berlin, Germany",52.5170365,13.3888599,14
+5,"San Francisco, California, United States",37.7790262,-122.4199061,161
+6,"Philadelphia, Pennsylvania, United States",39.9527237,-75.1635262,2
+7,"London, England, United Kingdom",51.5073219,-0.1276474,48
+8,"Minneapolis, Minnesota, United States",44.9772995,-93.2654692,2
+9,"Hangzhou, Zhejiang, China",30.2489634,120.2052342,2
+10,"Amsterdam, Noord-Holland, The Netherlands",52.3727598,4.8936041,6
+11,"Bangalore, Karnataka, India",12.9791198,77.5912997,15
+12,"Beijing, Beijing, China",39.9020668,116.718583,15
+13,"Cupertino, California, United States",37.3228934,-122.0322895,1
+14,"Espoo, Southern Finland, Finland",60.2241869,24.6603626,2
+15,"Oslo, Oslo, Norway",59.9133301,10.7389701,1
+16,"Exeter, Devon, United Kingdom",50.725562,-3.5269108,1
+17,"Ottawa, Ontario, Canada",45.421106,-75.690308,1
+18,"San Mateo, California, United States",37.496904,-122.3330573,18
+19,"Boston, Massachusetts, United States",42.3602534,-71.0582912,19
+20,"Paris, Ile-de-France, France",48.8566969,2.3514616,10
+21,"Shenzhen, Guangdong, China",22.555454,114.0543297,3
+22,"Sunnyvale, California, United States",37.3688301,-122.0363496,5
+23,"Redmond, Washington, United States",47.6694141,-122.1238767,1
+24,"Santa Monica, California, United States",34.0250724,-118.4965129,7
+25,"Jerusalem, Yerushalayim, Israel",31.7760743,35.22829606,1
+26,"Stockholm, Stockholms Lan, Sweden",59.3251172,18.0710935,7
+27,"Moscow, Moscow City, Russian Federation",55.7504461,37.6174943,2
+28,"Los Gatos, California, United States",37.226611,-121.9746797,2
+29,"Mountain View, California, United States",37.3893889,-122.0832101,21
+30,"New Delhi, Delhi, India",28.6138954,77.2090057,5
+31,"Seattle, Washington, United States",47.6038321,-122.3300624,14
+32,"Brooklyn, New York, United States",40.6501038,-73.9495823,7
+33,"São Paulo, Sao Paulo, Brazil",-23.5506507,-46.6333824,2
+34,"Mexico City, Distrito Federal, Mexico",19.4326296,-99.1331785,3
+35,"Leverkusen, Nordrhein-Westfalen, Germany",51.0324743,6.9881194,2
+36,"Bengaluru, Karnataka, India",12.9791198,77.5912997,6
+37,"Miami, Florida, United States",25.7742658,-80.1936589,4
+38,"Santa Clara, California, United States",37.2333253,-121.6846349,15
+39,"Emeryville, California, United States",37.8314089,-122.2865266,1
+40,"Chicago, Illinois, United States",41.8755616,-87.6244212,16
+41,"Palo Alto, California, United States",37.4443293,-122.1598465,14
+42,"Cambridge, Massachusetts, United States",42.3750997,-71.1056157,8
+43,"Nashua, New Hampshire, United States",42.7653662,-71.467566,2
+44,"Dublin, Dublin, Ireland",53.3497645,-6.2602732,3
+45,"Boulder, Colorado, United States",40.0149856,-105.2705456,1
+46,"Munich, Bayern, Germany",48.1371079,11.5753822,4
+47,"Shanghai, Shanghai, China",31.2322758,121.4692071,3
+48,"Basel, Basel-Stadt, Switzerland",47.5581077,7.5878261,3
+49,"Kormangala, Karnataka, India",12.9492994,77.62115258,1
+50,"Kenilworth, New Jersey, United States",40.6760225,-74.289262,1
+51,"Toronto, Ontario, Canada",43.6534817,-79.3839347,9
+52,"Taipei, T'ai-pei, Taiwan",25.105497,121.597366,3
+53,"Cape Town, NA - South Africa, South Africa",-33.918861,18.4233,1
+54,"San Diego, California, United States",32.7174209,-117.1627714,3
+55,"Berkeley, California, United States",37.8708393,-122.2728639,1
+56,"Delhi, Delhi, India",28.6517178,77.2219388,1
+57,"Singapore, Central Region, Singapore",16.7796467,96.175243,7
+58,"Zürich, Zurich, Switzerland",47.3723941,8.5423328,4
+59,"Noida, Uttar Pradesh, India",28.5356329,77.3910727,4
+60,"Monument, Colorado, United States",39.0500585,-104.8523657,1
+61,"Waterloo, Ontario, Canada",43.466874,-80.524635,2
+62,"Irvine, California, United States",33.6856969,-117.8259819,5
+63,"Altrincham, Cheshire, United Kingdom",53.3428558,-2.2786316,1
+64,"Purchase, New York, United States",41.0409305,-73.7145746,2
+65,"Tel Aviv, Tel Aviv, Israel",32.0804808,34.7805274,12
+66,"Kent, Washington, United States",47.3826903,-122.2270272,1
+67,"Poznan, Wielkopolskie, Poland",52.4082663,16.9335199,1
+68,"Helsinki, Southern Finland, Finland",60.1674098,24.9425769,3
+69,"Columbus, Ohio, United States",39.9622601,-83.0007065,5
+70,"San Jose, California, United States",37.3361905,-121.8905833,13
+71,"Culver City, California, United States",34.0211224,-118.3964665,6
+72,"New Orleans, Louisiana, United States",29.9499323,-90.0701156,2
+73,"Quarry Bay, Hong Kong Island, Hong Kong",22.302711,114.177216,2
+74,"Fort Mill, South Carolina, United States",35.0073697,-80.9450759,1
+75,"Pittsburgh, Pennsylvania, United States",40.4416941,-79.9900861,1
+76,"Grand Cayman, Midland, Cayman Islands",19.313299,-81.254601,1
+77,"Montreuil-sous-bois, Ile-de-France, France",48.8623357,2.4412184,1
+78,"Montréal, Quebec, Canada",45.4972159,-73.6103642,5
+79,"Cincinnati, Ohio, United States",39.1014537,-84.5124602,1
+80,"Vienna, Wien, Austria",48.2083537,16.3725042,2
+81,"Vancouver, British Columbia, Canada",49.2608724,-123.1139529,3
+82,"Bangkok, Krung Thep, Thailand",13.7542529,100.493087,2
+83,"Tempe, Arizona, United States",33.4255056,-111.9400125,1
+84,"Brisbane, California, United States",37.687165,-122.4027942,1
+85,"Pleasanton, California, United States",37.6624312,-121.8746789,3
+86,"Hawthorne, California, United States",33.9188589,-118.3483256,1
+87,"Rochester, Minnesota, United States",44.0234387,-92.4630182,1
+88,"Frisco, Texas, United States",33.1506744,-96.8236116,1
+89,"Mill Valley, California, United States",37.9060368,-122.5449763,1
+90,"Sydney, New South Wales, Australia",-33.8548157,151.2164539,4
+91,"Montevideo, NA - Uruguay, Uruguay",-33.0138587,-58.514243,1
+92,"South San Francisco, California, United States",37.6535403,-122.4168664,2
+93,"Madrid, Madrid, Spain",40.4167047,-3.7035825,1
+94,"Seoul, Seoul-t'ukpyolsi, South Korea",37.5326,127.024612,3
+95,"Waltham, Massachusetts, United States",42.3756401,-71.2358004,5
+96,"Englewood, Colorado, United States",39.6482059,-104.9879641,1
+97,"Tel Aviv-yafo, Tel Aviv, Israel",32.0804808,34.7805274,2
+98,"Santa Barbara, California, United States",34.4221319,-119.7026673,1
+99,"Barcelona, Catalonia, Spain",41.3828939,2.1774322,1
+100,"Baar, Zug, Switzerland",47.1951976,8.5253985,1
+101,"Denver, Colorado, United States",39.7392364,-104.9848623,5
+102,"Istanbul, Istanbul, Turkey",41.0096334,28.9651646,1
+103,"Manchester, Manchester, United Kingdom",53.4794892,-2.2451148,2
+104,"Taguig, Rizal, Philippines",14.5266254,121.074403,1
+105,"Stuttgart, Baden-Wurttemberg, Germany",48.7784485,9.1800132,1
+106,"South Jordan, Utah, United States",40.5621704,-111.929658,1
+107,"Short Hills, New Jersey, United States",40.7478786,-74.3254271,1
+108,"Bellevue, Washington, United States",47.6144219,-122.1923372,4
+109,"Newport Beach, California, United States",33.6170092,-117.9294401,1
+110,"Eindhoven, Noord-Brabant, The Netherlands",51.4392648,5.478633,1
+111,"Atlanta, Georgia, United States",33.7490987,-84.3901849,8
+112,"Los Angeles, California, United States",34.0536909,-118.2427666,12
+113,"Redwood Shores, California, United States",37.5318804,-122.2480219,2
+114,"Washington, District of Columbia, United States",38.8949924,-77.0365581,5
+115,"Guangzhou, Guangdong, China",23.1301964,113.2592945,1
+116,"Cary, North Carolina, United States",35.7883046,-78.7811964,1
+117,"Oakland, California, United States",37.8044557,-122.2713563,9
+118,"Loveland, Ohio, United States",39.2689562,-84.2638406,1
+119,"Oxford, Oxfordshire, United Kingdom",51.7520131,-1.2578499,1
+120,"Kuala Lumpur, Kuala Lumpur, Malaysia",3.1396189,101.6937436,1
+121,"Bentonville, Arkansas, United States",36.3728538,-94.2088172,1
+122,"Austin, Texas, United States",30.2711286,-97.7436995,3
+123,"Woodland Hills, California, United States",34.1684364,-118.6058382,1
+124,"Gurgaon, Haryana, India",28.4646148,77.0299194,5
+125,"Redwood City, California, United States",37.4863239,-122.232523,13
+126,"West Hollywood, California, United States",34.0923014,-118.3692894,2
+127,"Portland, Oregon, United States",45.5202471,-122.6741949,2
+128,"Burlington, Massachusetts, United States",42.5048167,-71.1956111,1
+129,"Miramar Beach, Florida, United States",30.377985,-86.3616979,1
+130,"Corning, New York, United States",42.1435257,-77.0543408,1
+131,"Lake Buena Vista, Florida, United States",28.38034955,-81.52975784,1
+132,"Tallinn, Harjumaa, Estonia",59.4372155,24.7453688,1
+133,"Stamford, Connecticut, United States",41.0534302,-73.5387341,1
+134,"Sisters, Oregon, United States",44.290948,-121.5492516,1
+135,"Ellon, Aberdeenshire, United Kingdom",57.365049,-2.0710305,1
+136,"Baltimore, Maryland, United States",39.2908816,-76.610759,2
+137,"Cedar Park, Texas, United States",30.5217116,-97.827833,1
+138,"Morehead, Kentucky, United States",38.1839705,-83.4326841,1
+139,"New City, New York, United States",41.1499825,-73.98989776,1
+140,"Santiago, Region Metropolitana, Chile",-33.447487,-70.673676,1
+141,"Sai Wan, Hong Kong Island, Hong Kong",22.2858376,114.134023,1
+142,"Mainz, Rheinland-Pfalz, Germany",50.0012314,8.2762513,1
+143,"Milan, Lombardia, Italy",45.4668,9.1905,1
+144,"Maastricht, Limburg, The Netherlands",50.8512438,5.6909768,1
+145,"Las Vegas, Nevada, United States",36.1672559,-115.1485163,1
+146,"Gaithersburg, Maryland, United States",39.1434406,-77.2013705,2
+147,"Jakarta, Jakarta Raya, Indonesia",-6.1753942,106.827183,5
+148,"Mclean, Virginia, United States",38.9342888,-77.1776327,1
+149,"Karachi, Sindh, Pakistan",24.8667795,67.0311286,1
+150,"München, Bayern, Germany",48.1371079,11.5753822,2
+151,"Provo, Utah, United States",40.2338438,-111.6585337,2
+152,"Faridabad, Haryana, India",28.4029786,77.3103837,1
+153,"Wilmington, North Carolina, United States",34.2257282,-77.9447107,1
+154,"Burlingame, California, United States",37.5841026,-122.3660825,2
+155,"Foster City, California, United States",37.5600336,-122.2688522,3
+156,"Charlotte, North Carolina, United States",35.2272,-80.843083,2
+157,"Armonk, New York, United States",41.1330485,-73.71262372,1
+158,"Copenhagen, Hovedstaden, Denmark",55.6867243,12.5700724,3
+159,"Wilmington, Delaware, United States",39.7459468,-75.546589,1
+160,"Tumkur, Karnataka, India",13.3400771,77.1006208,1
+161,"Overland Park, Kansas, United States",38.9742502,-94.6851702,1
+162,"Herzliya, Tel Aviv, Israel",32.1676842,34.83082794,1
+163,"Logan, Utah, United States",41.7313447,-111.8348631,1
+164,"Brussels, Brussels Hoofdstedelijk Gewest, Belgium",50.8465573,4.351697,2
+165,"Zug, Zug, Switzerland",47.1679898,8.5173652,2
+166,"Cremona, Alberta, Canada",51.5466917,-114.4908728,1
+167,"Ohio, Illinois, United States",41.5575349,-89.4609276,1
+168,"Morrisville, North Carolina, United States",33.6071108,-79.5386726,1
+169,"Norwalk, Connecticut, United States",41.1175966,-73.4078968,1
+170,"Madison, Wisconsin, United States",43.074761,-89.3837613,1
+171,"Wellington, Wellington, New Zealand",-41.2887953,174.7772114,1
+172,"San Carlos, California, United States",37.504936,-122.2618236,3
+173,"Glen Waverley, Victoria, Australia",-37.8797175,145.1629331,1
+174,"Schaffhausen, Schaffhausen, Switzerland",47.6960491,8.634513,1
+175,"Ramat Gan, Tel Aviv, Israel",32.0686867,34.8246812,1
+176,"Bromsgrove, Worcestershire, United Kingdom",52.3353816,-2.0597449,1
+177,"Venice, California, United States",33.995044,-118.4668875,1
+178,"Bogotá, Distrito Especial, Colombia",4.624335,-74.063644,1
+179,"Salt Lake City, Utah, United States",40.7596198,-111.8867975,3
+180,"Mojave, California, United States",35.0524699,-118.1739645,1
+181,"Cambridge, Cambridgeshire, United Kingdom",52.2034823,0.1235817,1
+182,"Townsville, Queensland, Australia",-19.2569391,146.8239537,1
+183,"Melbourne, Victoria, Australia",-37.8142176,144.9631608,2
+184,"Westerville, Ohio, United States",40.126139,-82.9295287,1
+185,"Carpinteria, California, United States",34.3988838,-119.5184564,1
+186,"Schaumburg, Illinois, United States",42.0333608,-88.083406,1
+187,"Coral Gables, Florida, United States",25.72149,-80.2683838,1
+188,"Houston, Texas, United States",29.7589382,-95.3676974,2
+189,"Cleveland, Ohio, United States",41.5051613,-81.6934446,1
+190,"Dallas, Texas, United States",32.7762719,-96.7968559,1
+191,"Raleigh, North Carolina, United States",35.7803977,-78.6390989,2
+192,"Omaha, Nebraska, United States",41.2587459,-95.9383758,1
+193,"Grenoble, Rhone-Alpes, France",45.1875602,5.7357819,1
+194,"Ann Arbor, Michigan, United States",42.2681569,-83.7312291,1
+195,"Millbrae, California, United States",37.598958,-122.4009419,1
+196,"Kansas City, Missouri, United States",39.100105,-94.5781416,1
+197,"Frankfurt, Hessen, Germany",50.1106444,8.6820917,1
+198,"Leicester, Leicester, United Kingdom",52.6361398,-1.1330789,1
+199,"Daly City, California, United States",37.6904826,-122.4726708,1
+200,"Boise, Idaho, United States",43.6166163,-116.200886,1
+201,"Campina, Sao Paulo, Brazil",-22.90556,-47.06083,1
+202,"Milwaukee, Wisconsin, United States",43.0349931,-87.922497,1
+203,"Hamburg, Hamburg, Germany",49.023014,11.808202,2
+204,"Bothell, Washington, United States",47.7598697,-122.2068288,1
+205,"Petah Tiqva, HaMerkaz, Israel",32.0866,34.8851,1
+206,"Burlington, North Carolina, United States",36.0956918,-79.4377991,1
+207,"Bath, Bath and North East Somerset, United Kingdom",51.3813864,-2.3596963,1
+208,"Tarrytown, New York, United States",41.0762077,-73.8587461,1
+209,"Manama, Al Manamah, Bahrain",26.2332249,50.5779259,1
+210,"American Fork, Utah, United States",40.3768954,-111.7957645,1
+211,"Morris Plains, New Jersey, United States",40.8364845,-74.47818854,1
+212,"Jacksonville, Florida, United States",30.3321838,-81.655651,1
+213,"Haryana, Haryana, India",28.4808629,77.0848883,1
+214,"Sumida, Tokyo, Japan",35.700429,139.805017,1
+215,"Draper, Utah, United States",40.5246711,-111.8638226,1
+216,"Buenos Aires, Distrito Federal, Argentina",-34.603722,-58.381592,1
+217,"Issy-les-moulineaux, Ile-de-France, France",48.8250508,2.273457,1
+218,"Plantation, Florida, United States",26.1265258,-80.25786124,1
+219,"Silver Spring, Maryland, United States",38.9959461,-77.0276231,1
+220,"Greenville, South Carolina, United States",35.612661,-77.3663538,1
+221,"Reston, Virginia, United States",38.9583737,-77.3579805,1
+222,"Livermore, California, United States",37.6820583,-121.7680531,1
+223,"Fremont, California, United States",37.5482697,-121.9885719,1
+224,"Novi, Michigan, United States",42.48059,-83.4754913,1
+225,"Cheltenham, Gloucestershire, United Kingdom",51.8995685,-2.0711559,1
+226,"Hatfield, Hertford, United Kingdom",51.7779401,-0.1037618,1
+227,"Lakewood, Ohio, United States",41.4819932,-81.7981908,1
+228,"Seongnam, Kyonggi-do, South Korea",37.4201556,127.1262092,1
+229,"Dubai, Dubai, United Arab Emirates",25.0750095,55.18876088,1
+230,"Ljubljana, Ljubljana Urban Commune, Slovenia",46.056946,14.505751,1
+231,"Sag Harbor, New York, United States",40.9978727,-72.2922292,1
+232,"Santa Cruz, California, United States",37.050096,-121.9905908,1
+233,"Plymouth Meeting, Pennsylvania, United States",40.102332,-75.2743467,1
+234,"Lehi, Utah, United States",40.3880902,-111.8491619,1
+235,"Des Moines, Iowa, United States",41.5910641,-93.6037149,1
+236,"Fresno, California, United States",36.7394421,-119.7848307,1
+237,"Ness Ziona, HaMerkaz, Israel",31.92933,34.79868,1
+238,"Latham, New York, United States",42.7444055,-73.761563,1
+239,"Vienna, Virginia, United States",38.9013729,-77.2651762,1
+240,"Winston Salem, North Carolina, United States",36.0998131,-80.2440518,1
+241,"Pasadena, California, United States",34.1476452,-118.1444779,1
+242,"Solihull, Solihull, United Kingdom",52.4146286,-1.7888672,1
+243,"Tangerang, Jawa Barat, Indonesia",-6.8211746,107.1434435,1
+244,"Westborough, Massachusetts, United States",42.2694308,-71.6129907,1
+245,"Dania, Florida, United States",47.6032433,-122.3366562,1
+246,"Detroit, Michigan, United States",42.3315509,-83.0466403,1
+247,"Lille, Nord-Pas-de-Calais, France",50.7215699,1.6033016,1
+248,"Richardson, Texas, United States",32.9481789,-96.7297206,1
+249,"Quebec, Quebec, Canada",46.8259601,-71.2352226,1
+250,"Rueil-malmaison, Ile-de-France, France",48.87778,2.1802832,1
+251,"Cedar Rapids, Iowa, United States",41.9758872,-91.6704053,1
+252,"Geneva, Geneve, Switzerland",46.2017559,6.1466014,1
+253,"Buffalo, New York, United States",42.8867166,-78.8783922,1
+254,"Lincolnshire, Illinois, United States",42.1900249,-87.9084039,1
+255,"Malmö, Skane Lan, Sweden",55.6052931,13.0001566,1
+256,"Nairobi, Nairobi Area, Kenya",-1.2832533,36.8172449,1
+257,"Swords, Dublin, Ireland",53.4720536,-6.223144167,1
+258,"Walldorf, Baden-Wurttemberg, Germany",49.3038134,8.6433518,1
+259,"Linköping, Ostergotlands Lan, Sweden",58.4098135,15.6245252,1
+260,"Arvada, Colorado, United States",39.8211225,-105.220743,1
+261,"Gardena, California, United States",33.8963593,-118.3053037,1
+262,"Belfair, Washington, United States",47.5023158,-122.7773648,1
+263,"Mendota, Minnesota, United States",44.8871878,-93.1643869,1
+264,"Farmington, Utah, United States",40.9804423,-111.8874688,1

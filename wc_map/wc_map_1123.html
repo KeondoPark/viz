@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
+</head>
+
+<style>
+  svg circle {
+  fill: black;
+  opacity: .5;
+  /* stroke: white; */
+  }
+  svg circle:hover {
+  fill: grey;
+  /* stroke: #333; */
+  }
+  
+  svg text {
+  pointer-events: none;
+  }
+
+  svg .municipality {
+  fill: #efefef;
+  stroke: #fff;
+  }
+  svg .municipality-label {
+  fill: #bbb;
+  font-size: 12px;
+  font-weight: 300;
+  text-anchor: middle;
+  }
+  svg #map text {
+  color: #333;
+  font-size: 10px;
+  text-anchor: middle;
+  }
+  svg places text {
+  color: #777;
+  font: 10px fantasy;
+  text-anchor: start;
+  }
+  </style>
+
+<body>
+    <script>
+
+        var width = window.innerWidth,
+            height = window.innerHeight,
+            centered,
+            clicked_point;
+        
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("class", "map");
+        var map = svg.append("g").attr("id", "map"),
+        places = svg.append("g").attr("id", "places");
+        
+        var projection = d3.geoMercator()
+            .translate([width / 2.2, height / 1.5]);
+        
+        var path = d3.geoPath()
+            .projection(projection);
+        
+        var g = svg.append("g");
+        
+        queue()
+            .defer(d3.json, "https://unpkg.com/world-atlas@1/world/110m.json" )
+            .await(ready);
+        
+        function ready(error, data){
+        
+            var features = topojson.feature(data, data.objects.countries).features;
+        
+            svg.selectAll("path")
+                .data(features)
+                .enter()
+                .append("path")
+                .attr("d", path)
+                .attr("fill", "#b8b8b8")
+                .lower();
+        }
+    </script>
+
+    <script>
+        d3.csv("post_process_nov26.csv", function(data) {
+        places.selectAll("circle")
+          .data(data)
+          .enter().append("circle")
+          .attr("cx", function(d) { return projection([d.long, d.lat])[0]; })
+          .attr("cy", function(d) { return projection([d.long, d.lat])[1]; })
+          .attr("r", function(d) { return d.city_count });
+
+
+        places.selectAll("text")
+          .data(data)
+          .enter().append("text")
+          .attr("x", function(d) { return projection([d.long, d.lat])[0]; })
+          .attr("y", function(d) { return projection([d.long, d.lat])[1] + 8; })
+          .text(function(d) { return d.city});
+
+        places.selectAll("text")
+          .data(data)
+          .enter().append("text")
+          .attr("x", function(d) { return projection([d.long, d.lat])[0] + 100; })
+          .attr("y", function(d) { return projection([d.long, d.lat])[1] - 8; })
+          .text(function(d) {return d.name});
+
+        });
+    </script>
+</body>
+</html>
