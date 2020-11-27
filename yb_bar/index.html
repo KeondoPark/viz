@@ -69,6 +69,7 @@ rect {
 }
 
 
+ 
 
 </style>
 
@@ -76,21 +77,25 @@ rect {
     <h2>Total Equity Funding Amount Currency (in USD)</h2>
     <div id="chart">
     <svg width="1000" height="700" viewBox="0 0 800 800" class="my_bar"></svg>
+   
     </div>
-    <form>
+    <form width="1000" height="700" viewBox="0 0 800 800" class="my_check">
+        <label><input type="radio" name="chk_info" value="Filter">Filter</label>
+        <label><input type="radio" name="chk_info" value="Freeze">Freeze</label>
+        <br>
         <label><input class="filter" type="checkbox" id="filter" value="filter">Wish to Filter</label>
-        <p>Select Industries You Are Interested In</p>
-        <label><input class="industry1" type="checkbox" id="industry1_1" value="AllIndustries">All Industries</label>
-        <label><input class="industry1" type="checkbox" id="industry1_2" value="AI">AI</label>
-        <label><input class="industry1" type="checkbox" id="industry1_3" value="Ecommerce">Ecommerce</label>
-        <label><input class="industry1" type="checkbox" id="industry1_4" value="Education">Education</label>
-        <label><input class="industry1" type="checkbox" id="industry1_5" value="F&B">F&B</label>
-        <label><input class="industry1" type="checkbox" id="industry1_6" value="Financial">Financial</label>
-        <label><input class="industry1" type="checkbox" id="industry1_7" value="Healthcare">Healthcare</label>
-        <label><input class="industry1" type="checkbox" id="industry1_8" value='Manufacturing'>Manufacturing</label>
-        <label><input class="industry1" type="checkbox" id="industry1_9" value="Security">Security</label>
-        <label><input class="industry1" type="checkbox" id="industry1_10" value="Software">Software</label>
-        <label><input class="industry1" type="checkbox" id="industry1_11"value="Transportation">Transporation</label>
+        <p style="font: size 50px; color:#538b01; font-weight:bold;">Select the Industries You Are Interested In</p>
+        <label style="color:#8CA2AB; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_1" value="AllIndustries">All Industries</label>
+        <label style="color: #F06A93; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_2" value="AI">AI</label>
+        <label style="color:#CD59B1; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_3" value="Ecommerce">Ecommerce</label>
+        <label style="color: #A97DD8; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_4" value="Education">Education</label>
+        <label style="color:  #F38787; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_5" value="F&B">F&B</label>
+        <label style="color:#EF8D5D; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_6" value="Financial">Financial</label>
+        <label style="color: #3FB68E; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_7" value="Healthcare">Healthcare</label>
+        <label style="color: #4D78A2; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_8" value='Manufacturing'>Manufacturing</label>
+        <label style="color: #3AB5C2; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_9" value="Security">Security</label>
+        <label style="color: #6973F6; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_10" value="Software">Software</label>
+        <label style="color: #74ABE2; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_11"value="Transportation">Transporation</label>
         <br>
         
         <p>Select Industries You Wish To Highlight</p>
@@ -109,6 +114,7 @@ rect {
 
 
     </form>
+    
 
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
