@@ -97,9 +97,10 @@ const rectEl = document.getElementsByTagName('rect');
 const tooltop = document.getElementById('tooltip');
 console.log(tooltop)
 
-for(const el of rectEl) {
+for(const el of rectEl) {  
   el.addEventListener('mouseover', (event) => {
     const target = event.target;
+    console.log(target)
     const positionLeft = Number(target.getAttribute('x')) + Number(x.bandwidth()/2) - tooltop.clientWidth/2;
     const positionTop = height - margin.top - target.getAttribute('height') - tooltop.clientHeight - 5;
     const color = target.dataset.color;

@@ -1,0 +1,78 @@
+type,ind_list,value
+Seed,AllIndustries,51130210
+Seed,AI,29279627
+Seed,Ecommerce,79108064
+Seed,Education,12652209
+Seed,F&B,8779317
+Seed,Financial,106027583
+Seed,Healthcare,107782360
+Seed,Manufacturing,104445087
+Seed,Security,22968229
+Seed,Software,55913098
+Seed,Transportation,67485097
+Series A,AllIndustries,17851193
+Series A,AI,19802968
+Series A,Ecommerce,19752809
+Series A,Education,10292986
+Series A,F&B,11834510
+Series A,Financial,26521853
+Series A,Healthcare,27991148
+Series A,Manufacturing,18890549
+Series A,Security,14765411
+Series A,Software,15999125
+Series A,Transportation,14862884
+Series B,AllIndustries,48856117
+Series B,AI,42339377
+Series B,Ecommerce,46849281
+Series B,Education,28908585
+Series B,F&B,33675473
+Series B,Financial,63169090
+Series B,Healthcare,71645296
+Series B,Manufacturing,57187435
+Series B,Security,37825085
+Series B,Software,40016551
+Series B,Transportation,53563819
+Series C,AllIndustries,104989292
+Series C,AI,102630019
+Series C,Ecommerce,77452283
+Series C,Education,73283375
+Series C,F&B,81169842
+Series C,Financial,121559601
+Series C,Healthcare,148218314
+Series C,Manufacturing,93547064
+Series C,Security,72556357
+Series C,Software,91819092
+Series C,Transportation,129014691
+Series D+,AllIndustries,219796070
+Series D+,AI,236758087
+Series D+,Ecommerce,198497700
+Series D+,Education,155389887
+Series D+,F&B,240557146
+Series D+,Financial,323321300
+Series D+,Healthcare,270174616
+Series D+,Manufacturing,173891002
+Series D+,Security,147526136
+Series D+,Software,189201968
+Series D+,Transportation,318316805
+M&A,AllIndustries,184898406
+M&A,AI,266800108
+M&A,Ecommerce,114910424
+M&A,Education,51970638
+M&A,F&B,49509282
+M&A,Financial,252426498
+M&A,Healthcare,207651315
+M&A,Manufacturing,106400477
+M&A,Security,60656943
+M&A,Software,741028221
+M&A,Transportation,212947180
+IPO,AllIndustries,374167303
+IPO,AI,304616572
+IPO,Ecommerce,341166908
+IPO,Education,220682042
+IPO,F&B,327920268
+IPO,Financial,371119686
+IPO,Healthcare,337593025
+IPO,Manufacturing,241421731
+IPO,Security,96331606
+IPO,Software,341247731
+IPO,Transportation,1191775412

@@ -1,5 +1,5 @@
 .container {
-    width: 890px;
+    width: 1500px;
   }
   
   #graphic {
@@ -76,3 +76,191 @@
   
   }
   
+
+
+
+.legend {
+    font-size: 12px;
+}
+rect {
+    stroke-width: 2;
+}
+
+#bar0{
+    fill: #8CA2AB;    
+}
+
+#bar1 {
+    fill: #75686c;    
+}
+
+#bar2 {
+    fill: #CD59B1;
+    
+}
+
+#bar3 {
+    fill: #A97DD8;
+    
+}
+
+#bar4 {
+    fill: #F38787;
+    
+}
+
+#bar5 {
+    fill: #EF8D5D;
+    
+}
+
+#bar6 {
+    fill:#3FB68E;
+    
+}
+
+#bar7 {
+    fill:#4D78A2;
+    
+}
+
+#bar8 {
+    fill:#3AB5C2;
+    
+}
+
+#bar9 {
+    fill:  #6973F6;
+    
+}
+
+#bar10 {
+    fill: #74ABE2;
+    
+}
+
+
+
+
+
+
+
+text {
+  font-size: 16px;
+  font-family: Open Sans, sans-serif;
+}
+
+text.title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+text.subTitle {
+  font-weight: 500;
+  fill: #777777;
+}
+
+text.caption {
+  font-weight: 400;
+  font-size: 14px;
+  fill: #777777;
+}
+
+text.label {
+  font-weight: 600;
+}
+
+text.valueLabel {
+  font-weight: 300;
+}
+
+text.yearText {
+  font-size: 64px;
+  font-weight: 700;
+  opacity: 0.25;
+}
+
+.tick text {
+  fill: #777777;
+}
+
+.xAxis .tick:nth-child(2) text {
+  text-anchor: start;
+}
+
+.tick line {
+  shape-rendering: CrispEdges;
+  stroke: #dddddd;
+}
+
+.tick line.origin {
+  stroke: #aaaaaa;
+}
+
+path.domain {
+  display: none;
+}
+
+
+
+svg circle {
+  fill: black;
+  opacity: .8;
+  /* stroke: white; */
+  }
+  svg circle:hover {
+  fill: green;
+  /* stroke: #333; */
+  }
+  
+  svg text {
+  pointer-events: none;
+  }
+
+  svg .municipality {
+  fill: #efefef;
+  stroke: #fff;
+  }
+  svg .municipality-label {
+  fill: #bbb;
+  font-size: 12px;
+  font-weight: 300;
+  text-anchor: middle;
+  }
+  svg #map_WC1 text {
+  color: #333;
+  font-size: 10px;
+  text-anchor: middle;
+  }
+  svg places_WC1 text {
+  color: #777;
+  font: 10px fantasy;
+  text-anchor: start;
+  }
+
+  #tooltipWC1 {	
+    position: absolute;			
+    text-align: center;			
+    width: 80px;					
+    height: 30px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+#tooltipYJ1 {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  transition: all 0.3s;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}

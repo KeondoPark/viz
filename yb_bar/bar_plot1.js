@@ -19,7 +19,7 @@ let g = svg.append("g")
 
 
 d3.queue()
-.defer(d3.csv, "f_data.csv")
+.defer(d3.csv, "final.csv")
 .await(showData)
 
 
