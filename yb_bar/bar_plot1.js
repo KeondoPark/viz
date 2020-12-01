@@ -11,14 +11,6 @@
     let g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-
-
-
-    //d3.csv("final.csv").then(showData)
-    //d3.csv("f_data.csv",showData)
-
- 
-
    d3.queue()
    .defer(d3.csv, "final.csv")
    .await(showData)
@@ -54,16 +46,10 @@
             .attr("class", "axis y_axis")
             .call(d3.axisLeft(y));
 
-        
-        
-        
-        
         g.selectAll(".rect")
         .data(filtered)
         .enter().append("rect")
             .attr("class", function(d) {
-                //console.log(d.ind_list)
-                //console.log(ind_list.indexOf(d.ind_list))
                 return "bar" + ind_list.indexOf(d.ind_list)} )
             .attr("y", function(d) { 
                 console.log(+d.value)
@@ -106,21 +92,8 @@
                 
         
                 if(cb.property("checked")) {
-                    //g.selectAll("."+grp).transition().style("opacity", 1)
-                    //console.log(cb.property("value"))
-                    //console.log(ind_list.indexOf(cb.property("value")))
                     num = ind_list.indexOf(cb.property("value")) + 1
-                    //console.log(num)
-                    //var b = document.getElementsByClassName("bar"+num)
-                    //bar.style["opacity"] = 1;
-                    //b.opacity = 1
                     g.selectAll(".bar"+num).transition().style("opacity",0.2)
-
-
-                    
-                    //elem.style.setProperty('opacity', 1)
-                    
-        
                 }
                 else {
                     num = ind_list.indexOf(cb.property("value")) + 1
@@ -128,7 +101,7 @@
                     
                 }
                 
-                
+        
             })
             d3.selectAll(".industry2").each(function(d) {
                 cb = d3.select(this)
@@ -137,33 +110,12 @@
                 
         
                 if(cb.property("checked")) {
-                    //g.selectAll("."+grp).transition().style("opacity", 1)
                     console.log(cb.property("value"))
-                    //console.log(ind_list.indexOf(cb.property("value")))
                     num = ind_list.indexOf(cb.property("value")) + 1
-                    //console.log(num)
-                    //var b = document.getElementsByClassName("bar"+num)
-                    //bar.style["opacity"] = 1;
-                    //b.opacity = 1
                     g.selectAll(".bar"+num).transition().style("opacity",1)
-
-
-                    
-                    //elem.style.setProperty('opacity', 1)
-                    
-        
                 }
-                
             })
-            
-
         }
-        /*
-        d3.selectAll(".industry1").on("change",update)
-        update()
-        d3.selectAll(".industry2").on("change",update)
-        update()
-        */
 
     }
 
