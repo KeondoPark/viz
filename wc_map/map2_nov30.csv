@@ -1,0 +1,668 @@
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
+1,Citigroup,"New York, New York, United States",2,Financial Services,36076,40.7127281,-74.0060152,112,22
+2,Compass,"New York, New York, United States",1,Software,41186,40.7127281,-74.0060152,112,20
+3,Facebook,"Menlo Park, California, United States",3,E_Commerce,38021,37.4519671,-122.1779927,6,1
+6,Twitch,"San Francisco, California, United States",1,Software,39083,37.7790262,-122.4199061,161,51
+7,Comcast,"Philadelphia, Pennsylvania, United States",1,Software,23190,39.9527237,-75.1635262,2,1
+9,Medtronic,"Minneapolis, Minnesota, United States",7,Manufacturing,17899,44.9772995,-93.2654692,2,1
+13,Ripple,"San Francisco, California, United States",2,Financial Services,40909,37.7790262,-122.4199061,161,17
+15,Square,"San Francisco, California, United States",7,Manufacturing,39845,37.7790262,-122.4199061,161,10
+16,Apple,"Cupertino, California, United States",7,Manufacturing,27851,37.3228934,-122.0322895,1,1
+17,Goldman Sachs,"New York, New York, United States",6,Security,1869/01/01,40.7127281,-74.0060152,112,7
+22,Tipalti,"San Mateo, California, United States",2,Financial Services,40179,37.496904,-122.3330573,18,2
+23,DocuSign,"San Francisco, California, United States",1,Software,37622,37.7790262,-122.4199061,161,51
+24,DraftKings,"Boston, Massachusetts, United States",1,Software,40909,42.3602534,-71.0582912,19,5
+26,Silver Lake,"Menlo Park, California, United States",2,Financial Services,36161,37.4519671,-122.1779927,6,3
+28,CrowdStrike,"Sunnyvale, California, United States",6,Security,40544,37.3688301,-122.0363496,5,1
+29,Microsoft,"Redmond, Washington, United States",7,Manufacturing,27488,47.6694141,-122.1238767,1,1
+30,Dialpad,"San Francisco, California, United States",1,Software,40634,37.7790262,-122.4199061,161,51
+31,Patreon,"San Francisco, California, United States",11,Others,41401,37.7790262,-122.4199061,161,6
+32,The Honest Company,"Santa Monica, California, United States",3,E_Commerce,40544,34.0250724,-118.4965129,7,1
+33,goPuff,"Philadelphia, Pennsylvania, United States",9,Transportation,41579,39.9527237,-75.1635262,2,1
+34,Allbirds,"San Francisco, California, United States",7,Manufacturing,42430,37.7790262,-122.4199061,161,10
+35,Ring,"Santa Monica, California, United States",7,Manufacturing,40909,34.0250724,-118.4965129,7,2
+36,Reddit,"San Francisco, California, United States",1,Software,38353,37.7790262,-122.4199061,161,51
+39,Chargebee,"San Francisco, California, United States",3,E_Commerce,40709,37.7790262,-122.4199061,161,11
+40,Peloton,"New York, New York, United States",7,Manufacturing,40909,40.7127281,-74.0060152,112,2
+42,Oculus,"Menlo Park, California, United States",7,Manufacturing,41096,37.4519671,-122.1779927,6,1
+43,Plaid,"San Francisco, California, United States",2,Financial Services,40909,37.7790262,-122.4199061,161,17
+45,Twitter,"San Francisco, California, United States",1,Software,38797,37.7790262,-122.4199061,161,51
+46,Petal,"New York, New York, United States",5,AI,42370,40.7127281,-74.0060152,112,16
+47,Cerebral,"San Francisco, California, United States",4,Health_Care,43838,37.7790262,-122.4199061,161,13
+49,Cloudflare,"San Francisco, California, United States",6,Security,39965,37.7790262,-122.4199061,161,10
+50,Roku,"Los Gatos, California, United States",7,Manufacturing,37530,37.226611,-121.9746797,2,1
+51,Lark,"Mountain View, California, United States",5,AI,40544,37.3893889,-122.0832101,21,4
+53,Pipefy,"San Francisco, California, United States",1,Software,41275,37.7790262,-122.4199061,161,51
+54,Outreach,"Seattle, Washington, United States",1,Software,41640,47.6038321,-122.3300624,14,4
+55,Uniswap,"Brooklyn, New York, United States",2,Financial Services,43101,40.6501038,-73.9495823,7,2
+56,Waymo,"Mountain View, California, United States",9,Transportation,39814,37.3893889,-122.0832101,21,1
+60,Observe,"San Mateo, California, United States",5,AI,43040,37.496904,-122.3330573,18,6
+63,GitLab,"San Francisco, California, United States",1,Software,41640,37.7790262,-122.4199061,161,51
+65,Shine,"New York, New York, United States",4,Health_Care,42217,40.7127281,-74.0060152,112,13
+66,Business Insider,"New York, New York, United States",11,Others,39203,40.7127281,-74.0060152,112,7
+67,Papa,"Miami, Florida, United States",11,Others,43101,25.7742658,-80.1936589,4,2
+68,NVIDIA,"Santa Clara, California, United States",7,Manufacturing,33970,37.2333253,-121.6846349,15,4
+69,VTEX,"New York, New York, United States",3,E_Commerce,36526,40.7127281,-74.0060152,112,13
+70,PagerDuty,"San Francisco, California, United States",1,Software,39845,37.7790262,-122.4199061,161,51
+71,Tanium,"Emeryville, California, United States",6,Security,39083,37.8314089,-122.2865266,1,1
+72,BlackRock,"New York, New York, United States",2,Financial Services,32143,40.7127281,-74.0060152,112,22
+74,Cadre,"New York, New York, United States",3,E_Commerce,41893,40.7127281,-74.0060152,112,13
+75,maude,"Brooklyn, New York, United States",4,Health_Care,42736,40.6501038,-73.9495823,7,2
+76,Groupon,"Chicago, Illinois, United States",3,E_Commerce,39083,41.8755616,-87.6244212,16,2
+77,Tesla,"Palo Alto, California, United States",9,Transportation,37622,37.4443293,-122.1598465,14,1
+78,PlayVS,"Santa Monica, California, United States",1,Software,43101,34.0250724,-118.4965129,7,1
+79,MineralTree,"Cambridge, Massachusetts, United States",2,Financial Services,40179,42.3750997,-71.1056157,8,1
+80,SkillSoft,"Nashua, New Hampshire, United States",1,Software,35650,42.7653662,-71.467566,2,1
+81,Uber Freight,"San Francisco, California, United States",9,Transportation,42736,37.7790262,-122.4199061,161,10
+82,Google,"Mountain View, California, United States",1,Software,35796,37.3893889,-122.0832101,21,5
+84,Clover Health,"San Francisco, California, United States",4,Health_Care,41275,37.7790262,-122.4199061,161,13
+86,Techstars,"Boulder, Colorado, United States",2,Financial Services,38930,40.0149856,-105.2705456,1,1
+89,Apollo,"New York, New York, United States",2,Financial Services,32874,40.7127281,-74.0060152,112,22
+91,Sprinklr,"New York, New York, United States",5,AI,40080,40.7127281,-74.0060152,112,16
+92,Headspace,"Santa Monica, California, United States",4,Health_Care,40179,34.0250724,-118.4965129,7,2
+93,Datavant,"San Francisco, California, United States",5,AI,42736,37.7790262,-122.4199061,161,25
+94,ShipBob,"Chicago, Illinois, United States",9,Transportation,41640,41.8755616,-87.6244212,16,1
+95,Flatiron Health,"New York, New York, United States",4,Health_Care,41061,40.7127281,-74.0060152,112,13
+98,Merck,"Kenilworth, New Jersey, United States",4,Health_Care,1891/01/01,40.6760225,-74.289262,1,1
+100,Getaround,"San Francisco, California, United States",9,Transportation,40544,37.7790262,-122.4199061,161,10
+102,Docker,"San Francisco, California, United States",1,Software,40179,37.7790262,-122.4199061,161,51
+103,Lime,"San Francisco, California, United States",9,Transportation,42736,37.7790262,-122.4199061,161,10
+104,Birchbox,"New York, New York, United States",3,E_Commerce,40179,40.7127281,-74.0060152,112,13
+107,Seismic,"San Diego, California, United States",5,AI,40179,32.7174209,-117.1627714,3,1
+109,Hims,"San Francisco, California, United States",4,Health_Care,42736,37.7790262,-122.4199061,161,13
+110,Fastly,"San Francisco, California, United States",6,Security,40544,37.7790262,-122.4199061,161,10
+111,Incredible Health,"San Francisco, California, United States",4,Health_Care,42736,37.7790262,-122.4199061,161,13
+113,Zero Grocery,"Berkeley, California, United States",11,Others,43466,37.8708393,-122.2728639,1,1
+114,Twilio,"San Francisco, California, United States",1,Software,39629,37.7790262,-122.4199061,161,51
+116,Starbucks,"Seattle, Washington, United States",10,Food,26023,47.6038321,-122.3300624,14,2
+117,Melio,"New York, New York, United States",2,Financial Services,43282,40.7127281,-74.0060152,112,22
+118,Salsify,"Boston, Massachusetts, United States",5,AI,41156,42.3602534,-71.0582912,19,4
+121,Uber,"San Francisco, California, United States",9,Transportation,39873,37.7790262,-122.4199061,161,10
+123,MasterClass,"San Francisco, California, United States",8,Education,40909,37.7790262,-122.4199061,161,7
+124,Aura,"San Francisco, California, United States",2,Financial Services,40909,37.7790262,-122.4199061,161,17
+127,Wayfair,"Boston, Massachusetts, United States",3,E_Commerce,37469,42.3602534,-71.0582912,19,1
+128,Kraken,"San Francisco, California, United States",2,Financial Services,40752,37.7790262,-122.4199061,161,17
+129,Marco,"Miami, Florida, United States",2,Financial Services,43466,25.7742658,-80.1936589,4,1
+130,Quantum Metric,"Monument, Colorado, United States",5,AI,42005,39.0500585,-104.8523657,1,1
+131,Papaya Global,"New York, New York, United States",5,AI,42370,40.7127281,-74.0060152,112,16
+132,ServiceNow,"Santa Clara, California, United States",1,Software,37987,37.2333253,-121.6846349,15,4
+134,Hyperice,"Irvine, California, United States",4,Health_Care,40179,33.6856969,-117.8259819,5,1
+136,Coursera,"Mountain View, California, United States",8,Education,40909,37.3893889,-122.0832101,21,2
+139,Teladoc,"Purchase, New York, United States",4,Health_Care,37257,41.0409305,-73.7145746,2,1
+141,Coralogix,"San Francisco, California, United States",5,AI,41897,37.7790262,-122.4199061,161,25
+142,Blue Origin,"Kent, Washington, United States",7,Manufacturing,36777,47.3826903,-122.2270272,1,1
+146,Nextdoor,"San Francisco, California, United States",1,Software,40179,37.7790262,-122.4199061,161,51
+147,Olive,"Columbus, Ohio, United States",7,Manufacturing,41065,39.9622601,-83.0007065,5,1
+148,Augury,"New York, New York, United States",5,AI,40756,40.7127281,-74.0060152,112,16
+149,Nutanix,"San Jose, California, United States",1,Software,40057,37.3361905,-121.8905833,13,4
+150,Goat Group,"Culver City, California, United States",3,E_Commerce,39814,34.0211224,-118.3964665,6,1
+152,Encantos,"Culver City, California, United States",8,Education,42370,34.0211224,-118.3964665,6,1
+153,Etsy,"Brooklyn, New York, United States",3,E_Commerce,38521,40.6501038,-73.9495823,7,1
+154,Lucid,"New Orleans, Louisiana, United States",5,AI,40247,29.9499323,-90.0701156,2,1
+157,Datadog,"New York, New York, United States",5,AI,40179,40.7127281,-74.0060152,112,16
+159,Neocis,"Miami, Florida, United States",7,Manufacturing,39814,25.7742658,-80.1936589,4,1
+160,Figma,"San Francisco, California, United States",1,Software,41183,37.7790262,-122.4199061,161,51
+161,Red Ventures,"Fort Mill, South Carolina, United States",11,Others,36526,35.0073697,-80.9450759,1,1
+162,Seegrid,"Pittsburgh, Pennsylvania, United States",9,Transportation,37622,40.4416941,-79.9900861,1,1
+163,SOPHiA GENETICS,"Boston, Massachusetts, United States",5,AI,40544,42.3602534,-71.0582912,19,4
+166,Armory,"San Mateo, California, United States",1,Software,42614,37.496904,-122.3330573,18,3
+168,Ava Labs,"Brooklyn, New York, United States",2,Financial Services,43101,40.6501038,-73.9495823,7,2
+169,Omni,"San Francisco, California, United States",3,E_Commerce,41852,37.7790262,-122.4199061,161,11
+170,Discord,"San Francisco, California, United States",1,Software,41030,37.7790262,-122.4199061,161,51
+171,Onapsis,"Boston, Massachusetts, United States",6,Security,39814,42.3602534,-71.0582912,19,2
+172,AngelList,"San Francisco, California, United States",11,Others,40179,37.7790262,-122.4199061,161,6
+176,Okta,"San Francisco, California, United States",6,Security,39814,37.7790262,-122.4199061,161,10
+177,Kroger,"Cincinnati, Ohio, United States",9,Transportation,1883-01-01,39.1014537,-84.5124602,1,1
+179,Fitbit,"San Francisco, California, United States",4,Health_Care,39203,37.7790262,-122.4199061,161,13
+182,mmhmm,"San Francisco, California, United States",1,Software,43922,37.7790262,-122.4199061,161,51
+183,Skilljar,"Seattle, Washington, United States",8,Education,41275,47.6038321,-122.3300624,14,1
+184,Snowflake,"San Mateo, California, United States",5,AI,40909,37.496904,-122.3330573,18,6
+186,Avail Medsystems,"Palo Alto, California, United States",7,Manufacturing,43101,37.4443293,-122.1598465,14,1
+187,Carvana,"Tempe, Arizona, United States",9,Transportation,41275,33.4255056,-111.9400125,1,1
+188,MyoKardia,"Brisbane, California, United States",4,Health_Care,41153,37.687165,-122.4027942,1,1
+191,HashiCorp,"San Francisco, California, United States",6,Security,40909,37.7790262,-122.4199061,161,10
+193,Axis Security,"San Mateo, California, United States",6,Security,43101,37.496904,-122.3330573,18,2
+195,Braintrust,"San Jose, California, United States",3,E_Commerce,43242,37.3361905,-121.8905833,13,1
+196,HubSpot,"Cambridge, Massachusetts, United States",5,AI,38877,42.3750997,-71.1056157,8,3
+197,Workday,"Pleasanton, California, United States",2,Financial Services,38412,37.6624312,-121.8746789,3,1
+200,Kronos Bio,"San Mateo, California, United States",4,Health_Care,42736,37.496904,-122.3330573,18,1
+202,Awake Security,"Santa Clara, California, United States",6,Security,41913,37.2333253,-121.6846349,15,2
+203,SpaceX,"Hawthorne, California, United States",9,Transportation,37408,33.9188589,-118.3483256,1,1
+204,Mayo Clinic,"Rochester, Minnesota, United States",4,Health_Care,6941,44.0234387,-92.4630182,1,1
+206,Payrix,"Frisco, Texas, United States",3,E_Commerce,42217,33.1506744,-96.8236116,1,1
+208,Glassdoor,"Mill Valley, California, United States",1,Software,39234,37.9060368,-122.5449763,1,1
+209,Jumio,"Palo Alto, California, United States",5,AI,40183,37.4443293,-122.1598465,14,1
+211,BetterUp,"San Francisco, California, United States",8,Education,41275,37.7790262,-122.4199061,161,7
+213,10X Genomics,"Pleasanton, California, United States",4,Health_Care,40909,37.6624312,-121.8746789,3,1
+216,Grubhub,"Chicago, Illinois, United States",10,Food,37987,41.8755616,-87.6244212,16,1
+218,Plenty,"South San Francisco, California, United States",10,Food,41872,37.6535403,-122.4168664,2,1
+219,Livongo,"Mountain View, California, United States",4,Health_Care,39448,37.3893889,-122.0832101,21,4
+221,Medallia,"San Francisco, California, United States",5,AI,37135,37.7790262,-122.4199061,161,25
+225,JSonar,"Waltham, Massachusetts, United States",6,Security,41275,42.3756401,-71.2358004,5,1
+226,Boom Supersonic,"Englewood, Colorado, United States",11,Others,41640,39.6482059,-104.9879641,1,1
+229,Cohesity,"San Jose, California, United States",5,AI,41426,37.3361905,-121.8905833,13,1
+231,Sonos,"Santa Barbara, California, United States",7,Manufacturing,37437,34.4221319,-119.7026673,1,1
+234,Andela,"New York, New York, United States",1,Software,41780,40.7127281,-74.0060152,112,20
+236,Squire,"New York, New York, United States",1,Software,42005,40.7127281,-74.0060152,112,20
+237,Justworks,"New York, New York, United States",1,Software,41183,40.7127281,-74.0060152,112,20
+239,Rover,"Seattle, Washington, United States",1,Software,40544,47.6038321,-122.3300624,14,4
+241,Satellogic,"Palo Alto, California, United States",11,Others,40179,37.4443293,-122.1598465,14,3
+242,Stitch Fix,"San Francisco, California, United States",3,E_Commerce,40544,37.7790262,-122.4199061,161,11
+244,XtalPi,"Cambridge, Massachusetts, United States",5,AI,41760,42.3750997,-71.1056157,8,3
+245,Aclima,"San Francisco, California, United States",1,Software,40179,37.7790262,-122.4199061,161,51
+246,SendGrid,"Denver, Colorado, United States",1,Software,40014,39.7392364,-104.9848623,5,1
+249,Cityblock Health,"Brooklyn, New York, United States",4,Health_Care,42736,40.6501038,-73.9495823,7,2
+251,Arcus,"New York, New York, United States",2,Financial Services,41395,40.7127281,-74.0060152,112,22
+253,TransUnion,"Chicago, Illinois, United States",2,Financial Services,24838,41.8755616,-87.6244212,16,3
+255,SeedInvest,"New York, New York, United States",11,Others,40664,40.7127281,-74.0060152,112,7
+256,Alkira,"San Jose, California, United States",6,Security,43101,37.3361905,-121.8905833,13,3
+257,HireVue,"South Jordan, Utah, United States",5,AI,38078,40.5621704,-111.929658,1,1
+258,Dun & Bradstreet,"Short Hills, New Jersey, United States",1,Software,1841-07-20,40.7478786,-74.3254271,1,1
+259,Upwork,"Santa Clara, California, United States",11,Others,36161,37.2333253,-121.6846349,15,1
+261,Wonderschool,"San Francisco, California, United States",8,Education,40909,37.7790262,-122.4199061,161,7
+262,K2,"Bellevue, Washington, United States",1,Software,36526,47.6144219,-122.1923372,4,3
+263,OZY Media,"Mountain View, California, United States",1,Software,40909,37.3893889,-122.0832101,21,5
+264,CareAcademy,"Cambridge, Massachusetts, United States",8,Education,41548,42.3750997,-71.1056157,8,1
+266,Movandi,"Newport Beach, California, United States",1,Software,42370,33.6170092,-117.9294401,1,1
+268,Intercom,"San Francisco, California, United States",1,Software,40756,37.7790262,-122.4199061,161,51
+270,Cloud Paper,"Seattle, Washington, United States",7,Manufacturing,43466,47.6038321,-122.3300624,14,1
+273,Siren,"San Francisco, California, United States",7,Manufacturing,42005,37.7790262,-122.4199061,161,10
+275,MongoDB,"New York, New York, United States",1,Software,39387,40.7127281,-74.0060152,112,20
+276,Goodr,"Atlanta, Georgia, United States",1,Software,42747,33.7490987,-84.3901849,8,3
+277,Redaptive,"San Francisco, California, United States",11,Others,41275,37.7790262,-122.4199061,161,6
+278,Riot Games,"Los Angeles, California, United States",11,Others,38718,34.0536909,-118.2427666,12,2
+279,Pipedrive,"New York, New York, United States",1,Software,40350,40.7127281,-74.0060152,112,20
+280,SentinelOne,"Mountain View, California, United States",6,Security,41275,37.3893889,-122.0832101,21,3
+283,Hulu,"Los Angeles, California, United States",11,Others,39142,34.0536909,-118.2427666,12,2
+285,Imperva,"Redwood Shores, California, United States",6,Security,37257,37.5318804,-122.2480219,2,1
+286,SEMrush,"Boston, Massachusetts, United States",5,AI,39661,42.3602534,-71.0582912,19,4
+289,Nintex,"Bellevue, Washington, United States",1,Software,38718,47.6144219,-122.1923372,4,3
+290,CircleUp,"San Francisco, California, United States",2,Financial Services,40909,37.7790262,-122.4199061,161,17
+291,MobileIron,"Mountain View, California, United States",6,Security,39203,37.3893889,-122.0832101,21,3
+292,Skillz,"San Francisco, California, United States",3,E_Commerce,41000,37.7790262,-122.4199061,161,11
+294,Amazon,"Seattle, Washington, United States",3,E_Commerce,34520,47.6038321,-122.3300624,14,4
+295,Niantic,"San Francisco, California, United States",1,Software,40179,37.7790262,-122.4199061,161,51
+296,"US Department of Commerce, Economic Development Administation","Washington, District of Columbia, United States",11,Others,23743,38.8949924,-77.0365581,5,2
+297,Warby Parker,"New York, New York, United States",3,E_Commerce,40179,40.7127281,-74.0060152,112,13
+298,Gusto,"San Francisco, California, United States",2,Financial Services,40848,37.7790262,-122.4199061,161,17
+299,Anheuser-Busch InBev,"New York, New York, United States",10,Food,39643,40.7127281,-74.0060152,112,5
+300,GoPro,"San Mateo, California, United States",7,Manufacturing,37257,37.496904,-122.3330573,18,3
+302,Instacart,"San Francisco, California, United States",3,E_Commerce,40909,37.7790262,-122.4199061,161,11
+303,Epic Games,"Cary, North Carolina, United States",1,Software,33239,35.7883046,-78.7811964,1,1
+304,Marqeta,"Oakland, California, United States",2,Financial Services,40179,37.8044557,-122.2713563,9,3
+305,Workhorse Group,"Loveland, Ohio, United States",9,Transportation,39399,39.2689562,-84.2638406,1,1
+306,NerdWallet,"San Francisco, California, United States",1,Software,39814,37.7790262,-122.4199061,161,51
+310,GrubMarket,"San Francisco, California, United States",3,E_Commerce,41760,37.7790262,-122.4199061,161,11
+311,Zoom,"San Jose, California, United States",1,Software,40544,37.3361905,-121.8905833,13,4
+313,Amazon Pay,"Seattle, Washington, United States",3,E_Commerce,38353,47.6038321,-122.3300624,14,4
+314,Anaplan,"San Francisco, California, United States",1,Software,38718,37.7790262,-122.4199061,161,51
+316,Bird,"Santa Monica, California, United States",9,Transportation,42736,34.0250724,-118.4965129,7,1
+317,Brex,"San Francisco, California, United States",3,E_Commerce,42795,37.7790262,-122.4199061,161,11
+318,Walmart,"Bentonville, Arkansas, United States",3,E_Commerce,22648,36.3728538,-94.2088172,1,1
+319,Rubrik,"Palo Alto, California, United States",6,Security,41640,37.4443293,-122.1598465,14,1
+322,The RealReal,"San Francisco, California, United States",3,E_Commerce,40603,37.7790262,-122.4199061,161,11
+324,Grand Rounds,"San Francisco, California, United States",4,Health_Care,40544,37.7790262,-122.4199061,161,13
+326,Veem,"San Francisco, California, United States",2,Financial Services,41671,37.7790262,-122.4199061,161,17
+328,Indiegogo,"San Francisco, California, United States",2,Financial Services,39461,37.7790262,-122.4199061,161,17
+329,Front,"San Francisco, California, United States",1,Software,41548,37.7790262,-122.4199061,161,51
+330,Clair,"New York, New York, United States",2,Financial Services,43739,40.7127281,-74.0060152,112,22
+331,Pure Storage,"Mountain View, California, United States",1,Software,40057,37.3893889,-122.0832101,21,5
+332,J2 Global,"Los Angeles, California, United States",1,Software,34700,34.0536909,-118.2427666,12,3
+334,Zillow,"Seattle, Washington, United States",3,E_Commerce,38353,47.6038321,-122.3300624,14,4
+335,Tend,"New York, New York, United States",4,Health_Care,43739,40.7127281,-74.0060152,112,13
+336,Shattuck Labs,"Austin, Texas, United States",4,Health_Care,42370,30.2711286,-97.7436995,3,1
+337,BlackLine,"Woodland Hills, California, United States",1,Software,36892,34.1684364,-118.6058382,1,1
+338,Squarespace,"New York, New York, United States",1,Software,37712,40.7127281,-74.0060152,112,20
+339,Segment,"San Francisco, California, United States",5,AI,40787,37.7790262,-122.4199061,161,25
+340,Stripe,"San Francisco, California, United States",2,Financial Services,40179,37.7790262,-122.4199061,161,17
+341,Netdata,"San Francisco, California, United States",1,Software,43271,37.7790262,-122.4199061,161,51
+342,TradeLanes,"Oakland, California, United States",9,Transportation,42005,37.8044557,-122.2713563,9,1
+344,Redfin,"Seattle, Washington, United States",1,Software,38261,47.6038321,-122.3300624,14,4
+345,BridgeBio,"Palo Alto, California, United States",4,Health_Care,41640,37.4443293,-122.1598465,14,2
+346,Shift,"San Francisco, California, United States",9,Transportation,41275,37.7790262,-122.4199061,161,10
+347,Betterment,"New York, New York, United States",2,Financial Services,39685,40.7127281,-74.0060152,112,22
+348,Pulmonx,"Redwood City, California, United States",4,Health_Care,35796,37.4863239,-122.232523,13,1
+349,CRISPR Therapeutics,"Cambridge, Massachusetts, United States",4,Health_Care,41275,42.3750997,-71.1056157,8,3
+350,AppsFlyer,"San Francisco, California, United States",5,AI,40634,37.7790262,-122.4199061,161,25
+352,DigitalOcean,"New York, New York, United States",1,Software,40909,40.7127281,-74.0060152,112,20
+353,Palantir Technologies,"Denver, Colorado, United States",6,Security,37622,39.7392364,-104.9848623,5,3
+354,Optimizely,"San Francisco, California, United States",1,Software,40148,37.7790262,-122.4199061,161,51
+355,OutSystems,"Boston, Massachusetts, United States",1,Software,36951,42.3602534,-71.0582912,19,5
+356,Tinder,"West Hollywood, California, United States",1,Software,41153,34.0923014,-118.3692894,2,2
+358,Airship,"Portland, Oregon, United States",5,AI,39965,45.5202471,-122.6741949,2,1
+359,Desktop Metal,"Burlington, Massachusetts, United States",7,Manufacturing,42005,42.5048167,-71.1956111,1,1
+361,Root Insurance,"Columbus, Ohio, United States",9,Transportation,42064,39.9622601,-83.0007065,5,1
+362,MDLIVE,"Miramar Beach, Florida, United States",4,Health_Care,39814,30.377985,-86.3616979,1,1
+365,Unioncrate,"New York, New York, United States",5,AI,42552,40.7127281,-74.0060152,112,16
+369,Corning,"Corning, New York, United States",7,Manufacturing,1851-01-01,42.1435257,-77.0543408,1,1
+370,App Annie,"San Francisco, California, United States",5,AI,40238,37.7790262,-122.4199061,161,25
+371,Poshmark,"Redwood City, California, United States",3,E_Commerce,40575,37.4863239,-122.232523,13,1
+372,The Walt Disney Company,"Lake Buena Vista, Florida, United States",11,Others,8690,28.38034955,-81.52975784,1,1
+375,Confluent,"Mountain View, California, United States",5,AI,41905,37.3893889,-122.0832101,21,4
+376,Tru Optik,"Stamford, Connecticut, United States",5,AI,41306,41.0534302,-73.5387341,1,1
+377,deepwatch,"Denver, Colorado, United States",6,Security,43252,39.7392364,-104.9848623,5,3
+379,Laird Superfood,"Sisters, Oregon, United States",10,Food,42005,44.290948,-121.5492516,1,1
+381,Postmates,"San Francisco, California, United States",9,Transportation,40603,37.7790262,-122.4199061,161,10
+384,Doppler,"San Francisco, California, United States",1,Software,43101,37.7790262,-122.4199061,161,51
+385,Accurics,"Pleasanton, California, United States",1,Software,43466,37.6624312,-121.8746789,3,1
+386,Matterport,"Sunnyvale, California, United States",7,Manufacturing,40544,37.3688301,-122.0363496,5,1
+387,Cuyana,"San Francisco, California, United States",3,E_Commerce,41275,37.7790262,-122.4199061,161,11
+388,Willow,"Mountain View, California, United States",4,Health_Care,41640,37.3893889,-122.0832101,21,4
+391,Humatics,"Waltham, Massachusetts, United States",7,Manufacturing,42005,42.3756401,-71.2358004,5,2
+393,BuzzFeed,"New York, New York, United States",1,Software,39022,40.7127281,-74.0060152,112,20
+394,Medium,"San Francisco, California, United States",1,Software,40742,37.7790262,-122.4199061,161,51
+395,Blueboard,"San Francisco, California, United States",1,Software,41640,37.7790262,-122.4199061,161,51
+396,Asana,"San Francisco, California, United States",1,Software,39814,37.7790262,-122.4199061,161,51
+397,Equinix,"Redwood City, California, United States",1,Software,35796,37.4863239,-122.232523,13,4
+398,Landit,"New York, New York, United States",1,Software,41640,40.7127281,-74.0060152,112,20
+400,Cisco,"San Jose, California, United States",7,Manufacturing,31017,37.3361905,-121.8905833,13,2
+401,Facet Wealth,"Baltimore, Maryland, United States",2,Financial Services,42370,39.2908816,-76.610759,2,1
+402,Amplitude,"San Francisco, California, United States",5,AI,40909,37.7790262,-122.4199061,161,25
+403,Broadridge,"New York, New York, United States",2,Financial Services,22647,40.7127281,-74.0060152,112,22
+404,Hyliion Holdings Corp.,"Cedar Park, Texas, United States",9,Transportation,42078,30.5217116,-97.827833,1,1
+405,Spectrum Labs,"San Francisco, California, United States",1,Software,42705,37.7790262,-122.4199061,161,51
+406,Clever,"San Francisco, California, United States",8,Education,40909,37.7790262,-122.4199061,161,7
+407,Cruise,"San Francisco, California, United States",9,Transportation,41275,37.7790262,-122.4199061,161,10
+409,AppHarvest,"Morehead, Kentucky, United States",11,Others,42736,38.1839705,-83.4326841,1,1
+410,Amino Apps,"New City, New York, United States",1,Software,41640,41.1499825,-73.98989776,1,1
+411,Ouster,"San Francisco, California, United States",7,Manufacturing,42005,37.7790262,-122.4199061,161,10
+412,Talkdesk,"San Francisco, California, United States",1,Software,40544,37.7790262,-122.4199061,161,51
+414,Morgan Stanley,"New York, New York, United States",2,Financial Services,12785,40.7127281,-74.0060152,112,22
+417,BloomCredit,"New York, New York, United States",2,Financial Services,42583,40.7127281,-74.0060152,112,22
+419,Strava,"San Francisco, California, United States",7,Manufacturing,39814,37.7790262,-122.4199061,161,10
+422,Chorus.ai,"San Francisco, California, United States",5,AI,42005,37.7790262,-122.4199061,161,25
+424,Better.com,"New York, New York, United States",3,E_Commerce,42370,40.7127281,-74.0060152,112,13
+425,Calm,"San Francisco, California, United States",4,Health_Care,41033,37.7790262,-122.4199061,161,13
+427,Skydio,"Redwood City, California, United States",7,Manufacturing,41640,37.4863239,-122.232523,13,1
+428,Lending Club,"San Francisco, California, United States",2,Financial Services,39083,37.7790262,-122.4199061,161,17
+429,Avalara,"Seattle, Washington, United States",3,E_Commerce,37987,47.6038321,-122.3300624,14,4
+430,Cockroach Labs,"New York, New York, United States",1,Software,42036,40.7127281,-74.0060152,112,20
+431,Womply,"San Francisco, California, United States",5,AI,40544,37.7790262,-122.4199061,161,25
+434,Braze,"New York, New York, United States",5,AI,40544,40.7127281,-74.0060152,112,16
+435,NS8,"Las Vegas, Nevada, United States",6,Security,42600,36.1672559,-115.1485163,1,1
+436,Xometry,"Gaithersburg, Maryland, United States",7,Manufacturing,41275,39.1434406,-77.2013705,2,1
+439,GGV Capital,"Menlo Park, California, United States",2,Financial Services,36526,37.4519671,-122.1779927,6,3
+440,Forethought,"San Francisco, California, United States",5,AI,42736,37.7790262,-122.4199061,161,25
+442,Mayvenn,"Oakland, California, United States",3,E_Commerce,41153,37.8044557,-122.2713563,9,3
+444,ScriptDrop,"Columbus, Ohio, United States",4,Health_Care,42736,39.9622601,-83.0007065,5,1
+446,Somatus,"Mclean, Virginia, United States",4,Health_Care,42370,38.9342888,-77.1776327,1,1
+447,Convoy,"Seattle, Washington, United States",9,Transportation,42005,47.6038321,-122.3300624,14,1
+449,Instagram,"Menlo Park, California, United States",1,Software,40457,37.4519671,-122.1779927,6,1
+451,Qubole,"Santa Clara, California, United States",5,AI,40544,37.2333253,-121.6846349,15,3
+452,Qualtrics,"Provo, Utah, United States",1,Software,37257,40.2338438,-111.6585337,2,1
+453,"Blavity, Inc.","Los Angeles, California, United States",1,Software,41640,34.0536909,-118.2427666,12,3
+454,Box,"Redwood City, California, United States",1,Software,38353,37.4863239,-122.232523,13,4
+456,Ping Identity,"Denver, Colorado, United States",6,Security,37257,39.7392364,-104.9848623,5,3
+457,Generate Capital,"San Francisco, California, United States",2,Financial Services,41640,37.7790262,-122.4199061,161,17
+459,Macrometa,"Palo Alto, California, United States",1,Software,42736,37.4443293,-122.1598465,14,4
+460,KeepTruckin,"San Francisco, California, United States",9,Transportation,41275,37.7790262,-122.4199061,161,10
+461,Gro Intelligence,"New York, New York, United States",5,AI,41640,40.7127281,-74.0060152,112,16
+462,Sift,"San Francisco, California, United States",6,Security,40695,37.7790262,-122.4199061,161,10
+463,Veritas Capital,"New York, New York, United States",2,Financial Services,33604,40.7127281,-74.0060152,112,22
+464,G2,"Chicago, Illinois, United States",1,Software,41030,41.8755616,-87.6244212,16,2
+465,General Assembly,"New York, New York, United States",8,Education,40546,40.7127281,-74.0060152,112,5
+466,SquadStack,"San Francisco, California, United States",5,AI,41640,37.7790262,-122.4199061,161,25
+468,Robinhood,"Menlo Park, California, United States",2,Financial Services,41275,37.4519671,-122.1779927,6,3
+469,Netflix,"Los Gatos, California, United States",11,Others,35431,37.226611,-121.9746797,2,1
+470,Clara Foods,"South San Francisco, California, United States",11,Others,42005,37.6535403,-122.4168664,2,1
+471,Taboola,"New York, New York, United States",11,Others,39083,40.7127281,-74.0060152,112,7
+473,nCino,"Wilmington, North Carolina, United States",2,Financial Services,40909,34.2257282,-77.9447107,1,1
+475,Lyra Health,"Burlingame, California, United States",4,Health_Care,42005,37.5841026,-122.3660825,2,2
+476,Circle,"Boston, Massachusetts, United States",2,Financial Services,41275,42.3602534,-71.0582912,19,3
+477,Drift,"Boston, Massachusetts, United States",1,Software,42005,42.3602534,-71.0582912,19,5
+478,Infor,"New York, New York, United States",1,Software,37406,40.7127281,-74.0060152,112,20
+479,Zoox,"Foster City, California, United States",9,Transportation,41849,37.5600336,-122.2688522,3,1
+481,Noom,"New York, New York, United States",4,Health_Care,39654,40.7127281,-74.0060152,112,13
+482,mHUB,"Chicago, Illinois, United States",7,Manufacturing,42796,41.8755616,-87.6244212,16,2
+484,Tile,"San Mateo, California, United States",7,Manufacturing,41244,37.496904,-122.3330573,18,3
+485,Oscar Health,"New York, New York, United States",4,Health_Care,41214,40.7127281,-74.0060152,112,13
+487,Payoneer,"New York, New York, United States",3,E_Commerce,38353,40.7127281,-74.0060152,112,13
+488,Metadata,"San Francisco, California, United States",5,AI,42114,37.7790262,-122.4199061,161,25
+489,Pandora,"Oakland, California, United States",1,Software,36528,37.8044557,-122.2713563,9,1
+490,Symantec,"Mountain View, California, United States",6,Security,29952,37.3893889,-122.0832101,21,3
+491,Innovaccer,"San Francisco, California, United States",5,AI,41852,37.7790262,-122.4199061,161,25
+492,BlueVoyant,"New York, New York, United States",6,Security,42917,40.7127281,-74.0060152,112,7
+493,AvidXchange,"Charlotte, North Carolina, United States",2,Financial Services,36617,35.2272,-80.843083,2,2
+494,Verkada,"San Mateo, California, United States",6,Security,42370,37.496904,-122.3330573,18,2
+496,IBM,"Armonk, New York, United States",7,Manufacturing,4175,41.1330485,-73.71262372,1,1
+497,Velodyne LiDAR,"San Jose, California, United States",7,Manufacturing,30317,37.3361905,-121.8905833,13,2
+498,Roivant Sciences,"New York, New York, United States",4,Health_Care,41760,40.7127281,-74.0060152,112,13
+501,Lingokids,"Wilmington, Delaware, United States",8,Education,42370,39.7459468,-75.546589,1,1
+504,Fungible,"Santa Clara, California, United States",7,Manufacturing,42005,37.2333253,-121.6846349,15,4
+505,RiskGenius,"Overland Park, Kansas, United States",5,AI,42005,38.9742502,-94.6851702,1,1
+506,Career Karma,"San Francisco, California, United States",8,Education,43101,37.7790262,-122.4199061,161,7
+507,Lattice,"San Francisco, California, United States",1,Software,42278,37.7790262,-122.4199061,161,51
+508,Catchpoint,"New York, New York, United States",5,AI,39706,40.7127281,-74.0060152,112,16
+509,Resilia,"New Orleans, Louisiana, United States",1,Software,42374,29.9499323,-90.0701156,2,1
+511,ICON Health and Fitness,"Logan, Utah, United States",7,Manufacturing,28126,41.7313447,-111.8348631,1,1
+512,Sezzle,"Minneapolis, Minnesota, United States",3,E_Commerce,42373,44.9772995,-93.2654692,2,1
+513,BlueVine,"Redwood City, California, United States",2,Financial Services,41456,37.4863239,-122.232523,13,1
+515,Smartsheet,"Bellevue, Washington, United States",1,Software,38504,47.6144219,-122.1923372,4,3
+516,Kasa Living,"San Francisco, California, United States",11,Others,42583,37.7790262,-122.4199061,161,6
+517,OpenLattice,"Redwood City, California, United States",11,Others,42736,37.4863239,-122.232523,13,1
+518,CloudBees,"San Jose, California, United States",1,Software,40246,37.3361905,-121.8905833,13,4
+522,Via,"New York, New York, United States",9,Transportation,41086,40.7127281,-74.0060152,112,2
+524,Eight Sleep,"New York, New York, United States",7,Manufacturing,41821,40.7127281,-74.0060152,112,2
+526,ExecOnline,"New York, New York, United States",8,Education,41000,40.7127281,-74.0060152,112,5
+529,Lordstown Motors,"Ohio, Illinois, United States",9,Transportation,43466,41.5575349,-89.4609276,1,1
+530,Talkspace,"New York, New York, United States",4,Health_Care,41061,40.7127281,-74.0060152,112,13
+531,Vectra,"San Jose, California, United States",6,Security,40179,37.3361905,-121.8905833,13,3
+532,PopCom,"Columbus, Ohio, United States",3,E_Commerce,42826,39.9622601,-83.0007065,5,1
+533,goTenna,"Brooklyn, New York, United States",7,Manufacturing,41214,40.6501038,-73.9495823,7,1
+534,Athira Pharma,"Seattle, Washington, United States",4,Health_Care,40544,47.6038321,-122.3300624,14,1
+535,JupiterOne,"Morrisville, North Carolina, United States",6,Security,43160,33.6071108,-79.5386726,1,1
+537,Spruce Biosciences,"San Francisco, California, United States",4,Health_Care,41640,37.7790262,-122.4199061,161,13
+538,Datto,"Norwalk, Connecticut, United States",1,Software,39083,41.1175966,-73.4078968,1,1
+539,Vivun Inc,"Oakland, California, United States",5,AI,43221,37.8044557,-122.2713563,9,1
+541,EnsoData,"Madison, Wisconsin, United States",5,AI,42005,43.074761,-89.3837613,1,1
+543,LARQ,"Foster City, California, United States",7,Manufacturing,43040,37.5600336,-122.2688522,3,1
+544,Tradeshift,"San Francisco, California, United States",2,Financial Services,39995,37.7790262,-122.4199061,161,17
+545,Netskope,"Santa Clara, California, United States",6,Security,41190,37.2333253,-121.6846349,15,2
+546,ForgeRock,"San Francisco, California, United States",6,Security,40210,37.7790262,-122.4199061,161,10
+547,Farmers Business Network,"San Carlos, California, United States",5,AI,41640,37.504936,-122.2618236,3,2
+550,SurveyMonkey,"San Mateo, California, United States",5,AI,36161,37.496904,-122.3330573,18,6
+551,FCC,"Washington, District of Columbia, United States",11,Others,12589,38.8949924,-77.0365581,5,2
+553,Vineti,"San Francisco, California, United States",5,AI,42370,37.7790262,-122.4199061,161,25
+556,Dashlane,"New York, New York, United States",6,Security,40000,40.7127281,-74.0060152,112,7
+560,Barstool Sports,"New York, New York, United States",11,Others,37622,40.7127281,-74.0060152,112,7
+562,TripActions,"Palo Alto, California, United States",1,Software,42005,37.4443293,-122.1598465,14,4
+563,Filecoin,"Palo Alto, California, United States",11,Others,41640,37.4443293,-122.1598465,14,3
+564,NFP,"New York, New York, United States",2,Financial Services,35796,40.7127281,-74.0060152,112,22
+565,Snap,"Venice, California, United States",1,Software,40664,33.995044,-118.4668875,1,1
+566,Pindrop,"Atlanta, Georgia, United States",6,Security,40544,33.7490987,-84.3901849,8,1
+567,Wealthfront,"Palo Alto, California, United States",2,Financial Services,39448,37.4443293,-122.1598465,14,1
+568,CreatorIQ,"Culver City, California, United States",1,Software,41640,34.0211224,-118.3964665,6,2
+572,Skillshare,"New York, New York, United States",8,Education,40179,40.7127281,-74.0060152,112,5
+573,PassiveLogic,"Salt Lake City, Utah, United States",5,AI,42370,40.7596198,-111.8867975,3,1
+574,Exabeam,"Foster City, California, United States",6,Security,41275,37.5600336,-122.2688522,3,1
+575,Virgin Galactic,"Mojave, California, United States",11,Others,37987,35.0524699,-118.1739645,1,1
+576,Lend Street Financial,"Oakland, California, United States",2,Financial Services,40330,37.8044557,-122.2713563,9,3
+577,Invesco,"Atlanta, Georgia, United States",2,Financial Services,13119,33.7490987,-84.3901849,8,4
+578,MemSQL,"San Francisco, California, United States",5,AI,40544,37.7790262,-122.4199061,161,25
+579,Nova Credit,"San Francisco, California, United States",2,Financial Services,42507,37.7790262,-122.4199061,161,17
+581,Health IQ,"Mountain View, California, United States",4,Health_Care,41640,37.3893889,-122.0832101,21,4
+583,99designs,"Oakland, California, United States",3,E_Commerce,39479,37.8044557,-122.2713563,9,3
+585,MuleSoft,"San Francisco, California, United States",1,Software,38899,37.7790262,-122.4199061,161,51
+587,Signal Sciences,"Culver City, California, United States",6,Security,41708,34.0211224,-118.3964665,6,1
+588,Grindr,"West Hollywood, California, United States",1,Software,39481,34.0923014,-118.3692894,2,2
+590,Sweetgreen,"Washington, District of Columbia, United States",10,Food,39083,38.8949924,-77.0365581,5,1
+591,Ollie,"New York, New York, United States",10,Food,42648,40.7127281,-74.0060152,112,5
+593,Biofourmis,"Boston, Massachusetts, United States",4,Health_Care,42335,42.3602534,-71.0582912,19,3
+594,Nikola Labs Inc.,"Westerville, Ohio, United States",7,Manufacturing,41913,40.126139,-82.9295287,1,1
+595,Procore,"Carpinteria, California, United States",1,Software,37622,34.3988838,-119.5184564,1,1
+596,Invitae,"San Francisco, California, United States",4,Health_Care,40179,37.7790262,-122.4199061,161,13
+597,eero,"San Francisco, California, United States",7,Manufacturing,42036,37.7790262,-122.4199061,161,10
+600,BigID,"New York, New York, United States",6,Security,42401,40.7127281,-74.0060152,112,7
+601,Motorola Solutions,"Schaumburg, Illinois, United States",6,Security,40547,42.0333608,-88.083406,1,1
+605,PayCargo,"Coral Gables, Florida, United States",9,Transportation,39773,25.72149,-80.2683838,1,1
+606,NCR,"Atlanta, Georgia, United States",2,Financial Services,1884-01-01,33.7490987,-84.3901849,8,4
+607,Bambee,"Los Angeles, California, United States",1,Software,42522,34.0536909,-118.2427666,12,3
+608,Bold Penguin,"Columbus, Ohio, United States",1,Software,42370,39.9622601,-83.0007065,5,1
+609,HighRadius,"Houston, Texas, United States",5,AI,38718,29.7589382,-95.3676974,2,1
+610,Evernote,"Redwood City, California, United States",1,Software,36585,37.4863239,-122.232523,13,4
+611,HYP3R,"San Francisco, California, United States",1,Software,42064,37.7790262,-122.4199061,161,51
+613,Cleveland Clinic,"Cleveland, Ohio, United States",4,Health_Care,7672,41.5051613,-81.6934446,1,1
+614,Boston Dynamics,"Waltham, Massachusetts, United States",7,Manufacturing,33604,42.3756401,-71.2358004,5,2
+615,Upstart,"San Carlos, California, United States",5,AI,41000,37.504936,-122.2618236,3,2
+616,Octane Lending,"New York, New York, United States",2,Financial Services,41640,40.7127281,-74.0060152,112,22
+617,Vroom,"New York, New York, United States",9,Transportation,41275,40.7127281,-74.0060152,112,2
+618,Anduril Industries,"Irvine, California, United States",11,Others,42736,33.6856969,-117.8259819,5,1
+619,Care.com,"Waltham, Massachusetts, United States",11,Others,38991,42.3756401,-71.2358004,5,1
+620,Taysha Gene Therapies,"Dallas, Texas, United States",4,Health_Care,43831,32.7762719,-96.7968559,1,1
+621,Bandwidth,"Raleigh, North Carolina, United States",1,Software,36380,35.7803977,-78.6390989,2,1
+623,Away,"New York, New York, United States",3,E_Commerce,42036,40.7127281,-74.0060152,112,13
+625,Mulberry Platform,"New York, New York, United States",1,Software,40909,40.7127281,-74.0060152,112,20
+626,Thumbtack,"San Francisco, California, United States",3,E_Commerce,39448,37.7790262,-122.4199061,161,11
+627,Berkshire Hathaway,"Omaha, Nebraska, United States",9,Transportation,1839-01-01,41.2587459,-95.9383758,1,1
+628,Algolia,"San Francisco, California, United States",5,AI,41192,37.7790262,-122.4199061,161,25
+629,Replicant,"San Francisco, California, United States",5,AI,42736,37.7790262,-122.4199061,161,25
+630,Take-Two Interactive,"New York, New York, United States",1,Software,33970,40.7127281,-74.0060152,112,20
+631,Finix,"San Francisco, California, United States",3,E_Commerce,42370,37.7790262,-122.4199061,161,11
+635,Cedar,"New York, New York, United States",4,Health_Care,42370,40.7127281,-74.0060152,112,13
+636,Amesite,"Ann Arbor, Michigan, United States",5,AI,42736,42.2681569,-83.7312291,1,1
+640,Rowing Blazers,"New York, New York, United States",3,E_Commerce,42370,40.7127281,-74.0060152,112,13
+641,Vi,"New York, New York, United States",4,Health_Care,40725,40.7127281,-74.0060152,112,13
+643,Stem,"Millbrae, California, United States",1,Software,39814,37.598958,-122.4009419,1,1
+644,Liquid Death,"Santa Monica, California, United States",7,Manufacturing,42736,34.0250724,-118.4965129,7,2
+646,Retirable,"New York, New York, United States",2,Financial Services,43739,40.7127281,-74.0060152,112,22
+647,Preempt Security,"San Francisco, California, United States",6,Security,41640,37.7790262,-122.4199061,161,10
+648,23andMe,"Mountain View, California, United States",4,Health_Care,38808,37.3893889,-122.0832101,21,4
+649,Couchbase,"Santa Clara, California, United States",5,AI,39814,37.2333253,-121.6846349,15,3
+650,IRI,"Chicago, Illinois, United States",5,AI,28856,41.8755616,-87.6244212,16,3
+652,Unqork,"New York, New York, United States",2,Financial Services,42736,40.7127281,-74.0060152,112,22
+653,BacklotCars,"Kansas City, Missouri, United States",9,Transportation,41760,39.100105,-94.5781416,1,1
+654,Webflow,"San Francisco, California, United States",1,Software,40909,37.7790262,-122.4199061,161,51
+655,Superhuman,"San Francisco, California, United States",1,Software,41640,37.7790262,-122.4199061,161,51
+656,ZeBrand Inc.,"New York, New York, United States",1,Software,43744,40.7127281,-74.0060152,112,20
+657,ClassPass,"New York, New York, United States",4,Health_Care,40544,40.7127281,-74.0060152,112,13
+661,Omada Health,"San Francisco, California, United States",4,Health_Care,40544,37.7790262,-122.4199061,161,13
+662,Udacity,"Mountain View, California, United States",8,Education,40544,37.3893889,-122.0832101,21,2
+663,Genesys,"Daly City, California, United States",1,Software,32874,37.6904826,-122.4726708,1,1
+665,Zynga,"San Francisco, California, United States",1,Software,39083,37.7790262,-122.4199061,161,51
+666,Cradlepoint,"Boise, Idaho, United States",6,Security,38718,43.6166163,-116.200886,1,1
+667,NOCD,"Chicago, Illinois, United States",4,Health_Care,41640,41.8755616,-87.6244212,16,2
+669,Grammarly,"San Francisco, California, United States",1,Software,39904,37.7790262,-122.4199061,161,51
+670,Propy,"Palo Alto, California, United States",1,Software,42376,37.4443293,-122.1598465,14,4
+672,EverC,"New York, New York, United States",6,Security,39448,40.7127281,-74.0060152,112,7
+673,Oracle,"Redwood Shores, California, United States",1,Software,28292,37.5318804,-122.2480219,2,1
+675,Pendo,"Raleigh, North Carolina, United States",5,AI,41548,35.7803977,-78.6390989,2,1
+676,BNY Mellon,"New York, New York, United States",2,Financial Services,1784-06-09,40.7127281,-74.0060152,112,22
+677,Airfox,"Boston, Massachusetts, United States",2,Financial Services,42397,42.3602534,-71.0582912,19,3
+678,Outbrain,"New York, New York, United States",1,Software,38718,40.7127281,-74.0060152,112,20
+679,Fiveable,"Milwaukee, Wisconsin, United States",8,Education,43196,43.0349931,-87.922497,1,1
+680,SoLo Funds,"Los Angeles, California, United States",2,Financial Services,42446,34.0536909,-118.2427666,12,1
+684,RetailMeNot,"Austin, Texas, United States",3,E_Commerce,39203,30.2711286,-97.7436995,3,1
+685,HackerOne,"San Francisco, California, United States",6,Security,40909,37.7790262,-122.4199061,161,10
+688,Kit,"New York, New York, United States",11,Others,42005,40.7127281,-74.0060152,112,7
+689,Eventbrite,"San Francisco, California, United States",1,Software,38718,37.7790262,-122.4199061,161,51
+690,Jopwell,"New York, New York, United States",11,Others,41883,40.7127281,-74.0060152,112,7
+692,Alfresco,"San Mateo, California, United States",1,Software,38353,37.496904,-122.3330573,18,3
+693,Carbon Health,"San Francisco, California, United States",4,Health_Care,42186,37.7790262,-122.4199061,161,13
+694,Cobalt,"San Francisco, California, United States",6,Security,41456,37.7790262,-122.4199061,161,10
+695,Esusu Financial,"New York, New York, United States",2,Financial Services,42491,40.7127281,-74.0060152,112,22
+696,Seattle Genetics,"Bothell, Washington, United States",4,Health_Care,35796,47.7598697,-122.2068288,1,1
+697,IFTTT,"San Francisco, California, United States",1,Software,40526,37.7790262,-122.4199061,161,51
+699,ZeroFOX,"Baltimore, Maryland, United States",6,Security,41275,39.2908816,-76.610759,2,1
+700,Stash,"New York, New York, United States",2,Financial Services,42054,40.7127281,-74.0060152,112,22
+701,N3,"Atlanta, Georgia, United States",1,Software,37987,33.7490987,-84.3901849,8,3
+702,Vault,"Austin, Texas, United States",2,Financial Services,41275,30.2711286,-97.7436995,3,1
+704,LabCorp,"Burlington, North Carolina, United States",4,Health_Care,28738,36.0956918,-79.4377991,1,1
+705,DroneDeploy,"San Francisco, California, United States",7,Manufacturing,41275,37.7790262,-122.4199061,161,10
+708,MK Decision,"San Diego, California, United States",2,Financial Services,42207,32.7174209,-117.1627714,3,1
+709,Eclypsium,"Portland, Oregon, United States",6,Security,42887,45.5202471,-122.6741949,2,1
+711,Regeneron Pharmaceuticals,"Tarrytown, New York, United States",4,Health_Care,32143,41.0762077,-73.8587461,1,1
+713,Domo,"American Fork, Utah, United States",5,AI,40179,40.3768954,-111.7957645,1,1
+714,Casper,"New York, New York, United States",3,E_Commerce,41640,40.7127281,-74.0060152,112,13
+715,Coil,"San Francisco, California, United States",1,Software,43216,37.7790262,-122.4199061,161,51
+716,Loom,"San Francisco, California, United States",1,Software,42614,37.7790262,-122.4199061,161,51
+717,Node,"San Francisco, California, United States",5,AI,41640,37.7790262,-122.4199061,161,25
+720,Immunomedics,"Morris Plains, New Jersey, United States",4,Health_Care,30133,40.8364845,-74.47818854,1,1
+721,Fanatics,"Jacksonville, Florida, United States",7,Manufacturing,34700,30.3321838,-81.655651,1,1
+722,Novavax,"Gaithersburg, Maryland, United States",4,Health_Care,31778,39.1434406,-77.2013705,2,1
+724,Sanity,"San Francisco, California, United States",1,Software,42370,37.7790262,-122.4199061,161,51
+728,Camino Financial,"Los Angeles, California, United States",5,AI,41640,34.0536909,-118.2427666,12,1
+730,Nav,"Draper, Utah, United States",2,Financial Services,41030,40.5246711,-111.8638226,1,1
+734,Magic Leap,"Plantation, Florida, United States",7,Manufacturing,40544,26.1265258,-80.25786124,1,1
+735,Ginkgo Bioworks,"Boston, Massachusetts, United States",4,Health_Care,39448,42.3602534,-71.0582912,19,3
+736,Aziyo Biologics,"Silver Spring, Maryland, United States",4,Health_Care,42005,38.9959461,-77.0276231,1,1
+737,BetterCloud,"New York, New York, United States",1,Software,40848,40.7127281,-74.0060152,112,20
+740,BANDWAGON,"Greenville, South Carolina, United States",5,AI,41760,35.612661,-77.3663538,1,1
+742,Redis Labs,"Mountain View, California, United States",5,AI,40544,37.3893889,-122.0832101,21,4
+743,Jupiter,"San Francisco, California, United States",9,Transportation,43466,37.7790262,-122.4199061,161,10
+744,Zume Pizza,"Mountain View, California, United States",10,Food,42255,37.3893889,-122.0832101,21,1
+745,JobGet,"Boston, Massachusetts, United States",1,Software,43101,42.3602534,-71.0582912,19,5
+746,OfferUp,"Bellevue, Washington, United States",3,E_Commerce,40544,47.6144219,-122.1923372,4,1
+747,Intuit,"Mountain View, California, United States",2,Financial Services,30317,37.3893889,-122.0832101,21,1
+748,comScore,"Reston, Virginia, United States",5,AI,36373,38.9583737,-77.3579805,1,1
+750,Vericool,"Livermore, California, United States",10,Food,42005,37.6820583,-121.7680531,1,1
+751,Rapid7,"Boston, Massachusetts, United States",6,Security,36526,42.3602534,-71.0582912,19,2
+753,Zuora,"San Mateo, California, United States",2,Financial Services,39083,37.496904,-122.3330573,18,2
+755,DataRobot,"Boston, Massachusetts, United States",7,Manufacturing,41061,42.3602534,-71.0582912,19,1
+756,Weee!,"Fremont, California, United States",3,E_Commerce,42156,37.5482697,-121.9885719,1,1
+757,Acorns,"Irvine, California, United States",2,Financial Services,40968,33.6856969,-117.8259819,5,1
+758,StackShare,"San Francisco, California, United States",1,Software,41640,37.7790262,-122.4199061,161,51
+759,Care/of,"New York, New York, United States",4,Health_Care,42370,40.7127281,-74.0060152,112,13
+760,Lineage Logistics,"Novi, Michigan, United States",9,Transportation,40909,42.48059,-83.4754913,1,1
+764,Arista Networks,"Santa Clara, California, United States",7,Manufacturing,37987,37.2333253,-121.6846349,15,4
+765,Securitize,"San Francisco, California, United States",2,Financial Services,43040,37.7790262,-122.4199061,161,17
+767,Remotion,"San Francisco, California, United States",1,Software,43466,37.7790262,-122.4199061,161,51
+768,SimpleCitizen,"Salt Lake City, Utah, United States",1,Software,41640,40.7596198,-111.8867975,3,1
+769,OneLogin,"San Francisco, California, United States",5,AI,39814,37.7790262,-122.4199061,161,25
+771,Grid AI,"New York, New York, United States",5,AI,43466,40.7127281,-74.0060152,112,16
+773,SiFive,"San Mateo, California, United States",7,Manufacturing,42248,37.496904,-122.3330573,18,3
+774,Kinside,"San Francisco, California, United States",1,Software,43252,37.7790262,-122.4199061,161,51
+775,Greenlight Planet,"Chicago, Illinois, United States",7,Manufacturing,39814,41.8755616,-87.6244212,16,2
+777,Within3,"Lakewood, Ohio, United States",4,Health_Care,39448,41.4819932,-81.7981908,1,1
+778,Bread,"New York, New York, United States",2,Financial Services,41640,40.7127281,-74.0060152,112,22
+779,People.ai,"San Francisco, California, United States",5,AI,42403,37.7790262,-122.4199061,161,25
+780,Scopely,"Culver City, California, United States",1,Software,40544,34.0211224,-118.3964665,6,2
+782,UJET,"San Francisco, California, United States",1,Software,42005,37.7790262,-122.4199061,161,51
+783,Course Hero,"Redwood City, California, United States",8,Education,38991,37.4863239,-122.232523,13,1
+785,SimilarWeb,"New York, New York, United States",5,AI,39295,40.7127281,-74.0060152,112,16
+789,Bowery Farming,"New York, New York, United States",10,Food,42005,40.7127281,-74.0060152,112,5
+791,Ruby Love,"New York, New York, United States",4,Health_Care,42343,40.7127281,-74.0060152,112,13
+793,Company,"Sag Harbor, New York, United States",1,Software,40544,40.9978727,-72.2922292,1,1
+794,Vir Biotechnology,"San Francisco, California, United States",4,Health_Care,42467,37.7790262,-122.4199061,161,13
+796,Looker,"Santa Cruz, California, United States",5,AI,40544,37.050096,-121.9905908,1,1
+797,Revl,"San Francisco, California, United States",7,Manufacturing,42005,37.7790262,-122.4199061,161,10
+798,JFrog,"Sunnyvale, California, United States",1,Software,39566,37.3688301,-122.0363496,5,2
+799,Clearcover,"Chicago, Illinois, United States",2,Financial Services,42370,41.8755616,-87.6244212,16,3
+800,Noyo,"San Francisco, California, United States",4,Health_Care,43009,37.7790262,-122.4199061,161,13
+801,GoodRx,"Santa Monica, California, United States",4,Health_Care,40544,34.0250724,-118.4965129,7,2
+802,Sonder,"San Francisco, California, United States",11,Others,41091,37.7790262,-122.4199061,161,6
+803,Nuvia,"Santa Clara, California, United States",1,Software,43466,37.2333253,-121.6846349,15,4
+804,Accolade,"Plymouth Meeting, Pennsylvania, United States",4,Health_Care,39083,40.102332,-75.2743467,1,1
+806,K Health,"New York, New York, United States",5,AI,42370,40.7127281,-74.0060152,112,16
+807,Guild Education,"Denver, Colorado, United States",8,Education,42156,39.7392364,-104.9848623,5,1
+808,Sigma Computing,"San Francisco, California, United States",5,AI,41640,37.7790262,-122.4199061,161,25
+809,SaltStack,"Lehi, Utah, United States",1,Software,41122,40.3880902,-111.8491619,1,1
+810,Oncorus,"Cambridge, Massachusetts, United States",4,Health_Care,42095,42.3750997,-71.1056157,8,3
+811,Amazon Web Services,"Seattle, Washington, United States",1,Software,40909,47.6038321,-122.3300624,14,4
+812,Dwolla,"Des Moines, Iowa, United States",2,Financial Services,39615,41.5910641,-93.6037149,1,1
+814,SmartAsset,"New York, New York, United States",5,AI,40909,40.7127281,-74.0060152,112,16
+815,Fast,"San Francisco, California, United States",6,Security,43525,37.7790262,-122.4199061,161,10
+816,Metromile,"San Francisco, California, United States",9,Transportation,40562,37.7790262,-122.4199061,161,10
+818,New Relic,"San Francisco, California, United States",5,AI,39479,37.7790262,-122.4199061,161,25
+820,Oak Street Health,"Chicago, Illinois, United States",4,Health_Care,40909,41.8755616,-87.6244212,16,2
+821,DataScience.com,"Culver City, California, United States",5,AI,41640,34.0211224,-118.3964665,6,1
+822,Gigster,"San Francisco, California, United States",1,Software,41275,37.7790262,-122.4199061,161,51
+824,Olo,"New York, New York, United States",3,E_Commerce,38353,40.7127281,-74.0060152,112,13
+825,Finch,"Boston, Massachusetts, United States",2,Financial Services,43586,42.3602534,-71.0582912,19,3
+826,Notion,"San Francisco, California, United States",1,Software,41275,37.7790262,-122.4199061,161,51
+827,Bitwise Industries,"Fresno, California, United States",8,Education,41456,36.7394421,-119.7848307,1,1
+829,Mastercard,"Purchase, New York, United States",2,Financial Services,24457,41.0409305,-73.7145746,2,1
+831,Plug Power,"Latham, New York, United States",7,Manufacturing,35431,42.7444055,-73.761563,1,1
+832,Toast,"Boston, Massachusetts, United States",1,Software,40899,42.3602534,-71.0582912,19,5
+834,NormShield,"Vienna, Virginia, United States",6,Security,42416,38.9013729,-77.2651762,1,1
+836,NextCapital,"Chicago, Illinois, United States",2,Financial Services,35065,41.8755616,-87.6244212,16,3
+837,Fluree,"Winston Salem, North Carolina, United States",1,Software,42736,36.0998131,-80.2440518,1,1
+838,Fanatiz,"Miami, Florida, United States",11,Others,42736,25.7742658,-80.1936589,4,2
+839,H2O.ai,"Mountain View, California, United States",5,AI,40909,37.3893889,-122.0832101,21,4
+840,Golden,"San Francisco, California, United States",8,Education,42736,37.7790262,-122.4199061,161,7
+841,Houzz,"Palo Alto, California, United States",11,Others,39814,37.4443293,-122.1598465,14,3
+842,Rever,"San Mateo, California, United States",1,Software,42131,37.496904,-122.3330573,18,3
+844,Storj Labs,"Atlanta, Georgia, United States",1,Software,41640,33.7490987,-84.3901849,8,3
+845,BigPanda,"Mountain View, California, United States",1,Software,40909,37.3893889,-122.0832101,21,5
+846,Menlo Micro,"Irvine, California, United States",7,Manufacturing,42706,33.6856969,-117.8259819,5,2
+847,Manticore Games,"San Mateo, California, United States",11,Others,42370,37.496904,-122.3330573,18,1
+848,WhatsApp,"Santa Clara, California, United States",1,Software,39814,37.2333253,-121.6846349,15,4
+849,Split Software,"Redwood City, California, United States",5,AI,42292,37.4863239,-122.232523,13,3
+850,Miso Robotics,"Pasadena, California, United States",10,Food,42552,34.1476452,-118.1444779,1,1
+851,Copper,"San Francisco, California, United States",1,Software,40544,37.7790262,-122.4199061,161,51
+852,OnDeck,"New York, New York, United States",2,Financial Services,39083,40.7127281,-74.0060152,112,22
+853,BitPay,"Atlanta, Georgia, United States",2,Financial Services,40664,33.7490987,-84.3901849,8,4
+854,Vox Media,"Washington, District of Columbia, United States",1,Software,37816,38.8949924,-77.0365581,5,1
+855,Forage,"San Francisco, California, United States",8,Education,42736,37.7790262,-122.4199061,161,7
+856,Agora.io,"Santa Clara, California, United States",1,Software,40909,37.2333253,-121.6846349,15,4
+858,DrChrono,"Sunnyvale, California, United States",4,Health_Care,39814,37.3688301,-122.0363496,5,1
+860,H1,"New York, New York, United States",5,AI,43069,40.7127281,-74.0060152,112,16
+861,Daring Foods,"Los Angeles, California, United States",10,Food,43101,34.0536909,-118.2427666,12,1
+862,Bulletproof,"Seattle, Washington, United States",10,Food,41640,47.6038321,-122.3300624,14,2
+863,Goldbelly,"New York, New York, United States",10,Food,40909,40.7127281,-74.0060152,112,5
+865,FanDuel,"New York, New York, United States",1,Software,39083,40.7127281,-74.0060152,112,20
+870,Switch,"New York, New York, United States",1,Software,41640,40.7127281,-74.0060152,112,20
+871,Blue Apron,"New York, New York, United States",10,Food,40909,40.7127281,-74.0060152,112,5
+872,Kaltura,"New York, New York, United States",8,Education,38869,40.7127281,-74.0060152,112,5
+873,Momentus Inc.,"Santa Clara, California, United States",9,Transportation,43040,37.2333253,-121.6846349,15,1
+875,Sensor Tower,"San Francisco, California, United States",5,AI,41275,37.7790262,-122.4199061,161,25
+876,Chime,"San Francisco, California, United States",2,Financial Services,41275,37.7790262,-122.4199061,161,17
+877,Virtusa,"Westborough, Massachusetts, United States",1,Software,35065,42.2694308,-71.6129907,1,1
+878,Mosaic,"Oakland, California, United States",2,Financial Services,40544,37.8044557,-122.2713563,9,3
+879,Signal,"Chicago, Illinois, United States",5,AI,40082,41.8755616,-87.6244212,16,3
+881,Glossier,"New York, New York, United States",11,Others,40179,40.7127281,-74.0060152,112,7
+882,Chewy,"Dania, Florida, United States",3,E_Commerce,40695,47.6032433,-122.3366562,1,1
+883,Bakkt,"Atlanta, Georgia, United States",2,Financial Services,43101,33.7490987,-84.3901849,8,4
+884,Newlight Technologies,"Irvine, California, United States",7,Manufacturing,37622,33.6856969,-117.8259819,5,2
+885,Dataminr,"New York, New York, United States",5,AI,39814,40.7127281,-74.0060152,112,16
+887,LOOM,"Los Angeles, California, United States",4,Health_Care,42370,34.0536909,-118.2427666,12,2
+888,General Motors,"Detroit, Michigan, United States",9,Transportation,3182,42.3315509,-83.0466403,1,1
+889,Honey,"Los Angeles, California, United States",3,E_Commerce,41183,34.0536909,-118.2427666,12,1
+892,Feedzai,"San Mateo, California, United States",5,AI,40544,37.496904,-122.3330573,18,6
+893,Capitolis,"New York, New York, United States",2,Financial Services,42736,40.7127281,-74.0060152,112,22
+894,Mavenir,"Richardson, Texas, United States",6,Security,38353,32.9481789,-96.7297206,1,1
+895,ReadCoor,"Cambridge, Massachusetts, United States",4,Health_Care,42614,42.3750997,-71.1056157,8,3
+896,Scentbird,"New York, New York, United States",3,E_Commerce,41654,40.7127281,-74.0060152,112,13
+897,Finicity,"Salt Lake City, Utah, United States",6,Security,36161,40.7596198,-111.8867975,3,1
+901,AppLovin,"Palo Alto, California, United States",1,Software,40969,37.4443293,-122.1598465,14,4
+903,Verily,"San Francisco, California, United States",7,Manufacturing,42345,37.7790262,-122.4199061,161,10
+906,Pivotal,"San Francisco, California, United States",5,AI,41365,37.7790262,-122.4199061,161,25
+908,Imperfect Foods,"San Francisco, California, United States",10,Food,42186,37.7790262,-122.4199061,161,1
+909,AppDynamics,"San Francisco, California, United States",5,AI,39539,37.7790262,-122.4199061,161,25
+910,Iron Ox,"San Carlos, California, United States",7,Manufacturing,42005,37.504936,-122.2618236,3,1
+911,Druva,"Sunnyvale, California, United States",1,Software,39662,37.3688301,-122.0363496,5,2
+912,Zscaler,"San Jose, California, United States",6,Security,39448,37.3361905,-121.8905833,13,3
+914,Eargo,"San Jose, California, United States",4,Health_Care,40179,37.3361905,-121.8905833,13,1
+915,Bank of America,"Charlotte, North Carolina, United States",2,Financial Services,36007,35.2272,-80.843083,2,2
+916,SwineTech,"Cedar Rapids, Iowa, United States",5,AI,42005,41.9758872,-91.6704053,1,1
+917,DataStax,"Santa Clara, California, United States",5,AI,40268,37.2333253,-121.6846349,15,3
+920,ShoppingGives,"Chicago, Illinois, United States",3,E_Commerce,42005,41.8755616,-87.6244212,16,2
+921,Biobot Analytics,"Cambridge, Massachusetts, United States",5,AI,42979,42.3750997,-71.1056157,8,3
+923,Neo4j,"San Mateo, California, United States",5,AI,39083,37.496904,-122.3330573,18,6
+924,Amwell,"Boston, Massachusetts, United States",4,Health_Care,38718,42.3602534,-71.0582912,19,3
+928,Fundbox,"San Francisco, California, United States",2,Financial Services,41275,37.7790262,-122.4199061,161,17
+929,ActiveCampaign,"Chicago, Illinois, United States",1,Software,37622,41.8755616,-87.6244212,16,2
+931,ACV,"Buffalo, New York, United States",9,Transportation,41640,42.8867166,-78.8783922,1,1
+932,Fireflies.ai,"San Francisco, California, United States",1,Software,42552,37.7790262,-122.4199061,161,51
+933,Claravine,"Provo, Utah, United States",5,AI,40909,40.2338438,-111.6585337,2,1
+934,Zebra Technologies,"Lincolnshire, Illinois, United States",9,Transportation,33239,42.1900249,-87.9084039,1,1
+935,Sunrun,"San Francisco, California, United States",11,Others,39083,37.7790262,-122.4199061,161,6
+936,tray.io,"San Francisco, California, United States",1,Software,41013,37.7790262,-122.4199061,161,51
+939,TransparentBusiness,"New York, New York, United States",1,Software,42177,40.7127281,-74.0060152,112,20
+940,Beauty Bakerie Cosmetics Brand,"San Diego, California, United States",3,E_Commerce,40544,32.7174209,-117.1627714,3,1
+942,Data Gumbo,"Houston, Texas, United States",1,Software,42598,29.7589382,-95.3676974,2,1
+944,Lendtable,"San Francisco, California, United States",2,Financial Services,43891,37.7790262,-122.4199061,161,17
+945,Walker & Company Brands,"Palo Alto, California, United States",4,Health_Care,41382,37.4443293,-122.1598465,14,2
+946,Roam Research,"San Francisco, California, United States",1,Software,43034,37.7790262,-122.4199061,161,51
+948,Foursquare,"New York, New York, United States",5,AI,39873,40.7127281,-74.0060152,112,16
+949,Roofstock,"Oakland, California, United States",3,E_Commerce,42005,37.8044557,-122.2713563,9,3
+950,Synthego,"Redwood City, California, United States",5,AI,41091,37.4863239,-122.232523,13,3
+954,Uptake Technologies,"Chicago, Illinois, United States",5,AI,41821,41.8755616,-87.6244212,16,3
+956,C3,"Redwood City, California, United States",5,AI,39814,37.4863239,-122.232523,13,3
+959,Quantum,"San Jose, California, United States",1,Software,29221,37.3361905,-121.8905833,13,4
+960,MoneyLion,"New York, New York, United States",2,Financial Services,41275,40.7127281,-74.0060152,112,22
+962,Northspyre,"Brooklyn, New York, United States",1,Software,42736,40.6501038,-73.9495823,7,1
+963,BOND,"New York, New York, United States",3,E_Commerce,41275,40.7127281,-74.0060152,112,13
+964,Good Buy Gear,"Arvada, Colorado, United States",3,E_Commerce,42614,39.8211225,-105.220743,1,1
+965,Agilent Technologies,"Santa Clara, California, United States",7,Manufacturing,36161,37.2333253,-121.6846349,15,4
+967,Boxed,"New York, New York, United States",3,E_Commerce,41426,40.7127281,-74.0060152,112,13
+968,Romeo Power,"Los Angeles, California, United States",7,Manufacturing,42005,34.0536909,-118.2427666,12,1
+969,Dedrone,"San Francisco, California, United States",7,Manufacturing,41640,37.7790262,-122.4199061,161,10
+971,Branch,"Redwood City, California, United States",1,Software,41744,37.4863239,-122.232523,13,4
+972,Faraday Future,"Gardena, California, United States",9,Transportation,41730,33.8963593,-118.3053037,1,1
+973,HackerRank,"Mountain View, California, United States",1,Software,39814,37.3893889,-122.0832101,21,5
+975,Episerver,"Nashua, New Hampshire, United States",3,E_Commerce,34342,42.7653662,-71.467566,2,1
+977,Actifio,"Waltham, Massachusetts, United States",1,Software,39995,42.3756401,-71.2358004,5,1
+978,SunPower,"San Jose, California, United States",11,Others,31048,37.3361905,-121.8905833,13,1
+980,U.S. Department of Education,"Washington, District of Columbia, United States",8,Education,29221,38.8949924,-77.0365581,5,1
+981,ButterflyMX,"New York, New York, United States",6,Security,40991,40.7127281,-74.0060152,112,7
+983,Campuswire,"New York, New York, United States",8,Education,42583,40.7127281,-74.0060152,112,5
+984,Boxlight Corp.,"Belfair, Washington, United States",7,Manufacturing,31048,47.5023158,-122.7773648,1,1
+985,Color,"Burlingame, California, United States",4,Health_Care,41275,37.5841026,-122.3660825,2,2
+986,Claroty,"New York, New York, United States",6,Security,42139,40.7127281,-74.0060152,112,7
+988,Starburst,"Boston, Massachusetts, United States",5,AI,43009,42.3602534,-71.0582912,19,4
+989,GetSetUp,"San Francisco, California, United States",1,Software,43683,37.7790262,-122.4199061,161,51
+993,Mahmee,"Los Angeles, California, United States",4,Health_Care,41640,34.0536909,-118.2427666,12,2
+994,SnapLogic,"San Mateo, California, United States",5,AI,38718,37.496904,-122.3330573,18,6
+995,Kraft Heinz,"Mendota, Minnesota, United States",10,Food,42187,44.8871878,-93.1643869,1,1
+996,Zocdoc,"New York, New York, United States",4,Health_Care,39343,40.7127281,-74.0060152,112,13
+998,Pluralsight,"Farmington, Utah, United States",8,Education,37987,40.9804423,-111.8874688,1,1

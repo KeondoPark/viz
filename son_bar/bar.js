@@ -2,52 +2,56 @@ const width = 1200;
 const height = 600;
 const margin = {top: 40, left: 40, bottom: 40, right: 40};
 
-const data = [
-    // {name: 'Stanford', value: 682, color: '#5487b1'},
-    // {name: 'Harvard', value: 517, color: '#63a1af'},
-    // {name: 'MIT', value: 336, color: '#7ab8aa'},
-    // {name: 'UPENN', value: 294, color: '#93caa8'},
-    // {name: 'UC Berkeley', value: 287, color: '#add7a8'},
-    // {name: 'Cornell', value: 153, color: '#c6e3a7'},
-    // {name: 'CMU', value: 145, color: '#c6e3a7'},
-    // {name: 'Columbia', value: 119, color: '#c6e3a7'},
-    // {name: 'UMich', value: 109, color: '#c6e3a7'},
-    // {name: 'Oxford', value: 108, color: '#c6e3a7'},
-    // {name: 'UW', value: 108, color: '#c6e3a7'},
-    // {name: 'UCLA', value: 100, color: '#c6e3a7'},
-    // {name: 'NU', value: 95, color: '#c6e3a7'},
-    // {name: 'Cambridge', value: 94, color: '#c6e3a7'},
-    // {name: 'NYU', value: 93, color: '#c6e3a7'},
-    // {name: 'USC', value: 93, color: '#c6e3a7'},
-    // {name: 'UIUC', value: 92, color: '#c6e3a7'},
-    // {name: 'Tel Aviv', value: 86, color: '#c6e3a7'},
-    // {name: 'UT Austin', value: 85, color: '#c6e3a7'},
-    // {name: 'SNU', value: 6, color: '#E7846F'},
-    // {name: 'KAIST', value: 4, color: '#E7846F'},
-    // {name: 'Yonsei', value: 3, color: '#E7846F'}
+d3.selectAll("input").on("change", function(){
+    console.log(this.value)
+});
 
-    {name: 'SNU', value: 119, color: '#5487b1'},
-    {name: 'KAIST', value: 52, color: '#63a1af'},
-    {name: 'Korea', value: 40, color: '#7ab8aa'},
-    {name: 'Yonsei', value: 32, color: '#93caa8'},
-    {name: 'Hanyang', value: 23, color: '#add7a8'},
-    {name: 'Stanford', value: 14, color: '#c6e3a7'},
-    {name: 'POSTECH', value: 10, color: '#c6e3a7'},
-    {name: 'Columbia', value: 9, color: '#c6e3a7'},
-    {name: 'CMU', value: 8, color: '#c6e3a7'},
-    {name: 'SKKU', value: 7, color: '#c6e3a7'},
-    {name: 'Columbia', value: 6, color: '#c6e3a7'},
-    {name: 'KHU', value: 6, color: '#c6e3a7'},
-    {name: 'MIT', value: 6, color: '#c6e3a7'},
-    {name: 'PNU', value: 6, color: '#c6e3a7'},
-    {name: 'Hongik', value: 6, color: '#c6e3a7'},
-    {name: 'UPENN', value: 5, color: '#c6e3a7'},
-    {name: 'NU', value: 5, color: '#c6e3a7'},
-    {name: 'Kangwon', value: 5, color: '#c6e3a7'},
-    {name: 'Harvard', value: 5, color: '#c6e3a7'},
-    {name: 'UC Berkley', value: 5, color: '#c6e3a7'},
-    {name: 'Ajou', value: 5, color: '#c6e3a7'},
-    {name: 'Cornell', value: 5, color: '#c6e3a7'}
+const data = [
+    {name: 'Stanford', value: 682, color: '#5487b1', ind_list: 'AllIndustries'},
+    {name: 'Harvard', value: 517, color: '#63a1af', ind_list: 'AllIndustries'},
+    {name: 'MIT', value: 336, color: '#7ab8aa', ind_list: 'AllIndustries'},
+    {name: 'UPENN', value: 294, color: '#93caa8', ind_list: 'AllIndustries'},
+    {name: 'UC Berkeley', value: 287, color: '#add7a8', ind_list: 'AllIndustries'},
+    {name: 'Cornell', value: 153, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'CMU', value: 145, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'Columbia', value: 119, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'UMich', value: 109, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'Oxford', value: 108, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'UW', value: 108, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'UCLA', value: 100, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'NU', value: 95, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'Cambridge', value: 94, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'NYU', value: 93, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'USC', value: 93, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'UIUC', value: 92, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'Tel Aviv', value: 86, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'UT Austin', value: 85, color: '#c6e3a7', ind_list: 'AllIndustries'},
+    {name: 'SNU', value: 6, color: '#E7846F', ind_list: 'AllIndustries'},
+    {name: 'KAIST', value: 4, color: '#E7846F', ind_list: 'AllIndustries'},
+    {name: 'Yonsei', value: 3, color: '#E7846F', ind_list: 'AllIndustries'}
+
+    // {name: 'SNU', value: 119, color: '#5487b1'},
+    // {name: 'KAIST', value: 52, color: '#63a1af'},
+    // {name: 'Korea', value: 40, color: '#7ab8aa'},
+    // {name: 'Yonsei', value: 32, color: '#93caa8'},
+    // {name: 'Hanyang', value: 23, color: '#add7a8'},
+    // {name: 'Stanford', value: 14, color: '#c6e3a7'},
+    // {name: 'POSTECH', value: 10, color: '#c6e3a7'},
+    // {name: 'Columbia', value: 9, color: '#c6e3a7'},
+    // {name: 'CMU', value: 8, color: '#c6e3a7'},
+    // {name: 'SKKU', value: 7, color: '#c6e3a7'},
+    // {name: 'Columbia', value: 6, color: '#c6e3a7'},
+    // {name: 'KHU', value: 6, color: '#c6e3a7'},
+    // {name: 'MIT', value: 6, color: '#c6e3a7'},
+    // {name: 'PNU', value: 6, color: '#c6e3a7'},
+    // {name: 'Hongik', value: 6, color: '#c6e3a7'},
+    // {name: 'UPENN', value: 5, color: '#c6e3a7'},
+    // {name: 'NU', value: 5, color: '#c6e3a7'},
+    // {name: 'Kangwon', value: 5, color: '#c6e3a7'},
+    // {name: 'Harvard', value: 5, color: '#c6e3a7'},
+    // {name: 'UC Berkley', value: 5, color: '#c6e3a7'},
+    // {name: 'Ajou', value: 5, color: '#c6e3a7'},
+    // {name: 'Cornell', value: 5, color: '#c6e3a7'}
   ];
 
 const x = d3.scaleBand()
@@ -83,6 +87,8 @@ svg.append('g')
   .selectAll('rect').data(data).enter().append('rect')
   .attr('x', d => x(d.name))
   .attr('y', d => y(d.value))
+  .transition()
+  .duration(800)
   .attr('height', d => y(0) - y(d.value))
   .attr("rx", 15)
   .attr('width', x.bandwidth())

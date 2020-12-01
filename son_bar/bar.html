@@ -1,37 +1,90 @@
-
-
 <!doctype html>
 <html lang="ko">
-  <head>
-    <title>Bar chart</title>
-    <style>
-      #svg-area {
-        position: relative;
-      }
 
-      #tooltip {
-        position: absolute;
-        opacity: 0;
-        width: 40px;
-        height: 20px;
-        line-height: 20px;
-        transition: all 0.3s;
-        border-radius: 5px;
-        text-align: center;
-        color: #fff;
-        font-size: 14px;
-        font-weight: bold;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="svg-area">
-      <div id="tooltip"></div>
-    </div>
-  </body>  
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="bar.js"></script>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  
+  <title>Bar chart</title>
+  <style>
+    body {
+      margin-left: 10%;
+    }
+
+    #svg-area {
+      position: relative;
+    }
+
+    #form {
+      /* margin-left: 5%; */
+      width: 80%;
+    }
+
+    .toolTip {
+      position: absolute;
+      border: 0 none;
+      border-radius: 4px 4px 4px 4px;
+      /*     background-color: white; */
+      background: rgba(75, 72, 72, 0.8);
+      color: white;
+      padding: 1px 10px 1px 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="my_dataviz">
+
+  </div>
+
+  <form id="form" class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-outline-secondary active">
+      <input type="radio" name="industry_select" onchange="update(data1)" checked>All Industries<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(data2)">AI<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(data3)">Ecommerce<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(data4)">Education<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(data5)">F&B<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(data6)">Financial<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(data7)">Healthcare<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(data8)">Manufacturing<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(data9)">Security<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(data10)">Software<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(data11)">Transportation<br>
+    </label>
+  </form>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="bar_ex.js"></script>
+
+
 </html>
-

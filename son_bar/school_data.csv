@@ -1,0 +1,213 @@
+﻿name,value,color,ind_list
+Stanford,682,#5487b1,AllIndustries
+Harvard,517,#63a1af,AllIndustries
+MIT,336,#7ab8aa,AllIndustries
+UPENN,294,#93caa8,AllIndustries
+UC Berkeley,287,#add7a8,AllIndustries
+Cornell,153,#c6e3a7,AllIndustries
+CMU,145,#c6e3a7,AllIndustries
+Columbia,119,#c6e3a7,AllIndustries
+UMich,109,#c6e3a7,AllIndustries
+Oxford,108,#c6e3a7,AllIndustries
+UW,108,#c6e3a7,AllIndustries
+UCLA,100,#c6e3a7,AllIndustries
+NU,95,#c6e3a7,AllIndustries
+Cambridge,94,#c6e3a7,AllIndustries
+NYU,93,#c6e3a7,AllIndustries
+USC,93,#c6e3a7,AllIndustries
+UIUC,92,#c6e3a7,AllIndustries
+Tel Aviv,86,#c6e3a7,AllIndustries
+UT Austin,85,#c6e3a7,AllIndustries
+SNU,6,#E7846F,AllIndustries
+KAIST,4,#E7846F,AllIndustries
+Yonsei,3,#E7846F,AllIndustries
+Stanford,31,#5487b1,AI
+Harvard,22,#63a1af,AI
+MIT,19,#7ab8aa,AI
+UPENN,5,#93caa8,AI
+UC Berkeley,24,#add7a8,AI
+Cornell,10,#c6e3a7,AI
+CMU,5,#c6e3a7,AI
+Columbia,6,#c6e3a7,AI
+UMich,3,#c6e3a7,AI
+Oxford,5,#c6e3a7,AI
+UW,3,#c6e3a7,AI
+UCLA,9,#c6e3a7,AI
+NU,7,#c6e3a7,AI
+Cambridge,3,#c6e3a7,AI
+NYU,8,#c6e3a7,AI
+USC,3,#c6e3a7,AI
+UIUC,7,#c6e3a7,AI
+Tel Aviv,6,#c6e3a7,AI
+UT Austin,4,#c6e3a7,AI
+Stanford,94,#5487b1,Ecommerce
+Harvard,56,#63a1af,Ecommerce
+MIT,25,#7ab8aa,Ecommerce
+UPENN,19,#93caa8,Ecommerce
+UC Berkeley,30,#add7a8,Ecommerce
+Cornell,21,#c6e3a7,Ecommerce
+CMU,20,#c6e3a7,Ecommerce
+Columbia,11,#c6e3a7,Ecommerce
+UMich,15,#c6e3a7,Ecommerce
+Oxford,11,#c6e3a7,Ecommerce
+UW,17,#c6e3a7,Ecommerce
+UCLA,7,#c6e3a7,Ecommerce
+NU,12,#c6e3a7,Ecommerce
+Cambridge,11,#c6e3a7,Ecommerce
+NYU,12,#c6e3a7,Ecommerce
+USC,25,#c6e3a7,Ecommerce
+UIUC,7,#c6e3a7,Ecommerce
+Tel Aviv,6,#c6e3a7,Ecommerce
+UT Austin,13,#c6e3a7,Ecommerce
+Stanford,26,#5487b1,Education
+Harvard,11,#63a1af,Education
+MIT,6,#7ab8aa,Education
+UPENN,7,#93caa8,Education
+UC Berkeley,5,#add7a8,Education
+Cornell,3,#c6e3a7,Education
+CMU,1,#c6e3a7,Education
+Columbia,1,#c6e3a7,Education
+UMich,0,#c6e3a7,Education
+Oxford,1,#c6e3a7,Education
+UW,0,#c6e3a7,Education
+UCLA,1,#c6e3a7,Education
+NU,1,#c6e3a7,Education
+Cambridge,2,#c6e3a7,Education
+NYU,5,#c6e3a7,Education
+USC,0,#c6e3a7,Education
+UIUC,0,#c6e3a7,Education
+Tel Aviv,3,#c6e3a7,Education
+UT Austin,0,#c6e3a7,Education
+Stanford,3,#5487b1,F&B
+Harvard,14,#63a1af,F&B
+MIT,0,#7ab8aa,F&B
+UPENN,4,#93caa8,F&B
+UC Berkeley,1,#add7a8,F&B
+Cornell,1,#c6e3a7,F&B
+CMU,1,#c6e3a7,F&B
+Columbia,0,#c6e3a7,F&B
+UMich,0,#c6e3a7,F&B
+Oxford,1,#c6e3a7,F&B
+UW,0,#c6e3a7,F&B
+UCLA,1,#c6e3a7,F&B
+NU,3,#c6e3a7,F&B
+Cambridge,0,#c6e3a7,F&B
+NYU,1,#c6e3a7,F&B
+USC,0,#c6e3a7,F&B
+UIUC,0,#c6e3a7,F&B
+Tel Aviv,0,#c6e3a7,F&B
+UT Austin,1,#c6e3a7,F&B
+Stanford,108,#5487b1,Financial
+Harvard,95,#63a1af,Financial
+MIT,33,#7ab8aa,Financial
+UPENN,70,#93caa8,Financial
+UC Berkeley,38,#add7a8,Financial
+Cornell,20,#c6e3a7,Financial
+CMU,16,#c6e3a7,Financial
+Columbia,56,#c6e3a7,Financial
+UMich,15,#c6e3a7,Financial
+Oxford,32,#c6e3a7,Financial
+UW,7,#c6e3a7,Financial
+UCLA,6,#c6e3a7,Financial
+NU,8,#c6e3a7,Financial
+Cambridge,6,#c6e3a7,Financial
+NYU,18,#c6e3a7,Financial
+USC,7,#c6e3a7,Financial
+UIUC,13,#c6e3a7,Financial
+Tel Aviv,11,#c6e3a7,Financial
+UT Austin,4,#c6e3a7,Financial
+Stanford,29,#5487b1,Healthcare
+Harvard,35,#63a1af,Healthcare
+MIT,21,#7ab8aa,Healthcare
+UPENN,22,#93caa8,Healthcare
+UC Berkeley,5,#add7a8,Healthcare
+Cornell,6,#c6e3a7,Healthcare
+CMU,3,#c6e3a7,Healthcare
+Columbia,11,#c6e3a7,Healthcare
+UMich,4,#c6e3a7,Healthcare
+Oxford,3,#c6e3a7,Healthcare
+UW,3,#c6e3a7,Healthcare
+UCLA,2,#c6e3a7,Healthcare
+NU,4,#c6e3a7,Healthcare
+Cambridge,1,#c6e3a7,Healthcare
+NYU,2,#c6e3a7,Healthcare
+USC,4,#c6e3a7,Healthcare
+UIUC,9,#c6e3a7,Healthcare
+Tel Aviv,0,#c6e3a7,Healthcare
+UT Austin,0,#c6e3a7,Healthcare
+Stanford,100,#5487b1,Manufacturing
+Harvard,63,#63a1af,Manufacturing
+MIT,62,#7ab8aa,Manufacturing
+UPENN,35,#93caa8,Manufacturing
+UC Berkeley,44,#add7a8,Manufacturing
+Cornell,29,#c6e3a7,Manufacturing
+CMU,33,#c6e3a7,Manufacturing
+Columbia,13,#c6e3a7,Manufacturing
+UMich,16,#c6e3a7,Manufacturing
+Oxford,7,#c6e3a7,Manufacturing
+UW,30,#c6e3a7,Manufacturing
+UCLA,16,#c6e3a7,Manufacturing
+NU,19,#c6e3a7,Manufacturing
+Cambridge,8,#c6e3a7,Manufacturing
+NYU,14,#c6e3a7,Manufacturing
+USC,10,#c6e3a7,Manufacturing
+UIUC,14,#c6e3a7,Manufacturing
+Tel Aviv,16,#c6e3a7,Manufacturing
+UT Austin,18,#c6e3a7,Manufacturing
+Stanford,27,#5487b1,Security
+Harvard,32,#63a1af,Security
+MIT,11,#7ab8aa,Security
+UPENN,19,#93caa8,Security
+UC Berkeley,7,#add7a8,Security
+Cornell,6,#c6e3a7,Security
+CMU,6,#c6e3a7,Security
+Columbia,6,#c6e3a7,Security
+UMich,7,#c6e3a7,Security
+Oxford,3,#c6e3a7,Security
+UW,5,#c6e3a7,Security
+UCLA,6,#c6e3a7,Security
+NU,3,#c6e3a7,Security
+Cambridge,3,#c6e3a7,Security
+NYU,3,#c6e3a7,Security
+USC,2,#c6e3a7,Security
+UIUC,5,#c6e3a7,Security
+Tel Aviv,2,#c6e3a7,Security
+UT Austin,7,#c6e3a7,Security
+Stanford,187,#5487b1,Software
+Harvard,149,#63a1af,Software
+MIT,77,#7ab8aa,Software
+UPENN,93,#93caa8,Software
+UC Berkeley,110,#add7a8,Software
+Cornell,48,#c6e3a7,Software
+CMU,47,#c6e3a7,Software
+Columbia,30,#c6e3a7,Software
+UMich,38,#c6e3a7,Software
+Oxford,33,#c6e3a7,Software
+UW,35,#c6e3a7,Software
+UCLA,40,#c6e3a7,Software
+NU,36,#c6e3a7,Software
+Cambridge,24,#c6e3a7,Software
+NYU,24,#c6e3a7,Software
+USC,27,#c6e3a7,Software
+UIUC,25,#c6e3a7,Software
+Tel Aviv,12,#c6e3a7,Software
+UT Austin,27,#c6e3a7,Software
+Stanford,48,#5487b1,Transportation
+Harvard,19,#63a1af,Transportation
+MIT,12,#7ab8aa,Transportation
+UPENN,8,#93caa8,Transportation
+UC Berkeley,11,#add7a8,Transportation
+Cornell,5,#c6e3a7,Transportation
+CMU,10,#c6e3a7,Transportation
+Columbia,2,#c6e3a7,Transportation
+UMich,7,#c6e3a7,Transportation
+Oxford,2,#c6e3a7,Transportation
+UW,10,#c6e3a7,Transportation
+UCLA,7,#c6e3a7,Transportation
+NU,3,#c6e3a7,Transportation
+Cambridge,2,#c6e3a7,Transportation
+NYU,4,#c6e3a7,Transportation
+USC,5,#c6e3a7,Transportation
+UIUC,6,#c6e3a7,Transportation
+Tel Aviv,5,#c6e3a7,Transportation
+UT Austin,6,#c6e3a7,Transportation
