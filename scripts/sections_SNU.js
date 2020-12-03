@@ -49,7 +49,7 @@ var scrollVis = function () {
   var chart = function (selection) {
     selection.each(function (data) {
 
-      //var rawData = data.data1
+      var KDdata = data.data1
       var YB_data = data.data2  
       var raw_rbc_data = data.data3    
       var worldMapData = data.data4    
@@ -75,7 +75,7 @@ var scrollVis = function () {
       
       rbc_data = rbcModify(raw_rbc_data)      
 
-      setupVis(YB_data, rbc_data, worldMapData, WC1data, YJPieData);
+      setupVis(KDdata, YB_data, rbc_data, worldMapData, WC1data, YJPieData);
 
       setupSections();
     });
@@ -91,7 +91,7 @@ var scrollVis = function () {
    *  element for each filler word type.
    * @param histData - binned histogram data
    */
-  var setupVis = function (YB_data, rbc_data, worldMapData, WC1data, YJPieData) {    
+  var setupVis = function (KDdata, YB_data, rbc_data, worldMapData, WC1data, YJPieData) {    
     
     //---------------------------------------------------------------------
     // Yoobin's bar chart start
@@ -631,13 +631,169 @@ var scrollVis = function () {
       .attr("class","YJ2")
       .attr("opacity",0)
       .attr('transform', `translate(${width/2}, ${height/2})`)
-      
-
 
     //---------------------------------------------------------------------
     // Youngjun's pie end
-    //---------------------------------------------------------------------    
+    //--------------------------------------------------------------------- 
+    
+    //---------------------------------------------------------------------
+    // Keondo's line chart start
+    //---------------------------------------------------------------------
      
+    KDdata.forEach(function(d){
+      d.Number_of_Employees_Avg = Number(d.Number_of_Employees_Avg)
+      d.Last_Funding_Type = Number(funding_order[d.Last_Funding_Type])
+    })
+
+    KDdata.sort(function(a,b){
+      return d3.ascending(a.Last_Funding_Type,b.Last_Funding_Type)
+    })         
+
+    var nested = d3.nest()
+        .key(k => k.Industry)                     
+        .entries(KDdata)
+        .filter(function(d){ return d.key != 'All Industry'})
+    
+    nested.forEach(g => g.trackball = []);
+      
+    var yExtent = fc.extentLinear()
+      .accessors([d => d.Number_of_Employees_Avg])
+      .pad([0, 0.2])
+      .include([0]);
+
+    var xExtent = fc.extentLinear()
+      .accessors([d => d.Last_Funding_Type]);
+
+    var area = fc.seriesSvgArea()
+      .crossValue(d => d.Last_Funding_Type)
+      .mainValue(d => d.Number_of_Employees_Avg)
+      .decorate((selection) =>{
+        selection.enter().classed('KD', true)
+      })
+      ;
+
+    var line = fc.seriesSvgLine()
+      .crossValue(d => d.Last_Funding_Type)
+      .mainValue(d => d.Number_of_Employees_Avg)
+      .decorate((selection) =>{
+        selection.enter().classed('KD', true)
+      })
+      ;
+
+    var gridlines = fc.annotationSvgGridline()
+      .xTicks(0)
+      .yTicks(3);
+
+    var point = fc.seriesSvgPoint()
+      .crossValue(d => d.Last_Funding_Type)
+      .mainValue(d => d.value)
+      .size(25)
+      .decorate((selection) => {
+        selection.enter()
+          .append('text');        
+        selection.select('text')
+          .text(d => d.value)
+        selection.enter().classed('KD', true)
+      })
+    
+    var line = fc.annotationSvgLine()
+      .orient('vertical')
+      .value(d => d.Last_Funding_Type)
+      .decorate((selection) => {
+        selection.enter()
+          .select('.bottom-handle')
+          .append('text');        
+        selection.select('.bottom-handle text')
+          .text(d => funding_label[d.Last_Funding_Type])
+        selection.enter().classed('KD', true)
+      })
+    
+
+    var multi = fc.seriesSvgMulti()
+    .series([area, line, gridlines, line, point])
+    .mapping((data, index, series) => {
+        switch (series[index]) {
+        case point:            
+        case line:
+          return data.trackball;
+        default:
+          return data.values;
+        }
+      })
+      .decorate((selection) => {
+        selection.enter().classed('KD', true)
+      });
+
+    var xScale = d3.scaleLinear();
+    // create a chart
+    var chart = fc.chartCartesian(
+        xScale,
+        d3.scaleLinear())
+      .yDomain(yExtent(KDdata))
+      .xDomain(xExtent(KDdata))
+      //.xLabel(d => d.key)
+      .yTicks(3)
+      .xTicks(6)        
+      //.xTickFormat(d3.format('0'))        
+      .xTickFormat((d,i) => funding_label[i+1])        
+      .yOrient('left')
+      .svgPlotArea(multi)
+      .decorate((selection) => {
+        selection.enter().classed('KD', true)
+      })
+      ;
+
+    function render() {
+      // render
+      var container = d3.select('#small-multiples')
+      var update = container.selectAll('div.multiple')
+        .data(nested);
+
+      update.enter()
+        .append('div')
+        .classed('multiple', true)          
+        .classed(CLASS_NAME, true)
+        .merge(update)
+        .call(chart)
+        .classed('tooltip__', d => d.trackball.length);
+
+      // add the pointer component to the plot-area, re-rendering
+      // each time the event fires.
+      var pointer = fc.pointer()
+        .on('point', (event) => {
+          if (fcRenderSwitch > 0){
+            // determine the year
+            if (event.length) {
+              //var eachBand = xScale.step();            
+              var Last_Funding_Type = Math.round(xScale.invert(event[0].x));
+              //var FundingStatus = xScale.domain()[Math.round((event[0].x / eachBand))];
+              
+              // add the point to each series
+              nested.forEach((group) => {
+                var value = group.values.find(v => v.Last_Funding_Type === Last_Funding_Type);              
+                
+                group.trackball = [{
+                  Last_Funding_Type: Last_Funding_Type,
+                  value: value == undefined? 0 : value.Number_of_Employees_Avg
+                }];              
+              })
+            } else {
+              nested.forEach(g => g.trackball = [])
+            }
+            render();
+          }          
+        });
+
+      d3.selectAll('#small-multiples .plot-area')
+        .call(pointer);  
+    }       
+    
+    render();
+
+
+    //---------------------------------------------------------------------
+    // Keondo's line chart end
+    //---------------------------------------------------------------------
   };
 
   /**
@@ -1039,13 +1195,13 @@ var scrollVis = function () {
  *
  * @param data - loaded tsv data
  */
-function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, YJPieData) {
+function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, YJPieData, KDdata) {
   // create a new plot and
   // display it
   var plot = scrollVis();
   d3.select('#vis')
     //.datum(data)
-    .datum({"data2": YB_data, "data3": raw_rbc_data, "data4": worldMapData, "data5": WC1data, "data6": YJPieData})
+    .datum({"data1": KDdata, "data2": YB_data, "data3": raw_rbc_data, "data4": worldMapData, "data5": WC1data, "data6": YJPieData})
     .call(plot);
 
   // setup scroll functionality
@@ -1078,6 +1234,7 @@ d3.queue()
   .defer(d3.json, "https://unpkg.com/world-atlas@1/world/110m.json" )
   .defer(d3.csv, "data/map_1_nov27.csv")
   .defer(d3.csv, "data/korea_major_rank.csv")
+  .defer(d3.tsv, 'data/crunch_data_grp_NoEmployees2.tsv')
   .await(display)
 
   

@@ -264,3 +264,70 @@ svg circle {
   font-size: 14px;
   font-weight: bold;
 }
+
+
+
+/*Keondo's multi linechart visual*/
+body {
+  font: 12px sans-serif;
+}
+.area {
+  fill: #6d95f8;
+}
+#small-multiples > div {
+  display: inline-block;
+  height: 185px;
+  width: 50%
+}  
+@media (min-width: 600px) {
+  #small-multiples > div {
+    width: 50%
+  }
+}
+@media (min-width: 800px) {
+  #small-multiples > div {
+    width: 50%
+  }
+}
+@media (min-width: 1200px) {
+  #small-multiples > div {
+    width: 30%
+  }
+}
+.tooltip__ .x-axis .tick {
+  display: none;
+}
+.x-axis .domain, .x-axis .tick path,
+.y-axis .domain, .y-axis .tick path {
+  display: none;
+}
+.plot-area {
+  overflow: visible !important;
+}
+.x-axis {
+  height: 1.5em !important;
+}
+.gridline-x {
+  stroke: white;
+}
+.point {
+  fill: black;
+}
+.point text {
+  text-anchor: middle;
+  transform: translateY(-10px);
+  font-size: 10px;
+  stroke: none;
+}
+.bottom-handle {
+  text-anchor: middle;
+  alignment-baseline: hanging;
+   font-size: 10px;
+  transform: translateY(1.5em);
+}
+.top-handle {
+  display: none;
+}
+.annotation-line line {
+  display: none;
+}
