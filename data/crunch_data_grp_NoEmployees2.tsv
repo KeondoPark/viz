@@ -1,0 +1,90 @@
+Industry	Last_Funding_Type	Number_of_Employees_Avg
+AI	IPO	1989.772727
+AI	M&A	1195.232558
+AI	Others	176.7320261
+AI	Seed	89.6656051
+AI	Series A	64.74137931
+AI	Series B	130.2197802
+AI	Series C	198.8888889
+AI	Series D+	610.0520833
+Ecommerce	IPO	4501
+Ecommerce	M&A	1795.37037
+Ecommerce	Others	82.85714286
+Ecommerce	Seed	266.4189189
+Ecommerce	Series A	251.3513514
+Ecommerce	Series B	72.5
+Ecommerce	Series C	200
+Ecommerce	Series D+	1117.5
+Education	IPO	3955
+Education	M&A	879.8170732
+Education	Others	152.2098765
+Education	Seed	243.9735772
+Education	Series A	135.0340136
+Education	Series B	159.4776119
+Education	Series C	595.1351351
+Education	Series D+	656.25
+F&B	IPO	3928.796296
+F&B	M&A	1430.135135
+F&B	Others	244.0169133
+F&B	Seed	138.556338
+F&B	Series A	45.4964539
+F&B	Series B	181.3235294
+F&B	Series C	377.4242424
+F&B	Series D+	721.3043478
+Financial	IPO	2658.109756
+Financial	M&A	1168.533333
+Financial	Others	265.941358
+Financial	Seed	389.6140351
+Financial	Series A	54.50413223
+Financial	Series B	101.4444444
+Financial	Series C	319.7368421
+Financial	Series D+	642.7380952
+Healthcare	IPO	1433.727273
+Healthcare	M&A	1259.508197
+Healthcare	Others	179.0102389
+Healthcare	Seed	605.75
+Healthcare	Series A	41.81818182
+Healthcare	Series B	100.8661417
+Healthcare	Series C	179.3085106
+Healthcare	Series D+	315.25
+Manufacturing	IPO	2172.560976
+Manufacturing	M&A	1146.25
+Manufacturing	Others	189.2490119
+Manufacturing	Seed	651.5727003
+Manufacturing	Series A	69.67532468
+Manufacturing	Series B	119.6568627
+Manufacturing	Series C	163.4259259
+Manufacturing	Series D+	392.1153846
+Others	Others	5
+Security	IPO	2521.612903
+Security	M&A	1026.263158
+Security	Others	375.9345794
+Security	Seed	162.2142857
+Security	Series A	164.7407407
+Security	Series B	126.4736842
+Security	Series C	452.4509804
+Security	Series D+	559.527027
+Software	IPO	3891.818182
+Software	M&A	1118.507463
+Software	Others	79.0397351
+Software	Seed	311.9811321
+Software	Series A	140.7317073
+Software	Series B	162.2619048
+Software	Series C	304.047619
+Software	Series D+	451.5909091
+Transportation	IPO	5172.755102
+Transportation	M&A	1424.928058
+Transportation	Others	1013.553719
+Transportation	Seed	228.3611691
+Transportation	Series A	64.65384615
+Transportation	Series B	245.942029
+Transportation	Series C	442.7272727
+Transportation	Series D+	931.7741935
+All Industry	IPO	2924.975845
+All Industry	M&A	1209.243147
+All Industry	Others	259.8846641
+All Industry	Seed	286.1768552
+All Industry	Series A	90.17524236
+All Industry	Series B	138.1913717
+All Industry	Series C	294.0816327
+All Industry	Series D+	558.7944664

@@ -1,16 +1,18 @@
 .container {
-    width: 1500px;
+    width: 1600px;
+    margin-left: 50px;
   }
   
   #graphic {
-    padding-top: 60px;
+    padding-top: 60px;    
   }
   
   
   #sections {
     position: relative;
     display: inline-block;
-    width: 250px;
+    width: 400px;
+    left:1250px;
     top: 0px;
     z-index: 90;
     padding-bottom: 200px;

@@ -1,5 +1,9 @@
 var ind_list = ["AllIndustries", "AI",	"Ecommerce", "Education", "F&B", "Financial","Healthcare","Manufacturing","Security","Software","Transportation"]
-var inTitle = 0, inYB1 = 0, inRBC = 0, inWC1 = 0, inWC2 = 0, inYJ1 = 0, inYJ2 = 0
+var inTitle = 0, inYB1 = 0, inRBC = 0, inWC1 = 0, inWC2 = 0, inYJ1 = 0, inYJ2 = 0, inKD1 = 0, inKD2 = 0
+var funding_order = {'Seed':1, "Series A":2, 'Series B':3, 'Series C':4, 'Series D+':5, 'M&A':6, 'IPO':7, 'Others':8}
+var funding_label = {1:'Seed', 2:"Series A", 3:'Series B', 4:'Series C', 5:'Series D+', 6:'M&A', 7:'IPO', 8:'Others'}
+  
+
 
 /**
  * scrollVis - encapsulates
@@ -7,7 +11,7 @@ var inTitle = 0, inYB1 = 0, inRBC = 0, inWC1 = 0, inWC2 = 0, inYJ1 = 0, inYJ2 = 
  * using reusable charts pattern:
  * http://bost.ocks.org/mike/chart/
  */
-var scrollVis = function () {
+var scrollVis = function () {  
   // constants to define the size
   // and margins of the vis area.
   var width = 1200;
@@ -47,7 +51,7 @@ var scrollVis = function () {
    *  example, we will be drawing it in #vis
    */
   var chart = function (selection) {
-    selection.each(function (data) {
+    selection.each(function (data) {      
 
       var KDdata = data.data1
       var YB_data = data.data2  
@@ -91,7 +95,7 @@ var scrollVis = function () {
    *  element for each filler word type.
    * @param histData - binned histogram data
    */
-  var setupVis = function (KDdata, YB_data, rbc_data, worldMapData, WC1data, YJPieData) {    
+  var setupVis = function (KDdata, YB_data, rbc_data, worldMapData, WC1data, YJPieData) {        
     
     //---------------------------------------------------------------------
     // Yoobin's bar chart start
@@ -124,7 +128,7 @@ var scrollVis = function () {
             return yYB(+d.value)})
         .attr("x", function(d) { return xYB(d.type)+8 * ind_list.indexOf(d.ind_list); })
         .attr("height", function(d) { return height - yYB(+d.value); })
-        .attr("width", xYB.bandwidth()/4)      
+        .attr("width", xYB.bandwidth()/4)
         .attr("class","rectYB")  
 
     var legendYB = g.selectAll(".legend")
@@ -158,7 +162,7 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
     
     let year = 2008;
-    var top_n = 12;
+    var top_n = 4;
     var tickDuration = 500;
     let barPadding = (height - (margin.bottom + margin.top)) / (top_n * 5);
 
@@ -167,28 +171,40 @@ var scrollVis = function () {
         .style('fill', '#ffffff')
          .style( 'stroke','#ffffff')
          .style('stroke-width', strokeWidth)
-         .style('stroke-linejoin', 'round')
-         .style('opacity', 1);
+         .style('stroke-linejoin', 'round')         
+         .style('opacity', 0)
+         .attr('class','rbc');
        
     } 
 
-    let rbcTitle = svg.append('text')
+    /*
+    let rbcTitle = g
+            .append('g')
+            .append('text')
             .attr('class', 'rbc')
+            //.attr('x', 100)
             .attr('y', 24)
+            .attr('text-anchor','start')
+            .attr('fill', '#5487b1')
             .html('Footprint of my Successful Business will go on')
             .attr('opacity',0);
+            */
 
-    let rbcSubTitle = svg.append("text")
+    let rbcSubTitle = g.append("text")
         .attr("class", "rbc")
-        .attr("y", 55)
+        .attr("y", 40)
+        .attr('text-anchor','start')
         .html("Total Asset, $m")
-        .attr('opacity',0);
+        .attr('opacity',0)
+        .attr('fill', '#5487b1')
+        ;
 
-    let rbcCaption = svg.append('text')
+    let rbcCaption = g.append('text')
         .attr('class', 'rbc')
         .attr('x', width)
         .attr('y', height - 5)
         .style('text-anchor', 'end')
+        .attr('fill', '#5487b1')
         .html('Source: CrunchBase, yChart')
         .attr('opacity',0);
 
@@ -204,7 +220,7 @@ var scrollVis = function () {
     
     let yRbc = d3.scaleLinear()
         .domain([top_n, 0])
-        .range([height-margin.bottom, margin.top]);
+        .range([height-margin.bottom, margin.top + 55]);
     
     let xAxisRbc = d3.axisTop()
         .scale(xRbc)
@@ -212,9 +228,10 @@ var scrollVis = function () {
         .tickSize(-(height-margin.top-margin.bottom))
         .tickFormat(d => d3.format(',')(d))
 
-    g
+    g.append('g')
         .attr('class', 'rbc xAxisRbc')
-        .attr('transform', `translate(0, ${margin.top})`)
+        //.attr('transform', `translate(0, ${margin.top})`)
+        .attr('transform', `translate(0, 30)`)
         .call(xAxisRbc)        
         .selectAll('.tick line')
         .classed('origin', d => d == 0)
@@ -244,7 +261,7 @@ var scrollVis = function () {
         .html(d => d.name)
         ;
   
-    g.selectAll('text.valueLabel')
+    g.selectAll('.valueLabel')        
         .data(yearSlice, d => d.name)
         .enter()
         .append('text')
@@ -254,13 +271,14 @@ var scrollVis = function () {
         .text(d => d3.format(',.0f')(d.lastValue))
         ;
   
-    let yearTextRbc = svg.append('text')
-        .attr('class', 'yearText')
+    let yearTextRbc = g.append('text')
+        .attr('class', 'yearText rbc')
         .attr('x', width-margin.right)
         .attr('y', height-25)
         .style('text-anchor', 'end')
+        .attr('opacity',0)
         .html(~~year)
-        .call(halo, 10);    
+        .call(halo, 10)        
 
     let ticker = d3.interval(e => {      
 
@@ -268,10 +286,12 @@ var scrollVis = function () {
             ticker.stop();
           } else {
             year = d3.format('.1f')((+year) + 0.1);
+            /*
             g.selectAll('.rbc')
             .transition()
             .duration(600)
             .attr('opacity', 0);
+            */
             //ticker.start();            
           }
           yearSlice = rbc_data.filter(d => d.year == year && !isNaN(d.value))
@@ -292,7 +312,8 @@ var scrollVis = function () {
         
           bars.enter()
             .append('rect')
-            .attr('class', d => `bar ${d.name.replace(/\s/g,'_')}`)
+            .attr('class', d => `barRbc ${d.name.replace(/\s/g,'_')}`)
+            .classed('rbc', true)
             .attr('x', xRbc(0) + 1)
             .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
             .attr('y', d => yRbc(top_n + 1) + 5)
@@ -315,9 +336,9 @@ var scrollVis = function () {
             .ease(d3.easeLinear)
             .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
             .attr('y', d => yRbc(top_n+1) + 5)
-            .remove();
-    
-          let labels = svg.selectAll('.labelRbc')
+            .remove();    
+            
+          let labels = g.selectAll('.labelRbc')              
               .data(yearSlice, d => d.name);
          
           labels.enter()
@@ -326,6 +347,8 @@ var scrollVis = function () {
             .attr('x', d => xRbc(d.value)-8)
             .attr('y', d => yRbc(top_n+1)+5+((yRbc(1)-yRbc(0))/2))
             .style('text-anchor', 'end')
+            .attr('fill', '#000000')            
+            .style("font-size", "24px")
             .html(d => d.name)    
             .transition()
             .duration(tickDuration)
@@ -335,6 +358,8 @@ var scrollVis = function () {
           labels.transition()
             .duration(tickDuration)
             .ease(d3.easeLinear)
+            .attr('fill', '#000000')   
+            .style("font-size", "24px")         
             .attr('x', d => xRbc(d.value) - 8)
             .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1)-yRbc(0))/2)+1);
       
@@ -345,31 +370,39 @@ var scrollVis = function () {
             .attr('x', d => xRbc(d.value)-8)
             .attr('y', d => yRbc(top_n+1)+5)
             .remove();
+
+
              
-          let valueLabels = svg.selectAll('.valueLabel').data(yearSlice, d => d.name);
-        
+          let valueLabels = g.selectAll('.valueLabel').data(yearSlice, d => d.name);                
+          
           valueLabels.enter()
             .append('text')
             .attr('class', 'valueLabel rbc')
             .attr('x', d => xRbc(d.value) + 5)
             .attr('y', d => yRbc(top_n+1) + 5)
-            .text(d => d3.format(',.0f')(d.lastValue))
+            .text(function(d){ return d3.format(',.0f')(d.lastValue) })
             .transition()
             .duration(tickDuration)
             .ease(d3.easeLinear)
-            .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0))/2) + 1);
+            .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0))/2) + 1)
+            .attr('fill', '#000000')     
+            .style('text-anchor', 'start')       
+            .style("font-size", "24px");
                 
           valueLabels.transition()
             .duration(tickDuration)
             .ease(d3.easeLinear)
             .attr('x', d => xRbc(d.value) + 5)
-            .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0))/2)+1)
-            .tween("text", function(d) {
+            .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0))/2)+1)            
+            .tween("text", function(d) {              
                 let i = d3.interpolateRound(d.lastValue, d.value);
-                return function(t) {
+                return function(t) {                  
                   this.textContent = d3.format(',')(i(t));
               };
-            });          
+            })
+            .attr('fill', '#000000')            
+            .style("font-size", "24px")
+            .style('text-anchor', 'start')            ;          
          
           valueLabels.exit()
             .transition()
@@ -378,10 +411,11 @@ var scrollVis = function () {
             .attr('x', d => xRbc(d.value)+5)
             .attr('y', d => yRbc(top_n+1)+5)
             .remove();
+            
         
           yearTextRbc.html(~~year);
          
-         if(year == 2020) ticker.stop();
+         if(year >= 2020) ticker.stop();
          year = d3.format('.1f')((+year) + 0.1);
        }, tickDuration);    
      
@@ -404,7 +438,7 @@ var scrollVis = function () {
     
     var features = topojson.feature(worldMapData, worldMapData.objects.countries).features;
   
-    g.selectAll("path")
+    g.append('g').selectAll("path")
         .data(features)
         .enter()
         .append("path")
@@ -441,13 +475,15 @@ var scrollVis = function () {
 
     function handleMouseOver(d) {  // Add interactivity
 
-      tooltip_wc1.style('opacity',0.9)
-      //Information to display on tooltip
-      tooltip_wc1.html(function(){
-          return d.city + d.city_count
-      })
-      .style('left', d3.event.pageX + 10 + 'px')
-      .style('top', d3.event.pageY - 28 + 'px')
+      if (inWC1){
+        tooltip_wc1.style('opacity',0.9)
+        //Information to display on tooltip
+        tooltip_wc1.html(function(){
+            return d.city + d.city_count
+        })
+        .style('left', d3.event.pageX + 10 + 'px')
+        .style('top', d3.event.pageY - 28 + 'px')
+      }
     }
 
     function handleMouseOut(d, i) {
@@ -639,156 +675,105 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
     // Keondo's line chart start
     //---------------------------------------------------------------------
-     
     KDdata.forEach(function(d){
-      d.Number_of_Employees_Avg = Number(d.Number_of_Employees_Avg)
+      d.n = Number(d.Number_of_Employees_Avg)
       d.Last_Funding_Type = Number(funding_order[d.Last_Funding_Type])
     })
 
-    KDdata.sort(function(a,b){
-      return d3.ascending(a.Last_Funding_Type,b.Last_Funding_Type)
-    })         
+    KDdata.sort(function(a,b){return d3.ascending(a.Last_Funding_Type,b.Last_Funding_Type)})             
 
-    var nested = d3.nest()
-        .key(k => k.Industry)                     
-        .entries(KDdata)
-        .filter(function(d){ return d.key != 'All Industry'})
-    
-    nested.forEach(g => g.trackball = []);
+    // group the data: I want to draw one line per group
+    var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
+      .key(function(d) { return d.Industry;})
+      .entries(KDdata);
+
+    // What is the list of groups?
+    allKeys = sumstat.map(function(d){return d.key})
+
+    var container = g.append("g")
+                      .classed("container-group", true);
+    var chartgroup = container.append("g").classed("chart-group", true);
+    gKD = container.selectAll(".chart-group")    
+      .data(sumstat)
+      .enter()
+      //.append('g')    
+      //.attr({transform:"translate(100,100)"})//(d, i) => "translate(" + 100*i + "," + 100*i + ")");
+
+      /*
+    // Select all bars and bind data:  
+    var paths = svg.selectAll(".chart-group")
+              .selectAll(".path")
+              .data(sumstat);
+              */
+    /*
+    gKD = g.selectAll("uniqueChart")
+      .data(sumstat)
+      .enter()
+      .append('g')
+      */
+
+    // Add X axis --> it is a date format
+    var xKD = d3.scaleLinear()
+      //.domain(d3.extent(data, function(d) { return d.Last_Funding_Type; }))
+      .domain([0,9])
+      .range([ 0, width/4  - margin.left - margin.right]);           
       
-    var yExtent = fc.extentLinear()
-      .accessors([d => d.Number_of_Employees_Avg])
-      .pad([0, 0.2])
-      .include([0]);
+    gKD.append("g")
+      .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + ((height/3) * (parseInt((i-1)/4)+1) - margin.bottom) + ")"})
+      .attr("class","KD1")
+      .call(d3.axisBottom(xKD).ticks(3))
+      .attr('opacity', 0);
 
-    var xExtent = fc.extentLinear()
-      .accessors([d => d.Last_Funding_Type]);
-
-    var area = fc.seriesSvgArea()
-      .crossValue(d => d.Last_Funding_Type)
-      .mainValue(d => d.Number_of_Employees_Avg)
-      .decorate((selection) =>{
-        selection.enter().classed('KD', true)
-      })
-      ;
-
-    var line = fc.seriesSvgLine()
-      .crossValue(d => d.Last_Funding_Type)
-      .mainValue(d => d.Number_of_Employees_Avg)
-      .decorate((selection) =>{
-        selection.enter().classed('KD', true)
-      })
-      ;
-
-    var gridlines = fc.annotationSvgGridline()
-      .xTicks(0)
-      .yTicks(3);
-
-    var point = fc.seriesSvgPoint()
-      .crossValue(d => d.Last_Funding_Type)
-      .mainValue(d => d.value)
-      .size(25)
-      .decorate((selection) => {
-        selection.enter()
-          .append('text');        
-        selection.select('text')
-          .text(d => d.value)
-        selection.enter().classed('KD', true)
-      })
+    //Add Y axis
+    var yKD = d3.scaleLinear()      
+      .domain([0, d3.max(KDdata, function(d) { return +d.n; })])
+      .range([ height/3-margin.top-margin.bottom, 0 ]);
     
-    var line = fc.annotationSvgLine()
-      .orient('vertical')
-      .value(d => d.Last_Funding_Type)
-      .decorate((selection) => {
-        selection.enter()
-          .select('.bottom-handle')
-          .append('text');        
-        selection.select('.bottom-handle text')
-          .text(d => funding_label[d.Last_Funding_Type])
-        selection.enter().classed('KD', true)
+    gKD.append("g")
+      .attr("class","KD1")
+      .attr("transform", function(d,i){return "translate(" + (width/4)  * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
+      .call(d3.axisLeft(yKD).ticks(5))
+      .attr('opacity', 0);
+
+    // color palette
+    var color = d3.scaleOrdinal()
+      .domain(allKeys)
+      .range(['#5487b1','#5487b1','#63a1af','#63a1af','#7ab8aa','#93caa8','#add7a8','#c6e3a7','#c6e3a7','#E7846F','#E7846F'])
+
+    // Draw the line
+    gKD//.selectAll("path")
+      //.data(sumstat)
+      .append('g')
+      .append("path")
+      .attr("fill", function(d){ return color(d.key) })
+      .attr("stroke", "none")
+      .attr("d", function(d){        
+        console.log(d)
+        return d3.area()
+        .x(function(d) { return xKD(d.Last_Funding_Type) })
+        .y0(yKD(0))
+        .y1(function(d) { return yKD(+d.n) })            
+          (d.values)
       })
+      .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
+      .attr('class','KD1')
+      .attr('opacity', 0);
+
+    // Add titles
     
-
-    var multi = fc.seriesSvgMulti()
-    .series([area, line, gridlines, line, point])
-    .mapping((data, index, series) => {
-        switch (series[index]) {
-        case point:            
-        case line:
-          return data.trackball;
-        default:
-          return data.values;
-        }
-      })
-      .decorate((selection) => {
-        selection.enter().classed('KD', true)
-      });
-
-    var xScale = d3.scaleLinear();
-    // create a chart
-    var chart = fc.chartCartesian(
-        xScale,
-        d3.scaleLinear())
-      .yDomain(yExtent(KDdata))
-      .xDomain(xExtent(KDdata))
-      //.xLabel(d => d.key)
-      .yTicks(3)
-      .xTicks(6)        
-      //.xTickFormat(d3.format('0'))        
-      .xTickFormat((d,i) => funding_label[i+1])        
-      .yOrient('left')
-      .svgPlotArea(multi)
-      .decorate((selection) => {
-        selection.enter().classed('KD', true)
-      })
-      ;
-
-    function render() {
-      // render
-      var container = d3.select('#small-multiples')
-      var update = container.selectAll('div.multiple')
-        .data(nested);
-
-      update.enter()
-        .append('div')
-        .classed('multiple', true)          
-        .classed(CLASS_NAME, true)
-        .merge(update)
-        .call(chart)
-        .classed('tooltip__', d => d.trackball.length);
-
-      // add the pointer component to the plot-area, re-rendering
-      // each time the event fires.
-      var pointer = fc.pointer()
-        .on('point', (event) => {
-          if (fcRenderSwitch > 0){
-            // determine the year
-            if (event.length) {
-              //var eachBand = xScale.step();            
-              var Last_Funding_Type = Math.round(xScale.invert(event[0].x));
-              //var FundingStatus = xScale.domain()[Math.round((event[0].x / eachBand))];
-              
-              // add the point to each series
-              nested.forEach((group) => {
-                var value = group.values.find(v => v.Last_Funding_Type === Last_Funding_Type);              
-                
-                group.trackball = [{
-                  Last_Funding_Type: Last_Funding_Type,
-                  value: value == undefined? 0 : value.Number_of_Employees_Avg
-                }];              
-              })
-            } else {
-              nested.forEach(g => g.trackball = [])
-            }
-            render();
-          }          
-        });
-
-      d3.selectAll('#small-multiples .plot-area')
-        .call(pointer);  
-    }       
-    
-    render();
+    gKD.append('g')
+      //.selectAll('text')
+      //.data(KDdata)
+      //.enter()
+      .append("text")
+      .attr("text-anchor", "start")
+      //.attr("y", 0)
+      //.attr("x", 0)
+      .text(function(d){ return(d.key)})
+      .style("fill", function(d){ return color(d.key) })
+      .attr("transform", function(d,i){return "translate(" + ((width/4) * ((i-1) % 4) + 100) + "," + ((height/3) * (parseInt((i-1)/4)) + 20) + ")"})
+      .attr('class','KD1')
+      .attr('opacity', 0);
 
 
     //---------------------------------------------------------------------
@@ -814,7 +799,7 @@ var scrollVis = function () {
     activateFunctions[4] = showWooChul2;
     activateFunctions[5] = showYoungJun1;
     activateFunctions[6] = showYoungJun2;
-    activateFunctions[7] = showCough;
+    activateFunctions[7] = showKeondo1;
     activateFunctions[8] = showHistAll;
 
     // updateFunctions are called while
@@ -1014,7 +999,12 @@ var scrollVis = function () {
 
 
 
-  function showYoungJun2() {    
+  function showYoungJun2() {       
+    
+    inYJ1 = 0
+    inYJ2 = 1  
+    inKD1 = 0
+
     g.selectAll('.YJ1')
       .transition()
       .duration(0)
@@ -1023,7 +1013,35 @@ var scrollVis = function () {
     g.selectAll('.YJ2')
       .transition()
       .duration(600)
-      .attr('opacity', 1);   
+      .attr('opacity', 1);  
+
+    g.selectAll('.KD1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0); 
+
+  }
+
+  function showKeondo1() {           
+    
+    inYJ2 = 0  
+    inKD1 = 1
+    inKD2 = 0
+
+    g.selectAll('.YJ2')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    g.selectAll('.KD1')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1); 
+      
+    g.selectAll('.KD2')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
 
   }
 
@@ -1196,6 +1214,7 @@ var scrollVis = function () {
  * @param data - loaded tsv data
  */
 function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, YJPieData, KDdata) {
+  
   // create a new plot and
   // display it
   var plot = scrollVis();
