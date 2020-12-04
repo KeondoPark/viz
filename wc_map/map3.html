@@ -5,7 +5,31 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://unpkg.com/topojson-client@3"></script>
     <script src="https://d3js.org/queue.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
 </head>
+
+<label style="color:#8CA2AB; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_1" value="AllIndustries">All Industries</label>
+<label style="color: #F06A93; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_2" value="AI">AI</label>
+<label style="color:#CD59B1; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_3" value="Ecommerce">Ecommerce</label>
+<label style="color: #A97DD8; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_4" value="Education">Education</label>
+<label style="color:  #F38787; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_5" value="F&B">F&B</label>
+<label style="color:#EF8D5D; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_6" value="Financial">Financial</label>
+<label style="color: #3FB68E; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_7" value="Healthcare">Healthcare</label>
+<label style="color: #4D78A2; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_8" value='Manufacturing'>Manufacturing</label>
+<label style="color: #3AB5C2; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_9" value="Security">Security</label>
+<label style="color: #6973F6; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_10" value="Software">Software</label>
+<label style="color: #74ABE2; font-weight:bold"><input class="industry1" type="checkbox" id="industry1_11"value="Transportation">Transporation</label>
+
+
+<div>
+  <input type="checkbox" class="checkbox" value="A" checked ><label style = "color:#8CA2AB; font-weight:bold">All Industries</label>
+  <input type="checkbox" class="checkbox" value="AI" checked><label style="color: #F06A93; font-weight:bold">AI</label>
+  <input type="checkbox" class="checkbox" value="E_Commerce" checked><label style="color:#CD59B1; font-weight:bold">Ecommerce</label>
+</div>
+
+<!-- Create an element where the map will take place -->
+<!-- <svg id="my_dataviz" width="440" height="300"></svg> -->
+
 
 <style>
   svg circle {
@@ -106,7 +130,7 @@
         .attr('id','tooltip')
         .style('opacity',0)
 
-        d3.csv("map_1_nov27.csv", function(data) {
+        d3.csv("map3_nov30.csv", function(data) {
         places.selectAll("circle")
           .data(data)
           .enter().append("circle")
@@ -146,6 +170,31 @@
           }
 
         });
+
+        function update(){
+
+        // For each check box:
+        d3.selectAll(".checkbox").each(function(d){
+          cb = d3.select(this);
+          grp = cb.property("value")
+
+          // If the box is check, I show the group
+          if(cb.property("checked")){
+            svg.selectAll("."+grp).transition().duration(1000).style("opacity", 1).attr("r", function(d){ return d.city_ind_count })
+            console.log(d)
+          // Otherwise I hide it
+          }else{
+            svg.selectAll("."+grp).transition().duration(1000).style("opacity", 0).attr("r", 0)
+          }
+        })
+        }
+
+        // When a button change, I run the update function
+        d3.selectAll(".checkbox").on("change",update);
+
+        // And I initialize it at the beginning
+        update()
+    
     </script>
 </body>
 </html>
