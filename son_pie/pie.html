@@ -1,103 +1,95 @@
+<!doctype html>
 <html lang="ko">
 
 <head>
-    <style>
-        text {
-            font-family: sans-serif;
-            font-size: 12px;
-            fill: white;
-        }
-        #tooltip {
-            position: absolute;
-            width: 200px;
-            height: auto;
-            padding: 10px;
-            background-color: white;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
-            -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-            -mox-box-shadow: 4px 4px 4px 10px rgba(0, 0, 0, 0.4);
-            box-shadow: 4px 4px 10px rbga(0, 0, 0, 0.4);
-        }
-        #tooltip.hidden {
-            opacity: 0;
-        }
-        #tooltip p {
-            margin: 0;
-            font-family: sans-serif;
-            font-size: 16px;
-            line-height: 20px;
-}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    </style>
+  <style>
+    body {
+      margin: 10%;
+    }
+    #YJ2_dataviz{
+      width: 80%;
+    }
+    #YJ2_dataviz YJ2svg{
+      margin-left: 15%;
+        }
+    
+    #YJ2_dataviz path{
+      opacity: .6;
+    }
+    #YJ2_dataviz path.slice {
+      stroke-width: 2px;
+    }
+
+    #YJ2_dataviz polyline {
+      opacity: .8;
+      stroke: black;
+      stroke-width: 2px;
+      fill: none;
+    }
+  </style>
+
+
+
+
 </head>
 
 <body>
-  <div><p>
-    <!-- -현재 : 모든 인원에 대한 분포
-    <br>
-    - 기업 분류에 따른 전공 분포를 파악해도 좋을 듯
-    <br>
-    - tooltip이 필요해보임 -->
-  </p></div>
-    <svg id="container" height="300" width="500">
-        <g id="body" transform="translate(150,150)"></g>
-        
-        
-    </svg>
-    <div id="tooltip" class="hidden">
-        <p><strong>Label</strong>
-        </p>
-        <p><span id="value">100</span></p>
-    </div>
+
+  <!-- Create a div where the graph will take place -->
+  <div id="YJ2_dataviz"></div>
+
+  <form id="form" class="YJ2_form btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-outline-secondary active">
+      <input type="radio" name="industry_select" onchange="update(YJ2data1)" checked>All Industries<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(YJ2data2)">AI<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(YJ2data3)">Ecommerce<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(YJ2data4)">Education<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(YJ2data5)">F&B<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(YJ2data6)">Financial<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(YJ2data7)">Healthcare<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(YJ2data8)">Manufacturing<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(YJ2data9)">Security<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(YJ2data10)">Software<br>
+    </label>
+    <label class="btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(YJ2data11)">Transportation<br>
+    </label>
+  </form>
+
 </body>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Color scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 <script src="pie_final.js"></script>
-
-</html>
-
-<!-- <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset="utf-8" />
-    <title>D3.js Step by Step: Step 5 - Adding Tooltips</title>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet" data-semver="3.0.1" data-require="normalize@*" />
-    <style>
-      #chart {                                                          /* NEW */
-        height: 360px;                                                  /* NEW */
-        position: relative;                                             /* NEW */
-        width: 360px;                                                   /* NEW */
-      }                                                                 /* NEW */
-      .tooltip {                                                        /* NEW */
-        background: #eee;                                               /* NEW */
-        box-shadow: 0 0 5px #999999;                                    /* NEW */
-        color: #333;                                                    /* NEW */
-        display: none;                                                  /* NEW */
-        font-size: 12px;                                                /* NEW */
-        left: 130px;                                                    /* NEW */
-        padding: 10px;                                                  /* NEW */
-        position: absolute;                                             /* NEW */
-        text-align: center;                                             /* NEW */
-        top: 95px;                                                      /* NEW */
-        width: 80px;                                                    /* NEW */
-        z-index: 10;                                                    /* NEW */
-      }                                                                 /* NEW */
-      .legend {
-        font-size: 12px;
-      }
-      rect {
-        stroke-width: 2;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="chart"></div>
-    <script data-require="d3@*" data-semver="3.4.6" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.min.js"></script>
-    <script src="d3.js"></script>
-    <script src="pie_final.js"></script>
-  </body>
-
-</html> -->

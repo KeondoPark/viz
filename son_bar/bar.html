@@ -11,16 +11,13 @@
       margin-left: 10%;
     }
 
-    #svg-area {
-      position: relative;
-    }
 
-    #form {
+    #YJ1_dataviz #form {
       /* margin-left: 5%; */
       width: 80%;
     }
 
-    .toolTip {
+    #YJ1_dataviz .YJ1toolTip {
       position: absolute;
       border: 0 none;
       border-radius: 4px 4px 4px 4px;
@@ -35,43 +32,43 @@
 
 <body>
 
-  <div id="my_dataviz">
+  <div id="YJ1_dataviz">
 
   </div>
 
-  <form id="form" class="btn-group btn-group-toggle" data-toggle="buttons">
+  <form id="form" class="YJ1_form btn-group btn-group-toggle" data-toggle="buttons">
     <label class="btn btn-outline-secondary active">
-      <input type="radio" name="industry_select" onchange="update(data1)" checked>All Industries<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data1)" checked>All Industries<br>
     </label>
     <label class="btn btn-outline-secondary">
-      <input type="radio" name="industry_select" onchange="update(data2)">AI<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data2)">AI<br>
     </label>
     <label class="btn btn-outline-secondary">
-      <input type="radio" name="industry_select" onchange="update(data3)">Ecommerce<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data3)">Ecommerce<br>
     </label>
     <label class="btn btn-outline-secondary">
-      <input type="radio" name="industry_select" onchange="update(data4)">Education<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data4)">Education<br>
     </label>
     <label class="btn btn-outline-secondary">
-      <input type="radio" name="industry_select" onchange="update(data5)">F&B<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data5)">F&B<br>
     </label>
     <label class="btn btn-outline-secondary">
-      <input type="radio" name="industry_select" onchange="update(data6)">Financial<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data6)">Financial<br>
     </label>
     <label class="btn btn-outline-secondary">
-      <input type="radio" name="industry_select" onchange="update(data7)">Healthcare<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data7)">Healthcare<br>
     </label>
     <label class="btn btn-outline-secondary">
-      <input type="radio" name="industry_select" onchange="update(data8)">Manufacturing<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data8)">Manufacturing<br>
     </label>
     <label class="btn btn-outline-secondary">
-      <input type="radio" name="industry_select" onchange="update(data9)">Security<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data9)">Security<br>
     </label>
     <label class="btn btn-outline-secondary">
-      <input type="radio" name="industry_select" onchange="update(data10)">Software<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data10)">Software<br>
     </label>
     <label class="btn btn-outline-secondary">
-      <input type="radio" name="industry_select" onchange="update(data11)">Transportation<br>
+      <input type="radio" name="industry_select" onchange="update(YJ1data11)">Transportation<br>
     </label>
   </form>
 

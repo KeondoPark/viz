@@ -1,0 +1,67 @@
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
+33,goPuff,"Philadelphia, Pennsylvania, United States",9,Transportation,2013/11/01,39.9527237,-75.1635262,2,1
+56,Waymo,"Mountain View, California, United States",9,Transportation,2009/01/01,37.3893889,-122.0832101,21,1
+59,Kavak,"Mexico City, Distrito Federal, Mexico",9,Transportation,2016/01/01,19.4326296,-99.1331785,3,1
+77,Tesla,"Palo Alto, California, United States",9,Transportation,2003/01/01,37.4443293,-122.1598465,14,1
+81,Uber Freight,"San Francisco, California, United States",9,Transportation,2017/01/01,37.7790262,-122.4199061,161,10
+88,NIO,"Shanghai, Shanghai, China",9,Transportation,2014/11/01,31.2322758,121.4692071,3,1
+94,ShipBob,"Chicago, Illinois, United States",9,Transportation,2014/01/01,41.8755616,-87.6244212,16,1
+97,Ola,"Kormangala, Karnataka, India",9,Transportation,2010/12/03,12.9492994,77.62115258,1,1
+100,Getaround,"San Francisco, California, United States",9,Transportation,2011/01/01,37.7790262,-122.4199061,161,10
+103,Lime,"San Francisco, California, United States",9,Transportation,2017/01/01,37.7790262,-122.4199061,161,10
+121,Uber,"San Francisco, California, United States",9,Transportation,2009/03/01,37.7790262,-122.4199061,161,10
+155,Einride,"Stockholm, Stockholms Lan, Sweden",9,Transportation,2016/01/01,59.3251172,18.0710935,7,1
+162,Seegrid,"Pittsburgh, Pennsylvania, United States",9,Transportation,2003/01/01,40.4416941,-79.9900861,1,1
+177,Kroger,"Cincinnati, Ohio, United States",9,Transportation,1883-01-01,39.1014537,-84.5124602,1,1
+187,Carvana,"Tempe, Arizona, United States",9,Transportation,2013/01/01,33.4255056,-111.9400125,1,1
+203,SpaceX,"Hawthorne, California, United States",9,Transportation,2002/06/01,33.9188589,-118.3483256,1,1
+235,Glovo,"Barcelona, Catalonia, Spain",9,Transportation,2015/03/01,41.3828939,2.1774322,1,1
+247,TIRPORT,"Istanbul, Istanbul, Turkey",9,Transportation,2016/06/01,41.0096334,28.9651646,1,1
+252,Bosch,"Stuttgart, Baden-Wurttemberg, Germany",9,Transportation,1886-11-15,48.7784485,9.1800132,1,1
+282,JD.com,"Beijing, Beijing, China",9,Transportation,1998/06/06,39.9020668,116.718583,15,4
+301,Xpeng Motors,"Guangzhou, Guangdong, China",9,Transportation,2014/01/01,23.1301964,113.2592945,1,1
+305,Workhorse Group,"Loveland, Ohio, United States",9,Transportation,2007/11/13,39.2689562,-84.2638406,1,1
+316,Bird,"Santa Monica, California, United States",9,Transportation,2017/01/01,34.0250724,-118.4965129,7,1
+342,TradeLanes,"Oakland, California, United States",9,Transportation,2015/01/01,37.8044557,-122.2713563,9,1
+346,Shift,"San Francisco, California, United States",9,Transportation,2013/01/01,37.7790262,-122.4199061,161,10
+361,Root Insurance,"Columbus, Ohio, United States",9,Transportation,2015/03/01,39.9622601,-83.0007065,5,1
+374,Bolt,"Tallinn, Harjumaa, Estonia",9,Transportation,2013/08/01,59.4372155,24.7453688,1,1
+378,Didi Chuxing,"Beijing, Beijing, China",9,Transportation,2012/09/01,39.9020668,116.718583,15,4
+380,Porter,"Bangalore, Karnataka, India",9,Transportation,2014/08/01,12.9791198,77.5912997,15,1
+381,Postmates,"San Francisco, California, United States",9,Transportation,2011/03/01,37.7790262,-122.4199061,161,10
+404,Hyliion Holdings Corp.,"Cedar Park, Texas, United States",9,Transportation,2015/03/15,30.5217116,-97.827833,1,1
+407,Cruise,"San Francisco, California, United States",9,Transportation,2013/01/01,37.7790262,-122.4199061,161,10
+408,ABB,"Zürich, Zurich, Switzerland",9,Transportation,1988/01/05,47.3723941,8.5423328,4,1
+423,REE,"Tel Aviv, Tel Aviv, Israel",9,Transportation,2011/01/01,32.0804808,34.7805274,12,1
+447,Convoy,"Seattle, Washington, United States",9,Transportation,2015/01/01,47.6038321,-122.3300624,14,1
+460,KeepTruckin,"San Francisco, California, United States",9,Transportation,2013/01/01,37.7790262,-122.4199061,161,10
+479,Zoox,"Foster City, California, United States",9,Transportation,2014/07/29,37.5600336,-122.2688522,3,1
+486,Aurora Labs,"Tel Aviv-yafo, Tel Aviv, Israel",9,Transportation,2016/01/01,32.0804808,34.7805274,2,1
+495,Shipper,"Jakarta, Jakarta Raya, Indonesia",9,Transportation,2016/01/01,-6.1753942,106.827183,5,1
+500,Sennder,"Berlin, Berlin, Germany",9,Transportation,2015/01/01,52.5170365,13.3888599,14,1
+522,Via,"New York, New York, United States",9,Transportation,2012/06/26,40.7127281,-74.0060152,112,2
+529,Lordstown Motors,"Ohio, Illinois, United States",9,Transportation,2019/01/01,41.5575349,-89.4609276,1,1
+570,JD Logistics,"Beijing, Beijing, China",9,Transportation,2007/01/01,39.9020668,116.718583,15,4
+580,GeoSpock,"Cambridge, Cambridgeshire, United Kingdom",9,Transportation,2013/01/01,52.2034823,0.1235817,1,1
+586,Flash Express,"Bangkok, Krung Thep, Thailand",9,Transportation,2017/01/01,13.7542529,100.493087,2,1
+589,Delhivery,"Gurgaon, Haryana, India",9,Transportation,2011/01/01,28.4646148,77.0299194,5,1
+605,PayCargo,"Coral Gables, Florida, United States",9,Transportation,2008/11/21,25.72149,-80.2683838,1,1
+617,Vroom,"New York, New York, United States",9,Transportation,2013/01/01,40.7127281,-74.0060152,112,2
+627,Berkshire Hathaway,"Omaha, Nebraska, United States",9,Transportation,1839-01-01,41.2587459,-95.9383758,1,1
+638,Busbud,"Montréal, Quebec, Canada",9,Transportation,2011/10/01,45.4972159,-73.6103642,5,1
+645,Arrival,"London, England, United Kingdom",9,Transportation,2015/01/01,51.5073219,-0.1276474,48,1
+653,BacklotCars,"Kansas City, Missouri, United States",9,Transportation,2014/05/01,39.100105,-94.5781416,1,1
+691,Li Auto,"Beijing, Beijing, China",9,Transportation,2015/01/01,39.9020668,116.718583,15,4
+725,Droom,"Haryana, Haryana, India",9,Transportation,2014/01/01,28.4808629,77.0848883,1,1
+743,Jupiter,"San Francisco, California, United States",9,Transportation,2019/01/01,37.7790262,-122.4199061,161,10
+760,Lineage Logistics,"Novi, Michigan, United States",9,Transportation,2012/01/01,42.48059,-83.4754913,1,1
+816,Metromile,"San Francisco, California, United States",9,Transportation,2011/01/19,37.7790262,-122.4199061,161,10
+830,Moovit,"Ness Ziona, HaMerkaz, Israel",9,Transportation,2012/02/01,31.92933,34.79868,1,1
+873,Momentus Inc.,"Santa Clara, California, United States",9,Transportation,2017/11/01,37.2333253,-121.6846349,15,1
+888,General Motors,"Detroit, Michigan, United States",9,Transportation,1908/09/16,42.3315509,-83.0466403,1,1
+891,Exotec Solutions,"Lille, Nord-Pas-de-Calais, France",9,Transportation,2015/01/01,50.7215699,1.6033016,1,1
+904,LeddarTech,"Quebec, Quebec, Canada",9,Transportation,2007/01/01,46.8259601,-71.2352226,1,1
+931,ACV,"Buffalo, New York, United States",9,Transportation,2014/01/01,42.8867166,-78.8783922,1,1
+934,Zebra Technologies,"Lincolnshire, Illinois, United States",9,Transportation,1991/01/01,42.1900249,-87.9084039,1,1
+972,Faraday Future,"Gardena, California, United States",9,Transportation,2014/04/01,33.8963593,-118.3053037,1,1
+974,Shippeo,"Paris, Ile-de-France, France",9,Transportation,2014/01/01,48.8566969,2.3514616,10,1

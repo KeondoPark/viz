@@ -1,324 +1,103 @@
 <html lang="ko">
-<style type="text/css">
-    #chart text {
-        fill: black;
-        font: 10px sans-serif;
-        text-anchor: end;
-    }
 
-    .axis text {
-        font: 10px sans-serif;
-    }
+<head>
+    <style>
+        text {
+            font-family: sans-serif;
+            font-size: 12px;
+            fill: white;
+        }
+        #tooltip {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            padding: 10px;
+            background-color: white;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            -mox-box-shadow: 4px 4px 4px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 4px 4px 10px rbga(0, 0, 0, 0.4);
+        }
+        #tooltip.hidden {
+            opacity: 0;
+        }
+        #tooltip p {
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+}
 
-    .axis path, .axis line {
-        fill: none;
-        /*stroke: #fff;*/
-        shape-rendering: crispEdges;
-    }
+    </style>
+</head>
 
-    body {
-        /*background: #1a1a1a;*/
-        color: #eaeaea;
-        padding: 10px;
-    }
-
-    path {
-        stroke: steelblue;
-        stroke-width: 2;
-        fill: none;
-    }
-</style>
-<div id="chart" style="height:600px;width:600px">
-    <div class="innerCont" style="overflow: auto; top:100px; left: 400px; height:91% ; Width:100% ;position: relative;overflow: hidden;">
-</div>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" charset="utf-8"></script>
+<body>
+  <div><p>
+    <!-- -현재 : 모든 인원에 대한 분포
+    <br>
+    - 기업 분류에 따른 전공 분포를 파악해도 좋을 듯
+    <br>
+    - tooltip이 필요해보임 -->
+  </p></div>
+    <svg id="container" height="300" width="500">
+        <g id="body" transform="translate(150,150)"></g>
+        
+        
+    </svg>
+    <div id="tooltip" class="hidden">
+        <p><strong>Label</strong>
+        </p>
+        <p><span id="value">100</span></p>
+    </div>
+</body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script>
-    var salesData;
-    var truncLengh = 30;
+<script src="pie_final.js"></script>
 
-    $(document).ready(function () {
-        Plot();
-    });
+</html>
 
-    function Plot() {
-        TransformChartData(chartData, chartOptions);
-        BuildPie("chart", chartData, chartOptions);
-    }
+<!-- <!DOCTYPE html>
+<html>
 
-    function BuildPie(id, chartData, options) {
-        var xVarName;
-        var divisionRatio = 2.5;
-        var legendoffset = 0;
+  <head>
+    <meta charset="utf-8" />
+    <title>D3.js Step by Step: Step 5 - Adding Tooltips</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet" data-semver="3.0.1" data-require="normalize@*" />
+    <style>
+      #chart {                                                          /* NEW */
+        height: 360px;                                                  /* NEW */
+        position: relative;                                             /* NEW */
+        width: 360px;                                                   /* NEW */
+      }                                                                 /* NEW */
+      .tooltip {                                                        /* NEW */
+        background: #eee;                                               /* NEW */
+        box-shadow: 0 0 5px #999999;                                    /* NEW */
+        color: #333;                                                    /* NEW */
+        display: none;                                                  /* NEW */
+        font-size: 12px;                                                /* NEW */
+        left: 130px;                                                    /* NEW */
+        padding: 10px;                                                  /* NEW */
+        position: absolute;                                             /* NEW */
+        text-align: center;                                             /* NEW */
+        top: 95px;                                                      /* NEW */
+        width: 80px;                                                    /* NEW */
+        z-index: 10;                                                    /* NEW */
+      }                                                                 /* NEW */
+      .legend {
+        font-size: 12px;
+      }
+      rect {
+        stroke-width: 2;
+      }
+    </style>
+  </head>
 
-        chart = d3.select("#" + id + " .innerCont");
+  <body>
+    <div id="chart"></div>
+    <script data-require="d3@*" data-semver="3.4.6" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.min.js"></script>
+    <script src="d3.js"></script>
+    <script src="pie_final.js"></script>
+  </body>
 
-        var yVarName = options[0].yaxis;
-        width = $(chart[0]).outerWidth(),
-        height = $(chart[0]).outerHeight(),
-        radius = Math.min(width, height) / divisionRatio;
-
-        xVarName = options[0].xaxis;
-
-
-        var rcolor = d3.scaleBand().range(runningColors);
-
-        arc = d3.arc()
-                .outerRadius(radius)
-                .innerRadius(radius - 200);
-
-        var arcOver = d3.arc().outerRadius(radius + 20).innerRadius(radius - 180);
-
-        chart = chart
-                .append("svg")  //append svg element inside #chart
-                .attr("width", width)    //set width
-                .attr("height", height)  //set height
-                .append("g")
-                .attr("transform", "translate(" + (width / divisionRatio) + "," + ((height / divisionRatio) + 30) + ")");
-
-        var pie = d3.pie()
-                    .sort(null)
-                    .value(function (d) {
-                        return d.Total;
-                    });
-
-        var g = chart.selectAll(".arc")
-                    .data(pie(runningData))
-                    .enter().append("g")
-                    .attr("class", "arc");
-
-        var count = 0;
-
-        var path = g.append("path")
-                    .attr("d", arc)
-                    .attr("id", function (d) { return "arc-" + (count++); })
-                    .style("opacity", function (d) {
-                        return d.data["op"];
-                    });
-
-        path.on("mouseenter", function (d) {
-            d3.select(this)
-                .attr("stroke", "white")
-                .transition()
-                .duration(200)
-                .attr("d", arcOver)
-                .attr("stroke-width", 1);
-        })
-         .on("mouseleave", function (d) {
-             d3.select(this).transition()
-                 .duration(200)
-                 .attr("d", arc)
-                 .attr("stroke", "none");
-         })
-
-        path.append("svg:title")
-        .text(function (d) {
-            return d.data["title"] + " (" + d.data[yVarName] + ")";
-        });
-
-        path.style("fill", function (d) {
-            return rcolor(d.data[xVarName]);
-        })
-
-        g.append("text")
-         .attr("transform", function (d) { return "translate(" + arc.centroid(d) + ")"; })
-         .attr("dy", ".35em")
-         .style("text-anchor", "middle")
-         .style("opacity", 1)
-         .text(function (d) {
-             return d.data[yVarName];
-         });
-
-
-        count = 0;
-        var legend = chart.selectAll(".legend")
-            .data(runningData).enter()
-            .append("g").attr("class", "legend")
-            .attr("legend-id", function (d) {
-                return count++;
-            })
-            .attr("transform", function (d, i) {
-                return "translate(15," + (parseInt("-" + (runningData.length * 10)) + i * 28 + legendoffset) + ")";
-            })
-            .style("cursor", "pointer")
-
-            .on("click", function () {
-                var oarc = d3.select("#" + id + " #arc-" + $(this).attr("legend-id"));
-                oarc.style("opacity", 0.3)
-                .attr("stroke", "white")
-                .transition()
-                .duration(200)
-                .attr("d", arcOver)
-                .attr("stroke-width", 1);
-                setTimeout(function () {
-                    oarc.style("opacity", function (d) {
-                        return d.data["op"];
-                    })
-                    .attr("d", arc)
-                    .transition()
-                    .duration(200)
-                    .attr("stroke", "none");
-                }, 1000);
-            });
-
-        var leg = legend.append("rect");
-
-        leg.attr("x", width / 2)
-            .attr("width", 18).attr("height", 18)
-            .style("fill", function (d) {
-                return rcolor(d[yVarName]);
-            })
-        legend.append("text").attr("x", (width / 2) - 5)
-            .attr("y", 9).attr("dy", ".35em")
-            .style("text-anchor", "end").text(function (d) {
-                return d.caption;
-            });
-
-        leg.append("svg:title")
-        .text(function (d) {
-            return d["title"] + " (" + d[yVarName] + ")";
-        });
-
-    }
-
-    function TransformChartData(chartData, opts) {
-        var result = [];
-        var resultColors = [];
-        var counter = 0;
-        var hasMatch;
-        var xVarName;
-        var yVarName = opts[0].yaxis;
-
-        xVarName = opts[0].xaxis;
-
-        for (var i in chartData) {
-            hasMatch = false;
-            for (var index = 0; index < result.length; ++index) {
-                var data = result[index];
-
-                if (data[xVarName] == chartData[i][xVarName]) {
-                    result[index][yVarName] = result[index][yVarName] + chartData[i][yVarName];
-                    hasMatch = true;
-                    break;
-                }
-            }
-            if (hasMatch == false) {
-                ditem = {};
-                ditem[xVarName] = chartData[i][xVarName];
-                ditem[yVarName] = chartData[i][yVarName];
-                ditem["caption"] = opts[0].captions != undefined ? opts[0].captions[0][chartData[i][xVarName]] : "";
-                ditem["title"] = opts[0].captions != undefined ? opts[0].captions[0][chartData[i][xVarName]] : "";
-                result.push(ditem);
-
-                resultColors[counter] = opts[0].color != undefined ? opts[0].color[0][chartData[i][xVarName]] : "";
-
-                counter += 1;
-            }
-        }
-
-        runningData = result;
-        runningColors = resultColors;
-        return;
-    }
-
-    var chartData = [
-        {
-            "Country": "USA",
-            "Model": "Model 1",
-            "Total": 487
-        },
-        {
-            "Country": "USA",
-            "Model": "Model 2",
-            "Total": 185
-        },
-        {
-            "Country": "USA",
-            "Model": "Model 3",
-            "Total": 140
-        },
-        {
-            "Country": "USA",
-            "Model": "Model 4",
-            "Total": 108
-        },
-        {
-            "Country": "USA",
-            "Model": "Model 5",
-            "Total": 26
-        },
-        {
-            "Country": "USA",
-            "Model": "Model 6",
-            "Total": 106
-        },
-        {
-            "Country": "USA",
-            "Model": "Model 7",
-            "Total": 27
-        },
-        {
-            "Country": "USA",
-            "Model": "Model 8",
-            "Total": 44
-        },
-        {
-            "Country": "USA",
-            "Model": "Model 9",
-            "Total": 96
-        },
-        {
-            "Country": "INDIA",
-            "Model": "Model 1",
-            "Total": 411
-        },
-        {
-            "Country": "INDIA",
-            "Model": "Model 2",
-            "Total": 33
-        },
-        {
-            "Country": "INDIA",
-            "Model": "Model 3",
-            "Total": 32
-        },
-        {
-            "Country": "INDIA",
-            "Model": "Model 4",
-            "Total": 29
-        },
-        {
-            "Country": "INDIA",
-            "Model": "Model 5",
-            "Total": 29
-        },
-        {
-            "Country": "CANADA",
-            "Model": "Model 1",
-            "Total": 7
-        },
-        {
-            "Country": "CANADA",
-            "Model": "Model 2",
-            "Total": 20
-        },
-        {
-            "Country": "CANADA",
-            "Model": "Model 3",
-            "Total": 232
-        },
-        {
-            "Country": "CANADA",
-            "Model": "Model 4",
-            "Total": 1117
-        }
-    ];
-
-    chartOptions = [{
-        "captions": [{ "INDIA": "INDIA", "CANADA": "CANADA", "USA": "USA" }],
-        "color": [{ "INDIA": "#FFA500", "CANADA": "#0070C0", "USA": "#ff0000" }],
-        "xaxis": "Country",
-        "yaxis": "Total"
-    }]
-</script>
-    </html>
+</html> -->

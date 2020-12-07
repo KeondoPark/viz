@@ -1,0 +1,113 @@
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
+44,Yandex,"Moscow, Moscow City, Russian Federation",5,AI,1997/09/23,55.7504461,37.6174943,2,1
+46,Petal,"New York, New York, United States",5,AI,2016/01/01,40.7127281,-74.0060152,112,16
+51,Lark,"Mountain View, California, United States",5,AI,2011/01/01,37.3893889,-122.0832101,21,4
+60,Observe,"San Mateo, California, United States",5,AI,2017/11/01,37.496904,-122.3330573,18,6
+91,Sprinklr,"New York, New York, United States",5,AI,2009/09/24,40.7127281,-74.0060152,112,16
+93,Datavant,"San Francisco, California, United States",5,AI,2017/01/01,37.7790262,-122.4199061,161,25
+107,Seismic,"San Diego, California, United States",5,AI,2010/01/01,32.7174209,-117.1627714,3,1
+118,Salsify,"Boston, Massachusetts, United States",5,AI,2012/09/04,42.3602534,-71.0582912,19,4
+130,Quantum Metric,"Monument, Colorado, United States",5,AI,2015/01/01,39.0500585,-104.8523657,1,1
+131,Papaya Global,"New York, New York, United States",5,AI,2016/01/01,40.7127281,-74.0060152,112,16
+135,ByteDance,"Shanghai, Shanghai, China",5,AI,2012/03/01,31.2322758,121.4692071,3,1
+141,Coralogix,"San Francisco, California, United States",5,AI,2014/09/15,37.7790262,-122.4199061,161,25
+148,Augury,"New York, New York, United States",5,AI,2011/08/01,40.7127281,-74.0060152,112,16
+154,Lucid,"New Orleans, Louisiana, United States",5,AI,2010/03/10,29.9499323,-90.0701156,2,1
+157,Datadog,"New York, New York, United States",5,AI,2010/01/01,40.7127281,-74.0060152,112,16
+163,SOPHiA GENETICS,"Boston, Massachusetts, United States",5,AI,2011/01/01,42.3602534,-71.0582912,19,4
+184,Snowflake,"San Mateo, California, United States",5,AI,2012/01/01,37.496904,-122.3330573,18,6
+192,Ada,"Toronto, Ontario, Canada",5,AI,2014/01/01,43.6534817,-79.3839347,9,1
+196,HubSpot,"Cambridge, Massachusetts, United States",5,AI,2006/06/09,42.3750997,-71.1056157,8,3
+209,Jumio,"Palo Alto, California, United States",5,AI,2010/01/05,37.4443293,-122.1598465,14,1
+221,Medallia,"San Francisco, California, United States",5,AI,2001/09/01,37.7790262,-122.4199061,161,25
+229,Cohesity,"San Jose, California, United States",5,AI,2013/06/01,37.3361905,-121.8905833,13,1
+244,XtalPi,"Cambridge, Massachusetts, United States",5,AI,2014/05/01,42.3750997,-71.1056157,8,3
+257,HireVue,"South Jordan, Utah, United States",5,AI,2004/04/01,40.5621704,-111.929658,1,1
+286,SEMrush,"Boston, Massachusetts, United States",5,AI,2008/08/01,42.3602534,-71.0582912,19,4
+339,Segment,"San Francisco, California, United States",5,AI,2011/09/01,37.7790262,-122.4199061,161,25
+350,AppsFlyer,"San Francisco, California, United States",5,AI,2011/04/01,37.7790262,-122.4199061,161,25
+358,Airship,"Portland, Oregon, United States",5,AI,2009/06/01,45.5202471,-122.6741949,2,1
+365,Unioncrate,"New York, New York, United States",5,AI,2016/07/01,40.7127281,-74.0060152,112,16
+366,EVRYTHNG,"London, England, United Kingdom",5,AI,2011/01/01,51.5073219,-0.1276474,48,5
+370,App Annie,"San Francisco, California, United States",5,AI,2010/03/01,37.7790262,-122.4199061,161,25
+375,Confluent,"Mountain View, California, United States",5,AI,2014/09/23,37.3893889,-122.0832101,21,4
+376,Tru Optik,"Stamford, Connecticut, United States",5,AI,2013/02/01,41.0534302,-73.5387341,1,1
+402,Amplitude,"San Francisco, California, United States",5,AI,2012/01/01,37.7790262,-122.4199061,161,25
+422,Chorus.ai,"San Francisco, California, United States",5,AI,2015/01/01,37.7790262,-122.4199061,161,25
+431,Womply,"San Francisco, California, United States",5,AI,2011/01/01,37.7790262,-122.4199061,161,25
+434,Braze,"New York, New York, United States",5,AI,2011/01/01,40.7127281,-74.0060152,112,16
+440,Forethought,"San Francisco, California, United States",5,AI,2017/01/01,37.7790262,-122.4199061,161,25
+451,Qubole,"Santa Clara, California, United States",5,AI,2011/01/01,37.2333253,-121.6846349,15,3
+461,Gro Intelligence,"New York, New York, United States",5,AI,2014/01/01,40.7127281,-74.0060152,112,16
+466,SquadStack,"San Francisco, California, United States",5,AI,2014/01/01,37.7790262,-122.4199061,161,25
+488,Metadata,"San Francisco, California, United States",5,AI,2015/04/20,37.7790262,-122.4199061,161,25
+491,Innovaccer,"San Francisco, California, United States",5,AI,2014/08/01,37.7790262,-122.4199061,161,25
+505,RiskGenius,"Overland Park, Kansas, United States",5,AI,2015/01/01,38.9742502,-94.6851702,1,1
+508,Catchpoint,"New York, New York, United States",5,AI,2008/09/15,40.7127281,-74.0060152,112,16
+510,Dataloop AI,"Herzliya, Tel Aviv, Israel",5,AI,2017/01/01,32.1676842,34.83082794,1,1
+521,Collibra,"Brussels, Brussels Hoofdstedelijk Gewest, Belgium",5,AI,2008/06/19,50.8465573,4.351697,2,1
+536,Dryad Networks,"Berlin, Berlin, Germany",5,AI,2019/11/29,52.5170365,13.3888599,14,1
+539,Vivun Inc,"Oakland, California, United States",5,AI,2018/05/01,37.8044557,-122.2713563,9,1
+541,EnsoData,"Madison, Wisconsin, United States",5,AI,2015/01/01,43.074761,-89.3837613,1,1
+547,Farmers Business Network,"San Carlos, California, United States",5,AI,2014/01/01,37.504936,-122.2618236,3,2
+550,SurveyMonkey,"San Mateo, California, United States",5,AI,1999/01/01,37.496904,-122.3330573,18,6
+553,Vineti,"San Francisco, California, United States",5,AI,2016/01/01,37.7790262,-122.4199061,161,25
+554,SenseTime,"Beijing, Beijing, China",5,AI,2014/10/01,39.9020668,116.718583,15,1
+555,ComplyAdvantage,"London, England, United Kingdom",5,AI,2014/01/01,51.5073219,-0.1276474,48,5
+558,AnyVision,"Tel Aviv, Tel Aviv, Israel",5,AI,2015/01/01,32.0804808,34.7805274,12,3
+573,PassiveLogic,"Salt Lake City, Utah, United States",5,AI,2016/01/01,40.7596198,-111.8867975,3,1
+578,MemSQL,"San Francisco, California, United States",5,AI,2011/01/01,37.7790262,-122.4199061,161,25
+602,BlackSwan Technologies,"Tel Aviv, Tel Aviv, Israel",5,AI,2014/01/01,32.0804808,34.7805274,12,3
+603,Aidoc,"Tel Aviv, Tel Aviv, Israel",5,AI,2016/02/01,32.0804808,34.7805274,12,3
+609,HighRadius,"Houston, Texas, United States",5,AI,2006/01/01,29.7589382,-95.3676974,2,1
+612,Celonis,"Munich, Bayern, Germany",5,AI,2011/01/01,48.1371079,11.5753822,4,1
+615,Upstart,"San Carlos, California, United States",5,AI,2012/04/01,37.504936,-122.2618236,3,2
+622,Your.MD,"London, England, United Kingdom",5,AI,2012/12/01,51.5073219,-0.1276474,48,5
+628,Algolia,"San Francisco, California, United States",5,AI,2012/10/10,37.7790262,-122.4199061,161,25
+629,Replicant,"San Francisco, California, United States",5,AI,2017/01/01,37.7790262,-122.4199061,161,25
+636,Amesite,"Ann Arbor, Michigan, United States",5,AI,2017/01/01,42.2681569,-83.7312291,1,1
+649,Couchbase,"Santa Clara, California, United States",5,AI,2009/01/01,37.2333253,-121.6846349,15,3
+650,IRI,"Chicago, Illinois, United States",5,AI,1979/01/01,41.8755616,-87.6244212,16,3
+675,Pendo,"Raleigh, North Carolina, United States",5,AI,2013/10/01,35.7803977,-78.6390989,2,1
+713,Domo,"American Fork, Utah, United States",5,AI,2010/01/01,40.3768954,-111.7957645,1,1
+717,Node,"San Francisco, California, United States",5,AI,2014/01/01,37.7790262,-122.4199061,161,25
+719,Babylon Health,"London, England, United Kingdom",5,AI,2013/01/01,51.5073219,-0.1276474,48,5
+728,Camino Financial,"Los Angeles, California, United States",5,AI,2014/01/01,34.0536909,-118.2427666,12,1
+740,BANDWAGON,"Greenville, South Carolina, United States",5,AI,2014/05/01,35.612661,-77.3663538,1,1
+742,Redis Labs,"Mountain View, California, United States",5,AI,2011/01/01,37.3893889,-122.0832101,21,4
+748,comScore,"Reston, Virginia, United States",5,AI,1999/08/01,38.9583737,-77.3579805,1,1
+752,Trax,"Singapore, Central Region, Singapore",5,AI,2010/01/01,16.7796467,96.175243,7,1
+769,OneLogin,"San Francisco, California, United States",5,AI,2009/01/01,37.7790262,-122.4199061,161,25
+771,Grid AI,"New York, New York, United States",5,AI,2019/01/01,40.7127281,-74.0060152,112,16
+779,People.ai,"San Francisco, California, United States",5,AI,2016/02/03,37.7790262,-122.4199061,161,25
+785,SimilarWeb,"New York, New York, United States",5,AI,2007/08/01,40.7127281,-74.0060152,112,16
+790,Viberate,"Ljubljana, Ljubljana Urban Commune, Slovenia",5,AI,2015/12/09,46.056946,14.505751,1,1
+796,Looker,"Santa Cruz, California, United States",5,AI,2011/01/01,37.050096,-121.9905908,1,1
+806,K Health,"New York, New York, United States",5,AI,2016/01/01,40.7127281,-74.0060152,112,16
+808,Sigma Computing,"San Francisco, California, United States",5,AI,2014/01/01,37.7790262,-122.4199061,161,25
+814,SmartAsset,"New York, New York, United States",5,AI,2012/01/01,40.7127281,-74.0060152,112,16
+818,New Relic,"San Francisco, California, United States",5,AI,2008/02/01,37.7790262,-122.4199061,161,25
+821,DataScience.com,"Culver City, California, United States",5,AI,2014/01/01,34.0211224,-118.3964665,6,1
+835,Edgify,"London, England, United Kingdom",5,AI,2015/01/01,51.5073219,-0.1276474,48,5
+839,H2O.ai,"Mountain View, California, United States",5,AI,2012/01/01,37.3893889,-122.0832101,21,4
+849,Split Software,"Redwood City, California, United States",5,AI,2015/10/15,37.4863239,-122.232523,13,3
+860,H1,"New York, New York, United States",5,AI,2017/11/30,40.7127281,-74.0060152,112,16
+875,Sensor Tower,"San Francisco, California, United States",5,AI,2013/01/01,37.7790262,-122.4199061,161,25
+879,Signal,"Chicago, Illinois, United States",5,AI,2009/09/26,41.8755616,-87.6244212,16,3
+885,Dataminr,"New York, New York, United States",5,AI,2009/01/01,40.7127281,-74.0060152,112,16
+892,Feedzai,"San Mateo, California, United States",5,AI,2011/01/01,37.496904,-122.3330573,18,6
+906,Pivotal,"San Francisco, California, United States",5,AI,2013/04/01,37.7790262,-122.4199061,161,25
+907,Happiest Minds Technolgoies,"Bangalore, Karnataka, India",5,AI,2011/08/29,12.9791198,77.5912997,15,1
+909,AppDynamics,"San Francisco, California, United States",5,AI,2008/04/01,37.7790262,-122.4199061,161,25
+916,SwineTech,"Cedar Rapids, Iowa, United States",5,AI,2015/01/01,41.9758872,-91.6704053,1,1
+917,DataStax,"Santa Clara, California, United States",5,AI,2010/03/31,37.2333253,-121.6846349,15,3
+921,Biobot Analytics,"Cambridge, Massachusetts, United States",5,AI,2017/09/01,42.3750997,-71.1056157,8,3
+923,Neo4j,"San Mateo, California, United States",5,AI,2007/01/01,37.496904,-122.3330573,18,6
+933,Claravine,"Provo, Utah, United States",5,AI,2012/01/01,40.2338438,-111.6585337,2,1
+948,Foursquare,"New York, New York, United States",5,AI,2009/03/01,40.7127281,-74.0060152,112,16
+950,Synthego,"Redwood City, California, United States",5,AI,2012/07/01,37.4863239,-122.232523,13,3
+951,Element AI,"Montréal, Quebec, Canada",5,AI,2016/10/25,45.4972159,-73.6103642,5,1
+954,Uptake Technologies,"Chicago, Illinois, United States",5,AI,2014/07/01,41.8755616,-87.6244212,16,3
+956,C3,"Redwood City, California, United States",5,AI,2009/01/01,37.4863239,-122.232523,13,3
+988,Starburst,"Boston, Massachusetts, United States",5,AI,2017/10/01,42.3602534,-71.0582912,19,4
+994,SnapLogic,"San Mateo, California, United States",5,AI,2006/01/01,37.496904,-122.3330573,18,6

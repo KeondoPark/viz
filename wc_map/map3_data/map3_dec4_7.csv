@@ -1,0 +1,76 @@
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
+9,Medtronic,"Minneapolis, Minnesota, United States",7,Manufacturing,1949/01/01,44.9772995,-93.2654692,2,1
+14,Xiaomi,"Beijing, Beijing, China",7,Manufacturing,2010/04/04,39.9020668,116.718583,15,3
+15,Square,"San Francisco, California, United States",7,Manufacturing,2009/02/01,37.7790262,-122.4199061,161,10
+16,Apple,"Cupertino, California, United States",7,Manufacturing,1976/04/01,37.3228934,-122.0322895,1,1
+29,Microsoft,"Redmond, Washington, United States",7,Manufacturing,1975/04/04,47.6694141,-122.1238767,1,1
+34,Allbirds,"San Francisco, California, United States",7,Manufacturing,2016/03/01,37.7790262,-122.4199061,161,10
+35,Ring,"Santa Monica, California, United States",7,Manufacturing,2012/01/01,34.0250724,-118.4965129,7,2
+40,Peloton,"New York, New York, United States",7,Manufacturing,2012/01/01,40.7127281,-74.0060152,112,2
+42,Oculus,"Menlo Park, California, United States",7,Manufacturing,2012/07/06,37.4519671,-122.1779927,6,1
+50,Roku,"Los Gatos, California, United States",7,Manufacturing,2002/10/01,37.226611,-121.9746797,2,1
+58,Lenovo,"Beijing, Beijing, China",7,Manufacturing,1984/01/01,39.9020668,116.718583,15,3
+68,NVIDIA,"Santa Clara, California, United States",7,Manufacturing,1993/01/01,37.2333253,-121.6846349,15,4
+87,Siemens,"Munich, Bayern, Germany",7,Manufacturing,1847/01/01,48.1371079,11.5753822,4,1
+101,Foxconn Technology Group,"Taipei, T'ai-pei, Taiwan",7,Manufacturing,1974/01/01,25.105497,121.597366,3,2
+133,Blackberry,"Waterloo, Ontario, Canada",7,Manufacturing,1984/01/01,43.466874,-80.524635,2,1
+142,Blue Origin,"Kent, Washington, United States",7,Manufacturing,2000/09/08,47.3826903,-122.2270272,1,1
+147,Olive,"Columbus, Ohio, United States",7,Manufacturing,2012/06/05,39.9622601,-83.0007065,5,1
+159,Neocis,"Miami, Florida, United States",7,Manufacturing,2009/01/01,25.7742658,-80.1936589,4,1
+186,Avail Medsystems,"Palo Alto, California, United States",7,Manufacturing,2018/01/01,37.4443293,-122.1598465,14,1
+222,DJI,"Shenzhen, Guangdong, China",7,Manufacturing,2006/11/06,22.555454,114.0543297,3,1
+224,Servify,"Mumbai, Maharashtra, India",7,Manufacturing,2015/11/01,18.9387711,72.8353355,13,2
+231,Sonos,"Santa Barbara, California, United States",7,Manufacturing,2002/06/30,34.4221319,-119.7026673,1,1
+270,Cloud Paper,"Seattle, Washington, United States",7,Manufacturing,2019/01/01,47.6038321,-122.3300624,14,1
+273,Siren,"San Francisco, California, United States",7,Manufacturing,2015/01/01,37.7790262,-122.4199061,161,10
+300,GoPro,"San Mateo, California, United States",7,Manufacturing,2002/01/01,37.496904,-122.3330573,18,3
+343,Snapdeal,"Gurgaon, Haryana, India",7,Manufacturing,2010/02/04,28.4646148,77.0299194,5,1
+359,Desktop Metal,"Burlington, Massachusetts, United States",7,Manufacturing,2015/01/01,42.5048167,-71.1956111,1,1
+360,Sanofi,"Paris, Ile-de-France, France",7,Manufacturing,2004/08/20,48.8566969,2.3514616,10,1
+369,Corning,"Corning, New York, United States",7,Manufacturing,1851-01-01,42.1435257,-77.0543408,1,1
+386,Matterport,"Sunnyvale, California, United States",7,Manufacturing,2011/01/01,37.3688301,-122.0363496,5,1
+391,Humatics,"Waltham, Massachusetts, United States",7,Manufacturing,2015/01/01,42.3756401,-71.2358004,5,2
+400,Cisco,"San Jose, California, United States",7,Manufacturing,1984/12/01,37.3361905,-121.8905833,13,2
+411,Ouster,"San Francisco, California, United States",7,Manufacturing,2015/01/01,37.7790262,-122.4199061,161,10
+419,Strava,"San Francisco, California, United States",7,Manufacturing,2009/01/01,37.7790262,-122.4199061,161,10
+427,Skydio,"Redwood City, California, United States",7,Manufacturing,2014/01/01,37.4863239,-122.232523,13,1
+436,Xometry,"Gaithersburg, Maryland, United States",7,Manufacturing,2013/01/01,39.1434406,-77.2013705,2,1
+482,mHUB,"Chicago, Illinois, United States",7,Manufacturing,2017/03/02,41.8755616,-87.6244212,16,2
+484,Tile,"San Mateo, California, United States",7,Manufacturing,2012/12/01,37.496904,-122.3330573,18,3
+496,IBM,"Armonk, New York, United States",7,Manufacturing,1911/06/06,41.1330485,-73.71262372,1,1
+497,Velodyne LiDAR,"San Jose, California, United States",7,Manufacturing,1983/01/01,37.3361905,-121.8905833,13,2
+504,Fungible,"Santa Clara, California, United States",7,Manufacturing,2015/01/01,37.2333253,-121.6846349,15,4
+511,ICON Health and Fitness,"Logan, Utah, United States",7,Manufacturing,1977/01/01,41.7313447,-111.8348631,1,1
+524,Eight Sleep,"New York, New York, United States",7,Manufacturing,2014/07/01,40.7127281,-74.0060152,112,2
+533,goTenna,"Brooklyn, New York, United States",7,Manufacturing,2012/11/01,40.6501038,-73.9495823,7,1
+543,LARQ,"Foster City, California, United States",7,Manufacturing,2017/11/01,37.5600336,-122.2688522,3,1
+594,Nikola Labs Inc.,"Westerville, Ohio, United States",7,Manufacturing,2014/10/01,40.126139,-82.9295287,1,1
+597,eero,"San Francisco, California, United States",7,Manufacturing,2015/02/01,37.7790262,-122.4199061,161,10
+614,Boston Dynamics,"Waltham, Massachusetts, United States",7,Manufacturing,1992/01/01,42.3756401,-71.2358004,5,2
+632,Aledia,"Grenoble, Rhone-Alpes, France",7,Manufacturing,2011/01/01,45.1875602,5.7357819,1,1
+644,Liquid Death,"Santa Monica, California, United States",7,Manufacturing,2017/01/01,34.0250724,-118.4965129,7,2
+664,Fabric,"Tel Aviv, Tel Aviv, Israel",7,Manufacturing,2015/01/01,32.0804808,34.7805274,12,2
+705,DroneDeploy,"San Francisco, California, United States",7,Manufacturing,2013/01/01,37.7790262,-122.4199061,161,10
+721,Fanatics,"Jacksonville, Florida, United States",7,Manufacturing,1995/01/01,30.3321838,-81.655651,1,1
+723,HMD,"Helsinki, Southern Finland, Finland",7,Manufacturing,2016/12/01,60.1674098,24.9425769,3,1
+733,Withings,"Issy-les-moulineaux, Ile-de-France, France",7,Manufacturing,2008/06/01,48.8250508,2.273457,1,1
+734,Magic Leap,"Plantation, Florida, United States",7,Manufacturing,2011/01/01,26.1265258,-80.25786124,1,1
+755,DataRobot,"Boston, Massachusetts, United States",7,Manufacturing,2012/06/01,42.3602534,-71.0582912,19,1
+764,Arista Networks,"Santa Clara, California, United States",7,Manufacturing,2004/01/01,37.2333253,-121.6846349,15,4
+773,SiFive,"San Mateo, California, United States",7,Manufacturing,2015/09/01,37.496904,-122.3330573,18,3
+775,Greenlight Planet,"Chicago, Illinois, United States",7,Manufacturing,2009/01/01,41.8755616,-87.6244212,16,2
+797,Revl,"San Francisco, California, United States",7,Manufacturing,2015/01/01,37.7790262,-122.4199061,161,10
+823,Onsitego,"Mumbai, Maharashtra, India",7,Manufacturing,2010/01/01,18.9387711,72.8353355,13,2
+831,Plug Power,"Latham, New York, United States",7,Manufacturing,1997/01/01,42.7444055,-73.761563,1,1
+846,Menlo Micro,"Irvine, California, United States",7,Manufacturing,2016/12/02,33.6856969,-117.8259819,5,2
+880,Acer,"Taipei, T'ai-pei, Taiwan",7,Manufacturing,1976/08/01,25.105497,121.597366,3,2
+884,Newlight Technologies,"Irvine, California, United States",7,Manufacturing,2003/01/01,33.6856969,-117.8259819,5,2
+899,Covestro,"Leverkusen, Nordrhein-Westfalen, Germany",7,Manufacturing,2015/09/01,51.0324743,6.9881194,2,1
+903,Verily,"San Francisco, California, United States",7,Manufacturing,2015/12/07,37.7790262,-122.4199061,161,10
+910,Iron Ox,"San Carlos, California, United States",7,Manufacturing,2015/01/01,37.504936,-122.2618236,3,1
+965,Agilent Technologies,"Santa Clara, California, United States",7,Manufacturing,1999/01/01,37.2333253,-121.6846349,15,4
+968,Romeo Power,"Los Angeles, California, United States",7,Manufacturing,2015/01/01,34.0536909,-118.2427666,12,1
+969,Dedrone,"San Francisco, California, United States",7,Manufacturing,2014/01/01,37.7790262,-122.4199061,161,10
+970,Bitmain,"Beijing, Beijing, China",7,Manufacturing,2013/01/01,39.9020668,116.718583,15,3
+984,Boxlight Corp.,"Belfair, Washington, United States",7,Manufacturing,1985/01/01,47.5023158,-122.7773648,1,1
+990,Flytrex,"Tel Aviv, Tel Aviv, Israel",7,Manufacturing,2013/11/01,32.0804808,34.7805274,12,2

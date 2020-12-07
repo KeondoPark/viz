@@ -1,0 +1,95 @@
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
+3,Facebook,"Menlo Park, California, United States",3,E_Commerce,2004/02/04,37.4519671,-122.1779927,6,1
+4,Reliance Retail,"Mumbai, Maharashtra, India",3,E_Commerce,2006/01/01,18.9387711,72.8353355,13,2
+5,Delivery Hero,"Berlin, Berlin, Germany",3,E_Commerce,2010/10/01,52.5170365,13.3888599,14,3
+10,Alibaba Group,"Hangzhou, Zhejiang, China",3,E_Commerce,1999/04/04,30.2489634,120.2052342,2,2
+21,Shopify,"Ottawa, Ontario, Canada",3,E_Commerce,2004/06/02,45.421106,-75.690308,1,1
+32,The Honest Company,"Santa Monica, California, United States",3,E_Commerce,2011/01/01,34.0250724,-118.4965129,7,1
+39,Chargebee,"San Francisco, California, United States",3,E_Commerce,2011/06/15,37.7790262,-122.4199061,161,11
+41,Myntra,"Bangalore, Karnataka, India",3,E_Commerce,2007/01/01,12.9791198,77.5912997,15,2
+64,Livspace,"Bengaluru, Karnataka, India",3,E_Commerce,2014/01/01,12.9791198,77.5912997,6,3
+69,VTEX,"New York, New York, United States",3,E_Commerce,2000/01/01,40.7127281,-74.0060152,112,13
+74,Cadre,"New York, New York, United States",3,E_Commerce,2014/09/11,40.7127281,-74.0060152,112,13
+76,Groupon,"Chicago, Illinois, United States",3,E_Commerce,2007/01/01,41.8755616,-87.6244212,16,2
+99,Clearbanc,"Toronto, Ontario, Canada",3,E_Commerce,2015/10/01,43.6534817,-79.3839347,9,1
+104,Birchbox,"New York, New York, United States",3,E_Commerce,2010/01/01,40.7127281,-74.0060152,112,13
+120,Carousell,"Singapore, Central Region, Singapore",3,E_Commerce,2012/08/01,16.7796467,96.175243,7,3
+125,Paytm,"Noida, Uttar Pradesh, India",3,E_Commerce,2010/01/01,28.5356329,77.3910727,4,1
+126,Flipkart,"Bengaluru, Karnataka, India",3,E_Commerce,2007/01/01,12.9791198,77.5912997,6,3
+127,Wayfair,"Boston, Massachusetts, United States",3,E_Commerce,2002/08/01,42.3602534,-71.0582912,19,1
+150,Goat Group,"Culver City, California, United States",3,E_Commerce,2009/01/01,34.0211224,-118.3964665,6,1
+151,Checkout.com,"London, England, United Kingdom",3,E_Commerce,2012/01/01,51.5073219,-0.1276474,48,4
+153,Etsy,"Brooklyn, New York, United States",3,E_Commerce,2005/06/18,40.6501038,-73.9495823,7,1
+158,BigBasket,"Bangalore, Karnataka, India",3,E_Commerce,2011/10/01,12.9791198,77.5912997,15,2
+167,Nuvei,"Montréal, Quebec, Canada",3,E_Commerce,2003/01/01,45.4972159,-73.6103642,5,2
+169,Omni,"San Francisco, California, United States",3,E_Commerce,2014/08/01,37.7790262,-122.4199061,161,11
+185,eToro,"London, England, United Kingdom",3,E_Commerce,2007/01/01,51.5073219,-0.1276474,48,4
+189,Klarna,"Stockholm, Stockholms Lan, Sweden",3,E_Commerce,2005/02/01,59.3251172,18.0710935,7,1
+190,Zalando,"Berlin, Berlin, Germany",3,E_Commerce,2008/06/01,52.5170365,13.3888599,14,3
+195,Braintrust,"San Jose, California, United States",3,E_Commerce,2018/05/22,37.3361905,-121.8905833,13,1
+206,Payrix,"Frisco, Texas, United States",3,E_Commerce,2015/08/01,33.1506744,-96.8236116,1,1
+215,dLocal,"Montevideo, NA - Uruguay, Uruguay",3,E_Commerce,2016/01/01,-33.0138587,-58.514243,1,1
+242,Stitch Fix,"San Francisco, California, United States",3,E_Commerce,2011/01/01,37.7790262,-122.4199061,161,11
+248,The Hut Group,"Manchester, Manchester, United Kingdom",3,E_Commerce,2004/01/01,53.4794892,-2.2451148,2,1
+281,Ant Group,"Hangzhou, Zhejiang, China",3,E_Commerce,2014/10/01,30.2489634,120.2052342,2,2
+292,Skillz,"San Francisco, California, United States",3,E_Commerce,2012/04/01,37.7790262,-122.4199061,161,11
+293,Meituan-Dianping,"Beijing, Beijing, China",3,E_Commerce,2006/01/01,39.9020668,116.718583,15,1
+294,Amazon,"Seattle, Washington, United States",3,E_Commerce,1994/07/05,47.6038321,-122.3300624,14,4
+297,Warby Parker,"New York, New York, United States",3,E_Commerce,2010/01/01,40.7127281,-74.0060152,112,13
+302,Instacart,"San Francisco, California, United States",3,E_Commerce,2012/01/01,37.7790262,-122.4199061,161,11
+310,GrubMarket,"San Francisco, California, United States",3,E_Commerce,2014/05/01,37.7790262,-122.4199061,161,11
+313,Amazon Pay,"Seattle, Washington, United States",3,E_Commerce,2005/01/01,47.6038321,-122.3300624,14,4
+315,Frontier Digital Ventures,"Kuala Lumpur, Kuala Lumpur, Malaysia",3,E_Commerce,2014/01/01,3.1396189,101.6937436,1,1
+317,Brex,"San Francisco, California, United States",3,E_Commerce,2017/03/01,37.7790262,-122.4199061,161,11
+318,Walmart,"Bentonville, Arkansas, United States",3,E_Commerce,1962/01/02,36.3728538,-94.2088172,1,1
+322,The RealReal,"San Francisco, California, United States",3,E_Commerce,2011/03/01,37.7790262,-122.4199061,161,11
+334,Zillow,"Seattle, Washington, United States",3,E_Commerce,2005/01/01,47.6038321,-122.3300624,14,4
+364,KKday,"Taipei, T'ai-pei, Taiwan",3,E_Commerce,2014/01/01,25.105497,121.597366,3,1
+367,Foodpanda,"Berlin, Berlin, Germany",3,E_Commerce,2012/04/01,52.5170365,13.3888599,14,3
+371,Poshmark,"Redwood City, California, United States",3,E_Commerce,2011/02/01,37.4863239,-122.232523,13,1
+387,Cuyana,"San Francisco, California, United States",3,E_Commerce,2013/01/01,37.7790262,-122.4199061,161,11
+424,Better.com,"New York, New York, United States",3,E_Commerce,2016/01/01,40.7127281,-74.0060152,112,13
+429,Avalara,"Seattle, Washington, United States",3,E_Commerce,2004/01/01,47.6038321,-122.3300624,14,4
+437,Tokopedia,"Jakarta, Jakarta Raya, Indonesia",3,E_Commerce,2009/02/06,-6.1753942,106.827183,5,2
+438,Funding Societies,"Singapore, Central Region, Singapore",3,E_Commerce,2015/06/01,16.7796467,96.175243,7,3
+441,Boohoo,"London, England, United Kingdom",3,E_Commerce,2006/04/08,51.5073219,-0.1276474,48,4
+442,Mayvenn,"Oakland, California, United States",3,E_Commerce,2012/09/01,37.8044557,-122.2713563,9,3
+487,Payoneer,"New York, New York, United States",3,E_Commerce,2005/01/01,40.7127281,-74.0060152,112,13
+499,Trustpilot,"Copenhagen, Hovedstaden, Denmark",3,E_Commerce,2007/02/12,55.6867243,12.5700724,3,1
+512,Sezzle,"Minneapolis, Minnesota, United States",3,E_Commerce,2016/01/04,44.9772995,-93.2654692,2,1
+523,Picnic,"Amsterdam, Noord-Holland, The Netherlands",3,E_Commerce,2015/10/01,52.3727598,4.8936041,6,1
+532,PopCom,"Columbus, Ohio, United States",3,E_Commerce,2017/04/01,39.9622601,-83.0007065,5,1
+549,Farfetch,"London, England, United Kingdom",3,E_Commerce,2007/06/01,51.5073219,-0.1276474,48,4
+583,99designs,"Oakland, California, United States",3,E_Commerce,2008/02/01,37.8044557,-122.2713563,9,3
+592,Afterpay,"Melbourne, Victoria, Australia",3,E_Commerce,2014/01/01,-37.8142176,144.9631608,2,1
+623,Away,"New York, New York, United States",3,E_Commerce,2015/02/01,40.7127281,-74.0060152,112,13
+626,Thumbtack,"San Francisco, California, United States",3,E_Commerce,2008/01/01,37.7790262,-122.4199061,161,11
+631,Finix,"San Francisco, California, United States",3,E_Commerce,2016/01/01,37.7790262,-122.4199061,161,11
+640,Rowing Blazers,"New York, New York, United States",3,E_Commerce,2016/01/01,40.7127281,-74.0060152,112,13
+674,Movile,"Campina, Sao Paulo, Brazil",3,E_Commerce,1998/01/01,-22.90556,-47.06083,1,1
+684,RetailMeNot,"Austin, Texas, United States",3,E_Commerce,2007/05/01,30.2711286,-97.7436995,3,1
+706,Huboo,"Bath, Bath and North East Somerset, United Kingdom",3,E_Commerce,2017/01/01,51.3813864,-2.3596963,1,1
+714,Casper,"New York, New York, United States",3,E_Commerce,2014/01/01,40.7127281,-74.0060152,112,13
+731,MercadoLibre,"Buenos Aires, Distrito Federal, Argentina",3,E_Commerce,1999/08/02,-34.603722,-58.381592,1,1
+746,OfferUp,"Bellevue, Washington, United States",3,E_Commerce,2011/01/01,47.6144219,-122.1923372,4,1
+756,Weee!,"Fremont, California, United States",3,E_Commerce,2015/06/01,37.5482697,-121.9885719,1,1
+763,PropertyGuru Group,"Singapore, Central Region, Singapore",3,E_Commerce,2006/01/01,16.7796467,96.175243,7,3
+770,Ocado Group,"Hatfield, Hertford, United Kingdom",3,E_Commerce,2000/01/01,51.7779401,-0.1037618,1,1
+772,MCaffeine,"Mumbai, Maharashtra, India",3,E_Commerce,2015/01/01,18.9387711,72.8353355,13,2
+787,Melorra,"Bengaluru, Karnataka, India",3,E_Commerce,2015/01/01,12.9791198,77.5912997,6,3
+792,Lightspeed POS,"Montréal, Quebec, Canada",3,E_Commerce,2005/03/20,45.4972159,-73.6103642,5,2
+824,Olo,"New York, New York, United States",3,E_Commerce,2005/01/01,40.7127281,-74.0060152,112,13
+828,Coupang,"Seoul, Seoul-t'ukpyolsi, South Korea",3,E_Commerce,2010/01/01,37.5326,127.024612,3,1
+882,Chewy,"Dania, Florida, United States",3,E_Commerce,2011/06/01,47.6032433,-122.3366562,1,1
+889,Honey,"Los Angeles, California, United States",3,E_Commerce,2012/10/01,34.0536909,-118.2427666,12,1
+896,Scentbird,"New York, New York, United States",3,E_Commerce,2014/01/15,40.7127281,-74.0060152,112,13
+920,ShoppingGives,"Chicago, Illinois, United States",3,E_Commerce,2015/01/01,41.8755616,-87.6244212,16,2
+930,Sociolla,"Jakarta, Jakarta Raya, Indonesia",3,E_Commerce,2014/01/01,-6.1753942,106.827183,5,2
+940,Beauty Bakerie Cosmetics Brand,"San Diego, California, United States",3,E_Commerce,2011/01/01,32.7174209,-117.1627714,3,1
+949,Roofstock,"Oakland, California, United States",3,E_Commerce,2015/01/01,37.8044557,-122.2713563,9,3
+963,BOND,"New York, New York, United States",3,E_Commerce,2013/01/01,40.7127281,-74.0060152,112,13
+964,Good Buy Gear,"Arvada, Colorado, United States",3,E_Commerce,2016/09/01,39.8211225,-105.220743,1,1
+967,Boxed,"New York, New York, United States",3,E_Commerce,2013/06/01,40.7127281,-74.0060152,112,13
+975,Episerver,"Nashua, New Hampshire, United States",3,E_Commerce,1994/01/08,42.7653662,-71.467566,2,1
+979,Grofers,"Gurgaon, Haryana, India",3,E_Commerce,2013/12/27,28.4646148,77.0299194,5,1
+987,October,"Paris, Ile-de-France, France",3,E_Commerce,2014/09/01,48.8566969,2.3514616,10,1

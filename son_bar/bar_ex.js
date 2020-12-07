@@ -1,4 +1,4 @@
-const data1 = [
+const YJ1data1 = [
   { name: 'Stanford', value: 682, color: '#5487b1', ind_list: 'AllIndustries' },
   { name: 'Harvard', value: 517, color: '#63a1af', ind_list: 'AllIndustries' },
   { name: 'MIT', value: 336, color: '#7ab8aa', ind_list: 'AllIndustries' },
@@ -23,7 +23,7 @@ const data1 = [
   { name: 'Yonsei', value: 3, color: '#E7846F', ind_list: 'AllIndustries' }
 ];
 
-const data2 = [
+const YJ1data2 = [
   { name: 'Stanford', value: 31, color: '#5487b1', ind_list: 'AI' },
   { name: 'Harvard', value: 22, color: '#63a1af', ind_list: 'AI' },
   { name: 'MIT', value: 19, color: '#7ab8aa', ind_list: 'AI' },
@@ -45,7 +45,7 @@ const data2 = [
   { name: 'UT Austin', value: 4, color: '#c6e3a7', ind_list: 'AI' }
 ];
 
-const data3 = [
+const YJ1data3 = [
   { name: 'Stanford', value: 94, color: '#5487b1', ind_list: 'Ecommerce' },
   { name: 'Harvard', value: 56, color: '#63a1af', ind_list: 'Ecommerce' },
   { name: 'MIT', value: 25, color: '#7ab8aa', ind_list: 'Ecommerce' },
@@ -67,7 +67,7 @@ const data3 = [
   { name: 'UT Austin', value: 13, color: '#c6e3a7', ind_list: 'Ecommerce' }
 ];
 
-const data4 = [
+const YJ1data4 = [
   { name: 'Stanford', value: 26, color: '#5487b1', ind_list: 'Education' },
   { name: 'Harvard', value: 11, color: '#63a1af', ind_list: 'Education' },
   { name: 'MIT', value: 6, color: '#7ab8aa', ind_list: 'Education' },
@@ -89,7 +89,7 @@ const data4 = [
   { name: 'UT Austin', value: 0, color: '#c6e3a7', ind_list: 'Education' }
 ];
 
-const data5 = [
+const YJ1data5 = [
   { name: 'Stanford', value: 3, color: '#5487b1', ind_list: 'F&B' },
   { name: 'Harvard', value: 14, color: '#63a1af', ind_list: 'F&B' },
   { name: 'MIT', value: 0, color: '#7ab8aa', ind_list: 'F&B' },
@@ -111,7 +111,7 @@ const data5 = [
   { name: 'UT Austin', value: 1, color: '#c6e3a7', ind_list: 'F&B' }
 ];
 
-const data6 = [
+const YJ1data6 = [
   { name: 'Stanford', value: 108, color: '#5487b1', ind_list: 'Financial' },
   { name: 'Harvard', value: 95, color: '#63a1af', ind_list: 'Financial' },
   { name: 'MIT', value: 33, color: '#7ab8aa', ind_list: 'Financial' },
@@ -133,7 +133,7 @@ const data6 = [
   { name: 'UT Austin', value: 4, color: '#c6e3a7', ind_list: 'Financial' }
 ];
 
-const data7 = [
+const YJ1data7 = [
   { name: 'Stanford', value: 29, color: '#5487b1', ind_list: 'Healthcare' },
   { name: 'Harvard', value: 35, color: '#63a1af', ind_list: 'Healthcare' },
   { name: 'MIT', value: 21, color: '#7ab8aa', ind_list: 'Healthcare' },
@@ -155,7 +155,7 @@ const data7 = [
   { name: 'UT Austin', value: 0, color: '#c6e3a7', ind_list: 'Healthcare' }
 ];
 
-const data8 = [
+const YJ1data8 = [
   { name: 'Stanford', value: 100, color: '#5487b1', ind_list: 'Manufacturing' },
   { name: 'Harvard', value: 63, color: '#63a1af', ind_list: 'Manufacturing' },
   { name: 'MIT', value: 62, color: '#7ab8aa', ind_list: 'Manufacturing' },
@@ -177,7 +177,7 @@ const data8 = [
   { name: 'UT Austin', value: 18, color: '#c6e3a7', ind_list: 'Manufacturing' }
 ];
 
-const data9 = [
+const YJ1data9 = [
   { name: 'Stanford', value: 27, color: '#5487b1', ind_list: 'Security' },
   { name: 'Harvard', value: 32, color: '#63a1af', ind_list: 'Security' },
   { name: 'MIT', value: 11, color: '#7ab8aa', ind_list: 'Security' },
@@ -199,7 +199,7 @@ const data9 = [
   { name: 'UT Austin', value: 7, color: '#c6e3a7', ind_list: 'Security' }
 ];
 
-const data10 = [
+const YJ1data10 = [
   { name: 'Stanford', value: 187, color: '#5487b1', ind_list: 'Software' },
   { name: 'Harvard', value: 149, color: '#63a1af', ind_list: 'Software' },
   { name: 'MIT', value: 77, color: '#7ab8aa', ind_list: 'Software' },
@@ -221,7 +221,7 @@ const data10 = [
   { name: 'UT Austin', value: 27, color: '#c6e3a7', ind_list: 'Software' }
 ];
 
-const data11 = [
+const YJ1data11 = [
   { name: 'Stanford', value: 48, color: '#5487b1', ind_list: 'Transportation' },
   { name: 'Harvard', value: 19, color: '#63a1af', ind_list: 'Transportation' },
   { name: 'MIT', value: 12, color: '#7ab8aa', ind_list: 'Transportation' },
@@ -250,32 +250,32 @@ const data11 = [
 // ========================================================================================================================
 // ========================================================================================================================
 
-var margin = { top: 40, left: 40, bottom: 40, right: 40 };
-width = 1200,
-  height = 600;
+var YJ1margin = { top: 40, left: 40, bottom: 40, right: 40 };
+YJ1width = 1200,
+  YJ1height = 600;
 
 // append the svg object to the body of the page
-var svg = d3.select("#my_dataviz")
+var YJ1svg = d3.select("#YJ1_dataviz")
   .append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+  .attr("width", YJ1width + YJ1margin.left + YJ1margin.right)
+  .attr("height", YJ1height + YJ1margin.top + YJ1margin.bottom)
   .append("g")
   .attr("transform",
-    "translate(" + margin.left + "," + margin.top + ")")
+    "translate(" + YJ1margin.left + "," + YJ1margin.top + ")")
 
 // Initialize the X axis
-var x = d3.scaleBand()
-  .range([0, width])
+var YJ1x = d3.scaleBand()
+  .range([0, YJ1width])
   .padding(0.2);
-var xAxis = svg.append("g")
-  .attr("transform", "translate(0," + height + ")")
+var YJ1xAxis = YJ1svg.append("g")
+  .attr("transform", "translate(0," + YJ1height + ")")
 
 
 // Initialize the Y axis
-var y = d3.scaleLinear()
-  .range([height, 0]);
-var yAxis = svg.append("g")
-  .attr("class", "myYaxis")
+var YJ1y = d3.scaleLinear()
+  .range([YJ1height, 0]);
+var YJ1yAxis = YJ1svg.append("g")
+  .attr("class", "YJ1Yaxis")
   .style('font-size', 15)
 
 
@@ -283,50 +283,50 @@ var yAxis = svg.append("g")
 function update(data) {
 
   // Update the X axis
-  x.domain(data.map(function (d) { return d.name; }))
-  xAxis.call(d3.axisBottom(x))
+  YJ1x.domain(data.map(function (d) { return d.name; }))
+  YJ1xAxis.call(d3.axisBottom(YJ1x))
 
   // Update the Y axis
-  y.domain([0, d3.max(data, function (d) { return d.value })]);
-  yAxis.transition().duration(1000).call(d3.axisLeft(y));
+  YJ1y.domain([0, d3.max(data, function (d) { return d.value })]);
+  YJ1yAxis.transition().duration(1000).call(d3.axisLeft(YJ1y));
 
 
-  var tooltip = d3.select("#my_dataviz").append("div")
-    .attr("class", "toolTip")
+  var YJ1tooltip = d3.select("#YJ1_dataviz").append("div")
+    .attr("class", "YJ1toolTip")
     .style("display", "none");
 
 
   // Create the u variable
-  var u = svg.selectAll("rect")
+  var YJ1u = YJ1svg.selectAll("rect")
     .data(data)
 
-  u
+    YJ1u
     .enter()
     .append("rect") // Add a new rect for each new elements
-    .merge(u) // get the already existing elements as well
+    .merge(YJ1u) // get the already existing elements as well
     .transition() // and apply changes to all of them
     .duration(1000)
-    .attr("x", function (d) { return x(d.name); })
-    .attr("y", function (d) { return y(d.value); })
-    .attr("width", x.bandwidth())
-    .attr("height", function (d) { return height - y(d.value); })
+    .attr("x", function (d) { return YJ1x(d.name); })
+    .attr("y", function (d) { return YJ1y(d.value); })
+    .attr("width", YJ1x.bandwidth())
+    .attr("height", function (d) { return YJ1height - YJ1y(d.value); })
     .attr("rx", 10)
     .attr('fill', d => d.color);
 
-  u
-    .on("mouseover", function () { tooltip.style("display", "block"); })
-    .on("mouseout", function () { tooltip.style("display", "none"); })
+    YJ1u
+    .on("mouseover", function () { YJ1tooltip.style("display", "block"); })
+    .on("mouseout", function () { YJ1tooltip.style("display", "none"); })
     .on("mousemove", function (d) {
-      tooltip.style("left", (d3.event.pageX + 10) + "px");
-      tooltip.style("top", (d3.event.pageY - 10) + "px");
-      tooltip.html("<br><p style='font:15px sans-serif'> <strong>" + d.name + "</strong> <br><span style='color:white'>" + d.value + "</span>");
+      YJ1tooltip.style("left", (d3.event.pageX + 10) + "px");
+      YJ1tooltip.style("top", (d3.event.pageY - 10) + "px");
+      YJ1tooltip.html("<br><p style='font:15px sans-serif'> <strong>" + d.name + "</strong> <br><span style='color:white'>" + d.value + "</span>");
     });
   // If less name in the new dataset, I delete the ones not in use anymore
-  u
+  YJ1u
     .exit()
     .remove();
 }
 
 // Initialize the plot with the first dataset
-update(data1)
-update(data1)
+update(YJ1data1)
+update(YJ1data1)

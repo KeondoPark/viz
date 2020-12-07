@@ -1,0 +1,99 @@
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
+25,Ynsect,"Paris, Ile-de-France, France",4,Health_Care,2011/01/01,48.8566969,2.3514616,10,1
+47,Cerebral,"San Francisco, California, United States",4,Health_Care,2020/01/08,37.7790262,-122.4199061,161,13
+61,Bayer,"Leverkusen, Nordrhein-Westfalen, Germany",4,Health_Care,1863/08/01,51.0324743,6.9881194,2,1
+65,Shine,"New York, New York, United States",4,Health_Care,2015/08/01,40.7127281,-74.0060152,112,13
+75,maude,"Brooklyn, New York, United States",4,Health_Care,2017/01/01,40.6501038,-73.9495823,7,2
+84,Clover Health,"San Francisco, California, United States",4,Health_Care,2013/01/01,37.7790262,-122.4199061,161,13
+90,Novartis,"Basel, Basel-Stadt, Switzerland",4,Health_Care,1996/01/01,47.5581077,7.5878261,3,3
+92,Headspace,"Santa Monica, California, United States",4,Health_Care,2010/01/01,34.0250724,-118.4965129,7,2
+95,Flatiron Health,"New York, New York, United States",4,Health_Care,2012/06/01,40.7127281,-74.0060152,112,13
+98,Merck,"Kenilworth, New Jersey, United States",4,Health_Care,1891/01/01,40.6760225,-74.289262,1,1
+109,Hims,"San Francisco, California, United States",4,Health_Care,2017/01/01,37.7790262,-122.4199061,161,13
+111,Incredible Health,"San Francisco, California, United States",4,Health_Care,2017/01/01,37.7790262,-122.4199061,161,13
+134,Hyperice,"Irvine, California, United States",4,Health_Care,2010/01/01,33.6856969,-117.8259819,5,1
+137,COMPASS Pathways,"Altrincham, Cheshire, United Kingdom",4,Health_Care,2016/06/13,53.3428558,-2.2786316,1,1
+139,Teladoc,"Purchase, New York, United States",4,Health_Care,2002/01/01,41.0409305,-73.7145746,2,1
+174,Roche,"Basel, Basel-Stadt, Switzerland",4,Health_Care,1896/01/15,47.5581077,7.5878261,3,3
+179,Fitbit,"San Francisco, California, United States",4,Health_Care,2007/05/01,37.7790262,-122.4199061,161,13
+188,MyoKardia,"Brisbane, California, United States",4,Health_Care,2012/09/01,37.687165,-122.4027942,1,1
+200,Kronos Bio,"San Mateo, California, United States",4,Health_Care,2017/01/01,37.496904,-122.3330573,18,1
+201,JD Health,"Beijing, Beijing, China",4,Health_Care,2019/05/01,39.9020668,116.718583,15,1
+204,Mayo Clinic,"Rochester, Minnesota, United States",4,Health_Care,1919/01/01,44.0234387,-92.4630182,1,1
+213,10X Genomics,"Pleasanton, California, United States",4,Health_Care,2012/01/01,37.6624312,-121.8746789,3,1
+219,Livongo,"Mountain View, California, United States",4,Health_Care,2008/01/01,37.3893889,-122.0832101,21,4
+249,Cityblock Health,"Brooklyn, New York, United States",4,Health_Care,2017/01/01,40.6501038,-73.9495823,7,2
+307,Oxford Nanopore Technologies,"Oxford, Oxfordshire, United Kingdom",4,Health_Care,2005/01/01,51.7520131,-1.2578499,1,1
+324,Grand Rounds,"San Francisco, California, United States",4,Health_Care,2011/01/01,37.7790262,-122.4199061,161,13
+335,Tend,"New York, New York, United States",4,Health_Care,2019/10/01,40.7127281,-74.0060152,112,13
+336,Shattuck Labs,"Austin, Texas, United States",4,Health_Care,2016/01/01,30.2711286,-97.7436995,3,1
+345,BridgeBio,"Palo Alto, California, United States",4,Health_Care,2014/01/01,37.4443293,-122.1598465,14,2
+348,Pulmonx,"Redwood City, California, United States",4,Health_Care,1998/01/01,37.4863239,-122.232523,13,1
+349,CRISPR Therapeutics,"Cambridge, Massachusetts, United States",4,Health_Care,2013/01/01,42.3750997,-71.1056157,8,3
+351,PharmEasy,"Mumbai, Maharashtra, India",4,Health_Care,2015/02/01,18.9387711,72.8353355,13,1
+357,MindMed,"Toronto, Ontario, Canada",4,Health_Care,2019/05/01,43.6534817,-79.3839347,9,2
+362,MDLIVE,"Miramar Beach, Florida, United States",4,Health_Care,2009/01/01,30.377985,-86.3616979,1,1
+382,Urban,"London, England, United Kingdom",4,Health_Care,2014/02/10,51.5073219,-0.1276474,48,1
+388,Willow,"Mountain View, California, United States",4,Health_Care,2014/01/01,37.3893889,-122.0832101,21,4
+392,Maple,"Toronto, Ontario, Canada",4,Health_Care,2015/07/13,43.6534817,-79.3839347,9,2
+420,BioNTech,"Mainz, Rheinland-Pfalz, Germany",4,Health_Care,2008/01/01,50.0012314,8.2762513,1,1
+425,Calm,"San Francisco, California, United States",4,Health_Care,2012/05/04,37.7790262,-122.4199061,161,13
+444,ScriptDrop,"Columbus, Ohio, United States",4,Health_Care,2017/01/01,39.9622601,-83.0007065,5,1
+445,Dialogue,"Montréal, Quebec, Canada",4,Health_Care,2016/07/05,45.4972159,-73.6103642,5,1
+446,Somatus,"Mclean, Virginia, United States",4,Health_Care,2016/01/01,38.9342888,-77.1776327,1,1
+458,Lenskart,"Faridabad, Haryana, India",4,Health_Care,2010/01/01,28.4029786,77.3103837,1,1
+475,Lyra Health,"Burlingame, California, United States",4,Health_Care,2015/01/01,37.5841026,-122.3660825,2,2
+481,Noom,"New York, New York, United States",4,Health_Care,2008/07/25,40.7127281,-74.0060152,112,13
+485,Oscar Health,"New York, New York, United States",4,Health_Care,2012/11/01,40.7127281,-74.0060152,112,13
+498,Roivant Sciences,"New York, New York, United States",4,Health_Care,2014/05/01,40.7127281,-74.0060152,112,13
+520,1mg,"Gurgaon, Haryana, India",4,Health_Care,2015/02/03,28.4646148,77.0299194,5,1
+528,Aurora Cannabis,"Cremona, Alberta, Canada",4,Health_Care,2013/01/01,51.5466917,-114.4908728,1,1
+530,Talkspace,"New York, New York, United States",4,Health_Care,2012/06/01,40.7127281,-74.0060152,112,13
+534,Athira Pharma,"Seattle, Washington, United States",4,Health_Care,2011/01/01,47.6038321,-122.3300624,14,1
+537,Spruce Biosciences,"San Francisco, California, United States",4,Health_Care,2014/01/01,37.7790262,-122.4199061,161,13
+581,Health IQ,"Mountain View, California, United States",4,Health_Care,2014/01/01,37.3893889,-122.0832101,21,4
+593,Biofourmis,"Boston, Massachusetts, United States",4,Health_Care,2015/11/27,42.3602534,-71.0582912,19,3
+596,Invitae,"San Francisco, California, United States",4,Health_Care,2010/01/01,37.7790262,-122.4199061,161,13
+613,Cleveland Clinic,"Cleveland, Ohio, United States",4,Health_Care,1921/01/01,41.5051613,-81.6934446,1,1
+620,Taysha Gene Therapies,"Dallas, Texas, United States",4,Health_Care,2020/01/01,32.7762719,-96.7968559,1,1
+635,Cedar,"New York, New York, United States",4,Health_Care,2016/01/01,40.7127281,-74.0060152,112,13
+641,Vi,"New York, New York, United States",4,Health_Care,2011/07/01,40.7127281,-74.0060152,112,13
+648,23andMe,"Mountain View, California, United States",4,Health_Care,2006/04/01,37.3893889,-122.0832101,21,4
+657,ClassPass,"New York, New York, United States",4,Health_Care,2011/01/01,40.7127281,-74.0060152,112,13
+661,Omada Health,"San Francisco, California, United States",4,Health_Care,2011/01/01,37.7790262,-122.4199061,161,13
+667,NOCD,"Chicago, Illinois, United States",4,Health_Care,2014/01/01,41.8755616,-87.6244212,16,2
+683,Evotec,"Hamburg, Hamburg, Germany",4,Health_Care,1993/01/01,49.023014,11.808202,2,1
+693,Carbon Health,"San Francisco, California, United States",4,Health_Care,2015/07/01,37.7790262,-122.4199061,161,13
+696,Seattle Genetics,"Bothell, Washington, United States",4,Health_Care,1998/01/01,47.7598697,-122.2068288,1,1
+704,LabCorp,"Burlington, North Carolina, United States",4,Health_Care,1978/09/05,36.0956918,-79.4377991,1,1
+711,Regeneron Pharmaceuticals,"Tarrytown, New York, United States",4,Health_Care,1988/01/01,41.0762077,-73.8587461,1,1
+720,Immunomedics,"Morris Plains, New Jersey, United States",4,Health_Care,1982/07/01,40.8364845,-74.47818854,1,1
+722,Novavax,"Gaithersburg, Maryland, United States",4,Health_Care,1987/01/01,39.1434406,-77.2013705,2,1
+726,Practo,"Bangalore, Karnataka, India",4,Health_Care,2008/01/01,12.9791198,77.5912997,15,1
+735,Ginkgo Bioworks,"Boston, Massachusetts, United States",4,Health_Care,2008/01/01,42.3602534,-71.0582912,19,3
+736,Aziyo Biologics,"Silver Spring, Maryland, United States",4,Health_Care,2015/01/01,38.9959461,-77.0276231,1,1
+759,Care/of,"New York, New York, United States",4,Health_Care,2016/01/01,40.7127281,-74.0060152,112,13
+777,Within3,"Lakewood, Ohio, United States",4,Health_Care,2008/01/01,41.4819932,-81.7981908,1,1
+786,Ava,"Zürich, Zurich, Switzerland",4,Health_Care,2014/09/11,47.3723941,8.5423328,4,1
+791,Ruby Love,"New York, New York, United States",4,Health_Care,2015/12/05,40.7127281,-74.0060152,112,13
+794,Vir Biotechnology,"San Francisco, California, United States",4,Health_Care,2016/04/07,37.7790262,-122.4199061,161,13
+800,Noyo,"San Francisco, California, United States",4,Health_Care,2017/10/01,37.7790262,-122.4199061,161,13
+801,GoodRx,"Santa Monica, California, United States",4,Health_Care,2011/01/01,34.0250724,-118.4965129,7,2
+804,Accolade,"Plymouth Meeting, Pennsylvania, United States",4,Health_Care,2007/01/01,40.102332,-75.2743467,1,1
+810,Oncorus,"Cambridge, Massachusetts, United States",4,Health_Care,2015/04/01,42.3750997,-71.1056157,8,3
+820,Oak Street Health,"Chicago, Illinois, United States",4,Health_Care,2012/01/01,41.8755616,-87.6244212,16,2
+858,DrChrono,"Sunnyvale, California, United States",4,Health_Care,2009/01/01,37.3688301,-122.0363496,5,1
+859,Ping An,"Shenzhen, Guangdong, China",4,Health_Care,1988/01/01,22.555454,114.0543297,3,1
+866,Monte Rosa Therapeutics,"Basel, Basel-Stadt, Switzerland",4,Health_Care,2018/01/01,47.5581077,7.5878261,3,3
+887,LOOM,"Los Angeles, California, United States",4,Health_Care,2016/01/01,34.0536909,-118.2427666,12,2
+895,ReadCoor,"Cambridge, Massachusetts, United States",4,Health_Care,2016/09/01,42.3750997,-71.1056157,8,3
+914,Eargo,"San Jose, California, United States",4,Health_Care,2010/01/01,37.3361905,-121.8905833,13,1
+924,Amwell,"Boston, Massachusetts, United States",4,Health_Care,2006/01/01,42.3602534,-71.0582912,19,3
+925,Halodoc,"Jakarta, Jakarta Raya, Indonesia",4,Health_Care,2016/01/01,-6.1753942,106.827183,5,1
+926,Inflazome,"Dublin, Dublin, Ireland",4,Health_Care,2016/01/01,53.3497645,-6.2602732,3,1
+927,Prenetics,"Quarry Bay, Hong Kong Island, Hong Kong",4,Health_Care,2009/01/01,22.302711,114.177216,2,1
+937,Joint Academy,"Malmö, Skane Lan, Sweden",4,Health_Care,2014/08/01,55.6052931,13.0001566,1,1
+945,Walker & Company Brands,"Palo Alto, California, United States",4,Health_Care,2013/04/18,37.4443293,-122.1598465,14,2
+985,Color,"Burlingame, California, United States",4,Health_Care,2013/01/01,37.5841026,-122.3660825,2,2
+993,Mahmee,"Los Angeles, California, United States",4,Health_Care,2014/01/01,34.0536909,-118.2427666,12,2
+996,Zocdoc,"New York, New York, United States",4,Health_Care,2007/09/18,40.7127281,-74.0060152,112,13
