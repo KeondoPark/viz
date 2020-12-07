@@ -333,3 +333,33 @@ body {
 .annotation-line line {
   display: none;
 }
+
+
+
+
+
+/* Youngjun Bar Chart */
+.YJ1toolTip {
+  position: absolute;
+  border: 0 none;
+  border-radius: 4px 4px 4px 4px;
+  /*     background-color: white; */
+  background: rgba(75, 72, 72, 0.8);
+  color: white;
+  padding: 1px 10px 1px 10px;
+  text-align: center;
+}
+/* Youngjun Pie Chart */
+.YJ2 path{
+  opacity: .6;
+}
+.YJ2 path.slice {
+  stroke-width: 2px;
+}
+
+.YJ2 polyline {
+  opacity: .8;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
