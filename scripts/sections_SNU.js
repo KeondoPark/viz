@@ -1,8 +1,178 @@
-var ind_list = ["AllIndustries", "AI",	"Ecommerce", "Education", "F&B", "Financial","Healthcare","Manufacturing","Security","Software","Transportation"]
-var inTitle = 0, inYB1 = 0, inRBC = 0, inWC1 = 0, inWC2 = 0, inYJ1 = 0, inYJ2 = 0, inKD1 = 0, inKD2 = 0
-var funding_order = {'Seed':1, "Series A":2, 'Series B':3, 'Series C':4, 'Series D+':5, 'M&A':6, 'IPO':7, 'Others':8}
-var funding_label = {1:'Seed', 2:"Series A", 3:'Series B', 4:'Series C', 5:'Series D+', 6:'M&A', 7:'IPO', 8:'Others'}
-  
+var ind_list = ["AllIndustries", "AI", "Ecommerce", "Education", "F&B", "Financial", "Healthcare", "Manufacturing", "Security", "Software", "Transportation"]
+var inTitle = 0, inYB1 = 0, inRBC = 0, inWC1 = 0, inWC2 = 0, inWC3 = 0, inYJ1 = 0, inYJ2 = 0, inKD1 = 0, inKD2 = 0
+var funding_order = { 'Seed': 1, "Series A": 2, 'Series B': 3, 'Series C': 4, 'Series D+': 5, 'M&A': 6, 'IPO': 7, 'Others': 8 }
+var funding_label = { 1: 'Seed', 2: "Series A", 3: 'Series B', 4: 'Series C', 5: 'Series D+', 6: 'M&A', 7: 'IPO', 8: 'Others' }
+
+// 얘로 bar chart 하나 넣자
+const YJ2data =
+{
+  'Computer Science': 2868,
+  'Economics': 783,
+  'Business': 921,
+  'Electrical Engineering': 550,
+  'Marketing': 385,
+  'Finance': 499,
+  'Management': 332,
+  'Engineering': 496,
+  'Mathematics': 240,
+  'Mechanical Engineering': 200,
+  'Physics': 177,
+  'Accounting': 110,
+  'Psychology': 141,
+  'Law': 198,
+  'Biomedical': 191,
+  'Accounting': 95,
+  'History': 110,
+  'Information Technology': 269,
+  'Chemistry': 116,
+  'Communication': 127,
+  'etc': 1450
+};
+
+const YJ2data1 =
+{
+  'Engineering': 4574,
+  'Economics': 1392,
+  'Business': 1638,
+  'Natural Science': 533,
+  'etc': 2026
+};
+
+const YJ2data2 =
+{
+  'Engineering': 303,
+  'Economics': 48,
+  'Business': 85,
+  'Natural Science': 46,
+  'etc': 93
+}
+  ;
+
+const YJ2data3 =
+{
+  'Engineering': 490,
+  'Economics': 152,
+  'Business': 184,
+  'Natural Science': 56,
+  'etc': 246
+}
+  ;
+
+const YJ2data4 =
+{
+  'Engineering': 74,
+  'Economics': 25,
+  'Business': 29,
+  'Natural Science': 7,
+  //  'Psychology': 6, 
+  //  'Communication': 5, 
+  //  'Design': 3, 
+  //  'Education': 3, 
+  //  'History': 2, 
+  //  'Law': 2, 
+  //  'Philosophy': 2, 
+  'etc': 42
+}
+  ;
+
+const YJ2data5 =
+{
+  'Business': 41,
+  'Engineering': 26,
+  'Economics': 14,
+  'Natural Science': 5,
+  //  'Psychology': 3, 
+  //  'Design': 2, 
+  'etc': 16
+}
+  ;
+
+const YJ2data6 =
+{
+  'Engineering': 400,
+  'Economics': 403,
+  'Business': 255,
+  //  'Law': 45, 
+  'Natural Science': 88,
+  //  'History': 18, 
+  //  'Psychology': 18, 
+  'etc': 255
+};
+
+const YJ2data7 =
+{
+  'Engineering': 114,
+  'Economics': 39,
+  'Business': 47,
+  //  'Medicine': 11,
+  'Natural Science': 72,
+  //  'Design': 5,
+  //  'Law': 7,
+  //  'Psychology': 8,
+  'etc': 86
+}
+  ;
+
+const YJ2data8 =
+{
+  'Engineering': 926,
+  'Economics': 123,
+  'Business': 245,
+  //  'Communication': 26, 
+  'Natural Science': 120,
+  //  'Design': 26, 
+  //  'Law': 24, 
+  //  'Psychology': 22, 
+  'etc': 351
+}
+  ;
+
+const YJ2data9 =
+{
+  'Engineering': 249,
+  'Economics': 83,
+  'Business': 81,
+  'Natural Science': 30,
+  //  'English': 6, 
+  //  'Communication': 6, 
+  //  'Design': 4, 
+  //  'Law': 14, 
+  //  'Psychology': 7, 
+  'etc': 88
+}
+  ;
+
+const YJ2data10 =
+{
+  'Engineering': 1584,
+  'Economics': 351,
+  'Business': 424,
+  // 'Communication': 49,
+  'Natural Science': 113,
+  //  'History': 35,  
+  // 'Law': 54,
+  // 'Design': 67,
+  //  'Psychology': 43, 
+  'etc': 510+49+35+54+67
+}
+  ;
+
+const YJ2data11 =
+{
+  'Engineering': 217,
+  'Economics': 60,
+  'Business': 93,
+  'Natural Science': 25,
+  //  'Communication': 8, 
+  //  'Law': 7, 
+  //  'Robotics': 6, 
+  //  'Design': 5, 
+  //  'Philosophy': 5, 
+  //  'Psychology': 8, 
+  'etc': 103
+}
+  ;
+
 
 
 /**
@@ -11,7 +181,7 @@ var funding_label = {1:'Seed', 2:"Series A", 3:'Series B', 4:'Series C', 5:'Seri
  * using reusable charts pattern:
  * http://bost.ocks.org/mike/chart/
  */
-var scrollVis = function () {  
+var scrollVis = function () {
   // constants to define the size
   // and margins of the vis area.
   var width = 1200;
@@ -24,7 +194,7 @@ var scrollVis = function () {
   // quickly, we want to call all the
   // activate functions that they pass.
   var lastIndex = -1;
-  var activeIndex = 0;  
+  var activeIndex = 0;
 
   // main svg used for visualization
   var svg = null;
@@ -51,15 +221,17 @@ var scrollVis = function () {
    *  example, we will be drawing it in #vis
    */
   var chart = function (selection) {
-    selection.each(function (data) {      
+    selection.each(function (data) {
 
-      var KDdata = data.data1
-      var YB_data = data.data2  
-      var raw_rbc_data = data.data3    
-      var worldMapData = data.data4    
-      var WC1data = data.data5
-      var YJPieData = data.data6
-      
+      var KDdata = data.KDdata
+      var YB_data = data.YB_data
+      var raw_rbc_data = data.raw_rbc_data
+      var worldMapData = data.worldMapData
+      var WC1data = data.WC1data
+      var WC2data = data.WC2data
+      var YJPieData = data.YJPieData
+      var USMapData = data.USMapData
+
       // create svg and give it a width and height
       //svg = d3.select(this).selectAll('svg')//.data([YB_data]);
       svg = d3.select("#vis").append("svg")
@@ -75,11 +247,11 @@ var scrollVis = function () {
       // this group element will be used to contain all
       // other elements.
       g = svg.select('g')
-        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');     
-      
-      rbc_data = rbcModify(raw_rbc_data)      
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-      setupVis(KDdata, YB_data, rbc_data, worldMapData, WC1data, YJPieData);
+      rbc_data = rbcModify(raw_rbc_data)
+
+      setupVis(YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata);
 
       setupSections();
     });
@@ -95,62 +267,65 @@ var scrollVis = function () {
    *  element for each filler word type.
    * @param histData - binned histogram data
    */
-  var setupVis = function (KDdata, YB_data, rbc_data, worldMapData, WC1data, YJPieData) {        
-    
+  var setupVis = function (YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata) {
+
     //---------------------------------------------------------------------
     // Yoobin's bar chart start
     //---------------------------------------------------------------------
     let xYB = d3.scaleBand().rangeRound([0, width]).padding(0.1);
-    let yYB = d3.scaleLinear().rangeRound([height,0]);
+    let yYB = d3.scaleLinear().rangeRound([height, 0]);
 
-    xYB.domain(YB_data.map(function(d) { return d.type; }));    
+    xYB.domain(YB_data.map(function (d) { return d.type; }));
     maxYYB = d3.max(YB_data, d => +d.value)
     selected = ind_list
-    filtered = YB_data.filter(function(d){     
-      return selected.includes(d.ind_list)})
-    yYB.domain([0, d3.max(filtered, function(d) { return +d.value; })*1.2]);
+    filtered = YB_data.filter(function (d) {
+      return selected.includes(d.ind_list)
+    })
+    yYB.domain([0, d3.max(filtered, function (d) { return +d.value; }) * 1.2]);
 
     g.append("g")
-        .attr("class", "x_axis axis YB")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(xYB));
+      .attr("class", "x_axis axis YB")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(xYB));
 
     g.append("g")
-        .attr("class", "axis y_axis YB")
-        .call(d3.axisLeft(yYB));
+      .attr("class", "axis y_axis YB")
+      .call(d3.axisLeft(yYB));
 
     g.selectAll(".rect")
-        .data(filtered)
-        .enter().append("rect")
-        .attr("id", function(d) {
-            return "bar" + ind_list.indexOf(d.ind_list)}  )
-        .attr("y", function(d) {             
-            return yYB(+d.value)})
-        .attr("x", function(d) { return xYB(d.type)+8 * ind_list.indexOf(d.ind_list); })
-        .attr("height", function(d) { return height - yYB(+d.value); })
-        .attr("width", xYB.bandwidth()/4)
-        .attr("class","rectYB")  
+      .data(filtered)
+      .enter().append("rect")
+      .attr("id", function (d) {
+        return "bar" + ind_list.indexOf(d.ind_list)
+      })
+      .attr("y", function (d) {
+        return yYB(+d.value)
+      })
+      .attr("x", function (d) { return xYB(d.type) + 8 * ind_list.indexOf(d.ind_list); })
+      .attr("height", function (d) { return height - yYB(+d.value); })
+      .attr("width", xYB.bandwidth() / 4)
+      .attr("class", "rectYB")
 
     var legendYB = g.selectAll(".legend")
       .data(filtered)
       .enter()
       .append("g")
-      .attr("class", "legend YB")      
+      .attr("class", "legend YB")
 
-    var legend_keys = ["AllIndustries", "AI",	"Ecommerce", "Education", "F&B", "Financial","Healthcare","Manufacturing","Security","Software","Transportation"]
+    var legend_keys = ["AllIndustries", "AI", "Ecommerce", "Education", "F&B", "Financial", "Healthcare", "Manufacturing", "Security", "Software", "Transportation"]
 
     var lineLegend = g.selectAll(".legend").data(legend_keys)
-        .enter()
-        .append("g")
-        .attr("class", "legend YB")
+      .enter()
+      .append("g")
+      .attr("class", "legend YB")
 
-    lineLegend.append("text").text(function(d) {return d;})
-        .attr("transform", "translate(15,9")
-    lineLegend.append("rect").attr("fill", function (d,i) {
-                return "bar"+ind_list.indexOf(d).style("fill")
-              })
-        .attr("width", 10)
-        .attr("height", 10)
+    lineLegend.append("text").text(function (d) { return d; })
+      .attr("transform", "translate(15,9")
+    lineLegend.append("rect").attr("fill", function (d, i) {
+      return "bar" + ind_list.indexOf(d).style("fill")
+    })
+      .attr("width", 10)
+      .attr("height", 10)
 
     //---------------------------------------------------------------------
     // Yoobin's bar chart end
@@ -160,22 +335,22 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
     // Woochul's racing bar chart start
     //---------------------------------------------------------------------
-    
+
     let year = 2008;
     var top_n = 4;
     var tickDuration = 500;
     let barPadding = (height - (margin.bottom + margin.top)) / (top_n * 5);
 
-    const halo = function(text, strokeWidth) {
-      text.select(function() { return this.parentNode.insertBefore(this.cloneNode(true), this); })
+    const halo = function (text, strokeWidth) {
+      text.select(function () { return this.parentNode.insertBefore(this.cloneNode(true), this); })
         .style('fill', '#ffffff')
-         .style( 'stroke','#ffffff')
-         .style('stroke-width', strokeWidth)
-         .style('stroke-linejoin', 'round')         
-         .style('opacity', 0)
-         .attr('class','rbc');
-       
-    } 
+        .style('stroke', '#ffffff')
+        .style('stroke-width', strokeWidth)
+        .style('stroke-linejoin', 'round')
+        .style('opacity', 0)
+        .attr('class', 'rbc');
+
+    }
 
     /*
     let rbcTitle = g
@@ -191,234 +366,234 @@ var scrollVis = function () {
             */
 
     let rbcSubTitle = g.append("text")
-        .attr("class", "rbc")
-        .attr("y", 40)
-        .attr('text-anchor','start')
-        .html("Total Asset, $m")
-        .attr('opacity',0)
-        .attr('fill', '#5487b1')
-        ;
+      .attr("class", "rbc")
+      .attr("y", 40)
+      .attr('text-anchor', 'start')
+      .html("Total Asset, $m")
+      .attr('opacity', 0)
+      .attr('fill', '#5487b1')
+      ;
 
     let rbcCaption = g.append('text')
-        .attr('class', 'rbc')
-        .attr('x', width)
-        .attr('y', height - 5)
-        .style('text-anchor', 'end')
-        .attr('fill', '#5487b1')
-        .html('Source: CrunchBase, yChart')
-        .attr('opacity',0);
+      .attr('class', 'rbc')
+      .attr('x', width)
+      .attr('y', height - 5)
+      .style('text-anchor', 'end')
+      .attr('fill', '#5487b1')
+      .html('Source: CrunchBase, yChart')
+      .attr('opacity', 0);
 
     let yearSlice = rbc_data.filter(d => d.year == year && !isNaN(d.value))
-      .sort((a,b) => b.value - a.value)
+      .sort((a, b) => b.value - a.value)
       .slice(0, top_n);
 
-    yearSlice.forEach((d,i) => d.rank = i);
+    yearSlice.forEach((d, i) => d.rank = i);
 
     let xRbc = d3.scaleLinear()
-        .domain([0, d3.max(yearSlice, d => d.value)])
-        .range([margin.left, width-margin.right-65]);
-    
+      .domain([0, d3.max(yearSlice, d => d.value)])
+      .range([margin.left, width - margin.right - 65]);
+
     let yRbc = d3.scaleLinear()
-        .domain([top_n, 0])
-        .range([height-margin.bottom, margin.top + 55]);
-    
+      .domain([top_n, 0])
+      .range([height - margin.bottom, margin.top + 55]);
+
     let xAxisRbc = d3.axisTop()
-        .scale(xRbc)
-        .ticks(width > 500 ? 5:2)
-        .tickSize(-(height-margin.top-margin.bottom))
-        .tickFormat(d => d3.format(',')(d))
+      .scale(xRbc)
+      .ticks(width > 500 ? 5 : 2)
+      .tickSize(-(height - margin.top - margin.bottom))
+      .tickFormat(d => d3.format(',')(d))
 
     g.append('g')
-        .attr('class', 'rbc xAxisRbc')
-        //.attr('transform', `translate(0, ${margin.top})`)
-        .attr('transform', `translate(0, 30)`)
-        .call(xAxisRbc)        
-        .selectAll('.tick line')
-        .classed('origin', d => d == 0)
-        ;    
+      .attr('class', 'rbc xAxisRbc')
+      //.attr('transform', `translate(0, ${margin.top})`)
+      .attr('transform', `translate(0, 30)`)
+      .call(xAxisRbc)
+      .selectAll('.tick line')
+      .classed('origin', d => d == 0)
+      ;
 
     g.selectAll('rect.bar')
-        .data(yearSlice, d => d.name)
-        .enter()
+      .data(yearSlice, d => d.name)
+      .enter()
+      .append('rect')
+      .attr('class', 'barRbc rbc')
+      .attr('x', xRbc(0) + 1)
+      .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
+      .attr('y', d => yRbc(d.rank) + 5)
+      .attr('height', yRbc(1) - yRbc(0) - barPadding)
+      .style('fill', d => d.colour)
+      .attr('opacity', 0)
+      ;
+
+    g.selectAll('text.label')
+      .data(yearSlice, d => d.name)
+      .enter()
+      .append('text')
+      .attr('class', 'labelRbc rbc')
+      .attr('x', d => xRbc(d.value) - 8)
+      .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
+      .style('text-anchor', 'end')
+      .html(d => d.name)
+      ;
+
+    g.selectAll('.valueLabel')
+      .data(yearSlice, d => d.name)
+      .enter()
+      .append('text')
+      .attr('class', 'valueLabel rbc')
+      .attr('x', d => xRbc(d.value) + 5)
+      .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
+      .text(d => d3.format(',.0f')(d.lastValue))
+      ;
+
+    let yearTextRbc = g.append('text')
+      .attr('class', 'yearText rbc')
+      .attr('x', width - margin.right)
+      .attr('y', height - 25)
+      .style('text-anchor', 'end')
+      .attr('opacity', 0)
+      .html(~~year)
+      .call(halo, 10)
+
+    let ticker = d3.interval(e => {
+
+      if (inRBC == 0) {
+        ticker.stop();
+      } else {
+        year = d3.format('.1f')((+year) + 0.1);
+        /*
+        g.selectAll('.rbc')
+        .transition()
+        .duration(600)
+        .attr('opacity', 0);
+        */
+        //ticker.start();            
+      }
+      yearSlice = rbc_data.filter(d => d.year == year && !isNaN(d.value))
+        .sort((a, b) => b.value - a.value)
+        .slice(0, top_n);
+
+      yearSlice.forEach((d, i) => d.rank = i);
+
+      xRbc.domain([0, d3.max(yearSlice, d => d.value)]);
+
+      g.select('.xAxisRbc')
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .call(xAxisRbc);
+
+      let bars = g.selectAll('.barRbc').data(yearSlice, d => d.name);
+
+      bars.enter()
         .append('rect')
-        .attr('class', 'barRbc rbc')
-        .attr('x', xRbc(0)+1)
+        .attr('class', d => `barRbc ${d.name.replace(/\s/g, '_')}`)
+        .classed('rbc', true)
+        .attr('x', xRbc(0) + 1)
         .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-        .attr('y', d => yRbc(d.rank)+5)
+        .attr('y', d => yRbc(top_n + 1) + 5)
         .attr('height', yRbc(1) - yRbc(0) - barPadding)
         .style('fill', d => d.colour)
-        .attr('opacity', 0)
-        ;
-    
-    g.selectAll('text.label')
-        .data(yearSlice, d => d.name)
-        .enter()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5);
+
+      bars.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
+        .attr('y', d => yRbc(d.rank) + 5);
+
+      bars.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+
+      let labels = g.selectAll('.labelRbc')
+        .data(yearSlice, d => d.name);
+
+      labels.enter()
         .append('text')
         .attr('class', 'labelRbc rbc')
         .attr('x', d => xRbc(d.value) - 8)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0))/2) + 1)
+        .attr('y', d => yRbc(top_n + 1) + 5 + ((yRbc(1) - yRbc(0)) / 2))
         .style('text-anchor', 'end')
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
         .html(d => d.name)
-        ;
-  
-    g.selectAll('.valueLabel')        
-        .data(yearSlice, d => d.name)
-        .enter()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
+
+      labels.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .attr('x', d => xRbc(d.value) - 8)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
+
+      labels.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) - 8)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+
+
+
+      let valueLabels = g.selectAll('.valueLabel').data(yearSlice, d => d.name);
+
+      valueLabels.enter()
         .append('text')
         .attr('class', 'valueLabel rbc')
-        .attr('x', d => xRbc(d.value)+5)
-        .attr('y', d => yRbc(d.rank)+5+((yRbc(1)-yRbc(0))/2)+1)
-        .text(d => d3.format(',.0f')(d.lastValue))
-        ;
-  
-    let yearTextRbc = g.append('text')
-        .attr('class', 'yearText rbc')
-        .attr('x', width-margin.right)
-        .attr('y', height-25)
-        .style('text-anchor', 'end')
-        .attr('opacity',0)
-        .html(~~year)
-        .call(halo, 10)        
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .text(function (d) { return d3.format(',.0f')(d.lastValue) })
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
+        .attr('fill', '#000000')
+        .style('text-anchor', 'start')
+        .style("font-size", "24px");
 
-    let ticker = d3.interval(e => {      
+      valueLabels.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
+        .tween("text", function (d) {
+          let i = d3.interpolateRound(d.lastValue, d.value);
+          return function (t) {
+            this.textContent = d3.format(',')(i(t));
+          };
+        })
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .style('text-anchor', 'start');
 
-          if (inRBC == 0) {
-            ticker.stop();
-          } else {
-            year = d3.format('.1f')((+year) + 0.1);
-            /*
-            g.selectAll('.rbc')
-            .transition()
-            .duration(600)
-            .attr('opacity', 0);
-            */
-            //ticker.start();            
-          }
-          yearSlice = rbc_data.filter(d => d.year == year && !isNaN(d.value))
-            .sort((a,b) => b.value - a.value)
-            .slice(0,top_n);
-    
-          yearSlice.forEach((d,i) => d.rank = i);          
-    
-          xRbc.domain([0, d3.max(yearSlice, d => d.value)]); 
-         
-          g.select('.xAxisRbc')
-            .transition()
-            .duration(tickDuration)
-            .ease(d3.easeLinear)
-            .call(xAxisRbc);
-        
-          let bars = g.selectAll('.barRbc').data(yearSlice, d => d.name);
-        
-          bars.enter()
-            .append('rect')
-            .attr('class', d => `barRbc ${d.name.replace(/\s/g,'_')}`)
-            .classed('rbc', true)
-            .attr('x', xRbc(0) + 1)
-            .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-            .attr('y', d => yRbc(top_n + 1) + 5)
-            .attr('height', yRbc(1) - yRbc(0) - barPadding)
-            .style('fill', d => d.colour)
-            .transition()
-            .duration(tickDuration)
-            .ease(d3.easeLinear)
-            .attr('y', d => yRbc(d.rank) + 5);
-              
-          bars.transition()
-            .duration(tickDuration)
-            .ease(d3.easeLinear)
-            .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-            .attr('y', d => yRbc(d.rank) + 5);
-                
-          bars.exit()
-            .transition()
-            .duration(tickDuration)
-            .ease(d3.easeLinear)
-            .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-            .attr('y', d => yRbc(top_n+1) + 5)
-            .remove();    
-            
-          let labels = g.selectAll('.labelRbc')              
-              .data(yearSlice, d => d.name);
-         
-          labels.enter()
-            .append('text')
-            .attr('class', 'labelRbc rbc')
-            .attr('x', d => xRbc(d.value)-8)
-            .attr('y', d => yRbc(top_n+1)+5+((yRbc(1)-yRbc(0))/2))
-            .style('text-anchor', 'end')
-            .attr('fill', '#000000')            
-            .style("font-size", "24px")
-            .html(d => d.name)    
-            .transition()
-            .duration(tickDuration)
-            .ease(d3.easeLinear)
-            .attr('y', d => yRbc(d.rank)+5+((yRbc(1)-yRbc(0))/2)+1);                 
-        
-          labels.transition()
-            .duration(tickDuration)
-            .ease(d3.easeLinear)
-            .attr('fill', '#000000')   
-            .style("font-size", "24px")         
-            .attr('x', d => xRbc(d.value) - 8)
-            .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1)-yRbc(0))/2)+1);
-      
-          labels.exit()
-            .transition()
-            .duration(tickDuration)
-            .ease(d3.easeLinear)
-            .attr('x', d => xRbc(d.value)-8)
-            .attr('y', d => yRbc(top_n+1)+5)
-            .remove();
+      valueLabels.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
 
 
-             
-          let valueLabels = g.selectAll('.valueLabel').data(yearSlice, d => d.name);                
-          
-          valueLabels.enter()
-            .append('text')
-            .attr('class', 'valueLabel rbc')
-            .attr('x', d => xRbc(d.value) + 5)
-            .attr('y', d => yRbc(top_n+1) + 5)
-            .text(function(d){ return d3.format(',.0f')(d.lastValue) })
-            .transition()
-            .duration(tickDuration)
-            .ease(d3.easeLinear)
-            .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0))/2) + 1)
-            .attr('fill', '#000000')     
-            .style('text-anchor', 'start')       
-            .style("font-size", "24px");
-                
-          valueLabels.transition()
-            .duration(tickDuration)
-            .ease(d3.easeLinear)
-            .attr('x', d => xRbc(d.value) + 5)
-            .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0))/2)+1)            
-            .tween("text", function(d) {              
-                let i = d3.interpolateRound(d.lastValue, d.value);
-                return function(t) {                  
-                  this.textContent = d3.format(',')(i(t));
-              };
-            })
-            .attr('fill', '#000000')            
-            .style("font-size", "24px")
-            .style('text-anchor', 'start')            ;          
-         
-          valueLabels.exit()
-            .transition()
-            .duration(tickDuration)
-            .ease(d3.easeLinear)
-            .attr('x', d => xRbc(d.value)+5)
-            .attr('y', d => yRbc(top_n+1)+5)
-            .remove();
-            
-        
-          yearTextRbc.html(~~year);
-         
-         if(year >= 2020) ticker.stop();
-         year = d3.format('.1f')((+year) + 0.1);
-       }, tickDuration);    
-     
+      yearTextRbc.html(~~year);
+
+      if (year >= 2020) ticker.stop();
+      year = d3.format('.1f')((+year) + 0.1);
+    }, tickDuration);
+
     //---------------------------------------------------------------------
     // Woochul's racing bar chart end
     //---------------------------------------------------------------------
@@ -426,73 +601,73 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
     // Woochul's map 1 start
     //---------------------------------------------------------------------
-    
-    var map = g.append('g').attr("id", "map_WC1").attr("class","WC1").attr("opacity", 0), 
-      places = g.append('g').attr("id", "places_WC1").attr("class","WC1").attr("opacity", 0);
+
+    var map = g.append('g').attr("id", "map_WC1").attr("class", "WC1").attr("opacity", 0),
+      places = g.append('g').attr("id", "places_WC1").attr("class", "WC1").attr("opacity", 0);
 
     var projection = d3.geoMercator()
-        .translate([width / 2.2, height / 1.5]);
-        
+      .translate([width / 2.2, height / 1.5]);
+
     var path = d3.geoPath()
-        .projection(projection);
-    
+      .projection(projection);
+
     var features = topojson.feature(worldMapData, worldMapData.objects.countries).features;
-  
-    places.selectAll("path")
-        .data(features)
-        .enter()
-        .append("path")
-        .attr("d", path)
-        .attr("fill", "#b8b8b8")
-        .attr("class", "WC1")
-        .attr('opacity',0)
-        .lower();
+
+    g.append('g').selectAll("path")
+      .data(features)
+      .enter()
+      .append("path")
+      .attr("d", path)
+      .attr("fill", "#b8b8b8")
+      .attr("class", "WC1")
+      .attr('opacity', 0)
+      .lower();
 
     //Define tooltip
     var tooltip_wc1 = d3.select('body').append('div')
-        .attr('class','tooltip WC1')      
-        .attr('id','tooltipWC1')
-        .style('opacity',0)  
+      .attr('class', 'tooltip WC1')
+      .attr('id', 'tooltipWC1')
+      .style('opacity', 0)
 
     places.selectAll("circle")
-        .data(WC1data)
-        .enter().append("circle")
-        .attr("cx", function(d) { return projection([d.long, d.lat])[0]; })
-        .attr("cy", function(d) { return projection([d.long, d.lat])[1]; })
-        .attr("r", function(d) { return d.city_count > 10? (d.city_count) ** 0.8: d.city_count})
-        .attr("class", "WC1")
-        .attr("opacity", 0)
-        .on("mouseover", handleMouseOver)
-        .on("mouseout", handleMouseOut);
-    
-        /*
+      .data(WC1data)
+      .enter().append("circle")
+      .attr("cx", function (d) { return projection([d.long, d.lat])[0]; })
+      .attr("cy", function (d) { return projection([d.long, d.lat])[1]; })
+      .attr("r", function (d) { return d.city_count })
+      .attr("class", "WC1")
+      .attr("opacity", 0)
+      .on("mouseover", handleMouseOver)
+      .on("mouseout", handleMouseOut);
+
     places.selectAll("text")
-        .data(WC1data)
-        .enter()
-        .append("text")
-        .attr("x", function(d) { return projection([d.long, d.lat])[0]; })
-        .attr("y", function(d) { return projection([d.long, d.lat])[1] + 8; })
-        .text(function(d){return d.city})
-        .attr("class", "WC1")
-        .attr("opacity", 0)*/
+      .data(WC1data)
+      .enter().append("text")
+      .attr("x", function (d) { return projection([d.long, d.lat])[0]; })
+      .attr("y", function (d) { return projection([d.long, d.lat])[1] + 8; })
+      .attr("class", "WC1")
+      .attr("opacity", 0)
 
     function handleMouseOver(d) {  // Add interactivity
 
-      if (inWC1){
-        tooltip_wc1.style('opacity',0.9)
+      if (inWC1) {
+        tooltip_wc1
+          .style('opacity', 0.9)
+          .attr('width', 200)
+          .attr('text-align', 'center')
         //Information to display on tooltip
-        tooltip_wc1.html(function(){
-            return d.city + d.city_count
+        tooltip_wc1.html(function () {
+          return d.city + d.city_count
         })
-        .style('left', d3.event.pageX + 10 + 'px')
-        .style('top', d3.event.pageY - 28 + 'px')
+          .style('left', d3.event.pageX + 100 + 'px')
+          .style('top', d3.event.pageY - 28 + 'px')
       }
     }
 
     function handleMouseOut(d, i) {
-      tooltip_wc1.style('opacity',0)
-    }  
-        
+      tooltip_wc1.style('opacity', 0)
+    }
+
     //---------------------------------------------------------------------
     // Woochul's map 1 end
     //---------------------------------------------------------------------
@@ -502,8 +677,114 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
 
 
+    var wc2_width = 960,
+      wc2_height = 600,
+      centered,
+      clicked_point;
+
+    var wc_svg = d3.select("body").append("svg")
+      .attr("width", wc2_width)
+      .attr("height", wc2_height)
+      .attr("class", "map")
+      .attr("fill", "none")
+      .attr("stroke", "#000")
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round");
+
+    var map = g.append("g").attr("id", "map_WC2").attr("class", "WC2").attr("opacity", 0),
+      places = g.append("g").attr("id", "places_WC2").attr("class", "WC2").attr("opacity", 0);
+
+    var projection = d3.geoAlbersUsa()
+      .translate([wc2_width / 2, wc2_height / 2])
+      .scale([1200]);
+
+    var path = d3.geoPath();
+
+      g.append("path")
+        .attr("stroke", "#aaa")
+        .attr("stroke-width", 0.5)
+        .attr("d", path(topojson.mesh(USMapData, USMapData.objects.counties, function (a, b) { return a !== b && (a.id / 1000 | 0) === (b.id / 1000 | 0); })))
+        .attr('class','WC2')
+        .attr('opacity',0);
+
+      g.append("path")
+        .attr("stroke-width", 0.1)
+        .attr("d", path(topojson.mesh(USMapData, USMapData.objects.states, function (a, b) { return a !== b; })))
+        .attr('class','WC2')
+        .attr('opacity',0);
+
+      g.append("path")
+        .attr("d", path(topojson.feature(USMapData, USMapData.objects.nation)))
+        .attr('class','WC2')
+        .attr('opacity',0);
+
+
+      //Define tooltip
+      var tooltip_wc2 = d3.select('body').append('div')
+        .attr('class', 'tooltip')
+        .attr('id', 'tooltip')
+        .style('opacity', 0)
+
+        console.log(WC2data)
+
+      
+        places.selectAll("circle")
+          .data(WC2data)
+          .enter().append("circle")
+          .attr("cx", function (d) { return projection([d.long, d.lat])[0]; })
+          .attr("cy", function (d) { return projection([d.long, d.lat])[1]; })
+          .attr("r", function (d) { return d.city_count })
+          .on("mouseover", handleMouseOver)
+          .on("mouseout", handleMouseOut)
+          .attr('class','WC2')
+          .attr('opacity',0);
+
+
+        places.selectAll("text")
+          .data(WC2data)
+          .enter().append("text")
+          .attr("x", function (d) { return projection([d.long, d.lat])[0]; })
+          .attr("y", function (d) { return projection([d.long, d.lat])[1] + 8; })
+        //   .text(function(d) { return d.city});
+
+        function handleMouseOver(d) {  // Add interactivity
+          if (inWC2) {
+            tooltip_wc2.style('opacity', 0.9)
+            //Information to display on tooltip
+            tooltip_wc2.html(function () {
+              return d.city + "," + d.city_count
+            })
+              .style('left', d3.event.pageX + 10 + 'px')
+              .style('top', d3.event.pageY - 28 + 'px')
+          }
+        }
+
+        function handleMouseOut(d, i) {
+          // Use D3 to select element, change color back to normal
+          d3.select(this).attr({
+            fill: "black",
+          });
+
+          // Select text by id and then remove
+          d3.select("#t" + d.x + "-" + d.y + "-" + i).remove();  // Remove text location
+        }
+
+
+
+
+
     //---------------------------------------------------------------------
     // Woochul's map 2 end
+    //---------------------------------------------------------------------
+
+
+    //---------------------------------------------------------------------
+    // Woochul's map 3 start
+    //---------------------------------------------------------------------
+
+
+    //---------------------------------------------------------------------
+    // Woochul's map 3 end
     //---------------------------------------------------------------------
 
 
@@ -511,29 +792,29 @@ var scrollVis = function () {
     // Youngjun's bar start
     //---------------------------------------------------------------------
 
-    const YJ1data = [  
-      {name: 'SNU', value: 119, color: '#5487b1'},
-      {name: 'KAIST', value: 52, color: '#63a1af'},
-      {name: 'Korea', value: 40, color: '#7ab8aa'},
-      {name: 'Yonsei', value: 32, color: '#93caa8'},
-      {name: 'Hanyang', value: 23, color: '#add7a8'},
-      {name: 'Stanford', value: 14, color: '#c6e3a7'},
-      {name: 'POSTECH', value: 10, color: '#c6e3a7'},
-      {name: 'Columbia', value: 9, color: '#c6e3a7'},
-      {name: 'CMU', value: 8, color: '#c6e3a7'},
-      {name: 'SKKU', value: 7, color: '#c6e3a7'},
-      {name: 'Columbia', value: 6, color: '#c6e3a7'},
-      {name: 'KHU', value: 6, color: '#c6e3a7'},
-      {name: 'MIT', value: 6, color: '#c6e3a7'},
-      {name: 'PNU', value: 6, color: '#c6e3a7'},
-      {name: 'Hongik', value: 6, color: '#c6e3a7'},
-      {name: 'UPENN', value: 5, color: '#c6e3a7'},
-      {name: 'NU', value: 5, color: '#c6e3a7'},
-      {name: 'Kangwon', value: 5, color: '#c6e3a7'},
-      {name: 'Harvard', value: 5, color: '#c6e3a7'},
-      {name: 'UC Berkley', value: 5, color: '#c6e3a7'},
-      {name: 'Ajou', value: 5, color: '#c6e3a7'},
-      {name: 'Cornell', value: 5, color: '#c6e3a7'}
+    const YJ1data = [
+      { name: 'SNU', value: 119, color: '#5487b1' },
+      { name: 'KAIST', value: 52, color: '#63a1af' },
+      { name: 'Korea', value: 40, color: '#7ab8aa' },
+      { name: 'Yonsei', value: 32, color: '#93caa8' },
+      { name: 'Hanyang', value: 23, color: '#add7a8' },
+      { name: 'Stanford', value: 14, color: '#c6e3a7' },
+      { name: 'POSTECH', value: 10, color: '#c6e3a7' },
+      { name: 'Columbia', value: 9, color: '#c6e3a7' },
+      { name: 'CMU', value: 8, color: '#c6e3a7' },
+      { name: 'SKKU', value: 7, color: '#c6e3a7' },
+      { name: 'Columbia', value: 6, color: '#c6e3a7' },
+      { name: 'KHU', value: 6, color: '#c6e3a7' },
+      { name: 'MIT', value: 6, color: '#c6e3a7' },
+      { name: 'PNU', value: 6, color: '#c6e3a7' },
+      { name: 'Hongik', value: 6, color: '#c6e3a7' },
+      { name: 'UPENN', value: 5, color: '#c6e3a7' },
+      { name: 'NU', value: 5, color: '#c6e3a7' },
+      { name: 'Kangwon', value: 5, color: '#c6e3a7' },
+      { name: 'Harvard', value: 5, color: '#c6e3a7' },
+      { name: 'UC Berkley', value: 5, color: '#c6e3a7' },
+      { name: 'Ajou', value: 5, color: '#c6e3a7' },
+      { name: 'Cornell', value: 5, color: '#c6e3a7' }
     ];
 
 
@@ -543,24 +824,24 @@ var scrollVis = function () {
       .padding(0.3);
 
     const yYJ = d3.scaleLinear()
-        .domain([0, d3.max(YJ1data, d => d.value)]).nice()
-        .range([height - margin.bottom, margin.top]);
+      .domain([0, d3.max(YJ1data, d => d.value)]).nice()
+      .range([height - margin.bottom, margin.top]);
 
     const xAxisYJ = g => g
       .attr('transform', `translate(0, ${height - margin.bottom})`)
       .call(d3.axisBottom(xYJ).tickSizeOuter(0))
       .call(g => g.select('.domain').remove())
       .call(g => g.selectAll('line').remove())
-      .attr('class','YJ1');
+      .attr('class', 'YJ1');
 
     const yAxisYJ = g => g
       .attr('transform', `translate(${margin.left}, 0)`)
       .call(d3.axisLeft(yYJ))
       .call(g => g.select('.domain').remove())
       .call(g => g.selectAll('line')
-                .attr('x2', width)
-                .style('stroke', '#f5f5f5'))
-      .attr('class','YJ1');
+        .attr('x2', width)
+        .style('stroke', '#f5f5f5'))
+      .attr('class', 'YJ1');
 
 
     //const svg = d3.select('#svg-area').append('svg').style('width', width).style('height', height);
@@ -581,7 +862,7 @@ var scrollVis = function () {
       .attr('fill', d => d.color)
       .attr('data-x', d => d.name)
       .attr('data-y', d => d.value)
-      .attr('data-color', d=> d.color)
+      .attr('data-color', d => d.color)
       .attr('class', 'rectYJ YJ1')
       .attr('opacity', 0)
 
@@ -589,21 +870,21 @@ var scrollVis = function () {
 
     const rectEl = document.getElementsByClassName('rectYJ');
     //const tooltop = document.getElementById('tooltip');  
-    
+
     var tooltip_YJ1 = d3.select('body').append('div')
-      .attr('class','tooltip YJ1')      
-      .attr('id','tooltipYJ1')
+      .attr('class', 'tooltip YJ1')
+      .attr('id', 'tooltipYJ1')
       .style('opacity', 0)
 
-    for(const el of rectEl) {     
-      el.addEventListener('mouseover', (event) => {        
+    for (const el of rectEl) {
+      el.addEventListener('mouseover', (event) => {
         var tooltip = document.getElementById('tooltipYJ1');
 
         const target = event.target;
-        const positionLeft = Number(target.getAttribute('x')) + Number(xYJ.bandwidth()/2) - tooltip.clientWidth/2;
+        const positionLeft = Number(target.getAttribute('x')) + Number(xYJ.bandwidth() / 2) - tooltip.clientWidth / 2;
         const positionTop = height - margin.top - target.getAttribute('height') - tooltip.clientHeight - 5;
         const color = target.dataset.color;
-        const value = target.dataset.y;        
+        const value = target.dataset.y;
 
         tooltip.innerText = value;
         tooltip.style.background = color;
@@ -621,142 +902,108 @@ var scrollVis = function () {
     // Youngjun's pie start
     //---------------------------------------------------------------------
 
-    YJPieData = YJPieData.map(d => ({
-      major: d.major,
-      count: +d.count
-    }))
-  
-    let pie = d3.pie()
-      .value(d => d.count);
-      
-    let colorScale = d3.scaleOrdinal()
-      .range(d3.schemeCategory10)
-      .domain(YJPieData.map(d => d.major))
-     
-    let arc = d3.arc()
-      .outerRadius(height / 2)
-      .innerRadius(30);
 
-    var tooltip_YJ2 = d3.select('body').append('div')
-      .attr('class','tooltip YJ2')      
-      .attr('id','tooltipYJ2')
-      .style('opacity', 0)
 
-    //g //.selectAll(".arc")
-    g.selectAll(".arc")
-      .data(pie(YJPieData))
-      .enter()
-      .append("g")
-      .attr("class","YJ2")
-      .on("mouseover", function (d) {       
+    
 
-        d3.select("#tooltipYJ2")
-          .style("left", d3.event.pageX + "px")
-          .style("top", d3.event.pageY + "px")
-          .style("opacity", 1)
-          .select("#value")
-          .text(d.value);
-      })
-      .on("mouseout", function () {
-          // Hide the tooltip    
-          d3.select("#tooltipYJ2")
-            .style("opacity", 0);;
-      })
-      .append("path")
-      .attr("d", arc)
-      .attr("fill", d => {
-          return colorScale(d.data.major)
-      })
-      .attr("class","YJ2")
-      .attr("opacity",0)
-      .attr('transform', `translate(${width/2}, ${height/2})`)
+    // Initialize the plot with the first dataset
+    //updateYJ2(YJ2data1)
+    //updateYJ2(YJ2data1)
 
     //---------------------------------------------------------------------
     // Youngjun's pie end
     //--------------------------------------------------------------------- 
-    
+
     //---------------------------------------------------------------------
-    // Keondo's area chart start
+    // Keondo's line chart start
     //---------------------------------------------------------------------
-    
-    KDdata.forEach(function(d){
+    KDdata.forEach(function (d) {
       d.n = Number(d.Number_of_Employees_Avg)
       d.Last_Funding_Type = Number(funding_order[d.Last_Funding_Type])
     })
 
-    KDdata.sort(function(a,b){return d3.ascending(a.Last_Funding_Type,b.Last_Funding_Type)})
-    KDdata1 = KDdata.filter(function(d){return d.Industry == 'All Industry' || d.Industry == 'Security'})         
+    KDdata.sort(function (a, b) { return d3.ascending(a.Last_Funding_Type, b.Last_Funding_Type) })
 
     // group the data: I want to draw one line per group
-    var sumstatKD1 = d3.nest() // nest function allows to group the calculation per level of a factor
-      .key(function(d) { return d.Industry;})
-      .entries(KDdata1);
-
-      console.log(sumstatKD1)
+    var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
+      .key(function (d) { return d.Industry; })
+      .entries(KDdata);
 
     // What is the list of groups?
-    allKeys = sumstatKD1.map(function(d){return d.key})
+    allKeys = sumstat.map(function (d) { return d.key })
 
     var container = g.append("g")
-                      .classed("container-group", true);
-    var chartgroup = container.append("g").classed("chart-group-KD1", true);
-    gKD1 = container.selectAll(".chart-group-KD1").append('g')    
-      .data(sumstatKD1)
+      .classed("container-group", true);
+    var chartgroup = container.append("g").classed("chart-group", true);
+    gKD = container.selectAll(".chart-group")
+      .data(sumstat)
       .enter()
+    //.append('g')    
+    //.attr({transform:"translate(100,100)"})//(d, i) => "translate(" + 100*i + "," + 100*i + ")");
+
+    /*
+  // Select all bars and bind data:  
+  var paths = svg.selectAll(".chart-group")
+            .selectAll(".path")
+            .data(sumstat);
+            */
+    /*
+    gKD = g.selectAll("uniqueChart")
+      .data(sumstat)
+      .enter()
+      .append('g')
+      */
 
     // Add X axis --> it is a date format
-    var xKD1 = d3.scaleLinear()      
-      .domain([0,9])
-      .range([ 0, width]);           
-      
-    gKD1.append("g")
-      .attr("transform", function(d,i){return "translate(0," + height + ")"})
-      .attr("class","KD1")
-      .call(d3.axisBottom(xKD1)
-              .ticks(8)
-              .tickFormat(function (d) {
-                return funding_label[d];
-              }))      
+    var xKD = d3.scaleLinear()
+      //.domain(d3.extent(data, function(d) { return d.Last_Funding_Type; }))
+      .domain([0, 9])
+      .range([0, width / 4 - margin.left - margin.right]);
+
+    gKD.append("g")
+      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + ((height / 3) * (parseInt((i - 1) / 4) + 1) - margin.bottom) + ")" })
+      .attr("class", "KD1")
+      .call(d3.axisBottom(xKD).ticks(3))
       .attr('opacity', 0);
 
     //Add Y axis
-    var yKD1 = d3.scaleLinear()      
-      .domain([0, d3.max(KDdata1, function(d) { return +d.n; })])
-      .range([ height, 0 ]);
-    
-    gKD1.append("g")
-      .attr("class","KD1")
-      .attr("transform", function(d,i){return "translate(" + (width/4)  * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
-      .call(d3.axisLeft(yKD1).ticks(5))
+    var yKD = d3.scaleLinear()
+      .domain([0, d3.max(KDdata, function (d) { return +d.n; })])
+      .range([height / 3 - margin.top - margin.bottom, 0]);
+
+    gKD.append("g")
+      .attr("class", "KD1")
+      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
+      .call(d3.axisLeft(yKD).ticks(5))
       .attr('opacity', 0);
 
     // color palette
     var color = d3.scaleOrdinal()
       .domain(allKeys)
-      .range(['#5487b1','#5487b1','#63a1af','#63a1af','#7ab8aa','#93caa8','#add7a8','#c6e3a7','#c6e3a7','#E7846F','#E7846F'])
+      .range(['#5487b1', '#5487b1', '#63a1af', '#63a1af', '#7ab8aa', '#93caa8', '#add7a8', '#c6e3a7', '#c6e3a7', '#E7846F', '#E7846F'])
 
     // Draw the line
-    gKD1//.selectAll("path")
+    gKD//.selectAll("path")
       //.data(sumstat)
       .append('g')
       .append("path")
-      .attr("fill", function(d){ return color(d.key) })
+      .attr("fill", function (d) { return color(d.key) })
       .attr("stroke", "none")
-      .attr("d", function(d){                
+      .attr("d", function (d) {
         console.log(d)
         return d3.area()
-        .x(function(d) { return xKD1(d.Last_Funding_Type) })
-        .y0(yKD1(0))
-        .y1(function(d) { return yKD1(+d.n) })            
+          .x(function (d) { return xKD(d.Last_Funding_Type) })
+          .y0(yKD(0))
+          .y1(function (d) { return yKD(+d.n) })
           (d.values)
       })
-      .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
-      .attr('class','KD1')
+      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
+      .attr('class', 'KD1')
       .attr('opacity', 0);
 
     // Add titles
-    
-    gKD1.append('g')
+
+    gKD.append('g')
       //.selectAll('text')
       //.data(KDdata)
       //.enter()
@@ -764,106 +1011,17 @@ var scrollVis = function () {
       .attr("text-anchor", "start")
       //.attr("y", 0)
       //.attr("x", 0)
-      .text(function(d){ return(d.key)})
-      .style("fill", function(d){ return color(d.key) })
-      .attr("transform", function(d,i){return "translate(" + ((width/4) * ((i-1) % 4) + 100) + "," + ((height/3) * (parseInt((i-1)/4)) + 20) + ")"})
-      .attr('class','KD1')
+      .text(function (d) { return (d.key) })
+      .style("fill", function (d) { return color(d.key) })
+      .attr("transform", function (d, i) { return "translate(" + ((width / 4) * ((i - 1) % 4) + 100) + "," + ((height / 3) * (parseInt((i - 1) / 4)) + 20) + ")" })
+      .attr('class', 'KD1')
       .attr('opacity', 0);
 
 
     //---------------------------------------------------------------------
     // Keondo's line chart end
     //---------------------------------------------------------------------
-
-    //---------------------------------------------------------------------
-    // Keondo's line multiarea chart start
-    //---------------------------------------------------------------------
-
-    KDdata2 = KDdata.filter(function(d){return d.Industry != 'All Industry'})
-    // group the data: I want to draw one line per group
-    var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
-      .key(function(d) { return d.Industry;})
-      .entries(KDdata2);
-
-    // What is the list of groups?
-    allKeys = sumstat.map(function(d){return d.key})
-
-    console.log(allKeys)
-    console.log(sumstat)
-
-    var container = g.append("g")
-                      .classed("container-group", true);
-    var chartgroup = container.append("g").classed("chart-group", true);
-    gKD = container.selectAll(".chart-group")    
-      .data(sumstat)
-      .enter()
-
-    // Add X axis --> it is a date format
-    var xKD = d3.scaleLinear()
-      //.domain(d3.extent(data, function(d) { return d.Last_Funding_Type; }))
-      .domain([0,9])
-      .range([ 0, width/4  - margin.left - margin.right]);           
-      
-    gKD.append("g")
-      .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + ((height/3) * (parseInt((i-1)/4)+1) - margin.bottom) + ")"})
-      .attr("class","KD2")
-      .call(d3.axisBottom(xKD)
-              .ticks(3)
-              .tickFormat(function (d) {
-                return funding_label[d];
-              }))      
-      .attr('opacity', 0);
-
-    //Add Y axis
-    var yKD = d3.scaleLinear()      
-      .domain([0, d3.max(KDdata2, function(d) { return +d.n; })])
-      .range([ height/3-margin.top-margin.bottom, 0 ]);
-    
-    gKD.append("g")
-      .attr("class","KD2")
-      .attr("transform", function(d,i){return "translate(" + (width/4)  * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
-      .call(d3.axisLeft(yKD).ticks(5))
-      .attr('opacity', 0);
-
-    // color palette
-    var color = d3.scaleOrdinal()
-      .domain(allKeys)
-      .range(['#5487b1','#5487b1','#5487b1','#63a1af','#63a1af','#7ab8aa','#93caa8','#add7a8','#c6e3a7','#c6e3a7','#E7846F','#E7846F'])
-
-    // Draw the line
-    gKD//.selectAll("path")
-      //.data(sumstat)
-      .append('g')
-      .append("path")
-      .attr("fill", function(d){ return color(d.key) })
-      .attr("stroke", "none")
-      .attr("d", function(d){        
-        console.log(d)
-        return d3.area()
-        .x(function(d) { return xKD(d.Last_Funding_Type) })
-        .y0(yKD(0))
-        .y1(function(d) { return yKD(+d.n) })            
-          (d.values)
-      })
-      .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
-      .attr('class','KD2')
-      .attr('opacity', 0);
-
-    // Add titles    
-    gKD.append('g')      
-      .append("text")
-      .attr("text-anchor", "start")      
-      .text(function(d){ return(d.key)})
-      .style("fill", function(d){ return color(d.key) })
-      .attr("transform", function(d,i){return "translate(" + ((width/4) * ((i-1) % 4) + 100) + "," + ((height/3) * (parseInt((i-1)/4)) + 20) + ")"})
-      .attr('class','KD2')
-      .attr('opacity', 0);
-
-
-    //---------------------------------------------------------------------
-    // Keondo's line multiarea chart end
-    //---------------------------------------------------------------------
-  };
+  }
 
   /**
    * setupSections - each section is activated
@@ -881,10 +1039,11 @@ var scrollVis = function () {
     activateFunctions[2] = showRbc;
     activateFunctions[3] = showWooChul1;
     activateFunctions[4] = showWooChul2;
-    activateFunctions[5] = showYoungJun1;
-    activateFunctions[6] = showYoungJun2;
-    activateFunctions[7] = showKeondo1;
-    activateFunctions[8] = showKeondo2;
+    activateFunctions[5] = showWooChul3;
+    activateFunctions[6] = showYoungJun1;
+    activateFunctions[7] = showYoungJun2;
+    activateFunctions[8] = showKeondo1;
+    activateFunctions[9] = showHistAll;
 
     // updateFunctions are called while
     // in a particular section to update
@@ -893,7 +1052,7 @@ var scrollVis = function () {
     // for all scrolling and so are set to
     // no-op functions.
     for (var i = 0; i < 9; i++) {
-      updateFunctions[i] = function () {};
+      updateFunctions[i] = function () { };
     }
     updateFunctions[7] = updateCough;
   };
@@ -930,17 +1089,17 @@ var scrollVis = function () {
       .transition()
       .duration(0)
       .attr('opacity', 0);
-    
+
     g.selectAll('.rectYB')
       .transition()
       .duration(600)
       .attr('opacity', 0);
-    
+
     g.selectAll('.rbc')
       .transition()
       .duration(600)
       .attr('opacity', 0);
-    
+
     $('.YB')
       .css("opacity", 0)
 
@@ -958,18 +1117,18 @@ var scrollVis = function () {
    * shows: filler count title
    *
    */
-  function showYooBin() {    
-    
+  function showYooBin() {
+
     inTitle = 0
     inYB1 = 1
-    inRBC = 0    
+    inRBC = 0
 
     g.selectAll('.openvis-title')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
-    
+
     g.selectAll('.YB')
       .transition()
       .duration(600)
@@ -988,7 +1147,7 @@ var scrollVis = function () {
       .transition()
       .duration(600)
       .attr('opacity', 0);
-    
+
   }
   function showRbc() {
 
@@ -1005,7 +1164,7 @@ var scrollVis = function () {
       .transition()
       .duration(0)
       .attr('opacity', 0);
-    
+
     $('.YB')
       .css("opacity", 0)
 
@@ -1017,7 +1176,7 @@ var scrollVis = function () {
     g.selectAll('.rbc')
       .transition()
       .duration(600)
-      .attr('opacity', 1);    
+      .attr('opacity', 1);
   }
 
 
@@ -1034,13 +1193,18 @@ var scrollVis = function () {
     g.selectAll('.WC1')
       .transition()
       .duration(600)
-      .attr('opacity', 1);   
+      .attr('opacity', 1);
+
+      g.selectAll('.WC2')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
   }
 
-  function showWooChul2() {    
+  function showWooChul2() {
     inWC1 = 0
     inWC2 = 1
-    inYJ1 = 0
+    inWC3 = 0
 
     g.selectAll('.WC1')
       .transition()
@@ -1051,21 +1215,41 @@ var scrollVis = function () {
       .transition()
       .duration(600)
       .attr('opacity', 1);
-    
+
+    g.selectAll('.WC3')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+  }
+
+  function showWooChul3() {
+    inWC2 = 0
+    inWC3 = 1
+    inYJ1 = 0
+
+    g.selectAll('.WC2')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    g.selectAll('.WC3')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1);
+
     g.selectAll('.YJ1')
       .transition()
       .duration(0)
-      .attr('opacity', 0);        
+      .attr('opacity', 0);
   }
 
+  function showYoungJun1() {
 
-  function showYoungJun1() { 
-    
-    inWC2 = 0
+    inWC3 = 0
     inYJ1 = 1
-    inYJ2 = 0        
+    inYJ2 = 0
 
-    g.selectAll('.WC2')
+    g.selectAll('.WC3')
       .transition()
       .duration(0)
       .attr('opacity', 0);
@@ -1073,20 +1257,20 @@ var scrollVis = function () {
     g.selectAll('.YJ1')
       .transition()
       .duration(600)
-      .attr('opacity', 1);   
+      .attr('opacity', 1);
 
     g.selectAll('.YJ2')
       .transition()
       .duration(0)
-      .attr('opacity', 0);   
+      .attr('opacity', 0);
   }
 
 
 
-  function showYoungJun2() {       
-    
+  function showYoungJun2() {
+
     inYJ1 = 0
-    inYJ2 = 1  
+    inYJ2 = 1
     inKD1 = 0
 
     g.selectAll('.YJ1')
@@ -1097,18 +1281,18 @@ var scrollVis = function () {
     g.selectAll('.YJ2')
       .transition()
       .duration(600)
-      .attr('opacity', 1);  
+      .attr('opacity', 1);
 
     g.selectAll('.KD1')
       .transition()
       .duration(0)
-      .attr('opacity', 0); 
+      .attr('opacity', 0);
 
   }
 
-  function showKeondo1() {           
-    
-    inYJ2 = 0  
+  function showKeondo1() {
+
+    inYJ2 = 0
     inKD1 = 1
     inKD2 = 0
 
@@ -1120,33 +1304,55 @@ var scrollVis = function () {
     g.selectAll('.KD1')
       .transition()
       .duration(600)
-      .attr('opacity', 1); 
-      
-    g.selectAll('.KD2')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
-  }
-
-  function showKeondo2() {           
-        
-    inKD1 = 0
-    inKD2 = 1
-
-    g.selectAll('.KD1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-    
-      
-    g.selectAll('.KD2')
-      .transition()
-      .duration(600)
       .attr('opacity', 1);
 
+    g.selectAll('.KD2')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
   }
 
+  /**
+   * showHistAll - show all histogram
+   *
+   * hides: cough title and color
+   * (previous step is also part of the
+   *  histogram, so we don't have to hide
+   *  that)
+   * shows: all histogram bars
+   *
+   */
+  function showHistAll() {
+
+    g.selectAll('.YJ1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+  }
+
+  /**
+   * showCough
+   *
+   * hides: nothing
+   * (previous and next sections are histograms
+   *  so we don't have to hide much here)
+   * shows: histogram
+   *
+   */
+  function showCough() {
+    /*
+    // ensure the axis to histogram one
+    showAxis(xAxisHist);
+
+    g.selectAll('.hist')
+      .transition()
+      .duration(600)
+      .attr('y', function (d) { return yHistScale(d.length); })
+      .attr('height', function (d) { return height - yHistScale(d.length); })
+      .style('opacity', 1.0);
+      */
+  }
 
   /**
    * showAxis - helper function to
@@ -1214,7 +1420,7 @@ var scrollVis = function () {
    *
    */
 
-  
+
 
   /**
    * groupByWord - group words together
@@ -1226,13 +1432,13 @@ var scrollVis = function () {
   function rbcModify(raw_rbc_data) {
     rbc_data = raw_rbc_data.forEach(d => {
       d.value = +d.value,
-      d.lastValue = +d.lastValue,
-      d.value = isNaN(d.value) ? 0 : d.value,
-      d.year = +d.year,
-      d.colour = d3.hsl(Math.random()*360,0.75,0.75)
+        d.lastValue = +d.lastValue,
+        d.value = isNaN(d.value) ? 0 : d.value,
+        d.year = +d.year,
+        d.colour = d3.hsl(Math.random() * 360, 0.75, 0.75)
     });
 
-    return raw_rbc_data 
+    return raw_rbc_data
   }
 
 
@@ -1275,14 +1481,21 @@ var scrollVis = function () {
  *
  * @param data - loaded tsv data
  */
-function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, YJPieData, KDdata) {
-  
+function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData,  WC2data, YJPieData, KDdata) {
+
   // create a new plot and
   // display it
   var plot = scrollVis();
   d3.select('#vis')
     //.datum(data)
-    .datum({"data1": KDdata, "data2": YB_data, "data3": raw_rbc_data, "data4": worldMapData, "data5": WC1data, "data6": YJPieData})
+    .datum({"YB_data": YB_data, 
+          "raw_rbc_data": raw_rbc_data, 
+          "worldMapData": worldMapData, 
+          "WC1data": WC1data, 
+          "USMapData": USMapData,          
+          "WC2data": WC2data,
+          "YJPieData": YJPieData, 
+          "KDdata": KDdata})
     .call(plot);
 
   // setup scroll functionality
@@ -1309,19 +1522,22 @@ function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, YJPieData,
 
 // load data and display
 //d3.tsv('data/words.tsv', display);
-d3.queue()  
+d3.queue()
   .defer(d3.csv, 'data/final.csv')
   .defer(d3.csv, 'data/rbc_112006.csv')
-  .defer(d3.json, "https://unpkg.com/world-atlas@1/world/110m.json" )
+  .defer(d3.json, "https://unpkg.com/world-atlas@1/world/110m.json")
   .defer(d3.csv, "data/map_1_nov27.csv")
+  .defer(d3.json, "https://unpkg.com/us-atlas@1/us/10m.json")
+  .defer(d3.csv, 'data/map2_nov30.csv')
   .defer(d3.csv, "data/korea_major_rank.csv")
   .defer(d3.tsv, 'data/crunch_data_grp_NoEmployees2.tsv')
+  
   .await(display)
 
-  
-  
-  
-  
+
+
+
+
 
 
 
@@ -1329,58 +1545,195 @@ d3.queue()
 // Yoobin's bar chart filter interactions start
 //---------------------------------------------------------------------  
 
-d3.selectAll("filter").on("change",updateBarYB)
+d3.selectAll("filter").on("change", updateBarYB)
 updateBarYB()
-d3.selectAll(".industry1").on("change",updateBarYB)
+d3.selectAll(".industry1").on("change", updateBarYB)
 updateBarYB()
-d3.selectAll(".industry2").on("change",updateBarYB)
+d3.selectAll(".industry2").on("change", updateBarYB)
 updateBarYB()
 
 
 function updateBarYB() {
-  d3.selectAll(".filter").each(function(d) {
-      bt = d3.select(this)
-      if(bt.property("checked")) {
-          svg = d3.select(this).selectAll('svg')
-          g = d3.selectAll('svg').select('g')
-          console.log(svg)
-          g.select("#bar0").transition().attr("opacity",0)
-          g.select("#bar1").transition().attr("opacity",0)
-          g.select("#bar2").transition().attr("opacity",0)
-          g.selectAll("#bar3").transition().attr("opacity",0)
-          g.selectAll("#bar4").transition().attr("opacity",0)
-          g.selectAll("#bar5").transition().attr("opacity",0)
-          g.selectAll("#bar6").transition().attr("opacity",0)
-          g.selectAll("#bar7").transition().attr("opacity",0)
-          
-          d3.selectAll(".industry1").each(function(d) {
-              cb = d3.select(this)                
-              grp = cb.property("value")                
-      
-              if(cb.property("checked")) {                    
-                  num = ind_list.indexOf(cb.property("value"))                    
-                  g.selectAll("#bar"+num).transition().attr("opacity",0.25)        
-              }
-              else {
-                  num = ind_list.indexOf(cb.property("value")) 
-                  g.selectAll("#bar"+num).transition().attr("opacity",0)                    
-              }
-          })
+  d3.selectAll(".filter").each(function (d) {
+    bt = d3.select(this)
+    if (bt.property("checked")) {
+      svg = d3.select(this).selectAll('svg')
+      g = d3.selectAll('svg').select('g')
+      console.log(svg)
+      g.select("#bar0").transition().attr("opacity", 0)
+      g.select("#bar1").transition().attr("opacity", 0)
+      g.select("#bar2").transition().attr("opacity", 0)
+      g.selectAll("#bar3").transition().attr("opacity", 0)
+      g.selectAll("#bar4").transition().attr("opacity", 0)
+      g.selectAll("#bar5").transition().attr("opacity", 0)
+      g.selectAll("#bar6").transition().attr("opacity", 0)
+      g.selectAll("#bar7").transition().attr("opacity", 0)
 
-          d3.selectAll(".industry2").each(function(d) {
-              cb = d3.select(this)                
-              grp = cb.property("value")               
-      
-              if(cb.property("checked")) {                    
-                  console.log(cb.property("value"))                    
-                  num = ind_list.indexOf(cb.property("value"))                     
-                  g.selectAll("#bar"+num).transition().attr("opacity",1)        
-              }                
-          })
-      }
+      d3.selectAll(".industry1").each(function (d) {
+        cb = d3.select(this)
+        grp = cb.property("value")
+
+        if (cb.property("checked")) {
+          num = ind_list.indexOf(cb.property("value"))
+          g.selectAll("#bar" + num).transition().attr("opacity", 0.25)
+        }
+        else {
+          num = ind_list.indexOf(cb.property("value"))
+          g.selectAll("#bar" + num).transition().attr("opacity", 0)
+        }
+      })
+
+      d3.selectAll(".industry2").each(function (d) {
+        cb = d3.select(this)
+        grp = cb.property("value")
+
+        if (cb.property("checked")) {
+          console.log(cb.property("value"))
+          num = ind_list.indexOf(cb.property("value"))
+          g.selectAll("#bar" + num).transition().attr("opacity", 1)
+        }
+      })
+    }
   }
-)}
+  )
+}
 
 //---------------------------------------------------------------------
 // END 
 //---------------------------------------------------------------------  
+
+
+
+
+// A function that create / update the plot for a given variable:
+function updateYJ2(data) {
+  var YJ2width = 650
+  YJ2height = 650
+  YJ2margin = 40
+
+  // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+  // var radius = Math.min(width, height) / 2 - margin
+  var YJ2radius = 200
+
+  // append the svg object to the div called 'my_dataviz'
+  /*
+  var YJ2svg = d3.select("#YJ2_dataviz")
+    .append("svg")
+    .attr("width", YJ2width)
+    .attr("height", YJ2height)
+    .append("g")
+    .attr("transform", "translate(" + YJ2width / 2 + "," + YJ2height / 2 + ")")
+*/
+  svgYJ2 = d3.selectAll('svg')
+  gYJ2 = svgYJ2.select('g').append('g')
+  gYJ2.append("g")
+    .attr("class", "slices");
+  gYJ2.append("g")
+    .attr("class", "labels");
+  gYJ2.append("g")
+    .attr("class", "lines");
+
+
+  // set the color scale
+  var YJ2color = d3.scaleOrdinal()
+    .domain(['Engineering', 'Economics', 'Business', 'Natural Science', 'etc'])
+    // .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56"]);
+    .range(d3.schemeDark2);
+
+
+  
+  // Compute the position of each group on the pie:
+  var YJ2pie = d3.pie()
+    .value(function (d) { return d.value; })
+  // .sort(null)
+  // .sort(function(a, b) { console.log(a) ; return d3.ascending(a.key, b.key);} ) // This make sure that group order remains the same in the pie chart
+  var YJ2arc = d3.arc().innerRadius(YJ2radius / 3).outerRadius(YJ2radius);
+  var YJ2outerArc = d3.arc()
+    .innerRadius(YJ2radius * 0.9)
+    .outerRadius(YJ2radius * 0.9);
+  var data_ready = YJ2pie(d3.entries(data))
+
+  // map to data
+  var YJ2u = gYJ2.selectAll("path")
+    .data(data_ready)
+
+  // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+  YJ2u
+    .enter()
+    .append('path')
+    .merge(YJ2u)
+    .transition()
+    .duration(500)
+    .attr('d', YJ2arc)
+    .attr('fill', function (d) { return (YJ2color(d.data.key)) })
+    .attr("stroke", "grey")
+    .style("stroke-width", "2px")
+  // .style("opacity", 0.6)
+
+  // remove the group that is not present anymore
+  YJ2u
+    .exit()
+    .remove();
+
+  var YJ2text = gYJ2.select(".labels").selectAll("text")
+    .data(data_ready);
+
+  YJ2text.enter()
+    .append("text")
+    .attr("dy", ".35em")
+    .text(function (d) {
+      return d.data.key;
+    });
+
+  function midAngle(d) {
+    return d.startAngle + (d.endAngle - d.startAngle) / 2;
+  }
+
+  YJ2text.transition().duration(1000)
+    .attrTween("transform", function (d) {
+      this._current = this._current || d;
+      var interpolate = d3.interpolate(this._current, d);
+      this._current = interpolate(0);
+      return function (t) {
+        var YJ2d2 = interpolate(t);
+        var YJ2pos = YJ2outerArc.centroid(YJ2d2);
+        YJ2pos[0] = YJ2radius * (midAngle(YJ2d2) < Math.PI ? 1 : -1);
+        return "translate(" + YJ2pos + ")";
+      };
+    })
+    .styleTween("text-anchor", function (d) {
+      this._current = this._current || d;
+      var interpolate = d3.interpolate(this._current, d);
+      this._current = interpolate(0);
+      return function (t) {
+        var YJ2d2 = interpolate(t);
+        return midAngle(YJ2d2) < Math.PI ? "start" : "end";
+      };
+    });
+
+  YJ2text.exit()
+    .remove();
+
+
+  var polyline = gYJ2.select(".lines").selectAll("polyline")
+    .data(data_ready);
+
+  polyline.enter()
+    .append("polyline");
+
+  polyline.transition().duration(1000)
+    .attrTween("points", function (d) {
+      this._current = this._current || d;
+      var interpolate = d3.interpolate(this._current, d);
+      this._current = interpolate(0);
+      return function (t) {
+        var d2 = interpolate(t);
+        var pos = YJ2outerArc.centroid(d2);
+        pos[0] = YJ2radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+        return [YJ2arc.centroid(d2), YJ2outerArc.centroid(d2), pos];
+      };
+    });
+
+  polyline.exit()
+    .remove();
+}
