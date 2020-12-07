@@ -438,7 +438,7 @@ var scrollVis = function () {
     
     var features = topojson.feature(worldMapData, worldMapData.objects.countries).features;
   
-    g.append('g').selectAll("path")
+    places.selectAll("path")
         .data(features)
         .enter()
         .append("path")
@@ -459,19 +459,22 @@ var scrollVis = function () {
         .enter().append("circle")
         .attr("cx", function(d) { return projection([d.long, d.lat])[0]; })
         .attr("cy", function(d) { return projection([d.long, d.lat])[1]; })
-        .attr("r", function(d) { return d.city_count })
+        .attr("r", function(d) { return d.city_count > 10? (d.city_count) ** 0.8: d.city_count})
         .attr("class", "WC1")
         .attr("opacity", 0)
         .on("mouseover", handleMouseOver)
         .on("mouseout", handleMouseOut);
     
+        /*
     places.selectAll("text")
         .data(WC1data)
-        .enter().append("text")
+        .enter()
+        .append("text")
         .attr("x", function(d) { return projection([d.long, d.lat])[0]; })
         .attr("y", function(d) { return projection([d.long, d.lat])[1] + 8; })
+        .text(function(d){return d.city})
         .attr("class", "WC1")
-        .attr("opacity", 0)
+        .attr("opacity", 0)*/
 
     function handleMouseOver(d) {  // Add interactivity
 
@@ -673,22 +676,120 @@ var scrollVis = function () {
     //--------------------------------------------------------------------- 
     
     //---------------------------------------------------------------------
-    // Keondo's line chart start
+    // Keondo's area chart start
     //---------------------------------------------------------------------
+    
     KDdata.forEach(function(d){
       d.n = Number(d.Number_of_Employees_Avg)
       d.Last_Funding_Type = Number(funding_order[d.Last_Funding_Type])
     })
 
-    KDdata.sort(function(a,b){return d3.ascending(a.Last_Funding_Type,b.Last_Funding_Type)})             
+    KDdata.sort(function(a,b){return d3.ascending(a.Last_Funding_Type,b.Last_Funding_Type)})
+    KDdata1 = KDdata.filter(function(d){return d.Industry == 'All Industry' || d.Industry == 'Security'})         
 
+    // group the data: I want to draw one line per group
+    var sumstatKD1 = d3.nest() // nest function allows to group the calculation per level of a factor
+      .key(function(d) { return d.Industry;})
+      .entries(KDdata1);
+
+      console.log(sumstatKD1)
+
+    // What is the list of groups?
+    allKeys = sumstatKD1.map(function(d){return d.key})
+
+    var container = g.append("g")
+                      .classed("container-group", true);
+    var chartgroup = container.append("g").classed("chart-group-KD1", true);
+    gKD1 = container.selectAll(".chart-group-KD1").append('g')    
+      .data(sumstatKD1)
+      .enter()
+
+    // Add X axis --> it is a date format
+    var xKD1 = d3.scaleLinear()      
+      .domain([0,9])
+      .range([ 0, width]);           
+      
+    gKD1.append("g")
+      .attr("transform", function(d,i){return "translate(0," + height + ")"})
+      .attr("class","KD1")
+      .call(d3.axisBottom(xKD1)
+              .ticks(8)
+              .tickFormat(function (d) {
+                return funding_label[d];
+              }))      
+      .attr('opacity', 0);
+
+    //Add Y axis
+    var yKD1 = d3.scaleLinear()      
+      .domain([0, d3.max(KDdata1, function(d) { return +d.n; })])
+      .range([ height, 0 ]);
+    
+    gKD1.append("g")
+      .attr("class","KD1")
+      .attr("transform", function(d,i){return "translate(" + (width/4)  * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
+      .call(d3.axisLeft(yKD1).ticks(5))
+      .attr('opacity', 0);
+
+    // color palette
+    var color = d3.scaleOrdinal()
+      .domain(allKeys)
+      .range(['#5487b1','#5487b1','#63a1af','#63a1af','#7ab8aa','#93caa8','#add7a8','#c6e3a7','#c6e3a7','#E7846F','#E7846F'])
+
+    // Draw the line
+    gKD1//.selectAll("path")
+      //.data(sumstat)
+      .append('g')
+      .append("path")
+      .attr("fill", function(d){ return color(d.key) })
+      .attr("stroke", "none")
+      .attr("d", function(d){                
+        console.log(d)
+        return d3.area()
+        .x(function(d) { return xKD1(d.Last_Funding_Type) })
+        .y0(yKD1(0))
+        .y1(function(d) { return yKD1(+d.n) })            
+          (d.values)
+      })
+      .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
+      .attr('class','KD1')
+      .attr('opacity', 0);
+
+    // Add titles
+    
+    gKD1.append('g')
+      //.selectAll('text')
+      //.data(KDdata)
+      //.enter()
+      .append("text")
+      .attr("text-anchor", "start")
+      //.attr("y", 0)
+      //.attr("x", 0)
+      .text(function(d){ return(d.key)})
+      .style("fill", function(d){ return color(d.key) })
+      .attr("transform", function(d,i){return "translate(" + ((width/4) * ((i-1) % 4) + 100) + "," + ((height/3) * (parseInt((i-1)/4)) + 20) + ")"})
+      .attr('class','KD1')
+      .attr('opacity', 0);
+
+
+    //---------------------------------------------------------------------
+    // Keondo's line chart end
+    //---------------------------------------------------------------------
+
+    //---------------------------------------------------------------------
+    // Keondo's line multiarea chart start
+    //---------------------------------------------------------------------
+
+    KDdata2 = KDdata.filter(function(d){return d.Industry != 'All Industry'})
     // group the data: I want to draw one line per group
     var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
       .key(function(d) { return d.Industry;})
-      .entries(KDdata);
+      .entries(KDdata2);
 
     // What is the list of groups?
     allKeys = sumstat.map(function(d){return d.key})
+
+    console.log(allKeys)
+    console.log(sumstat)
 
     var container = g.append("g")
                       .classed("container-group", true);
@@ -696,21 +797,6 @@ var scrollVis = function () {
     gKD = container.selectAll(".chart-group")    
       .data(sumstat)
       .enter()
-      //.append('g')    
-      //.attr({transform:"translate(100,100)"})//(d, i) => "translate(" + 100*i + "," + 100*i + ")");
-
-      /*
-    // Select all bars and bind data:  
-    var paths = svg.selectAll(".chart-group")
-              .selectAll(".path")
-              .data(sumstat);
-              */
-    /*
-    gKD = g.selectAll("uniqueChart")
-      .data(sumstat)
-      .enter()
-      .append('g')
-      */
 
     // Add X axis --> it is a date format
     var xKD = d3.scaleLinear()
@@ -720,17 +806,21 @@ var scrollVis = function () {
       
     gKD.append("g")
       .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + ((height/3) * (parseInt((i-1)/4)+1) - margin.bottom) + ")"})
-      .attr("class","KD1")
-      .call(d3.axisBottom(xKD).ticks(3))
+      .attr("class","KD2")
+      .call(d3.axisBottom(xKD)
+              .ticks(3)
+              .tickFormat(function (d) {
+                return funding_label[d];
+              }))      
       .attr('opacity', 0);
 
     //Add Y axis
     var yKD = d3.scaleLinear()      
-      .domain([0, d3.max(KDdata, function(d) { return +d.n; })])
+      .domain([0, d3.max(KDdata2, function(d) { return +d.n; })])
       .range([ height/3-margin.top-margin.bottom, 0 ]);
     
     gKD.append("g")
-      .attr("class","KD1")
+      .attr("class","KD2")
       .attr("transform", function(d,i){return "translate(" + (width/4)  * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
       .call(d3.axisLeft(yKD).ticks(5))
       .attr('opacity', 0);
@@ -738,7 +828,7 @@ var scrollVis = function () {
     // color palette
     var color = d3.scaleOrdinal()
       .domain(allKeys)
-      .range(['#5487b1','#5487b1','#63a1af','#63a1af','#7ab8aa','#93caa8','#add7a8','#c6e3a7','#c6e3a7','#E7846F','#E7846F'])
+      .range(['#5487b1','#5487b1','#5487b1','#63a1af','#63a1af','#7ab8aa','#93caa8','#add7a8','#c6e3a7','#c6e3a7','#E7846F','#E7846F'])
 
     // Draw the line
     gKD//.selectAll("path")
@@ -756,28 +846,22 @@ var scrollVis = function () {
           (d.values)
       })
       .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
-      .attr('class','KD1')
+      .attr('class','KD2')
       .attr('opacity', 0);
 
-    // Add titles
-    
-    gKD.append('g')
-      //.selectAll('text')
-      //.data(KDdata)
-      //.enter()
+    // Add titles    
+    gKD.append('g')      
       .append("text")
-      .attr("text-anchor", "start")
-      //.attr("y", 0)
-      //.attr("x", 0)
+      .attr("text-anchor", "start")      
       .text(function(d){ return(d.key)})
       .style("fill", function(d){ return color(d.key) })
       .attr("transform", function(d,i){return "translate(" + ((width/4) * ((i-1) % 4) + 100) + "," + ((height/3) * (parseInt((i-1)/4)) + 20) + ")"})
-      .attr('class','KD1')
+      .attr('class','KD2')
       .attr('opacity', 0);
 
 
     //---------------------------------------------------------------------
-    // Keondo's line chart end
+    // Keondo's line multiarea chart end
     //---------------------------------------------------------------------
   };
 
@@ -800,7 +884,7 @@ var scrollVis = function () {
     activateFunctions[5] = showYoungJun1;
     activateFunctions[6] = showYoungJun2;
     activateFunctions[7] = showKeondo1;
-    activateFunctions[8] = showHistAll;
+    activateFunctions[8] = showKeondo2;
 
     // updateFunctions are called while
     // in a particular section to update
@@ -1045,46 +1129,24 @@ var scrollVis = function () {
 
   }
 
-  /**
-   * showHistAll - show all histogram
-   *
-   * hides: cough title and color
-   * (previous step is also part of the
-   *  histogram, so we don't have to hide
-   *  that)
-   * shows: all histogram bars
-   *
-   */
-  function showHistAll() {
+  function showKeondo2() {           
+        
+    inKD1 = 0
+    inKD2 = 1
 
-    g.selectAll('.YJ1')
-    .transition()
-    .duration(0)
-    .attr('opacity', 0);
-  }
-
-  /**
-   * showCough
-   *
-   * hides: nothing
-   * (previous and next sections are histograms
-   *  so we don't have to hide much here)
-   * shows: histogram
-   *
-   */
-  function showCough() {
-    /*
-    // ensure the axis to histogram one
-    showAxis(xAxisHist);
-
-    g.selectAll('.hist')
+    g.selectAll('.KD1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+    
+      
+    g.selectAll('.KD2')
       .transition()
       .duration(600)
-      .attr('y', function (d) { return yHistScale(d.length); })
-      .attr('height', function (d) { return height - yHistScale(d.length); })
-      .style('opacity', 1.0);
-      */
+      .attr('opacity', 1);
+
   }
+
 
   /**
    * showAxis - helper function to
