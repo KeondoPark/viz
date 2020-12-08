@@ -1,189 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
+
   <!--  Meta  -->
   <meta charset="UTF-8" />
   <title>Scroller</title>
-  
+
   <!--  Styles  -->
-  <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" /> -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/scroll_sample.css">
 </head>
-<body>    
-    <div class="container">
-        <div id='graphic'>
-          <div id='vis'>
-            <form>
-              <label class="YB"><input class="YB filter" type="checkbox" id="filter" value="filter">Wish to Filter</label>
-              <p class="YB">Select Industries You Are Interested In</p>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_1" value="AllIndustries">All Industries</label>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_2" value="AI">AI</label>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_3" value="Ecommerce">Ecommerce</label>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_4" value="Education">Education</label>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_5" value="F&B">F&B</label>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_6" value="Financial">Financial</label>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_7" value="Healthcare">Healthcare</label>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_8" value='Manufacturing'>Manufacturing</label>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_9" value="Security">Security</label>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_10" value="Software">Software</label>
-              <label class="YB"><input class="industry1" type="checkbox" id="industry1_11"value="Transportation">Transporation</label>
-              <br>
-              
-              <p class="YB">Select Industries You Wish To Highlight</p>
-              <label class="YB"><input class="YB industry2" type="checkbox" id="all" value="AllIndustries">All Industries</label>
-              <label class="YB"><input class="YB industry2" type="checkbox" value="AI">AI</label>
-              <label class="YB"><input class="industry2" type="checkbox" value="Ecommerce">Ecommerce</label>
-              <label class="YB"><input class="industry2" type="checkbox" value="Education">Education</label>
-              <label class="YB"><input class="industry2" type="checkbox" value="F&B">F&B</label>
-              <label class="YB"><input class="industry2" type="checkbox" value="Financial">Financial</label>
-              <label class="YB"><input class="industry2" type="checkbox" value="Healthcare">Healthcare</label>
-              <label class="YB"><input class="industry2" type="checkbox" value='Manufacturing'>Manufacturing</label>
-              <label class="YB"><input class="industry2" type="checkbox" value="Security">Security</label>
-              <label class="YB"><input class="industry2" type="checkbox" value="Software">Software</label>
-              <label class="YB"><input class="industry2" type="checkbox" value="Transportation">Transporation</label>
-              <br>            
-            </form>
-            <div class='YJ1'>
-          <form id="form" class="YJ1_form btn-group btn-group-toggle " data-toggle="buttons">
-            <label class="btn btn-outline-secondary active">
-              <input type="radio" name="industry_select" onchange="YJ1update(YJ1data1)" checked>All Industries<br>
+
+<body>
+  <div class="container">
+    <div id='graphic'>
+      <div id='vis'>
+        <form>
+          <label class="YB"><input class="YB filter" type="checkbox" id="filter" value="filter">Wish to Filter</label>
+          <p class="YB">Select Industries You Are Interested In</p>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_1" value="AllIndustries">All
+            Industries</label>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_2" value="AI">AI</label>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_3"
+              value="Ecommerce">Ecommerce</label>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_4"
+              value="Education">Education</label>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_5" value="F&B">F&B</label>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_6"
+              value="Financial">Financial</label>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_7"
+              value="Healthcare">Healthcare</label>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_8"
+              value='Manufacturing'>Manufacturing</label>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_9" value="Security">Security</label>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_10" value="Software">Software</label>
+          <label class="YB"><input class="industry1" type="checkbox" id="industry1_11"
+              value="Transportation">Transporation</label>
+          <br>
+
+          <p class="YB">Select Industries You Wish To Highlight</p>
+          <label class="YB"><input class="YB industry2" type="checkbox" id="all" value="AllIndustries">All
+            Industries</label>
+          <label class="YB"><input class="YB industry2" type="checkbox" value="AI">AI</label>
+          <label class="YB"><input class="industry2" type="checkbox" value="Ecommerce">Ecommerce</label>
+          <label class="YB"><input class="industry2" type="checkbox" value="Education">Education</label>
+          <label class="YB"><input class="industry2" type="checkbox" value="F&B">F&B</label>
+          <label class="YB"><input class="industry2" type="checkbox" value="Financial">Financial</label>
+          <label class="YB"><input class="industry2" type="checkbox" value="Healthcare">Healthcare</label>
+          <label class="YB"><input class="industry2" type="checkbox" value='Manufacturing'>Manufacturing</label>
+          <label class="YB"><input class="industry2" type="checkbox" value="Security">Security</label>
+          <label class="YB"><input class="industry2" type="checkbox" value="Software">Software</label>
+          <label class="YB"><input class="industry2" type="checkbox" value="Transportation">Transporation</label>
+          <br>
+        </form>
+        <div class='YJ1'>
+          <form id="form" class="YJ1_form btn-group btn-group-toggle YJ1" data-toggle="buttons">
+            <label class="btn btn-outline-secondary YJ1  active" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="YJ1update(YJ1data1)">All Industries<br>
             </label>
-            <label class="btn btn-outline-secondary">
+            <label class="btn btn-outline-secondary YJ1" style="opacity: 0;">
               <input type="radio" name="industry_select" onchange="YJ1update(YJ1data2)">AI<br>
             </label>
-            <label class="btn btn-outline-secondary">
+            <label class="btn btn-outline-secondary YJ1" style="opacity: 0;">
               <input type="radio" name="industry_select" onchange="YJ1update(YJ1data3)">Ecommerce<br>
             </label>
-            <label class="btn btn-outline-secondary">
+            <label class="btn btn-outline-secondary YJ1" style="opacity: 0;">
               <input type="radio" name="industry_select" onchange="YJ1update(YJ1data4)">Education<br>
             </label>
-            <label class="btn btn-outline-secondary">
+            <label class="btn btn-outline-secondary YJ1" style="opacity: 0;">
               <input type="radio" name="industry_select" onchange="YJ1update(YJ1data5)">F&B<br>
             </label>
-            <label class="btn btn-outline-secondary">
+            <label class="btn btn-outline-secondary YJ1" style="opacity: 0;">
               <input type="radio" name="industry_select" onchange="YJ1update(YJ1data6)">Financial<br>
             </label>
-            <label class="btn btn-outline-secondary">
+            <label class="btn btn-outline-secondary YJ1" style="opacity: 0;">
               <input type="radio" name="industry_select" onchange="YJ1update(YJ1data7)">Healthcare<br>
             </label>
-            <label class="btn btn-outline-secondary">
+            <label class="btn btn-outline-secondary YJ1" style="opacity: 0;">
               <input type="radio" name="industry_select" onchange="YJ1update(YJ1data8)">Manufacturing<br>
             </label>
-            <label class="btn btn-outline-secondary">
+            <label class="btn btn-outline-secondary YJ1" style="opacity: 0;">
               <input type="radio" name="industry_select" onchange="YJ1update(YJ1data9)">Security<br>
             </label>
-            <label class="btn btn-outline-secondary">
+            <label class="btn btn-outline-secondary YJ1" style="opacity: 0;">
               <input type="radio" name="industry_select" onchange="YJ1update(YJ1data10)">Software<br>
             </label>
-            <label class="btn btn-outline-secondary">
+            <label class="btn btn-outline-secondary YJ1" style="opacity: 0;">
               <input type="radio" name="industry_select" onchange="YJ1update(YJ1data11)">Transportation<br>
             </label>
           </form>
         </div>
         <div class='YJ2'>
-            <form id="form" class="YJ2_form btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-outline-secondary active">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data1)" checked>All Industries<br>
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data2)">AI<br>
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data3)">Ecommerce<br>
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data4)">Education<br>
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data5)">F&B<br>
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data6)">Financial<br>
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data7)">Healthcare<br>
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data8)">Manufacturing<br>
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data9)">Security<br>
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data10)">Software<br>
-              </label>
-              <label class="btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data11)">Transportation<br>
-              </label>
-            </form>
-          </div>
-
-          </div>
-          <div id='sections'>
-            <section class="step">
-              <div class="title">OpenVis Conf 2013</div>
-              I did what no presenter should ever do: I watched my own talk.<br/><br/>My first visit to OpenVis Conf in 2013.
-            </section>
-            <section class="step">
-              <div class="title">Filler Words</div>
-              As expected, I could only focus on the flaws: the rushed speech, the odd phrases, and, most especially, all the filler words. In fact, I found 180 filler words in my 30 minute talk.
-            </section>
-            <section class="step">
-              <div class="title">WC_RBC_Racing Bar chart</div>
-              Google, Amazon, Facebook and Apple a dozen of years from now.
-            </section>
-            <section class="step">
-              <div class="title">WC_MAP1_WORLD</div>
-              MAP1 WIP
-            </section>
-            <section class="step">
-              <div class="title">WC_MAP2_US</div>
-              MAP2 WIP
-            </section>
-            <section class="step">
-              <div class="title">WC_MAP3_WORLD_FILTER ADD</div>
-              MAP3 WIP
-            </section>
-
-          
-            <section class="step">
-              <div class="title">Um's, Ah's &amp; Uh's</div>
-              I almost exclusively used these three fillers. Um's and Ah's made up over 80%, with Uh's trailing behind.
-            </section>
-            <section class="step">
-              <div class="title">Fillers Over Time</div>
-              I hoped that all these blunders were toward the beginning of my talk. And the data suggests that fewer fillers are used as I get into it. Perhaps the talk started out rough and improved as I found my groove.
-            </section>
-            <section class="step">
-              <div class="title">Ramping Back Up</div>
-              Unfortunately, the trend does not continue. Midway into the talk my Um's and Ah's spike. I continue to use them pretty consistently throughout the rest of the talk.
-            </section>
-            <section class="step">
-              <div class="title">The Cough Effect</div>
-              My theory is that at this critical halfway point in my talk, I heard a dry cough indicative of the audience's waning interest. This caused self-confidence to collapse and forced me out of my groove.<br/><br/>A competing theory is that I just hadn't practiced the last half of my speech as much.
-            </section>
-            <section class="step">
-              <div class="title">Best of Luck to Me in 2015</div>
-              The world may never know, or care, but hopefully these insights improve my speaking in 2015. Though preliminary results aren't looking so good.
-            </section>
-          </div>
-          
-          <div id="extra-space">
-          </div>
+          <form id="form" class="YJ2_form btn-group btn-group-toggle YJ2" data-toggle="buttons">
+            <label class="btn btn-outline-secondary YJ2  active" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data1)" checked>All Industries<br>
+            </label>
+            <label class="btn btn-outline-secondary YJ2" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data2)">AI<br>
+            </label>
+            <label class="btn btn-outline-secondary YJ2" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data3)">Ecommerce<br>
+            </label>
+            <label class="btn btn-outline-secondary YJ2" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data4)">Education<br>
+            </label>
+            <label class="btn btn-outline-secondary YJ2" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data5)">F&B<br>
+            </label>
+            <label class="btn btn-outline-secondary YJ2" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data6)">Financial<br>
+            </label>
+            <label class="btn btn-outline-secondary YJ2" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data7)">Healthcare<br>
+            </label>
+            <label class="btn btn-outline-secondary YJ2" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data8)">Manufacturing<br>
+            </label>
+            <label class="btn btn-outline-secondary YJ2" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data9)">Security<br>
+            </label>
+            <label class="btn btn-outline-secondary YJ2" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data10)">Software<br>
+            </label>
+            <label class="btn btn-outline-secondary YJ2" style="opacity: 0;">
+              <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data11)">Transportation<br>
+            </label>
+          </form>
         </div>
+
       </div>
-  
+      <div id='sections'>
+        <section class="step">
+          <div class="title">OpenVis Conf 2013</div>
+          I did what no presenter should ever do: I watched my own talk.<br /><br />My first visit to OpenVis Conf in
+          2013.
+        </section>
+        <section class="step">
+          <div class="title">Filler Words</div>
+          As expected, I could only focus on the flaws: the rushed speech, the odd phrases, and, most especially, all
+          the filler words. In fact, I found 180 filler words in my 30 minute talk.
+        </section>
+        <section class="step">
+          <div class="title">WC_RBC_Racing Bar chart</div>
+          Google, Amazon, Facebook and Apple a dozen of years from now.
+        </section>
+        <section class="step">
+          <div class="title">WC_MAP1_WORLD</div>
+          MAP1 WIP
+        </section>
+        <section class="step">
+          <div class="title">WC_MAP2_US</div>
+          MAP2 WIP
+        </section>
+        <section class="step">
+          <div class="title">WC_MAP3_WORLD_FILTER ADD</div>
+          MAP3 WIP
+        </section>
+
+
+        <section class="step">
+          <div class="title">Um's, Ah's &amp; Uh's</div>
+          I almost exclusively used these three fillers. Um's and Ah's made up over 80%, with Uh's trailing behind.
+        </section>
+        <section class="step">
+          <div class="title">Fillers Over Time</div>
+          I hoped that all these blunders were toward the beginning of my talk. And the data suggests that fewer fillers
+          are used as I get into it. Perhaps the talk started out rough and improved as I found my groove.
+        </section>
+        <section class="step">
+          <div class="title">Ramping Back Up</div>
+          Unfortunately, the trend does not continue. Midway into the talk my Um's and Ah's spike. I continue to use
+          them pretty consistently throughout the rest of the talk.
+        </section>
+        <section class="step">
+          <div class="title">The Cough Effect</div>
+          My theory is that at this critical halfway point in my talk, I heard a dry cough indicative of the audience's
+          waning interest. This caused self-confidence to collapse and forced me out of my groove.<br /><br />A
+          competing theory is that I just hadn't practiced the last half of my speech as much.
+        </section>
+        <section class="step">
+          <div class="title">Best of Luck to Me in 2015</div>
+          The world may never know, or care, but hopefully these insights improve my speaking in 2015. Though
+          preliminary results aren't looking so good.
+        </section>
+      </div>
+
+      <div id="extra-space">
+      </div>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://d3js.org/topojson.v2.min.js"></script>    
-  <script src='https://d3js.org/d3-scale-chromatic.v1.min.js'></script>  
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src='https://d3js.org/d3-scale-chromatic.v1.min.js'></script>
   <script src="scripts/scroller.js"></script>
   <script src="scripts/sections_SNU.js"></script>
-  <script src="https://unpkg.com/topojson-client@3"></script>   
+  <script src="https://unpkg.com/topojson-client@3"></script>
 
-  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
 </body>
-</html>
 
+</html>

@@ -3,6 +3,7 @@ var inTitle = 0, inYB1 = 0, inRBC = 0, inWC1 = 0, inWC2 = 0, inWC3 = 0, inYJ1 = 
 var funding_order = { 'Seed': 1, "Series A": 2, 'Series B': 3, 'Series C': 4, 'Series D+': 5, 'M&A': 6, 'IPO': 7, 'Others': 8 }
 var funding_label = { 1: 'Seed', 2: "Series A", 3: 'Series B', 4: 'Series C', 5: 'Series D+', 6: 'M&A', 7: 'IPO', 8: 'Others' }
 
+
 // 얘로 bar chart 하나 넣자
 const YJ2data =
 {
@@ -1954,6 +1955,7 @@ function YJ1update(data) {
   console.log(YJ1index)
   if (YJ1index) {
     d3.selectAll(".YJ1axis").remove();
+    d3.selectAll(".YJ1_form").exit();
 
   }
     YJ1svg = d3.selectAll('svg')
