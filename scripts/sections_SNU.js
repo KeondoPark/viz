@@ -3,427 +3,10 @@ var inTitle = 0, inYB1 = 0, inRBC = 0, inWC1 = 0, inWC2 = 0, inWC3 = 0, inYJ1 = 
 var funding_order = { 'Seed': 1, "Series A": 2, 'Series B': 3, 'Series C': 4, 'Series D+': 5, 'M&A': 6, 'IPO': 7, 'Others': 8 }
 var funding_label = { 1: 'Seed', 2: "Series A", 3: 'Series B', 4: 'Series C', 5: 'Series D+', 6: 'M&A', 7: 'IPO', 8: 'Others' }
 
-// 얘로 bar chart 하나 넣자
-const YJ2data =
-{
-  'Computer Science': 2868,
-  'Economics': 783,
-  'Business': 921,
-  'Electrical Engineering': 550,
-  'Marketing': 385,
-  'Finance': 499,
-  'Management': 332,
-  'Engineering': 496,
-  'Mathematics': 240,
-  'Mechanical Engineering': 200,
-  'Physics': 177,
-  'Accounting': 110,
-  'Psychology': 141,
-  'Law': 198,
-  'Biomedical': 191,
-  'Accounting': 95,
-  'History': 110,
-  'Information Technology': 269,
-  'Chemistry': 116,
-  'Communication': 127,
-  'etc': 1450
-};
-
-const YJ2data1 =
-{
-  'Engineering': 4574,
-  'Economics': 1392,
-  'Business': 1638,
-  'Natural Science': 533,
-  'etc': 2026
-};
-
-const YJ2data2 =
-{
-  'Engineering': 303,
-  'Economics': 48,
-  'Business': 85,
-  'Natural Science': 46,
-  'etc': 93
-}
-  ;
-
-const YJ2data3 =
-{
-  'Engineering': 490,
-  'Economics': 152,
-  'Business': 184,
-  'Natural Science': 56,
-  'etc': 246
-}
-  ;
-
-const YJ2data4 =
-{
-  'Engineering': 74,
-  'Economics': 25,
-  'Business': 29,
-  'Natural Science': 7,
-  //  'Psychology': 6, 
-  //  'Communication': 5, 
-  //  'Design': 3, 
-  //  'Education': 3, 
-  //  'History': 2, 
-  //  'Law': 2, 
-  //  'Philosophy': 2, 
-  'etc': 42
-}
-  ;
-
-const YJ2data5 =
-{
-  'Business': 41,
-  'Engineering': 26,
-  'Economics': 14,
-  'Natural Science': 5,
-  //  'Psychology': 3, 
-  //  'Design': 2, 
-  'etc': 16
-}
-  ;
-
-const YJ2data6 =
-{
-  'Engineering': 400,
-  'Economics': 403,
-  'Business': 255,
-  //  'Law': 45, 
-  'Natural Science': 88,
-  //  'History': 18, 
-  //  'Psychology': 18, 
-  'etc': 255
-};
-
-const YJ2data7 =
-{
-  'Engineering': 114,
-  'Economics': 39,
-  'Business': 47,
-  //  'Medicine': 11,
-  'Natural Science': 72,
-  //  'Design': 5,
-  //  'Law': 7,
-  //  'Psychology': 8,
-  'etc': 86
-}
-  ;
-
-const YJ2data8 =
-{
-  'Engineering': 926,
-  'Economics': 123,
-  'Business': 245,
-  //  'Communication': 26, 
-  'Natural Science': 120,
-  //  'Design': 26, 
-  //  'Law': 24, 
-  //  'Psychology': 22, 
-  'etc': 351
-}
-  ;
-
-const YJ2data9 =
-{
-  'Engineering': 249,
-  'Economics': 83,
-  'Business': 81,
-  'Natural Science': 30,
-  //  'English': 6, 
-  //  'Communication': 6, 
-  //  'Design': 4, 
-  //  'Law': 14, 
-  //  'Psychology': 7, 
-  'etc': 88
-}
-  ;
-
-const YJ2data10 =
-{
-  'Engineering': 1584,
-  'Economics': 351,
-  'Business': 424,
-  // 'Communication': 49,
-  'Natural Science': 113,
-  //  'History': 35,  
-  // 'Law': 54,
-  // 'Design': 67,
-  //  'Psychology': 43, 
-  'etc': 510 + 49 + 35 + 54 + 67
-}
-  ;
-
-const YJ2data11 =
-{
-  'Engineering': 217,
-  'Economics': 60,
-  'Business': 93,
-  'Natural Science': 25,
-  //  'Communication': 8, 
-  //  'Law': 7, 
-  //  'Robotics': 6, 
-  //  'Design': 5, 
-  //  'Philosophy': 5, 
-  //  'Psychology': 8, 
-  'etc': 103
-}
-;
-
-
-const YJ1data1 = [
-  { name: 'Stanford', value: 682, color: '#5487b1', ind_list: 'AllIndustries' },
-  { name: 'Harvard', value: 517, color: '#63a1af', ind_list: 'AllIndustries' },
-  { name: 'MIT', value: 336, color: '#7ab8aa', ind_list: 'AllIndustries' },
-  { name: 'UPENN', value: 294, color: '#93caa8', ind_list: 'AllIndustries' },
-  { name: 'UC Berkeley', value: 287, color: '#add7a8', ind_list: 'AllIndustries' },
-  { name: 'Cornell', value: 153, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'CMU', value: 145, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'Columbia', value: 119, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'UMich', value: 109, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'Oxford', value: 108, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'UW', value: 108, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'UCLA', value: 100, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'NU', value: 95, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'Cambridge', value: 94, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'NYU', value: 93, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'USC', value: 93, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'UIUC', value: 92, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'Tel Aviv', value: 86, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'UT Austin', value: 85, color: '#c6e3a7', ind_list: 'AllIndustries' },
-  { name: 'SNU', value: 6, color: '#E7846F', ind_list: 'AllIndustries' },
-  { name: 'KAIST', value: 4, color: '#E7846F', ind_list: 'AllIndustries' },
-  { name: 'Yonsei', value: 3, color: '#E7846F', ind_list: 'AllIndustries' }
-];
-
-const YJ1data2 = [
-  { name: 'Stanford', value: 31, color: '#5487b1', ind_list: 'AI' },
-  { name: 'Harvard', value: 22, color: '#63a1af', ind_list: 'AI' },
-  { name: 'MIT', value: 19, color: '#7ab8aa', ind_list: 'AI' },
-  { name: 'UPENN', value: 5, color: '#93caa8', ind_list: 'AI' },
-  { name: 'UC Berkeley', value: 24, color: '#add7a8', ind_list: 'AI' },
-  { name: 'Cornell', value: 10, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'CMU', value: 5, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'Columbia', value: 6, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'UMich', value: 3, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'Oxford', value: 5, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'UW', value: 3, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'UCLA', value: 9, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'NU', value: 7, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'Cambridge', value: 3, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'NYU', value: 8, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'USC', value: 3, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'UIUC', value: 7, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'Tel Aviv', value: 6, color: '#c6e3a7', ind_list: 'AI' },
-  { name: 'UT Austin', value: 4, color: '#c6e3a7', ind_list: 'AI' }
-];
-
-const YJ1data3 = [
-  { name: 'Stanford', value: 94, color: '#5487b1', ind_list: 'Ecommerce' },
-  { name: 'Harvard', value: 56, color: '#63a1af', ind_list: 'Ecommerce' },
-  { name: 'MIT', value: 25, color: '#7ab8aa', ind_list: 'Ecommerce' },
-  { name: 'UPENN', value: 19, color: '#93caa8', ind_list: 'Ecommerce' },
-  { name: 'UC Berkeley', value: 30, color: '#add7a8', ind_list: 'Ecommerce' },
-  { name: 'Cornell', value: 21, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'CMU', value: 20, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'Columbia', value: 11, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'UMich', value: 15, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'Oxford', value: 11, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'UW', value: 17, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'UCLA', value: 7, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'NU', value: 12, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'Cambridge', value: 11, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'NYU', value: 12, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'USC', value: 25, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'UIUC', value: 7, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'Tel Aviv', value: 6, color: '#c6e3a7', ind_list: 'Ecommerce' },
-  { name: 'UT Austin', value: 13, color: '#c6e3a7', ind_list: 'Ecommerce' }
-];
-
-const YJ1data4 = [
-  { name: 'Stanford', value: 26, color: '#5487b1', ind_list: 'Education' },
-  { name: 'Harvard', value: 11, color: '#63a1af', ind_list: 'Education' },
-  { name: 'MIT', value: 6, color: '#7ab8aa', ind_list: 'Education' },
-  { name: 'UPENN', value: 7, color: '#93caa8', ind_list: 'Education' },
-  { name: 'UC Berkeley', value: 5, color: '#add7a8', ind_list: 'Education' },
-  { name: 'Cornell', value: 3, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'CMU', value: 1, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'Columbia', value: 1, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'UMich', value: 0, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'Oxford', value: 1, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'UW', value: 0, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'UCLA', value: 1, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'NU', value: 1, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'Cambridge', value: 2, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'NYU', value: 5, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'USC', value: 0, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'UIUC', value: 0, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'Tel Aviv', value: 3, color: '#c6e3a7', ind_list: 'Education' },
-  { name: 'UT Austin', value: 0, color: '#c6e3a7', ind_list: 'Education' }
-];
-
-const YJ1data5 = [
-  { name: 'Stanford', value: 3, color: '#5487b1', ind_list: 'F&B' },
-  { name: 'Harvard', value: 14, color: '#63a1af', ind_list: 'F&B' },
-  { name: 'MIT', value: 0, color: '#7ab8aa', ind_list: 'F&B' },
-  { name: 'UPENN', value: 4, color: '#93caa8', ind_list: 'F&B' },
-  { name: 'UC Berkeley', value: 1, color: '#add7a8', ind_list: 'F&B' },
-  { name: 'Cornell', value: 1, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'CMU', value: 1, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'Columbia', value: 0, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'UMich', value: 0, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'Oxford', value: 1, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'UW', value: 0, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'UCLA', value: 1, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'NU', value: 3, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'Cambridge', value: 0, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'NYU', value: 1, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'USC', value: 0, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'UIUC', value: 0, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'Tel Aviv', value: 0, color: '#c6e3a7', ind_list: 'F&B' },
-  { name: 'UT Austin', value: 1, color: '#c6e3a7', ind_list: 'F&B' }
-];
-
-const YJ1data6 = [
-  { name: 'Stanford', value: 108, color: '#5487b1', ind_list: 'Financial' },
-  { name: 'Harvard', value: 95, color: '#63a1af', ind_list: 'Financial' },
-  { name: 'MIT', value: 33, color: '#7ab8aa', ind_list: 'Financial' },
-  { name: 'UPENN', value: 70, color: '#93caa8', ind_list: 'Financial' },
-  { name: 'UC Berkeley', value: 38, color: '#add7a8', ind_list: 'Financial' },
-  { name: 'Cornell', value: 20, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'CMU', value: 16, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'Columbia', value: 56, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'UMich', value: 15, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'Oxford', value: 32, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'UW', value: 7, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'UCLA', value: 6, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'NU', value: 8, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'Cambridge', value: 6, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'NYU', value: 18, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'USC', value: 7, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'UIUC', value: 13, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'Tel Aviv', value: 11, color: '#c6e3a7', ind_list: 'Financial' },
-  { name: 'UT Austin', value: 4, color: '#c6e3a7', ind_list: 'Financial' }
-];
-
-const YJ1data7 = [
-  { name: 'Stanford', value: 29, color: '#5487b1', ind_list: 'Healthcare' },
-  { name: 'Harvard', value: 35, color: '#63a1af', ind_list: 'Healthcare' },
-  { name: 'MIT', value: 21, color: '#7ab8aa', ind_list: 'Healthcare' },
-  { name: 'UPENN', value: 22, color: '#93caa8', ind_list: 'Healthcare' },
-  { name: 'UC Berkeley', value: 5, color: '#add7a8', ind_list: 'Healthcare' },
-  { name: 'Cornell', value: 6, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'CMU', value: 3, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'Columbia', value: 11, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'UMich', value: 4, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'Oxford', value: 3, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'UW', value: 3, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'UCLA', value: 2, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'NU', value: 4, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'Cambridge', value: 1, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'NYU', value: 2, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'USC', value: 4, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'UIUC', value: 9, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'Tel Aviv', value: 0, color: '#c6e3a7', ind_list: 'Healthcare' },
-  { name: 'UT Austin', value: 0, color: '#c6e3a7', ind_list: 'Healthcare' }
-];
-
-const YJ1data8 = [
-  { name: 'Stanford', value: 100, color: '#5487b1', ind_list: 'Manufacturing' },
-  { name: 'Harvard', value: 63, color: '#63a1af', ind_list: 'Manufacturing' },
-  { name: 'MIT', value: 62, color: '#7ab8aa', ind_list: 'Manufacturing' },
-  { name: 'UPENN', value: 35, color: '#93caa8', ind_list: 'Manufacturing' },
-  { name: 'UC Berkeley', value: 44, color: '#add7a8', ind_list: 'Manufacturing' },
-  { name: 'Cornell', value: 29, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'CMU', value: 33, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'Columbia', value: 13, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'UMich', value: 16, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'Oxford', value: 7, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'UW', value: 30, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'UCLA', value: 16, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'NU', value: 19, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'Cambridge', value: 8, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'NYU', value: 14, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'USC', value: 10, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'UIUC', value: 14, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'Tel Aviv', value: 16, color: '#c6e3a7', ind_list: 'Manufacturing' },
-  { name: 'UT Austin', value: 18, color: '#c6e3a7', ind_list: 'Manufacturing' }
-];
-
-const YJ1data9 = [
-  { name: 'Stanford', value: 27, color: '#5487b1', ind_list: 'Security' },
-  { name: 'Harvard', value: 32, color: '#63a1af', ind_list: 'Security' },
-  { name: 'MIT', value: 11, color: '#7ab8aa', ind_list: 'Security' },
-  { name: 'UPENN', value: 19, color: '#93caa8', ind_list: 'Security' },
-  { name: 'UC Berkeley', value: 7, color: '#add7a8', ind_list: 'Security' },
-  { name: 'Cornell', value: 6, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'CMU', value: 6, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'Columbia', value: 6, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'UMich', value: 7, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'Oxford', value: 3, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'UW', value: 5, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'UCLA', value: 6, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'NU', value: 3, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'Cambridge', value: 3, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'NYU', value: 3, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'USC', value: 2, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'UIUC', value: 5, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'Tel Aviv', value: 2, color: '#c6e3a7', ind_list: 'Security' },
-  { name: 'UT Austin', value: 7, color: '#c6e3a7', ind_list: 'Security' }
-];
-
-const YJ1data10 = [
-  { name: 'Stanford', value: 187, color: '#5487b1', ind_list: 'Software' },
-  { name: 'Harvard', value: 149, color: '#63a1af', ind_list: 'Software' },
-  { name: 'MIT', value: 77, color: '#7ab8aa', ind_list: 'Software' },
-  { name: 'UPENN', value: 93, color: '#93caa8', ind_list: 'Software' },
-  { name: 'UC Berkeley', value: 110, color: '#add7a8', ind_list: 'Software' },
-  { name: 'Cornell', value: 48, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'CMU', value: 47, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'Columbia', value: 30, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'UMich', value: 38, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'Oxford', value: 33, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'UW', value: 35, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'UCLA', value: 40, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'NU', value: 36, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'Cambridge', value: 24, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'NYU', value: 24, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'USC', value: 27, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'UIUC', value: 25, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'Tel Aviv', value: 12, color: '#c6e3a7', ind_list: 'Software' },
-  { name: 'UT Austin', value: 27, color: '#c6e3a7', ind_list: 'Software' }
-];
-
-const YJ1data11 = [
-  { name: 'Stanford', value: 48, color: '#5487b1', ind_list: 'Transportation' },
-  { name: 'Harvard', value: 19, color: '#63a1af', ind_list: 'Transportation' },
-  { name: 'MIT', value: 12, color: '#7ab8aa', ind_list: 'Transportation' },
-  { name: 'UPENN', value: 8, color: '#93caa8', ind_list: 'Transportation' },
-  { name: 'UC Berkeley', value: 11, color: '#add7a8', ind_list: 'Transportation' },
-  { name: 'Cornell', value: 5, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'CMU', value: 10, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'Columbia', value: 2, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'UMich', value: 7, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'Oxford', value: 2, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'UW', value: 10, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'UCLA', value: 7, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'NU', value: 3, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'Cambridge', value: 2, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'NYU', value: 4, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'USC', value: 5, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'UIUC', value: 6, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'Tel Aviv', value: 5, color: '#c6e3a7', ind_list: 'Transportation' },
-  { name: 'UT Austin', value: 6, color: '#c6e3a7', ind_list: 'Transportation' }
-];
 
 var width = 1200;
 var height = 520;
 var margin = { top: 0, left: 20, bottom: 40, right: 10 };
-
-
 
 /**
  * scrollVis - encapsulates
@@ -478,6 +61,7 @@ var scrollVis = function () {
       var WC2data = data.WC2data
       var YJPieData = data.YJPieData
       var USMapData = data.USMapData
+      var WC3data = data.WC3data
 
       // create svg and give it a width and height
       //svg = d3.select(this).selectAll('svg')//.data([YB_data]);
@@ -498,7 +82,7 @@ var scrollVis = function () {
 
       rbc_data = rbcModify(raw_rbc_data)
 
-      setupVis(YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata);
+      setupVis(YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data);
 
       setupSections(rbc_data);
     });
@@ -514,7 +98,7 @@ var scrollVis = function () {
    *  element for each filler word type.
    * @param histData - binned histogram data
    */
-  var setupVis = function (YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata) {
+  var setupVis = function (YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data) {
 
     //---------------------------------------------------------------------
     // Yoobin's bar chart start
@@ -595,7 +179,7 @@ var scrollVis = function () {
         .style('stroke-width', strokeWidth)
         .style('stroke-linejoin', 'round')
         .style('opacity', 0)
-        .attr('class', 'rbc');
+        
 
     }
 
@@ -630,7 +214,7 @@ var scrollVis = function () {
       .html('Source: CrunchBase, yChart')
       .attr('opacity', 0);
 
-    let yearSlice = rbc_data.filter(d => d.year == year && !isNaN(d.value))
+    let yearSlice = rbc_data.filter(d => Number(d.year) == Number(year) && !isNaN(d.value))
       .sort((a, b) => b.value - a.value)
       .slice(0, top_n);
 
@@ -650,7 +234,11 @@ var scrollVis = function () {
       .tickSize(-(height - margin.top - margin.bottom))
       .tickFormat(d => d3.format(',')(d))
 
-    g.append('g')
+
+    gRbc = g.append('g')
+      .attr('class','gRbc')
+    
+    gRbc.append('g')
       .attr('class', 'rbc xAxisRbc')
       //.attr('transform', `translate(0, ${margin.top})`)
       .attr('transform', `translate(0, 30)`)
@@ -659,7 +247,7 @@ var scrollVis = function () {
       .classed('origin', d => d == 0)
       ;
 
-    g.selectAll('rect.bar')
+    gRbc.selectAll('rect.bar')
       .data(yearSlice, d => d.name)
       .enter()
       .append('rect')
@@ -672,7 +260,7 @@ var scrollVis = function () {
       .attr('opacity', 0)
       ;
 
-    g.selectAll('text.label')
+    gRbc.selectAll('text.label')
       .data(yearSlice, d => d.name)
       .enter()
       .append('text')
@@ -683,7 +271,7 @@ var scrollVis = function () {
       .html(d => d.name)
       ;
 
-    g.selectAll('.valueLabel')
+    gRbc.selectAll('.valueLabel')
       .data(yearSlice, d => d.name)
       .enter()
       .append('text')
@@ -693,16 +281,15 @@ var scrollVis = function () {
       .text(d => d3.format(',.0f')(d.lastValue))
       ;
 
-    let yearTextRbc = g.append('text')
+    let yearTextRbc = gRbc.append('text')
       .attr('class', 'yearText rbc')
       .attr('x', width - margin.right)
       .attr('y', height - 25)
       .style('text-anchor', 'end')
-      .attr('opacity', 0)
+      .attr('opacity', 0)            
       .html(~~year)
-      .call(halo, 10)
+      .call(halo, 10) 
 
-    
 
     //---------------------------------------------------------------------
     // Woochul's racing bar chart end
@@ -712,17 +299,17 @@ var scrollVis = function () {
     // Woochul's map 1 start
     //---------------------------------------------------------------------
 
-    var map = g.append('g').attr("id", "map_WC1").attr("class", "WC1").attr("opacity", 0),
-      placesWC1 = g.append('g')
+    var map = g.append('g').attr("id", "map_WC1").attr("class", "WC1").attr("opacity", 0)
+    var placesWC1 = g.append('g')
                 .attr("id", "places_WC1")
                 .attr("class", "WC1")
                 .attr("opacity", 0);
 
-    var projection = d3.geoMercator()
+    var projectionWC1 = d3.geoMercator()
       .translate([width / 2.2, height / 1.5]);
 
     var path = d3.geoPath()
-      .projection(projection);
+      .projection(projectionWC1);
 
     var features = topojson.feature(worldMapData, worldMapData.objects.countries).features;
 
@@ -748,8 +335,8 @@ var scrollVis = function () {
       .data(WC1data)
       .enter()
       .append("circle")
-      .attr("cx", function (d) { return projection([d.long, d.lat])[0]; })
-      .attr("cy", function (d) { return projection([d.long, d.lat])[1]; })
+      .attr("cx", function (d) { return projectionWC1([d.long, d.lat])[0]; })
+      .attr("cy", function (d) { return projectionWC1([d.long, d.lat])[1]; })
       .attr("r", function (d) { return d.city_count > 10? (d.city_count) ** 0.8: d.city_count })
       .attr("class", "WC1")
       .attr("opacity", 0)            
@@ -889,6 +476,73 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
     // Woochul's map 3 start
     //---------------------------------------------------------------------
+
+    var placesWC3 = g.append('g')
+                .attr("id", "places_WC3")
+                .attr("class", "WC3")
+                .attr("opacity", 0);
+
+    var projectionWC3 = d3.geoMercator()
+      .translate([width / 2.2, height / 1.5]);
+
+    var path = d3.geoPath()
+      .projection(projectionWC3);
+
+    var features = topojson.feature(worldMapData, worldMapData.objects.countries).features;
+
+    placesWC3//.append('g')
+      .selectAll("path")
+      .data(features)
+      .enter()
+      .append("path")
+      .attr("d", path)
+      .attr("fill", "#b8b8b8")
+      .attr("stroke-width", 1)
+      .attr("class", "WC3")
+      .attr('opacity', 0)
+      .lower();
+
+    //Define tooltip
+    var tooltip_wc3 = d3.select('body').append('div')
+      .attr('class', 'tooltip')
+      .attr('id', 'tooltipWC3')
+      .style('opacity', 0)
+
+    placesWC3.selectAll("circle")
+      .data(WC3data)
+      .enter()
+      .append("circle")
+      .attr("cx", function (d) { return projectionWC3([d.long, d.lat])[0]; })
+      .attr("cy", function (d) { return projectionWC3([d.long, d.lat])[1]; })
+      .attr("r", function (d) { return d.city_ind_count > 10? (d.city_ind_count) ** 0.8: d.city_ind_count })
+      .attr("class", "WC3")
+      .attr("opacity", 0)            
+    
+
+    placesWC3.selectAll("circle")
+      .on("mouseover", handleMouseOver)
+      .on("mouseout", handleMouseOut);
+
+    function handleMouseOver(d) {  // Add interactivity
+
+
+      if (inWC3) {
+        tooltip_wc3
+          .style('opacity', 0.9)
+          .attr('width', 200)
+          .attr('text-align', 'center')          
+        //Information to display on tooltip
+        tooltip_wc3.html(function () {
+          return d.city + d.city_ind_count
+        })
+          .style('left', d3.event.pageX + 100 + 'px')
+          .style('top', d3.event.pageY - 28 + 'px')
+      }
+    }
+
+    function handleMouseOut(d, i) {
+      tooltip_wc3.style('opacity', 0)
+    }
 
 
     //---------------------------------------------------------------------
@@ -1092,7 +746,7 @@ var scrollVis = function () {
    * the section's index.
    *
    */
-  var setupSections = function (rbc_data) {
+  var setupSections = function () {
     // activateFunctions are called each
     // time the active section changes
     activateFunctions[0] = showTitle;
@@ -1117,7 +771,7 @@ var scrollVis = function () {
       updateFunctions[i] = function () { };
     }    
 
-    updateFunctions[2] = updateRBC(rbc_data)
+    //updateFunctions[2] = updateRBC
   };
 
   /**
@@ -1240,6 +894,7 @@ var scrollVis = function () {
       .transition()
       .duration(600)
       .attr('opacity', 1);
+    updateRBC();
   }
 
 
@@ -1247,6 +902,14 @@ var scrollVis = function () {
     inRBC = 0
     inWC1 = 1
     inWC2 = 0
+
+
+    /*
+    g.selectAll('.rbc')
+      .select('text')
+      //.transition()
+      //.duration(0)
+      .text('')*/
 
     g.selectAll('.rbc')
       .transition()
@@ -1285,6 +948,8 @@ var scrollVis = function () {
       .transition()
       .duration(0)
       .attr('opacity', 0);
+    $('.WC3')
+      .css('opacity',0)
   }
 
   function showWooChul3() {
@@ -1296,6 +961,9 @@ var scrollVis = function () {
       .transition()
       .duration(0)
       .attr('opacity', 0);
+
+    $('.WC3')
+      .css('opacity',1)
 
     g.selectAll('.WC3')
       .transition()
@@ -1321,6 +989,10 @@ var scrollVis = function () {
       .transition()
       .duration(0)
       .attr('opacity', 0);
+    
+    $('.WC3')
+      .css('opacity',0)
+
     $('.YJ1')
       .css('opacity',1)
 
@@ -1469,148 +1141,7 @@ var scrollVis = function () {
       .style('fill', function (d) {
         return (d.x0 >= 14) ? coughColorScale(progress) : '#008080';
       });
-  }
-
-  function updateRBC(rbc_data) {
-    var tickDuration = 500; 
-    let year = 2008;
-    let top_n = 4;
-    let ticker = d3.interval(e => {
-
-      if (inRBC == 0) {
-        ticker.stop();
-      } else {
-        year = d3.format('.1f')((+year) + 0.1);             
-      }
-
-      //var rbc_data = data.raw_rbc_data
-      console.log(rbc_data)
-      
-      gRbc = d3.selectAll('svg').select('g').append('g')
-    
-      yearSlice = rbc_data.filter(d => d.year == year && !isNaN(d.value))
-        .sort((a, b) => b.value - a.value)
-        .slice(0, top_n);
-    
-      yearSlice.forEach((d, i) => d.rank = i);
-    
-      xRbc.domain([0, d3.max(yearSlice, d => d.value)]);
-    
-      gRbc.select('.xAxisRbc')
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .call(xAxisRbc);
-    
-      let bars = gRbc.selectAll('.barRbc').data(yearSlice, d => d.name);
-    
-      bars.enter()
-        .append('rect')
-        .attr('class', d => `barRbc ${d.name.replace(/\s/g, '_')}`)
-        .classed('rbc', true)
-        .attr('x', xRbc(0) + 1)
-        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-        .attr('y', d => yRbc(top_n + 1) + 5)
-        .attr('height', yRbc(1) - yRbc(0) - barPadding)
-        .style('fill', d => d.colour)
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('y', d => yRbc(d.rank) + 5);
-    
-      bars.transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-        .attr('y', d => yRbc(d.rank) + 5);
-    
-      bars.exit()
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-        .attr('y', d => yRbc(top_n + 1) + 5)
-        .remove();
-    
-      let labels = gRbc.selectAll('.labelRbc')
-        .data(yearSlice, d => d.name);
-    
-      labels.enter()
-        .append('text')
-        .attr('class', 'labelRbc rbc')
-        .attr('x', d => xRbc(d.value) - 8)
-        .attr('y', d => yRbc(top_n + 1) + 5 + ((yRbc(1) - yRbc(0)) / 2))
-        .style('text-anchor', 'end')
-        .attr('fill', '#000000')
-        .style("font-size", "24px")
-        .html(d => d.name)
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
-    
-      labels.transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('fill', '#000000')
-        .style("font-size", "24px")
-        .attr('x', d => xRbc(d.value) - 8)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
-    
-      labels.exit()
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('x', d => xRbc(d.value) - 8)
-        .attr('y', d => yRbc(top_n + 1) + 5)
-        .remove();
-    
-      let valueLabels = gRbc.selectAll('.valueLabel').data(yearSlice, d => d.name);
-    
-      valueLabels.enter()
-        .append('text')
-        .attr('class', 'valueLabel rbc')
-        .attr('x', d => xRbc(d.value) + 5)
-        .attr('y', d => yRbc(top_n + 1) + 5)
-        .text(function (d) { return d3.format(',.0f')(d.lastValue) })
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
-        .attr('fill', '#000000')
-        .style('text-anchor', 'start')
-        .style("font-size", "24px");
-    
-      valueLabels.transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('x', d => xRbc(d.value) + 5)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
-        .tween("text", function (d) {
-          let i = d3.interpolateRound(d.lastValue, d.value);
-          return function (t) {
-            this.textContent = d3.format(',')(i(t));
-          };
-        })
-        .attr('fill', '#000000')
-        .style("font-size", "24px")
-        .style('text-anchor', 'start');
-    
-      valueLabels.exit()
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('x', d => xRbc(d.value) + 5)
-        .attr('y', d => yRbc(top_n + 1) + 5)
-        .remove();
-    
-    
-      yearTextRbc.html(~~year);
-    
-      if (year >= 2020) ticker.stop();
-      year = d3.format('.1f')((+year) + 0.1);
-    }, tickDuration);
-  }
+  }  
 
   /**
    * DATA FUNCTIONS
@@ -1674,7 +1205,7 @@ var scrollVis = function () {
  *
  * @param data - loaded tsv data
  */
-function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata) {
+function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data) {
 
   // create a new plot and
   // display it
@@ -1689,7 +1220,8 @@ function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData,
       "USMapData": USMapData,
       "WC2data": WC2data,
       "YJPieData": YJPieData,
-      "KDdata": KDdata
+      "KDdata": KDdata,
+      "WC3data": WC3data
     })
     .call(plot);
 
@@ -1715,18 +1247,7 @@ function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData,
   });
 }
 
-// load data and display
-//d3.tsv('data/words.tsv', display);
-d3.queue()
-  .defer(d3.csv, 'data/final.csv')
-  .defer(d3.csv, 'data/rbc_112006.csv')
-  .defer(d3.json, "https://unpkg.com/world-atlas@1/world/110m.json")
-  .defer(d3.csv, "data/map_1_nov27.csv")
-  .defer(d3.json, "https://unpkg.com/us-atlas@1/us/10m.json")
-  .defer(d3.csv, 'data/map2_nov30.csv')
-  .defer(d3.csv, "data/korea_major_rank.csv")
-  .defer(d3.tsv, 'data/crunch_data_grp_NoEmployees2.tsv')
-  .await(display)
+
 
 
 
@@ -2013,3 +1534,258 @@ function YJ1update(data) {
 
 
 
+
+
+
+function updateRBC() {       
+  
+  d3.queue()
+    .defer(d3.csv,'data/rbc_112006.csv')
+    .await(function(error, rbc_data){
+    let year = 2008;
+    let top_n = 4;
+    let tickDuration = 500;    
+    let barPadding = (height - (margin.bottom + margin.top)) / (top_n * 5);        
+
+    rbc_data.forEach(d => {
+        d.value = +d.value,
+        d.lastValue = +d.lastValue,
+        d.value = isNaN(d.value) ? 0 : d.value,
+        d.year = +d.year,
+        d.colour = d3.hsl(Math.random() * 360, 0.75, 0.75)
+    });
+
+    gRbc = d3.selectAll('svg')
+                .select('.gRbc')                 
+
+    let ticker = d3.interval(e => {
+
+      if (inRBC == 0) {
+        ticker.stop();
+      } else {
+        year = d3.format('.1f')((+year) + 0.1);             
+      }       
+    
+      yearSlice = rbc_data.filter(d => Number(d.year) == Number(year) && !isNaN(d.value))
+        .sort((a, b) => b.value - a.value)
+        .slice(0, top_n);
+    
+      yearSlice.forEach((d, i) => d.rank = i);         
+    
+      let xRbc = d3.scaleLinear()
+        .domain([0, d3.max(yearSlice, d => d.value)])
+        .range([margin.left, width - margin.right - 100]);
+        
+        
+      let xAxisRbc = d3.axisTop()
+      .scale(xRbc)
+      .ticks(width > 500 ? 5 : 2)
+      .tickSize(-(height - margin.top - margin.bottom))
+      .tickFormat(d => d3.format(',')(d))
+
+      let yRbc = d3.scaleLinear()
+      .domain([top_n, 0])
+      .range([height - margin.bottom, margin.top + 55]);      
+    
+      gRbc.select('.xAxisRbc')
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .call(xAxisRbc);
+    
+      let bars = gRbc.selectAll('.barRbc')
+                      .data(yearSlice, d => d.name);   
+
+      xRbc = d3.scaleLinear()
+        .domain([0, d3.max(yearSlice, d => d.value)])
+        .range([margin.left, width - margin.right - 100]);      
+                      
+      bars.enter()
+        .append('rect')
+        .attr('class', d => `barRbc ${d.name.replace(/\s/g, '_')}`)
+        .classed('rbc', true)
+        .attr('x', xRbc(0) + 1)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)        
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .attr('height', yRbc(1) - yRbc(0) - barPadding)
+        .style('fill', d => d.colour)
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5);
+    
+      bars.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 10)
+        .attr('y', d => yRbc(d.rank) + 5)        
+    
+      bars.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 10)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+    
+      let labels = gRbc.selectAll('.labelRbc')
+        .data(yearSlice, d => d.name);
+    
+      labels.enter()
+        .append('text')
+        .attr('class', 'labelRbc rbc')
+        .attr('x', d => xRbc(d.value) - 20)
+        .attr('y', d => yRbc(top_n + 1) + 5 + ((yRbc(1) - yRbc(0)) / 2))
+        .style('text-anchor', 'end')
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .html(d => d.name)
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
+    
+      labels.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .attr('x', d => xRbc(d.value) - 20)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
+    
+      labels.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) - 100)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+    
+      let valueLabels = gRbc.selectAll('.valueLabel').data(yearSlice, d => d.name);
+    
+      valueLabels.enter()
+        .append('text')
+        .attr('class', 'valueLabel rbc')
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .text(function (d) { return d3.format(',.0f')(d.lastValue) })
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
+        .attr('fill', '#000000')
+        .style('text-anchor', 'start')
+        .style("font-size", "24px");
+    
+      valueLabels.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)        
+        .tween("text", function (d) {
+          let i = d3.interpolateRound(d.lastValue, d.value);
+          textThis = this;
+          return function (t) {
+            textThis.textContent = d3.format(',')(i(t));
+          };
+        })
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .style('text-anchor', 'start');
+    
+      valueLabels.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+    
+    
+      d3.selectAll('svg')
+        .select('g')
+        .select('.yearText')          
+        .html(~~year);
+    
+      if (year >= 2020) ticker.stop();      
+    }, tickDuration);
+  })
+}
+
+
+function updateWC3(WC3data){
+  if (!inWC3) return;
+
+  // function add
+  function handleMouseOver(d) {  // Add interactivity
+
+    WC3tooltip = d3.select('body').select('#tooltipWC3')
+      .attr('class', 'tooltip')
+      .attr('id', 'tooltipWC3')
+
+    WC3tooltip.style('opacity',0.9)
+    
+    //Information to display on tooltip
+    WC3tooltip.html(function(){
+      return d.city + "," + d.city_ind_count
+    })
+    .style('left', d3.event.pageX + 10 + 'px')
+    .style('top', d3.event.pageY - 28 + 'px')
+  }
+
+  function handleMouseOut(d, i) {
+    WC3tooltip = d3.select('body').select('#tooltipWC3')
+      .attr('class', 'tooltip')
+      .attr('id', 'tooltipWC3')
+    WC3tooltip.style('opacity',0)     
+  }
+
+  d3.csv(WC3data, function(error, data) {
+    if (error) throw error;        
+   
+    var projectionWC3 = d3.geoMercator()
+      .translate([width / 2.2, height / 1.5]);
+
+    var WC3u = d3.select('svg')
+              .select('g')
+              .select('#places_WC3')              
+              .selectAll("circle")
+              .data(data)
+
+                  
+
+    maxCount = d3.max(data, d => Number(d.city_ind_count))    
+
+    WC3u
+      .enter()
+      .append("circle")
+      .merge(WC3u)
+      .attr("cx", function(d) { return projectionWC3([d.long, d.lat])[0]; })
+      .attr("cy", function(d) { return projectionWC3([d.long, d.lat])[1]; })
+      .attr("r", function(d) { return Math.sqrt(d.city_ind_count/maxCount) * 30 })
+      .attr('class','WC3')
+
+    WC3u
+      .on("mouseover", handleMouseOver)
+      .on("mouseout", handleMouseOut);
+
+    WC3u
+      .exit()
+      .remove();
+  })
+};
+
+
+// load data and display
+//d3.tsv('data/words.tsv', display);
+d3.queue()
+  .defer(d3.csv, 'data/final.csv')
+  .defer(d3.csv, 'data/rbc_112006.csv')
+  .defer(d3.json, "https://unpkg.com/world-atlas@1/world/110m.json")
+  .defer(d3.csv, "data/map_1_nov27.csv")
+  .defer(d3.json, "https://unpkg.com/us-atlas@1/us/10m.json")
+  .defer(d3.csv, 'data/map2_nov30.csv')
+  .defer(d3.csv, "data/korea_major_rank.csv")
+  .defer(d3.tsv, 'data/crunch_data_grp_NoEmployees2.tsv')
+  .defer(d3.csv, "wc_map/map3_data/map3_dec4_0.csv")
+  .await(display)
