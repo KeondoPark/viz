@@ -204,7 +204,7 @@ path.domain {
 }
 
 
-
+/*Woochul Map*/
 svg circle {
   fill: black;
   opacity: .8;
@@ -240,17 +240,30 @@ svg circle {
   text-anchor: start;
   }
 
-  #tooltipWC1 {	
-    position: absolute;			
-    text-align: center;			
-    width: 80px;					
-    height: 30px;					
-    padding: 2px;				
-    font: 12px sans-serif;		
-    background: lightsteelblue;	
-    border: 0px;		
-    border-radius: 8px;			
-    pointer-events: none;			
+#tooltipWC1 {	
+  position: absolute;			
+  text-align: center;			
+  width: 150px;					
+  height: 50px;					
+  padding: 2px;				
+  font: 12px sans-serif;		
+  background: lightsteelblue;	
+  border: 0px;		
+  border-radius: 8px;			
+  pointer-events: none;			
+}
+
+#tooltipWC2 {	
+  position: absolute;			
+  text-align: center;			
+  width: 150px;					
+  height: 30px;					
+  padding: 2px;				
+  font: 12px sans-serif;		
+  background: lightsteelblue;	
+  border: 0px;		
+  border-radius: 8px;			
+  pointer-events: none;			
 }
 
 #tooltipYJ1 {
@@ -267,7 +280,9 @@ svg circle {
   font-weight: bold;
 }
 
-
+.YJ2 path{
+  opacity: 0;
+}
 
 /*Keondo's multi linechart visual*/
 body {
@@ -333,10 +348,6 @@ body {
 .annotation-line line {
   display: none;
 }
-
-
-
-
 
 /* Youngjun Bar Chart */
 .YJ1toolTip {

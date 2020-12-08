@@ -500,7 +500,7 @@ var scrollVis = function () {
 
       setupVis(YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata);
 
-      setupSections();
+      setupSections(rbc_data);
     });
   };
 
@@ -702,144 +702,7 @@ var scrollVis = function () {
       .html(~~year)
       .call(halo, 10)
 
-    let ticker = d3.interval(e => {
-
-      if (inRBC == 0) {
-        ticker.stop();
-      } else {
-        year = d3.format('.1f')((+year) + 0.1);
-        /*
-        g.selectAll('.rbc')
-        .transition()
-        .duration(600)
-        .attr('opacity', 0);
-        */
-        //ticker.start();            
-      }
-      yearSlice = rbc_data.filter(d => d.year == year && !isNaN(d.value))
-        .sort((a, b) => b.value - a.value)
-        .slice(0, top_n);
-
-      yearSlice.forEach((d, i) => d.rank = i);
-
-      xRbc.domain([0, d3.max(yearSlice, d => d.value)]);
-
-      g.select('.xAxisRbc')
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .call(xAxisRbc);
-
-      let bars = g.selectAll('.barRbc').data(yearSlice, d => d.name);
-
-      bars.enter()
-        .append('rect')
-        .attr('class', d => `barRbc ${d.name.replace(/\s/g, '_')}`)
-        .classed('rbc', true)
-        .attr('x', xRbc(0) + 1)
-        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-        .attr('y', d => yRbc(top_n + 1) + 5)
-        .attr('height', yRbc(1) - yRbc(0) - barPadding)
-        .style('fill', d => d.colour)
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('y', d => yRbc(d.rank) + 5);
-
-      bars.transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-        .attr('y', d => yRbc(d.rank) + 5);
-
-      bars.exit()
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-        .attr('y', d => yRbc(top_n + 1) + 5)
-        .remove();
-
-      let labels = g.selectAll('.labelRbc')
-        .data(yearSlice, d => d.name);
-
-      labels.enter()
-        .append('text')
-        .attr('class', 'labelRbc rbc')
-        .attr('x', d => xRbc(d.value) - 8)
-        .attr('y', d => yRbc(top_n + 1) + 5 + ((yRbc(1) - yRbc(0)) / 2))
-        .style('text-anchor', 'end')
-        .attr('fill', '#000000')
-        .style("font-size", "24px")
-        .html(d => d.name)
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
-
-      labels.transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('fill', '#000000')
-        .style("font-size", "24px")
-        .attr('x', d => xRbc(d.value) - 8)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
-
-      labels.exit()
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('x', d => xRbc(d.value) - 8)
-        .attr('y', d => yRbc(top_n + 1) + 5)
-        .remove();
-
-
-
-      let valueLabels = g.selectAll('.valueLabel').data(yearSlice, d => d.name);
-
-      valueLabels.enter()
-        .append('text')
-        .attr('class', 'valueLabel rbc')
-        .attr('x', d => xRbc(d.value) + 5)
-        .attr('y', d => yRbc(top_n + 1) + 5)
-        .text(function (d) { return d3.format(',.0f')(d.lastValue) })
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
-        .attr('fill', '#000000')
-        .style('text-anchor', 'start')
-        .style("font-size", "24px");
-
-      valueLabels.transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('x', d => xRbc(d.value) + 5)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
-        .tween("text", function (d) {
-          let i = d3.interpolateRound(d.lastValue, d.value);
-          return function (t) {
-            this.textContent = d3.format(',')(i(t));
-          };
-        })
-        .attr('fill', '#000000')
-        .style("font-size", "24px")
-        .style('text-anchor', 'start');
-
-      valueLabels.exit()
-        .transition()
-        .duration(tickDuration)
-        .ease(d3.easeLinear)
-        .attr('x', d => xRbc(d.value) + 5)
-        .attr('y', d => yRbc(top_n + 1) + 5)
-        .remove();
-
-
-      yearTextRbc.html(~~year);
-
-      if (year >= 2020) ticker.stop();
-      year = d3.format('.1f')((+year) + 0.1);
-    }, tickDuration);
+    
 
     //---------------------------------------------------------------------
     // Woochul's racing bar chart end
@@ -850,7 +713,10 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
 
     var map = g.append('g').attr("id", "map_WC1").attr("class", "WC1").attr("opacity", 0),
-      places = g.append('g').attr("id", "places_WC1").attr("class", "WC1").attr("opacity", 0);
+      placesWC1 = g.append('g')
+                .attr("id", "places_WC1")
+                .attr("class", "WC1")
+                .attr("opacity", 0);
 
     var projection = d3.geoMercator()
       .translate([width / 2.2, height / 1.5]);
@@ -860,48 +726,48 @@ var scrollVis = function () {
 
     var features = topojson.feature(worldMapData, worldMapData.objects.countries).features;
 
-    g.append('g').selectAll("path")
+    placesWC1//.append('g')
+      .selectAll("path")
       .data(features)
       .enter()
       .append("path")
       .attr("d", path)
       .attr("fill", "#b8b8b8")
+      .attr("stroke-width", 1)
       .attr("class", "WC1")
       .attr('opacity', 0)
       .lower();
 
     //Define tooltip
     var tooltip_wc1 = d3.select('body').append('div')
-      .attr('class', 'tooltip WC1')
+      .attr('class', 'tooltip')
       .attr('id', 'tooltipWC1')
       .style('opacity', 0)
 
-    places.selectAll("circle")
+    placesWC1.selectAll("circle")
       .data(WC1data)
-      .enter().append("circle")
+      .enter()
+      .append("circle")
       .attr("cx", function (d) { return projection([d.long, d.lat])[0]; })
       .attr("cy", function (d) { return projection([d.long, d.lat])[1]; })
-      .attr("r", function (d) { return d.city_count })
+      .attr("r", function (d) { return d.city_count > 10? (d.city_count) ** 0.8: d.city_count })
       .attr("class", "WC1")
-      .attr("opacity", 0)
+      .attr("opacity", 0)            
+    
+
+    placesWC1.selectAll("circle")
       .on("mouseover", handleMouseOver)
       .on("mouseout", handleMouseOut);
 
-    places.selectAll("text")
-      .data(WC1data)
-      .enter().append("text")
-      .attr("x", function (d) { return projection([d.long, d.lat])[0]; })
-      .attr("y", function (d) { return projection([d.long, d.lat])[1] + 8; })
-      .attr("class", "WC1")
-      .attr("opacity", 0)
-
     function handleMouseOver(d) {  // Add interactivity
+
+      console.log('MOUSE OVer')
 
       if (inWC1) {
         tooltip_wc1
           .style('opacity', 0.9)
           .attr('width', 200)
-          .attr('text-align', 'center')
+          .attr('text-align', 'center')          
         //Information to display on tooltip
         tooltip_wc1.html(function () {
           return d.city + d.city_count
@@ -923,12 +789,12 @@ var scrollVis = function () {
     // Woochul's map 2 start
     //---------------------------------------------------------------------
 
-
     var wc2_width = 960,
       wc2_height = 600,
       centered,
       clicked_point;
 
+      /*
     var wc_svg = d3.select("body").append("svg")
       .attr("width", wc2_width)
       .attr("height", wc2_height)
@@ -937,49 +803,52 @@ var scrollVis = function () {
       .attr("stroke", "#000")
       .attr("stroke-linejoin", "round")
       .attr("stroke-linecap", "round");
+      */
+    
+    var placesWC2 = g.append("g")
+        .attr("id", "places_WC2")
+        .attr("class", "WC2")
+        .attr("opacity", 0);
 
-    var map = g.append("g").attr("id", "map_WC2").attr("class", "WC2").attr("opacity", 0),
-      places = g.append("g").attr("id", "places_WC2").attr("class", "WC2").attr("opacity", 0);
-
-    var projection = d3.geoAlbersUsa()
+    var projectionWC2 = d3.geoAlbersUsa()
       .translate([wc2_width / 2, wc2_height / 2])
       .scale([1200]);
 
     var path = d3.geoPath();
-
-    g.append("path")
-      .attr("stroke", "#aaa")
-      .attr("stroke-width", 0.5)
-      .attr("d", path(topojson.mesh(USMapData, USMapData.objects.counties, function (a, b) { return a !== b && (a.id / 1000 | 0) === (b.id / 1000 | 0); })))
+      
+    
+    placesWC2
+      .append("path")      
+      .attr("d", path(topojson.feature(USMapData, USMapData.objects.nation)))      
+      .attr("stroke-width", 1)      
+      .attr("stroke", "#000000")
+      .attr('fill','#b8b8b8')      
+      .attr('class', 'WC2')
+      .attr('opacity', 0);
+      
+    
+     placesWC2                  
+      .append('path')       
+      .attr("d", path(topojson.mesh(USMapData, USMapData.objects.states, function (a, b) { return a !== b; })))            
+      .attr("stroke-width", 0.5)      
+      .attr("stroke", "#000000")
+      .attr("fill", "#b8b8b8")
       .attr('class', 'WC2')
       .attr('opacity', 0);
 
-    g.append("path")
-      .attr("stroke-width", 0.1)
-      .attr("d", path(topojson.mesh(USMapData, USMapData.objects.states, function (a, b) { return a !== b; })))
-      .attr('class', 'WC2')
-      .attr('opacity', 0);
-
-    g.append("path")
-      .attr("d", path(topojson.feature(USMapData, USMapData.objects.nation)))
-      .attr('class', 'WC2')
-      .attr('opacity', 0);
-
+      
 
     //Define tooltip
     var tooltip_wc2 = d3.select('body').append('div')
       .attr('class', 'tooltip')
-      .attr('id', 'tooltip')
+      .attr('id', 'tooltipWC2')
       .style('opacity', 0)
 
-    console.log(WC2data)
-
-
-    places.selectAll("circle")
+    placesWC2.selectAll("circle")
       .data(WC2data)
       .enter().append("circle")
-      .attr("cx", function (d) { return projection([d.long, d.lat])[0]; })
-      .attr("cy", function (d) { return projection([d.long, d.lat])[1]; })
+      .attr("cx", function (d) { return projectionWC2([d.long, d.lat])[0]; })
+      .attr("cy", function (d) { return projectionWC2([d.long, d.lat])[1]; })
       .attr("r", function (d) { return d.city_count })
       .on("mouseover", handleMouseOver)
       .on("mouseout", handleMouseOut)
@@ -987,12 +856,14 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
 
-    places.selectAll("text")
+      /*
+    placesWC2.selectAll("text")
       .data(WC2data)
       .enter().append("text")
-      .attr("x", function (d) { return projection([d.long, d.lat])[0]; })
-      .attr("y", function (d) { return projection([d.long, d.lat])[1] + 8; })
+      .attr("x", function (d) { return projectionWC2([d.long, d.lat])[0]; })
+      .attr("y", function (d) { return projectionWC2([d.long, d.lat])[1] + 8; })
     //   .text(function(d) { return d.city});
+    */
 
     function handleMouseOver(d) {  // Add interactivity
       if (inWC2) {
@@ -1007,18 +878,8 @@ var scrollVis = function () {
     }
 
     function handleMouseOut(d, i) {
-      // Use D3 to select element, change color back to normal
-      d3.select(this).attr({
-        fill: "black",
-      });
-
-      // Select text by id and then remove
-      d3.select("#t" + d.x + "-" + d.y + "-" + i).remove();  // Remove text location
+      tooltip_wc2.style('opacity', 0)
     }
-
-
-
-
 
     //---------------------------------------------------------------------
     // Woochul's map 2 end
@@ -1197,8 +1058,7 @@ var scrollVis = function () {
       .append("path")
       .attr("fill", function(d){ return color(d.key) })
       .attr("stroke", "none")
-      .attr("d", function(d){        
-        console.log(d)
+      .attr("d", function(d){                
         return d3.area()
         .x(function(d) { return xKD(d.Last_Funding_Type) })
         .y0(yKD(0))
@@ -1232,7 +1092,7 @@ var scrollVis = function () {
    * the section's index.
    *
    */
-  var setupSections = function () {
+  var setupSections = function (rbc_data) {
     // activateFunctions are called each
     // time the active section changes
     activateFunctions[0] = showTitle;
@@ -1255,8 +1115,9 @@ var scrollVis = function () {
     // no-op functions.
     for (var i = 0; i < 9; i++) {
       updateFunctions[i] = function () { };
-    }
-    updateFunctions[7] = updateCough;
+    }    
+
+    updateFunctions[2] = updateRBC(rbc_data)
   };
 
   /**
@@ -1397,6 +1258,7 @@ var scrollVis = function () {
       .duration(600)
       .attr('opacity', 1);
 
+      
     g.selectAll('.WC2')
       .transition()
       .duration(0)
@@ -1413,6 +1275,7 @@ var scrollVis = function () {
       .duration(0)
       .attr('opacity', 0);
 
+      
     g.selectAll('.WC2')
       .transition()
       .duration(600)
@@ -1449,7 +1312,7 @@ var scrollVis = function () {
   }
 
   function showYoungJun1() {
-
+  
     inWC3 = 0
     inYJ1 = 1
     inYJ2 = 0
@@ -1461,15 +1324,9 @@ var scrollVis = function () {
     $('.YJ1')
       .css('opacity',1)
 
-
     YJ1update(YJ1data1)
     YJ1update(YJ1data1)
-    /*
-    g.selectAll('.YJ1')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1);
-      */
+    
 
     g.selectAll('.YJ2')
       .transition()
@@ -1478,7 +1335,7 @@ var scrollVis = function () {
     
     $('.YJ2')
       .css('opacity',0)
-      
+  
   }
 
 
@@ -1488,11 +1345,9 @@ var scrollVis = function () {
     inYJ1 = 0
     inYJ2 = 1
     inKD1 = 0
-
     
     updateYJ2(YJ2data1)
     updateYJ2(YJ2data1)   
-
 
     g.selectAll('.YJ1')
       .transition()
@@ -1503,13 +1358,8 @@ var scrollVis = function () {
       .css('opacity',0)
 
     $('.YJ2')
-      .css('opacity',1)
+      .css('opacity',1)   
 
-    /*
-      g.selectAll('.YJ2')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1);*/
 
     g.selectAll('.KD1')
       .transition()
@@ -1621,6 +1471,147 @@ var scrollVis = function () {
       });
   }
 
+  function updateRBC(rbc_data) {
+    var tickDuration = 500; 
+    let year = 2008;
+    let top_n = 4;
+    let ticker = d3.interval(e => {
+
+      if (inRBC == 0) {
+        ticker.stop();
+      } else {
+        year = d3.format('.1f')((+year) + 0.1);             
+      }
+
+      //var rbc_data = data.raw_rbc_data
+      console.log(rbc_data)
+      
+      gRbc = d3.selectAll('svg').select('g').append('g')
+    
+      yearSlice = rbc_data.filter(d => d.year == year && !isNaN(d.value))
+        .sort((a, b) => b.value - a.value)
+        .slice(0, top_n);
+    
+      yearSlice.forEach((d, i) => d.rank = i);
+    
+      xRbc.domain([0, d3.max(yearSlice, d => d.value)]);
+    
+      gRbc.select('.xAxisRbc')
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .call(xAxisRbc);
+    
+      let bars = gRbc.selectAll('.barRbc').data(yearSlice, d => d.name);
+    
+      bars.enter()
+        .append('rect')
+        .attr('class', d => `barRbc ${d.name.replace(/\s/g, '_')}`)
+        .classed('rbc', true)
+        .attr('x', xRbc(0) + 1)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .attr('height', yRbc(1) - yRbc(0) - barPadding)
+        .style('fill', d => d.colour)
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5);
+    
+      bars.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
+        .attr('y', d => yRbc(d.rank) + 5);
+    
+      bars.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+    
+      let labels = gRbc.selectAll('.labelRbc')
+        .data(yearSlice, d => d.name);
+    
+      labels.enter()
+        .append('text')
+        .attr('class', 'labelRbc rbc')
+        .attr('x', d => xRbc(d.value) - 8)
+        .attr('y', d => yRbc(top_n + 1) + 5 + ((yRbc(1) - yRbc(0)) / 2))
+        .style('text-anchor', 'end')
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .html(d => d.name)
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
+    
+      labels.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .attr('x', d => xRbc(d.value) - 8)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
+    
+      labels.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) - 8)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+    
+      let valueLabels = gRbc.selectAll('.valueLabel').data(yearSlice, d => d.name);
+    
+      valueLabels.enter()
+        .append('text')
+        .attr('class', 'valueLabel rbc')
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .text(function (d) { return d3.format(',.0f')(d.lastValue) })
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
+        .attr('fill', '#000000')
+        .style('text-anchor', 'start')
+        .style("font-size", "24px");
+    
+      valueLabels.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
+        .tween("text", function (d) {
+          let i = d3.interpolateRound(d.lastValue, d.value);
+          return function (t) {
+            this.textContent = d3.format(',')(i(t));
+          };
+        })
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .style('text-anchor', 'start');
+    
+      valueLabels.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+    
+    
+      yearTextRbc.html(~~year);
+    
+      if (year >= 2020) ticker.stop();
+      year = d3.format('.1f')((+year) + 0.1);
+    }, tickDuration);
+  }
+
   /**
    * DATA FUNCTIONS
    *
@@ -1631,13 +1622,6 @@ var scrollVis = function () {
 
 
 
-  /**
-   * groupByWord - group words together
-   * using nest. Used to get counts for
-   * barcharts.
-   *
-   * @param words
-   */
   function rbcModify(raw_rbc_data) {
     rbc_data = raw_rbc_data.forEach(d => {
       d.value = +d.value,
@@ -1742,7 +1726,6 @@ d3.queue()
   .defer(d3.csv, 'data/map2_nov30.csv')
   .defer(d3.csv, "data/korea_major_rank.csv")
   .defer(d3.tsv, 'data/crunch_data_grp_NoEmployees2.tsv')
-
   .await(display)
 
 
@@ -1814,8 +1797,6 @@ function updateBarYB() {
 //---------------------------------------------------------------------  
 
 
-
-
 // A function that create / update the plot for a given variable:
 function updateYJ2(data) {
 
@@ -1830,14 +1811,6 @@ function updateYJ2(data) {
   var YJ2radius = 200
 
   // append the svg object to the div called 'my_dataviz'
-  /*
-  var YJ2svg = d3.select("#YJ2_dataviz")
-    .append("svg")
-    .attr("width", YJ2width)
-    .attr("height", YJ2height)
-    .append("g")
-    .attr("transform", "translate(" + YJ2width / 2 + "," + YJ2height / 2 + ")")
-*/
   svgYJ2 = d3.selectAll('svg')
   gYJ2 = svgYJ2.select('g').append('g').attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
   gYJ2.append("g")
@@ -1938,7 +1911,8 @@ function updateYJ2(data) {
   polyline.enter()
     .append("polyline")
     .attr('class', 'YJ2')
-    .attr('stroke','#000000');
+    .attr('stroke','#000000')
+    .attr('fill', '#ffffff');
 
   polyline.transition().duration(1000)
     .attrTween("points", function (d) {
@@ -1966,6 +1940,7 @@ function YJ1update(data) {
 
   if (!inYJ1) return;
 
+  
   YJ1svg = d3.selectAll('svg')
   YJ1g = YJ1svg.select('g').append('g')//.attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
 
@@ -2032,5 +2007,9 @@ function YJ1update(data) {
   // If less name in the new dataset, I delete the ones not in use anymore
   YJ1u
     .exit()
-    .remove();
+    .remove();    
 }
+
+
+
+
