@@ -269,6 +269,8 @@ var YJ1x = d3.scaleBand()
   .padding(0.2);
 var YJ1xAxis = YJ1svg.append("g")
   .attr("transform", "translate(0," + YJ1height + ")")
+  .attr("class", "YJ1Xaxis")
+  .style('font-size', 10)
 
 
 // Initialize the Y axis
@@ -300,7 +302,7 @@ function update(data) {
   var YJ1u = YJ1svg.selectAll("rect")
     .data(data)
 
-    YJ1u
+  YJ1u
     .enter()
     .append("rect") // Add a new rect for each new elements
     .merge(YJ1u) // get the already existing elements as well
@@ -313,7 +315,7 @@ function update(data) {
     .attr("rx", 10)
     .attr('fill', d => d.color);
 
-    YJ1u
+  YJ1u
     .on("mouseover", function () { YJ1tooltip.style("display", "block"); })
     .on("mouseout", function () { YJ1tooltip.style("display", "none"); })
     .on("mousemove", function (d) {
