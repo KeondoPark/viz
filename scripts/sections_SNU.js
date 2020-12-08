@@ -1563,11 +1563,6 @@ function YJ1update(data) {
 }
 
 
-
-
-
-
-
 function updateRBC() {       
   
   d3.queue()
