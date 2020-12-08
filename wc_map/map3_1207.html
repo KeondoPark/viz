@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="map3_ex.js"></script>
+    <script src="jquery.csv.js"></script> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Map3_wip</title>
+</head>
+
+
+<!-- Create an element where the map will take place -->
+<!-- <svg id="my_dataviz" width="440" height="300"></svg> -->
+
+
+<style>
+  svg circle {
+  fill: black;
+  opacity: .6;
+  /* stroke: white; */
+  }
+  svg circle:hover {
+  fill: green;
+  /* stroke: #333; */
+  }
+  
+  svg text {
+  pointer-events: none;
+  }
+
+  svg .municipality {
+  fill: #efefef;
+  stroke: #fff;
+  }
+  svg .municipality-label {
+  fill: #bbb;
+  font-size: 12px;
+  font-weight: 300;
+  text-anchor: middle;
+  }
+  svg #map text {
+  color: #333;
+  font-size: 10px;
+  text-anchor: middle;
+  }
+  svg places text {
+  color: #777;
+  font: 10px fantasy;
+  text-anchor: start;
+  }
+
+  div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 200px;					
+    height: 30px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+  </style>
+
+
+<body>
+
+  <div id="WC3_dataviz">
+
+  </div>
+
+  <form id="form" class="WC3_form btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="WC3 btn btn-outline-secondary active">
+      <input type="radio" name="industry_select" onchange="update(wc_data_1)" checked>All Industries<br>
+    </label>
+    <label class="WC3 btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(wc_data_2)">AI<br>
+    </label>
+    <label class="WC3 btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(wc_data_3)">Ecommerce<br>
+    </label>
+    <label class="WC3 btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(wc_data_4)">Education<br>
+    </label>
+    <label class="WC3 btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(wc_data_5)">F&B<br>
+    </label>
+    <label class="WC3 btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(wc_data_6)">Financial<br>
+    </label>
+    <label class="WC3 btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(wc_data_7)">Healthcare<br>
+    </label>
+    <label class="WC3 btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(wc_data_8)">Manufacturing<br>
+    </label>
+    <label class="WC3 btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(wc_data_9)">Security<br>
+    </label>
+    <label class="WC3 btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(wc_data_10)">Software<br>
+    </label>
+    <label class="WC3 btn btn-outline-secondary">
+      <input type="radio" name="industry_select" onchange="update(wc_data_11)">Transportation<br>
+    </label>
+  </form>
+
+</body>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="map3_ex_1207.js"></script>
+
+</body>
+</html>
