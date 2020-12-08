@@ -3,7 +3,6 @@ var inTitle = 0, inYB1 = 0, inRBC = 0, inWC1 = 0, inWC2 = 0, inWC3 = 0, inYJ1 = 
 var funding_order = { 'Seed': 1, "Series A": 2, 'Series B': 3, 'Series C': 4, 'Series D+': 5, 'M&A': 6, 'IPO': 7, 'Others': 8 }
 var funding_label = { 1: 'Seed', 2: "Series A", 3: 'Series B', 4: 'Series C', 5: 'Series D+', 6: 'M&A', 7: 'IPO', 8: 'Others' }
 
-
 var width = 1200;
 var height = 520;
 var margin = { top: 0, left: 20, bottom: 40, right: 10 };
@@ -339,8 +338,8 @@ var scrollVis = function () {
       .attr("cy", function (d) { return projectionWC1([d.long, d.lat])[1]; })
       .attr("r", function (d) { return d.city_count > 10? (d.city_count) ** 0.8: d.city_count })
       .attr("class", "WC1")
-      .attr("opacity", 0)            
-    
+      .attr("opacity", 0)
+
 
     placesWC1.selectAll("circle")
       .on("mouseover", handleMouseOver)
@@ -354,7 +353,7 @@ var scrollVis = function () {
         tooltip_wc1
           .style('opacity', 0.9)
           .attr('width', 200)
-          .attr('text-align', 'center')          
+          .attr('text-align', 'center')
         //Information to display on tooltip
         tooltip_wc1.html(function () {
           return d.city + d.city_count
@@ -381,49 +380,49 @@ var scrollVis = function () {
       centered,
       clicked_point;
 
-      /*
-    var wc_svg = d3.select("body").append("svg")
-      .attr("width", wc2_width)
-      .attr("height", wc2_height)
-      .attr("class", "map")
-      .attr("fill", "none")
-      .attr("stroke", "#000")
-      .attr("stroke-linejoin", "round")
-      .attr("stroke-linecap", "round");
-      */
-    
+    /*
+  var wc_svg = d3.select("body").append("svg")
+    .attr("width", wc2_width)
+    .attr("height", wc2_height)
+    .attr("class", "map")
+    .attr("fill", "none")
+    .attr("stroke", "#000")
+    .attr("stroke-linejoin", "round")
+    .attr("stroke-linecap", "round");
+    */
+
     var placesWC2 = g.append("g")
-        .attr("id", "places_WC2")
-        .attr("class", "WC2")
-        .attr("opacity", 0);
+      .attr("id", "places_WC2")
+      .attr("class", "WC2")
+      .attr("opacity", 0);
 
     var projectionWC2 = d3.geoAlbersUsa()
       .translate([wc2_width / 2, wc2_height / 2])
       .scale([1200]);
 
     var path = d3.geoPath();
-      
-    
+
+
     placesWC2
-      .append("path")      
-      .attr("d", path(topojson.feature(USMapData, USMapData.objects.nation)))      
-      .attr("stroke-width", 1)      
+      .append("path")
+      .attr("d", path(topojson.feature(USMapData, USMapData.objects.nation)))
+      .attr("stroke-width", 1)
       .attr("stroke", "#000000")
-      .attr('fill','#b8b8b8')      
+      .attr('fill', '#b8b8b8')
       .attr('class', 'WC2')
       .attr('opacity', 0);
-      
-    
-     placesWC2                  
-      .append('path')       
-      .attr("d", path(topojson.mesh(USMapData, USMapData.objects.states, function (a, b) { return a !== b; })))            
-      .attr("stroke-width", 0.5)      
+
+
+    placesWC2
+      .append('path')
+      .attr("d", path(topojson.mesh(USMapData, USMapData.objects.states, function (a, b) { return a !== b; })))
+      .attr("stroke-width", 0.5)
       .attr("stroke", "#000000")
       .attr("fill", "#b8b8b8")
       .attr('class', 'WC2')
       .attr('opacity', 0);
 
-      
+
 
     //Define tooltip
     var tooltip_wc2 = d3.select('body').append('div')
@@ -443,14 +442,14 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
 
-      /*
-    placesWC2.selectAll("text")
-      .data(WC2data)
-      .enter().append("text")
-      .attr("x", function (d) { return projectionWC2([d.long, d.lat])[0]; })
-      .attr("y", function (d) { return projectionWC2([d.long, d.lat])[1] + 8; })
-    //   .text(function(d) { return d.city});
-    */
+    /*
+  placesWC2.selectAll("text")
+    .data(WC2data)
+    .enter().append("text")
+    .attr("x", function (d) { return projectionWC2([d.long, d.lat])[0]; })
+    .attr("y", function (d) { return projectionWC2([d.long, d.lat])[1] + 8; })
+  //   .text(function(d) { return d.city});
+  */
 
     function handleMouseOver(d) {  // Add interactivity
       if (inWC2) {
@@ -549,88 +548,88 @@ var scrollVis = function () {
     // Woochul's map 3 end
     //---------------------------------------------------------------------
 
-    
+
     //---------------------------------------------------------------------
     // Keondo's area chart start
     //---------------------------------------------------------------------
-    
-    KDdata.forEach(function(d){
+
+    KDdata.forEach(function (d) {
       d.n = Number(d.Number_of_Employees_Avg)
       d.Last_Funding_Type = Number(funding_order[d.Last_Funding_Type])
     })
 
-    KDdata.sort(function(a,b){return d3.ascending(a.Last_Funding_Type,b.Last_Funding_Type)})
-    KDdata1 = KDdata.filter(function(d){return d.Industry == 'All Industry' || d.Industry == 'Security'})         
+    KDdata.sort(function (a, b) { return d3.ascending(a.Last_Funding_Type, b.Last_Funding_Type) })
+    KDdata1 = KDdata.filter(function (d) { return d.Industry == 'All Industry' || d.Industry == 'Security' })
 
     // group the data: I want to draw one line per group
     var sumstatKD1 = d3.nest() // nest function allows to group the calculation per level of a factor
-      .key(function(d) { return d.Industry;})
+      .key(function (d) { return d.Industry; })
       .entries(KDdata1);
 
-      console.log(sumstatKD1)
+    console.log(sumstatKD1)
 
     // What is the list of groups?
-    allKeys = sumstatKD1.map(function(d){return d.key})
+    allKeys = sumstatKD1.map(function (d) { return d.key })
 
     var container = g.append("g")
-                      .classed("container-group", true);
+      .classed("container-group", true);
     var chartgroup = container.append("g").classed("chart-group-KD1", true);
-    gKD1 = container.selectAll(".chart-group-KD1").append('g')    
+    gKD1 = container.selectAll(".chart-group-KD1").append('g')
       .data(sumstatKD1)
       .enter()
 
     // Add X axis --> it is a date format
-    var xKD1 = d3.scaleLinear()      
-      .domain([0,9])
-      .range([ 0, width]);           
-      
+    var xKD1 = d3.scaleLinear()
+      .domain([0, 9])
+      .range([0, width]);
+
     gKD1.append("g")
-      .attr("transform", function(d,i){return "translate(0," + height + ")"})
-      .attr("class","KD1")
+      .attr("transform", function (d, i) { return "translate(0," + height + ")" })
+      .attr("class", "KD1")
       .call(d3.axisBottom(xKD1)
-              .ticks(8)
-              .tickFormat(function (d) {
-                return funding_label[d];
-              }))      
+        .ticks(8)
+        .tickFormat(function (d) {
+          return funding_label[d];
+        }))
       .attr('opacity', 0);
 
     //Add Y axis
-    var yKD1 = d3.scaleLinear()      
-      .domain([0, d3.max(KDdata1, function(d) { return +d.n; })])
-      .range([ height, 0 ]);
-    
+    var yKD1 = d3.scaleLinear()
+      .domain([0, d3.max(KDdata1, function (d) { return +d.n; })])
+      .range([height, 0]);
+
     gKD1.append("g")
-      .attr("class","KD1")
-      .attr("transform", function(d,i){return "translate(" + (width/4)  * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
+      .attr("class", "KD1")
+      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
       .call(d3.axisLeft(yKD1).ticks(5))
       .attr('opacity', 0);
 
     // color palette
     var color = d3.scaleOrdinal()
       .domain(allKeys)
-      .range(['#5487b1','#5487b1','#63a1af','#63a1af','#7ab8aa','#93caa8','#add7a8','#c6e3a7','#c6e3a7','#E7846F','#E7846F'])
+      .range(['#5487b1', '#5487b1', '#63a1af', '#63a1af', '#7ab8aa', '#93caa8', '#add7a8', '#c6e3a7', '#c6e3a7', '#E7846F', '#E7846F'])
 
     // Draw the line
     gKD1//.selectAll("path")
       //.data(sumstat)
       .append('g')
       .append("path")
-      .attr("fill", function(d){ return color(d.key) })
+      .attr("fill", function (d) { return color(d.key) })
       .attr("stroke", "none")
-      .attr("d", function(d){                
+      .attr("d", function (d) {
         console.log(d)
         return d3.area()
-        .x(function(d) { return xKD1(d.Last_Funding_Type) })
-        .y0(yKD1(0))
-        .y1(function(d) { return yKD1(+d.n) })            
+          .x(function (d) { return xKD1(d.Last_Funding_Type) })
+          .y0(yKD1(0))
+          .y1(function (d) { return yKD1(+d.n) })
           (d.values)
       })
-      .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
-      .attr('class','KD1')
+      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
+      .attr('class', 'KD1')
       .attr('opacity', 0);
 
     // Add titles
-    
+
     gKD1.append('g')
       //.selectAll('text')
       //.data(KDdata)
@@ -639,10 +638,10 @@ var scrollVis = function () {
       .attr("text-anchor", "start")
       //.attr("y", 0)
       //.attr("x", 0)
-      .text(function(d){ return(d.key)})
-      .style("fill", function(d){ return color(d.key) })
-      .attr("transform", function(d,i){return "translate(" + ((width/4) * ((i-1) % 4) + 100) + "," + ((height/3) * (parseInt((i-1)/4)) + 20) + ")"})
-      .attr('class','KD1')
+      .text(function (d) { return (d.key) })
+      .style("fill", function (d) { return color(d.key) })
+      .attr("transform", function (d, i) { return "translate(" + ((width / 4) * ((i - 1) % 4) + 100) + "," + ((height / 3) * (parseInt((i - 1) / 4)) + 20) + ")" })
+      .attr('class', 'KD1')
       .attr('opacity', 0);
 
 
@@ -654,83 +653,83 @@ var scrollVis = function () {
     // Keondo's line multiarea chart start
     //---------------------------------------------------------------------
 
-    KDdata2 = KDdata.filter(function(d){return d.Industry != 'All Industry'})
+    KDdata2 = KDdata.filter(function (d) { return d.Industry != 'All Industry' })
     // group the data: I want to draw one line per group
     var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
-      .key(function(d) { return d.Industry;})
+      .key(function (d) { return d.Industry; })
       .entries(KDdata2);
 
     // What is the list of groups?
-    allKeys = sumstat.map(function(d){return d.key})
+    allKeys = sumstat.map(function (d) { return d.key })
 
     console.log(allKeys)
     console.log(sumstat)
 
     var container = g.append("g")
-                      .classed("container-group", true);
+      .classed("container-group", true);
     var chartgroup = container.append("g").classed("chart-group", true);
-    gKD = container.selectAll(".chart-group")    
+    gKD = container.selectAll(".chart-group")
       .data(sumstat)
       .enter()
 
     // Add X axis --> it is a date format
     var xKD = d3.scaleLinear()
       //.domain(d3.extent(data, function(d) { return d.Last_Funding_Type; }))
-      .domain([0,9])
-      .range([ 0, width/4  - margin.left - margin.right]);           
-      
+      .domain([0, 9])
+      .range([0, width / 4 - margin.left - margin.right]);
+
     gKD.append("g")
-      .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + ((height/3) * (parseInt((i-1)/4)+1) - margin.bottom) + ")"})
-      .attr("class","KD2")
+      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + ((height / 3) * (parseInt((i - 1) / 4) + 1) - margin.bottom) + ")" })
+      .attr("class", "KD2")
       .call(d3.axisBottom(xKD)
-              .ticks(3)
-              .tickFormat(function (d) {
-                return funding_label[d];
-              }))      
+        .ticks(3)
+        .tickFormat(function (d) {
+          return funding_label[d];
+        }))
       .attr('opacity', 0);
 
     //Add Y axis
-    var yKD = d3.scaleLinear()      
-      .domain([0, d3.max(KDdata2, function(d) { return +d.n; })])
-      .range([ height/3-margin.top-margin.bottom, 0 ]);
-    
+    var yKD = d3.scaleLinear()
+      .domain([0, d3.max(KDdata2, function (d) { return +d.n; })])
+      .range([height / 3 - margin.top - margin.bottom, 0]);
+
     gKD.append("g")
-      .attr("class","KD2")
-      .attr("transform", function(d,i){return "translate(" + (width/4)  * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
+      .attr("class", "KD2")
+      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
       .call(d3.axisLeft(yKD).ticks(5))
       .attr('opacity', 0);
 
     // color palette
     var color = d3.scaleOrdinal()
       .domain(allKeys)
-      .range(['#5487b1','#5487b1','#5487b1','#63a1af','#63a1af','#7ab8aa','#93caa8','#add7a8','#c6e3a7','#c6e3a7','#E7846F','#E7846F'])
+      .range(['#5487b1', '#5487b1', '#5487b1', '#63a1af', '#63a1af', '#7ab8aa', '#93caa8', '#add7a8', '#c6e3a7', '#c6e3a7', '#E7846F', '#E7846F'])
 
     // Draw the line
     gKD//.selectAll("path")
       //.data(sumstat)
       .append('g')
       .append("path")
-      .attr("fill", function(d){ return color(d.key) })
+      .attr("fill", function (d) { return color(d.key) })
       .attr("stroke", "none")
-      .attr("d", function(d){                
+      .attr("d", function (d) {
         return d3.area()
-        .x(function(d) { return xKD(d.Last_Funding_Type) })
-        .y0(yKD(0))
-        .y1(function(d) { return yKD(+d.n) })            
+          .x(function (d) { return xKD(d.Last_Funding_Type) })
+          .y0(yKD(0))
+          .y1(function (d) { return yKD(+d.n) })
           (d.values)
       })
-      .attr("transform", function(d,i){return "translate(" + (width/4) * ((i-1) % 4) + "," + (height/3) * (parseInt((i-1)/4)) + ")"})
-      .attr('class','KD2')
+      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
+      .attr('class', 'KD2')
       .attr('opacity', 0);
 
     // Add titles    
-    gKD.append('g')      
+    gKD.append('g')
       .append("text")
-      .attr("text-anchor", "start")      
-      .text(function(d){ return(d.key)})
-      .style("fill", function(d){ return color(d.key) })
-      .attr("transform", function(d,i){return "translate(" + ((width/4) * ((i-1) % 4) + 100) + "," + ((height/3) * (parseInt((i-1)/4)) + 20) + ")"})
-      .attr('class','KD2')
+      .attr("text-anchor", "start")
+      .text(function (d) { return (d.key) })
+      .style("fill", function (d) { return color(d.key) })
+      .attr("transform", function (d, i) { return "translate(" + ((width / 4) * ((i - 1) % 4) + 100) + "," + ((height / 3) * (parseInt((i - 1) / 4)) + 20) + ")" })
+      .attr('class', 'KD2')
       .attr('opacity', 0);
 
 
@@ -769,7 +768,7 @@ var scrollVis = function () {
     // no-op functions.
     for (var i = 0; i < 9; i++) {
       updateFunctions[i] = function () { };
-    }    
+    }
 
     //updateFunctions[2] = updateRBC
   };
@@ -921,7 +920,7 @@ var scrollVis = function () {
       .duration(600)
       .attr('opacity', 1);
 
-      
+
     g.selectAll('.WC2')
       .transition()
       .duration(0)
@@ -938,7 +937,7 @@ var scrollVis = function () {
       .duration(0)
       .attr('opacity', 0);
 
-      
+
     g.selectAll('.WC2')
       .transition()
       .duration(600)
@@ -976,11 +975,11 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
     $('.YJ1')
-      .css('opacity',0)
+      .css('opacity', 0)
   }
 
   function showYoungJun1() {
-  
+
     inWC3 = 0
     inYJ1 = 1
     inYJ2 = 0
@@ -994,20 +993,20 @@ var scrollVis = function () {
       .css('opacity',0)
 
     $('.YJ1')
-      .css('opacity',1)
+      .css('opacity', 1)
 
     YJ1update(YJ1data1)
     YJ1update(YJ1data1)
-    
+
 
     g.selectAll('.YJ2')
       .transition()
       .duration(0)
       .attr('opacity', 0);
-    
+
     $('.YJ2')
-      .css('opacity',0)
-  
+      .css('opacity', 0)
+
   }
 
 
@@ -1017,20 +1016,20 @@ var scrollVis = function () {
     inYJ1 = 0
     inYJ2 = 1
     inKD1 = 0
-    
+
     updateYJ2(YJ2data1)
-    updateYJ2(YJ2data1)   
+    updateYJ2(YJ2data1)
 
     g.selectAll('.YJ1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
-    
+
     $('.YJ1')
-      .css('opacity',0)
+      .css('opacity', 0)
 
     $('.YJ2')
-      .css('opacity',1)   
+      .css('opacity', 1)
 
 
     g.selectAll('.KD1')
@@ -1052,7 +1051,7 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
     $('.YJ2')
-      .css('opacity',0)
+      .css('opacity', 0)
 
     g.selectAll('.KD1')
       .transition()
@@ -1066,8 +1065,8 @@ var scrollVis = function () {
 
   }
 
-  function showKeondo2() {           
-        
+  function showKeondo2() {
+
     inKD1 = 0
     inKD2 = 1
 
@@ -1075,8 +1074,8 @@ var scrollVis = function () {
       .transition()
       .duration(0)
       .attr('opacity', 0);
-    
-      
+
+
     g.selectAll('.KD2')
       .transition()
       .duration(600)
@@ -1323,6 +1322,8 @@ function updateYJ2(data) {
 
   if (!inYJ2) return;
 
+
+
   var YJ2width = 650
   YJ2height = 650
   YJ2margin = 40
@@ -1362,8 +1363,11 @@ function updateYJ2(data) {
   var data_ready = YJ2pie(d3.entries(data))
 
   // map to data
-  var YJ2u = gYJ2.selectAll("path")
+  var YJ2u = svgYJ2.select(".slices").selectAll("path")
     .data(data_ready)
+
+  // var YJ2u = gYJ2.selectAll("path")
+  //   .data(data_ready)
 
   // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
   YJ2u
@@ -1377,31 +1381,39 @@ function updateYJ2(data) {
     .attr("stroke", "grey")
     .style("stroke-width", "2px")
     .attr('class', 'YJ2')
-    .attr("opacity", 0.6)
+    .attr("opacity", 0.6);
 
   // remove the group that is not present anymore
   YJ2u
     .exit()
     .remove();
 
-  var YJ2text = svgYJ2.select(".labels").selectAll("text")
-    .data(data_ready);
-
-  YJ2text.enter()
-    .append("text")
-    .attr("dy", ".35em")
-    .text(function (d) {
-      return d.data.key;
-    })
-    .attr('fill','#000000')
-    .attr('class', 'YJ2');
-
   function midAngle(d) {
     return d.startAngle + (d.endAngle - d.startAngle) / 2;
   }
+  function percentage(d) {
+    return (d.endAngle - d.startAngle) / (2 * Math.PI) * 100;
+  }
+  var YJ2text = svgYJ2.select(".labels").selectAll("text")
+    .data(data_ready);
+
+  YJ2text
+    .enter()
+    .append("text")
+    .merge(YJ2text)
+    .attr("dy", ".35em")
+    .text(function (d) {
+      console.log(d)
+      return d.data.key + " ( " + percentage(d).toFixed(1) + "% )";
+    })
+
+    .attr('fill', '#000000')
+    .attr('class', 'YJ2');
+
+
 
   YJ2text.transition().duration(1000)
-    .attrTween("transform", function (d) {            
+    .attrTween("transform", function (d) {
       this._current = this._current || d;
       var interpolate = d3.interpolate(this._current, d);
       this._current = interpolate(0);
@@ -1432,8 +1444,8 @@ function updateYJ2(data) {
   polyline.enter()
     .append("polyline")
     .attr('class', 'YJ2')
-    .attr('stroke','#000000')
-    .attr('fill', '#ffffff');
+    .attr('stroke', '#000000')
+    .attr('fill', 'transparent');
 
   polyline.transition().duration(1000)
     .attrTween("points", function (d) {
@@ -1452,57 +1464,72 @@ function updateYJ2(data) {
     .remove();
 }
 
-
-
-
+var YJ1index = 0
 
 // A function that create / update the plot for a given variable:
 function YJ1update(data) {
 
   if (!inYJ1) return;
 
+  console.log(YJ1index)
+  if (YJ1index) {
+    d3.selectAll(".YJ1axis").remove();
+
+  }
+    YJ1svg = d3.selectAll('svg')
+
+    YJ1g = YJ1svg.select('g').append('g').attr('transform', 'translate(' + 20 + ',' + 0 + ')')
+
+    YJ1g.append("g")
+      .attr("class", "bars");
+
+    YJ1g.append("g")
+      .attr("class", "axis");
+
+    // Initialize the X axis
+    var YJ1x = d3.scaleBand()
+      .range([0, width])
+      .padding(0.3);
+
+    var YJ1xAxis = YJ1g.select(".axis").append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .attr("class", "YJ1 YJ1axis")
+
+
+    // Initialize the Y axis
+    var YJ1y = d3.scaleLinear()
+      .range([height, 0]);
+
+    var YJ1yAxis = YJ1g.append("g")
+      .attr("class", "YJ1 YJ1axis")
+      .style('font-size', 10)
+
   
-  YJ1svg = d3.selectAll('svg')
-  YJ1g = YJ1svg.select('g').append('g')//.attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
+  YJ1index += 1
 
-  // Initialize the X axis
-  var YJ1x = d3.scaleBand()
-  .range([0, width])
-  .padding(0.2);
-
-  var YJ1xAxis = YJ1g.append("g")
-  .attr("transform", "translate(0," + height + ")")
-  .attr("class", "YJ1")
-
-
-  // Initialize the Y axis
-  var YJ1y = d3.scaleLinear()
-  .range([height, 0]);
-
-  var YJ1yAxis = YJ1g.append("g")
-  .attr("class", "YJ1 YJ1Yaxis")
-  .style('font-size', 15)
 
   // Update the X axis
   YJ1x.domain(data.map(function (d) { return d.name; }))
   YJ1xAxis.call(d3.axisBottom(YJ1x))
 
+
   // Update the Y axis
   YJ1y.domain([0, d3.max(data, function (d) { return d.value })]);
-  YJ1yAxis.transition().duration(1000).call(d3.axisLeft(YJ1y));
+  YJ1yAxis.transition().duration(500).call(d3.axisLeft(YJ1y));
+
 
 
   var YJ1tooltip = d3.select("body").append("div")
-    .append('g')  
-    .attr("class", "YJ1 YJ1toolTip")    
+    .append('g')
+    .attr("class", "YJ1 YJ1toolTip")
     ;
 
 
   // Create the u variable
-  var YJ1u = YJ1g.selectAll("rect")
+  var YJ1u = YJ1svg.select(".bars").selectAll("rect")
     .data(data)
 
-    YJ1u
+  YJ1u
     .enter()
     .append("rect") // Add a new rect for each new elements
     .merge(YJ1u) // get the already existing elements as well
@@ -1514,21 +1541,25 @@ function YJ1update(data) {
     .attr("height", function (d) { return height - YJ1y(d.value); })
     .attr("rx", 10)
     .attr('fill', d => d.color)
-    .attr('class','YJ1') ;
+    .attr('class', 'YJ1');
 
-    YJ1g.selectAll("rect")
+  YJ1g.selectAll("rect")
     .on("mouseover", function () { YJ1tooltip.style("display", "block"); })
     .on("mouseout", function () { YJ1tooltip.style("display", "none"); })
-    .on("mousemove", function (d) {      
+    .on("mousemove", function (d) {
       YJ1tooltip.style("left", (d3.event.pageX + 10) + "px");
       YJ1tooltip.style("top", (d3.event.pageY - 10) + "px");
-      YJ1tooltip.style('z-index','999')
-      YJ1tooltip.html("<br><p style='font:15px sans-serif'> <strong>" + d.name + "</strong> <br><span style='color:black'>" + d.value + "</span>");
+      YJ1tooltip.style('z-index', '999')
+      YJ1tooltip.html("<br><p style='font:15px sans-serif'> <strong>" + d.name + "</strong> <br><span style='color:white'>" + d.value + "</span>");
     });
   // If less name in the new dataset, I delete the ones not in use anymore
   YJ1u
     .exit()
-    .remove();    
+    .remove();
+
+  YJ1g
+    .exit()
+    .remove();
 }
 
 
