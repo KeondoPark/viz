@@ -1,11 +1,16 @@
 var ind_list = ["AllIndustries", "AI", "Ecommerce", "Education", "F&B", "Financial", "Healthcare", "Manufacturing", "Security", "Software", "Transportation"]
 var inTitle = 0, inYB1 = 0, inRBC = 0, inWC1 = 0, inWC2 = 0, inWC3 = 0, inYJ1 = 0, inYJ2 = 0, inKD1 = 0, inKD2 = 0
-var funding_order = { 'Seed': 1, "Series A": 2, 'Series B': 3, 'Series C': 4, 'Series D+': 5, 'M&A': 6, 'IPO': 7, 'Others': 8 }
-var funding_label = { 1: 'Seed', 2: "Series A", 3: 'Series B', 4: 'Series C', 5: 'Series D+', 6: 'M&A', 7: 'IPO', 8: 'Others' }
+var funding_order = { 'Seed': 1, "Series A": 2, 'Series B': 3, 'Series C': 4, 'Series D+': 5, 'M&A': 6, 'IPO': 7 }
+var funding_label = { 1: 'Seed', 2: "Series A", 3: 'Series B', 4: 'Series C', 5: 'Series D+', 6: 'M&A', 7: 'IPO' }
 
 var width = 1200;
 var height = 520;
-var margin = { top: 0, left: 20, bottom: 40, right: 10 };
+var margin = { top: 10, left: 20, bottom: 40, right: 10 };
+
+var timerYoutube = 0;
+setTimeout(function(){
+  timerYoutube = 1;
+},5000)
 
 /**
  * scrollVis - encapsulates
@@ -201,7 +206,7 @@ var scrollVis = function () {
       .attr('text-anchor', 'start')
       .html("Total Asset, $m")
       .attr('opacity', 0)
-      .attr('fill', '#5487b1')
+      .attr('fill', '#777777')
       ;
 
     let rbcCaption = g.append('text')
@@ -209,7 +214,7 @@ var scrollVis = function () {
       .attr('x', width)
       .attr('y', height - 5)
       .style('text-anchor', 'end')
-      .attr('fill', '#5487b1')
+      .attr('fill', '#777777')
       .html('Source: CrunchBase, yChart')
       .attr('opacity', 0);
 
@@ -287,7 +292,7 @@ var scrollVis = function () {
       .style('text-anchor', 'end')
       .attr('opacity', 0)
       .html(~~year)
-      .call(halo, 10)
+      //.call(halo, 10) 
 
 
     //---------------------------------------------------------------------
@@ -559,7 +564,9 @@ var scrollVis = function () {
     })
 
     KDdata.sort(function (a, b) { return d3.ascending(a.Last_Funding_Type, b.Last_Funding_Type) })
-    KDdata1 = KDdata.filter(function (d) { return d.Industry == 'All Industry' || d.Industry == 'Security' })
+    KDdata1 = KDdata.filter(function (d) { return (d.Industry == 'All Industry' || d.Industry == 'Security') && (d.Last_Funding_Type < 8) })
+
+    console.log(KDdata1)
 
     // group the data: I want to draw one line per group
     var sumstatKD1 = d3.nest() // nest function allows to group the calculation per level of a factor
@@ -573,24 +580,27 @@ var scrollVis = function () {
 
     var container = g.append("g")
       .classed("container-group", true);
+
     var chartgroup = container.append("g").classed("chart-group-KD1", true);
-    gKD1 = container.selectAll(".chart-group-KD1").append('g')
+
+    gKD1 = container.selectAll(".chart-group-KD1")
+      .append('g')
       .data(sumstatKD1)
       .enter()
 
     // Add X axis --> it is a date format
     var xKD1 = d3.scaleLinear()
-      .domain([0, 9])
-      .range([0, width]);
+      .domain([0.5, 7])
+      .range([0, width - margin.right]);
 
     gKD1.append("g")
       .attr("transform", function (d, i) { return "translate(0," + height + ")" })
       .attr("class", "KD1")
       .call(d3.axisBottom(xKD1)
-        .ticks(8)
-        .tickFormat(function (d) {
-          return funding_label[d];
-        }))
+              .ticks(8)
+              .tickFormat(function (d) {
+                return funding_label[d];
+              }))
       .attr('opacity', 0);
 
     //Add Y axis
@@ -600,7 +610,7 @@ var scrollVis = function () {
 
     gKD1.append("g")
       .attr("class", "KD1")
-      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
+      .attr("transform", function (d, i) { return "translate(" + (margin.left * 2 + (width / 4) * ((i - 1) % 4)) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
       .call(d3.axisLeft(yKD1).ticks(5))
       .attr('opacity', 0);
 
@@ -646,14 +656,16 @@ var scrollVis = function () {
 
 
     //---------------------------------------------------------------------
-    // Keondo's line chart end
+    // Keondo's area chart end
     //---------------------------------------------------------------------
 
     //---------------------------------------------------------------------
-    // Keondo's line multiarea chart start
+    // Keondo's multiarea chart start
     //---------------------------------------------------------------------
 
-    KDdata2 = KDdata.filter(function (d) { return d.Industry != 'All Industry' })
+    
+    KDdata2 = KDdata.filter(function (d) { return d.Industry != 'All Industry' && d.Last_Funding_Type < 8 })
+    KDdata2.sort(function (a, b) { return d3.ascending(a.Last_Funding_Type, b.Last_Funding_Type) })
     // group the data: I want to draw one line per group
     var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
       .key(function (d) { return d.Industry; })
@@ -668,48 +680,48 @@ var scrollVis = function () {
     var container = g.append("g")
       .classed("container-group", true);
     var chartgroup = container.append("g").classed("chart-group", true);
-    gKD = container.selectAll(".chart-group")
-      .data(sumstat)
-      .enter()
+    gKD2 = container
+      .selectAll(".chart-group")
+      //.data(sumstat)
+      //.enter()    
 
     // Add X axis --> it is a date format
     var xKD = d3.scaleLinear()
       //.domain(d3.extent(data, function(d) { return d.Last_Funding_Type; }))
       .domain([0, 9])
       .range([0, width / 4 - margin.left - margin.right]);
-
-    gKD.append("g")
-      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + ((height / 3) * (parseInt((i - 1) / 4) + 1) - margin.bottom) + ")" })
-      .attr("class", "KD2")
-      .call(d3.axisBottom(xKD)
-        .ticks(3)
-        .tickFormat(function (d) {
-          return funding_label[d];
-        }))
-      .attr('opacity', 0);
-
+    
     //Add Y axis
     var yKD = d3.scaleLinear()
       .domain([0, d3.max(KDdata2, function (d) { return +d.n; })])
       .range([height / 3 - margin.top - margin.bottom, 0]);
 
-    gKD.append("g")
-      .attr("class", "KD2")
-      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
-      .call(d3.axisLeft(yKD).ticks(5))
-      .attr('opacity', 0);
-
     // color palette
     var color = d3.scaleOrdinal()
       .domain(allKeys)
       .range(['#5487b1', '#5487b1', '#5487b1', '#63a1af', '#63a1af', '#7ab8aa', '#93caa8', '#add7a8', '#c6e3a7', '#c6e3a7', '#E7846F', '#E7846F'])
+    
+    // Add titles    
+    gKD2      
+      .selectAll('text')
+      .data(sumstat)
+      .enter() 
+      //.append('g')
+      .append("text")
+      .attr("text-anchor", "middle")
+      .text(function (d) { return (d.key) })
+      .style("fill", function (d) { return color(d.key) })
+      .attr("transform", function (d, i) { return "translate(" + ((width / 4) * ((i) % 4) + 100) + "," + ((height / 3) * (parseInt((i) / 4)) + 20) + ")" })
+      .attr('class', 'KD2')
+      .attr('opacity', 0);
 
     // Draw the line
-    gKD//.selectAll("path")
-      //.data(sumstat)
-      .append('g')
+    gKD2
+      .selectAll('path')
+      .data(sumstat)
+      .enter()
       .append("path")
-      .attr("fill", function (d) { return color(d.key) })
+      .attr("fill", function (d) {; return color(d.key) })
       .attr("stroke", "none")
       .attr("d", function (d) {
         return d3.area()
@@ -718,23 +730,47 @@ var scrollVis = function () {
           .y1(function (d) { return yKD(+d.n) })
           (d.values)
       })
-      .attr("transform", function (d, i) { return "translate(" + (width / 4) * ((i - 1) % 4) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
+      .attr("transform", function (d, i) {return "translate(" + (width / 4) * ((i) % 4) + "," + (height / 3) * (parseInt((i) / 4)) + ")" })
       .attr('class', 'KD2')
+      .attr('opacity', 0);    
+    
+    gKD2
+      //.selectAll('g')      
+      .data(sumstat)
+      .enter() 
+      .append("g")
+      .call(d3.axisLeft(yKD).ticks(3))      
+      .attr("transform", function (d, i) { return "translate(" + (margin.left*1.5 +  (width / 4) * (i % 4)) + "," + (height / 3) * (parseInt((i) / 4)) + ")" })
+      .attr("class", "KD2")
+      .attr('opacity', 0);
+    
+    gKD2 
+      .selectAll('g')      
+      .data(sumstat)
+      .enter() 
+      .append("g")
+      .call(
+        d3.axisBottom(xKD)
+          .ticks(3)
+          .tickFormat(function (d) {
+              return funding_label[d];
+          })
+      )
+      .attr("transform", function (d,i) {console.log(i); return "translate(" + (width / 4) * ((i) % 4) + "," + ((height / 3) * (parseInt((i) / 4) + 1) - margin.bottom) + ")" })
+      .attr("class", "KD2")      
       .attr('opacity', 0);
 
-    // Add titles    
-    gKD.append('g')
-      .append("text")
-      .attr("text-anchor", "start")
-      .text(function (d) { return (d.key) })
-      .style("fill", function (d) { return color(d.key) })
-      .attr("transform", function (d, i) { return "translate(" + ((width / 4) * ((i - 1) % 4) + 100) + "," + ((height / 3) * (parseInt((i - 1) / 4)) + 20) + ")" })
-      .attr('class', 'KD2')
-      .attr('opacity', 0);
+    
+
+    
+
+    
+
+    
 
 
     //---------------------------------------------------------------------
-    // Keondo's line multiarea chart end
+    // Keondo's multiarea chart end
     //---------------------------------------------------------------------
   }
 
@@ -839,6 +875,12 @@ var scrollVis = function () {
     inYB1 = 1
     inRBC = 0
 
+    
+    if (timerYoutube){
+      $("#youtubeclip").remove();    
+    }
+    
+
     g.selectAll('.openvis-title')
       .transition()
       .duration(0)
@@ -901,14 +943,11 @@ var scrollVis = function () {
     inRBC = 0
     inWC1 = 1
     inWC2 = 0
-
-
-    /*
-    g.selectAll('.rbc')
-      .select('text')
-      //.transition()
-      //.duration(0)
-      .text('')*/
+    
+    g.select('.yearText')      
+      .transition()
+      .duration(1000)
+      .text('')
 
     g.selectAll('.rbc')
       .transition()
@@ -995,8 +1034,8 @@ var scrollVis = function () {
     $('.YJ1')
       .css('opacity', 1)
 
-    YJ1update(YJ1data1)
-    YJ1update(YJ1data1)
+      updateYJ1("All Industries")
+      updateYJ1("All Industries")
 
 
     g.selectAll('.YJ2')
@@ -1017,8 +1056,8 @@ var scrollVis = function () {
     inYJ2 = 1
     inKD1 = 0
 
-    updateYJ2(YJ2data1)
-    updateYJ2(YJ2data1)
+    updateYJ2("All Industries")
+    updateYJ2("All Industries")
 
     g.selectAll('.YJ1')
       .transition()
@@ -1205,6 +1244,9 @@ var scrollVis = function () {
  * @param data - loaded tsv data
  */
 function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data) {
+  
+    
+  
 
   // create a new plot and
   // display it
@@ -1318,11 +1360,11 @@ function updateBarYB() {
 
 
 // A function that create / update the plot for a given variable:
-function updateYJ2(data) {
+function updateYJ2(Industry) {
 
   if (!inYJ2) return;
 
-
+  data = YJ2dataMap[Industry];
 
   var YJ2width = 650
   YJ2height = 650
@@ -1381,7 +1423,7 @@ function updateYJ2(data) {
     .attr("stroke", "grey")
     .style("stroke-width", "2px")
     .attr('class', 'YJ2')
-    .attr("opacity", 0.6);
+    .attr('opacity',0);;
 
   // remove the group that is not present anymore
   YJ2u
@@ -1402,8 +1444,7 @@ function updateYJ2(data) {
     .append("text")
     .merge(YJ2text)
     .attr("dy", ".35em")
-    .text(function (d) {
-      console.log(d)
+    .text(function (d) {      
       return d.data.key + " ( " + percentage(d).toFixed(1) + "% )";
     })
 
@@ -1467,11 +1508,13 @@ function updateYJ2(data) {
 var YJ1index = 0
 
 // A function that create / update the plot for a given variable:
-function YJ1update(data) {
+function updateYJ1(Industry) {
 
   if (!inYJ1) return;
 
-  console.log(YJ1index)
+  data = YJ1dataMap[Industry];
+
+  
   if (YJ1index) {
     d3.selectAll(".YJ1axis").remove();
     d3.selectAll(".YJ1_form").exit();
@@ -1504,10 +1547,8 @@ function YJ1update(data) {
   var YJ1yAxis = YJ1g.append("g")
     .attr("class", "YJ1 YJ1axis")
     .style('font-size', 10)
-
-
+  
   YJ1index += 1
-
 
   // Update the X axis
   YJ1x.domain(data.map(function (d) { return d.name; }))
@@ -1518,13 +1559,10 @@ function YJ1update(data) {
   YJ1y.domain([0, d3.max(data, function (d) { return d.value })]);
   YJ1yAxis.transition().duration(500).call(d3.axisLeft(YJ1y));
 
-
-
   var YJ1tooltip = d3.select("body").append("div")
     .append('g')
     .attr("class", "YJ1 YJ1toolTip")
     ;
-
 
   // Create the u variable
   var YJ1u = YJ1svg.select(".bars").selectAll("rect")
@@ -1542,7 +1580,8 @@ function YJ1update(data) {
     .attr("height", function (d) { return height - YJ1y(d.value); })
     .attr("rx", 10)
     .attr('fill', d => d.color)
-    .attr('class', 'YJ1');
+    .attr('class', 'YJ1')
+    .attr('opacity',0);
 
   YJ1g.selectAll("rect")
     .on("mouseover", function () { YJ1tooltip.style("display", "block"); })
@@ -1582,166 +1621,195 @@ function updateRBC() {
           d.colour = d3.hsl(Math.random() * 360, 0.75, 0.75)
       });
 
-      gRbc = d3.selectAll('svg')
-        .select('.gRbc')
+    gRbc = d3.selectAll('svg')
+                .select('.gRbc')                 
 
-      let ticker = d3.interval(e => {
+    let ticker = d3.interval(e => {
 
-        if (inRBC == 0) {
-          ticker.stop();
-        } else {
-          year = d3.format('.1f')((+year) + 0.1);
-        }
-
-        yearSlice = rbc_data.filter(d => Number(d.year) == Number(year) && !isNaN(d.value))
-          .sort((a, b) => b.value - a.value)
-          .slice(0, top_n);
-
-        yearSlice.forEach((d, i) => d.rank = i);
-
-        let xRbc = d3.scaleLinear()
-          .domain([0, d3.max(yearSlice, d => d.value)])
-          .range([margin.left, width - margin.right - 100]);
-
-
-        let xAxisRbc = d3.axisTop()
-          .scale(xRbc)
-          .ticks(width > 500 ? 5 : 2)
-          .tickSize(-(height - margin.top - margin.bottom))
-          .tickFormat(d => d3.format(',')(d))
-
-        let yRbc = d3.scaleLinear()
-          .domain([top_n, 0])
-          .range([height - margin.bottom, margin.top + 55]);
-
-        gRbc.select('.xAxisRbc')
+      if (inRBC == 0) {
+        ticker.stop();
+        gRbc.select('.yearText')      
           .transition()
-          .duration(tickDuration)
-          .ease(d3.easeLinear)
-          .call(xAxisRbc);
+          .duration(1000)
+          .text('')
 
-        let bars = gRbc.selectAll('.barRbc')
-          .data(yearSlice, d => d.name);
+        gRbc.attr('opacity',0)
+      } else {
+        gRbc.attr('opacity',1)
+        year = d3.format('.1f')((+year) + 0.1);             
+      }       
+    
+      yearSlice = rbc_data.filter(d => Number(d.year) == Number(year) && !isNaN(d.value))
+        .sort((a, b) => b.value - a.value)
+        .slice(0, top_n);
+    
+      yearSlice.forEach((d, i) => d.rank = i);         
+    
+      let xRbc = d3.scaleLinear()
+        .domain([0, d3.max(yearSlice, d => d.value)])
+        .range([margin.left, width - margin.right - 100]);
+        
+        
+      let xAxisRbc = d3.axisTop()
+      .scale(xRbc)
+      .ticks(width > 500 ? 5 : 2)
+      .tickSize(-(height - margin.top - margin.bottom))
+      .tickFormat(d => d3.format(',')(d))
 
-        xRbc = d3.scaleLinear()
-          .domain([0, d3.max(yearSlice, d => d.value)])
-          .range([margin.left, width - margin.right - 100]);
+      let yRbc = d3.scaleLinear()
+      .domain([top_n, 0])
+      .range([height - margin.bottom, margin.top + 55]);      
+    
+      gRbc.select('.xAxisRbc')
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .call(xAxisRbc);
+    
+      let bars = gRbc.selectAll('.barRbc')
+                      .data(yearSlice, d => d.name);   
 
-        bars.enter()
-          .append('rect')
-          .attr('class', d => `barRbc ${d.name.replace(/\s/g, '_')}`)
-          .classed('rbc', true)
-          .attr('x', xRbc(0) + 1)
-          .attr('width', d => xRbc(d.value) - xRbc(0) - 1)
-          .attr('y', d => yRbc(top_n + 1) + 5)
-          .attr('height', yRbc(1) - yRbc(0) - barPadding)
-          .style('fill', d => d.colour)
-          .transition()
-          .duration(tickDuration)
-          .ease(d3.easeLinear)
-          .attr('y', d => yRbc(d.rank) + 5);
-
-        bars.transition()
-          .duration(tickDuration)
-          .ease(d3.easeLinear)
-          .attr('width', d => xRbc(d.value) - xRbc(0) - 10)
-          .attr('y', d => yRbc(d.rank) + 5)
-
-        bars.exit()
-          .transition()
-          .duration(tickDuration)
-          .ease(d3.easeLinear)
-          .attr('width', d => xRbc(d.value) - xRbc(0) - 10)
-          .attr('y', d => yRbc(top_n + 1) + 5)
-          .remove();
-
-        let labels = gRbc.selectAll('.labelRbc')
-          .data(yearSlice, d => d.name);
-
-        labels.enter()
-          .append('text')
-          .attr('class', 'labelRbc rbc')
-          .attr('x', d => xRbc(d.value) - 20)
-          .attr('y', d => yRbc(top_n + 1) + 5 + ((yRbc(1) - yRbc(0)) / 2))
-          .style('text-anchor', 'end')
-          .attr('fill', '#000000')
-          .style("font-size", "24px")
-          .html(d => d.name)
-          .transition()
-          .duration(tickDuration)
-          .ease(d3.easeLinear)
-          .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
-
-        labels.transition()
-          .duration(tickDuration)
-          .ease(d3.easeLinear)
-          .attr('fill', '#000000')
-          .style("font-size", "24px")
-          .attr('x', d => xRbc(d.value) - 20)
-          .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
-
-        labels.exit()
-          .transition()
-          .duration(tickDuration)
-          .ease(d3.easeLinear)
-          .attr('x', d => xRbc(d.value) - 100)
-          .attr('y', d => yRbc(top_n + 1) + 5)
-          .remove();
-
-        let valueLabels = gRbc.selectAll('.valueLabel').data(yearSlice, d => d.name);
-
-        valueLabels.enter()
-          .append('text')
-          .attr('class', 'valueLabel rbc')
-          .attr('x', d => xRbc(d.value) + 5)
-          .attr('y', d => yRbc(top_n + 1) + 5)
-          .text(function (d) { return d3.format(',.0f')(d.lastValue) })
-          .transition()
-          .duration(tickDuration)
-          .ease(d3.easeLinear)
-          .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
-          .attr('fill', '#000000')
-          .style('text-anchor', 'start')
-          .style("font-size", "24px");
-
-        valueLabels.transition()
-          .duration(tickDuration)
-          .ease(d3.easeLinear)
-          .attr('x', d => xRbc(d.value) + 5)
-          .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
-          .tween("text", function (d) {
-            let i = d3.interpolateRound(d.lastValue, d.value);
-            textThis = this;
-            return function (t) {
-              textThis.textContent = d3.format(',')(i(t));
+      xRbc = d3.scaleLinear()
+        .domain([0, d3.max(yearSlice, d => d.value)])
+        .range([margin.left, width - margin.right - 100]);      
+                      
+      bars.enter()
+        .append('rect')
+        .attr('class', d => `barRbc ${d.name.replace(/\s/g, '_')}`)
+        .classed('rbc', true)
+        .attr('x', xRbc(0) + 1)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 1)        
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .attr('height', yRbc(1) - yRbc(0) - barPadding)
+        .style('fill', d => d.colour)
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5);
+    
+      bars.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 10)
+        .attr('y', d => yRbc(d.rank) + 5)        
+    
+      bars.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('width', d => xRbc(d.value) - xRbc(0) - 10)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+    
+      let labels = gRbc.selectAll('.labelRbc')
+        .data(yearSlice, d => d.name);
+    
+      labels.enter()
+        .append('text')
+        .attr('class', 'labelRbc rbc')
+        .attr('x', d => xRbc(d.value) - 20)
+        .attr('y', d => yRbc(top_n + 1) + 5 + ((yRbc(1) - yRbc(0)) / 2))
+        .style('text-anchor', 'end')
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .html(d => d.name)
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
+    
+      labels.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .attr('x', d => xRbc(d.value) - 20)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
+    
+      labels.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) - 100)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+    
+      let valueLabels = gRbc.selectAll('.valueLabel').data(yearSlice, d => d.name);
+    
+      valueLabels.enter()
+        .append('text')
+        .attr('class', 'valueLabel rbc')
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .text(function (d) { return d3.format(',.0f')(d.lastValue) })
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
+        .attr('fill', '#000000')
+        .style('text-anchor', 'start')
+        .style("font-size", "24px");
+    
+      valueLabels.transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)        
+        .attr('id',d => d.name)
+        .tween("text", function (d) {
+          let i = d3.interpolateRound(d.lastValue, d.value);          
+          if (this.id == 'goog'){            
+            textThis = this            
+            return function (t) {               
+              textThis.textContent = d3.format(',')(i(t));              
             };
-          })
-          .attr('fill', '#000000')
-          .style("font-size", "24px")
-          .style('text-anchor', 'start');
-
-        valueLabels.exit()
-          .transition()
-          .duration(tickDuration)
-          .ease(d3.easeLinear)
-          .attr('x', d => xRbc(d.value) + 5)
-          .attr('y', d => yRbc(top_n + 1) + 5)
-          .remove();
-
-
-        d3.selectAll('svg')
-          .select('g')
-          .select('.yearText')
-          .html(~~year);
-
-        if (year >= 2020) ticker.stop();
-      }, tickDuration);
-    })
+          } else if (this.id == 'amzn'){            
+            textThis2 = this            
+            return function (t) {               
+              textThis2.textContent = d3.format(',')(i(t));              
+            };
+          } else if (this.id == 'fb'){            
+            textThis3 = this            
+            return function (t) {               
+              textThis3.textContent = d3.format(',')(i(t));              
+            };
+          } else if (this.id == 'apple'){            
+            textThis4 = this            
+            return function (t) {               
+              textThis4.textContent = d3.format(',')(i(t));              
+            };
+          }
+        })
+        .attr('fill', '#000000')
+        .style("font-size", "24px")
+        .style('text-anchor', 'start');
+    
+      valueLabels.exit()
+        .transition()
+        .duration(tickDuration)
+        .ease(d3.easeLinear)
+        .attr('x', d => xRbc(d.value) + 5)
+        .attr('y', d => yRbc(top_n + 1) + 5)
+        .remove();
+    
+    
+        
+      d3.selectAll('svg')
+        .select('.gRbc')
+        .select('.yearText')          
+        .html(~~year);
+    
+      if (year >= 2020) ticker.stop();      
+    }, tickDuration);
+  })
 }
 
 
-function updateWC3(WC3data) {
+function updateWC3(Industry){
   if (!inWC3) return;
+
+  WC3data = WC3dataMap[Industry]
+  console.log(WC3data)
 
   // function add
   function handleMouseOver(d) {  // Add interactivity
@@ -1780,8 +1848,7 @@ function updateWC3(WC3data) {
       .data(data)
 
 
-
-    maxCount = d3.max(data, d => Number(d.city_ind_count))
+    maxCount = d3.max(data, d => Number(d.city_ind_count))    
 
     WC3u
       .enter()
@@ -1802,6 +1869,20 @@ function updateWC3(WC3data) {
   })
 };
 
+/*
+  Button control center
+*/
+function updateButtonClick(Industry){
+
+  if (inWC3){
+    updateWC3(Industry)
+  } else if (inYJ1) {
+    updateYJ1(Industry)
+  } else if (inYJ2) {
+    updateYJ2(Industry)
+  }
+}
+
 
 // load data and display
 //d3.tsv('data/words.tsv', display);
@@ -1816,3 +1897,6 @@ d3.queue()
   .defer(d3.tsv, 'data/crunch_data_grp_NoEmployees2.tsv')
   .defer(d3.csv, "wc_map/map3_data/map3_dec4_0.csv")
   .await(display)
+
+  
+  
