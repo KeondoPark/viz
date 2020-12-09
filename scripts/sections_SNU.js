@@ -183,7 +183,7 @@ var scrollVis = function () {
         .style('stroke-width', strokeWidth)
         .style('stroke-linejoin', 'round')
         .style('opacity', 0)
-        
+
 
     }
 
@@ -240,8 +240,8 @@ var scrollVis = function () {
 
 
     gRbc = g.append('g')
-      .attr('class','gRbc')
-    
+      .attr('class', 'gRbc')
+
     gRbc.append('g')
       .attr('class', 'rbc xAxisRbc')
       //.attr('transform', `translate(0, ${margin.top})`)
@@ -290,7 +290,7 @@ var scrollVis = function () {
       .attr('x', width - margin.right)
       .attr('y', height - 25)
       .style('text-anchor', 'end')
-      .attr('opacity', 0)            
+      .attr('opacity', 0)
       .html(~~year)
       //.call(halo, 10) 
 
@@ -305,9 +305,9 @@ var scrollVis = function () {
 
     var map = g.append('g').attr("id", "map_WC1").attr("class", "WC1").attr("opacity", 0)
     var placesWC1 = g.append('g')
-                .attr("id", "places_WC1")
-                .attr("class", "WC1")
-                .attr("opacity", 0);
+      .attr("id", "places_WC1")
+      .attr("class", "WC1")
+      .attr("opacity", 0);
 
     var projectionWC1 = d3.geoMercator()
       .translate([width / 2.2, height / 1.5]);
@@ -341,7 +341,7 @@ var scrollVis = function () {
       .append("circle")
       .attr("cx", function (d) { return projectionWC1([d.long, d.lat])[0]; })
       .attr("cy", function (d) { return projectionWC1([d.long, d.lat])[1]; })
-      .attr("r", function (d) { return d.city_count > 10? (d.city_count) ** 0.8: d.city_count })
+      .attr("r", function (d) { return d.city_count > 10 ? (d.city_count) ** 0.8 : d.city_count })
       .attr("class", "WC1")
       .attr("opacity", 0)
 
@@ -482,9 +482,9 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
 
     var placesWC3 = g.append('g')
-                .attr("id", "places_WC3")
-                .attr("class", "WC3")
-                .attr("opacity", 0);
+      .attr("id", "places_WC3")
+      .attr("class", "WC3")
+      .attr("opacity", 0);
 
     var projectionWC3 = d3.geoMercator()
       .translate([width / 2.2, height / 1.5]);
@@ -518,10 +518,10 @@ var scrollVis = function () {
       .append("circle")
       .attr("cx", function (d) { return projectionWC3([d.long, d.lat])[0]; })
       .attr("cy", function (d) { return projectionWC3([d.long, d.lat])[1]; })
-      .attr("r", function (d) { return d.city_ind_count > 10? (d.city_ind_count) ** 0.8: d.city_ind_count })
+      .attr("r", function (d) { return d.city_ind_count > 10 ? (d.city_ind_count) ** 0.8 : d.city_ind_count })
       .attr("class", "WC3")
-      .attr("opacity", 0)            
-    
+      .attr("opacity", 0)
+
 
     placesWC3.selectAll("circle")
       .on("mouseover", handleMouseOver)
@@ -534,7 +534,7 @@ var scrollVis = function () {
         tooltip_wc3
           .style('opacity', 0.9)
           .attr('width', 200)
-          .attr('text-align', 'center')          
+          .attr('text-align', 'center')
         //Information to display on tooltip
         tooltip_wc3.html(function () {
           return d.city + d.city_ind_count
@@ -987,7 +987,7 @@ var scrollVis = function () {
       .duration(0)
       .attr('opacity', 0);
     $('.WC3')
-      .css('opacity',0)
+      .css('opacity', 0)
   }
 
   function showWooChul3() {
@@ -1001,7 +1001,7 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
     $('.WC3')
-      .css('opacity',1)
+      .css('opacity', 1)
 
     g.selectAll('.WC3')
       .transition()
@@ -1027,9 +1027,9 @@ var scrollVis = function () {
       .transition()
       .duration(0)
       .attr('opacity', 0);
-    
+
     $('.WC3')
-      .css('opacity',0)
+      .css('opacity', 0)
 
     $('.YJ1')
       .css('opacity', 1)
@@ -1179,7 +1179,7 @@ var scrollVis = function () {
       .style('fill', function (d) {
         return (d.x0 >= 14) ? coughColorScale(progress) : '#008080';
       });
-  }  
+  }
 
   /**
    * DATA FUNCTIONS
@@ -1517,35 +1517,36 @@ function updateYJ1(Industry) {
   
   if (YJ1index) {
     d3.selectAll(".YJ1axis").remove();
+    d3.selectAll(".YJ1_form").exit();
 
   }
-    YJ1svg = d3.selectAll('svg')
+  YJ1svg = d3.selectAll('svg')
 
-    YJ1g = YJ1svg.select('g').append('g').attr('transform', 'translate(' + 20 + ',' + 0 + ')')
+  YJ1g = YJ1svg.select('g').append('g').attr('transform', 'translate(' + 20 + ',' + 0 + ')')
 
-    YJ1g.append("g")
-      .attr("class", "bars");
+  YJ1g.append("g")
+    .attr("class", "bars");
 
-    YJ1g.append("g")
-      .attr("class", "axis");
+  YJ1g.append("g")
+    .attr("class", "axis");
 
-    // Initialize the X axis
-    var YJ1x = d3.scaleBand()
-      .range([0, width])
-      .padding(0.3);
+  // Initialize the X axis
+  var YJ1x = d3.scaleBand()
+    .range([0, width])
+    .padding(0.3);
 
-    var YJ1xAxis = YJ1g.select(".axis").append("g")
-      .attr("transform", "translate(0," + height + ")")
-      .attr("class", "YJ1 YJ1axis")
+  var YJ1xAxis = YJ1g.select(".axis").append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .attr("class", "YJ1 YJ1axis")
 
 
-    // Initialize the Y axis
-    var YJ1y = d3.scaleLinear()
-      .range([height, 0]);
+  // Initialize the Y axis
+  var YJ1y = d3.scaleLinear()
+    .range([height, 0]);
 
-    var YJ1yAxis = YJ1g.append("g")
-      .attr("class", "YJ1 YJ1axis")
-      .style('font-size', 10)
+  var YJ1yAxis = YJ1g.append("g")
+    .attr("class", "YJ1 YJ1axis")
+    .style('font-size', 10)
   
   YJ1index += 1
 
@@ -1602,23 +1603,23 @@ function updateYJ1(Industry) {
 }
 
 
-function updateRBC() {       
-  
-  d3.queue()
-    .defer(d3.csv,'data/rbc_112006.csv')
-    .await(function(error, rbc_data){
-    let year = 2008;
-    let top_n = 4;
-    let tickDuration = 500;    
-    let barPadding = (height - (margin.bottom + margin.top)) / (top_n * 5);        
+function updateRBC() {
 
-    rbc_data.forEach(d => {
+  d3.queue()
+    .defer(d3.csv, 'data/rbc_112006.csv')
+    .await(function (error, rbc_data) {
+      let year = 2008;
+      let top_n = 4;
+      let tickDuration = 500;
+      let barPadding = (height - (margin.bottom + margin.top)) / (top_n * 5);
+
+      rbc_data.forEach(d => {
         d.value = +d.value,
-        d.lastValue = +d.lastValue,
-        d.value = isNaN(d.value) ? 0 : d.value,
-        d.year = +d.year,
-        d.colour = d3.hsl(Math.random() * 360, 0.75, 0.75)
-    });
+          d.lastValue = +d.lastValue,
+          d.value = isNaN(d.value) ? 0 : d.value,
+          d.year = +d.year,
+          d.colour = d3.hsl(Math.random() * 360, 0.75, 0.75)
+      });
 
     gRbc = d3.selectAll('svg')
                 .select('.gRbc')                 
@@ -1817,34 +1818,35 @@ function updateWC3(Industry){
       .attr('class', 'tooltip')
       .attr('id', 'tooltipWC3')
 
-    WC3tooltip.style('opacity',0.9)
-    
+    WC3tooltip.style('opacity', 0.9)
+
     //Information to display on tooltip
-    WC3tooltip.html(function(){
+    WC3tooltip.html(function () {
       return d.city + "," + d.city_ind_count
     })
-    .style('left', d3.event.pageX + 10 + 'px')
-    .style('top', d3.event.pageY - 28 + 'px')
+      .style('left', d3.event.pageX + 10 + 'px')
+      .style('top', d3.event.pageY - 28 + 'px')
   }
 
   function handleMouseOut(d, i) {
     WC3tooltip = d3.select('body').select('#tooltipWC3')
       .attr('class', 'tooltip')
       .attr('id', 'tooltipWC3')
-    WC3tooltip.style('opacity',0)     
+    WC3tooltip.style('opacity', 0)
   }
 
-  d3.csv(WC3data, function(error, data) {
-    if (error) throw error;        
-   
+  d3.csv(WC3data, function (error, data) {
+    if (error) throw error;
+
     var projectionWC3 = d3.geoMercator()
       .translate([width / 2.2, height / 1.5]);
 
     var WC3u = d3.select('svg')
-              .select('g')
-              .select('#places_WC3')              
-              .selectAll("circle")
-              .data(data)
+      .select('g')
+      .select('#places_WC3')
+      .selectAll("circle")
+      .data(data)
+
 
     maxCount = d3.max(data, d => Number(d.city_ind_count))    
 
@@ -1852,10 +1854,10 @@ function updateWC3(Industry){
       .enter()
       .append("circle")
       .merge(WC3u)
-      .attr("cx", function(d) { return projectionWC3([d.long, d.lat])[0]; })
-      .attr("cy", function(d) { return projectionWC3([d.long, d.lat])[1]; })
-      .attr("r", function(d) { return Math.sqrt(d.city_ind_count/maxCount) * 30 })
-      .attr('class','WC3')
+      .attr("cx", function (d) { return projectionWC3([d.long, d.lat])[0]; })
+      .attr("cy", function (d) { return projectionWC3([d.long, d.lat])[1]; })
+      .attr("r", function (d) { return Math.sqrt(d.city_ind_count / maxCount) * 30 })
+      .attr('class', 'WC3')
 
     WC3u
       .on("mouseover", handleMouseOver)
