@@ -45,7 +45,7 @@ var scrollVis = function () {
   /**
    * chart
    *
-   * @param selection - the current d3 selection(s)
+   * @param selection - the current d3 selection(s)gi
    *  to draw the visualization in. For this
    *  example, we will be drawing it in #vis
    */
