@@ -13,7 +13,13 @@
 <body>    
     <div class="container">
         <div id='graphic'>
-          <div id='vis'>
+          <div id='vis'>            
+            <div style="position: fixed; width: 1000px; height: 600px" id="youtubeclip">
+              <iframe frameborder="0" height="100%" width="100%"
+                src="https://youtube.com/embed/ntFmelacG2A?start=1070&end=1084&autoplay=1&controls=0&showinfo=0&autohide=1">
+                
+              </iframe>
+            </div>
             <form>
               <label class="YB"><input class="YB filter" type="checkbox" id="filter" value="filter">Wish to Filter</label>
               <p class="YB">Select Industries You Are Interested In</p>
@@ -44,160 +50,96 @@
               <label class="YB"><input class="industry2" type="checkbox" value="Transportation">Transporation</label>
               <br> 
             </form> 
-            <form id="form" class="WC3_form btn-group btn-group-toggle WC3" data-toggle="buttons">
-              <label class="WC3 btn btn-outline-secondary active">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_1)" checked>All Industries<br>
-              </label>
-              <label class="WC3 btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_2)">AI<br>
-              </label>
-              <label class="WC3 btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_3)">Ecommerce<br>
-              </label>
-              <label class="WC3 btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_4)">Education<br>
-              </label>
-              <label class="WC3 btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_5)">F&B<br>
-              </label>
-              <label class="WC3 btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_6)">Financial<br>
-              </label>
-              <label class="WC3 btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_7)">Healthcare<br>
-              </label>
-              <label class="WC3 btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_8)">Manufacturing<br>
-              </label>
-              <label class="WC3 btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_9)">Security<br>
-              </label>
-              <label class="WC3 btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_10)">Software<br>
-              </label>
-              <label class="WC3 btn btn-outline-secondary">
-                <input type="radio" name="industry_select" onchange="updateWC3(wc_data_11)">Transportation<br>
-              </label>
-            </form>                      
-            <div class='YJ1'>
-              <form id="form" class="YJ1_form btn-group btn-group-toggle " data-toggle="buttons">
-                <label class="btn btn-outline-secondary active">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data1)" checked>All Industries<br>
-                </label>
-                <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data2)">AI<br>
-                </label>
-                <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data3)">Ecommerce<br>
-                </label>
-                <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data4)">Education<br>
-                </label>
-                <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data5)">F&B<br>
-                </label>
-                <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data6)">Financial<br>
-                </label>
-                <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data7)">Healthcare<br>
-                </label>
-                <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data8)">Manufacturing<br>
-                </label>
-                <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data9)">Security<br>
-                </label>
-                <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data10)">Software<br>
-                </label>
-                <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="YJ1update(YJ1data11)">Transportation<br>
-                </label>
-              </form>
-            </div>
+                      
               
-              
-            <div class='YJ2'>
+            <div class='btn-industry'>
               <form id="form" class="YJ2_form btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-outline-secondary active">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data1)" checked>All Industries<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('All Industries')" checked>All Industries<br>
                 </label>
                 <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data2)">AI<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('AI')">AI<br>
                 </label>
                 <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data3)">Ecommerce<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('Ecommerce')">Ecommerce<br>
                 </label>
                 <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data4)">Education<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('Education')">Education<br>
                 </label>
                 <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data5)">F&B<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('FB')">F&B<br>
                 </label>
                 <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data6)">Financial<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('Financial')">Financial<br>
                 </label>
                 <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data7)">Healthcare<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('Healthcare')">Healthcare<br>
                 </label>
                 <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data8)">Manufacturing<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('Manufacturing')">Manufacturing<br>
                 </label>
                 <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data9)">Security<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('Security')">Security<br>
                 </label>
                 <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data10)">Software<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('Software')">Software<br>
                 </label>
                 <label class="btn btn-outline-secondary">
-                  <input type="radio" name="industry_select" onchange="updateYJ2(YJ2data11)">Transportation<br>
+                  <input type="radio" name="industry_select" onchange="updateButtonClick('Transportation')">Transportation<br>
                 </label>
+                <br>
               </form>
             </div>
           </div>  
           <div id='sections'>
             <section class="step">
-              <div class="title">OpenVis Conf 2013</div>
+              <div class="title" style="font-size:24px">OpenVis Conf 2013</div>
               I did what no presenter should ever do: I watched my own talk.<br/><br/>My first visit to OpenVis Conf in 2013.
             </section>
             <section class="step">
-              <div class="title">Filler Words</div>
+              <div class="title" style="font-size:24px">유빈이의 산업군별 펀딩 규모 차트</div>
               As expected, I could only focus on the flaws: the rushed speech, the odd phrases, and, most especially, all the filler words. In fact, I found 180 filler words in my 30 minute talk.
             </section>
             <section class="step">
-              <div class="title">WC_RBC_Racing Bar chart</div>
+              <div class="title" style="font-size:24px">WC_RBC_Racing Bar chart</div>
               Google, Amazon, Facebook and Apple a dozen of years from now.
             </section>
             <section class="step">
-              <div class="title">WC_MAP1_WORLD</div>
+              <div class="title" style="font-size:24px">WC_MAP1_WORLD</div>
               MAP1 WIP
             </section>
             <section class="step">
-              <div class="title">WC_MAP2_US</div>
+              <div class="title" style="font-size:24px">WC_MAP2_US</div>
               MAP2 WIP
             </section>
             <section class="step">
-              <div class="title">WC_MAP3_WORLD_FILTER ADD</div>
+              <div class="title" style="font-size:24px">WC_MAP3_WORLD_FILTER ADD</div>
               MAP3 WIP
             </section>
 
           
             <section class="step">
-              <div class="title">Um's, Ah's &amp; Uh's</div>
+              <div class="title" style="font-size:24px">영준이의 학벌 차트</div>
               I almost exclusively used these three fillers. Um's and Ah's made up over 80%, with Uh's trailing behind.
             </section>
             <section class="step">
-              <div class="title">Fillers Over Time</div>
+              <div class="title" style="font-size:24px">영준이의 전공 파이 차트</div>
               I hoped that all these blunders were toward the beginning of my talk. And the data suggests that fewer fillers are used as I get into it. Perhaps the talk started out rough and improved as I found my groove.
             </section>
-            <section class="step">
-              <div class="title">Ramping Back Up</div>
-              Unfortunately, the trend does not continue. Midway into the talk my Um's and Ah's spike. I continue to use them pretty consistently throughout the rest of the talk.
+            <section class="step" >
+              <div class="title" style="font-size:24px">내 회사의 성장곡선은 어떻게 될까?</div>
+              처음에는 혼자 또는 친구 두세명과 같이 회사를 시작하더라도, 사업이 확장되어감에 따라서 많은 사람들을 채용해야 할 것입니다.
+              많은 사람들을 채용하고 싶겠지만 자금사정상 모든 사람들을 채용할 수도 없는 노릇. 그렇다면 보통의 스타트업들은 Funding Stage별로 몇명 정도의 인력을 채용하고 있을까요?
+              왼쪽 그래프를 보면 그에 대한 대략적인 답을 얻을 수 있습니다. 
+              흔히 죽음의 골짜기라 불리는 Series A 정도의 단계에서는 약 90명의 인력을 채용하고, Series C쯤 되면 이 규모가 270명 가량으로 늘어난 것을 볼 수 있습니다.
             </section>
             <section class="step">
-              <div class="title">The Cough Effect</div>
-              My theory is that at this critical halfway point in my talk, I heard a dry cough indicative of the audience's waning interest. This caused self-confidence to collapse and forced me out of my groove.<br/><br/>A competing theory is that I just hadn't practiced the last half of my speech as much.
+              <div class="title" style="font-size:24px">내가 진출하고자 하는 산업군의 일반적인 성장곡선은?</div>
+              채용하는 인력 규모는 산업군에 따라서도 많이 다를 수도 있는데요. 
+              예를 들면 회사를 시작할때부터 많은 인력이 필요한 산업군이 있겠고, 어느 시점을 넘어서면 많은 인력이 필요한 산업군도 있을 것입니다.
+              다음 비주얼은 산업군별 다른 모양의 성장 곡선을 보여줍니다. 
+              예를 들면 Transportation 산업군은 Series C 이후로 인력 규모가 폭발적으로 늘어나지만, 
+              HealthCare는 상대적으로 적은 인력으로 IPO까지 유지되는 것을 볼 수 있습니다.
             </section>
             <section class="step">
               <div class="title">Best of Luck to Me in 2015</div>
@@ -211,13 +153,13 @@
       </div>
   
   <!-- Scripts -->
+  <script src="scripts/data_collection.js"></script> 
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://d3js.org/topojson.v2.min.js"></script>    
   <script src='https://d3js.org/d3-scale-chromatic.v1.min.js'></script>  
   <script src="scripts/scroller.js"></script>
-  <script src="scripts/sections_SNU.js"></script>
-  <script src="scripts/data_collection.js"></script> 
+  <script src="scripts/sections_SNU.js"></script>  
   <script src="https://unpkg.com/topojson-client@3"></script>   
   
 </body>
