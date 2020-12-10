@@ -50,7 +50,7 @@ var scrollVis = function () {
   /**
    * chart
    *
-   * @param selection - the current d3 selection(s)
+   * @param selection - the current d3 selection(s)gi
    *  to draw the visualization in. For this
    *  example, we will be drawing it in #vis
    */
@@ -110,6 +110,10 @@ var scrollVis = function () {
     let xYB = d3.scaleBand().rangeRound([0, width]).padding(0.1);
     let yYB = d3.scaleLinear().rangeRound([height, 0]);
 
+    YB_data.forEach(function(d){
+      d.value /= 1000000
+    })
+
     xYB.domain(YB_data.map(function (d) { return d.type; }));
     maxYYB = d3.max(YB_data, d => +d.value)
     selected = ind_list
@@ -125,6 +129,7 @@ var scrollVis = function () {
 
     g.append("g")
       .attr("class", "axis y_axis YB")
+      .attr("transform", "translate(50,0)")
       .call(d3.axisLeft(yYB));
 
     g.selectAll(".rect")
@@ -136,11 +141,12 @@ var scrollVis = function () {
       .attr("y", function (d) {
         return yYB(+d.value)
       })
-      .attr("x", function (d) { return xYB(d.type) + 8 * ind_list.indexOf(d.ind_list); })
+      .attr("x", function (d) { return 30 + xYB(d.type) + 10 * ind_list.indexOf(d.ind_list); })
       .attr("height", function (d) { return height - yYB(+d.value); })
-      .attr("width", xYB.bandwidth() / 4)
+      .attr("width", xYB.bandwidth() / 6)
       .attr("class", "rectYB")
 
+    /*
     var legendYB = g.selectAll(".legend")
       .data(filtered)
       .enter()
@@ -161,7 +167,7 @@ var scrollVis = function () {
     })
       .attr("width", 10)
       .attr("height", 10)
-
+    */
     //---------------------------------------------------------------------
     // Yoobin's bar chart end
     //---------------------------------------------------------------------
@@ -1395,10 +1401,16 @@ function updateBarYB() {
 
         if (cb.property("checked")) {
           num = ind_list.indexOf(cb.property("value"))
+          if(num==-1){
+            num = 10
+          }
           g.selectAll("#bar" + num).transition().attr("opacity", 0.25)
         }
         else {
           num = ind_list.indexOf(cb.property("value"))
+          if(num==-1){
+            num = 10
+          }
           g.selectAll("#bar" + num).transition().attr("opacity", 0)
         }
       })
@@ -1410,6 +1422,9 @@ function updateBarYB() {
         if (cb.property("checked")) {
           console.log(cb.property("value"))
           num = ind_list.indexOf(cb.property("value"))
+          if(num==-1){
+            num = 10
+          }
           g.selectAll("#bar" + num).transition().attr("opacity", 1)
         }
       })
