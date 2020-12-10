@@ -42,7 +42,7 @@
   #vis {
     display: inline-block;
     position: fixed;
-    top: 60px;
+    top: 20px;
     z-index: 1;
     margin-left: 0;
     /* height: 600px; */
@@ -354,32 +354,19 @@ svg circle {
   text-anchor: start;
   }
 
-  #tooltipWC1 {	
-    position: absolute;			
-    text-align: center;			
-    width: 80px;					
-    height: 30px;					
-    padding: 2px;				
-    font: 12px sans-serif;		
-    background: lightsteelblue;	
-    border: 0px;		
-    border-radius: 8px;			
-    pointer-events: none;			
-}
+  div.tooltip {	
+	  position: absolute;			
+	  text-align: center;			
+	  width: 400px;					
+	  height: 50px;					
+	  padding: 2px;				
+	  font: 16px sans-serif;		
+	  background: lightsteelblue;	
+	  border: 0px;		
+	  border-radius: 8px;			
+	  pointer-events: none;			
+  }
 
-#tooltipYJ1 {
-  position: absolute;
-  opacity: 0;
-  width: 40px;
-  height: 20px;
-  line-height: 20px;
-  transition: all 0.3s;
-  border-radius: 5px;
-  text-align: center;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-}
 
 
 

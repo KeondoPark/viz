@@ -1,8 +1,10 @@
 var ind_list = ["AllIndustries", "AI", "Ecommerce", "Education", "F&B", "Financial", "Healthcare", "Manufacturing", "Security", "Software", "Transportation"]
-var checkIn = {'inTitle': 0, 'inYB1': 0, 'inRBC': 0, 'inWC1': 0, 'inWC2': 0, 'inWC3': 0, 'inYJ1': 0, 'inYJ2': 0, 'inKD1': 0, 'inKD2': 0, 'inWordCloud': 0}
+var checkIn = {'inTitle': 0, 'inYB1': 0, 'inRBC': 0, 'inWC1': 0, 'inWC2': 0, 'inWC3': 0, 'inYJ1': 0, 'inYJ2': 0, 'inKD1': 0, 'inKD2': 0, 'inWordCloud': 0, 'inlistInd': 0}
 var funding_order = { 'Seed': 1, "Series A": 2, 'Series B': 3, 'Series C': 4, 'Series D+': 5, 'M&A': 6, 'IPO': 7 }
 var funding_label = { 1: 'Seed', 2: "Series A", 3: 'Series B', 4: 'Series C', 5: 'Series D+', 6: 'M&A', 7: 'IPO' }
 var labelsMap = {'goog':'Google','apple':'Apple','fb':'Facebook','amzn':'Amazon'}
+var colors = ['#F06A93', '#CD59B1', '#A97DD8', '#F38787', '#EF8D5D', '#3FB68E', '#4D78A2', '#3AB5C2', '#6973F6', '#74ABE2']
+
 var width = 1200;
 var height = 600;
 var margin = { top: 10, left: 20, bottom: 40, right: 10 };
@@ -67,10 +69,11 @@ var scrollVis = function () {
       var USMapData = data.USMapData
       var WC3data = data.WC3data
       var wordCloudData = data.wordCloudData
+      var wordCloudData2 = data.wordCloudData2
 
       // create svg and give it a width and height
       //svg = d3.select(this).selectAll('svg')//.data([YB_data]);
-      svg = d3.select("#vis").append("svg")
+      svg = d3.select("#vis").append("svg").attr('class','svgBase')
       //var svgE = svg.enter().append('svg');
       // @v4 use merge to combine enter and existing selection
       //svg = svg.merge(svgE);
@@ -87,7 +90,7 @@ var scrollVis = function () {
 
       rbc_data = rbcModify(raw_rbc_data)
 
-      setupVis(YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data, wordCloudData);
+      setupVis(YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data, wordCloudData, wordCloudData2);
 
       setupSections();
     });
@@ -103,7 +106,7 @@ var scrollVis = function () {
    *  element for each filler word type.
    * @param histData - binned histogram data
    */
-  var setupVis = function (YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data, wordCloudData) {
+  var setupVis = function (YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data, wordCloudData, wordCloudData2) {
 
     //---------------------------------------------------------------------
     // Yoobin's bar chart start
@@ -148,6 +151,13 @@ var scrollVis = function () {
       .attr("width", xYB.bandwidth() / 6)
       .attr("class", "rectYB")
 
+    g.append("text")
+      .attr("class", "axis y_axis YB")
+      .attr("text-anchor", "middle")
+      .attr("x",0 - (height / 2))
+      .attr('transform', 'rotate(-90)')
+      .text("Funding Amount($1M)");
+
     //---------------------------------------------------------------------
     // Yoobin's bar chart end
     //---------------------------------------------------------------------
@@ -169,8 +179,6 @@ var scrollVis = function () {
         .style('stroke-width', strokeWidth)
         .style('stroke-linejoin', 'round')
         .style('opacity', 0)
-
-
     }
 
     let rbcSubTitle = g.append("text")
@@ -278,13 +286,102 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
 
     var map = g.append('g').attr("id", "map_WC1").attr("class", "WC1").attr("opacity", 0)
-    var placesWC1 = g.append('g')
-      .attr("id", "places_WC1")
-      .attr("class", "WC1")
+
+    var svgWC = d3.select("#vis").append("svg").attr('class','svgWC');
+    svgWC.attr('width', width + margin.left + margin.right);
+    svgWC.attr('height', height + margin.top + margin.bottom);
+    
+
+    var placesWC3 = svgWC.append('g')
+      .attr("id", "places_WC3")
+      .attr("class", "WC3")
       .attr("opacity", 0);
 
+    var projectionWC3 = d3.geoMercator()
+      .translate([width / 2.2, height / 1.5])
+
+    var path = d3.geoPath()
+      .projection(projectionWC3);
+
+    var features = topojson.feature(worldMapData, worldMapData.objects.countries).features;
+
+    placesWC3//.append('g')
+      .selectAll("path")
+      .data(features)
+      .enter()
+      .append("path")
+      .attr("d", path)
+      .attr("fill", "#b8b8b8")
+      .attr("stroke-width", 1)
+      .attr("class", "WC3")
+      .attr('opacity', 0)
+      .lower();
+
+    //Define tooltip
+    var tooltip_wc3 = d3.select('body').append('div')
+        .append('g')
+        .attr('class', 'tooltip')
+        .attr('id', 'tooltipWC3')
+        .style('opacity', 0)
+
+    placesWC3.selectAll("circle")
+      .data(WC3data)
+      .enter()
+      .append("circle")
+      .attr("cx", function (d) { return projectionWC3([d.long, d.lat])[0]; })
+      .attr("cy", function (d) { return projectionWC3([d.long, d.lat])[1]; })
+      .attr("r", function (d) { return d.city_ind_count > 10 ? (d.city_ind_count) ** 0.8 : d.city_ind_count })
+      .attr("class", "WC3")
+      .attr("opacity", 0)      
+
+    placesWC3.selectAll("circle")
+      .on("mouseover", function () { console.log("mouse over"); tooltip_wc1.style("display", "block"); })
+      .on("mouseout", function () { tooltip_wc1.style("display", "none"); })
+      .on("mousemove", function (d) {
+        console.log("mouse move")
+        tooltip_wc1.style("opacity",1)
+        tooltip_wc1.style("left", (d3.event.pageX + 10) + "px");
+        tooltip_wc1.style("top", (d3.event.pageY - 10) + "px");
+        tooltip_wc1.style('z-index', '999')
+        tooltip_wc1.html("<br><p style='font:15px sans-serif'> <strong>" + d.city + "</strong> <br><span style='color:white'>" + d.city_ind_count + "</span>");
+      });     
+
+
+      /*
+    placesWC3.selectAll("circle")
+      .on("mouseover", handleMouseOver)
+      .on("mouseout", handleMouseOut);
+
+    function handleMouseOver(d) {  // Add interactivity
+
+
+      if (checkIn.inWC3) {
+        tooltip_wc3
+          .style('opacity', 0.9)
+          .attr('width', 200)
+          .attr('text-align', 'center')
+        //Information to display on tooltip
+        tooltip_wc3.html(function () {
+          return d.city + d.city_ind_count
+        })
+          .style('left', d3.event.pageX + 100 + 'px')
+          .style('top', d3.event.pageY - 28 + 'px')
+      }
+    }
+
+    function handleMouseOut(d, i) {
+      tooltip_wc3.style('opacity', 0)
+    }
+*/
+    /*
+
+    var placesWC1 = svgWC.append('g')
+      .attr("id", "places_WC1")
+      .attr("class", "WC1")
+      //.attr("opacity", 0);
+
     var projectionWC1 = d3.geoMercator()
-      .translate([width / 2.2, height / 1.5]);
+      .translate([width / 2.2, height / 1.5 - 200]);
 
     var path = d3.geoPath()
       .projection(projectionWC1);
@@ -305,9 +402,10 @@ var scrollVis = function () {
 
     //Define tooltip
     var tooltip_wc1 = d3.select('body').append('div')
+      .append('g')
       .attr('class', 'tooltip')
       .attr('id', 'tooltipWC1')
-      .style('opacity', 0)
+      .style('opacity', 0)      
 
     placesWC1.selectAll("circle")
       .data(WC1data)
@@ -317,9 +415,22 @@ var scrollVis = function () {
       .attr("cy", function (d) { return projectionWC1([d.long, d.lat])[1]; })
       .attr("r", function (d) { return d.city_count > 10 ? (d.city_count) ** 0.8 : d.city_count })
       .attr("class", "WC1")
-      .attr("opacity", 0)
+      .attr("opacity", 0)      
+    
+      
+    placesWC1.selectAll("circle")
+      .on("mouseover", function () { console.log("mouse over"); tooltip_wc1.style("display", "block"); })
+      .on("mouseout", function () { tooltip_wc1.style("display", "none"); })
+      .on("mousemove", function (d) {
+        console.log("mouse move")
+        tooltip_wc1.style("opacity",1)
+        tooltip_wc1.style("left", (d3.event.pageX + 10) + "px");
+        tooltip_wc1.style("top", (d3.event.pageY - 10) + "px");
+        tooltip_wc1.style('z-index', '999')
+        tooltip_wc1.html("<br><p style='font:15px sans-serif'> <strong>" + d.city + "</strong> <br><span style='color:white'>" + d.city_count + "</span>");
+      });     
 
-
+    
     placesWC1.selectAll("circle")
       .on("mouseover", handleMouseOver)
       .on("mouseout", handleMouseOut);
@@ -344,8 +455,8 @@ var scrollVis = function () {
 
     function handleMouseOut(d, i) {
       tooltip_wc1.style('opacity', 0)
-    }
-
+    }*/
+    
     //---------------------------------------------------------------------
     // Woochul's map 1 end
     //---------------------------------------------------------------------
@@ -359,18 +470,7 @@ var scrollVis = function () {
       centered,
       clicked_point;
 
-    /*
-  var wc_svg = d3.select("body").append("svg")
-    .attr("width", wc2_width)
-    .attr("height", wc2_height)
-    .attr("class", "map")
-    .attr("fill", "none")
-    .attr("stroke", "#000")
-    .attr("stroke-linejoin", "round")
-    .attr("stroke-linecap", "round");
-    */
-
-    var placesWC2 = g.append("g")
+    var placesWC2 = svgWC.append('g')
       .attr("id", "places_WC2")
       .attr("class", "WC2")
       .attr("opacity", 0);
@@ -389,7 +489,8 @@ var scrollVis = function () {
       .attr("stroke", "#000000")
       .attr('fill', '#b8b8b8')
       .attr('class', 'WC2')
-      .attr('opacity', 0);
+      .attr('opacity', 0)
+      .lower();
 
 
     placesWC2
@@ -399,10 +500,8 @@ var scrollVis = function () {
       .attr("stroke", "#000000")
       .attr("fill", "#b8b8b8")
       .attr('class', 'WC2')
-      .attr('opacity', 0);
-
-
-
+      .attr('opacity', 0)
+    
     //Define tooltip
     var tooltip_wc2 = d3.select('body').append('div')
       .attr('class', 'tooltip')
@@ -420,22 +519,20 @@ var scrollVis = function () {
       .attr('class', 'WC2')
       .attr('opacity', 0);
 
-
-    /*
   placesWC2.selectAll("text")
     .data(WC2data)
     .enter().append("text")
     .attr("x", function (d) { return projectionWC2([d.long, d.lat])[0]; })
     .attr("y", function (d) { return projectionWC2([d.long, d.lat])[1] + 8; })
   //   .text(function(d) { return d.city});
-  */
+  
 
     function handleMouseOver(d) {  // Add interactivity
-      if (inWC2) {
+      if (checkIn.inWC2) {
         tooltip_wc2.style('opacity', 0.9)
         //Information to display on tooltip
         tooltip_wc2.html(function () {
-          return d.city + "," + d.city_count
+          return "City: " + d.city + "<br> Number of startups: " + d.city_count
         })
           .style('left', d3.event.pageX + 10 + 'px')
           .style('top', d3.event.pageY - 28 + 'px')
@@ -445,6 +542,7 @@ var scrollVis = function () {
     function handleMouseOut(d, i) {
       tooltip_wc2.style('opacity', 0)
     }
+    
 
     //---------------------------------------------------------------------
     // Woochul's map 2 end
@@ -454,14 +552,14 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
     // Woochul's map 3 start
     //---------------------------------------------------------------------
-
-    var placesWC3 = g.append('g')
+/*
+    var placesWC3 = svgWC.append('g')
       .attr("id", "places_WC3")
       .attr("class", "WC3")
       .attr("opacity", 0);
 
     var projectionWC3 = d3.geoMercator()
-      .translate([width / 2.2, height / 1.5]);
+      .translate([width / 2.2 + 500, height / 1.5 + 100])
 
     var path = d3.geoPath()
       .projection(projectionWC3);
@@ -521,7 +619,7 @@ var scrollVis = function () {
     function handleMouseOut(d, i) {
       tooltip_wc3.style('opacity', 0)
     }
-
+*/
 
     //---------------------------------------------------------------------
     // Woochul's map 3 end
@@ -704,7 +802,7 @@ var scrollVis = function () {
     // color palette
     var color = d3.scaleOrdinal()
       .domain(allKeys)
-      .range(['#F06A93', '#CD59B1', '#A97DD8', '#F38787', '#EF8D5D', '#3FB68E', '#4D78A2', '#3AB5C2', '#6973F6', '#74ABE2'])
+      .range(colors) //['#F06A93', '#CD59B1', '#A97DD8', '#F38787', '#EF8D5D', '#3FB68E', '#4D78A2', '#3AB5C2', '#6973F6', '#74ABE2'])
     
     // Add titles    
     gKD2      
@@ -785,12 +883,8 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
 
     //---------------------------------------------------------------------
-    // Word cloud
+    // Word cloud start
     //---------------------------------------------------------------------
-
-    //showCloud(wordCloudData)
-
-  //function showCloud(data) {        
     wordScale = d3.scaleLinear().domain([0, 100]).range([0, 150]).clamp(true);      
     var gWordCloud = d3.select("svg")
               .select('g')
@@ -816,7 +910,7 @@ var scrollVis = function () {
     function draw(words) { 
         var cloud = gWordCloud.selectAll("text").data(words)
 
-        colors = ['#F06A93', '#CD59B1', '#A97DD8', '#F38787', '#EF8D5D', '#3FB68E', '#4D78A2', '#3AB5C2', '#6973F6', '#74ABE2']
+        
         //Entering words
         cloud.enter()
             .append("text")                
@@ -836,6 +930,52 @@ var scrollVis = function () {
             })
             .attr('class','wordCloud');             
       }  
+    //---------------------------------------------------------------------
+    // Word cloud end
+    //---------------------------------------------------------------------
+
+    //---------------------------------------------------------------------
+    // Lists of 10 major industries Start
+    //---------------------------------------------------------------------
+    wordScale = d3.scaleLinear().domain([0, 100]).range([0, 150]).clamp(true);      
+    var gListInd = d3.select("svg")
+              .select('g')
+              .append("g")
+              //.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+              
+    wordCloudData2.sort(function(a,b){return d3.descending(Number(a.frequency), Number(b.frequency))})
+
+    var colorInd = {'AI':'#F06A93', 'E-Commerce':'#CD59B1', 'Education':'#A97DD8', 'F&B':'#F38787', 'Financial Services':'#EF8D5D', 'Health Care':'#3FB68E', 'Manufacturing':'#4D78A2', 'Security':'#3AB5C2', 'Software':'#6973F6', 'Transportation':'#74ABE2'}
+
+    maxFreq = d3.max(wordCloudData2, d => d.frequency);
+    baseFontSize = 60;
+    gListInd.selectAll('text')
+            .data(wordCloudData2)
+            .enter()
+            .append('text')
+            .text(function(d){ return d.text})
+            .attr('x',function(d,i){
+              if (i < 5){
+                return width / 4 + 30
+              } else {
+                return width * 3 / 4
+              }
+            })
+            .attr('y', function(d,i){
+              return (i % 5) * height / 5 + + height / 10
+            })
+            .style('font-size',function(d){
+              return Math.sqrt(d.frequency / maxFreq) * baseFontSize + "px"
+            })
+            .style("fill", function (d) {
+              return colorInd[d.text];
+            })
+            .attr('text-anchor','middle')
+            .attr('class','listInd')                
+      
+    //---------------------------------------------------------------------
+    // Lists of 10 major industries End
+    //---------------------------------------------------------------------
 
   }
 
@@ -848,9 +988,24 @@ var scrollVis = function () {
    */
   var setupSections = function () {
     // activateFunctions are called each
-    // time the active section changes
-    activateFunctions[0] = showTitle;
-    //activateFunctions[1] = showFillerTitle;
+    // time the active section changes  
+
+    activateFunctions[0] = showRbc;
+    activateFunctions[1] = showWordCloud;
+    activateFunctions[2] = showlistInd;
+    activateFunctions[3] = showYooBin;
+    activateFunctions[4] = showKeondo1;
+    activateFunctions[5] = showKeondo2;    
+    activateFunctions[6] = showYoungJun1;
+    activateFunctions[7] = showYoungJun2;
+    activateFunctions[8] = showWooChul3;
+    activateFunctions[9] = showWooChul2;
+    //activateFunctions[10] = showWooChul3;
+    //activateFunctions[11] = showTitle; 
+    
+
+    /*
+    activateFunctions[0] = showTitle;    
     activateFunctions[1] = showYooBin;
     activateFunctions[2] = showRbc;
     activateFunctions[3] = showWooChul1;
@@ -861,6 +1016,8 @@ var scrollVis = function () {
     activateFunctions[8] = showKeondo1;
     activateFunctions[9] = showKeondo2;
     activateFunctions[10] = showWordCloud;
+    activateFunctions[11] = showlistInd;
+    */
 
     // updateFunctions are called while
     // in a particular section to update
@@ -889,6 +1046,17 @@ var scrollVis = function () {
    * user may be scrolling up or down).
    *
    */
+
+    function translateSvg(){
+      svg.attr('height', 1);
+      d3.select('.svgWC').attr('height', 600);      
+    }
+
+    function translateSvgWC(){
+      svg.attr('height', 600);
+      d3.select('.svgWC').attr('height',1);   
+    }
+  
 
   /**
    * showTitle - initial title
@@ -975,10 +1143,12 @@ var scrollVis = function () {
     checkIn.inWC1 = 1 
     hideOthers()
 
-    g.selectAll('.WC1')
+    d3.selectAll('.WC1')
       .transition()
       .duration(600)
-      .attr('opacity', 1);
+      .attr('opacity', 1)  
+
+    
 
   }
 
@@ -990,10 +1160,16 @@ var scrollVis = function () {
     checkIn.inWC2 = 1 
     hideOthers()
 
-    g.selectAll('.WC2')
+    d3.selectAll('.WC2')
       .transition()
       .duration(600)
       .attr('opacity', 1);
+
+    d3.selectAll('circle')            
+      .transition()
+      .duration(600)
+      .attr('opacity', 0.6)
+      .style('opacity',0.6);
   }
 
   function showWooChul3() {
@@ -1007,13 +1183,20 @@ var scrollVis = function () {
     $('.WC3')
       .css('opacity', 1)
 
-    g.selectAll('.WC3')
+    d3.selectAll('.WC3')
       .transition()
       .duration(600)
       .attr('opacity', 1);
     
+    d3.selectAll('circle')      
+      .transition()
+      .duration(600)
+      .attr('opacity', 0.6)
+      .style('opacity',0.6);
+    
     $('.btn-industry')
       .css('opacity',1)
+      translateSvg();
   }
 
   function showYoungJun1() {
@@ -1051,10 +1234,12 @@ var scrollVis = function () {
     updateYJ2("All Industries")
 
     $('.YJ2')
-      .css('opacity', 1)
+      .css('opacity', 0.8)
     
     $('.btn-industry')
-      .css('opacity',1)
+      .css('opacity', 1)
+
+    translateSvgWC();
 
   }
 
@@ -1114,6 +1299,22 @@ var scrollVis = function () {
     
   }
 
+  function showlistInd() {
+
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+
+    checkIn.inlistInd = 1
+    hideOthers(); 
+
+    g.selectAll('.listInd')
+      .transition()
+      .duration(600)
+      .attr('opacity', 0.8);
+    
+  }
+
 /*
   Hide all components
 */
@@ -1160,7 +1361,7 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
 
-    g.selectAll('.WC1')
+    d3.selectAll('.WC1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
@@ -1169,13 +1370,13 @@ var scrollVis = function () {
     $('.btn-industry')
       .css('opacity',0);
     
-    g.selectAll('.WC2')
+    d3.selectAll('.WC2')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
 
-    g.selectAll('.WC3')
+    d3.selectAll('.WC3')
       .transition()
       .duration(0)
       .attr('opacity', 0);
@@ -1206,12 +1407,10 @@ var scrollVis = function () {
       .duration(0)
       .attr('opacity', 0);
 
-
     g.selectAll('.KD2')
       .transition()
       .duration(0)
       .attr('opacity', 0);
-
 
     g.selectAll('.KD1')
       .transition()
@@ -1227,13 +1426,11 @@ var scrollVis = function () {
       .transition()
       .duration(600)
       .attr('opacity', 0);
-
-      /*
-    g.select('.wordCloud')      
+      
+    g.selectAll('.listInd')      
       .transition()
-      .duration(1000)
-      .text('')
-      */
+      .duration(0)
+      .attr('opacity', 0);      
   }
 
 
@@ -1261,40 +1458,7 @@ var scrollVis = function () {
       .transition().duration(500)
       .style('opacity', 0);
   }
-
-  /**
-   * UPDATE FUNCTIONS
-   *
-   * These will be called within a section
-   * as the user scrolls through it.
-   *
-   * We use an immediate transition to
-   * update visual elements based on
-   * how far the user has scrolled
-   *
-   */
-
-  /**
-   * updateCough - increase/decrease
-   * cough text and color
-   *
-   * @param progress - 0.0 - 1.0 -
-   *  how far user has scrolled in section
-   */
-  function updateCough(progress) {
-    g.selectAll('.cough')
-      .transition()
-      .duration(0)
-      .attr('opacity', progress);
-
-    g.selectAll('.hist')
-      .transition('cough')
-      .duration(0)
-      .style('fill', function (d) {
-        return (d.x0 >= 14) ? coughColorScale(progress) : '#008080';
-      });
-  }
-
+ 
   /**
    * DATA FUNCTIONS
    *
@@ -1357,7 +1521,7 @@ var scrollVis = function () {
  *
  * @param data - loaded tsv data
  */
-function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data,wordCloudData) {
+function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data, wordCloudData, wordCloudData2) {
   
 
   // create a new plot and
@@ -1375,7 +1539,8 @@ function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData,
       "YJPieData": YJPieData,
       "KDdata": KDdata,
       "WC3data": WC3data,
-      "wordCloudData": wordCloudData
+      "wordCloudData": wordCloudData,
+      "wordCloudData2": wordCloudData2
     })
     .call(plot);
 
@@ -1418,8 +1583,8 @@ function updateBarYB() {
   d3.selectAll(".filter").each(function (d) {
     bt = d3.select(this)
     if (bt.property("checked")) {
-      svg = d3.select(this).selectAll('svg')
-      g = d3.selectAll('svg').select('g')
+      svg = d3.select(this).selectAll('.svgBase')
+      g = d3.selectAll('.svgBase').select('g')
       console.log(svg)
       g.select("#bar0").transition().attr("opacity", 0)
       g.select("#bar1").transition().attr("opacity", 0)
@@ -1489,7 +1654,7 @@ function updateYJ2(Industry) {
   var YJ2radius = 200
 
   // append the svg object to the div called 'my_dataviz'
-  svgYJ2 = d3.selectAll('svg')
+  svgYJ2 = d3.selectAll('.svgBase')
   gYJ2 = svgYJ2.select('g').append('g').attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
   gYJ2.append("g")
     .attr("class", "slices");
@@ -1735,7 +1900,7 @@ function updateRBC() {
           d.colour = d3.hsl(Math.random() * 360, 0.75, 0.75)
       });
 
-    gRbc = d3.selectAll('svg')
+    gRbc = d3.select('.svgBase')
                 .select('.gRbc')                 
 
     let ticker = d3.interval(e => {
@@ -1910,7 +2075,7 @@ function updateRBC() {
     
     
         
-      d3.selectAll('svg')
+      d3.selectAll('.svgBase')
         .select('.gRbc')
         .select('.yearText')          
         .html(~~year);
@@ -1924,11 +2089,12 @@ function updateRBC() {
 function updateWC3(Industry){
   if (!checkIn.inWC3) return;
 
-  WC3data = WC3dataMap[Industry]
-  console.log(WC3data)
+  WC3data = WC3dataMap[Industry] 
 
   // function add
   function handleMouseOver(d) {  // Add interactivity
+
+    console.log("WC3 mouse over")
 
     WC3tooltip = d3.select('body').select('#tooltipWC3')
       .attr('class', 'tooltip')
@@ -1957,9 +2123,9 @@ function updateWC3(Industry){
     var projectionWC3 = d3.geoMercator()
       .translate([width / 2.2, height / 1.5]);
 
-    var WC3u = d3.select('svg')
-      .select('g')
-      .select('#places_WC3')
+    //var WC3u = d3.selectAll('.svgWC')
+    //  .select('g')
+    var WC3u = d3.select('#places_WC3')
       .selectAll("circle")
       .data(data)
 
@@ -1974,6 +2140,7 @@ function updateWC3(Industry){
       .attr("cy", function (d) { return projectionWC3([d.long, d.lat])[1]; })
       .attr("r", function (d) { return Math.sqrt(d.city_ind_count / maxCount) * 30 })
       .attr('class', 'WC3')
+      .attr("opacity",0.6)
 
     WC3u
       .on("mouseover", handleMouseOver)
@@ -1989,23 +2156,24 @@ function updateWC3(Industry){
 function updateKD2(Industry){
   if (!checkIn.inKD2) return;
 
-  d3.select('svg')
+  d3.select('.svgBase')
       .select('g')      
       .selectAll(`.rectKD2`)
       .attr('opacity', 0)
 
   if (Industry != 'All Industries'){
-    d3.select('svg')
+    d3.select('.svgBase')
       .select('g')      
       .selectAll(`.rectKD2`)
       .attr('opacity', 0.8)
 
-    d3.select('svg')
+    d3.select('.svgBase')
       .select('g')
       .select(`#rectKD2_${Industry}`)
       .attr('opacity', 0)
   }
 }
+
 /*
   Button control center
 */
@@ -2036,4 +2204,5 @@ d3.queue()
   .defer(d3.tsv, 'data/crunch_data_grp_NoEmployees2.tsv')
   .defer(d3.csv, "wc_map/map3_data/map3_dec4_0.csv")
   .defer(d3.csv, "data/wordCloudData.csv")
+  .defer(d3.csv, "data/wordCloudData2.csv")
   .await(display)
