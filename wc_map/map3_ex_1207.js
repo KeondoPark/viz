@@ -124,8 +124,10 @@ function update(data){
             .enter().append("circle").merge(WC3u)
             .attr("cx", function(d) { return WC3projection([d.long, d.lat])[0]; })
             .attr("cy", function(d) { return WC3projection([d.long, d.lat])[1]; })
-            .attr("r", function(d) { return d.city_ind_count });
-        
+            .attr("r", function(d) { return d.city_ind_count })
+            .style("fill", function(d) { return d.color })
+            .attr();
+
             WC3u
             .on("mouseover", handleMouseOver)
             .on("mouseout", handleMouseOut);

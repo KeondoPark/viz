@@ -1,37 +1,37 @@
-,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
-19,Kahoot!,"Oslo, Oslo, Norway",8,Education,2012/12/14,59.9133301,10.7389701,1,1
-123,MasterClass,"San Francisco, California, United States",8,Education,2012/01/01,37.7790262,-122.4199061,161,7
-136,Coursera,"Mountain View, California, United States",8,Education,2012/01/01,37.3893889,-122.0832101,21,2
-152,Encantos,"Culver City, California, United States",8,Education,2016/01/01,34.0211224,-118.3964665,6,1
-183,Skilljar,"Seattle, Washington, United States",8,Education,2013/01/01,47.6038321,-122.3300624,14,1
-198,Classplus,"Noida, Uttar Pradesh, India",8,Education,2018/01/28,28.5356329,77.3910727,4,1
-211,BetterUp,"San Francisco, California, United States",8,Education,2013/01/01,37.7790262,-122.4199061,161,7
-261,Wonderschool,"San Francisco, California, United States",8,Education,2012/01/01,37.7790262,-122.4199061,161,7
-264,CareAcademy,"Cambridge, Massachusetts, United States",8,Education,2013/10/01,42.3750997,-71.1056157,8,1
-267,InnoEnergy,"Eindhoven, Noord-Brabant, The Netherlands",8,Education,2010/12/06,51.4392648,5.478633,1,1
-269,UpGrad,"Mumbai, Maharashtra, India",8,Education,2015/03/01,18.9387711,72.8353355,13,3
-327,Miko,"Mumbai, Maharashtra, India",8,Education,2015/01/01,18.9387711,72.8353355,13,3
-406,Clever,"San Francisco, California, United States",8,Education,2012/01/01,37.7790262,-122.4199061,161,7
-416,TradingView,"London, England, United Kingdom",8,Education,2011/09/01,51.5073219,-0.1276474,48,2
-465,General Assembly,"New York, New York, United States",8,Education,2011/01/03,40.7127281,-74.0060152,112,5
-501,Lingokids,"Wilmington, Delaware, United States",8,Education,2016/01/01,39.7459468,-75.546589,1,1
-506,Career Karma,"San Francisco, California, United States",8,Education,2018/01/01,37.7790262,-122.4199061,161,7
-526,ExecOnline,"New York, New York, United States",8,Education,2012/04/01,40.7127281,-74.0060152,112,5
-527,Winuall,"Bangalore, Karnataka, India",8,Education,2019/06/03,12.9791198,77.5912997,15,3
-540,Huohua Siwei,"Beijing, Beijing, China",8,Education,2017/01/01,39.9020668,116.718583,15,1
-572,Skillshare,"New York, New York, United States",8,Education,2010/01/01,40.7127281,-74.0060152,112,5
-662,Udacity,"Mountain View, California, United States",8,Education,2011/01/01,37.3893889,-122.0832101,21,2
-671,Knoma,"London, England, United Kingdom",8,Education,2018/10/01,51.5073219,-0.1276474,48,2
-679,Fiveable,"Milwaukee, Wisconsin, United States",8,Education,2018/04/06,43.0349931,-87.922497,1,1
-718,LEAD School,"Mumbai, Maharashtra, India",8,Education,2012/01/01,18.9387711,72.8353355,13,3
-727,BYJU’S,"Bangalore, Karnataka, India",8,Education,2011/11/30,12.9791198,77.5912997,15,3
-783,Course Hero,"Redwood City, California, United States",8,Education,2006/10/01,37.4863239,-122.232523,13,1
-807,Guild Education,"Denver, Colorado, United States",8,Education,2015/06/01,39.7392364,-104.9848623,5,1
-827,Bitwise Industries,"Fresno, California, United States",8,Education,2013/07/01,36.7394421,-119.7848307,1,1
-840,Golden,"San Francisco, California, United States",8,Education,2017/01/01,37.7790262,-122.4199061,161,7
-855,Forage,"San Francisco, California, United States",8,Education,2017/01/01,37.7790262,-122.4199061,161,7
-872,Kaltura,"New York, New York, United States",8,Education,2006/06/01,40.7127281,-74.0060152,112,5
-980,U.S. Department of Education,"Washington, District of Columbia, United States",8,Education,1980/01/01,38.8949924,-77.0365581,5,1
-982,Unacademy,"Bangalore, Karnataka, India",8,Education,2015/01/01,12.9791198,77.5912997,15,3
-983,Campuswire,"New York, New York, United States",8,Education,2016/08/01,40.7127281,-74.0060152,112,5
-998,Pluralsight,"Farmington, Utah, United States",8,Education,2004/01/01,40.9804423,-111.8874688,1,1
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count,color
+19,Kahoot!,"Oslo, Oslo, Norway",8,Education,2012/12/14,59.9133301,10.7389701,1,1,#A97DD8
+123,MasterClass,"San Francisco, California, United States",8,Education,2012/01/01,37.7790262,-122.4199061,161,7,#A97DD8
+136,Coursera,"Mountain View, California, United States",8,Education,2012/01/01,37.3893889,-122.0832101,21,2,#A97DD8
+152,Encantos,"Culver City, California, United States",8,Education,2016/01/01,34.0211224,-118.3964665,6,1,#A97DD8
+183,Skilljar,"Seattle, Washington, United States",8,Education,2013/01/01,47.6038321,-122.3300624,14,1,#A97DD8
+198,Classplus,"Noida, Uttar Pradesh, India",8,Education,2018/01/28,28.5356329,77.3910727,4,1,#A97DD8
+211,BetterUp,"San Francisco, California, United States",8,Education,2013/01/01,37.7790262,-122.4199061,161,7,#A97DD8
+261,Wonderschool,"San Francisco, California, United States",8,Education,2012/01/01,37.7790262,-122.4199061,161,7,#A97DD8
+264,CareAcademy,"Cambridge, Massachusetts, United States",8,Education,2013/10/01,42.3750997,-71.1056157,8,1,#A97DD8
+267,InnoEnergy,"Eindhoven, Noord-Brabant, The Netherlands",8,Education,2010/12/06,51.4392648,5.478633,1,1,#A97DD8
+269,UpGrad,"Mumbai, Maharashtra, India",8,Education,2015/03/01,18.9387711,72.8353355,13,3,#A97DD8
+327,Miko,"Mumbai, Maharashtra, India",8,Education,2015/01/01,18.9387711,72.8353355,13,3,#A97DD8
+406,Clever,"San Francisco, California, United States",8,Education,2012/01/01,37.7790262,-122.4199061,161,7,#A97DD8
+416,TradingView,"London, England, United Kingdom",8,Education,2011/09/01,51.5073219,-0.1276474,48,2,#A97DD8
+465,General Assembly,"New York, New York, United States",8,Education,2011/01/03,40.7127281,-74.0060152,112,5,#A97DD8
+501,Lingokids,"Wilmington, Delaware, United States",8,Education,2016/01/01,39.7459468,-75.546589,1,1,#A97DD8
+506,Career Karma,"San Francisco, California, United States",8,Education,2018/01/01,37.7790262,-122.4199061,161,7,#A97DD8
+526,ExecOnline,"New York, New York, United States",8,Education,2012/04/01,40.7127281,-74.0060152,112,5,#A97DD8
+527,Winuall,"Bangalore, Karnataka, India",8,Education,2019/06/03,12.9791198,77.5912997,15,3,#A97DD8
+540,Huohua Siwei,"Beijing, Beijing, China",8,Education,2017/01/01,39.9020668,116.718583,15,1,#A97DD8
+572,Skillshare,"New York, New York, United States",8,Education,2010/01/01,40.7127281,-74.0060152,112,5,#A97DD8
+662,Udacity,"Mountain View, California, United States",8,Education,2011/01/01,37.3893889,-122.0832101,21,2,#A97DD8
+671,Knoma,"London, England, United Kingdom",8,Education,2018/10/01,51.5073219,-0.1276474,48,2,#A97DD8
+679,Fiveable,"Milwaukee, Wisconsin, United States",8,Education,2018/04/06,43.0349931,-87.922497,1,1,#A97DD8
+718,LEAD School,"Mumbai, Maharashtra, India",8,Education,2012/01/01,18.9387711,72.8353355,13,3,#A97DD8
+727,BYJU’S,"Bangalore, Karnataka, India",8,Education,2011/11/30,12.9791198,77.5912997,15,3,#A97DD8
+783,Course Hero,"Redwood City, California, United States",8,Education,2006/10/01,37.4863239,-122.232523,13,1,#A97DD8
+807,Guild Education,"Denver, Colorado, United States",8,Education,2015/06/01,39.7392364,-104.9848623,5,1,#A97DD8
+827,Bitwise Industries,"Fresno, California, United States",8,Education,2013/07/01,36.7394421,-119.7848307,1,1,#A97DD8
+840,Golden,"San Francisco, California, United States",8,Education,2017/01/01,37.7790262,-122.4199061,161,7,#A97DD8
+855,Forage,"San Francisco, California, United States",8,Education,2017/01/01,37.7790262,-122.4199061,161,7,#A97DD8
+872,Kaltura,"New York, New York, United States",8,Education,2006/06/01,40.7127281,-74.0060152,112,5,#A97DD8
+980,U.S. Department of Education,"Washington, District of Columbia, United States",8,Education,1980/01/01,38.8949924,-77.0365581,5,1,#A97DD8
+982,Unacademy,"Bangalore, Karnataka, India",8,Education,2015/01/01,12.9791198,77.5912997,15,3,#A97DD8
+983,Campuswire,"New York, New York, United States",8,Education,2016/08/01,40.7127281,-74.0060152,112,5,#A97DD8
+998,Pluralsight,"Farmington, Utah, United States",8,Education,2004/01/01,40.9804423,-111.8874688,1,1,#A97DD8

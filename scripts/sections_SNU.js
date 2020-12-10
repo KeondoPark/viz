@@ -2139,6 +2139,7 @@ function updateWC3(Industry){
       .attr("cx", function (d) { return projectionWC3([d.long, d.lat])[0]; })
       .attr("cy", function (d) { return projectionWC3([d.long, d.lat])[1]; })
       .attr("r", function (d) { return Math.sqrt(d.city_ind_count / maxCount) * 30 })
+      .style("fill", function(d) { return d.color })
       .attr('class', 'WC3')
       .attr("opacity",0.6)
 

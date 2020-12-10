@@ -1,151 +1,151 @@
-,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
-0,SoftBank,"Tokyo, Tokyo, Japan",2,Financial Services,1981/09/03,35.6777691,139.7646365,3,1
-1,Citigroup,"New York, New York, United States",2,Financial Services,1998/10/08,40.7127281,-74.0060152,112,22
-8,Seedrs,"London, England, United Kingdom",2,Financial Services,2009/01/01,51.5073219,-0.1276474,48,21
-12,Razorpay,"Bangalore, Karnataka, India",2,Financial Services,2014/12/01,12.9791198,77.5912997,15,2
-13,Ripple,"San Francisco, California, United States",2,Financial Services,2012/01/01,37.7790262,-122.4199061,161,17
-20,Crowdcube,"Exeter, Devon, United Kingdom",2,Financial Services,2010/08/01,50.725562,-3.5269108,1,1
-22,Tipalti,"San Mateo, California, United States",2,Financial Services,2010/01/01,37.496904,-122.3330573,18,2
-26,Silver Lake,"Menlo Park, California, United States",2,Financial Services,1999/01/01,37.4519671,-122.1779927,6,3
-43,Plaid,"San Francisco, California, United States",2,Financial Services,2012/01/01,37.7790262,-122.4199061,161,17
-55,Uniswap,"Brooklyn, New York, United States",2,Financial Services,2018/01/01,40.6501038,-73.9495823,7,2
-57,Nubank,"São Paulo, Sao Paulo, Brazil",2,Financial Services,2013/05/06,-23.5506507,-46.6333824,2,2
-72,BlackRock,"New York, New York, United States",2,Financial Services,1988/01/01,40.7127281,-74.0060152,112,22
-73,TransferWise,"London, England, United Kingdom",2,Financial Services,2011/01/01,51.5073219,-0.1276474,48,21
-79,MineralTree,"Cambridge, Massachusetts, United States",2,Financial Services,2010/01/01,42.3750997,-71.1056157,8,1
-85,Rocket Internet,"Berlin, Berlin, Germany",2,Financial Services,2007/01/01,52.5170365,13.3888599,14,3
-86,Techstars,"Boulder, Colorado, United States",2,Financial Services,2006/08/01,40.0149856,-105.2705456,1,1
-89,Apollo,"New York, New York, United States",2,Financial Services,1990/01/01,40.7127281,-74.0060152,112,22
-96,TrueLayer,"London, England, United Kingdom",2,Financial Services,2016/07/14,51.5073219,-0.1276474,48,21
-106,Draper Esprit,"London, England, United Kingdom",2,Financial Services,2006/01/01,51.5073219,-0.1276474,48,21
-108,Creative Destruction Lab,"Toronto, Ontario, Canada",2,Financial Services,2012/08/01,43.6534817,-79.3839347,9,5
-117,Melio,"New York, New York, United States",2,Financial Services,2018/07/01,40.7127281,-74.0060152,112,22
-122,Avaloq,"Zürich, Zurich, Switzerland",2,Financial Services,1991/01/01,47.3723941,8.5423328,4,2
-124,Aura,"San Francisco, California, United States",2,Financial Services,2012/01/01,37.7790262,-122.4199061,161,17
-128,Kraken,"San Francisco, California, United States",2,Financial Services,2011/07/28,37.7790262,-122.4199061,161,17
-129,Marco,"Miami, Florida, United States",2,Financial Services,2019/01/01,25.7742658,-80.1936589,4,1
-138,MarketFinance,"London, England, United Kingdom",2,Financial Services,2011/01/01,51.5073219,-0.1276474,48,21
-143,Spendesk,"Paris, Ile-de-France, France",2,Financial Services,2016/01/01,48.8566969,2.3514616,10,3
-156,Airwallex,"Quarry Bay, Hong Kong Island, Hong Kong",2,Financial Services,2015/12/01,22.302711,114.177216,2,1
-168,Ava Labs,"Brooklyn, New York, United States",2,Financial Services,2018/01/01,40.6501038,-73.9495823,7,2
-178,Bitpanda,"Vienna, Wien, Austria",2,Financial Services,2014/11/28,48.2083537,16.3725042,2,1
-197,Workday,"Pleasanton, California, United States",2,Financial Services,2005/03/01,37.6624312,-121.8746789,3,1
-199,CICC,"Beijing, Beijing, China",2,Financial Services,1995/07/31,39.9020668,116.718583,15,1
-207,Starling Bank,"London, England, United Kingdom",2,Financial Services,2014/01/01,51.5073219,-0.1276474,48,21
-217,Monzo,"London, England, United Kingdom",2,Financial Services,2015/02/01,51.5073219,-0.1276474,48,21
-227,Wirecard,"Munich, Bayern, Germany",2,Financial Services,1999/05/06,48.1371079,11.5753822,4,1
-228,Adyen,"Amsterdam, Noord-Holland, The Netherlands",2,Financial Services,2006/01/01,52.3727598,4.8936041,6,3
-238,Wirex,"London, England, United Kingdom",2,Financial Services,2014/12/01,51.5073219,-0.1276474,48,21
-243,ICICI Bank,"Mumbai, Maharashtra, India",2,Financial Services,1994/01/01,18.9387711,72.8353355,13,2
-250,PayMongo,"Taguig, Rizal, Philippines",2,Financial Services,2019/03/01,14.5266254,121.074403,1,1
-251,Arcus,"New York, New York, United States",2,Financial Services,2013/05/01,40.7127281,-74.0060152,112,22
-253,TransUnion,"Chicago, Illinois, United States",2,Financial Services,1968/01/01,41.8755616,-87.6244212,16,3
-265,IP Group Plc,"London, England, United Kingdom",2,Financial Services,2001/01/01,51.5073219,-0.1276474,48,21
-272,N26,"Berlin, Berlin, Germany",2,Financial Services,2013/02/01,52.5170365,13.3888599,14,3
-274,Macquarie Group,"Sydney, New South Wales, Australia",2,Financial Services,1969/01/01,-33.8548157,151.2164539,4,1
-284,PhonePe,"New Delhi, Delhi, India",2,Financial Services,2015/12/01,28.6138954,77.2090057,5,2
-288,Wealthsimple,"Toronto, Ontario, Canada",2,Financial Services,2014/01/01,43.6534817,-79.3839347,9,5
-290,CircleUp,"San Francisco, California, United States",2,Financial Services,2012/01/01,37.7790262,-122.4199061,161,17
-298,Gusto,"San Francisco, California, United States",2,Financial Services,2011/11/01,37.7790262,-122.4199061,161,17
-304,Marqeta,"Oakland, California, United States",2,Financial Services,2010/01/01,37.8044557,-122.2713563,9,3
-308,Tink,"Stockholm, Stockholms Lan, Sweden",2,Financial Services,2012/06/12,59.3251172,18.0710935,7,2
-309,Eurazeo,"Paris, Ile-de-France, France",2,Financial Services,1969/07/18,48.8566969,2.3514616,10,3
-312,GoCardless,"London, England, United Kingdom",2,Financial Services,2011/01/01,51.5073219,-0.1276474,48,21
-321,Railsbank,"London, England, United Kingdom",2,Financial Services,2016/01/01,51.5073219,-0.1276474,48,21
-323,Khatabook,"Bangalore, Karnataka, India",2,Financial Services,2018/01/01,12.9791198,77.5912997,15,2
-326,Veem,"San Francisco, California, United States",2,Financial Services,2014/02/01,37.7790262,-122.4199061,161,17
-328,Indiegogo,"San Francisco, California, United States",2,Financial Services,2008/01/14,37.7790262,-122.4199061,161,17
-330,Clair,"New York, New York, United States",2,Financial Services,2019/10/01,40.7127281,-74.0060152,112,22
-333,Polkadot,"Manchester, Manchester, United Kingdom",2,Financial Services,2016/01/01,53.4794892,-2.2451148,2,1
-340,Stripe,"San Francisco, California, United States",2,Financial Services,2010/01/01,37.7790262,-122.4199061,161,17
-347,Betterment,"New York, New York, United States",2,Financial Services,2008/08/25,40.7127281,-74.0060152,112,22
-373,Thunes,"Singapore, Central Region, Singapore",2,Financial Services,2016/01/01,16.7796467,96.175243,7,3
-401,Facet Wealth,"Baltimore, Maryland, United States",2,Financial Services,2016/01/01,39.2908816,-76.610759,2,1
-403,Broadridge,"New York, New York, United States",2,Financial Services,1962/01/01,40.7127281,-74.0060152,112,22
-414,Morgan Stanley,"New York, New York, United States",2,Financial Services,1935/01/01,40.7127281,-74.0060152,112,22
-415,Crypto.com,"Sai Wan, Hong Kong Island, Hong Kong",2,Financial Services,2016/06/01,22.2858376,114.134023,1,1
-417,BloomCredit,"New York, New York, United States",2,Financial Services,2016/08/01,40.7127281,-74.0060152,112,22
-428,Lending Club,"San Francisco, California, United States",2,Financial Services,2007/01/01,37.7790262,-122.4199061,161,17
-439,GGV Capital,"Menlo Park, California, United States",2,Financial Services,2000/01/01,37.4519671,-122.1779927,6,3
-455,Funding Circle,"London, England, United Kingdom",2,Financial Services,2010/01/01,51.5073219,-0.1276474,48,21
-457,Generate Capital,"San Francisco, California, United States",2,Financial Services,2014/01/01,37.7790262,-122.4199061,161,17
-463,Veritas Capital,"New York, New York, United States",2,Financial Services,1992/01/01,40.7127281,-74.0060152,112,22
-467,Curve,"London, England, United Kingdom",2,Financial Services,2015/04/02,51.5073219,-0.1276474,48,21
-468,Robinhood,"Menlo Park, California, United States",2,Financial Services,2013/01/01,37.4519671,-122.1779927,6,3
-472,WorldRemit,"London, England, United Kingdom",2,Financial Services,2010/01/01,51.5073219,-0.1276474,48,21
-473,nCino,"Wilmington, North Carolina, United States",2,Financial Services,2012/01/01,34.2257282,-77.9447107,1,1
-476,Circle,"Boston, Massachusetts, United States",2,Financial Services,2013/01/01,42.3602534,-71.0582912,19,3
-480,Nium,"Singapore, Central Region, Singapore",2,Financial Services,2014/01/01,16.7796467,96.175243,7,3
-493,AvidXchange,"Charlotte, North Carolina, United States",2,Financial Services,2000/04/01,35.2272,-80.843083,2,2
-502,Sberbank,"Moscow, Moscow City, Russian Federation",2,Financial Services,1841-01-01,55.7504461,37.6174943,2,1
-503,Unocoin,"Tumkur, Karnataka, India",2,Financial Services,2013/12/01,13.3400771,77.1006208,1,1
-513,BlueVine,"Redwood City, California, United States",2,Financial Services,2013/07/01,37.4863239,-122.232523,13,1
-514,FreshBooks,"Toronto, Ontario, Canada",2,Financial Services,2003/01/01,43.6534817,-79.3839347,9,5
-542,Xero,"Wellington, Wellington, New Zealand",2,Financial Services,2006/07/01,-41.2887953,174.7772114,1,1
-544,Tradeshift,"San Francisco, California, United States",2,Financial Services,2009/07/01,37.7790262,-122.4199061,161,17
-559,Rimilia,"Bromsgrove, Worcestershire, United Kingdom",2,Financial Services,2008/01/01,52.3353816,-2.0597449,1,1
-564,NFP,"New York, New York, United States",2,Financial Services,1998/01/01,40.7127281,-74.0060152,112,22
-567,Wealthfront,"Palo Alto, California, United States",2,Financial Services,2008/01/01,37.4443293,-122.1598465,14,1
-571,Aave,"London, England, United Kingdom",2,Financial Services,2017/05/01,51.5073219,-0.1276474,48,21
-576,Lend Street Financial,"Oakland, California, United States",2,Financial Services,2010/06/01,37.8044557,-122.2713563,9,3
-577,Invesco,"Atlanta, Georgia, United States",2,Financial Services,1935/12/01,33.7490987,-84.3901849,8,4
-579,Nova Credit,"San Francisco, California, United States",2,Financial Services,2016/05/17,37.7790262,-122.4199061,161,17
-598,HSBC,"London, England, United Kingdom",2,Financial Services,1865-01-01,51.5073219,-0.1276474,48,21
-604,Wave,"Toronto, Ontario, Canada",2,Financial Services,2009/07/01,43.6534817,-79.3839347,9,5
-606,NCR,"Atlanta, Georgia, United States",2,Financial Services,1884-01-01,33.7490987,-84.3901849,8,4
-616,Octane Lending,"New York, New York, United States",2,Financial Services,2014/01/01,40.7127281,-74.0060152,112,22
-639,Credit Suisse,"Zürich, Zurich, Switzerland",2,Financial Services,1856-07-05,47.3723941,8.5423328,4,2
-646,Retirable,"New York, New York, United States",2,Financial Services,2019/10/01,40.7127281,-74.0060152,112,22
-652,Unqork,"New York, New York, United States",2,Financial Services,2017/01/01,40.7127281,-74.0060152,112,22
-659,Deutsche Bank,"Frankfurt, Hessen, Germany",2,Financial Services,1870-03-10,50.1106444,8.6820917,1,1
-660,DeadHappy,"Leicester, Leicester, United Kingdom",2,Financial Services,2013/01/01,52.6361398,-1.1330789,1,1
-668,Uncapped,"London, England, United Kingdom",2,Financial Services,2019/09/01,51.5073219,-0.1276474,48,21
-676,BNY Mellon,"New York, New York, United States",2,Financial Services,1784-06-09,40.7127281,-74.0060152,112,22
-677,Airfox,"Boston, Massachusetts, United States",2,Financial Services,2016/01/28,42.3602534,-71.0582912,19,3
-680,SoLo Funds,"Los Angeles, California, United States",2,Financial Services,2016/03/17,34.0536909,-118.2427666,12,1
-686,Factris,"Amsterdam, Noord-Holland, The Netherlands",2,Financial Services,2017/01/01,52.3727598,4.8936041,6,3
-695,Esusu Financial,"New York, New York, United States",2,Financial Services,2016/05/01,40.7127281,-74.0060152,112,22
-700,Stash,"New York, New York, United States",2,Financial Services,2015/02/19,40.7127281,-74.0060152,112,22
-702,Vault,"Austin, Texas, United States",2,Financial Services,2013/01/01,30.2711286,-97.7436995,3,1
-703,Kucoin,"Singapore, Central Region, Singapore",2,Financial Services,2013/01/01,16.7796467,96.175243,7,3
-707,Zopa,"London, England, United Kingdom",2,Financial Services,2004/01/01,51.5073219,-0.1276474,48,21
-708,MK Decision,"San Diego, California, United States",2,Financial Services,2015/07/22,32.7174209,-117.1627714,3,1
-710,Konfio,"Mexico City, Distrito Federal, Mexico",2,Financial Services,2013/04/01,19.4326296,-99.1331785,3,1
-712,Investcorp,"Manama, Al Manamah, Bahrain",2,Financial Services,1982/01/01,26.2332249,50.5779259,1,1
-730,Nav,"Draper, Utah, United States",2,Financial Services,2012/05/01,40.5246711,-111.8638226,1,1
-747,Intuit,"Mountain View, California, United States",2,Financial Services,1983/01/01,37.3893889,-122.0832101,21,1
-753,Zuora,"San Mateo, California, United States",2,Financial Services,2007/01/01,37.496904,-122.3330573,18,2
-757,Acorns,"Irvine, California, United States",2,Financial Services,2012/02/29,33.6856969,-117.8259819,5,1
-762,Luno,"London, England, United Kingdom",2,Financial Services,2013/01/01,51.5073219,-0.1276474,48,21
-765,Securitize,"San Francisco, California, United States",2,Financial Services,2017/11/01,37.7790262,-122.4199061,161,17
-778,Bread,"New York, New York, United States",2,Financial Services,2014/01/01,40.7127281,-74.0060152,112,22
-799,Clearcover,"Chicago, Illinois, United States",2,Financial Services,2016/01/01,41.8755616,-87.6244212,16,3
-805,PolicyBazaar,"Gurgaon, Haryana, India",2,Financial Services,2008/06/01,28.4646148,77.0299194,5,1
-812,Dwolla,"Des Moines, Iowa, United States",2,Financial Services,2008/06/16,41.5910641,-93.6037149,1,1
-825,Finch,"Boston, Massachusetts, United States",2,Financial Services,2019/05/01,42.3602534,-71.0582912,19,3
-829,Mastercard,"Purchase, New York, United States",2,Financial Services,1966/12/16,41.0409305,-73.7145746,2,1
-833,PasarPolis,"Jakarta, Jakarta Raya, Indonesia",2,Financial Services,2015/03/01,-6.1753942,106.827183,5,1
-836,NextCapital,"Chicago, Illinois, United States",2,Financial Services,1996/01/01,41.8755616,-87.6244212,16,3
-852,OnDeck,"New York, New York, United States",2,Financial Services,2007/01/01,40.7127281,-74.0060152,112,22
-853,BitPay,"Atlanta, Georgia, United States",2,Financial Services,2011/05/01,33.7490987,-84.3901849,8,4
-868,Toss,"Seoul, Seoul-t'ukpyolsi, South Korea",2,Financial Services,2011/01/01,37.5326,127.024612,3,1
-869,Allianz,"München, Bayern, Germany",2,Financial Services,1890-01-01,48.1371079,11.5753822,2,1
-874,Financepeer,"Mumbai, Maharashtra, India",2,Financial Services,2017/01/01,18.9387711,72.8353355,13,2
-876,Chime,"San Francisco, California, United States",2,Financial Services,2013/01/01,37.7790262,-122.4199061,161,17
-878,Mosaic,"Oakland, California, United States",2,Financial Services,2011/01/01,37.8044557,-122.2713563,9,3
-883,Bakkt,"Atlanta, Georgia, United States",2,Financial Services,2018/01/01,33.7490987,-84.3901849,8,4
-893,Capitolis,"New York, New York, United States",2,Financial Services,2017/01/01,40.7127281,-74.0060152,112,22
-900,Revolut,"London, England, United Kingdom",2,Financial Services,2015/07/01,51.5073219,-0.1276474,48,21
-915,Bank of America,"Charlotte, North Carolina, United States",2,Financial Services,1998/07/31,35.2272,-80.843083,2,2
-919,iZettle,"Stockholm, Stockholms Lan, Sweden",2,Financial Services,2010/04/01,59.3251172,18.0710935,7,2
-928,Fundbox,"San Francisco, California, United States",2,Financial Services,2013/01/01,37.7790262,-122.4199061,161,17
-941,Barclays,"London, England, United Kingdom",2,Financial Services,1690-11-17,51.5073219,-0.1276474,48,21
-943,Deposit Solutions,"Hamburg, Hamburg, Germany",2,Financial Services,2011/01/01,49.023014,11.808202,2,1
-944,Lendtable,"San Francisco, California, United States",2,Financial Services,2020/03/01,37.7790262,-122.4199061,161,17
-947,BharatPe,"New Delhi, Delhi, India",2,Financial Services,2018/04/01,28.6138954,77.2090057,5,2
-957,Canada Pension Plan Investment Board,"Toronto, Ontario, Canada",2,Financial Services,1997/01/01,43.6534817,-79.3839347,9,5
-960,MoneyLion,"New York, New York, United States",2,Financial Services,2013/01/01,40.7127281,-74.0060152,112,22
-966,QUIN,"Berlin, Berlin, Germany",2,Financial Services,2020/03/01,52.5170365,13.3888599,14,3
-991,Mollie,"Amsterdam, Noord-Holland, The Netherlands",2,Financial Services,2004/01/01,52.3727598,4.8936041,6,3
-992,Lydia,"Paris, Ile-de-France, France",2,Financial Services,2013/01/01,48.8566969,2.3514616,10,3
-999,Rebel,"São Paulo, Sao Paulo, Brazil",2,Financial Services,2016/01/01,-23.5506507,-46.6333824,2,2
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count,color
+0,SoftBank,"Tokyo, Tokyo, Japan",2,Financial Services,1981/09/03,35.6777691,139.7646365,3,1,#EF8D5D
+1,Citigroup,"New York, New York, United States",2,Financial Services,1998/10/08,40.7127281,-74.0060152,112,22,#EF8D5D
+8,Seedrs,"London, England, United Kingdom",2,Financial Services,2009/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+12,Razorpay,"Bangalore, Karnataka, India",2,Financial Services,2014/12/01,12.9791198,77.5912997,15,2,#EF8D5D
+13,Ripple,"San Francisco, California, United States",2,Financial Services,2012/01/01,37.7790262,-122.4199061,161,17,#EF8D5D
+20,Crowdcube,"Exeter, Devon, United Kingdom",2,Financial Services,2010/08/01,50.725562,-3.5269108,1,1,#EF8D5D
+22,Tipalti,"San Mateo, California, United States",2,Financial Services,2010/01/01,37.496904,-122.3330573,18,2,#EF8D5D
+26,Silver Lake,"Menlo Park, California, United States",2,Financial Services,1999/01/01,37.4519671,-122.1779927,6,3,#EF8D5D
+43,Plaid,"San Francisco, California, United States",2,Financial Services,2012/01/01,37.7790262,-122.4199061,161,17,#EF8D5D
+55,Uniswap,"Brooklyn, New York, United States",2,Financial Services,2018/01/01,40.6501038,-73.9495823,7,2,#EF8D5D
+57,Nubank,"São Paulo, Sao Paulo, Brazil",2,Financial Services,2013/05/06,-23.5506507,-46.6333824,2,2,#EF8D5D
+72,BlackRock,"New York, New York, United States",2,Financial Services,1988/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+73,TransferWise,"London, England, United Kingdom",2,Financial Services,2011/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+79,MineralTree,"Cambridge, Massachusetts, United States",2,Financial Services,2010/01/01,42.3750997,-71.1056157,8,1,#EF8D5D
+85,Rocket Internet,"Berlin, Berlin, Germany",2,Financial Services,2007/01/01,52.5170365,13.3888599,14,3,#EF8D5D
+86,Techstars,"Boulder, Colorado, United States",2,Financial Services,2006/08/01,40.0149856,-105.2705456,1,1,#EF8D5D
+89,Apollo,"New York, New York, United States",2,Financial Services,1990/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+96,TrueLayer,"London, England, United Kingdom",2,Financial Services,2016/07/14,51.5073219,-0.1276474,48,21,#EF8D5D
+106,Draper Esprit,"London, England, United Kingdom",2,Financial Services,2006/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+108,Creative Destruction Lab,"Toronto, Ontario, Canada",2,Financial Services,2012/08/01,43.6534817,-79.3839347,9,5,#EF8D5D
+117,Melio,"New York, New York, United States",2,Financial Services,2018/07/01,40.7127281,-74.0060152,112,22,#EF8D5D
+122,Avaloq,"Zürich, Zurich, Switzerland",2,Financial Services,1991/01/01,47.3723941,8.5423328,4,2,#EF8D5D
+124,Aura,"San Francisco, California, United States",2,Financial Services,2012/01/01,37.7790262,-122.4199061,161,17,#EF8D5D
+128,Kraken,"San Francisco, California, United States",2,Financial Services,2011/07/28,37.7790262,-122.4199061,161,17,#EF8D5D
+129,Marco,"Miami, Florida, United States",2,Financial Services,2019/01/01,25.7742658,-80.1936589,4,1,#EF8D5D
+138,MarketFinance,"London, England, United Kingdom",2,Financial Services,2011/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+143,Spendesk,"Paris, Ile-de-France, France",2,Financial Services,2016/01/01,48.8566969,2.3514616,10,3,#EF8D5D
+156,Airwallex,"Quarry Bay, Hong Kong Island, Hong Kong",2,Financial Services,2015/12/01,22.302711,114.177216,2,1,#EF8D5D
+168,Ava Labs,"Brooklyn, New York, United States",2,Financial Services,2018/01/01,40.6501038,-73.9495823,7,2,#EF8D5D
+178,Bitpanda,"Vienna, Wien, Austria",2,Financial Services,2014/11/28,48.2083537,16.3725042,2,1,#EF8D5D
+197,Workday,"Pleasanton, California, United States",2,Financial Services,2005/03/01,37.6624312,-121.8746789,3,1,#EF8D5D
+199,CICC,"Beijing, Beijing, China",2,Financial Services,1995/07/31,39.9020668,116.718583,15,1,#EF8D5D
+207,Starling Bank,"London, England, United Kingdom",2,Financial Services,2014/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+217,Monzo,"London, England, United Kingdom",2,Financial Services,2015/02/01,51.5073219,-0.1276474,48,21,#EF8D5D
+227,Wirecard,"Munich, Bayern, Germany",2,Financial Services,1999/05/06,48.1371079,11.5753822,4,1,#EF8D5D
+228,Adyen,"Amsterdam, Noord-Holland, The Netherlands",2,Financial Services,2006/01/01,52.3727598,4.8936041,6,3,#EF8D5D
+238,Wirex,"London, England, United Kingdom",2,Financial Services,2014/12/01,51.5073219,-0.1276474,48,21,#EF8D5D
+243,ICICI Bank,"Mumbai, Maharashtra, India",2,Financial Services,1994/01/01,18.9387711,72.8353355,13,2,#EF8D5D
+250,PayMongo,"Taguig, Rizal, Philippines",2,Financial Services,2019/03/01,14.5266254,121.074403,1,1,#EF8D5D
+251,Arcus,"New York, New York, United States",2,Financial Services,2013/05/01,40.7127281,-74.0060152,112,22,#EF8D5D
+253,TransUnion,"Chicago, Illinois, United States",2,Financial Services,1968/01/01,41.8755616,-87.6244212,16,3,#EF8D5D
+265,IP Group Plc,"London, England, United Kingdom",2,Financial Services,2001/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+272,N26,"Berlin, Berlin, Germany",2,Financial Services,2013/02/01,52.5170365,13.3888599,14,3,#EF8D5D
+274,Macquarie Group,"Sydney, New South Wales, Australia",2,Financial Services,1969/01/01,-33.8548157,151.2164539,4,1,#EF8D5D
+284,PhonePe,"New Delhi, Delhi, India",2,Financial Services,2015/12/01,28.6138954,77.2090057,5,2,#EF8D5D
+288,Wealthsimple,"Toronto, Ontario, Canada",2,Financial Services,2014/01/01,43.6534817,-79.3839347,9,5,#EF8D5D
+290,CircleUp,"San Francisco, California, United States",2,Financial Services,2012/01/01,37.7790262,-122.4199061,161,17,#EF8D5D
+298,Gusto,"San Francisco, California, United States",2,Financial Services,2011/11/01,37.7790262,-122.4199061,161,17,#EF8D5D
+304,Marqeta,"Oakland, California, United States",2,Financial Services,2010/01/01,37.8044557,-122.2713563,9,3,#EF8D5D
+308,Tink,"Stockholm, Stockholms Lan, Sweden",2,Financial Services,2012/06/12,59.3251172,18.0710935,7,2,#EF8D5D
+309,Eurazeo,"Paris, Ile-de-France, France",2,Financial Services,1969/07/18,48.8566969,2.3514616,10,3,#EF8D5D
+312,GoCardless,"London, England, United Kingdom",2,Financial Services,2011/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+321,Railsbank,"London, England, United Kingdom",2,Financial Services,2016/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+323,Khatabook,"Bangalore, Karnataka, India",2,Financial Services,2018/01/01,12.9791198,77.5912997,15,2,#EF8D5D
+326,Veem,"San Francisco, California, United States",2,Financial Services,2014/02/01,37.7790262,-122.4199061,161,17,#EF8D5D
+328,Indiegogo,"San Francisco, California, United States",2,Financial Services,2008/01/14,37.7790262,-122.4199061,161,17,#EF8D5D
+330,Clair,"New York, New York, United States",2,Financial Services,2019/10/01,40.7127281,-74.0060152,112,22,#EF8D5D
+333,Polkadot,"Manchester, Manchester, United Kingdom",2,Financial Services,2016/01/01,53.4794892,-2.2451148,2,1,#EF8D5D
+340,Stripe,"San Francisco, California, United States",2,Financial Services,2010/01/01,37.7790262,-122.4199061,161,17,#EF8D5D
+347,Betterment,"New York, New York, United States",2,Financial Services,2008/08/25,40.7127281,-74.0060152,112,22,#EF8D5D
+373,Thunes,"Singapore, Central Region, Singapore",2,Financial Services,2016/01/01,16.7796467,96.175243,7,3,#EF8D5D
+401,Facet Wealth,"Baltimore, Maryland, United States",2,Financial Services,2016/01/01,39.2908816,-76.610759,2,1,#EF8D5D
+403,Broadridge,"New York, New York, United States",2,Financial Services,1962/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+414,Morgan Stanley,"New York, New York, United States",2,Financial Services,1935/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+415,Crypto.com,"Sai Wan, Hong Kong Island, Hong Kong",2,Financial Services,2016/06/01,22.2858376,114.134023,1,1,#EF8D5D
+417,BloomCredit,"New York, New York, United States",2,Financial Services,2016/08/01,40.7127281,-74.0060152,112,22,#EF8D5D
+428,Lending Club,"San Francisco, California, United States",2,Financial Services,2007/01/01,37.7790262,-122.4199061,161,17,#EF8D5D
+439,GGV Capital,"Menlo Park, California, United States",2,Financial Services,2000/01/01,37.4519671,-122.1779927,6,3,#EF8D5D
+455,Funding Circle,"London, England, United Kingdom",2,Financial Services,2010/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+457,Generate Capital,"San Francisco, California, United States",2,Financial Services,2014/01/01,37.7790262,-122.4199061,161,17,#EF8D5D
+463,Veritas Capital,"New York, New York, United States",2,Financial Services,1992/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+467,Curve,"London, England, United Kingdom",2,Financial Services,2015/04/02,51.5073219,-0.1276474,48,21,#EF8D5D
+468,Robinhood,"Menlo Park, California, United States",2,Financial Services,2013/01/01,37.4519671,-122.1779927,6,3,#EF8D5D
+472,WorldRemit,"London, England, United Kingdom",2,Financial Services,2010/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+473,nCino,"Wilmington, North Carolina, United States",2,Financial Services,2012/01/01,34.2257282,-77.9447107,1,1,#EF8D5D
+476,Circle,"Boston, Massachusetts, United States",2,Financial Services,2013/01/01,42.3602534,-71.0582912,19,3,#EF8D5D
+480,Nium,"Singapore, Central Region, Singapore",2,Financial Services,2014/01/01,16.7796467,96.175243,7,3,#EF8D5D
+493,AvidXchange,"Charlotte, North Carolina, United States",2,Financial Services,2000/04/01,35.2272,-80.843083,2,2,#EF8D5D
+502,Sberbank,"Moscow, Moscow City, Russian Federation",2,Financial Services,1841-01-01,55.7504461,37.6174943,2,1,#EF8D5D
+503,Unocoin,"Tumkur, Karnataka, India",2,Financial Services,2013/12/01,13.3400771,77.1006208,1,1,#EF8D5D
+513,BlueVine,"Redwood City, California, United States",2,Financial Services,2013/07/01,37.4863239,-122.232523,13,1,#EF8D5D
+514,FreshBooks,"Toronto, Ontario, Canada",2,Financial Services,2003/01/01,43.6534817,-79.3839347,9,5,#EF8D5D
+542,Xero,"Wellington, Wellington, New Zealand",2,Financial Services,2006/07/01,-41.2887953,174.7772114,1,1,#EF8D5D
+544,Tradeshift,"San Francisco, California, United States",2,Financial Services,2009/07/01,37.7790262,-122.4199061,161,17,#EF8D5D
+559,Rimilia,"Bromsgrove, Worcestershire, United Kingdom",2,Financial Services,2008/01/01,52.3353816,-2.0597449,1,1,#EF8D5D
+564,NFP,"New York, New York, United States",2,Financial Services,1998/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+567,Wealthfront,"Palo Alto, California, United States",2,Financial Services,2008/01/01,37.4443293,-122.1598465,14,1,#EF8D5D
+571,Aave,"London, England, United Kingdom",2,Financial Services,2017/05/01,51.5073219,-0.1276474,48,21,#EF8D5D
+576,Lend Street Financial,"Oakland, California, United States",2,Financial Services,2010/06/01,37.8044557,-122.2713563,9,3,#EF8D5D
+577,Invesco,"Atlanta, Georgia, United States",2,Financial Services,1935/12/01,33.7490987,-84.3901849,8,4,#EF8D5D
+579,Nova Credit,"San Francisco, California, United States",2,Financial Services,2016/05/17,37.7790262,-122.4199061,161,17,#EF8D5D
+598,HSBC,"London, England, United Kingdom",2,Financial Services,1865-01-01,51.5073219,-0.1276474,48,21,#EF8D5D
+604,Wave,"Toronto, Ontario, Canada",2,Financial Services,2009/07/01,43.6534817,-79.3839347,9,5,#EF8D5D
+606,NCR,"Atlanta, Georgia, United States",2,Financial Services,1884-01-01,33.7490987,-84.3901849,8,4,#EF8D5D
+616,Octane Lending,"New York, New York, United States",2,Financial Services,2014/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+639,Credit Suisse,"Zürich, Zurich, Switzerland",2,Financial Services,1856-07-05,47.3723941,8.5423328,4,2,#EF8D5D
+646,Retirable,"New York, New York, United States",2,Financial Services,2019/10/01,40.7127281,-74.0060152,112,22,#EF8D5D
+652,Unqork,"New York, New York, United States",2,Financial Services,2017/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+659,Deutsche Bank,"Frankfurt, Hessen, Germany",2,Financial Services,1870-03-10,50.1106444,8.6820917,1,1,#EF8D5D
+660,DeadHappy,"Leicester, Leicester, United Kingdom",2,Financial Services,2013/01/01,52.6361398,-1.1330789,1,1,#EF8D5D
+668,Uncapped,"London, England, United Kingdom",2,Financial Services,2019/09/01,51.5073219,-0.1276474,48,21,#EF8D5D
+676,BNY Mellon,"New York, New York, United States",2,Financial Services,1784-06-09,40.7127281,-74.0060152,112,22,#EF8D5D
+677,Airfox,"Boston, Massachusetts, United States",2,Financial Services,2016/01/28,42.3602534,-71.0582912,19,3,#EF8D5D
+680,SoLo Funds,"Los Angeles, California, United States",2,Financial Services,2016/03/17,34.0536909,-118.2427666,12,1,#EF8D5D
+686,Factris,"Amsterdam, Noord-Holland, The Netherlands",2,Financial Services,2017/01/01,52.3727598,4.8936041,6,3,#EF8D5D
+695,Esusu Financial,"New York, New York, United States",2,Financial Services,2016/05/01,40.7127281,-74.0060152,112,22,#EF8D5D
+700,Stash,"New York, New York, United States",2,Financial Services,2015/02/19,40.7127281,-74.0060152,112,22,#EF8D5D
+702,Vault,"Austin, Texas, United States",2,Financial Services,2013/01/01,30.2711286,-97.7436995,3,1,#EF8D5D
+703,Kucoin,"Singapore, Central Region, Singapore",2,Financial Services,2013/01/01,16.7796467,96.175243,7,3,#EF8D5D
+707,Zopa,"London, England, United Kingdom",2,Financial Services,2004/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+708,MK Decision,"San Diego, California, United States",2,Financial Services,2015/07/22,32.7174209,-117.1627714,3,1,#EF8D5D
+710,Konfio,"Mexico City, Distrito Federal, Mexico",2,Financial Services,2013/04/01,19.4326296,-99.1331785,3,1,#EF8D5D
+712,Investcorp,"Manama, Al Manamah, Bahrain",2,Financial Services,1982/01/01,26.2332249,50.5779259,1,1,#EF8D5D
+730,Nav,"Draper, Utah, United States",2,Financial Services,2012/05/01,40.5246711,-111.8638226,1,1,#EF8D5D
+747,Intuit,"Mountain View, California, United States",2,Financial Services,1983/01/01,37.3893889,-122.0832101,21,1,#EF8D5D
+753,Zuora,"San Mateo, California, United States",2,Financial Services,2007/01/01,37.496904,-122.3330573,18,2,#EF8D5D
+757,Acorns,"Irvine, California, United States",2,Financial Services,2012/02/29,33.6856969,-117.8259819,5,1,#EF8D5D
+762,Luno,"London, England, United Kingdom",2,Financial Services,2013/01/01,51.5073219,-0.1276474,48,21,#EF8D5D
+765,Securitize,"San Francisco, California, United States",2,Financial Services,2017/11/01,37.7790262,-122.4199061,161,17,#EF8D5D
+778,Bread,"New York, New York, United States",2,Financial Services,2014/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+799,Clearcover,"Chicago, Illinois, United States",2,Financial Services,2016/01/01,41.8755616,-87.6244212,16,3,#EF8D5D
+805,PolicyBazaar,"Gurgaon, Haryana, India",2,Financial Services,2008/06/01,28.4646148,77.0299194,5,1,#EF8D5D
+812,Dwolla,"Des Moines, Iowa, United States",2,Financial Services,2008/06/16,41.5910641,-93.6037149,1,1,#EF8D5D
+825,Finch,"Boston, Massachusetts, United States",2,Financial Services,2019/05/01,42.3602534,-71.0582912,19,3,#EF8D5D
+829,Mastercard,"Purchase, New York, United States",2,Financial Services,1966/12/16,41.0409305,-73.7145746,2,1,#EF8D5D
+833,PasarPolis,"Jakarta, Jakarta Raya, Indonesia",2,Financial Services,2015/03/01,-6.1753942,106.827183,5,1,#EF8D5D
+836,NextCapital,"Chicago, Illinois, United States",2,Financial Services,1996/01/01,41.8755616,-87.6244212,16,3,#EF8D5D
+852,OnDeck,"New York, New York, United States",2,Financial Services,2007/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+853,BitPay,"Atlanta, Georgia, United States",2,Financial Services,2011/05/01,33.7490987,-84.3901849,8,4,#EF8D5D
+868,Toss,"Seoul, Seoul-t'ukpyolsi, South Korea",2,Financial Services,2011/01/01,37.5326,127.024612,3,1,#EF8D5D
+869,Allianz,"München, Bayern, Germany",2,Financial Services,1890-01-01,48.1371079,11.5753822,2,1,#EF8D5D
+874,Financepeer,"Mumbai, Maharashtra, India",2,Financial Services,2017/01/01,18.9387711,72.8353355,13,2,#EF8D5D
+876,Chime,"San Francisco, California, United States",2,Financial Services,2013/01/01,37.7790262,-122.4199061,161,17,#EF8D5D
+878,Mosaic,"Oakland, California, United States",2,Financial Services,2011/01/01,37.8044557,-122.2713563,9,3,#EF8D5D
+883,Bakkt,"Atlanta, Georgia, United States",2,Financial Services,2018/01/01,33.7490987,-84.3901849,8,4,#EF8D5D
+893,Capitolis,"New York, New York, United States",2,Financial Services,2017/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+900,Revolut,"London, England, United Kingdom",2,Financial Services,2015/07/01,51.5073219,-0.1276474,48,21,#EF8D5D
+915,Bank of America,"Charlotte, North Carolina, United States",2,Financial Services,1998/07/31,35.2272,-80.843083,2,2,#EF8D5D
+919,iZettle,"Stockholm, Stockholms Lan, Sweden",2,Financial Services,2010/04/01,59.3251172,18.0710935,7,2,#EF8D5D
+928,Fundbox,"San Francisco, California, United States",2,Financial Services,2013/01/01,37.7790262,-122.4199061,161,17,#EF8D5D
+941,Barclays,"London, England, United Kingdom",2,Financial Services,1690-11-17,51.5073219,-0.1276474,48,21,#EF8D5D
+943,Deposit Solutions,"Hamburg, Hamburg, Germany",2,Financial Services,2011/01/01,49.023014,11.808202,2,1,#EF8D5D
+944,Lendtable,"San Francisco, California, United States",2,Financial Services,2020/03/01,37.7790262,-122.4199061,161,17,#EF8D5D
+947,BharatPe,"New Delhi, Delhi, India",2,Financial Services,2018/04/01,28.6138954,77.2090057,5,2,#EF8D5D
+957,Canada Pension Plan Investment Board,"Toronto, Ontario, Canada",2,Financial Services,1997/01/01,43.6534817,-79.3839347,9,5,#EF8D5D
+960,MoneyLion,"New York, New York, United States",2,Financial Services,2013/01/01,40.7127281,-74.0060152,112,22,#EF8D5D
+966,QUIN,"Berlin, Berlin, Germany",2,Financial Services,2020/03/01,52.5170365,13.3888599,14,3,#EF8D5D
+991,Mollie,"Amsterdam, Noord-Holland, The Netherlands",2,Financial Services,2004/01/01,52.3727598,4.8936041,6,3,#EF8D5D
+992,Lydia,"Paris, Ile-de-France, France",2,Financial Services,2013/01/01,48.8566969,2.3514616,10,3,#EF8D5D
+999,Rebel,"São Paulo, Sao Paulo, Brazil",2,Financial Services,2016/01/01,-23.5506507,-46.6333824,2,2,#EF8D5D
