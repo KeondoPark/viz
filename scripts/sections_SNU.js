@@ -1,8 +1,8 @@
 var ind_list = ["AllIndustries", "AI", "Ecommerce", "Education", "F&B", "Financial", "Healthcare", "Manufacturing", "Security", "Software", "Transportation"]
-var inTitle = 0, inYB1 = 0, inRBC = 0, inWC1 = 0, inWC2 = 0, inWC3 = 0, inYJ1 = 0, inYJ2 = 0, inKD1 = 0, inKD2 = 0
+var checkIn = {'inTitle': 0, 'inYB1': 0, 'inRBC': 0, 'inWC1': 0, 'inWC2': 0, 'inWC3': 0, 'inYJ1': 0, 'inYJ2': 0, 'inKD1': 0, 'inKD2': 0, 'inWordCloud': 0}
 var funding_order = { 'Seed': 1, "Series A": 2, 'Series B': 3, 'Series C': 4, 'Series D+': 5, 'M&A': 6, 'IPO': 7 }
 var funding_label = { 1: 'Seed', 2: "Series A", 3: 'Series B', 4: 'Series C', 5: 'Series D+', 6: 'M&A', 7: 'IPO' }
-
+var labelsMap = {'goog':'Google','apple':'Apple','fb':'Facebook','amzn':'Amazon'}
 var width = 1200;
 var height = 600;
 var margin = { top: 10, left: 20, bottom: 40, right: 10 };
@@ -66,6 +66,7 @@ var scrollVis = function () {
       var YJPieData = data.YJPieData
       var USMapData = data.USMapData
       var WC3data = data.WC3data
+      var wordCloudData = data.wordCloudData
 
       // create svg and give it a width and height
       //svg = d3.select(this).selectAll('svg')//.data([YB_data]);
@@ -86,9 +87,9 @@ var scrollVis = function () {
 
       rbc_data = rbcModify(raw_rbc_data)
 
-      setupVis(YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data);
+      setupVis(YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data, wordCloudData);
 
-      setupSections(rbc_data);
+      setupSections();
     });
   };
 
@@ -102,7 +103,7 @@ var scrollVis = function () {
    *  element for each filler word type.
    * @param histData - binned histogram data
    */
-  var setupVis = function (YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data) {
+  var setupVis = function (YB_data, rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data, wordCloudData) {
 
     //---------------------------------------------------------------------
     // Yoobin's bar chart start
@@ -120,6 +121,7 @@ var scrollVis = function () {
     filtered = YB_data.filter(function (d) {
       return selected.includes(d.ind_list)
     })
+    
     yYB.domain([0, d3.max(filtered, function (d) { return +d.value; }) * 1.2]);
 
     g.append("g")
@@ -131,7 +133,7 @@ var scrollVis = function () {
       .attr("class", "axis y_axis YB")
       .attr("transform", "translate(50,0)")
       .call(d3.axisLeft(yYB));
-
+      
     g.selectAll(".rect")
       .data(filtered)
       .enter().append("rect")
@@ -146,28 +148,6 @@ var scrollVis = function () {
       .attr("width", xYB.bandwidth() / 6)
       .attr("class", "rectYB")
 
-    /*
-    var legendYB = g.selectAll(".legend")
-      .data(filtered)
-      .enter()
-      .append("g")
-      .attr("class", "legend YB")
-
-    var legend_keys = ["AllIndustries", "AI", "Ecommerce", "Education", "F&B", "Financial", "Healthcare", "Manufacturing", "Security", "Software", "Transportation"]
-
-    var lineLegend = g.selectAll(".legend").data(legend_keys)
-      .enter()
-      .append("g")
-      .attr("class", "legend YB")
-
-    lineLegend.append("text").text(function (d) { return d; })
-      .attr("transform", "translate(15,9")
-    lineLegend.append("rect").attr("fill", function (d, i) {
-      return "bar" + ind_list.indexOf(d).style("fill")
-    })
-      .attr("width", 10)
-      .attr("height", 10)
-    */
     //---------------------------------------------------------------------
     // Yoobin's bar chart end
     //---------------------------------------------------------------------
@@ -192,19 +172,6 @@ var scrollVis = function () {
 
 
     }
-
-    /*
-    let rbcTitle = g
-            .append('g')
-            .append('text')
-            .attr('class', 'rbc')
-            //.attr('x', 100)
-            .attr('y', 24)
-            .attr('text-anchor','start')
-            .attr('fill', '#5487b1')
-            .html('Footprint of my Successful Business will go on')
-            .attr('opacity',0);
-            */
 
     let rbcSubTitle = g.append("text")
       .attr("class", "rbc")
@@ -278,7 +245,7 @@ var scrollVis = function () {
       .attr('x', d => xRbc(d.value) - 8)
       .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1)
       .style('text-anchor', 'end')
-      .html(d => d.name)
+      .html(d => labelsMap[d.name])
       ;
 
     gRbc.selectAll('.valueLabel')
@@ -361,7 +328,7 @@ var scrollVis = function () {
 
       console.log('MOUSE OVer')
 
-      if (inWC1) {
+      if (checkIn.inWC1) {
         tooltip_wc1
           .style('opacity', 0.9)
           .attr('width', 200)
@@ -537,7 +504,7 @@ var scrollVis = function () {
     function handleMouseOver(d) {  // Add interactivity
 
 
-      if (inWC3) {
+      if (checkIn.inWC3) {
         tooltip_wc3
           .style('opacity', 0.9)
           .attr('width', 200)
@@ -620,7 +587,7 @@ var scrollVis = function () {
     // color palette
     var color = d3.scaleOrdinal()
       .domain(allKeys)
-      .range(['#5487b1', '#5487b1', '#63a1af', '#63a1af', '#7ab8aa', '#93caa8', '#add7a8', '#c6e3a7', '#c6e3a7', '#E7846F', '#E7846F'])
+      .range(['#4D78A2'])
 
     // Draw the line
     gKD1//.selectAll("path")
@@ -726,7 +693,7 @@ var scrollVis = function () {
     // Add X axis --> it is a date format
     var xKD = d3.scaleLinear()
       //.domain(d3.extent(data, function(d) { return d.Last_Funding_Type; }))
-      .domain([0.5, 8])
+      .domain([0.2, 8])
       .range([0, (width - margin.left - margin.right)/4]);
     
     //Add Y axis
@@ -737,7 +704,7 @@ var scrollVis = function () {
     // color palette
     var color = d3.scaleOrdinal()
       .domain(allKeys)
-      .range(['#5487b1', '#5487b1', '#5487b1', '#63a1af', '#63a1af', '#7ab8aa', '#93caa8', '#add7a8', '#c6e3a7', '#c6e3a7', '#E7846F', '#E7846F'])
+      .range(['#F06A93', '#CD59B1', '#A97DD8', '#F38787', '#EF8D5D', '#3FB68E', '#4D78A2', '#3AB5C2', '#6973F6', '#74ABE2'])
     
     // Add titles    
     gKD2      
@@ -749,7 +716,7 @@ var scrollVis = function () {
       .attr("text-anchor", "middle")
       .text(function (d) { return (d.key) })
       .style("fill", function (d) { return color(d.key) })
-      .attr("transform", function (d, i) { return "translate(" + ((width / 4) * ((i) % 4) + 100) + "," + ((height / 3) * (parseInt((i) / 4)) + 20) + ")" })
+      .attr("transform", function (d, i) { return "translate(" + ((width * 3 / 8) * ((i) % 4)) + "," + ((height / 3) * (parseInt((i) / 4)) + 20) + ")" })
       .attr('class', 'KD2')
       .attr('opacity', 0);
 
@@ -816,6 +783,60 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
     // Keondo's multiarea chart end
     //---------------------------------------------------------------------
+
+    //---------------------------------------------------------------------
+    // Word cloud
+    //---------------------------------------------------------------------
+
+    //showCloud(wordCloudData)
+
+  //function showCloud(data) {        
+    wordScale = d3.scaleLinear().domain([0, 100]).range([0, 150]).clamp(true);      
+    var gWordCloud = d3.select("svg")
+              .select('g')
+              .append("g")
+              .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")  
+
+
+    d3.layout.cloud()
+        .size([width, height])
+        //클라우드 레이아웃에 데이터 전달
+        .words(wordCloudData)
+        .rotate(function (d) {
+            return d.text.length > 3 ? 0 : 90;
+        })
+        //스케일로 각 단어의 크기를 설정
+        .fontSize(function (d) {
+            return wordScale(d.frequency);
+        })
+        //클라우드 레이아웃을 초기화 > end이벤트 발생 > 연결된 함수 작동  
+        .on("end", draw)
+        .start();
+
+    function draw(words) { 
+        var cloud = gWordCloud.selectAll("text").data(words)
+
+        colors = ['#F06A93', '#CD59B1', '#A97DD8', '#F38787', '#EF8D5D', '#3FB68E', '#4D78A2', '#3AB5C2', '#6973F6', '#74ABE2']
+        //Entering words
+        cloud.enter()
+            .append("text")                
+            .style("fill", function (d, i) {
+                return colors[i % 10];
+            })
+            .style("fill-opacity", .5)
+            .attr("text-anchor", "middle") 
+            .style("font-size", function (d) {
+              return d.size + "px";
+            })
+            .text(function (d) {
+                return d.text;
+            })
+            .attr("transform", function (d) {
+              return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+            })
+            .attr('class','wordCloud');             
+      }  
+
   }
 
   /**
@@ -839,6 +860,7 @@ var scrollVis = function () {
     activateFunctions[7] = showYoungJun2;
     activateFunctions[8] = showKeondo1;
     activateFunctions[9] = showKeondo2;
+    activateFunctions[10] = showWordCloud;
 
     // updateFunctions are called while
     // in a particular section to update
@@ -878,26 +900,12 @@ var scrollVis = function () {
    */
   function showTitle() {
 
-    inTitle = 1
-    inYB1 = 0
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
 
-    g.selectAll('.YB')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
-    g.selectAll('.rectYB')
-      .transition()
-      .duration(600)
-      .attr('opacity', 0);
-
-    g.selectAll('.rbc')
-      .transition()
-      .duration(600)
-      .attr('opacity', 0);
-
-    $('.YB')
-      .css("opacity", 0)
+    checkIn.inTitle = 1  
+    hideOthers()
 
     g.selectAll('.openvis-title')
       .transition()
@@ -914,22 +922,17 @@ var scrollVis = function () {
    *
    */
   function showYooBin() {
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
 
-    inTitle = 0
-    inYB1 = 1
-    inRBC = 0
-
+    checkIn.inYB1 = 1  
     
     if (timerYoutube){
       $("#youtubeclip").remove();    
     }
-    
 
-    g.selectAll('.openvis-title')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
+    hideOthers();
 
     g.selectAll('.YB')
       .transition()
@@ -945,17 +948,193 @@ var scrollVis = function () {
       .duration(600)
       .attr('opacity', 0.5);
 
+  }
+  function showRbc() {
+
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+
+    checkIn.inRBC = 1 
+    hideOthers()
+
     g.selectAll('.rbc')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1);
+
+    updateRBC();    
+    }
+
+
+  function showWooChul1() {
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+
+    checkIn.inWC1 = 1 
+    hideOthers()
+
+    g.selectAll('.WC1')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1);
+
+  }
+
+  function showWooChul2() {
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+
+    checkIn.inWC2 = 1 
+    hideOthers()
+
+    g.selectAll('.WC2')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1);
+  }
+
+  function showWooChul3() {
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+
+    checkIn.inWC3 = 1 
+    hideOthers()
+
+    $('.WC3')
+      .css('opacity', 1)
+
+    g.selectAll('.WC3')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1);
+    
+    $('.btn-industry')
+      .css('opacity',1)
+  }
+
+  function showYoungJun1() {
+
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+
+    checkIn.inYJ1 = 1 
+    hideOthers()
+
+    $('.YJ1')
+      .css('opacity', 1)
+    
+    $('.btn-industry')
+      .css('opacity',1)
+
+    updateYJ1("All Industries")
+    updateYJ1("All Industries")
+
+  }
+
+
+
+  function showYoungJun2() {
+
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+
+    checkIn.inYJ2 = 1 
+    hideOthers()
+
+    updateYJ2("All Industries")
+    updateYJ2("All Industries")
+
+    $('.YJ2')
+      .css('opacity', 1)
+    
+    $('.btn-industry')
+      .css('opacity',1)
+
+  }
+
+  function showKeondo1() {
+
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+
+    checkIn.inKD1 = 1 
+    hideOthers()
+
+    g.selectAll('.KD1')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1);
+
+  }
+
+  function showKeondo2() {
+
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+
+    checkIn.inKD2 = 1 
+    hideOthers()
+
+    $('.btn-industry')
+      .css('opacity',1)
+
+    g.selectAll('.KD2')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1);
+    
+    g.selectAll('.rectKD2')
+      .transition()
+      .duration(0 )
+      .attr('opacity', 0.8);
+
+  }
+
+  function showWordCloud() {
+
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+
+    checkIn.inWordCloud = 1
+    hideOthers(); 
+
+    g.selectAll('.wordCloud')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1);
+    
+  }
+
+/*
+  Hide all components
+*/
+  function hideOthers(){
+    g.selectAll('.YB')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    g.selectAll('.rectYB')
       .transition()
       .duration(600)
       .attr('opacity', 0);
 
-  }
-  function showRbc() {
-
-    inYB1 = 0
-    inRBC = 1
-    inWC1 = 0
+    $('.YB')
+      .css("opacity", 0);
+    
+    g.selectAll('.openvis-title')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
 
     g.selectAll('.YB')
       .transition()
@@ -968,27 +1147,8 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
     $('.YB')
-      .css("opacity", 0)
+      .css("opacity", 0);
 
-    g.selectAll('.WC1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
-    g.selectAll('.rbc')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1);
-
-    updateRBC();    
-    }
-
-
-  function showWooChul1() {
-    inRBC = 0
-    inWC1 = 1
-    inWC2 = 0
-    
     g.select('.yearText')      
       .transition()
       .duration(1000)
@@ -999,81 +1159,21 @@ var scrollVis = function () {
       .duration(0)
       .attr('opacity', 0);
 
-    g.selectAll('.WC1')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1);
-
-
-    g.selectAll('.WC2')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-  }
-
-  function showWooChul2() {
-    inWC1 = 0
-    inWC2 = 1
-    inWC3 = 0
 
     g.selectAll('.WC1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
-
-    g.selectAll('.WC2')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1);
-
-    g.selectAll('.WC3')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-    
-    $('.WC3')
-      .css('opacity', 0)
     
     $('.btn-industry')
-      .css('opacity',0)
-  }
-
-  function showWooChul3() {
-    inWC2 = 0
-    inWC3 = 1
-    inYJ1 = 0
-
+      .css('opacity',0);
+    
     g.selectAll('.WC2')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
-    $('.WC3')
-      .css('opacity', 1)
-
-    g.selectAll('.WC3')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1);
-    
-    $('.btn-industry')
-      .css('opacity',1)
-
-    g.selectAll('.YJ1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
-    $('.YJ1')
-      .css('opacity', 0)
-  }
-
-  function showYoungJun1() {
-
-    inWC3 = 0
-    inYJ1 = 1
-    inYJ2 = 0
 
     g.selectAll('.WC3')
       .transition()
@@ -1082,15 +1182,6 @@ var scrollVis = function () {
 
     $('.WC3')
       .css('opacity', 0)
-
-    $('.YJ1')
-      .css('opacity', 1)
-    
-    $('.btn-industry')
-      .css('opacity',1)
-
-      updateYJ1("All Industries")
-      updateYJ1("All Industries")
 
 
     g.selectAll('.YJ2')
@@ -1099,20 +1190,8 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
     $('.YJ2')
-      .css('opacity', 0)
+      .css('opacity', 0);
 
-  }
-
-
-
-  function showYoungJun2() {
-
-    inYJ1 = 0
-    inYJ2 = 1
-    inKD1 = 0
-
-    updateYJ2("All Industries")
-    updateYJ2("All Industries")
 
     g.selectAll('.YJ1')
       .transition()
@@ -1120,76 +1199,41 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
     $('.YJ1')
-      .css('opacity', 0)
-
-    $('.YJ2')
-      .css('opacity', 1)
-    
-    $('.btn-industry')
-      .css('opacity',1)
-
-
-    g.selectAll('.KD1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
-  }
-
-  function showKeondo1() {
-
-    inYJ2 = 0
-    inKD1 = 1
-    inKD2 = 0
-
-
-    $('.btn-industry')
-      .css('opacity',0)
+      .css('opacity', 0);
 
     g.selectAll('.YJ2')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
-    $('.YJ2')
-      .css('opacity', 0)
-
-    g.selectAll('.KD1')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1);
 
     g.selectAll('.KD2')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
-  }
-
-  function showKeondo2() {
-
-    inKD1 = 0
-    inKD2 = 1
-
-    $('.btn-industry')
-      .css('opacity',1)
 
     g.selectAll('.KD1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
-
-    g.selectAll('.KD2')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1);
-    
     g.selectAll('.rectKD2')
       .transition()
       .duration(600)
-      .attr('opacity', 0.8);
+      .attr('opacity', 0);
 
+    g.selectAll('.wordCloud')
+      .transition()
+      .duration(600)
+      .attr('opacity', 0);
+
+      /*
+    g.select('.wordCloud')      
+      .transition()
+      .duration(1000)
+      .text('')
+      */
   }
 
 
@@ -1313,9 +1357,7 @@ var scrollVis = function () {
  *
  * @param data - loaded tsv data
  */
-function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data) {
-  
-    
+function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData, WC2data, YJPieData, KDdata, WC3data,wordCloudData) {
   
 
   // create a new plot and
@@ -1332,7 +1374,8 @@ function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData,
       "WC2data": WC2data,
       "YJPieData": YJPieData,
       "KDdata": KDdata,
-      "WC3data": WC3data
+      "WC3data": WC3data,
+      "wordCloudData": wordCloudData
     })
     .call(plot);
 
@@ -1356,16 +1399,8 @@ function display(error, YB_data, raw_rbc_data, worldMapData, WC1data, USMapData,
   scroll.on('progress', function (index, progress) {
     plot.update(index, progress);
   });
+  
 }
-
-
-
-
-
-
-
-
-
 
 //---------------------------------------------------------------------
 // Yoobin's bar chart filter interactions start
@@ -1441,7 +1476,7 @@ function updateBarYB() {
 // A function that create / update the plot for a given variable:
 function updateYJ2(Industry) {
 
-  if (!inYJ2) return;
+  if (!checkIn.inYJ2) return;
 
   data = YJ2dataMap[Industry];
 
@@ -1589,7 +1624,7 @@ var YJ1index = 0
 // A function that create / update the plot for a given variable:
 function updateYJ1(Industry) {
 
-  if (!inYJ1) return;
+  if (!checkIn.inYJ1) return;
 
   data = YJ1dataMap[Industry];
 
@@ -1705,7 +1740,7 @@ function updateRBC() {
 
     let ticker = d3.interval(e => {
 
-      if (inRBC == 0) {
+      if (checkIn.inRBC == 0) {
         ticker.stop();
         gRbc.select('.yearText')      
           .transition()
@@ -1782,20 +1817,22 @@ function updateRBC() {
     
       let labels = gRbc.selectAll('.labelRbc')
         .data(yearSlice, d => d.name);
+
+      
     
       labels.enter()
         .append('text')
         .attr('class', 'labelRbc rbc')
         .attr('x', d => xRbc(d.value) - 20)
-        .attr('y', d => yRbc(top_n + 1) + 5 + ((yRbc(1) - yRbc(0)) / 2))
+        .attr('y', d => yRbc(top_n + 1) + ((yRbc(1) - yRbc(0)) / 2))
         .style('text-anchor', 'end')
         .attr('fill', '#000000')
         .style("font-size", "24px")
-        .html(d => d.name)
+        .html(d => labelsMap[d.name])
         .transition()
         .duration(tickDuration)
         .ease(d3.easeLinear)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
+        .attr('y', d => yRbc(d.rank) + ((yRbc(1) - yRbc(0)) / 2));
     
       labels.transition()
         .duration(tickDuration)
@@ -1803,7 +1840,7 @@ function updateRBC() {
         .attr('fill', '#000000')
         .style("font-size", "24px")
         .attr('x', d => xRbc(d.value) - 20)
-        .attr('y', d => yRbc(d.rank) + 5 + ((yRbc(1) - yRbc(0)) / 2) + 1);
+        .attr('y', d => yRbc(d.rank) + ((yRbc(1) - yRbc(0)) / 2));
     
       labels.exit()
         .transition()
@@ -1885,7 +1922,7 @@ function updateRBC() {
 
 
 function updateWC3(Industry){
-  if (!inWC3) return;
+  if (!checkIn.inWC3) return;
 
   WC3data = WC3dataMap[Industry]
   console.log(WC3data)
@@ -1950,7 +1987,7 @@ function updateWC3(Industry){
 
 
 function updateKD2(Industry){
-  if (!inKD2) return;
+  if (!checkIn.inKD2) return;
 
   d3.select('svg')
       .select('g')      
@@ -1974,13 +2011,13 @@ function updateKD2(Industry){
 */
 function updateButtonClick(Industry){
 
-  if (inWC3){
+  if (checkIn.inWC3){
     updateWC3(Industry)
-  } else if (inYJ1) {
+  } else if (checkIn.inYJ1) {
     updateYJ1(Industry)
-  } else if (inYJ2) {
+  } else if (checkIn.inYJ2) {
     updateYJ2(Industry)
-  } else if (inKD2) {
+  } else if (checkIn.inKD2) {
     updateKD2(Industry)
   }
 }
@@ -1998,7 +2035,5 @@ d3.queue()
   .defer(d3.csv, "data/korea_major_rank.csv")
   .defer(d3.tsv, 'data/crunch_data_grp_NoEmployees2.tsv')
   .defer(d3.csv, "wc_map/map3_data/map3_dec4_0.csv")
+  .defer(d3.csv, "data/wordCloudData.csv")
   .await(display)
-
-  
-  

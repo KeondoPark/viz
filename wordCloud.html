@@ -20,11 +20,12 @@
         var svg = d3.select("body").append("svg")
             .attr("width", width)
             .attr("height", height);
-        d3.csv("data/worddata.csv", function (data) {
+        d3.csv("data/wordCloudData.csv", function (data) {
+            console.log(data)
             showCloud(data)
             setInterval(function(){
                  showCloud(data)
-            },2000) 
+            },10000) 
         });
         //scale.linear: 선형적인 스케일로 표준화를 시킨다. 
         //domain: 데이터의 범위, 입력 크기
@@ -53,12 +54,14 @@
 
             function draw(words) { 
                 var cloud = svg.selectAll("text").data(words)
+
+                colors = ['#F06A93', '#CD59B1', '#A97DD8', '#F38787', '#EF8D5D', '#3FB68E', '#4D78A2', '#3AB5C2', '#6973F6', '#74ABE2']
                 //Entering words
                 cloud.enter()
                     .append("text")
                     .style("font-family", "overwatch")
-                    .style("fill", function (d) {
-                        return (keywords.indexOf(d.text) > -1 ? "#fbc280" : "#405275");
+                    .style("fill", function (d, i) {
+                        return colors[i % 10];
                     })
                     .style("fill-opacity", .5)
                     .attr("text-anchor", "middle") 

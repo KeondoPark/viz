@@ -1,0 +1,494 @@
+text,frequency
+Banking,36
+Finance,89
+Internet,145
+Mobile,91
+Telecommunications,19
+Business Development,9
+Financial Services,152
+FinTech,143
+Funding Platform,6
+Venture Capital,18
+Credit Cards,11
+Wealth Management,6
+Association,3
+B2B,20
+E-Commerce,117
+Information Technology,137
+Infrastructure,11
+Shopping,16
+E-Commerce Platforms,12
+Local,2
+Property Management,6
+Real Estate,14
+Media and Entertainment,17
+TV,7
+TV Production,2
+Payments,57
+Cloud Computing,40
+Collaboration,16
+Consumer Electronics,29
+Developer Tools,14
+Enterprise Software,116
+Operating Systems,1
+Software,304
+Mobile Apps,54
+Social,3
+Social Media,28
+Social Network,9
+Video Streaming,10
+Digital Entertainment,7
+Video,19
+Electronics,19
+Hardware,26
+Mobile Devices,5
+Retail,40
+Video Games,12
+Consumer Goods,15
+Grocery,11
+Crowdfunding,6
+Apps,56
+Marketing Automation,15
+Sales Automation,6
+Web Hosting,7
+Developer Platform,11
+Gaming,13
+Blockchain,24
+Cryptocurrency,21
+Cloud Management,7
+Computer,22
+E-Signature,1
+SaaS,138
+Mobile Payments,13
+Biotechnology,47
+Health Care,98
+Health Diagnostics,16
+Manufacturing,35
+Medical,39
+Medical Device,12
+Therapeutics,13
+Credit,12
+Web Development,8
+Artificial Intelligence,80
+Automotive,35
+Big Data,51
+Machine Learning,58
+Lending,19
+Internet of Things,21
+Wireless,11
+Chemical,6
+Life Science,13
+Personal Health,13
+Pharmaceutical,19
+Security,41
+Angel Investment,2
+Online Games,7
+Delivery,17
+Food Delivery,14
+Same Day Delivery,5
+Autonomous Vehicles,19
+Electric Vehicle,16
+Innovation Management,5
+Productivity Tools,11
+Software Engineering,3
+Advertising,21
+Online Portals,9
+Social Media Marketing,6
+Flash Storage,2
+Homeland Security,1
+Virtualization,10
+Marketplace,37
+Customer Service,13
+Knowledge Management,2
+Natural Language Processing,6
+Fashion,23
+Image Recognition,4
+Retail Technology,13
+Visual Search,2
+Content,13
+News,10
+Social Bookmarking,2
+Asset Management,9
+Consulting,14
+Risk Management,8
+Compliance,8
+Freelance,3
+Small and Medium Businesses,11
+Agriculture,8
+Farming,5
+Food Processing,8
+Hydroponics,1
+College Recruiting,1
+Employment,3
+Human Resources,20
+Recruiting,9
+Shoes,2
+Robotics,23
+Sensor,7
+Transportation,33
+Restaurants,12
+Snack Food,1
+Impact Investing,5
+Personal Finance,19
+Augmented Reality,5
+Virtual Reality,5
+Fantasy Sports,2
+Sports,12
+Cycling,2
+Fitness,17
+Logistics,32
+Wholesale,1
+Dietary Supplements,1
+Lifestyle,14
+Consumer Software,4
+Delivery Service,11
+Cyber Security,38
+Network Security,23
+Billing,4
+Subscription Service,8
+Communities,5
+GovTech,2
+Private Social Networking,2
+Smart Home,4
+Digital Media,16
+Publishing,8
+EdTech,23
+Education,30
+Wellness,32
+Loyalty Programs,3
+Analytics,73
+Industrial,5
+Industrial Manufacturing,1
+Predictive Analytics,13
+Business Intelligence,13
+Market Research,8
+Advertising Platforms,8
+Business Information Systems,8
+Cloud Data Services,23
+Data Center Automation,5
+Ad Server,1
+Blogging Platforms,5
+Messaging,15
+SMS,3
+Call Center,4
+Meeting Software,1
+CRM,18
+Enterprise,7
+Sales,8
+Food and Beverage,25
+Peer to Peer,8
+Audio,4
+Music,7
+Task Management,5
+Construction,3
+Project Management,6
+Public Relations,4
+Cloud Security,18
+Content Delivery Network,1
+Psychology,2
+Outsourcing,5
+E-Learning,18
+PC Games,5
+Clean Energy,5
+Fleet Management,5
+Smart Cities,3
+Car Sharing,2
+Collaborative Consumption,1
+Rental,3
+Travel,12
+Travel Accommodations,2
+Open Source,12
+Electrical Distribution,1
+Energy,10
+Energy Efficiency,2
+Animation,2
+Video Advertising,1
+Video Editing,1
+Financial Exchanges,6
+AgTech,6
+Ad Network,2
+Health Insurance,4
+Hospital,10
+Email,5
+Search Engine,13
+eSports,5
+B2C,3
+Last Mile Transportation,3
+Ride Sharing,9
+Wearables,10
+Crowdsourcing,2
+Data Integration,8
+Information Services,28
+Training,12
+Home Health Care,3
+Scheduling,1
+Virtual Workforce,3
+Consumer Lending,10
+Debit Cards,3
+Events,4
+Elder Care,3
+Elderly,1
+Nursing and Residential Care,2
+Accounting,9
+Electronic Health Record (EHR),2
+Developer APIs,14
+Coffee,2
+Hospitality,8
+Supply Chain Management,17
+Beauty,11
+Leisure,3
+Non Profit,3
+Public Transportation,4
+Commercial,3
+Insurance,13
+InsurTech,13
+Sharing Economy,2
+nan,3
+Enterprise Applications,6
+IT Management,4
+PaaS,7
+Credit Bureau,2
+Legal,6
+Public Safety,2
+Cloud Infrastructure,10
+Sustainability,9
+Bioinformatics,5
+Genetics,8
+Data Mining,3
+Database,11
+Aerospace,9
+Drones,4
+Photography,5
+GPU,1
+Advanced Materials,2
+Waste Management,4
+Furniture,2
+Interior Design,2
+Oil and Gas,2
+Men's,2
+Ethereum,6
+Stock Exchanges,3
+Trading Platform,5
+Biopharma,13
+Clinical Trials,1
+Independent Music,1
+Music Streaming,3
+Marketing,14
+mHealth,8
+Shipping,5
+Space Travel,3
+VoIP,2
+Consumer,15
+Pet,2
+Home Decor,1
+Graphic Design,3
+Photo Editing,1
+Web Design,5
+Hotel,3
+Private Cloud,1
+Podcast,1
+Sporting Goods,2
+Point of Sale,4
+Home Services,3
+Intelligent Systems,2
+Local Business,1
+Gamification,1
+Data Center,7
+Data Storage,3
+Corporate Training,4
+Personal Development,1
+Communication Hardware,2
+Product Design,13
+UX Design,4
+Online Auctions,1
+Price Comparison,2
+Dating,2
+Identity Management,11
+Career Planning,4
+Freemium,1
+Dental,2
+Auto Insurance,4
+Property Insurance,3
+Energy Management,3
+Renewable Energy,7
+Solar,3
+Product Management,5
+Children,3
+Family,2
+Physical Security,1
+Smart Building,2
+Bitcoin,11
+Management Information Systems,2
+Embedded Systems,1
+Film,1
+Communications Infrastructure,6
+Brand Marketing,2
+Tutoring,3
+Fraud Detection,9
+Web Apps,3
+Data Visualization,5
+Child Care,3
+Parenting,2
+Primary Education,1
+Android,4
+iOS,10
+Enterprise Resource Planning (ERP),1
+Nutrition,4
+Digital Marketing,5
+Social CRM,2
+Social Media Advertising,2
+Social Media Management,2
+3D Technology,6
+Machinery Manufacturing,2
+Classifieds,2
+Fast-Moving Consumer Goods,1
+Freight Service,5
+Location Based Services,6
+Video Conferencing,1
+Advice,2
+Quantum Computing,2
+Government,4
+Office Administration,1
+Network Hardware,1
+Real Time,9
+Satellite Communication,2
+Document Management,3
+Air Transportation,2
+Battery,2
+Secondary Education,1
+Incubators,1
+Collectibles,1
+Higher Education,3
+Industrial Automation,8
+Warehousing,1
+IaaS,2
+Unified Communications,1
+Hedge Funds,1
+Employee Benefits,4
+Text Analytics,2
+Computer Vision,7
+Commercial Lending,3
+Nanotechnology,2
+Broadcasting,5
+Outdoor Advertising,1
+Transaction Processing,5
+Politics,1
+Privacy,8
+Affiliate Marketing,1
+App Marketing,1
+Ediscovery,1
+Legal Tech,2
+Social Impact,2
+Leasing,2
+Information and Communications Technology (ICT),2
+Lead Generation,1
+Women's,4
+Emerging Markets,2
+Guides,3
+Mobile Advertising,1
+Internet Radio,1
+Navigation,3
+Technical Support,2
+Direct Sales,1
+In-Flight Entertainment,1
+File Sharing,2
+Eyewear,1
+Building Material,1
+Consumer Applications,3
+Energy Storage,1
+Power Grid,2
+Semiconductor,4
+Golf,1
+Photo Sharing,1
+Textiles,1
+ISP,1
+Micro Lending,2
+Professional Services,4
+Content Marketing,2
+Commercial Real Estate,1
+Journalism,3
+Social News,2
+Industrial Engineering,6
+Product Search,1
+Semantic Search,2
+Vertical Search,1
+CMS,1
+Brewing,2
+Virtual Currency,2
+Consumer Reviews,1
+Reputation,1
+SEO,1
+Procurement,2
+LGBT,1
+Video Chat,1
+Courier Service,2
+Local Shopping,1
+CleanTech,1
+Mechanical Engineering,4
+Geospatial,3
+Ad Targeting,1
+Life Insurance,1
+Speech Recognition,1
+Tourism,3
+IT Infrastructure,3
+Wine And Spirits,1
+Application Performance Management,1
+Vending and Concessions,1
+Service Industry,2
+Paper Manufacturing,1
+Outdoors,1
+Law Enforcement,1
+Mapping Services,1
+Event Management,2
+Marine Technology,2
+Reservations,1
+Business Travel,1
+Ticketing,3
+Reading Apps,1
+Marine Transportation,1
+Nuclear,1
+Cannabis,1
+macOS,1
+Textbook,1
+Content Discovery,1
+Lead Management,1
+Railroad,2
+Language Learning,1
+Product Research,1
+GreenTech,1
+National Security,1
+Organic Food,1
+Contact Management,1
+Recycling,1
+Intellectual Property,2
+Water Purification,1
+Assistive Technology,2
+Art,1
+Cosmetics,1
+CAD,1
+Test and Measurement,1
+Coworking,1
+Organic,1
+Packaging Services,1
+Architecture,2
+Home Improvement,1
+Home Renovation,1
+Facial Recognition,1
+Optical Communication,1
+Email Marketing,1
+3D Printing,2
+Vacation Rental,1
+Coupons,1
+Property Development,1
+Precious Metals,1
+Personalization,1
+Retirement,1
+Motion Capture,1
+Penetration Testing,1
+Building Maintenance,1
+Real Estate Investment,1
+Environmental Consulting,1
+Environmental Engineering,1
+Cloud Storage,1
+Lighting,1
+Social Entrepreneurship,1
