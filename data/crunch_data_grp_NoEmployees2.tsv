@@ -23,14 +23,14 @@ Education	Series A	135.0340136
 Education	Series B	159.4776119
 Education	Series C	595.1351351
 Education	Series D+	656.25
-F&B	IPO	3928.796296
-F&B	M&A	1430.135135
-F&B	Others	244.0169133
-F&B	Seed	138.556338
-F&B	Series A	45.4964539
-F&B	Series B	181.3235294
-F&B	Series C	377.4242424
-F&B	Series D+	721.3043478
+FB	IPO	3928.796296
+FB	M&A	1430.135135
+FB	Others	244.0169133
+FB	Seed	138.556338
+FB	Series A	45.4964539
+FB	Series B	181.3235294
+FB	Series C	377.4242424
+FB	Series D+	721.3043478
 Financial	IPO	2658.109756
 Financial	M&A	1168.533333
 Financial	Others	265.941358
@@ -80,11 +80,11 @@ Transportation	Series A	64.65384615
 Transportation	Series B	245.942029
 Transportation	Series C	442.7272727
 Transportation	Series D+	931.7741935
-All Industry	IPO	2924.975845
-All Industry	M&A	1209.243147
-All Industry	Others	259.8846641
-All Industry	Seed	286.1768552
-All Industry	Series A	90.17524236
-All Industry	Series B	138.1913717
-All Industry	Series C	294.0816327
-All Industry	Series D+	558.7944664
+All Industries	IPO	2924.975845
+All Industries	M&A	1209.243147
+All Industries	Others	259.8846641
+All Industries	Seed	286.1768552
+All Industries	Series A	90.17524236
+All Industries	Series B	138.1913717
+All Industries	Series C	294.0816327
+All Industries	Series D+	558.7944664

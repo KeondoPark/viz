@@ -4,13 +4,13 @@ var funding_order = { 'Seed': 1, "Series A": 2, 'Series B': 3, 'Series C': 4, 'S
 var funding_label = { 1: 'Seed', 2: "Series A", 3: 'Series B', 4: 'Series C', 5: 'Series D+', 6: 'M&A', 7: 'IPO' }
 
 var width = 1200;
-var height = 520;
+var height = 600;
 var margin = { top: 10, left: 20, bottom: 40, right: 10 };
 
 var timerYoutube = 0;
 setTimeout(function(){
   timerYoutube = 1;
-},5000)
+},1)
 
 /**
  * scrollVis - encapsulates
@@ -291,7 +291,8 @@ var scrollVis = function () {
       .attr('y', height - 25)
       .style('text-anchor', 'end')
       .attr('opacity', 0)
-      .html(~~year)
+      .html('')
+      //.html(~~year)
       //.call(halo, 10) 
 
 
@@ -564,16 +565,12 @@ var scrollVis = function () {
     })
 
     KDdata.sort(function (a, b) { return d3.ascending(a.Last_Funding_Type, b.Last_Funding_Type) })
-    KDdata1 = KDdata.filter(function (d) { return (d.Industry == 'All Industry' || d.Industry == 'Security') && (d.Last_Funding_Type < 8) })
-
-    console.log(KDdata1)
+    KDdata1 = KDdata.filter(function (d) { return (d.Industry == 'All Industries' || d.Industry == 'Security') && (d.Last_Funding_Type < 8) })
 
     // group the data: I want to draw one line per group
     var sumstatKD1 = d3.nest() // nest function allows to group the calculation per level of a factor
       .key(function (d) { return d.Industry; })
-      .entries(KDdata1);
-
-    console.log(sumstatKD1)
+      .entries(KDdata1);    
 
     // What is the list of groups?
     allKeys = sumstatKD1.map(function (d) { return d.key })
@@ -609,8 +606,8 @@ var scrollVis = function () {
       .range([height, 0]);
 
     gKD1.append("g")
-      .attr("class", "KD1")
-      .attr("transform", function (d, i) { return "translate(" + (margin.left * 2 + (width / 4) * ((i - 1) % 4)) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
+      .attr("class", "KD1")      
+      .attr("transform", function (d, i) { return "translate(" + (margin.left * 4 + (width / 4) * ((i - 1) % 4)) + "," + (height / 3) * (parseInt((i - 1) / 4)) + ")" })
       .call(d3.axisLeft(yKD1).ticks(5))
       .attr('opacity', 0);
 
@@ -626,8 +623,7 @@ var scrollVis = function () {
       .append("path")
       .attr("fill", function (d) { return color(d.key) })
       .attr("stroke", "none")
-      .attr("d", function (d) {
-        console.log(d)
+      .attr("d", function (d) {        
         return d3.area()
           .x(function (d) { return xKD1(d.Last_Funding_Type) })
           .y0(yKD1(0))
@@ -639,20 +635,59 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
     // Add titles
-
-    gKD1.append('g')
-      //.selectAll('text')
-      //.data(KDdata)
-      //.enter()
+    container.selectAll(".chart-group-KD1") 
       .append("text")
-      .attr("text-anchor", "start")
-      //.attr("y", 0)
-      //.attr("x", 0)
-      .text(function (d) { return (d.key) })
-      .style("fill", function (d) { return color(d.key) })
-      .attr("transform", function (d, i) { return "translate(" + ((width / 4) * ((i - 1) % 4) + 100) + "," + ((height / 3) * (parseInt((i - 1) / 4)) + 20) + ")" })
+      .attr("text-anchor", "start")      
+      .text("Growth Curve: All Industries")
+      .style("fill", '#000000')                  
+      .attr("transform", "translate(" + (30 + width / 3) +"," + height / 5 + ")")
+      .style("font-size", "24px")
       .attr('class', 'KD1')
       .attr('opacity', 0);
+
+    // Add Additional descriptions
+    container.selectAll(".chart-group-KD1") 
+      .append("text")
+      .attr("text-anchor", "middle")      
+      .text("Valley of death")
+      .style("fill", '#000000')                  
+      .attr("transform", "translate(" + width / 4 + "," + height * 4 / 6 + ")")
+      .style("font-size", "24px")
+      .attr('class', 'KD1')
+      .attr('opacity', 0);
+
+    container.selectAll(".chart-group-KD1") 
+      .append("text")
+      .attr("text-anchor", "start")      
+      .text("Number of Employees")
+      .style("fill", '#000')                  
+      .attr("transform", "translate(" + 15 + "," + 30 + ")")
+      .style("font-size", "12px")
+      .attr('class', 'KD1')
+      .attr('opacity', 0);
+
+    svg.append('defs')
+      .append('marker')
+      .attr('id', 'arrowhead')
+      .attr('refY', 2)
+      .attr('markerWidth', 6)
+      .attr('markerHeight', 4)
+      .attr('orient', 'auto')
+      .append('path')
+      .attr('d', 'M 0,0 V 4 L6,2 Z')
+      .attr('class','KD1');
+
+    container.selectAll(".chart-group-KD1")       
+      .append('path')
+      .attr('class', 'KD1')
+      .attr('marker-end', 'url(#arrowhead)')
+      .attr('d', function () {
+        var line = 'M ' + ((width / 4) - 10) + ' ' + (height * 5 / 6 - 50);
+        line += ' l 0 ' + 80;
+        return line;
+      })
+      .attr('opacity', 0)
+      .style('stroke','#000000');
 
 
     //---------------------------------------------------------------------
@@ -664,7 +699,7 @@ var scrollVis = function () {
     //---------------------------------------------------------------------
 
     
-    KDdata2 = KDdata.filter(function (d) { return d.Industry != 'All Industry' && d.Last_Funding_Type < 8 })
+    KDdata2 = KDdata.filter(function (d) { return d.Industry != 'All Industries' && d.Last_Funding_Type < 8 })
     KDdata2.sort(function (a, b) { return d3.ascending(a.Last_Funding_Type, b.Last_Funding_Type) })
     // group the data: I want to draw one line per group
     var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
@@ -673,9 +708,6 @@ var scrollVis = function () {
 
     // What is the list of groups?
     allKeys = sumstat.map(function (d) { return d.key })
-
-    console.log(allKeys)
-    console.log(sumstat)
 
     var container = g.append("g")
       .classed("container-group", true);
@@ -688,8 +720,8 @@ var scrollVis = function () {
     // Add X axis --> it is a date format
     var xKD = d3.scaleLinear()
       //.domain(d3.extent(data, function(d) { return d.Last_Funding_Type; }))
-      .domain([0, 9])
-      .range([0, width / 4 - margin.left - margin.right]);
+      .domain([0.5, 8])
+      .range([0, (width - margin.left - margin.right)/4]);
     
     //Add Y axis
     var yKD = d3.scaleLinear()
@@ -732,7 +764,22 @@ var scrollVis = function () {
       })
       .attr("transform", function (d, i) {return "translate(" + (width / 4) * ((i) % 4) + "," + (height / 3) * (parseInt((i) / 4)) + ")" })
       .attr('class', 'KD2')
-      .attr('opacity', 0);    
+      .attr('opacity', 0);  
+      
+    //Cover
+    gKD2
+      .selectAll('rect')
+      .data(sumstat)
+      .enter()
+      .append("rect")
+      .attr("fill", '#f0f0f0')      
+      .attr("x", function (d, i) { return (width / 4) * ((i) % 4) - 20 })
+      .attr("y", function (d, i) { return (height / 3) * (parseInt((i) / 4)) })
+      .attr("width", width / 4)
+      .attr("height", height / 3)      
+      .attr('class', 'KD2 rectKD2')
+      .attr('id',function(d){return `rectKD2_${d.key}`})      
+      .attr('opacity', 0);
     
     gKD2
       //.selectAll('g')      
@@ -741,7 +788,7 @@ var scrollVis = function () {
       .append("g")
       .call(d3.axisLeft(yKD).ticks(3))      
       .attr("transform", function (d, i) { return "translate(" + (margin.left*1.5 +  (width / 4) * (i % 4)) + "," + (height / 3) * (parseInt((i) / 4)) + ")" })
-      .attr("class", "KD2")
+      .attr("class", "KD2 axisBlack")
       .attr('opacity', 0);
     
     gKD2 
@@ -756,18 +803,9 @@ var scrollVis = function () {
               return funding_label[d];
           })
       )
-      .attr("transform", function (d,i) {console.log(i); return "translate(" + (width / 4) * ((i) % 4) + "," + ((height / 3) * (parseInt((i) / 4) + 1) - margin.bottom) + ")" })
+      .attr("transform", function (d,i) { return "translate(" + (width / 4) * ((i) % 4) + "," + ((height / 3) * (parseInt((i) / 4) + 1) - margin.bottom) + ")" })
       .attr("class", "KD2")      
       .attr('opacity', 0);
-
-    
-
-    
-
-    
-
-    
-
 
     //---------------------------------------------------------------------
     // Keondo's multiarea chart end
@@ -935,8 +973,9 @@ var scrollVis = function () {
       .transition()
       .duration(600)
       .attr('opacity', 1);
-    updateRBC();
-  }
+
+    updateRBC();    
+    }
 
 
   function showWooChul1() {
@@ -986,8 +1025,12 @@ var scrollVis = function () {
       .transition()
       .duration(0)
       .attr('opacity', 0);
+    
     $('.WC3')
       .css('opacity', 0)
+    
+    $('.btn-industry')
+      .css('opacity',0)
   }
 
   function showWooChul3() {
@@ -1007,6 +1050,9 @@ var scrollVis = function () {
       .transition()
       .duration(600)
       .attr('opacity', 1);
+    
+    $('.btn-industry')
+      .css('opacity',1)
 
     g.selectAll('.YJ1')
       .transition()
@@ -1033,6 +1079,9 @@ var scrollVis = function () {
 
     $('.YJ1')
       .css('opacity', 1)
+    
+    $('.btn-industry')
+      .css('opacity',1)
 
       updateYJ1("All Industries")
       updateYJ1("All Industries")
@@ -1069,6 +1118,9 @@ var scrollVis = function () {
 
     $('.YJ2')
       .css('opacity', 1)
+    
+    $('.btn-industry')
+      .css('opacity',1)
 
 
     g.selectAll('.KD1')
@@ -1083,6 +1135,10 @@ var scrollVis = function () {
     inYJ2 = 0
     inKD1 = 1
     inKD2 = 0
+
+
+    $('.btn-industry')
+      .css('opacity',0)
 
     g.selectAll('.YJ2')
       .transition()
@@ -1109,6 +1165,9 @@ var scrollVis = function () {
     inKD1 = 0
     inKD2 = 1
 
+    $('.btn-industry')
+      .css('opacity',1)
+
     g.selectAll('.KD1')
       .transition()
       .duration(0)
@@ -1119,6 +1178,11 @@ var scrollVis = function () {
       .transition()
       .duration(600)
       .attr('opacity', 1);
+    
+    g.selectAll('.rectKD2')
+      .transition()
+      .duration(600)
+      .attr('opacity', 0.8);
 
   }
 
@@ -1423,7 +1487,7 @@ function updateYJ2(Industry) {
     .attr("stroke", "grey")
     .style("stroke-width", "2px")
     .attr('class', 'YJ2')
-    .attr('opacity',0);;
+    //.attr('opacity',0);;
 
   // remove the group that is not present anymore
   YJ2u
@@ -1581,7 +1645,7 @@ function updateYJ1(Industry) {
     .attr("rx", 10)
     .attr('fill', d => d.color)
     .attr('class', 'YJ1')
-    .attr('opacity',0);
+    //.attr('opacity',0);
 
   YJ1g.selectAll("rect")
     .on("mouseover", function () { YJ1tooltip.style("display", "block"); })
@@ -1869,6 +1933,27 @@ function updateWC3(Industry){
   })
 };
 
+
+function updateKD2(Industry){
+  if (!inKD2) return;
+
+  d3.select('svg')
+      .select('g')      
+      .selectAll(`.rectKD2`)
+      .attr('opacity', 0)
+
+  if (Industry != 'All Industries'){
+    d3.select('svg')
+      .select('g')      
+      .selectAll(`.rectKD2`)
+      .attr('opacity', 0.8)
+
+    d3.select('svg')
+      .select('g')
+      .select(`#rectKD2_${Industry}`)
+      .attr('opacity', 0)
+  }
+}
 /*
   Button control center
 */
@@ -1880,6 +1965,8 @@ function updateButtonClick(Industry){
     updateYJ1(Industry)
   } else if (inYJ2) {
     updateYJ2(Industry)
+  } else if (inKD2) {
+    updateKD2(Industry)
   }
 }
 
