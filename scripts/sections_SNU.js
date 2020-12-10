@@ -335,15 +335,15 @@ var scrollVis = function () {
       .attr("opacity", 0)      
 
     placesWC3.selectAll("circle")
-      .on("mouseover", function () { console.log("mouse over"); tooltip_wc1.style("display", "block"); })
+      .on("mouseover", function () { console.log("mouse over"); tooltip_wc3.style("display", "block"); })
       .on("mouseout", function () { tooltip_wc1.style("display", "none"); })
       .on("mousemove", function (d) {
         console.log("mouse move")
-        tooltip_wc1.style("opacity",1)
-        tooltip_wc1.style("left", (d3.event.pageX + 10) + "px");
-        tooltip_wc1.style("top", (d3.event.pageY - 10) + "px");
-        tooltip_wc1.style('z-index', '999')
-        tooltip_wc1.html("<br><p style='font:15px sans-serif'> <strong>" + d.city + "</strong> <br><span style='color:white'>" + d.city_ind_count + "</span>");
+        tooltip_wc3.style("opacity",1)
+        tooltip_wc3.style("left", (d3.event.pageX + 10) + "px");
+        tooltip_wc3.style("top", (d3.event.pageY - 10) + "px");
+        tooltip_wc3.style('z-index', '999')
+        tooltip_wc3.html("<br><p style='font:15px sans-serif'> <strong>" + d.city + "</strong> <br><span style='color:white'>" + d.city_ind_count + "</span>");
       });     
 
 
