@@ -1,212 +1,212 @@
-,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
-2,Compass,"New York, New York, United States",1,Software,2012/10/04,40.7127281,-74.0060152,112,20
-6,Twitch,"San Francisco, California, United States",1,Software,2007/01/01,37.7790262,-122.4199061,161,51
-7,Comcast,"Philadelphia, Pennsylvania, United States",1,Software,1963/06/28,39.9527237,-75.1635262,2,1
-11,MessageBird,"Amsterdam, Noord-Holland, The Netherlands",1,Software,2011/01/01,52.3727598,4.8936041,6,1
-18,Nokia,"Espoo, Southern Finland, Finland",1,Software,1865/05/12,60.2241869,24.6603626,2,2
-23,DocuSign,"San Francisco, California, United States",1,Software,2003/01/01,37.7790262,-122.4199061,161,51
-24,DraftKings,"Boston, Massachusetts, United States",1,Software,2012/01/01,42.3602534,-71.0582912,19,5
-27,Tencent Holdings,"Shenzhen, Guangdong, China",1,Software,1998/11/01,22.555454,114.0543297,3,1
-30,Dialpad,"San Francisco, California, United States",1,Software,2011/04/01,37.7790262,-122.4199061,161,51
-36,Reddit,"San Francisco, California, United States",1,Software,2005/01/01,37.7790262,-122.4199061,161,51
-38,Ericsson,"Stockholm, Stockholms Lan, Sweden",1,Software,1876/01/01,59.3251172,18.0710935,7,3
-45,Twitter,"San Francisco, California, United States",1,Software,2006/03/21,37.7790262,-122.4199061,161,51
-48,Swiggy,"Bangalore, Karnataka, India",1,Software,2014/08/01,12.9791198,77.5912997,15,4
-52,Airtel,"New Delhi, Delhi, India",1,Software,1995/01/01,28.6138954,77.2090057,5,3
-53,Pipefy,"San Francisco, California, United States",1,Software,2013/01/01,37.7790262,-122.4199061,161,51
-54,Outreach,"Seattle, Washington, United States",1,Software,2014/01/01,47.6038321,-122.3300624,14,4
-63,GitLab,"San Francisco, California, United States",1,Software,2014/01/01,37.7790262,-122.4199061,161,51
-70,PagerDuty,"San Francisco, California, United States",1,Software,2009/02/01,37.7790262,-122.4199061,161,51
-78,PlayVS,"Santa Monica, California, United States",1,Software,2018/01/01,34.0250724,-118.4965129,7,1
-80,SkillSoft,"Nashua, New Hampshire, United States",1,Software,1997/08/08,42.7653662,-71.467566,2,1
-82,Google,"Mountain View, California, United States",1,Software,1998/01/01,37.3893889,-122.0832101,21,5
-83,Accenture,"Dublin, Dublin, Ireland",1,Software,1989/01/01,53.3497645,-6.2602732,3,1
-102,Docker,"San Francisco, California, United States",1,Software,2010/01/01,37.7790262,-122.4199061,161,51
-105,Citi,"Cape Town, NA - South Africa, South Africa",1,Software,1998/01/01,-33.918861,18.4233,1,1
-112,Playco,"Tokyo, Tokyo, Japan",1,Software,2020/01/01,35.6777691,139.7646365,3,1
-114,Twilio,"San Francisco, California, United States",1,Software,2008/06/30,37.7790262,-122.4199061,161,51
-115,Urban Company,"Delhi, Delhi, India",1,Software,2014/11/10,28.6517178,77.2219388,1,1
-119,Bilibili,"Shanghai, Shanghai, China",1,Software,2009/01/01,31.2322758,121.4692071,3,1
-132,ServiceNow,"Santa Clara, California, United States",1,Software,2004/01/01,37.2333253,-121.6846349,15,4
-145,Supercell,"Helsinki, Southern Finland, Finland",1,Software,2010/05/01,60.1674098,24.9425769,3,2
-146,Nextdoor,"San Francisco, California, United States",1,Software,2010/01/01,37.7790262,-122.4199061,161,51
-149,Nutanix,"San Jose, California, United States",1,Software,2009/09/01,37.3361905,-121.8905833,13,4
-160,Figma,"San Francisco, California, United States",1,Software,2012/10/01,37.7790262,-122.4199061,161,51
-164,Chainlink,"Grand Cayman, Midland, Cayman Islands",1,Software,2019/01/01,19.313299,-81.254601,1,1
-166,Armory,"San Mateo, California, United States",1,Software,2016/09/01,37.496904,-122.3330573,18,3
-170,Discord,"San Francisco, California, United States",1,Software,2012/05/01,37.7790262,-122.4199061,161,51
-175,ICEYE,"Espoo, Southern Finland, Finland",1,Software,2014/01/01,60.2241869,24.6603626,2,2
-180,Hootsuite,"Vancouver, British Columbia, Canada",1,Software,2008/11/28,49.2608724,-123.1139529,3,3
-181,QueQ,"Bangkok, Krung Thep, Thailand",1,Software,2015/09/18,13.7542529,100.493087,2,1
-182,mmhmm,"San Francisco, California, United States",1,Software,2020/04/01,37.7790262,-122.4199061,161,51
-205,Emarsys,"Vienna, Wien, Austria",1,Software,2000/09/01,48.2083537,16.3725042,2,1
-208,Glassdoor,"Mill Valley, California, United States",1,Software,2007/06/01,37.9060368,-122.5449763,1,1
-210,EasySend,"Tel Aviv, Tel Aviv, Israel",1,Software,2016/01/01,32.0804808,34.7805274,12,3
-212,Canva,"Sydney, New South Wales, Australia",1,Software,2012/01/01,-33.8548157,151.2164539,4,2
-220,Telefonica,"Madrid, Madrid, Spain",1,Software,1924/01/01,40.4167047,-3.7035825,1,1
-233,monday.com,"Tel Aviv, Tel Aviv, Israel",1,Software,2012/02/01,32.0804808,34.7805274,12,3
-234,Andela,"New York, New York, United States",1,Software,2014/05/21,40.7127281,-74.0060152,112,20
-236,Squire,"New York, New York, United States",1,Software,2015/01/01,40.7127281,-74.0060152,112,20
-237,Justworks,"New York, New York, United States",1,Software,2012/10/01,40.7127281,-74.0060152,112,20
-239,Rover,"Seattle, Washington, United States",1,Software,2011/01/01,47.6038321,-122.3300624,14,4
-240,Veeam Software,"Baar, Zug, Switzerland",1,Software,2006/01/01,47.1951976,8.5253985,1,1
-245,Aclima,"San Francisco, California, United States",1,Software,2010/01/01,37.7790262,-122.4199061,161,51
-246,SendGrid,"Denver, Colorado, United States",1,Software,2009/07/20,39.7392364,-104.9848623,5,1
-254,Inshorts,"Noida, Uttar Pradesh, India",1,Software,2013/04/01,28.5356329,77.3910727,4,2
-258,Dun & Bradstreet,"Short Hills, New Jersey, United States",1,Software,1841-07-20,40.7478786,-74.3254271,1,1
-262,K2,"Bellevue, Washington, United States",1,Software,2000/01/01,47.6144219,-122.1923372,4,3
-263,OZY Media,"Mountain View, California, United States",1,Software,2012/01/01,37.3893889,-122.0832101,21,5
-266,Movandi,"Newport Beach, California, United States",1,Software,2016/01/01,33.6170092,-117.9294401,1,1
-268,Intercom,"San Francisco, California, United States",1,Software,2011/08/01,37.7790262,-122.4199061,161,51
-271,Casai,"Mexico City, Distrito Federal, Mexico",1,Software,2019/01/01,19.4326296,-99.1331785,3,1
-275,MongoDB,"New York, New York, United States",1,Software,2007/11/01,40.7127281,-74.0060152,112,20
-276,Goodr,"Atlanta, Georgia, United States",1,Software,2017/01/12,33.7490987,-84.3901849,8,3
-279,Pipedrive,"New York, New York, United States",1,Software,2010/06/21,40.7127281,-74.0060152,112,20
-289,Nintex,"Bellevue, Washington, United States",1,Software,2006/01/01,47.6144219,-122.1923372,4,3
-295,Niantic,"San Francisco, California, United States",1,Software,2010/01/01,37.7790262,-122.4199061,161,51
-303,Epic Games,"Cary, North Carolina, United States",1,Software,1991/01/01,35.7883046,-78.7811964,1,1
-306,NerdWallet,"San Francisco, California, United States",1,Software,2009/01/01,37.7790262,-122.4199061,161,51
-311,Zoom,"San Jose, California, United States",1,Software,2011/01/01,37.3361905,-121.8905833,13,4
-314,Anaplan,"San Francisco, California, United States",1,Software,2006/01/01,37.7790262,-122.4199061,161,51
-329,Front,"San Francisco, California, United States",1,Software,2013/10/01,37.7790262,-122.4199061,161,51
-331,Pure Storage,"Mountain View, California, United States",1,Software,2009/09/01,37.3893889,-122.0832101,21,5
-332,J2 Global,"Los Angeles, California, United States",1,Software,1995/01/01,34.0536909,-118.2427666,12,3
-337,BlackLine,"Woodland Hills, California, United States",1,Software,2001/01/01,34.1684364,-118.6058382,1,1
-338,Squarespace,"New York, New York, United States",1,Software,2003/04/01,40.7127281,-74.0060152,112,20
-341,Netdata,"San Francisco, California, United States",1,Software,2018/06/20,37.7790262,-122.4199061,161,51
-344,Redfin,"Seattle, Washington, United States",1,Software,2004/10/01,47.6038321,-122.3300624,14,4
-352,DigitalOcean,"New York, New York, United States",1,Software,2012/01/01,40.7127281,-74.0060152,112,20
-354,Optimizely,"San Francisco, California, United States",1,Software,2009/12/01,37.7790262,-122.4199061,161,51
-355,OutSystems,"Boston, Massachusetts, United States",1,Software,2001/03/01,42.3602534,-71.0582912,19,5
-356,Tinder,"West Hollywood, California, United States",1,Software,2012/09/01,34.0923014,-118.3692894,2,2
-363,SoundCloud,"Berlin, Berlin, Germany",1,Software,2007/01/01,52.5170365,13.3888599,14,4
-384,Doppler,"San Francisco, California, United States",1,Software,2018/01/01,37.7790262,-122.4199061,161,51
-385,Accurics,"Pleasanton, California, United States",1,Software,2019/01/01,37.6624312,-121.8746789,3,1
-389,Wolt,"Helsinki, Southern Finland, Finland",1,Software,2014/01/01,60.1674098,24.9425769,3,2
-393,BuzzFeed,"New York, New York, United States",1,Software,2006/11/01,40.7127281,-74.0060152,112,20
-394,Medium,"San Francisco, California, United States",1,Software,2011/07/18,37.7790262,-122.4199061,161,51
-395,Blueboard,"San Francisco, California, United States",1,Software,2014/01/01,37.7790262,-122.4199061,161,51
-396,Asana,"San Francisco, California, United States",1,Software,2009/01/01,37.7790262,-122.4199061,161,51
-397,Equinix,"Redwood City, California, United States",1,Software,1998/01/01,37.4863239,-122.232523,13,4
-398,Landit,"New York, New York, United States",1,Software,2014/01/01,40.7127281,-74.0060152,112,20
-405,Spectrum Labs,"San Francisco, California, United States",1,Software,2016/12/01,37.7790262,-122.4199061,161,51
-410,Amino Apps,"New City, New York, United States",1,Software,2014/01/01,41.1499825,-73.98989776,1,1
-412,Talkdesk,"San Francisco, California, United States",1,Software,2011/01/01,37.7790262,-122.4199061,161,51
-430,Cockroach Labs,"New York, New York, United States",1,Software,2015/02/01,40.7127281,-74.0060152,112,20
-432,uberall,"Berlin, Berlin, Germany",1,Software,2012/01/01,52.5170365,13.3888599,14,4
-443,Spotify,"Stockholm, Stockholms Lan, Sweden",1,Software,2006/07/14,59.3251172,18.0710935,7,3
-449,Instagram,"Menlo Park, California, United States",1,Software,2010/10/06,37.4519671,-122.1779927,6,1
-450,Freeletics,"München, Bayern, Germany",1,Software,2013/01/01,48.1371079,11.5753822,2,1
-452,Qualtrics,"Provo, Utah, United States",1,Software,2002/01/01,40.2338438,-111.6585337,2,1
-453,"Blavity, Inc.","Los Angeles, California, United States",1,Software,2014/01/01,34.0536909,-118.2427666,12,3
-454,Box,"Redwood City, California, United States",1,Software,2005/01/01,37.4863239,-122.232523,13,4
-459,Macrometa,"Palo Alto, California, United States",1,Software,2017/01/01,37.4443293,-122.1598465,14,4
-464,G2,"Chicago, Illinois, United States",1,Software,2012/05/01,41.8755616,-87.6244212,16,2
-474,Weibo,"Beijing, Beijing, China",1,Software,2009/08/14,39.9020668,116.718583,15,1
-477,Drift,"Boston, Massachusetts, United States",1,Software,2015/01/01,42.3602534,-71.0582912,19,5
-478,Infor,"New York, New York, United States",1,Software,2002/05/30,40.7127281,-74.0060152,112,20
-483,YourStory,"Bangalore, Karnataka, India",1,Software,2008/10/01,12.9791198,77.5912997,15,4
-489,Pandora,"Oakland, California, United States",1,Software,2000/01/03,37.8044557,-122.2713563,9,1
-507,Lattice,"San Francisco, California, United States",1,Software,2015/10/01,37.7790262,-122.4199061,161,51
-509,Resilia,"New Orleans, Louisiana, United States",1,Software,2016/01/05,29.9499323,-90.0701156,2,1
-515,Smartsheet,"Bellevue, Washington, United States",1,Software,2005/06/01,47.6144219,-122.1923372,4,3
-518,CloudBees,"San Jose, California, United States",1,Software,2010/03/09,37.3361905,-121.8905833,13,4
-519,Atlassian,"Sydney, New South Wales, Australia",1,Software,2002/01/01,-33.8548157,151.2164539,4,2
-525,ConsenSys,"Zug, Zug, Switzerland",1,Software,2014/10/01,47.1679898,8.5173652,2,1
-538,Datto,"Norwalk, Connecticut, United States",1,Software,2007/01/01,41.1175966,-73.4078968,1,1
-548,MYOB,"Glen Waverley, Victoria, Australia",1,Software,1991/01/01,-37.8797175,145.1629331,1,1
-561,ShareChat,"Bangalore, Karnataka, India",1,Software,2015/01/01,12.9791198,77.5912997,15,4
-562,TripActions,"Palo Alto, California, United States",1,Software,2015/01/01,37.4443293,-122.1598465,14,4
-565,Snap,"Venice, California, United States",1,Software,2011/05/01,33.995044,-118.4668875,1,1
-568,CreatorIQ,"Culver City, California, United States",1,Software,2014/01/01,34.0211224,-118.3964665,6,2
-584,SafetyCulture,"Townsville, Queensland, Australia",1,Software,2004/03/12,-19.2569391,146.8239537,1,1
-585,MuleSoft,"San Francisco, California, United States",1,Software,2006/07/01,37.7790262,-122.4199061,161,51
-588,Grindr,"West Hollywood, California, United States",1,Software,2008/02/03,34.0923014,-118.3692894,2,2
-595,Procore,"Carpinteria, California, United States",1,Software,2003/01/01,34.3988838,-119.5184564,1,1
-599,Portshift,"Tel Aviv, Tel Aviv, Israel",1,Software,2018/04/01,32.0804808,34.7805274,12,3
-607,Bambee,"Los Angeles, California, United States",1,Software,2016/06/01,34.0536909,-118.2427666,12,3
-608,Bold Penguin,"Columbus, Ohio, United States",1,Software,2016/01/01,39.9622601,-83.0007065,5,1
-610,Evernote,"Redwood City, California, United States",1,Software,2000/02/29,37.4863239,-122.232523,13,4
-611,HYP3R,"San Francisco, California, United States",1,Software,2015/03/01,37.7790262,-122.4199061,161,51
-621,Bandwidth,"Raleigh, North Carolina, United States",1,Software,1999/08/08,35.7803977,-78.6390989,2,1
-624,TELUS,"Vancouver, British Columbia, Canada",1,Software,1990/01/01,49.2608724,-123.1139529,3,3
-625,Mulberry Platform,"New York, New York, United States",1,Software,2012/01/01,40.7127281,-74.0060152,112,20
-630,Take-Two Interactive,"New York, New York, United States",1,Software,1993/01/01,40.7127281,-74.0060152,112,20
-643,Stem,"Millbrae, California, United States",1,Software,2009/01/01,37.598958,-122.4009419,1,1
-651,Adjust,"Berlin, Berlin, Germany",1,Software,2012/01/01,52.5170365,13.3888599,14,4
-654,Webflow,"San Francisco, California, United States",1,Software,2012/01/01,37.7790262,-122.4199061,161,51
-655,Superhuman,"San Francisco, California, United States",1,Software,2014/01/01,37.7790262,-122.4199061,161,51
-656,ZeBrand Inc.,"New York, New York, United States",1,Software,2019/10/06,40.7127281,-74.0060152,112,20
-658,Stanza Living,"New Delhi, Delhi, India",1,Software,2017/01/01,28.6138954,77.2090057,5,3
-663,Genesys,"Daly City, California, United States",1,Software,1990/01/01,37.6904826,-122.4726708,1,1
-665,Zynga,"San Francisco, California, United States",1,Software,2007/01/01,37.7790262,-122.4199061,161,51
-669,Grammarly,"San Francisco, California, United States",1,Software,2009/04/01,37.7790262,-122.4199061,161,51
-670,Propy,"Palo Alto, California, United States",1,Software,2016/01/07,37.4443293,-122.1598465,14,4
-673,Oracle,"Redwood Shores, California, United States",1,Software,1977/06/16,37.5318804,-122.2480219,2,1
-678,Outbrain,"New York, New York, United States",1,Software,2006/01/01,40.7127281,-74.0060152,112,20
-681,Treebo Hotels,"Bengaluru, Karnataka, India",1,Software,2015/06/01,12.9791198,77.5912997,6,2
-689,Eventbrite,"San Francisco, California, United States",1,Software,2006/01/01,37.7790262,-122.4199061,161,51
-692,Alfresco,"San Mateo, California, United States",1,Software,2005/01/01,37.496904,-122.3330573,18,3
-697,IFTTT,"San Francisco, California, United States",1,Software,2010/12/14,37.7790262,-122.4199061,161,51
-701,N3,"Atlanta, Georgia, United States",1,Software,2004/01/01,33.7490987,-84.3901849,8,3
-715,Coil,"San Francisco, California, United States",1,Software,2018/04/26,37.7790262,-122.4199061,161,51
-716,Loom,"San Francisco, California, United States",1,Software,2016/09/01,37.7790262,-122.4199061,161,51
-724,Sanity,"San Francisco, California, United States",1,Software,2016/01/01,37.7790262,-122.4199061,161,51
-729,Astroscale,"Sumida, Tokyo, Japan",1,Software,2013/05/04,35.700429,139.805017,1,1
-732,Clio,"Vancouver, British Columbia, Canada",1,Software,2008/10/01,49.2608724,-123.1139529,3,3
-737,BetterCloud,"New York, New York, United States",1,Software,2011/11/01,40.7127281,-74.0060152,112,20
-738,Deezer,"Paris, Ile-de-France, France",1,Software,2006/08/01,48.8566969,2.3514616,10,1
-745,JobGet,"Boston, Massachusetts, United States",1,Software,2018/01/01,42.3602534,-71.0582912,19,5
-754,Kik,"Waterloo, Ontario, Canada",1,Software,2009/01/01,43.466874,-80.524635,2,1
-758,StackShare,"San Francisco, California, United States",1,Software,2014/01/01,37.7790262,-122.4199061,161,51
-767,Remotion,"San Francisco, California, United States",1,Software,2019/01/01,37.7790262,-122.4199061,161,51
-768,SimpleCitizen,"Salt Lake City, Utah, United States",1,Software,2014/01/01,40.7596198,-111.8867975,3,1
-774,Kinside,"San Francisco, California, United States",1,Software,2018/06/01,37.7790262,-122.4199061,161,51
-776,NoBroker,"Bangalore, Karnataka, India",1,Software,2014/01/01,12.9791198,77.5912997,15,4
-780,Scopely,"Culver City, California, United States",1,Software,2011/01/01,34.0211224,-118.3964665,6,2
-782,UJET,"San Francisco, California, United States",1,Software,2015/01/01,37.7790262,-122.4199061,161,51
-784,Paytm First Games,"Noida, Uttar Pradesh, India",1,Software,2018/01/01,28.5356329,77.3910727,4,2
-793,Company,"Sag Harbor, New York, United States",1,Software,2011/01/01,40.9978727,-72.2922292,1,1
-798,JFrog,"Sunnyvale, California, United States",1,Software,2008/04/28,37.3688301,-122.0363496,5,2
-803,Nuvia,"Santa Clara, California, United States",1,Software,2019/01/01,37.2333253,-121.6846349,15,4
-809,SaltStack,"Lehi, Utah, United States",1,Software,2012/08/01,40.3880902,-111.8491619,1,1
-811,Amazon Web Services,"Seattle, Washington, United States",1,Software,2012/01/01,47.6038321,-122.3300624,14,4
-813,G-Loot,"Stockholm, Stockholms Lan, Sweden",1,Software,2015/01/01,59.3251172,18.0710935,7,3
-817,Wipro Technologies,"Bengaluru, Karnataka, India",1,Software,1945/01/01,12.9791198,77.5912997,6,2
-822,Gigster,"San Francisco, California, United States",1,Software,2013/01/01,37.7790262,-122.4199061,161,51
-826,Notion,"San Francisco, California, United States",1,Software,2013/01/01,37.7790262,-122.4199061,161,51
-832,Toast,"Boston, Massachusetts, United States",1,Software,2011/12/22,42.3602534,-71.0582912,19,5
-837,Fluree,"Winston Salem, North Carolina, United States",1,Software,2017/01/01,36.0998131,-80.2440518,1,1
-842,Rever,"San Mateo, California, United States",1,Software,2015/05/07,37.496904,-122.3330573,18,3
-843,Telstra,"Melbourne, Victoria, Australia",1,Software,1975/07/01,-37.8142176,144.9631608,2,1
-844,Storj Labs,"Atlanta, Georgia, United States",1,Software,2014/01/01,33.7490987,-84.3901849,8,3
-845,BigPanda,"Mountain View, California, United States",1,Software,2012/01/01,37.3893889,-122.0832101,21,5
-848,WhatsApp,"Santa Clara, California, United States",1,Software,2009/01/01,37.2333253,-121.6846349,15,4
-851,Copper,"San Francisco, California, United States",1,Software,2011/01/01,37.7790262,-122.4199061,161,51
-854,Vox Media,"Washington, District of Columbia, United States",1,Software,2003/07/14,38.8949924,-77.0365581,5,1
-856,Agora.io,"Santa Clara, California, United States",1,Software,2012/01/01,37.2333253,-121.6846349,15,4
-857,OneWeb,"London, England, United Kingdom",1,Software,2012/01/01,51.5073219,-0.1276474,48,3
-865,FanDuel,"New York, New York, United States",1,Software,2007/01/01,40.7127281,-74.0060152,112,20
-870,Switch,"New York, New York, United States",1,Software,2014/01/01,40.7127281,-74.0060152,112,20
-877,Virtusa,"Westborough, Massachusetts, United States",1,Software,1996/01/01,42.2694308,-71.6129907,1,1
-890,GetYourGuide,"Berlin, Berlin, Germany",1,Software,2009/01/01,52.5170365,13.3888599,14,4
-898,Liberty Global,"London, England, United Kingdom",1,Software,2004/01/01,51.5073219,-0.1276474,48,3
-901,AppLovin,"Palo Alto, California, United States",1,Software,2012/03/01,37.4443293,-122.1598465,14,4
-911,Druva,"Sunnyvale, California, United States",1,Software,2008/08/02,37.3688301,-122.0363496,5,2
-913,Schneider Electric,"Rueil-malmaison, Ile-de-France, France",1,Software,1836-01-01,48.87778,2.1802832,1,1
-929,ActiveCampaign,"Chicago, Illinois, United States",1,Software,2003/01/01,41.8755616,-87.6244212,16,2
-932,Fireflies.ai,"San Francisco, California, United States",1,Software,2016/07/01,37.7790262,-122.4199061,161,51
-936,tray.io,"San Francisco, California, United States",1,Software,2012/04/14,37.7790262,-122.4199061,161,51
-938,Safaricom,"Nairobi, Nairobi Area, Kenya",1,Software,1997/04/01,-1.2832533,36.8172449,1,1
-939,TransparentBusiness,"New York, New York, United States",1,Software,2015/06/22,40.7127281,-74.0060152,112,20
-942,Data Gumbo,"Houston, Texas, United States",1,Software,2016/08/16,29.7589382,-95.3676974,2,1
-946,Roam Research,"San Francisco, California, United States",1,Software,2017/10/26,37.7790262,-122.4199061,161,51
-953,SAP,"Walldorf, Baden-Wurttemberg, Germany",1,Software,1972/04/01,49.3038134,8.6433518,1,1
-959,Quantum,"San Jose, California, United States",1,Software,1980/01/01,37.3361905,-121.8905833,13,4
-961,WinZO,"New Delhi, Delhi, India",1,Software,2018/04/01,28.6138954,77.2090057,5,3
-962,Northspyre,"Brooklyn, New York, United States",1,Software,2017/01/01,40.6501038,-73.9495823,7,1
-971,Branch,"Redwood City, California, United States",1,Software,2014/04/15,37.4863239,-122.232523,13,4
-973,HackerRank,"Mountain View, California, United States",1,Software,2009/01/01,37.3893889,-122.0832101,21,5
-977,Actifio,"Waltham, Massachusetts, United States",1,Software,2009/07/01,42.3756401,-71.2358004,5,1
-989,GetSetUp,"San Francisco, California, United States",1,Software,2019/08/06,37.7790262,-122.4199061,161,51
-997,Infobip,"London, England, United Kingdom",1,Software,2006/01/01,51.5073219,-0.1276474,48,3
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count,color
+2,Compass,"New York, New York, United States",1,Software,2012/10/04,40.7127281,-74.0060152,112,20,#6973F6
+6,Twitch,"San Francisco, California, United States",1,Software,2007/01/01,37.7790262,-122.4199061,161,51,#6973F6
+7,Comcast,"Philadelphia, Pennsylvania, United States",1,Software,1963/06/28,39.9527237,-75.1635262,2,1,#6973F6
+11,MessageBird,"Amsterdam, Noord-Holland, The Netherlands",1,Software,2011/01/01,52.3727598,4.8936041,6,1,#6973F6
+18,Nokia,"Espoo, Southern Finland, Finland",1,Software,1865/05/12,60.2241869,24.6603626,2,2,#6973F6
+23,DocuSign,"San Francisco, California, United States",1,Software,2003/01/01,37.7790262,-122.4199061,161,51,#6973F6
+24,DraftKings,"Boston, Massachusetts, United States",1,Software,2012/01/01,42.3602534,-71.0582912,19,5,#6973F6
+27,Tencent Holdings,"Shenzhen, Guangdong, China",1,Software,1998/11/01,22.555454,114.0543297,3,1,#6973F6
+30,Dialpad,"San Francisco, California, United States",1,Software,2011/04/01,37.7790262,-122.4199061,161,51,#6973F6
+36,Reddit,"San Francisco, California, United States",1,Software,2005/01/01,37.7790262,-122.4199061,161,51,#6973F6
+38,Ericsson,"Stockholm, Stockholms Lan, Sweden",1,Software,1876/01/01,59.3251172,18.0710935,7,3,#6973F6
+45,Twitter,"San Francisco, California, United States",1,Software,2006/03/21,37.7790262,-122.4199061,161,51,#6973F6
+48,Swiggy,"Bangalore, Karnataka, India",1,Software,2014/08/01,12.9791198,77.5912997,15,4,#6973F6
+52,Airtel,"New Delhi, Delhi, India",1,Software,1995/01/01,28.6138954,77.2090057,5,3,#6973F6
+53,Pipefy,"San Francisco, California, United States",1,Software,2013/01/01,37.7790262,-122.4199061,161,51,#6973F6
+54,Outreach,"Seattle, Washington, United States",1,Software,2014/01/01,47.6038321,-122.3300624,14,4,#6973F6
+63,GitLab,"San Francisco, California, United States",1,Software,2014/01/01,37.7790262,-122.4199061,161,51,#6973F6
+70,PagerDuty,"San Francisco, California, United States",1,Software,2009/02/01,37.7790262,-122.4199061,161,51,#6973F6
+78,PlayVS,"Santa Monica, California, United States",1,Software,2018/01/01,34.0250724,-118.4965129,7,1,#6973F6
+80,SkillSoft,"Nashua, New Hampshire, United States",1,Software,1997/08/08,42.7653662,-71.467566,2,1,#6973F6
+82,Google,"Mountain View, California, United States",1,Software,1998/01/01,37.3893889,-122.0832101,21,5,#6973F6
+83,Accenture,"Dublin, Dublin, Ireland",1,Software,1989/01/01,53.3497645,-6.2602732,3,1,#6973F6
+102,Docker,"San Francisco, California, United States",1,Software,2010/01/01,37.7790262,-122.4199061,161,51,#6973F6
+105,Citi,"Cape Town, NA - South Africa, South Africa",1,Software,1998/01/01,-33.918861,18.4233,1,1,#6973F6
+112,Playco,"Tokyo, Tokyo, Japan",1,Software,2020/01/01,35.6777691,139.7646365,3,1,#6973F6
+114,Twilio,"San Francisco, California, United States",1,Software,2008/06/30,37.7790262,-122.4199061,161,51,#6973F6
+115,Urban Company,"Delhi, Delhi, India",1,Software,2014/11/10,28.6517178,77.2219388,1,1,#6973F6
+119,Bilibili,"Shanghai, Shanghai, China",1,Software,2009/01/01,31.2322758,121.4692071,3,1,#6973F6
+132,ServiceNow,"Santa Clara, California, United States",1,Software,2004/01/01,37.2333253,-121.6846349,15,4,#6973F6
+145,Supercell,"Helsinki, Southern Finland, Finland",1,Software,2010/05/01,60.1674098,24.9425769,3,2,#6973F6
+146,Nextdoor,"San Francisco, California, United States",1,Software,2010/01/01,37.7790262,-122.4199061,161,51,#6973F6
+149,Nutanix,"San Jose, California, United States",1,Software,2009/09/01,37.3361905,-121.8905833,13,4,#6973F6
+160,Figma,"San Francisco, California, United States",1,Software,2012/10/01,37.7790262,-122.4199061,161,51,#6973F6
+164,Chainlink,"Grand Cayman, Midland, Cayman Islands",1,Software,2019/01/01,19.313299,-81.254601,1,1,#6973F6
+166,Armory,"San Mateo, California, United States",1,Software,2016/09/01,37.496904,-122.3330573,18,3,#6973F6
+170,Discord,"San Francisco, California, United States",1,Software,2012/05/01,37.7790262,-122.4199061,161,51,#6973F6
+175,ICEYE,"Espoo, Southern Finland, Finland",1,Software,2014/01/01,60.2241869,24.6603626,2,2,#6973F6
+180,Hootsuite,"Vancouver, British Columbia, Canada",1,Software,2008/11/28,49.2608724,-123.1139529,3,3,#6973F6
+181,QueQ,"Bangkok, Krung Thep, Thailand",1,Software,2015/09/18,13.7542529,100.493087,2,1,#6973F6
+182,mmhmm,"San Francisco, California, United States",1,Software,2020/04/01,37.7790262,-122.4199061,161,51,#6973F6
+205,Emarsys,"Vienna, Wien, Austria",1,Software,2000/09/01,48.2083537,16.3725042,2,1,#6973F6
+208,Glassdoor,"Mill Valley, California, United States",1,Software,2007/06/01,37.9060368,-122.5449763,1,1,#6973F6
+210,EasySend,"Tel Aviv, Tel Aviv, Israel",1,Software,2016/01/01,32.0804808,34.7805274,12,3,#6973F6
+212,Canva,"Sydney, New South Wales, Australia",1,Software,2012/01/01,-33.8548157,151.2164539,4,2,#6973F6
+220,Telefonica,"Madrid, Madrid, Spain",1,Software,1924/01/01,40.4167047,-3.7035825,1,1,#6973F6
+233,monday.com,"Tel Aviv, Tel Aviv, Israel",1,Software,2012/02/01,32.0804808,34.7805274,12,3,#6973F6
+234,Andela,"New York, New York, United States",1,Software,2014/05/21,40.7127281,-74.0060152,112,20,#6973F6
+236,Squire,"New York, New York, United States",1,Software,2015/01/01,40.7127281,-74.0060152,112,20,#6973F6
+237,Justworks,"New York, New York, United States",1,Software,2012/10/01,40.7127281,-74.0060152,112,20,#6973F6
+239,Rover,"Seattle, Washington, United States",1,Software,2011/01/01,47.6038321,-122.3300624,14,4,#6973F6
+240,Veeam Software,"Baar, Zug, Switzerland",1,Software,2006/01/01,47.1951976,8.5253985,1,1,#6973F6
+245,Aclima,"San Francisco, California, United States",1,Software,2010/01/01,37.7790262,-122.4199061,161,51,#6973F6
+246,SendGrid,"Denver, Colorado, United States",1,Software,2009/07/20,39.7392364,-104.9848623,5,1,#6973F6
+254,Inshorts,"Noida, Uttar Pradesh, India",1,Software,2013/04/01,28.5356329,77.3910727,4,2,#6973F6
+258,Dun & Bradstreet,"Short Hills, New Jersey, United States",1,Software,1841-07-20,40.7478786,-74.3254271,1,1,#6973F6
+262,K2,"Bellevue, Washington, United States",1,Software,2000/01/01,47.6144219,-122.1923372,4,3,#6973F6
+263,OZY Media,"Mountain View, California, United States",1,Software,2012/01/01,37.3893889,-122.0832101,21,5,#6973F6
+266,Movandi,"Newport Beach, California, United States",1,Software,2016/01/01,33.6170092,-117.9294401,1,1,#6973F6
+268,Intercom,"San Francisco, California, United States",1,Software,2011/08/01,37.7790262,-122.4199061,161,51,#6973F6
+271,Casai,"Mexico City, Distrito Federal, Mexico",1,Software,2019/01/01,19.4326296,-99.1331785,3,1,#6973F6
+275,MongoDB,"New York, New York, United States",1,Software,2007/11/01,40.7127281,-74.0060152,112,20,#6973F6
+276,Goodr,"Atlanta, Georgia, United States",1,Software,2017/01/12,33.7490987,-84.3901849,8,3,#6973F6
+279,Pipedrive,"New York, New York, United States",1,Software,2010/06/21,40.7127281,-74.0060152,112,20,#6973F6
+289,Nintex,"Bellevue, Washington, United States",1,Software,2006/01/01,47.6144219,-122.1923372,4,3,#6973F6
+295,Niantic,"San Francisco, California, United States",1,Software,2010/01/01,37.7790262,-122.4199061,161,51,#6973F6
+303,Epic Games,"Cary, North Carolina, United States",1,Software,1991/01/01,35.7883046,-78.7811964,1,1,#6973F6
+306,NerdWallet,"San Francisco, California, United States",1,Software,2009/01/01,37.7790262,-122.4199061,161,51,#6973F6
+311,Zoom,"San Jose, California, United States",1,Software,2011/01/01,37.3361905,-121.8905833,13,4,#6973F6
+314,Anaplan,"San Francisco, California, United States",1,Software,2006/01/01,37.7790262,-122.4199061,161,51,#6973F6
+329,Front,"San Francisco, California, United States",1,Software,2013/10/01,37.7790262,-122.4199061,161,51,#6973F6
+331,Pure Storage,"Mountain View, California, United States",1,Software,2009/09/01,37.3893889,-122.0832101,21,5,#6973F6
+332,J2 Global,"Los Angeles, California, United States",1,Software,1995/01/01,34.0536909,-118.2427666,12,3,#6973F6
+337,BlackLine,"Woodland Hills, California, United States",1,Software,2001/01/01,34.1684364,-118.6058382,1,1,#6973F6
+338,Squarespace,"New York, New York, United States",1,Software,2003/04/01,40.7127281,-74.0060152,112,20,#6973F6
+341,Netdata,"San Francisco, California, United States",1,Software,2018/06/20,37.7790262,-122.4199061,161,51,#6973F6
+344,Redfin,"Seattle, Washington, United States",1,Software,2004/10/01,47.6038321,-122.3300624,14,4,#6973F6
+352,DigitalOcean,"New York, New York, United States",1,Software,2012/01/01,40.7127281,-74.0060152,112,20,#6973F6
+354,Optimizely,"San Francisco, California, United States",1,Software,2009/12/01,37.7790262,-122.4199061,161,51,#6973F6
+355,OutSystems,"Boston, Massachusetts, United States",1,Software,2001/03/01,42.3602534,-71.0582912,19,5,#6973F6
+356,Tinder,"West Hollywood, California, United States",1,Software,2012/09/01,34.0923014,-118.3692894,2,2,#6973F6
+363,SoundCloud,"Berlin, Berlin, Germany",1,Software,2007/01/01,52.5170365,13.3888599,14,4,#6973F6
+384,Doppler,"San Francisco, California, United States",1,Software,2018/01/01,37.7790262,-122.4199061,161,51,#6973F6
+385,Accurics,"Pleasanton, California, United States",1,Software,2019/01/01,37.6624312,-121.8746789,3,1,#6973F6
+389,Wolt,"Helsinki, Southern Finland, Finland",1,Software,2014/01/01,60.1674098,24.9425769,3,2,#6973F6
+393,BuzzFeed,"New York, New York, United States",1,Software,2006/11/01,40.7127281,-74.0060152,112,20,#6973F6
+394,Medium,"San Francisco, California, United States",1,Software,2011/07/18,37.7790262,-122.4199061,161,51,#6973F6
+395,Blueboard,"San Francisco, California, United States",1,Software,2014/01/01,37.7790262,-122.4199061,161,51,#6973F6
+396,Asana,"San Francisco, California, United States",1,Software,2009/01/01,37.7790262,-122.4199061,161,51,#6973F6
+397,Equinix,"Redwood City, California, United States",1,Software,1998/01/01,37.4863239,-122.232523,13,4,#6973F6
+398,Landit,"New York, New York, United States",1,Software,2014/01/01,40.7127281,-74.0060152,112,20,#6973F6
+405,Spectrum Labs,"San Francisco, California, United States",1,Software,2016/12/01,37.7790262,-122.4199061,161,51,#6973F6
+410,Amino Apps,"New City, New York, United States",1,Software,2014/01/01,41.1499825,-73.98989776,1,1,#6973F6
+412,Talkdesk,"San Francisco, California, United States",1,Software,2011/01/01,37.7790262,-122.4199061,161,51,#6973F6
+430,Cockroach Labs,"New York, New York, United States",1,Software,2015/02/01,40.7127281,-74.0060152,112,20,#6973F6
+432,uberall,"Berlin, Berlin, Germany",1,Software,2012/01/01,52.5170365,13.3888599,14,4,#6973F6
+443,Spotify,"Stockholm, Stockholms Lan, Sweden",1,Software,2006/07/14,59.3251172,18.0710935,7,3,#6973F6
+449,Instagram,"Menlo Park, California, United States",1,Software,2010/10/06,37.4519671,-122.1779927,6,1,#6973F6
+450,Freeletics,"München, Bayern, Germany",1,Software,2013/01/01,48.1371079,11.5753822,2,1,#6973F6
+452,Qualtrics,"Provo, Utah, United States",1,Software,2002/01/01,40.2338438,-111.6585337,2,1,#6973F6
+453,"Blavity, Inc.","Los Angeles, California, United States",1,Software,2014/01/01,34.0536909,-118.2427666,12,3,#6973F6
+454,Box,"Redwood City, California, United States",1,Software,2005/01/01,37.4863239,-122.232523,13,4,#6973F6
+459,Macrometa,"Palo Alto, California, United States",1,Software,2017/01/01,37.4443293,-122.1598465,14,4,#6973F6
+464,G2,"Chicago, Illinois, United States",1,Software,2012/05/01,41.8755616,-87.6244212,16,2,#6973F6
+474,Weibo,"Beijing, Beijing, China",1,Software,2009/08/14,39.9020668,116.718583,15,1,#6973F6
+477,Drift,"Boston, Massachusetts, United States",1,Software,2015/01/01,42.3602534,-71.0582912,19,5,#6973F6
+478,Infor,"New York, New York, United States",1,Software,2002/05/30,40.7127281,-74.0060152,112,20,#6973F6
+483,YourStory,"Bangalore, Karnataka, India",1,Software,2008/10/01,12.9791198,77.5912997,15,4,#6973F6
+489,Pandora,"Oakland, California, United States",1,Software,2000/01/03,37.8044557,-122.2713563,9,1,#6973F6
+507,Lattice,"San Francisco, California, United States",1,Software,2015/10/01,37.7790262,-122.4199061,161,51,#6973F6
+509,Resilia,"New Orleans, Louisiana, United States",1,Software,2016/01/05,29.9499323,-90.0701156,2,1,#6973F6
+515,Smartsheet,"Bellevue, Washington, United States",1,Software,2005/06/01,47.6144219,-122.1923372,4,3,#6973F6
+518,CloudBees,"San Jose, California, United States",1,Software,2010/03/09,37.3361905,-121.8905833,13,4,#6973F6
+519,Atlassian,"Sydney, New South Wales, Australia",1,Software,2002/01/01,-33.8548157,151.2164539,4,2,#6973F6
+525,ConsenSys,"Zug, Zug, Switzerland",1,Software,2014/10/01,47.1679898,8.5173652,2,1,#6973F6
+538,Datto,"Norwalk, Connecticut, United States",1,Software,2007/01/01,41.1175966,-73.4078968,1,1,#6973F6
+548,MYOB,"Glen Waverley, Victoria, Australia",1,Software,1991/01/01,-37.8797175,145.1629331,1,1,#6973F6
+561,ShareChat,"Bangalore, Karnataka, India",1,Software,2015/01/01,12.9791198,77.5912997,15,4,#6973F6
+562,TripActions,"Palo Alto, California, United States",1,Software,2015/01/01,37.4443293,-122.1598465,14,4,#6973F6
+565,Snap,"Venice, California, United States",1,Software,2011/05/01,33.995044,-118.4668875,1,1,#6973F6
+568,CreatorIQ,"Culver City, California, United States",1,Software,2014/01/01,34.0211224,-118.3964665,6,2,#6973F6
+584,SafetyCulture,"Townsville, Queensland, Australia",1,Software,2004/03/12,-19.2569391,146.8239537,1,1,#6973F6
+585,MuleSoft,"San Francisco, California, United States",1,Software,2006/07/01,37.7790262,-122.4199061,161,51,#6973F6
+588,Grindr,"West Hollywood, California, United States",1,Software,2008/02/03,34.0923014,-118.3692894,2,2,#6973F6
+595,Procore,"Carpinteria, California, United States",1,Software,2003/01/01,34.3988838,-119.5184564,1,1,#6973F6
+599,Portshift,"Tel Aviv, Tel Aviv, Israel",1,Software,2018/04/01,32.0804808,34.7805274,12,3,#6973F6
+607,Bambee,"Los Angeles, California, United States",1,Software,2016/06/01,34.0536909,-118.2427666,12,3,#6973F6
+608,Bold Penguin,"Columbus, Ohio, United States",1,Software,2016/01/01,39.9622601,-83.0007065,5,1,#6973F6
+610,Evernote,"Redwood City, California, United States",1,Software,2000/02/29,37.4863239,-122.232523,13,4,#6973F6
+611,HYP3R,"San Francisco, California, United States",1,Software,2015/03/01,37.7790262,-122.4199061,161,51,#6973F6
+621,Bandwidth,"Raleigh, North Carolina, United States",1,Software,1999/08/08,35.7803977,-78.6390989,2,1,#6973F6
+624,TELUS,"Vancouver, British Columbia, Canada",1,Software,1990/01/01,49.2608724,-123.1139529,3,3,#6973F6
+625,Mulberry Platform,"New York, New York, United States",1,Software,2012/01/01,40.7127281,-74.0060152,112,20,#6973F6
+630,Take-Two Interactive,"New York, New York, United States",1,Software,1993/01/01,40.7127281,-74.0060152,112,20,#6973F6
+643,Stem,"Millbrae, California, United States",1,Software,2009/01/01,37.598958,-122.4009419,1,1,#6973F6
+651,Adjust,"Berlin, Berlin, Germany",1,Software,2012/01/01,52.5170365,13.3888599,14,4,#6973F6
+654,Webflow,"San Francisco, California, United States",1,Software,2012/01/01,37.7790262,-122.4199061,161,51,#6973F6
+655,Superhuman,"San Francisco, California, United States",1,Software,2014/01/01,37.7790262,-122.4199061,161,51,#6973F6
+656,ZeBrand Inc.,"New York, New York, United States",1,Software,2019/10/06,40.7127281,-74.0060152,112,20,#6973F6
+658,Stanza Living,"New Delhi, Delhi, India",1,Software,2017/01/01,28.6138954,77.2090057,5,3,#6973F6
+663,Genesys,"Daly City, California, United States",1,Software,1990/01/01,37.6904826,-122.4726708,1,1,#6973F6
+665,Zynga,"San Francisco, California, United States",1,Software,2007/01/01,37.7790262,-122.4199061,161,51,#6973F6
+669,Grammarly,"San Francisco, California, United States",1,Software,2009/04/01,37.7790262,-122.4199061,161,51,#6973F6
+670,Propy,"Palo Alto, California, United States",1,Software,2016/01/07,37.4443293,-122.1598465,14,4,#6973F6
+673,Oracle,"Redwood Shores, California, United States",1,Software,1977/06/16,37.5318804,-122.2480219,2,1,#6973F6
+678,Outbrain,"New York, New York, United States",1,Software,2006/01/01,40.7127281,-74.0060152,112,20,#6973F6
+681,Treebo Hotels,"Bengaluru, Karnataka, India",1,Software,2015/06/01,12.9791198,77.5912997,6,2,#6973F6
+689,Eventbrite,"San Francisco, California, United States",1,Software,2006/01/01,37.7790262,-122.4199061,161,51,#6973F6
+692,Alfresco,"San Mateo, California, United States",1,Software,2005/01/01,37.496904,-122.3330573,18,3,#6973F6
+697,IFTTT,"San Francisco, California, United States",1,Software,2010/12/14,37.7790262,-122.4199061,161,51,#6973F6
+701,N3,"Atlanta, Georgia, United States",1,Software,2004/01/01,33.7490987,-84.3901849,8,3,#6973F6
+715,Coil,"San Francisco, California, United States",1,Software,2018/04/26,37.7790262,-122.4199061,161,51,#6973F6
+716,Loom,"San Francisco, California, United States",1,Software,2016/09/01,37.7790262,-122.4199061,161,51,#6973F6
+724,Sanity,"San Francisco, California, United States",1,Software,2016/01/01,37.7790262,-122.4199061,161,51,#6973F6
+729,Astroscale,"Sumida, Tokyo, Japan",1,Software,2013/05/04,35.700429,139.805017,1,1,#6973F6
+732,Clio,"Vancouver, British Columbia, Canada",1,Software,2008/10/01,49.2608724,-123.1139529,3,3,#6973F6
+737,BetterCloud,"New York, New York, United States",1,Software,2011/11/01,40.7127281,-74.0060152,112,20,#6973F6
+738,Deezer,"Paris, Ile-de-France, France",1,Software,2006/08/01,48.8566969,2.3514616,10,1,#6973F6
+745,JobGet,"Boston, Massachusetts, United States",1,Software,2018/01/01,42.3602534,-71.0582912,19,5,#6973F6
+754,Kik,"Waterloo, Ontario, Canada",1,Software,2009/01/01,43.466874,-80.524635,2,1,#6973F6
+758,StackShare,"San Francisco, California, United States",1,Software,2014/01/01,37.7790262,-122.4199061,161,51,#6973F6
+767,Remotion,"San Francisco, California, United States",1,Software,2019/01/01,37.7790262,-122.4199061,161,51,#6973F6
+768,SimpleCitizen,"Salt Lake City, Utah, United States",1,Software,2014/01/01,40.7596198,-111.8867975,3,1,#6973F6
+774,Kinside,"San Francisco, California, United States",1,Software,2018/06/01,37.7790262,-122.4199061,161,51,#6973F6
+776,NoBroker,"Bangalore, Karnataka, India",1,Software,2014/01/01,12.9791198,77.5912997,15,4,#6973F6
+780,Scopely,"Culver City, California, United States",1,Software,2011/01/01,34.0211224,-118.3964665,6,2,#6973F6
+782,UJET,"San Francisco, California, United States",1,Software,2015/01/01,37.7790262,-122.4199061,161,51,#6973F6
+784,Paytm First Games,"Noida, Uttar Pradesh, India",1,Software,2018/01/01,28.5356329,77.3910727,4,2,#6973F6
+793,Company,"Sag Harbor, New York, United States",1,Software,2011/01/01,40.9978727,-72.2922292,1,1,#6973F6
+798,JFrog,"Sunnyvale, California, United States",1,Software,2008/04/28,37.3688301,-122.0363496,5,2,#6973F6
+803,Nuvia,"Santa Clara, California, United States",1,Software,2019/01/01,37.2333253,-121.6846349,15,4,#6973F6
+809,SaltStack,"Lehi, Utah, United States",1,Software,2012/08/01,40.3880902,-111.8491619,1,1,#6973F6
+811,Amazon Web Services,"Seattle, Washington, United States",1,Software,2012/01/01,47.6038321,-122.3300624,14,4,#6973F6
+813,G-Loot,"Stockholm, Stockholms Lan, Sweden",1,Software,2015/01/01,59.3251172,18.0710935,7,3,#6973F6
+817,Wipro Technologies,"Bengaluru, Karnataka, India",1,Software,1945/01/01,12.9791198,77.5912997,6,2,#6973F6
+822,Gigster,"San Francisco, California, United States",1,Software,2013/01/01,37.7790262,-122.4199061,161,51,#6973F6
+826,Notion,"San Francisco, California, United States",1,Software,2013/01/01,37.7790262,-122.4199061,161,51,#6973F6
+832,Toast,"Boston, Massachusetts, United States",1,Software,2011/12/22,42.3602534,-71.0582912,19,5,#6973F6
+837,Fluree,"Winston Salem, North Carolina, United States",1,Software,2017/01/01,36.0998131,-80.2440518,1,1,#6973F6
+842,Rever,"San Mateo, California, United States",1,Software,2015/05/07,37.496904,-122.3330573,18,3,#6973F6
+843,Telstra,"Melbourne, Victoria, Australia",1,Software,1975/07/01,-37.8142176,144.9631608,2,1,#6973F6
+844,Storj Labs,"Atlanta, Georgia, United States",1,Software,2014/01/01,33.7490987,-84.3901849,8,3,#6973F6
+845,BigPanda,"Mountain View, California, United States",1,Software,2012/01/01,37.3893889,-122.0832101,21,5,#6973F6
+848,WhatsApp,"Santa Clara, California, United States",1,Software,2009/01/01,37.2333253,-121.6846349,15,4,#6973F6
+851,Copper,"San Francisco, California, United States",1,Software,2011/01/01,37.7790262,-122.4199061,161,51,#6973F6
+854,Vox Media,"Washington, District of Columbia, United States",1,Software,2003/07/14,38.8949924,-77.0365581,5,1,#6973F6
+856,Agora.io,"Santa Clara, California, United States",1,Software,2012/01/01,37.2333253,-121.6846349,15,4,#6973F6
+857,OneWeb,"London, England, United Kingdom",1,Software,2012/01/01,51.5073219,-0.1276474,48,3,#6973F6
+865,FanDuel,"New York, New York, United States",1,Software,2007/01/01,40.7127281,-74.0060152,112,20,#6973F6
+870,Switch,"New York, New York, United States",1,Software,2014/01/01,40.7127281,-74.0060152,112,20,#6973F6
+877,Virtusa,"Westborough, Massachusetts, United States",1,Software,1996/01/01,42.2694308,-71.6129907,1,1,#6973F6
+890,GetYourGuide,"Berlin, Berlin, Germany",1,Software,2009/01/01,52.5170365,13.3888599,14,4,#6973F6
+898,Liberty Global,"London, England, United Kingdom",1,Software,2004/01/01,51.5073219,-0.1276474,48,3,#6973F6
+901,AppLovin,"Palo Alto, California, United States",1,Software,2012/03/01,37.4443293,-122.1598465,14,4,#6973F6
+911,Druva,"Sunnyvale, California, United States",1,Software,2008/08/02,37.3688301,-122.0363496,5,2,#6973F6
+913,Schneider Electric,"Rueil-malmaison, Ile-de-France, France",1,Software,1836-01-01,48.87778,2.1802832,1,1,#6973F6
+929,ActiveCampaign,"Chicago, Illinois, United States",1,Software,2003/01/01,41.8755616,-87.6244212,16,2,#6973F6
+932,Fireflies.ai,"San Francisco, California, United States",1,Software,2016/07/01,37.7790262,-122.4199061,161,51,#6973F6
+936,tray.io,"San Francisco, California, United States",1,Software,2012/04/14,37.7790262,-122.4199061,161,51,#6973F6
+938,Safaricom,"Nairobi, Nairobi Area, Kenya",1,Software,1997/04/01,-1.2832533,36.8172449,1,1,#6973F6
+939,TransparentBusiness,"New York, New York, United States",1,Software,2015/06/22,40.7127281,-74.0060152,112,20,#6973F6
+942,Data Gumbo,"Houston, Texas, United States",1,Software,2016/08/16,29.7589382,-95.3676974,2,1,#6973F6
+946,Roam Research,"San Francisco, California, United States",1,Software,2017/10/26,37.7790262,-122.4199061,161,51,#6973F6
+953,SAP,"Walldorf, Baden-Wurttemberg, Germany",1,Software,1972/04/01,49.3038134,8.6433518,1,1,#6973F6
+959,Quantum,"San Jose, California, United States",1,Software,1980/01/01,37.3361905,-121.8905833,13,4,#6973F6
+961,WinZO,"New Delhi, Delhi, India",1,Software,2018/04/01,28.6138954,77.2090057,5,3,#6973F6
+962,Northspyre,"Brooklyn, New York, United States",1,Software,2017/01/01,40.6501038,-73.9495823,7,1,#6973F6
+971,Branch,"Redwood City, California, United States",1,Software,2014/04/15,37.4863239,-122.232523,13,4,#6973F6
+973,HackerRank,"Mountain View, California, United States",1,Software,2009/01/01,37.3893889,-122.0832101,21,5,#6973F6
+977,Actifio,"Waltham, Massachusetts, United States",1,Software,2009/07/01,42.3756401,-71.2358004,5,1,#6973F6
+989,GetSetUp,"San Francisco, California, United States",1,Software,2019/08/06,37.7790262,-122.4199061,161,51,#6973F6
+997,Infobip,"London, England, United Kingdom",1,Software,2006/01/01,51.5073219,-0.1276474,48,3,#6973F6

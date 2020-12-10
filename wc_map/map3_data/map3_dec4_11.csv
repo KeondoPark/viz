@@ -1,61 +1,61 @@
-,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
-31,Patreon,"San Francisco, California, United States",11,Others,2013/05/07,37.7790262,-122.4199061,161,6
-37,OurCrowd,"Jerusalem, Yerushalayim, Israel",11,Others,2013/02/01,31.7760743,35.22829606,1,1
-66,Business Insider,"New York, New York, United States",11,Others,2007/05/01,40.7127281,-74.0060152,112,7
-67,Papa,"Miami, Florida, United States",11,Others,2018/01/01,25.7742658,-80.1936589,4,2
-113,Zero Grocery,"Berkeley, California, United States",11,Others,2019/01/01,37.8708393,-122.2728639,1,1
-144,Allegro,"Poznan, Wielkopolskie, Poland",11,Others,1999/01/01,52.4082663,16.9335199,1,1
-161,Red Ventures,"Fort Mill, South Carolina, United States",11,Others,2000/01/01,35.0073697,-80.9450759,1,1
-165,Ubisoft,"Montreuil-sous-bois, Ile-de-France, France",11,Others,1986/01/01,48.8623357,2.4412184,1,1
-172,AngelList,"San Francisco, California, United States",11,Others,2010/01/01,37.7790262,-122.4199061,161,6
-194,BP,"London, England, United Kingdom",11,Others,1909/04/14,51.5073219,-0.1276474,48,6
-223,Big Hit Entertainment,"Seoul, Seoul-t'ukpyolsi, South Korea",11,Others,2005/02/01,37.5326,127.024612,3,1
-226,Boom Supersonic,"Englewood, Colorado, United States",11,Others,2014/01/01,39.6482059,-104.9879641,1,1
-241,Satellogic,"Palo Alto, California, United States",11,Others,2010/01/01,37.4443293,-122.1598465,14,3
-255,SeedInvest,"New York, New York, United States",11,Others,2011/05/01,40.7127281,-74.0060152,112,7
-259,Upwork,"Santa Clara, California, United States",11,Others,1999/01/01,37.2333253,-121.6846349,15,1
-277,Redaptive,"San Francisco, California, United States",11,Others,2013/01/01,37.7790262,-122.4199061,161,6
-278,Riot Games,"Los Angeles, California, United States",11,Others,2006/01/01,34.0536909,-118.2427666,12,2
-283,Hulu,"Los Angeles, California, United States",11,Others,2007/03/01,34.0536909,-118.2427666,12,2
-287,VanMoof,"Amsterdam, Noord-Holland, The Netherlands",11,Others,2008/01/01,52.3727598,4.8936041,6,1
-296,"US Department of Commerce, Economic Development Administation","Washington, District of Columbia, United States",11,Others,1965/01/01,38.8949924,-77.0365581,5,2
-320,SuperAwesome,"London, England, United Kingdom",11,Others,2013/05/01,51.5073219,-0.1276474,48,6
-368,iQiyi,"Beijing, Beijing, China",11,Others,2010/01/01,39.9020668,116.718583,15,1
-372,The Walt Disney Company,"Lake Buena Vista, Florida, United States",11,Others,1923/10/16,28.38034955,-81.52975784,1,1
-383,Orange,"Paris, Ile-de-France, France",11,Others,1991/01/01,48.8566969,2.3514616,10,1
-399,Pepper Content,"Mumbai, Maharashtra, India",11,Others,2017/10/01,18.9387711,72.8353355,13,3
-409,AppHarvest,"Morehead, Kentucky, United States",11,Others,2017/01/01,38.1839705,-83.4326841,1,1
-426,Acko General Insurance,"Mumbai, Maharashtra, India",11,Others,2016/01/01,18.9387711,72.8353355,13,3
-448,Bykea,"Karachi, Sindh, Pakistan",11,Others,2016/09/15,24.8667795,67.0311286,1,1
-469,Netflix,"Los Gatos, California, United States",11,Others,1997/01/01,37.226611,-121.9746797,2,1
-470,Clara Foods,"South San Francisco, California, United States",11,Others,2015/01/01,37.6535403,-122.4168664,2,1
-471,Taboola,"New York, New York, United States",11,Others,2007/01/01,40.7127281,-74.0060152,112,7
-516,Kasa Living,"San Francisco, California, United States",11,Others,2016/08/01,37.7790262,-122.4199061,161,6
-517,OpenLattice,"Redwood City, California, United States",11,Others,2017/01/01,37.4863239,-122.232523,13,1
-551,FCC,"Washington, District of Columbia, United States",11,Others,1934/06/19,38.8949924,-77.0365581,5,2
-560,Barstool Sports,"New York, New York, United States",11,Others,2003/01/01,40.7127281,-74.0060152,112,7
-563,Filecoin,"Palo Alto, California, United States",11,Others,2014/01/01,37.4443293,-122.1598465,14,3
-575,Virgin Galactic,"Mojave, California, United States",11,Others,2004/01/01,35.0524699,-118.1739645,1,1
-582,Selina,"London, England, United Kingdom",11,Others,2012/01/01,51.5073219,-0.1276474,48,6
-618,Anduril Industries,"Irvine, California, United States",11,Others,2017/01/01,33.6856969,-117.8259819,5,1
-619,Care.com,"Waltham, Massachusetts, United States",11,Others,2006/10/01,42.3756401,-71.2358004,5,1
-682,Holidu,"Munich, Bayern, Germany",11,Others,2014/01/01,48.1371079,11.5753822,4,1
-687,European Commission,"Brussels, Brussels Hoofdstedelijk Gewest, Belgium",11,Others,1958/01/16,50.8465573,4.351697,2,1
-688,Kit,"New York, New York, United States",11,Others,2015/01/01,40.7127281,-74.0060152,112,7
-690,Jopwell,"New York, New York, United States",11,Others,2014/09/01,40.7127281,-74.0060152,112,7
-739,BBC,"London, England, United Kingdom",11,Others,1922/10/18,51.5073219,-0.1276474,48,6
-761,CORE-POWER (UK) Ltd,"London, England, United Kingdom",11,Others,2018/12/18,51.5073219,-0.1276474,48,6
-781,Naver Corporation,"Seongnam, Kyonggi-do, South Korea",11,Others,1999/06/01,37.4201556,127.1262092,1,1
-802,Sonder,"San Francisco, California, United States",11,Others,2012/07/01,37.7790262,-122.4199061,161,6
-819,boAt,"Mumbai, Maharashtra, India",11,Others,2016/01/01,18.9387711,72.8353355,13,3
-838,Fanatiz,"Miami, Florida, United States",11,Others,2017/01/01,25.7742658,-80.1936589,4,2
-841,Houzz,"Palo Alto, California, United States",11,Others,2009/01/01,37.4443293,-122.1598465,14,3
-847,Manticore Games,"San Mateo, California, United States",11,Others,2016/01/01,37.496904,-122.3330573,18,1
-864,Gymshark,"Solihull, Solihull, United Kingdom",11,Others,2012/01/01,52.4146286,-1.7888672,1,1
-881,Glossier,"New York, New York, United States",11,Others,2010/01/01,40.7127281,-74.0060152,112,7
-902,Numan,"London, England, United Kingdom",11,Others,2018/01/01,51.5073219,-0.1276474,48,6
-935,Sunrun,"San Francisco, California, United States",11,Others,2007/01/01,37.7790262,-122.4199061,161,6
-952,Ryanair,"Swords, Dublin, Ireland",11,Others,1985/01/01,53.4720536,-6.223144167,1,1
-955,TIER Mobility,"Berlin, Berlin, Germany",11,Others,2018/07/01,52.5170365,13.3888599,14,1
-958,Stillfront Group,"Linköping, Ostergotlands Lan, Sweden",11,Others,2007/01/01,58.4098135,15.6245252,1,1
-978,SunPower,"San Jose, California, United States",11,Others,1985/01/01,37.3361905,-121.8905833,13,1
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count,color
+31,Patreon,"San Francisco, California, United States",11,Others,2013/05/07,37.7790262,-122.4199061,161,6,#696969
+37,OurCrowd,"Jerusalem, Yerushalayim, Israel",11,Others,2013/02/01,31.7760743,35.22829606,1,1,#696969
+66,Business Insider,"New York, New York, United States",11,Others,2007/05/01,40.7127281,-74.0060152,112,7,#696969
+67,Papa,"Miami, Florida, United States",11,Others,2018/01/01,25.7742658,-80.1936589,4,2,#696969
+113,Zero Grocery,"Berkeley, California, United States",11,Others,2019/01/01,37.8708393,-122.2728639,1,1,#696969
+144,Allegro,"Poznan, Wielkopolskie, Poland",11,Others,1999/01/01,52.4082663,16.9335199,1,1,#696969
+161,Red Ventures,"Fort Mill, South Carolina, United States",11,Others,2000/01/01,35.0073697,-80.9450759,1,1,#696969
+165,Ubisoft,"Montreuil-sous-bois, Ile-de-France, France",11,Others,1986/01/01,48.8623357,2.4412184,1,1,#696969
+172,AngelList,"San Francisco, California, United States",11,Others,2010/01/01,37.7790262,-122.4199061,161,6,#696969
+194,BP,"London, England, United Kingdom",11,Others,1909/04/14,51.5073219,-0.1276474,48,6,#696969
+223,Big Hit Entertainment,"Seoul, Seoul-t'ukpyolsi, South Korea",11,Others,2005/02/01,37.5326,127.024612,3,1,#696969
+226,Boom Supersonic,"Englewood, Colorado, United States",11,Others,2014/01/01,39.6482059,-104.9879641,1,1,#696969
+241,Satellogic,"Palo Alto, California, United States",11,Others,2010/01/01,37.4443293,-122.1598465,14,3,#696969
+255,SeedInvest,"New York, New York, United States",11,Others,2011/05/01,40.7127281,-74.0060152,112,7,#696969
+259,Upwork,"Santa Clara, California, United States",11,Others,1999/01/01,37.2333253,-121.6846349,15,1,#696969
+277,Redaptive,"San Francisco, California, United States",11,Others,2013/01/01,37.7790262,-122.4199061,161,6,#696969
+278,Riot Games,"Los Angeles, California, United States",11,Others,2006/01/01,34.0536909,-118.2427666,12,2,#696969
+283,Hulu,"Los Angeles, California, United States",11,Others,2007/03/01,34.0536909,-118.2427666,12,2,#696969
+287,VanMoof,"Amsterdam, Noord-Holland, The Netherlands",11,Others,2008/01/01,52.3727598,4.8936041,6,1,#696969
+296,"US Department of Commerce, Economic Development Administation","Washington, District of Columbia, United States",11,Others,1965/01/01,38.8949924,-77.0365581,5,2,#696969
+320,SuperAwesome,"London, England, United Kingdom",11,Others,2013/05/01,51.5073219,-0.1276474,48,6,#696969
+368,iQiyi,"Beijing, Beijing, China",11,Others,2010/01/01,39.9020668,116.718583,15,1,#696969
+372,The Walt Disney Company,"Lake Buena Vista, Florida, United States",11,Others,1923/10/16,28.38034955,-81.52975784,1,1,#696969
+383,Orange,"Paris, Ile-de-France, France",11,Others,1991/01/01,48.8566969,2.3514616,10,1,#696969
+399,Pepper Content,"Mumbai, Maharashtra, India",11,Others,2017/10/01,18.9387711,72.8353355,13,3,#696969
+409,AppHarvest,"Morehead, Kentucky, United States",11,Others,2017/01/01,38.1839705,-83.4326841,1,1,#696969
+426,Acko General Insurance,"Mumbai, Maharashtra, India",11,Others,2016/01/01,18.9387711,72.8353355,13,3,#696969
+448,Bykea,"Karachi, Sindh, Pakistan",11,Others,2016/09/15,24.8667795,67.0311286,1,1,#696969
+469,Netflix,"Los Gatos, California, United States",11,Others,1997/01/01,37.226611,-121.9746797,2,1,#696969
+470,Clara Foods,"South San Francisco, California, United States",11,Others,2015/01/01,37.6535403,-122.4168664,2,1,#696969
+471,Taboola,"New York, New York, United States",11,Others,2007/01/01,40.7127281,-74.0060152,112,7,#696969
+516,Kasa Living,"San Francisco, California, United States",11,Others,2016/08/01,37.7790262,-122.4199061,161,6,#696969
+517,OpenLattice,"Redwood City, California, United States",11,Others,2017/01/01,37.4863239,-122.232523,13,1,#696969
+551,FCC,"Washington, District of Columbia, United States",11,Others,1934/06/19,38.8949924,-77.0365581,5,2,#696969
+560,Barstool Sports,"New York, New York, United States",11,Others,2003/01/01,40.7127281,-74.0060152,112,7,#696969
+563,Filecoin,"Palo Alto, California, United States",11,Others,2014/01/01,37.4443293,-122.1598465,14,3,#696969
+575,Virgin Galactic,"Mojave, California, United States",11,Others,2004/01/01,35.0524699,-118.1739645,1,1,#696969
+582,Selina,"London, England, United Kingdom",11,Others,2012/01/01,51.5073219,-0.1276474,48,6,#696969
+618,Anduril Industries,"Irvine, California, United States",11,Others,2017/01/01,33.6856969,-117.8259819,5,1,#696969
+619,Care.com,"Waltham, Massachusetts, United States",11,Others,2006/10/01,42.3756401,-71.2358004,5,1,#696969
+682,Holidu,"Munich, Bayern, Germany",11,Others,2014/01/01,48.1371079,11.5753822,4,1,#696969
+687,European Commission,"Brussels, Brussels Hoofdstedelijk Gewest, Belgium",11,Others,1958/01/16,50.8465573,4.351697,2,1,#696969
+688,Kit,"New York, New York, United States",11,Others,2015/01/01,40.7127281,-74.0060152,112,7,#696969
+690,Jopwell,"New York, New York, United States",11,Others,2014/09/01,40.7127281,-74.0060152,112,7,#696969
+739,BBC,"London, England, United Kingdom",11,Others,1922/10/18,51.5073219,-0.1276474,48,6,#696969
+761,CORE-POWER (UK) Ltd,"London, England, United Kingdom",11,Others,2018/12/18,51.5073219,-0.1276474,48,6,#696969
+781,Naver Corporation,"Seongnam, Kyonggi-do, South Korea",11,Others,1999/06/01,37.4201556,127.1262092,1,1,#696969
+802,Sonder,"San Francisco, California, United States",11,Others,2012/07/01,37.7790262,-122.4199061,161,6,#696969
+819,boAt,"Mumbai, Maharashtra, India",11,Others,2016/01/01,18.9387711,72.8353355,13,3,#696969
+838,Fanatiz,"Miami, Florida, United States",11,Others,2017/01/01,25.7742658,-80.1936589,4,2,#696969
+841,Houzz,"Palo Alto, California, United States",11,Others,2009/01/01,37.4443293,-122.1598465,14,3,#696969
+847,Manticore Games,"San Mateo, California, United States",11,Others,2016/01/01,37.496904,-122.3330573,18,1,#696969
+864,Gymshark,"Solihull, Solihull, United Kingdom",11,Others,2012/01/01,52.4146286,-1.7888672,1,1,#696969
+881,Glossier,"New York, New York, United States",11,Others,2010/01/01,40.7127281,-74.0060152,112,7,#696969
+902,Numan,"London, England, United Kingdom",11,Others,2018/01/01,51.5073219,-0.1276474,48,6,#696969
+935,Sunrun,"San Francisco, California, United States",11,Others,2007/01/01,37.7790262,-122.4199061,161,6,#696969
+952,Ryanair,"Swords, Dublin, Ireland",11,Others,1985/01/01,53.4720536,-6.223144167,1,1,#696969
+955,TIER Mobility,"Berlin, Berlin, Germany",11,Others,2018/07/01,52.5170365,13.3888599,14,1,#696969
+958,Stillfront Group,"Linköping, Ostergotlands Lan, Sweden",11,Others,2007/01/01,58.4098135,15.6245252,1,1,#696969
+978,SunPower,"San Jose, California, United States",11,Others,1985/01/01,37.3361905,-121.8905833,13,1,#696969

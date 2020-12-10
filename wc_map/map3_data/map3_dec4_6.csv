@@ -1,72 +1,72 @@
-,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count
-17,Goldman Sachs,"New York, New York, United States",6,Security,1869/01/01,40.7127281,-74.0060152,112,7
-28,CrowdStrike,"Sunnyvale, California, United States",6,Security,2011/01/01,37.3688301,-122.0363496,5,1
-49,Cloudflare,"San Francisco, California, United States",6,Security,2009/06/01,37.7790262,-122.4199061,161,10
-71,Tanium,"Emeryville, California, United States",6,Security,2007/01/01,37.8314089,-122.2865266,1,1
-110,Fastly,"San Francisco, California, United States",6,Security,2011/01/01,37.7790262,-122.4199061,161,10
-140,BioCatch,"Tel Aviv, Tel Aviv, Israel",6,Security,2011/01/01,32.0804808,34.7805274,12,3
-171,Onapsis,"Boston, Massachusetts, United States",6,Security,2009/01/01,42.3602534,-71.0582912,19,2
-173,NEC Corporation,"Tokyo, Tokyo, Japan",6,Security,1899/07/17,35.6777691,139.7646365,3,1
-176,Okta,"San Francisco, California, United States",6,Security,2009/01/01,37.7790262,-122.4199061,161,10
-191,HashiCorp,"San Francisco, California, United States",6,Security,2012/01/01,37.7790262,-122.4199061,161,10
-193,Axis Security,"San Mateo, California, United States",6,Security,2018/01/01,37.496904,-122.3330573,18,2
-202,Awake Security,"Santa Clara, California, United States",6,Security,2014/10/01,37.2333253,-121.6846349,15,2
-225,JSonar,"Waltham, Massachusetts, United States",6,Security,2013/01/01,42.3756401,-71.2358004,5,1
-230,Illusive Networks,"Tel Aviv-yafo, Tel Aviv, Israel",6,Security,2014/01/01,32.0804808,34.7805274,2,1
-232,BT,"London, England, United Kingdom",6,Security,1969/10/01,51.5073219,-0.1276474,48,4
-256,Alkira,"San Jose, California, United States",6,Security,2018/01/01,37.3361905,-121.8905833,13,3
-260,Cover Genius,"Sydney, New South Wales, Australia",6,Security,2014/05/01,-33.8548157,151.2164539,4,1
-280,SentinelOne,"Mountain View, California, United States",6,Security,2013/01/01,37.3893889,-122.0832101,21,3
-285,Imperva,"Redwood Shores, California, United States",6,Security,2002/01/01,37.5318804,-122.2480219,2,1
-291,MobileIron,"Mountain View, California, United States",6,Security,2007/05/01,37.3893889,-122.0832101,21,3
-319,Rubrik,"Palo Alto, California, United States",6,Security,2014/01/01,37.4443293,-122.1598465,14,1
-353,Palantir Technologies,"Denver, Colorado, United States",6,Security,2003/01/01,39.7392364,-104.9848623,5,3
-377,deepwatch,"Denver, Colorado, United States",6,Security,2018/06/01,39.7392364,-104.9848623,5,3
-418,Onfido,"London, England, United Kingdom",6,Security,2012/01/01,51.5073219,-0.1276474,48,4
-421,CoreView,"Milan, Lombardia, Italy",6,Security,2014/01/01,45.4668,9.1905,1,1
-435,NS8,"Las Vegas, Nevada, United States",6,Security,2016/08/18,36.1672559,-115.1485163,1,1
-456,Ping Identity,"Denver, Colorado, United States",6,Security,2002/01/01,39.7392364,-104.9848623,5,3
-462,Sift,"San Francisco, California, United States",6,Security,2011/06/01,37.7790262,-122.4199061,161,10
-490,Symantec,"Mountain View, California, United States",6,Security,1982/01/01,37.3893889,-122.0832101,21,3
-492,BlueVoyant,"New York, New York, United States",6,Security,2017/07/01,40.7127281,-74.0060152,112,7
-494,Verkada,"San Mateo, California, United States",6,Security,2016/01/01,37.496904,-122.3330573,18,2
-531,Vectra,"San Jose, California, United States",6,Security,2010/01/01,37.3361905,-121.8905833,13,3
-535,JupiterOne,"Morrisville, North Carolina, United States",6,Security,2018/03/01,33.6071108,-79.5386726,1,1
-545,Netskope,"Santa Clara, California, United States",6,Security,2012/10/08,37.2333253,-121.6846349,15,2
-546,ForgeRock,"San Francisco, California, United States",6,Security,2010/02/01,37.7790262,-122.4199061,161,10
-552,Acronis,"Schaffhausen, Schaffhausen, Switzerland",6,Security,2003/01/01,47.6960491,8.634513,1,1
-556,Dashlane,"New York, New York, United States",6,Security,2009/07/06,40.7127281,-74.0060152,112,7
-557,Aqua Security,"Ramat Gan, Tel Aviv, Israel",6,Security,2015/01/01,32.0686867,34.8246812,1,1
-566,Pindrop,"Atlanta, Georgia, United States",6,Security,2011/01/01,33.7490987,-84.3901849,8,1
-574,Exabeam,"Foster City, California, United States",6,Security,2013/01/01,37.5600336,-122.2688522,3,1
-587,Signal Sciences,"Culver City, California, United States",6,Security,2014/03/10,34.0211224,-118.3964665,6,1
-600,BigID,"New York, New York, United States",6,Security,2016/02/01,40.7127281,-74.0060152,112,7
-601,Motorola Solutions,"Schaumburg, Illinois, United States",6,Security,2011/01/04,42.0333608,-88.083406,1,1
-633,Medigate,"Tel Aviv, Tel Aviv, Israel",6,Security,2017/09/01,32.0804808,34.7805274,12,3
-634,Wire,"Zug, Zug, Switzerland",6,Security,2012/01/01,47.1679898,8.5173652,2,1
-637,Kaseya,"Dublin, Dublin, Ireland",6,Security,2000/01/01,53.3497645,-6.2602732,3,1
-642,KeepIt,"Copenhagen, Hovedstaden, Denmark",6,Security,2007/08/01,55.6867243,12.5700724,3,2
-647,Preempt Security,"San Francisco, California, United States",6,Security,2014/01/01,37.7790262,-122.4199061,161,10
-666,Cradlepoint,"Boise, Idaho, United States",6,Security,2006/01/01,43.6166163,-116.200886,1,1
-672,EverC,"New York, New York, United States",6,Security,2008/01/01,40.7127281,-74.0060152,112,7
-685,HackerOne,"San Francisco, California, United States",6,Security,2012/01/01,37.7790262,-122.4199061,161,10
-694,Cobalt,"San Francisco, California, United States",6,Security,2013/07/01,37.7790262,-122.4199061,161,10
-698,Pcysys,"Petah Tiqva, HaMerkaz, Israel",6,Security,2015/11/01,32.0866,34.8851,1,1
-699,ZeroFOX,"Baltimore, Maryland, United States",6,Security,2013/01/01,39.2908816,-76.610759,2,1
-709,Eclypsium,"Portland, Oregon, United States",6,Security,2017/06/01,45.5202471,-122.6741949,2,1
-741,LogPoint,"Copenhagen, Hovedstaden, Denmark",6,Security,2001/01/01,55.6867243,12.5700724,3,2
-749,Privitar,"London, England, United Kingdom",6,Security,2014/11/15,51.5073219,-0.1276474,48,4
-751,Rapid7,"Boston, Massachusetts, United States",6,Security,2000/01/01,42.3602534,-71.0582912,19,2
-766,Ripjar,"Cheltenham, Gloucestershire, United Kingdom",6,Security,2012/01/01,51.8995685,-2.0711559,1,1
-815,Fast,"San Francisco, California, United States",6,Security,2019/03/01,37.7790262,-122.4199061,161,10
-834,NormShield,"Vienna, Virginia, United States",6,Security,2016/02/16,38.9013729,-77.2651762,1,1
-886,Qihoo 360 Technology,"Beijing, Beijing, China",6,Security,2005/06/01,39.9020668,116.718583,15,1
-894,Mavenir,"Richardson, Texas, United States",6,Security,2005/01/01,32.9481789,-96.7297206,1,1
-897,Finicity,"Salt Lake City, Utah, United States",6,Security,1999/01/01,40.7596198,-111.8867975,3,1
-905,Snyk,"London, England, United Kingdom",6,Security,2015/07/07,51.5073219,-0.1276474,48,4
-912,Zscaler,"San Jose, California, United States",6,Security,2008/01/01,37.3361905,-121.8905833,13,3
-918,WISeKey,"Geneva, Geneve, Switzerland",6,Security,1999/01/01,46.2017559,6.1466014,1,1
-922,Ledger,"Paris, Ile-de-France, France",6,Security,2013/01/01,48.8566969,2.3514616,10,1
-976,Cyberpion,"Tel Aviv, Tel Aviv, Israel",6,Security,2016/01/01,32.0804808,34.7805274,12,3
-981,ButterflyMX,"New York, New York, United States",6,Security,2012/03/23,40.7127281,-74.0060152,112,7
-986,Claroty,"New York, New York, United States",6,Security,2015/05/15,40.7127281,-74.0060152,112,7
+,name,city,ind_num,ind_str,yyyymmdd,lat,long,city_count,city_ind_count,color
+17,Goldman Sachs,"New York, New York, United States",6,Security,1869/01/01,40.7127281,-74.0060152,112,7,#3AB5C2
+28,CrowdStrike,"Sunnyvale, California, United States",6,Security,2011/01/01,37.3688301,-122.0363496,5,1,#3AB5C2
+49,Cloudflare,"San Francisco, California, United States",6,Security,2009/06/01,37.7790262,-122.4199061,161,10,#3AB5C2
+71,Tanium,"Emeryville, California, United States",6,Security,2007/01/01,37.8314089,-122.2865266,1,1,#3AB5C2
+110,Fastly,"San Francisco, California, United States",6,Security,2011/01/01,37.7790262,-122.4199061,161,10,#3AB5C2
+140,BioCatch,"Tel Aviv, Tel Aviv, Israel",6,Security,2011/01/01,32.0804808,34.7805274,12,3,#3AB5C2
+171,Onapsis,"Boston, Massachusetts, United States",6,Security,2009/01/01,42.3602534,-71.0582912,19,2,#3AB5C2
+173,NEC Corporation,"Tokyo, Tokyo, Japan",6,Security,1899/07/17,35.6777691,139.7646365,3,1,#3AB5C2
+176,Okta,"San Francisco, California, United States",6,Security,2009/01/01,37.7790262,-122.4199061,161,10,#3AB5C2
+191,HashiCorp,"San Francisco, California, United States",6,Security,2012/01/01,37.7790262,-122.4199061,161,10,#3AB5C2
+193,Axis Security,"San Mateo, California, United States",6,Security,2018/01/01,37.496904,-122.3330573,18,2,#3AB5C2
+202,Awake Security,"Santa Clara, California, United States",6,Security,2014/10/01,37.2333253,-121.6846349,15,2,#3AB5C2
+225,JSonar,"Waltham, Massachusetts, United States",6,Security,2013/01/01,42.3756401,-71.2358004,5,1,#3AB5C2
+230,Illusive Networks,"Tel Aviv-yafo, Tel Aviv, Israel",6,Security,2014/01/01,32.0804808,34.7805274,2,1,#3AB5C2
+232,BT,"London, England, United Kingdom",6,Security,1969/10/01,51.5073219,-0.1276474,48,4,#3AB5C2
+256,Alkira,"San Jose, California, United States",6,Security,2018/01/01,37.3361905,-121.8905833,13,3,#3AB5C2
+260,Cover Genius,"Sydney, New South Wales, Australia",6,Security,2014/05/01,-33.8548157,151.2164539,4,1,#3AB5C2
+280,SentinelOne,"Mountain View, California, United States",6,Security,2013/01/01,37.3893889,-122.0832101,21,3,#3AB5C2
+285,Imperva,"Redwood Shores, California, United States",6,Security,2002/01/01,37.5318804,-122.2480219,2,1,#3AB5C2
+291,MobileIron,"Mountain View, California, United States",6,Security,2007/05/01,37.3893889,-122.0832101,21,3,#3AB5C2
+319,Rubrik,"Palo Alto, California, United States",6,Security,2014/01/01,37.4443293,-122.1598465,14,1,#3AB5C2
+353,Palantir Technologies,"Denver, Colorado, United States",6,Security,2003/01/01,39.7392364,-104.9848623,5,3,#3AB5C2
+377,deepwatch,"Denver, Colorado, United States",6,Security,2018/06/01,39.7392364,-104.9848623,5,3,#3AB5C2
+418,Onfido,"London, England, United Kingdom",6,Security,2012/01/01,51.5073219,-0.1276474,48,4,#3AB5C2
+421,CoreView,"Milan, Lombardia, Italy",6,Security,2014/01/01,45.4668,9.1905,1,1,#3AB5C2
+435,NS8,"Las Vegas, Nevada, United States",6,Security,2016/08/18,36.1672559,-115.1485163,1,1,#3AB5C2
+456,Ping Identity,"Denver, Colorado, United States",6,Security,2002/01/01,39.7392364,-104.9848623,5,3,#3AB5C2
+462,Sift,"San Francisco, California, United States",6,Security,2011/06/01,37.7790262,-122.4199061,161,10,#3AB5C2
+490,Symantec,"Mountain View, California, United States",6,Security,1982/01/01,37.3893889,-122.0832101,21,3,#3AB5C2
+492,BlueVoyant,"New York, New York, United States",6,Security,2017/07/01,40.7127281,-74.0060152,112,7,#3AB5C2
+494,Verkada,"San Mateo, California, United States",6,Security,2016/01/01,37.496904,-122.3330573,18,2,#3AB5C2
+531,Vectra,"San Jose, California, United States",6,Security,2010/01/01,37.3361905,-121.8905833,13,3,#3AB5C2
+535,JupiterOne,"Morrisville, North Carolina, United States",6,Security,2018/03/01,33.6071108,-79.5386726,1,1,#3AB5C2
+545,Netskope,"Santa Clara, California, United States",6,Security,2012/10/08,37.2333253,-121.6846349,15,2,#3AB5C2
+546,ForgeRock,"San Francisco, California, United States",6,Security,2010/02/01,37.7790262,-122.4199061,161,10,#3AB5C2
+552,Acronis,"Schaffhausen, Schaffhausen, Switzerland",6,Security,2003/01/01,47.6960491,8.634513,1,1,#3AB5C2
+556,Dashlane,"New York, New York, United States",6,Security,2009/07/06,40.7127281,-74.0060152,112,7,#3AB5C2
+557,Aqua Security,"Ramat Gan, Tel Aviv, Israel",6,Security,2015/01/01,32.0686867,34.8246812,1,1,#3AB5C2
+566,Pindrop,"Atlanta, Georgia, United States",6,Security,2011/01/01,33.7490987,-84.3901849,8,1,#3AB5C2
+574,Exabeam,"Foster City, California, United States",6,Security,2013/01/01,37.5600336,-122.2688522,3,1,#3AB5C2
+587,Signal Sciences,"Culver City, California, United States",6,Security,2014/03/10,34.0211224,-118.3964665,6,1,#3AB5C2
+600,BigID,"New York, New York, United States",6,Security,2016/02/01,40.7127281,-74.0060152,112,7,#3AB5C2
+601,Motorola Solutions,"Schaumburg, Illinois, United States",6,Security,2011/01/04,42.0333608,-88.083406,1,1,#3AB5C2
+633,Medigate,"Tel Aviv, Tel Aviv, Israel",6,Security,2017/09/01,32.0804808,34.7805274,12,3,#3AB5C2
+634,Wire,"Zug, Zug, Switzerland",6,Security,2012/01/01,47.1679898,8.5173652,2,1,#3AB5C2
+637,Kaseya,"Dublin, Dublin, Ireland",6,Security,2000/01/01,53.3497645,-6.2602732,3,1,#3AB5C2
+642,KeepIt,"Copenhagen, Hovedstaden, Denmark",6,Security,2007/08/01,55.6867243,12.5700724,3,2,#3AB5C2
+647,Preempt Security,"San Francisco, California, United States",6,Security,2014/01/01,37.7790262,-122.4199061,161,10,#3AB5C2
+666,Cradlepoint,"Boise, Idaho, United States",6,Security,2006/01/01,43.6166163,-116.200886,1,1,#3AB5C2
+672,EverC,"New York, New York, United States",6,Security,2008/01/01,40.7127281,-74.0060152,112,7,#3AB5C2
+685,HackerOne,"San Francisco, California, United States",6,Security,2012/01/01,37.7790262,-122.4199061,161,10,#3AB5C2
+694,Cobalt,"San Francisco, California, United States",6,Security,2013/07/01,37.7790262,-122.4199061,161,10,#3AB5C2
+698,Pcysys,"Petah Tiqva, HaMerkaz, Israel",6,Security,2015/11/01,32.0866,34.8851,1,1,#3AB5C2
+699,ZeroFOX,"Baltimore, Maryland, United States",6,Security,2013/01/01,39.2908816,-76.610759,2,1,#3AB5C2
+709,Eclypsium,"Portland, Oregon, United States",6,Security,2017/06/01,45.5202471,-122.6741949,2,1,#3AB5C2
+741,LogPoint,"Copenhagen, Hovedstaden, Denmark",6,Security,2001/01/01,55.6867243,12.5700724,3,2,#3AB5C2
+749,Privitar,"London, England, United Kingdom",6,Security,2014/11/15,51.5073219,-0.1276474,48,4,#3AB5C2
+751,Rapid7,"Boston, Massachusetts, United States",6,Security,2000/01/01,42.3602534,-71.0582912,19,2,#3AB5C2
+766,Ripjar,"Cheltenham, Gloucestershire, United Kingdom",6,Security,2012/01/01,51.8995685,-2.0711559,1,1,#3AB5C2
+815,Fast,"San Francisco, California, United States",6,Security,2019/03/01,37.7790262,-122.4199061,161,10,#3AB5C2
+834,NormShield,"Vienna, Virginia, United States",6,Security,2016/02/16,38.9013729,-77.2651762,1,1,#3AB5C2
+886,Qihoo 360 Technology,"Beijing, Beijing, China",6,Security,2005/06/01,39.9020668,116.718583,15,1,#3AB5C2
+894,Mavenir,"Richardson, Texas, United States",6,Security,2005/01/01,32.9481789,-96.7297206,1,1,#3AB5C2
+897,Finicity,"Salt Lake City, Utah, United States",6,Security,1999/01/01,40.7596198,-111.8867975,3,1,#3AB5C2
+905,Snyk,"London, England, United Kingdom",6,Security,2015/07/07,51.5073219,-0.1276474,48,4,#3AB5C2
+912,Zscaler,"San Jose, California, United States",6,Security,2008/01/01,37.3361905,-121.8905833,13,3,#3AB5C2
+918,WISeKey,"Geneva, Geneve, Switzerland",6,Security,1999/01/01,46.2017559,6.1466014,1,1,#3AB5C2
+922,Ledger,"Paris, Ile-de-France, France",6,Security,2013/01/01,48.8566969,2.3514616,10,1,#3AB5C2
+976,Cyberpion,"Tel Aviv, Tel Aviv, Israel",6,Security,2016/01/01,32.0804808,34.7805274,12,3,#3AB5C2
+981,ButterflyMX,"New York, New York, United States",6,Security,2012/03/23,40.7127281,-74.0060152,112,7,#3AB5C2
+986,Claroty,"New York, New York, United States",6,Security,2015/05/15,40.7127281,-74.0060152,112,7,#3AB5C2
