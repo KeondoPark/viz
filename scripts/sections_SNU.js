@@ -1000,7 +1000,7 @@ var scrollVis = function () {
     activateFunctions[7] = showYoungJun2;
     activateFunctions[8] = showWooChul3;
     activateFunctions[9] = showWooChul2;
-    //activateFunctions[10] = showWooChul3;
+    activateFunctions[10] = showImage;
     //activateFunctions[11] = showTitle; 
     
 
@@ -1025,7 +1025,7 @@ var scrollVis = function () {
     // Most sections do not need to be updated
     // for all scrolling and so are set to
     // no-op functions.
-    for (var i = 0; i < 9; i++) {
+    for (var i = 0; i < 11; i++) {
       updateFunctions[i] = function () { };
     }
 
@@ -1049,11 +1049,11 @@ var scrollVis = function () {
 
     function translateSvg(){
       svg.attr('height', 1);
-      d3.select('.svgWC').attr('height', 600);      
+      d3.select('.svgWC').attr('height', 650);      
     }
 
     function translateSvgWC(){
-      svg.attr('height', 600);
+      svg.attr('height', 650);
       d3.select('.svgWC').attr('height',1);   
     }
   
@@ -1315,6 +1315,16 @@ var scrollVis = function () {
     
   }
 
+  function showImage() {
+
+    Object.keys(checkIn).forEach(function(key){      
+      checkIn[key] = 0;      
+    });
+    
+    hideOthers(); 
+    $('#imgStartup').css('height','600px');
+  }
+
 /*
   Hide all components
 */
@@ -1430,7 +1440,9 @@ var scrollVis = function () {
     g.selectAll('.listInd')      
       .transition()
       .duration(0)
-      .attr('opacity', 0);      
+      .attr('opacity', 0);   
+      
+      $('#imgStartup').css('height','0px');
   }
 
 
