@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
 .container {
     width: 1600px;
     margin-left: 50px;
@@ -20,14 +22,16 @@
   
   .step {
     margin-bottom: 200px;
-    font-family: "TiemposTextWeb-Regular","Georgia";
+    /*font-family: "TiemposTextWeb-Regular","Georgia";*/
+    font-family: 'Hanna', sans-serif;
     font-size: 16px;
     line-height: 23px;
     color: #767678;
   }
   
   #sections .title {
-    font-family: Arial,Helvetica,"san-serif";
+    /*font-family: Arial,Helvetica,"san-serif";*/
+    font-family: 'Hanna', sans-serif;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 2px;

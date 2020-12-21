@@ -709,9 +709,9 @@ var scrollVis = function () {
     container.selectAll(".chart-group-KD1") 
       .append("text")
       .attr("text-anchor", "start")      
-      .text("Growth Curve: All Industries")
+      //.text("Growth Curve: All Industries")
       .style("fill", '#000000')                  
-      .attr("transform", "translate(" + (30 + width / 3) +"," + height / 5 + ")")
+      .attr("transform", "translate(" + (30 + width / 3) +"," + height / 10 + ")")
       .style("font-size", "24px")
       .attr('class', 'KD1')
       .attr('opacity', 0);
@@ -814,7 +814,7 @@ var scrollVis = function () {
       .attr("text-anchor", "middle")
       .text(function (d) { return (d.key) })
       .style("fill", function (d) { return color(d.key) })
-      .attr("transform", function (d, i) { return "translate(" + ((width * 3 / 8) * ((i) % 4)) + "," + ((height / 3) * (parseInt((i) / 4)) + 20) + ")" })
+      .attr("transform", function (d, i) { return "translate(" + (width / 8 + (width / 4) * ((i) % 4)) + "," + ((height / 3) * (parseInt((i) / 4)) + 20) + ")" })
       .attr('class', 'KD2')
       .attr('opacity', 0);
 

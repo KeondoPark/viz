@@ -62,7 +62,6 @@ function showData(error, data) {
         g.append("g")
             .attr("class", "axis y_axis")
             .call(d3.axisLeft(y));
-
         g.selectAll(".rect")
         .data(filtered)
         .enter().append("rect")
@@ -214,3 +213,21 @@ function showData(error, data) {
     d3.selectAll(".industry2").on("change",update)
     update()
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+

@@ -208,7 +208,7 @@ var YJ2color = d3.scaleOrdinal()
   .range(d3.schemeDark2);
 
 // A function that create / update the plot for a given variable:
-function update(data) {
+function updateYJ2(data) {
 
   // Compute the position of each group on the pie:
   var YJ2pie = d3.pie()
@@ -307,5 +307,5 @@ function update(data) {
 }
 
 // Initialize the plot with the first dataset
-update(YJ2data1)
-update(YJ2data1)
+updateYJ2(YJ2data1)
+updateYJ2(YJ2data1)
