@@ -64,15 +64,16 @@ _팀 TGIF, 서울대학교 데이터사이언스 대학원_
 ## 3. 시각화 자료 접근법
 본 git을 clone하시고 간단히 python 파일만 실행하시면 여러분의 로컬 PC에서 시각화 자료를 접근하실 수 있습니다. ($라고 되어있는 부분은 제외하고 터미널에서 실행하세요. $는 단지 해당 줄이 터미널 명령어라는 것을 표시하는 기능만 할 뿐이기 때문입니다):
 
-
+```
 $ cd ~
-$ git clone https://github.com/KeondoPark/viz.git
+$ git clone -b mergedBranch --single-branch https://github.com/KeondoPark/viz.git
+```
 
 viz폴더에 들어가 아래와 같이 실행파일을 구동하면 됩니다(파이썬 3 필요)
-
+```
 $ cd viz
 $ python3 server.py
-
+```
 server.py가 구동되면 로컬 PC의 웹브라우져 주소창에 http://localhost:8080/ 를 치시거나 본 링크를 클릭하시게 되면 시각화 자료를 접근할 수 있습니다.
 
 
