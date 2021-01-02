@@ -68,9 +68,10 @@ _팀 TGIF, 서울대학교 데이터사이언스 대학원_
 $ cd ~
 $ git clone https://github.com/KeondoPark/viz.git
 ```
-
+그럼 'viz'라는 이름의 폴더가 생성 될 것이고
 해당 폴더에 들어가 아래와 같이 실행파일을 구동하면 됩니다(파이썬 3 필요)
 ```
+$ cd viz
 $ python3 server.py
 ```
 server.py가 구동되면 로컬 PC의 웹브라우져 주소창에 http://localhost:8080/ 를 치시거나 본 링크를 클릭하시게 되면 시각화 자료를 접근할 수 있습니다.
@@ -91,5 +92,5 @@ IPO(Initial Public Offering): 외부 투자자가 공개적으로 주식을 살 
 
 
 ## 5. 더 살펴보기
-- [논문]()
-- [데모 비디오]()
+- [논문](http://etl.snu.ac.kr/mod/ubboard/article.php?id=1343280&bwid=2359712)
+- [데모 비디오](https://youtu.be/K7PA77turCg)
