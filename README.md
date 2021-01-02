@@ -93,4 +93,4 @@ IPO(Initial Public Offering): 외부 투자자가 공개적으로 주식을 살 
 
 ## 5. 더 살펴보기
 - [논문](http://etl.snu.ac.kr/mod/ubboard/article.php?id=1343280&bwid=2359712)
-- [데모 비디오](https://youtu.be/K7PA77turCg)
+- [데모 비디오](https://www.youtube.com/watch?v=K7PA77turCg&feature=emb_logo)
